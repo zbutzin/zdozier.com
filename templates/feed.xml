@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Publications: {{ person.name }}</title>
+  <subtitle>Newest publications and preprints, updated weekly from ORCID, OpenAlex, Crossref, and Europe PMC.</subtitle>
+  <link rel="self" type="application/atom+xml" href="{{ site_url }}/feed.xml"/>
+  <link rel="alternate" type="text/html" href="{{ site_url }}/publications/"/>
+  <id>{{ site_url }}/feed.xml</id>
+  <updated>{{ build_iso }}</updated>
+  <author>
+    <name>{{ person.name }}</name>
+    <uri>{{ site_url }}/</uri>
+  </author>
+  <icon>{{ site_url }}/favicon.svg</icon>
+{% for e in entries %}
+  <entry>
+    <title>{{ e.title }}</title>
+    <link rel="alternate" href="{{ e.url }}"/>
+    <id>{{ e.id }}</id>
+    <updated>{{ e.updated }}</updated>
+    <summary>{{ e.summary }}</summary>
+  </entry>
+{% endfor %}
+</feed>

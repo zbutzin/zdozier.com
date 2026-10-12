@@ -1,0 +1,73 @@
+{% extends "base.html" %}
+{% from "_macros.html" import section_head %}
+{% block main %}
+<div class="wrap">
+  <header class="page-head">
+    <h1>How this site works</h1>
+    <p class="lede">Every page and the CV are rebuilt each week from public data, plus a few hand-edited files for what no API reports.</p>
+  </header>
+
+  <figure class="diagram-fig">
+    <figcaption class="chart-head"><span class="chart-title" id="dg-title">From public APIs to zdozier.com</span></figcaption>
+    {{ pipeline_wide }}
+    {{ pipeline_tall }}
+  </figure>
+
+  <section class="sec" aria-labelledby="pipeline">
+    {{ section_head('Pipeline', none, 'pipeline') }}
+    <div class="sec-body prose">
+      <p>A scheduled GitHub Actions job runs every Monday at 14:00 UTC and whenever the site's code or content files change. It queries six public sources, merges what they report with a few hand-edited files, and rebuilds the pages, the charts, the BibTeX file, the feed, and the CV as HTML and PDF.</p>
+      <p>Each source is fetched on its own. If one is down, the job keeps that source's last good snapshot and the rest of the site still updates. If a run would drop more than 15% of the listed works at once, the previous list is kept and the run is flagged.</p>
+      <p>Hand-edited files in <code>content/</code> hold what no API reports: contribution notes on co-authored papers, research themes, appointments, teaching, talks, and grants from foundations.</p>
+    </div>
+  </section>
+
+  <section class="sec" aria-labelledby="last-run">
+    {{ section_head('Last run', sync.finished or 'No run report found', 'last-run') }}
+    <div class="sec-body">
+      {% if sync.sources %}
+      <div class="table-wrap">
+        <table class="status-table">
+          <caption class="sr-only">Status of each data source in the last run</caption>
+          <thead>
+            <tr><th scope="col">Source</th><th scope="col">Status</th><th scope="col" class="n">Records</th><th scope="col">Fetched</th><th scope="col" class="col-use">Provides</th></tr>
+          </thead>
+          <tbody>
+            {% for s in sync.sources %}
+            <tr>
+              <th scope="row">{{ s.label }}</th>
+              <td>{% if s.ok and not s.used_cache %}<span class="status is-ok"><span class="dot" aria-hidden="true"></span>OK</span>{% elif s.used_cache %}<span class="status is-warn"><span class="dot" aria-hidden="true"></span>Failed, used cached copy</span>{% else %}<span class="status is-warn"><span class="dot" aria-hidden="true"></span>Failed</span>{% endif %}</td>
+              <td class="n">{{ s.count if s.count is not none else '' }}</td>
+              <td class="num">{{ s.fetched }}</td>
+              <td class="col-use">{{ s.use }}</td>
+            </tr>
+            {% endfor %}
+          </tbody>
+        </table>
+      </div>
+      {% endif %}
+      <ul class="facts">
+        <li><span class="fact-k">Publications listed</span><span class="fact-v num">{{ works|length }}</span></li>
+        {% if sync.guard and sync.guard.previous is not none %}<li><span class="fact-k">Count check</span><span class="fact-v">{% if sync.guard.tripped %}Tripped: previous list kept{% else %}Passed ({{ sync.guard.current }} now, {{ sync.guard.previous }} before){% endif %}</span></li>{% endif %}
+        {% if sync.warnings %}<li><span class="fact-k">Notes in run report</span><span class="fact-v num">{{ sync.warnings|length }}</span></li>{% endif %}
+        <li><span class="fact-k">Site built</span><span class="fact-v num">{{ build_date }}</span></li>
+      </ul>
+      {% if repo_url %}<p class="more"><a href="{{ repo_url }}/blob/main/data/run_report.json">Full run report</a></p>{% endif %}
+    </div>
+  </section>
+
+  <section class="sec" aria-labelledby="privacy">
+    {{ section_head('No third-party requests', none, 'privacy') }}
+    <div class="sec-body prose">
+      <p>Pages load only files served from this domain. There are no web fonts, analytics, trackers, cookies, or embedded media. Text is set in fonts already on your device, the charts are SVG drawn when the site is built, and the one script ({{ js_kb }} KB) adds the publication filters, the chart tooltips, and the live “synced” label. Every page works without it.</p>
+    </div>
+  </section>
+
+  <section class="sec" aria-labelledby="source">
+    {{ section_head('Source and data', none, 'source') }}
+    <div class="sec-body prose">
+      <p>{% if repo_url %}The code and the full history of every data snapshot are public at <a href="{{ repo_url }}">{{ repo_url|replace('https://', '') }}</a>. {% endif %}The publication list is also available as <a href="/publications.bib">BibTeX</a>, <a href="/publications.json">JSON</a>, and an <a href="/feed.xml">Atom feed</a>.</p>
+    </div>
+  </section>
+</div>
+{% endblock %}

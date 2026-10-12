@@ -1,0 +1,81 @@
+{% extends "base.html" %}
+{% from "_macros.html" import pub_entry %}
+{% block main %}
+<div class="wrap">
+  <header class="page-head">
+    <h1>Publications</h1>
+    <p class="lede">{{ works|length }} works{% if since_year %} since {{ since_year }}{% endif %}. {{ n_lead }} as first or senior author{% if n_pre %}, {{ n_pre }} {{ 'preprint or manuscript' if n_pre == 1 else 'preprints or manuscripts' }} under review{% endif %}.{% if metrics.cited_by_count is not none %} Cited {{ metrics.cited_by_count|thousands }} times{% if metrics.h_index is not none %}, h-index {{ metrics.h_index }}{% endif %} (OpenAlex).{% endif %}</p>
+    <p class="page-meta">Updated weekly from ORCID, OpenAlex, Crossref, and Europe PMC (<a href="/colophon/">{% if sync.iso %}<span data-synced="{{ sync.iso }}">{{ sync.label }}</span>{% else %}{{ sync.label }}{% endif %}</a>). Download as <a href="/publications.bib">BibTeX</a> or <a href="/publications.json">JSON</a>, or follow the <a href="/feed.xml">Atom feed</a>.</p>
+  </header>
+
+  {% if per_year %}
+  <figure class="chart" id="ppy">
+    <figcaption class="chart-head">
+      <span class="chart-title" id="ppy-title">Publications per year</span>
+      <span class="chart-sub" id="ppy-desc">Stacked by authorship role. Counts work with a public version, including preprints.{% if chart_earlier %} {{ chart_earlier }}{% endif %}</span>
+      <span class="legend">
+        <span class="legend-item"><span class="key key-lead" aria-hidden="true"></span>First or senior author</span>
+        <span class="legend-item"><span class="key key-co" aria-hidden="true"></span>Co-author</span>
+      </span>
+    </figcaption>
+    <div class="chart-body">
+      {{ chart_wide }}
+      {{ chart_compact }}
+    </div>
+    <table class="sr-only">
+      <caption>Publications per year by authorship role</caption>
+      <thead><tr><th scope="col">Year</th><th scope="col">First or senior author</th><th scope="col">Co-author</th><th scope="col">Total</th></tr></thead>
+      <tbody>
+        {% for r in per_year %}{% if r.lead + r.co %}<tr><th scope="row">{{ r.year }}</th><td>{{ r.lead }}</td><td>{{ r.co }}</td><td>{{ r.lead + r.co }}</td></tr>{% endif %}{% endfor %}
+      </tbody>
+    </table>
+  </figure>
+  {% endif %}
+
+  <form class="filters" id="pub-filters" role="search" aria-label="Filter publications" hidden>
+    <fieldset class="chips">
+      <legend class="sr-only">Show</legend>
+      {% for c in chips %}
+      <input class="chip-input" type="radio" name="show" id="show-{{ c.value }}" value="{{ c.value }}"{% if loop.first %} checked{% endif %}>
+      <label class="chip" for="show-{{ c.value }}">{{ c.label }}<span class="chip-n">{{ c.count }}</span></label>
+      {% endfor %}
+    </fieldset>
+    <div class="filter-row">
+      <div class="field field-q">
+        <label for="pub-q">Search</label>
+        <input type="search" id="pub-q" name="q" placeholder="Title, author, or journal" autocomplete="off" spellcheck="false">
+      </div>
+      <div class="field">
+        <label for="pub-type">Type</label>
+        <select id="pub-type" name="type">
+          <option value="">All types</option>
+          {% for o in type_options %}<option value="{{ o.value }}">{{ o.label }} ({{ o.count }})</option>{% endfor %}
+        </select>
+      </div>
+      <div class="field">
+        <label for="pub-year">Year</label>
+        <select id="pub-year" name="year">
+          <option value="">All years</option>
+          {% for o in year_options %}<option value="{{ o.value }}">{{ o.value }} ({{ o.count }})</option>{% endfor %}
+        </select>
+      </div>
+      <button type="button" class="button button-quiet" id="pub-reset">Clear</button>
+    </div>
+  </form>
+  <p class="pub-count" id="pub-count" aria-live="polite">{{ works|length }} works</p>
+
+  <div class="pub-list" id="pub-list">
+    {% for g in groups %}
+    <section class="year-group" data-year="{{ g.year }}" aria-labelledby="y-{{ g.year }}">
+      <h2 class="year" id="y-{{ g.year }}">{{ g.year }}<span class="year-n" aria-hidden="true">{{ g.works|length }}</span></h2>
+      <ul class="pubs">
+        {% for w in g.works %}
+        {{ pub_entry(w) }}
+        {% endfor %}
+      </ul>
+    </section>
+    {% endfor %}
+    <p class="empty" id="pub-empty" hidden>No works match these filters. <button type="button" class="button button-quiet" data-reset>Clear filters</button></p>
+  </div>
+</div>
+{% endblock %}

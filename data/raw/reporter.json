@@ -1,0 +1,180 @@
+{
+  "source": "reporter",
+  "fetched_at": "2026-10-09T20:42:21Z",
+  "queries": [
+    {
+      "project_nums": [
+        "K01AI182501"
+      ]
+    },
+    {
+      "pi_profile_ids": [
+        78196486
+      ]
+    },
+    {
+      "pi_names": [
+        {
+          "last_name": "Butzin-Dozier"
+        }
+      ]
+    },
+    {
+      "pi_names": [
+        {
+          "last_name": "Dozier",
+          "first_name": "Zachary"
+        }
+      ]
+    }
+  ],
+  "pi_profile_ids": [
+    78196486
+  ],
+  "projects": [
+    {
+      "appl_id": 10865395,
+      "project_num": "1K01AI182501-01",
+      "core_project_num": "K01AI182501",
+      "fiscal_year": 2024,
+      "project_title": "Applying a Targeted Machine Learning and Causal Inference Approach to Analyzing Long-Term Sequelae of COVID-19 Infection Through the National COVID Cohort Collaborative.",
+      "project_start_date": "2024-09-04T00:00:00",
+      "project_end_date": "2029-08-31T00:00:00",
+      "budget_start": "2024-09-04T00:00:00",
+      "budget_end": "2025-08-31T00:00:00",
+      "award_amount": 134923,
+      "activity_code": "K01",
+      "funding_mechanism": "Other Research-Related",
+      "agency_code": "NIH",
+      "agency_ic_admin": {
+        "abbreviation": "NIAID",
+        "name": "National Institute of Allergy and Infectious Diseases"
+      },
+      "organization": {
+        "org_name": "UNIVERSITY OF CALIFORNIA BERKELEY",
+        "org_city": "BERKELEY",
+        "org_state": "CA"
+      },
+      "principal_investigators": [
+        {
+          "full_name": "Zachary  Butzin-Dozier",
+          "first_name": "Zachary",
+          "middle_name": "",
+          "last_name": "Butzin-Dozier",
+          "profile_id": 78196486,
+          "is_contact_pi": true
+        }
+      ],
+      "project_detail_url": "https://reporter.nih.gov/project-details/10865395",
+      "is_active": false
+    },
+    {
+      "appl_id": 11182551,
+      "project_num": "5K01AI182501-02",
+      "core_project_num": "K01AI182501",
+      "fiscal_year": 2025,
+      "project_title": "Applying a Targeted Machine Learning and Causal Inference Approach to Analyzing Long-Term Sequelae of COVID-19 Infection Through the National COVID Cohort Collaborative.",
+      "project_start_date": "2024-09-04T00:00:00",
+      "project_end_date": "2026-05-31T00:00:00",
+      "budget_start": "2025-09-01T00:00:00",
+      "budget_end": "2026-05-31T00:00:00",
+      "award_amount": 55765,
+      "activity_code": "K01",
+      "funding_mechanism": "Other Research-Related",
+      "agency_code": "NIH",
+      "agency_ic_admin": {
+        "abbreviation": "NIAID",
+        "name": "National Institute of Allergy and Infectious Diseases"
+      },
+      "organization": {
+        "org_name": "UNIVERSITY OF CALIFORNIA BERKELEY",
+        "org_city": "BERKELEY",
+        "org_state": "CA"
+      },
+      "principal_investigators": [
+        {
+          "full_name": "Zachary  Butzin-Dozier",
+          "first_name": "Zachary",
+          "middle_name": "",
+          "last_name": "Butzin-Dozier",
+          "profile_id": 78196486,
+          "is_contact_pi": true
+        }
+      ],
+      "project_detail_url": "https://reporter.nih.gov/project-details/11182551",
+      "is_active": false
+    },
+    {
+      "appl_id": 11551077,
+      "project_num": "7K01AI182501-03",
+      "core_project_num": "K01AI182501",
+      "fiscal_year": 2025,
+      "project_title": "Applying a Machine Learning and Causal Inference Approach to Analyzing Long-Term Sequelae of Viral Infection.",
+      "project_start_date": "2024-09-04T00:00:00",
+      "project_end_date": "2029-08-31T00:00:00",
+      "budget_start": "2026-06-01T00:00:00",
+      "budget_end": "2026-08-31T00:00:00",
+      "award_amount": 80004,
+      "activity_code": "K01",
+      "funding_mechanism": "Other Research-Related",
+      "agency_code": "NIH",
+      "agency_ic_admin": {
+        "abbreviation": "NIAID",
+        "name": "National Institute of Allergy and Infectious Diseases"
+      },
+      "organization": {
+        "org_name": "STANFORD UNIVERSITY",
+        "org_city": "STANFORD",
+        "org_state": "CA"
+      },
+      "principal_investigators": [
+        {
+          "full_name": "Zachary  Butzin-Dozier",
+          "first_name": "Zachary",
+          "middle_name": "",
+          "last_name": "Butzin-Dozier",
+          "profile_id": 78196486,
+          "is_contact_pi": true
+        }
+      ],
+      "project_detail_url": "https://reporter.nih.gov/project-details/11551077",
+      "is_active": false
+    },
+    {
+      "appl_id": 11406206,
+      "project_num": "5K01AI182501-04",
+      "core_project_num": "K01AI182501",
+      "fiscal_year": 2026,
+      "project_title": "Applying a Machine Learning and Causal Inference Approach to Analyzing Long-Term Sequelae of Viral Infection.",
+      "project_start_date": "2024-09-04T00:00:00",
+      "project_end_date": "2029-08-31T00:00:00",
+      "budget_start": "2026-09-01T00:00:00",
+      "budget_end": "2027-08-31T00:00:00",
+      "award_amount": 135769,
+      "activity_code": "K01",
+      "funding_mechanism": "Other Research-Related",
+      "agency_code": "NIH",
+      "agency_ic_admin": {
+        "abbreviation": "NIAID",
+        "name": "National Institute of Allergy and Infectious Diseases"
+      },
+      "organization": {
+        "org_name": "STANFORD UNIVERSITY",
+        "org_city": "STANFORD",
+        "org_state": "CA"
+      },
+      "principal_investigators": [
+        {
+          "full_name": "Zachary  Butzin-Dozier",
+          "first_name": "Zachary",
+          "middle_name": "",
+          "last_name": "Butzin-Dozier",
+          "profile_id": 78196486,
+          "is_contact_pi": true
+        }
+      ],
+      "project_detail_url": "https://reporter.nih.gov/project-details/11406206",
+      "is_active": true
+    }
+  ]
+}

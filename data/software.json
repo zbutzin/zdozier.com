@@ -1,0 +1,62 @@
+{
+  "generated": "2026-10-12T01:39:54Z",
+  "user": "zbutzin",
+  "repos": [
+    {
+      "name": "LongCOVID",
+      "description": "Repository of analytic pipeline for Long COVID research",
+      "html_url": "https://github.com/zbutzin/LongCOVID",
+      "homepage": null,
+      "language": "Python",
+      "stargazers_count": 0,
+      "pushed_at": "2026-09-30T16:57:35Z",
+      "topics": [],
+      "fork": false,
+      "archived": false,
+      "license": null
+    },
+    {
+      "name": "TMLEbootstrap",
+      "description": "bootstrap confidence intervals for Targeted Maximum Likelihood Estimators",
+      "html_url": "https://github.com/zbutzin/TMLEbootstrap",
+      "homepage": "https://wilsoncai1992.github.io/TMLEbootstrap/",
+      "language": null,
+      "stargazers_count": 0,
+      "pushed_at": "2026-07-01T19:53:46Z",
+      "topics": [],
+      "fork": true,
+      "archived": false,
+      "license": "GPL-3.0"
+    },
+    {
+      "name": "HAL-in-R",
+      "description": null,
+      "html_url": "https://github.com/zbutzin/HAL-in-R",
+      "homepage": null,
+      "language": "HTML",
+      "stargazers_count": 0,
+      "pushed_at": "2026-07-15T05:00:42Z",
+      "topics": [],
+      "fork": true,
+      "archived": false,
+      "license": null
+    },
+    {
+      "name": "ipv-dep-stress-telo",
+      "description": "10. MIS 012: IPV, depression, stress, and telomere length",
+      "html_url": "https://github.com/zbutzin/ipv-dep-stress-telo",
+      "homepage": null,
+      "language": "R",
+      "stargazers_count": 0,
+      "pushed_at": "2025-01-14T23:46:47Z",
+      "topics": [],
+      "fork": false,
+      "archived": false,
+      "license": null
+    }
+  ],
+  "hidden": [
+    "Intervention-Trials-Fall-2019",
+    "Intervention-Trials-GSIs-F2019"
+  ]
+}

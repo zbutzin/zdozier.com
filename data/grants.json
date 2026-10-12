@@ -1,0 +1,86 @@
+{
+  "generated": "2026-10-12T01:39:54Z",
+  "show_amounts": false,
+  "grants": [
+    {
+      "id": "K01AI182501",
+      "title": "Applying a Machine Learning and Causal Inference Approach to Analyzing Long-Term Sequelae of Viral Infection",
+      "display_title": null,
+      "funder": "NIH",
+      "agency": "NIAID",
+      "agency_name": "National Institute of Allergy and Infectious Diseases",
+      "mechanism": "K01",
+      "role": "PI",
+      "start": "2024-09",
+      "end": "2029-08",
+      "status": "active",
+      "institutions": [
+        "University of California, Berkeley",
+        "Stanford University"
+      ],
+      "url": "https://reporter.nih.gov/project-details/11406206",
+      "description": "Applies targeted machine learning and causal inference methods to data from the National COVID Cohort Collaborative (N3C) to study the long-term sequelae of COVID-19 infection.",
+      "source": "nih_reporter",
+      "pis": [
+        "Zachary Butzin-Dozier"
+      ],
+      "amount_total": null,
+      "fiscal_years": [
+        2024,
+        2025,
+        2026
+      ],
+      "project_nums": [
+        "1K01AI182501-01",
+        "5K01AI182501-02",
+        "7K01AI182501-03",
+        "5K01AI182501-04"
+      ]
+    },
+    {
+      "id": "gates-air-pollution-perinatal",
+      "title": "The effects of air pollution and temperature on perinatal outcomes",
+      "display_title": null,
+      "funder": "Gates Foundation",
+      "agency": null,
+      "agency_name": null,
+      "mechanism": "Subcontract",
+      "role": "Postdoctoral scholar",
+      "start": "2025-06",
+      "end": "2026-06",
+      "status": "completed",
+      "institutions": [],
+      "url": null,
+      "description": "As a postdoctoral scholar, I support the study design, methodologic considerations, and data analyses of this project.",
+      "source": "manual",
+      "pis": [
+        "Rakesh Ghosh"
+      ],
+      "amount_total": null,
+      "fiscal_years": [],
+      "project_nums": []
+    },
+    {
+      "id": "gates-opp1165144",
+      "title": "Global development grant (OPP1165144) to the University of California, Berkeley",
+      "display_title": null,
+      "funder": "Bill & Melinda Gates Foundation",
+      "agency": null,
+      "agency_name": null,
+      "mechanism": "Global development grant",
+      "role": "Postdoctoral scholar",
+      "start": "2020-01",
+      "end": "2024-12",
+      "status": "completed",
+      "institutions": [],
+      "url": null,
+      "description": "My previous research (2020-2024) was financially supported by this grant. As a postdoctoral scholar, I supported and led several project activities related to study design, data analysis, and manuscript publication.",
+      "source": "manual",
+      "pis": [],
+      "amount_total": null,
+      "fiscal_years": [],
+      "project_nums": [],
+      "date_precision": "year"
+    }
+  ]
+}

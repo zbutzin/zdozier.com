@@ -1,0 +1,196 @@
+{% extends "base.html" %}
+{% block main %}
+{% set c = cv %}
+<article class="cv wrap">
+  <header class="cv-head">
+    <h1 class="cv-name">{{ person.name_with_degrees }}</h1>
+    <p class="cv-contact">
+      <a class="u-abs" href="{{ site_url }}/">{{ site_url|replace('https://', '')|replace('http://', '') }}</a>
+      {% if person.email %}<span class="sep" aria-hidden="true">·</span><a href="mailto:{{ person.email }}">{{ person.email }}</a>{% endif %}
+      {% if person.address %}<span class="sep" aria-hidden="true">·</span><span>{{ person.address }}</span>{% endif %}
+    </p>
+    <p class="cv-former">Formerly published as {{ person.former_name }}</p>
+    <p class="cv-updated">Updated <time datetime="{{ today.isoformat() }}">{{ build_date }}</time>. Generated automatically from ORCID, OpenAlex, Crossref, Europe PMC, and NIH RePORTER.</p>
+    <p class="cv-actions screen-only"><a class="button" href="/cv.pdf">Download PDF</a><span class="cv-actions-note">US Letter, rebuilt with the site</span></p>
+  </header>
+
+  {% if c.summary_statement %}
+  <section class="cv-sec" aria-labelledby="cv-summary">
+    <h2 id="cv-summary">Summary Statement</h2>
+    <p class="cv-text">{{ c.summary_statement }}</p>
+  </section>
+  {% endif %}
+
+  {% if c.appointments %}
+  <section class="cv-sec" aria-labelledby="cv-appointments">
+    <h2 id="cv-appointments">Academic Appointments</h2>
+    <ul class="cv-list">
+      {% for a in c.appointments %}
+      <li class="cv-item">
+        <div class="cv-row">
+          <p class="cv-what"><b>{{ a.title }}</b>{% if a.org %}, {{ a.org }}{% endif %}</p>
+          <p class="cv-when">{{ a.start }}{% if a.start %} – {% endif %}{{ a.end or 'Present' }}</p>
+        </div>
+        {% if a.unit %}<p class="cv-unit">{{ a.unit }}</p>{% endif %}
+        {% if a.description %}<p class="cv-desc">{{ a.description }}</p>{% endif %}
+      </li>
+      {% endfor %}
+    </ul>
+  </section>
+  {% endif %}
+
+  {% if c.education %}
+  <section class="cv-sec" aria-labelledby="cv-education">
+    <h2 id="cv-education">Education</h2>
+    <ul class="cv-list">
+      {% for e in c.education %}
+      <li class="cv-item">
+        <div class="cv-row">
+          <p class="cv-what"><b>{{ e.institution }}</b>{% if e.location %}, {{ e.location }}{% endif %}</p>
+          <p class="cv-when">{{ e.year }}</p>
+        </div>
+        <p class="cv-unit">{{ e.degree }}{% if e.field %} in {{ e.field }}{% endif %}</p>
+        {% if e.honors %}<p class="cv-desc">{{ e.honors }}</p>{% endif %}
+        {% if e.gpa %}<p class="cv-desc">GPA: {{ e.gpa }}</p>{% endif %}
+      </li>
+      {% endfor %}
+    </ul>
+  </section>
+  {% endif %}
+
+  {% set all_grants = cv_active_grants + cv_completed_grants %}
+  {% if all_grants %}
+  <section class="cv-sec" aria-labelledby="cv-funding">
+    <h2 id="cv-funding">Funding</h2>
+    <ul class="cv-list">
+      {% for g in all_grants %}
+      <li class="cv-item">
+        <div class="cv-row">
+          <p class="cv-what"><b>{{ g.display }}</b></p>
+          <p class="cv-when">{{ g.period }}</p>
+        </div>
+        <p class="cv-unit">{{ g.funder_long }}{% if g.mechanism %}, {{ g.mechanism }}{% endif %}{% if g.show_id %} (<span class="num">{{ g.id }}</span>){% endif %}. Role: {{ g.role }}{% if g.pis_line and g.role != 'PI' %}; PI: {{ g.pis_line }}{% endif %}.{% if g.amount %} Total: <span class="num">{{ g.amount }}</span>.{% endif %}</p>
+        {% if g.description %}<p class="cv-desc">{{ g.description }}</p>{% endif %}
+      </li>
+      {% endfor %}
+    </ul>
+  </section>
+  {% endif %}
+
+  {% if c.honors %}
+  <section class="cv-sec" aria-labelledby="cv-honors">
+    <h2 id="cv-honors">Honors and Awards</h2>
+    <ul class="cv-years">
+      {% for h in c.honors %}
+      <li><span class="cv-year">{{ h.year }}</span><span>{{ h.text }}</span></li>
+      {% endfor %}
+    </ul>
+  </section>
+  {% endif %}
+
+  {% if cv_sections %}
+  <section class="cv-sec" aria-labelledby="cv-publications">
+    <h2 id="cv-publications">Publications</h2>
+    {% for s in cv_sections %}
+    <div class="cv-sub">
+      <h3>{{ s.title }}</h3>
+      <ol class="cv-refs">
+        {% for w in s.entries %}
+        <li class="cv-ref">
+          <p class="ref">{{ w.citation }}</p>
+          {% if w.contribution %}<p class="ref-note">*{{ w.contribution }}</p>{% endif %}
+        </li>
+        {% endfor %}
+      </ol>
+    </div>
+    {% endfor %}
+  </section>
+  {% endif %}
+
+  {% if c.teaching %}
+  <section class="cv-sec" aria-labelledby="cv-teaching">
+    <h2 id="cv-teaching">Teaching</h2>
+    <ul class="cv-list">
+      {% for t in c.teaching %}
+      <li class="cv-item">
+        <div class="cv-row">
+          <p class="cv-what"><b>{{ t.title }}</b>{% if t.org %}, {{ t.org }}{% endif %}</p>
+          <p class="cv-when">{{ t.start }}{% if t.start %} – {% endif %}{{ t.end or 'Present' }}</p>
+        </div>
+        {% if t.description %}<p class="cv-desc">{{ t.description }}</p>{% endif %}
+      </li>
+      {% endfor %}
+    </ul>
+  </section>
+  {% endif %}
+
+  {% if team.current or team.former %}
+  <section class="cv-sec" aria-labelledby="cv-trainees">
+    <h2 id="cv-trainees">Trainees</h2>
+    <div class="cv-cols">
+      {% for key, title in [('current', 'Current'), ('former', 'Former')] %}
+      {% if team[key] %}
+      <div>
+        <h3>{{ title }}</h3>
+        <ul class="cv-plain">
+          {% for p in team[key] %}<li>{{ p.name }}{% if p.role %} ({{ p.role }}){% endif %}</li>{% endfor %}
+        </ul>
+      </div>
+      {% endif %}
+      {% endfor %}
+    </div>
+  </section>
+  {% endif %}
+
+  {% if c.presentations and (c.presentations.invited or c.presentations.teaching) %}
+  <section class="cv-sec" aria-labelledby="cv-presentations">
+    <h2 id="cv-presentations">Presentations</h2>
+    {% for key, title in [('invited', 'Invited presentations'), ('teaching', 'Teaching presentations')] %}
+    {% if c.presentations[key] %}
+    <div class="cv-sub">
+      <h3>{{ title }}</h3>
+      <ol class="cv-refs">
+        {% for p in c.presentations[key] %}
+        <li class="cv-ref"><p class="ref">“{{ p.title }},” {{ p.venue }}{% if p.date %}, {{ p.date }}{% endif %}{% if p.location %} ({{ p.location }}){% endif %}.</p></li>
+        {% endfor %}
+      </ol>
+    </div>
+    {% endif %}
+    {% endfor %}
+  </section>
+  {% endif %}
+
+  {% if c.media %}
+  <section class="cv-sec" aria-labelledby="cv-media">
+    <h2 id="cv-media">Media Coverage</h2>
+    <ol class="cv-refs">
+      {% for m in c.media %}
+      {% set murl = m.url if (m.url and (m.url.startswith('https://') or m.url.startswith('http://'))) else none %}
+      <li class="cv-ref"><p class="ref">{{ m.title }}.{% if m.author %} {{ m.author }},{% endif %} {{ m.date }}.{% if m.outlet %} <i>{{ m.outlet }}</i>.{% endif %}{% if m.note %} {{ m.note }}{% if m.note[-1:] not in '.?!' %}.{% endif %}{% endif %}{% if murl %} <a href="{{ murl }}">{{ murl }}</a>{% endif %}</p></li>
+      {% endfor %}
+    </ol>
+  </section>
+  {% endif %}
+
+  {% if c.peer_review %}
+  <section class="cv-sec" aria-labelledby="cv-review">
+    <h2 id="cv-review">Peer Review Activities</h2>
+    <ol class="cv-refs">
+      {% for r in c.peer_review %}
+      <li class="cv-ref"><p class="ref">{{ r.text }}{% if r.date %}, {{ r.date }}{% endif %}</p></li>
+      {% endfor %}
+    </ol>
+  </section>
+  {% endif %}
+
+  {% if c.skills %}
+  <section class="cv-sec" aria-labelledby="cv-skills">
+    <h2 id="cv-skills">Skills</h2>
+    <ul class="cv-plain">
+      {% if c.skills.technical %}<li><b>Technical:</b> {{ c.skills.technical|join(', ') }}</li>{% endif %}
+      {% if c.skills.languages %}<li><b>Languages:</b> {{ c.skills.languages|join(', ') }}</li>{% endif %}
+    </ul>
+  </section>
+  {% endif %}
+</article>
+{% endblock %}

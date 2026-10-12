@@ -1,0 +1,274 @@
+# Curated publication settings. merge.py reads this file; every key is optional.
+# DOIs are written in lowercase. Contribution notes are copied from the Word CV
+# (updated August 19, 2026).
+
+# Filter chips on /publications/, in display order. ids are fixed slugs.
+topics:
+  - {id: causal-ml, label: "Causal inference and machine learning"}
+  - {id: covid, label: "COVID-19 and Long COVID"}
+  - {id: pediatrics-ehr, label: "Pediatric EHR research"}
+  - {id: hiv-id, label: "HIV and infectious diseases"}
+  - {id: child-health, label: "Child health and development"}
+  - {id: digital-health, label: "Digital health and wearables"}
+
+# Python regexes, case-insensitive, matched with re.search against
+# title + " " + venue. Per-work topics in overrides are added to these.
+topic_rules:
+  causal-ml:
+    - 'causal'
+    - 'targeted (maximum likelihood|learning|machine learning)'
+    - '\btmle\b'
+    - 'super ?learner'
+    - 'highly adaptive lasso'
+    - 'target(ed)? trial'
+    - 'machine learning'
+    - 'treatment heterogeneity'
+    - 'heterogeneous treatment effect'
+    - 'nonparametric inference'
+    - 'artificial intelligence'
+    - 'large language model'
+    - '\bllms?\b'
+  covid:
+    - 'covid'
+    - 'sars-cov-2'
+    - 'coronavirus'
+    - '\bn3c\b'
+    - 'post-acute sequelae'
+    - '\bpasc\b'
+  pediatrics-ehr:
+    - 'pedsnet'
+    - 'epic cosmos'
+    - 'pcornet'
+    - 'health data warehouse'
+    - '^(?=.*\bp(a)?ediatric)(?=.*(electronic health record|\behrs?\b|\bn3c\b|cohort collaborative|real-world data))'
+  hiv-id:
+    - '\bhiv\b'
+    - 'antibiotic'
+    - 'antimicrobial'
+    - 'infection prevention'
+    - 'infection control'
+    - 'infectious disease'
+    - 'ring trial'
+  child-health:
+    - '\bchild'
+    - '\binfant'
+    - 'pregnan'
+    - 'perinatal'
+    - 'bangladesh'
+    - 'wash benefits'
+  digital-health:
+    - 'wearable'
+    - 'digital biomarker'
+    - 'digital (health|phenotyp)'
+    - 'digital .{0,40}intervention'
+    - '\bmhealth\b'
+    - 'smartphone'
+
+# CV DOIs that are not on ORCID, so discovery cannot miss them.
+include_dois:
+  - "10.1093/ofid/ofag560"                 # Wang et al. 2026, OFID (multimorbidity)
+  - "10.1016/s2352-3018(25)00302-9"        # Yang et al. 2026, Lancet HIV
+  - "10.52202/085713-4650"                 # McCoy, Wu, Butzin-Dozier 2025, NeurIPS
+
+# Never shown. Duplicates and records that are not separate works.
+hide:
+  - "10.2139/ssrn.3918273"     # SSRN copy of the immune status work; medRxiv 10.1101/2021.11.10.21266206 stays visible
+  # UNC Carolina Digital Repository deposits of published papers (OpenAlex lists them as articles)
+  - "10.17615/xhdk-h129"       # copy of 10.1016/j.ebiom.2024.105333
+  - "10.17615/qzk6-0023"       # copy of 10.1186/s12916-024-03655-x
+  - "10.17615/58j5-x854"       # copy of 10.1136/bmjdrc-2024-004536
+  - "10.17615/7x87-z790"       # copy of 10.1155/pedi/3545727
+  - "10.17615/hymg-0n25"       # copy of 10.1093/ofid/ofaf731
+  - "10.17615/0sh5-mt86"       # copy of 10.2196/67585
+  - "10.17615/3br4-ep29"       # copy of 10.1016/s2352-3018(25)00302-9
+  - "10.17615/pg75-rh65"       # copy of 10.1016/j.ebiom.2026.106382
+  - "10.17615/a2qk-mm89"       # copy of 10.1093/ofid/ofag560
+  # Peer reviews he wrote for Rapid Reviews: Infectious Diseases (listed under Peer Review Activities instead)
+  - "10.1162/2e3983f5.ce1c98c7"
+  - "10.1162/2e3983f5.c3345096"
+
+# Versions of one paper. Published DOI first. Groups marked "needed" have a
+# title change large enough that fuzzy matching (ratio >= 0.88) misses them;
+# the others are listed so linking does not depend on Crossref relations.
+same_as:
+  - ["10.1016/j.ebiom.2026.106382", "10.1101/2025.04.22.25326224"]                          # vaccination timing
+  - ["10.1186/s12916-024-03655-x", "10.1101/2024.02.05.24302352"]                           # SSRI, BMC Medicine (needed, ratio 0.85)
+  - ["10.2196/67585", "10.2196/preprints.67585", "10.1101/2024.10.07.24315026"]            # wear time, JMIR Form Res (needed for medRxiv, ratio 0.81)
+  - ["10.1038/s41467-024-55801-x", "10.1101/2024.05.10.24307069"]                           # antibiotic use, Nat Commun (needed, ratio 0.72)
+  - ["10.1016/s2352-3018(25)00302-9", "10.2139/ssrn.5273921"]                               # HIV testing, Lancet HIV (needed, ratio 0.77)
+  - ["10.2196/54622", "10.2196/preprints.54622", "10.1101/2023.10.13.23296965"]             # wearables PPD, JMIR mHealth
+  - ["10.2196/53322", "10.2196/preprints.53322", "10.1101/2023.07.27.23293272"]             # Super Learner, JMIR PH&S
+  - ["10.1016/j.psyneuen.2024.107023", "10.1101/2023.09.12.23295429"]                       # stress biomarkers
+  - ["10.1371/journal.pntd.0012881", "10.1101/2024.03.21.24304684"]                         # treatment heterogeneity, PLOS NTD
+  - ["10.2196/68143", "10.2196/preprints.68143"]                                            # HIV phenotyping, JMIR Med Inform
+  - ["10.1186/s12889-022-13073-4", "10.21203/rs.3.rs-455696/v1"]                            # antibiotic use Ecuador, BMC Public Health
+# Note: 10.64898/2026.07.06.26357401 (SSRI and Long COVID symptoms, 2026) is a
+# separate study from 10.1186/s12916-024-03655-x and must not be linked to it.
+
+# Keyed by lowercase DOI. One entry per DOI: to change a DOI that is already
+# listed, add lines inside its entry (a repeated key stops the build).
+# Besides the work fields (type, status, status_note, topics, featured,
+# contribution, code_url, oa_url, role, ...), two keys adjust the author list:
+#   group_author: "Name"     adds a consortium to the end of the byline
+#   authors_source: crossref uses one source's author list as is
+#                            (crossref, europepmc, openalex, or orcid)
+overrides:
+  # Peer-reviewed journal articles (original research), CV order
+  "10.64898/2026.07.06.26357398":          # CV 1, Metformin (preprint; accepted)
+    type: article                          # accepted journal article; the CV lists it under original research
+    status: accepted
+    status_note: "Diabetes, Obesity and Metabolism"
+    topics: [covid, causal-ml]
+    code_url: "https://github.com/zbutzin/LongCOVID"
+  "10.1093/ofid/ofag560":                  # CV 2
+    authors_source: crossref               # the CV lists Crossref's full author list ("... Zhang, X. T."); the journal byline ends with the N3C group
+    topics: [covid, hiv-id]
+    contribution: "Supported causal inference considerations in the study design, analysis, and interpretation. I reviewed the manuscript and provided written feedback. I also provided insights regarding addressing heterogeneous healthcare utilization and COVID-19 sequelae in N3C."
+  "10.1016/j.ebiom.2026.106382":           # CV 4, vaccination timing
+    featured: true
+    topics: [covid, causal-ml]
+  "10.1377/hlthaff.2025.00179":            # CV 5, "Racial bias in Long COVID diagnosis"
+    group_author: "the National COVID Cohort Collaborative (N3C) Consortium"   # in the CV byline; no source reports it
+    featured: true
+    topics: [covid]
+  "10.1016/j.cdnut.2025.107596":           # CV 6
+    topics: [child-health]
+    contribution: "I conducted a literature review, supported study design and hypothesis formation, supported manuscript drafting and editing, and informed interpretation of results."
+  "10.1093/ofid/ofaf731":                  # CV 7
+    topics: [covid, hiv-id]
+    contribution: "Supported study design, causal inference considerations, incorporation of heterogeneous healthcare utilization, interpretation of results, and manuscript editing."
+  "10.1155/pedi/3545727":                  # CV 8
+    topics: [covid, pediatrics-ehr]
+    contribution: "I was invited to join this project as an expert in causal inference. I helped contextualize subgroup findings, given the risk of false discoveries from multiple testing. Furthermore, I evaluated potential sources of bias, including unmeasured confounding, and how these biases may influence the observed results. I supported the interpretation of results, manuscript review and editing, and the writing of the discussion."
+  "10.1016/s2352-3018(25)00302-9":         # CV 9
+    topics: [hiv-id, covid]
+    contribution: "Supported data analysis and troubleshooting of analytic pipeline in N3C. Proposed alternative interpretations and potential limitations of study design. Reviewed and revised manuscript draft."
+  "10.2196/68143":                         # CV 10
+    topics: [hiv-id]
+    contribution: "Supported methodologic troubleshooting and data processing. Supported writing and revision of manuscript."
+  "10.2196/67585":                         # CV 11
+    topics: [digital-health]
+    contribution: "Contributed to study design and causal inference considerations. Reviewed, edited, and provided feedback for the manuscript."
+  "10.1371/journal.pntd.0012881":          # CV 12
+    featured: true
+    topics: [child-health, causal-ml]
+  "10.1038/s41598-025-90505-2":            # CV 13
+    topics: [child-health]
+    contribution: "Supported data analysis, literature review, and interpretation of findings. Reviewed and revised manuscript draft."
+  "10.1038/s41467-024-55801-x":            # CV 14
+    topics: [child-health, hiv-id]
+    contribution: "Generated all manuscript figures and tables. Reviewed and revised manuscript."
+  "10.1136/bmjdrc-2024-004536":            # CV 15
+    topics: [covid]
+    contribution: "Reviewed, edited, and provided feedback for manuscript draft. Discussed interpretation with first author and shared additional limitations."
+  "10.1186/s12916-024-03655-x":            # CV 16, SSRI (BMC Medicine)
+    featured: true
+    topics: [covid, causal-ml]
+  "10.1016/j.ebiom.2024.105333":           # CV 17
+    topics: [covid]
+    contribution: "Reviewed, edited, and provided feedback for manuscript draft. Led award-winning team entry, which was featured in this manuscript."
+  "10.1016/j.psyneuen.2024.107023":        # CV 18
+    featured: true
+    topics: [child-health]
+  "10.2196/54622":                         # CV 19
+    topics: [digital-health]
+    contribution: "Designed analysis and supported troubleshooting of analytic pipeline. Supported writing of first-draft manuscript and reviewed and edited final manuscript version."
+  "10.2196/53322":                         # CV 20, Super Learner
+    featured: true
+    topics: [covid, causal-ml]
+  "10.1186/s12889-022-13073-4":            # CV 21
+    topics: [hiv-id]
+    contribution: "Conducted study design, data collection, and portions of data analysis. Wrote first draft of manuscript sections. Reviewed, edited, and provided feedback on final manuscript draft."
+  "10.3390/antibiotics10010002":           # CV 22
+    featured: true
+    topics: [hiv-id]
+  "10.3396/ijic.v17.20628":                # CV 23
+    issue: "1"                             # CV gives 17(1); Crossref has no issue
+    oa_url: null                           # OpenAlex's full-text link (ijic.info/article/download/20628/14187) returns 404
+    topics: [hiv-id]
+    contribution: "Mentored undergraduate student in manuscript preparation. Reviewed, edited, and provided feedback on manuscript draft. Iterated on overall manuscript format and focus."
+  "10.1001/archpediatrics.2010.54":        # CV 24
+    topics: [child-health]
+    contribution: "Designed study and conducted data analysis. Reviewed, edited, and provided feedback for manuscript draft."
+
+  # Peer-reviewed review article
+  "10.1093/epirev/mxac003":                # ring trial review
+    type: review
+    featured: true
+    topics: [hiv-id]
+
+  # Peer-reviewed conference paper
+  "10.52202/085713-4650":                  # NeurIPS 2025 position paper track
+    type: conference
+    topics: [causal-ml]                    # machine learning; no other topic fits
+
+  # Manuscripts under review (CV), all medRxiv preprints
+  "10.64898/2026.02.27.26347274":          # CV under review 2, IL-6 receptor antagonists
+    topics: [covid, causal-ml]
+    code_url: "https://github.com/zbutzin/LongCOVID"
+  "10.64898/2026.07.06.26357401":          # CV under review 3, SSRI and Long COVID symptoms
+    topics: [covid, causal-ml]
+  "10.64898/2026.07.03.26357246":          # CV under review 4, GLP medications
+    topics: [covid, causal-ml]
+  "10.1101/2025.06.06.25329168":           # CV under review 5, causal inference in N3C
+    topics: [covid, causal-ml]
+  "10.1101/2024.10.18.24315778":           # CV under review 6, highly adaptive lasso
+    featured: true
+    topics: [causal-ml]
+
+# CV works with no DOI in Crossref, OpenAlex, or Europe PMC (searched 2026-10-09).
+manual:
+  - id: "manual:singh-arthritis-rheumatology"
+    title: "Higher risk of Long COVID among patients with autoimmune rheumatic diseases and immunomodulatory therapy: A retrospective cohort analysis of national US data"
+    authors: ["Singh, N.", "Anzalone, A. J.", "Stevenson, H.", "Robinson, L.", "Jackson, L. E.", "Safo, S. E.", "Butzin-Dozier, Z.", "Michaud, K.", "Danila, M. I.", "Singh, J. A.", "Patel, R. C."]
+    year: 2026            # CV says "in press"; 2026 is used for sorting
+    date: "2026"
+    venue: "Arthritis & Rheumatology"
+    type: article
+    status: accepted
+    status_note: "In press"
+    url: null
+    contribution: "I provided subject-area and methodologic expertise regarding Long COVID, causal inference, and N3C. I provided feedback on the study design, and I gave written feedback on the manuscript draft."
+    topics: [covid]
+
+  - id: "manual:annual-review-public-health-long-covid"
+    title: "Long COVID: A critical review of U.S. health, science, and policy"
+    authors: ["Butzin-Dozier, Z.", "Wang, L.-C.", "Budhihartanto, A.", "Bramante, C.", "Wong, R."]
+    year: 2026
+    date: "2026"
+    venue: null
+    type: review
+    status: under-review
+    status_note: "Invited review, Annual Review of Public Health"
+    url: null
+    contribution: null
+    topics: [covid]
+
+  - id: "manual:wiley-environmental-health-nursing-chapter"
+    title: "Strengthening causal inference of real-world data"
+    authors: ["Butzin-Dozier, Z.", "Anzalone, J. A."]
+    year: 2027
+    date: "2027"
+    venue: "Environmental Health Nursing: Research, Evidence, and Impact"
+    editors: ["Castner, J."]
+    publisher: "Wiley"
+    type: chapter
+    status: accepted
+    status_note: "Forthcoming"
+    url: null
+    contribution: null
+    topics: [causal-ml]
+
+  - id: "manual:uc-berkeley-unhoused-covid-report"
+    title: "For the good of us all: Addressing the needs of our unhoused neighbors during the COVID-19 pandemic"
+    authors: ["Auerswald, C.", "Butzin-Dozier, Z.", "et al."]   # CV truncates the list with "et al."
+    year: 2020
+    date: "2020"
+    venue: "UC Berkeley School of Public Health"
+    type: report
+    status: published
+    status_note: null
+    role: coauthor        # keeps "et al." from making him the last author
+    url: "https://bph-storage.s3.us-west-1.amazonaws.com/wp-content/uploads/2020/04/For-the-Good-of-Us-All-Report.pdf"
+    contribution: "Provided epidemiologic and methodologic expertise. Wrote initial drafts of sections that described potential epidemiologic consequences of inadequate policy during the COVID-19 pandemic."
+    topics: [covid]

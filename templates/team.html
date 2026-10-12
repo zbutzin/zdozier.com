@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+{% from "_macros.html" import section_head %}
+{% block main %}
+<div class="wrap">
+  <header class="page-head">
+    <h1>Team</h1>
+    <p class="lede">Trainees and research staff, current and former.</p>
+  </header>
+  {% for key, title in [('current', 'Current'), ('former', 'Former')] %}
+  {% set people = team[key] %}
+  {% if people %}
+  <section class="sec" aria-labelledby="team-{{ key }}">
+    {{ section_head(title, people|length ~ (' person' if people|length == 1 else ' people'), 'team-' ~ key) }}
+    <div class="sec-body">
+      <ul class="people">
+        {% for p in people %}
+        <li class="person"><span class="person-name">{{ p.name }}</span>{% if p.role_label %}<span class="person-role">{{ p.role_label }}</span>{% endif %}{% if p.years %}<span class="person-years num">{{ p.years }}</span>{% endif %}</li>
+        {% endfor %}
+      </ul>
+    </div>
+  </section>
+  {% endif %}
+  {% endfor %}
+  {% if not team.current and not team.former %}
+  <p class="empty-note">No trainees are listed yet.</p>
+  {% endif %}
+</div>
+{% endblock %}

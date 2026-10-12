@@ -1,0 +1,62 @@
+{% macro sync_pill(sync, cls) -%}
+<a class="pill {{ cls }} is-{{ sync.state }}" href="/colophon/" title="{% if sync.finished %}Data last refreshed {{ sync.finished }}{% if sync.failing %}; cached copy used for {{ sync.failing|join(', ') }}{% endif %}{% else %}No run report found{% endif %}"><span class="dot" aria-hidden="true"></span><span class="pill-text"{% if sync.iso %} data-synced="{{ sync.iso }}"{% endif %}>{{ sync.label }}</span>{% if sync.failing %}<span class="pill-note">, {{ sync.failing|length }} cached</span>{% endif %}</a>
+{%- endmacro %}
+
+{% macro tags(w) -%}
+{% if w.role_label %}<span class="tag tag-role">{{ w.role_label }}</span>{% endif %}
+{% if w.status_label %}<span class="tag tag-status">{{ w.status_label }}</span>{% endif %}
+{% if w.type_label %}<span class="tag tag-type">{{ w.type_label }}</span>{% endif %}
+{%- endmacro %}
+
+{% macro pub_entry(w) -%}
+<li class="pub" id="{{ w.anchor }}" data-role="{{ w.role or 'coauthor' }}" data-topics="{{ w.topic_list|join(' ') }}" data-kind="{{ w.kinds }}" data-year="{{ w.year_label }}" data-preprint="{{ '1' if w.preprintish else '0' }}">
+  <h3 class="pub-title">{% if w.link %}<a href="{{ w.link }}">{{ w.title }}</a>{% else %}{{ w.title }}{% endif %}</h3>
+  <div class="pub-authors">{{ w.authors_html }}</div>
+  <p class="pub-meta"><span class="pub-venue">{{ w.venue_html }}</span>{% if w.year_label %} <span class="pub-year">{{ w.year_label }}</span>{% endif %}</p>
+  {% if w.role_label or w.status_label or w.type_label or w.badges %}
+  <div class="pub-foot">
+    {{ tags(w) }}
+    {% if w.badges %}
+    <ul class="badges">
+      {% for b in w.badges %}
+      <li>{% if b.url %}<a href="{{ b.url }}" title="{{ b.title }}">{{ b.label }}</a>{% else %}<span title="{{ b.title }}">{{ b.label }}</span>{% endif %}</li>
+      {% endfor %}
+    </ul>
+    {% endif %}
+  </div>
+  {% endif %}
+  {% if w.contribution %}
+  <details class="contrib"><summary>My contribution</summary><p>{{ w.contribution }}</p></details>
+  {% endif %}
+</li>
+{%- endmacro %}
+
+{% macro pub_compact(w) -%}
+<li class="pub-c">
+  <a class="pub-c-title" href="{{ w.link or ('/publications/#' ~ w.anchor) }}">{{ w.title }}</a>
+  <p class="pub-c-meta"><span class="pub-venue">{{ w.venue_short_html }}</span>{% if w.year_label %} <span class="pub-year">{{ w.year_label }}</span>{% endif %}{% if w.role_label %}<span class="tag tag-role">{{ w.role_label }}</span>{% endif %}{% if w.status_label %}<span class="tag tag-status">{{ w.status_label }}</span>{% endif %}</p>
+</li>
+{%- endmacro %}
+
+{% macro grant_entry(g) -%}
+<li class="grant">
+  <h3 class="grant-title">{% if g.url %}<a href="{{ g.url }}">{{ g.display }}</a>{% else %}{{ g.display }}{% endif %}</h3>
+  <dl class="grant-facts">
+    <div><dt>Funder</dt><dd>{{ g.funder_line }}{% if g.mechanism %}, {{ g.mechanism }}{% endif %}</dd></div>
+    {% if g.show_id %}<div><dt>Award</dt><dd class="num">{{ g.id }}</dd></div>{% endif %}
+    <div><dt>Period</dt><dd class="num">{{ g.period }}</dd></div>
+    {% if g.role %}<div><dt>Role</dt><dd>{{ g.role }}</dd></div>{% endif %}
+    {% if g.pis_line and g.role != 'PI' %}<div><dt>PI</dt><dd>{{ g.pis_line }}</dd></div>{% endif %}
+    {% if g.amount %}<div><dt>Total</dt><dd class="num">{{ g.amount }}</dd></div>{% endif %}
+  </dl>
+  {% if g.description %}<p class="grant-desc">{{ g.description }}</p>{% endif %}
+  {% if g.institutions %}<p class="grant-inst">Institutions: {{ g.institutions|join('; ') }}</p>{% endif %}
+</li>
+{%- endmacro %}
+
+{% macro section_head(title, note=None, id=None) -%}
+<header class="sec-head">
+  <h2{% if id %} id="{{ id }}"{% endif %}>{{ title }}</h2>
+  {% if note %}<p class="sec-note">{{ note }}</p>{% endif %}
+</header>
+{%- endmacro %}

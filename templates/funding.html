@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+{% from "_macros.html" import grant_entry, section_head %}
+{% block main %}
+<div class="wrap">
+  <header class="page-head">
+    <h1>Funding</h1>
+    <p class="lede">NIH awards are read from NIH RePORTER each week. Other grants are listed by hand.</p>
+  </header>
+  {% if active_grants %}
+  <section class="sec" aria-labelledby="active">
+    {{ section_head('Active', active_grants|length ~ (' grant' if active_grants|length == 1 else ' grants'), 'active') }}
+    <div class="sec-body">
+      <ul class="grants">
+        {% for g in active_grants %}{{ grant_entry(g) }}{% endfor %}
+      </ul>
+    </div>
+  </section>
+  {% endif %}
+  {% if completed_grants %}
+  <section class="sec" aria-labelledby="completed">
+    {{ section_head('Completed', completed_grants|length ~ (' grant' if completed_grants|length == 1 else ' grants'), 'completed') }}
+    <div class="sec-body">
+      <ul class="grants">
+        {% for g in completed_grants %}{{ grant_entry(g) }}{% endfor %}
+      </ul>
+    </div>
+  </section>
+  {% endif %}
+  {% if not active_grants and not completed_grants %}
+  <p class="empty-note">No grants are listed yet.</p>
+  {% endif %}
+</div>
+{% endblock %}

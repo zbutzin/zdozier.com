@@ -1,0 +1,240 @@
+# Weekly refresh of zdozier.com.
+#
+# build     fetch from the APIs, merge, build the site and CV PDF, run tests,
+#           commit any changed data/ snapshot back to main, upload _site/
+# deploy    publish _site/ to GitHub Pages
+# notify    open (or comment on) one issue when new publications appear
+# health    open one issue when a source has been failing for two weeks or the
+#           publication count check kept the old list; close it once all is well
+# keepalive re-enable this workflow so GitHub never pauses the weekly schedule
+#           (scheduled workflows are disabled after 60 days without repo activity)
+
+name: Update site
+
+on:
+  schedule:
+    - cron: "0 14 * * 1"  # Mondays 14:00 UTC (6 or 7 am Pacific)
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths-ignore:
+      - "data/**"
+      - "docs/**"
+      - "README.md"
+      - "SPEC.md"
+
+# One run at a time. A run that starts while another is going waits for it.
+concurrency:
+  group: update-site
+  cancel-in-progress: false
+
+# Nothing by default; each job asks for what it needs.
+permissions: {}
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    permissions:
+      contents: write  # commit data/ back to main
+    outputs:
+      new_works: ${{ steps.report.outputs.new_works }}
+      issue_body: ${{ steps.report.outputs.issue_body }}
+      health_state: ${{ steps.report.outputs.health_state }}
+      health_body: ${{ steps.report.outputs.health_body }}
+    steps:
+      - name: Check out
+        uses: actions/checkout@v7
+
+      - name: Set up Python
+        uses: actions/setup-python@v7
+        with:
+          python-version: "3.12"
+          cache: pip
+          cache-dependency-path: requirements.txt
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      # Palatino and Arial look-alikes for the CV PDF (the CSS names them).
+      # Optional: if this fails, Chrome prints with the runner's default fonts.
+      - name: Install fonts for the CV PDF
+        continue-on-error: true
+        timeout-minutes: 5
+        run: |
+          sudo apt-get update -qq || true
+          sudo apt-get install -y -qq --no-install-recommends fonts-texgyre fonts-liberation \
+            || echo "Font install failed; the CV PDF uses the default fonts this run."
+
+      - name: Fetch, merge, build, and print the CV
+        env:
+          CI: "true"
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}  # GitHub API (software list)
+          # Optional repository secret; empty if not set (see docs/SETUP.md).
+          OPENALEX_API_KEY: ${{ secrets.OPENALEX_API_KEY }}
+        run: |
+          if command -v google-chrome >/dev/null 2>&1; then
+            CHROME_PATH="$(command -v google-chrome)"
+            export CHROME_PATH
+            echo "Using Chrome at $CHROME_PATH"
+          fi
+          make all
+
+      - name: Run tests
+        run: make test
+
+      - name: Summarize the run report
+        id: report
+        run: |
+          n="$(python scripts/ci_issue.py --count)"
+          echo "new_works=${n:-0}" >> "$GITHUB_OUTPUT"
+          body="$(python scripts/ci_issue.py)"
+          delim="ISSUE_BODY_$(openssl rand -hex 12)"
+          {
+            echo "issue_body<<$delim"
+            printf '%s\n' "$body"
+            echo "$delim"
+          } >> "$GITHUB_OUTPUT"
+          echo "New works this run: ${n:-0}"
+          if [ -n "$body" ]; then
+            printf '%s\n' "$body" >> "$GITHUB_STEP_SUMMARY"
+          fi
+          state="$(python scripts/ci_issue.py --health-state)"
+          echo "health_state=${state:-degraded}" >> "$GITHUB_OUTPUT"
+          health="$(python scripts/ci_issue.py --health)"
+          hdelim="HEALTH_BODY_$(openssl rand -hex 12)"
+          {
+            echo "health_body<<$hdelim"
+            printf '%s\n' "$health"
+            echo "$hdelim"
+          } >> "$GITHUB_OUTPUT"
+          echo "Data health: ${state:-degraded}"
+          if [ -n "$health" ]; then
+            printf '%s\n' "$health" >> "$GITHUB_STEP_SUMMARY"
+          fi
+
+      - name: Commit refreshed data
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A data
+          if git diff --cached --quiet; then
+            echo "No changes in data/. Nothing to commit."
+            exit 0
+          fi
+          git commit -m "data: weekly refresh"
+          branch="${GITHUB_REF_NAME:-main}"
+          # Someone may have pushed while this run was working. Rebase onto the
+          # latest main and try again a few times before giving up.
+          for attempt in 1 2 3; do
+            if git pull --rebase origin "$branch" && git push origin "HEAD:$branch"; then
+              echo "Pushed data refresh (attempt $attempt)."
+              exit 0
+            fi
+            git rebase --abort 2>/dev/null || true
+            echo "Push attempt $attempt failed. Retrying."
+            sleep $((attempt * 10))
+          done
+          echo "Could not push the data refresh after 3 attempts." >&2
+          exit 1
+
+      - name: Upload site for Pages
+        uses: actions/upload-pages-artifact@v5
+        with:
+          path: _site
+
+  deploy:
+    needs: build
+    if: github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    permissions:
+      pages: write     # create the Pages deployment
+      id-token: write  # prove the deployment comes from this workflow
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v5
+
+  notify:
+    needs: build
+    if: needs.build.outputs.new_works != '' && needs.build.outputs.new_works != '0'
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    permissions:
+      issues: write  # open the issue, create the label, or add a comment
+    env:
+      GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      GH_REPO: ${{ github.repository }}
+      N_NEW: ${{ needs.build.outputs.new_works }}
+      ISSUE_BODY: ${{ needs.build.outputs.issue_body }}
+    steps:
+      - name: Open or update the new-publications issue
+        run: |
+          body_file="$RUNNER_TEMP/issue.md"
+          printf '%s\n' "$ISSUE_BODY" > "$body_file"
+          label="new-publications"
+          existing="$(gh issue list --label "$label" --state open --limit 1 --json number --jq '.[0].number // empty')"
+          if [ -n "$existing" ]; then
+            gh issue comment "$existing" --body-file "$body_file"
+            echo "Added a comment to open issue #$existing."
+          else
+            gh label create "$label" --color 8c1515 \
+              --description "Works found by the weekly update" --force
+            gh issue create --title "New publications detected ($N_NEW)" \
+              --label "$label" --body-file "$body_file"
+          fi
+
+  health:
+    needs: build
+    if: github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    permissions:
+      issues: write  # open, comment on, or close the site-health issue
+    env:
+      GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      GH_REPO: ${{ github.repository }}
+      STATE: ${{ needs.build.outputs.health_state }}
+      HEALTH_BODY: ${{ needs.build.outputs.health_body }}
+    steps:
+      - name: Open, update, or close the site-health issue
+        run: |
+          label="site-health"
+          existing="$(gh issue list --label "$label" --state open --limit 1 --json number --jq '.[0].number // empty' 2>/dev/null || true)"
+          if [ "$STATE" = "stale" ]; then
+            body_file="$RUNNER_TEMP/health.md"
+            printf '%s\n' "$HEALTH_BODY" > "$body_file"
+            if [ -n "$existing" ]; then
+              gh issue comment "$existing" --body-file "$body_file"
+              echo "Added a comment to open issue #$existing."
+            else
+              gh label create "$label" --color 8c1515 \
+                --description "Site data is not refreshing" --force
+              gh issue create --title "Site data is going stale" \
+                --label "$label" --body-file "$body_file"
+            fi
+          elif [ "$STATE" = "ok" ] && [ -n "$existing" ]; then
+            gh issue close "$existing" --comment "Resolved: every source refreshed normally in the run on $(date -u +%Y-%m-%d). Closed automatically."
+            echo "Closed issue #$existing."
+          else
+            echo "Data health: ${STATE:-unknown}. Nothing to report."
+          fi
+
+  keepalive:
+    if: github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    permissions:
+      actions: write  # call the "enable workflow" endpoint
+    steps:
+      - name: Keep the weekly schedule enabled
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          REPO: ${{ github.repository }}
+        run: |
+          gh api --method PUT "repos/$REPO/actions/workflows/update.yml/enable"
+          echo "Workflow enabled. This keeps GitHub from pausing the weekly schedule."

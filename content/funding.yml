@@ -1,0 +1,40 @@
+# Funding: enrichment for grants fetched from NIH RePORTER, plus grants that
+# no public API reports. Dollar amounts are not published unless
+# show_amounts is true.
+show_amounts: false
+
+# Keyed by NIH core project number (1K01AI182501-01 -> K01AI182501).
+enrich:
+  K01AI182501:
+    role: "PI"
+    description: "Applies targeted machine learning and causal inference methods to data from the National COVID Cohort Collaborative (N3C) to study the long-term sequelae of COVID-19 infection."
+    display_title: null
+
+# Same shape as data/grants.json entries (source: manual is added by merge.py).
+# date_precision: "year" means the CV gives years only; show years, not months.
+manual:
+  - id: "gates-air-pollution-perinatal"
+    title: "The effects of air pollution and temperature on perinatal outcomes"
+    funder: "Gates Foundation"
+    agency: null
+    mechanism: "Subcontract"
+    role: "Postdoctoral scholar"
+    pis: ["Rakesh Ghosh"]
+    start: "2025-06"
+    end: "2026-06"
+    description: "As a postdoctoral scholar, I support the study design, methodologic considerations, and data analyses of this project."
+    url: null
+  - id: "gates-opp1165144"
+    title: "Global development grant (OPP1165144) to the University of California, Berkeley"
+    funder: "Bill & Melinda Gates Foundation"
+    agency: null
+    mechanism: "Global development grant"
+    role: "Postdoctoral scholar"
+    pis: []
+    start: "2020-01"
+    end: "2024-12"
+    date_precision: "year"
+    description: "My previous research (2020-2024) was financially supported by this grant. As a postdoctoral scholar, I supported and led several project activities related to study design, data analysis, and manuscript publication."
+    url: null
+
+hide: []

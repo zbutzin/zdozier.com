@@ -1,0 +1,30 @@
+# Build output (regenerated on every run; GitHub Actions deploys it)
+_site/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+venv/
+.pytest_cache/
+
+# macOS and editors
+.DS_Store
+._*
+*.swp
+*.swo
+*~
+.idea/
+.vscode/
+
+# Scratch files
+scratch/
+tmp/
+*.tmp
+*.bak
+*.log
+.env
+
+# Office lock files (e.g. when a CV .docx is open next to the repo)
+~$*

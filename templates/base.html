@@ -1,0 +1,79 @@
+{% from "_macros.html" import sync_pill %}
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{{ page_title }}</title>
+<meta name="description" content="{{ description }}">
+{% if canonical %}
+<link rel="canonical" href="{{ canonical }}">
+{% else %}
+<meta name="robots" content="noindex">
+{% endif %}
+<meta name="color-scheme" content="light dark">
+<meta name="theme-color" content="#fbfaf8" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#121316" media="(prefers-color-scheme: dark)">
+<meta name="author" content="{{ person.name }}">
+<meta property="og:type" content="{{ og_type }}">
+<meta property="og:site_name" content="{{ person.name }}">
+<meta property="og:title" content="{{ heading or person.name }}">
+<meta property="og:description" content="{{ description }}">
+{% if canonical %}
+<meta property="og:url" content="{{ canonical }}">
+{% endif %}
+<meta property="og:image" content="{{ site_url }}/img/headshot.jpg">
+<meta property="og:image:width" content="800">
+<meta property="og:image:height" content="800">
+<meta property="og:image:alt" content="Portrait of {{ person.name }}">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="alternate" type="application/atom+xml" title="Publications by {{ person.name }}" href="/feed.xml">
+<link rel="stylesheet" href="/css/site.css?v={{ v.css }}">
+<script src="/js/site.js?v={{ v.js }}" defer></script>
+<script type="application/ld+json">{{ jsonld }}</script>
+</head>
+<body class="page-{{ page_id }}">
+<a class="skip" href="#main">Skip to content</a>
+<header class="topbar">
+  <div class="wrap topbar-inner">
+    <a class="wordmark" href="/"{% if page_id == 'home' %} aria-current="page"{% endif %}>{{ person.name }}</a>
+    <nav class="nav nav-wide" aria-label="Main">
+      <ul>
+        {% for id, label, href in nav %}
+        <li><a href="{{ href }}"{% if id == page_id %} aria-current="page"{% endif %}>{{ label }}</a></li>
+        {% endfor %}
+      </ul>
+    </nav>
+    {{ sync_pill(sync, 'pill-wide') }}
+    <details class="menu">
+      <summary><span class="menu-label">Menu</span><svg class="menu-icon" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true" focusable="false"><path d="M2 4.5h12M2 8h12M2 11.5h12"/></svg></summary>
+      <div class="menu-panel">
+        <nav aria-label="Main">
+          <ul>
+            {% for id, label, href in nav %}
+            <li><a href="{{ href }}"{% if id == page_id %} aria-current="page"{% endif %}>{{ label }}</a></li>
+            {% endfor %}
+          </ul>
+        </nav>
+        {{ sync_pill(sync, 'pill-menu') }}
+      </div>
+    </details>
+  </div>
+</header>
+<main id="main" tabindex="-1">
+{% block main %}{% endblock %}
+</main>
+<footer class="site-footer">
+  <div class="wrap footer-inner">
+    <p class="footer-name">{{ person.name }}<span class="sep" aria-hidden="true"> · </span><span>{{ person.institution }}</span></p>
+    <ul class="footer-links">
+      <li><a href="/colophon/">How this site works</a></li>
+      <li><a href="/feed.xml">Atom feed</a></li>
+      <li><a href="/publications.bib">BibTeX</a></li>
+      {% if repo_url %}<li><a href="{{ repo_url }}">Source</a></li>{% endif %}
+    </ul>
+    <p class="footer-meta">Built <time datetime="{{ today.isoformat() }}">{{ build_date }}</time>{% if sync.finished %} from data synced <time datetime="{{ sync.iso }}">{{ sync.finished }}</time>{% endif %}. No cookies, trackers, or third-party requests.</p>
+  </div>
+</footer>
+</body>
+</html>

@@ -1,0 +1,8 @@
+# Pinned versions used by GitHub Actions (Python 3.12).
+# The code also runs on the older versions on Zach's laptop
+# (Python 3.8.8, Jinja2 2.11.3, PyYAML 5.4.1, requests 2.25.1), so it sticks
+# to APIs that exist in both: yaml.safe_load, markupsafe.Markup (not
+# jinja2.Markup), and no Jinja2 pass_context/contextfilter decorators.
+Jinja2==3.1.6
+PyYAML==6.0.3
+requests==2.34.2

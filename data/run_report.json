@@ -1,0 +1,236 @@
+{
+  "started": "2026-10-09T20:43:42Z",
+  "finished": "2026-10-12T01:39:55Z",
+  "ok": true,
+  "sources": {
+    "orcid": {
+      "ok": true,
+      "count": 44,
+      "error": null,
+      "used_cache": false,
+      "fetched_at": "2026-10-09T20:42:16Z",
+      "requests": 3
+    },
+    "openalex": {
+      "ok": true,
+      "count": 56,
+      "error": null,
+      "used_cache": false,
+      "fetched_at": "2026-10-09T20:43:42Z",
+      "requests": 2
+    },
+    "europepmc": {
+      "ok": true,
+      "count": 42,
+      "error": null,
+      "used_cache": false,
+      "fetched_at": "2026-10-09T20:42:18Z",
+      "requests": 1
+    },
+    "crossref": {
+      "ok": true,
+      "count": 33,
+      "error": null,
+      "used_cache": false,
+      "fetched_at": "2026-10-09T20:42:19Z",
+      "requests": 3
+    },
+    "reporter": {
+      "ok": true,
+      "count": 1,
+      "error": null,
+      "used_cache": false,
+      "fetched_at": "2026-10-09T20:42:21Z",
+      "requests": 4
+    },
+    "github": {
+      "ok": true,
+      "count": 6,
+      "error": null,
+      "used_cache": false,
+      "fetched_at": "2026-10-09T20:42:26Z",
+      "requests": 1
+    }
+  },
+  "new_works": [],
+  "removed_works": [],
+  "new_grants": [],
+  "warnings": [
+    "OpenAlex work without a DOI skipped: W7160730250 \"WASH Benefits Bangladesh Analysis of Nutrition, Stress, Estriol, and Inflammation During P\"",
+    "OpenAlex items that are not publications were skipped: 10.1162/2e3983f5.ce1c98c7 (peer-review), 10.1162/2e3983f5.c3345096 (peer-review)"
+  ],
+  "promoted_works": [],
+  "sanity_guard": {
+    "tripped": false,
+    "previous": 40,
+    "current": 40,
+    "max_drop": 0.15
+  },
+  "counts": {
+    "visible_works": 40,
+    "hidden_works": 0,
+    "grants": 3,
+    "repos_shown": 4
+  },
+  "version_links": [
+    {
+      "a": "10.1016/j.ebiom.2026.106382",
+      "b": "10.1101/2025.04.22.25326224",
+      "rule": "same_as",
+      "detail": ""
+    },
+    {
+      "a": "10.1186/s12916-024-03655-x",
+      "b": "10.1101/2024.02.05.24302352",
+      "rule": "same_as",
+      "detail": ""
+    },
+    {
+      "a": "10.2196/67585",
+      "b": "10.2196/preprints.67585",
+      "rule": "same_as",
+      "detail": ""
+    },
+    {
+      "a": "10.2196/67585",
+      "b": "10.1101/2024.10.07.24315026",
+      "rule": "same_as",
+      "detail": ""
+    },
+    {
+      "a": "10.1038/s41467-024-55801-x",
+      "b": "10.1101/2024.05.10.24307069",
+      "rule": "same_as",
+      "detail": ""
+    },
+    {
+      "a": "10.1016/s2352-3018(25)00302-9",
+      "b": "10.2139/ssrn.5273921",
+      "rule": "same_as",
+      "detail": ""
+    },
+    {
+      "a": "10.2196/54622",
+      "b": "10.2196/preprints.54622",
+      "rule": "same_as",
+      "detail": ""
+    },
+    {
+      "a": "10.2196/54622",
+      "b": "10.1101/2023.10.13.23296965",
+      "rule": "same_as",
+      "detail": ""
+    },
+    {
+      "a": "10.2196/53322",
+      "b": "10.2196/preprints.53322",
+      "rule": "same_as",
+      "detail": ""
+    },
+    {
+      "a": "10.2196/53322",
+      "b": "10.1101/2023.07.27.23293272",
+      "rule": "same_as",
+      "detail": ""
+    },
+    {
+      "a": "10.1016/j.psyneuen.2024.107023",
+      "b": "10.1101/2023.09.12.23295429",
+      "rule": "same_as",
+      "detail": ""
+    },
+    {
+      "a": "10.1371/journal.pntd.0012881",
+      "b": "10.1101/2024.03.21.24304684",
+      "rule": "same_as",
+      "detail": ""
+    },
+    {
+      "a": "10.2196/68143",
+      "b": "10.2196/preprints.68143",
+      "rule": "same_as",
+      "detail": ""
+    },
+    {
+      "a": "10.1186/s12889-022-13073-4",
+      "b": "10.21203/rs.3.rs-455696/v1",
+      "rule": "same_as",
+      "detail": ""
+    },
+    {
+      "a": "10.2196/67585",
+      "b": "10.17615/0sh5-mt86",
+      "rule": "openalex-location",
+      "detail": ""
+    },
+    {
+      "a": "10.1016/j.ebiom.2024.105333",
+      "b": "10.17615/xhdk-h129",
+      "rule": "fuzzy-title",
+      "detail": "title 1.00, 35 shared authors"
+    },
+    {
+      "a": "10.1016/j.ebiom.2026.106382",
+      "b": "10.17615/pg75-rh65",
+      "rule": "fuzzy-title",
+      "detail": "title 1.00, 15 shared authors"
+    },
+    {
+      "a": "10.1016/s2352-3018(25)00302-9",
+      "b": "10.17615/3br4-ep29",
+      "rule": "fuzzy-title",
+      "detail": "title 1.00, 14 shared authors"
+    },
+    {
+      "a": "10.1093/ofid/ofaf731",
+      "b": "10.17615/hymg-0n25",
+      "rule": "fuzzy-title",
+      "detail": "title 1.00, 14 shared authors"
+    },
+    {
+      "a": "10.1093/ofid/ofag560",
+      "b": "10.17615/a2qk-mm89",
+      "rule": "fuzzy-title",
+      "detail": "title 1.00, 19 shared authors"
+    },
+    {
+      "a": "10.1101/2021.11.10.21266206",
+      "b": "orcid:139853979",
+      "rule": "fuzzy-title",
+      "detail": "title 1.00, 24 shared authors"
+    },
+    {
+      "a": "10.1136/bmjdrc-2024-004536",
+      "b": "10.17615/58j5-x854",
+      "rule": "fuzzy-title",
+      "detail": "title 1.00, 11 shared authors"
+    },
+    {
+      "a": "10.1155/pedi/3545727",
+      "b": "10.17615/7x87-z790",
+      "rule": "fuzzy-title",
+      "detail": "title 1.00, 13 shared authors"
+    },
+    {
+      "a": "10.1186/s12916-024-03655-x",
+      "b": "10.17615/qzk6-0023",
+      "rule": "fuzzy-title",
+      "detail": "title 1.00, 8 shared authors"
+    },
+    {
+      "a": "10.1101/2021.11.10.21266206",
+      "b": "10.2139/ssrn.3918273",
+      "rule": "fuzzy-title",
+      "detail": "title 0.99, 23 shared authors"
+    }
+  ],
+  "fetch": {
+    "started": "2026-10-09T20:43:42Z",
+    "finished": "2026-10-09T20:43:43Z"
+  },
+  "merge": {
+    "started": "2026-10-12T01:39:54Z",
+    "finished": "2026-10-12T01:39:55Z",
+    "today": "2026-10-11"
+  }
+}

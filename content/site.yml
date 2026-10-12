@@ -1,0 +1,90 @@
+# Identity and data-source settings (seeded; the content pass fills in the rest).
+identity:
+  orcid: "0000-0001-6419-0008"
+  openalex_author_id: "A5080035458"   # fallback only; primary lookup is by ORCID
+  github_user: "zbutzin"
+  me:
+    family_names: ["Butzin-Dozier", "Butzin Dozier", "Dozier"]
+    given_initial: "Z"                 # never match Mary Dozier ("Dozier, M.")
+  nih_reporter:
+    core_projects: ["K01AI182501"]
+    pi_profile_ids: []                 # filled automatically when resolvable
+    pi_names:
+      - {last_name: "Butzin-Dozier"}
+      - {last_name: "Dozier", first_name: "Zachary"}
+  europepmc_query: 'AUTH:"Butzin-Dozier Z" OR AUTHORID:"0000-0001-6419-0008" OR AUTH:"Dozier ZB"'
+
+api:
+  contact_email: null                  # set to enable OpenAlex/Crossref polite pools
+
+site:
+  url: "https://zdozier.com"
+  repo_url: "https://github.com/zbutzin/zdozier.com"
+
+# Person, links, research themes, and software selection (curated content).
+person:
+  name: "Zachary B. Dozier"
+  name_with_degrees: "Zachary B. Dozier, PhD, MPH"
+  short_name: "Zach Dozier"
+  former_name: "Zachary Butzin-Dozier"
+  title: "Assistant Professor"
+  appointments_short:
+    - "Pediatrics (Clinical Informatics)"
+    - "Medicine (Computational Medicine)"
+  institution: "Stanford University School of Medicine"
+  email: "zdozier@stanford.edu"
+  address: "3145 Porter Drive, Palo Alto, CA 94304"
+  tagline: "Machine learning for causal inference with electronic health records"
+  bio: |
+    Zach Dozier is an Assistant Professor at Stanford University in the Department of Pediatrics, Division of Clinical Informatics, with a joint appointment in the Department of Medicine, Division of Computational Medicine. He is an affiliate of the Center for Targeted Machine Learning (CTML) at UC Berkeley and an NIAID K01 recipient. He received his PhD in Epidemiology and MPH from UC Berkeley.
+
+    His research applies machine learning and artificial intelligence for causal inference via electronic health record data. He draws from large-scale databases, such as the UC Health Data Warehouse, Epic Cosmos, PEDSnet, and the National Clinical Cohort Collaborative, to answer pressing questions in pediatric and infectious disease medicine. This work evaluates vaccine effectiveness, drug repurposing, and the long-term sequelae of viral infection, including Long COVID. He aims to bridge rigorous biostatistical methodology with clinically meaningful research questions.
+
+# kind: stanford | orcid | openalex | scholar | github | email | cv | linkedin
+# A link with url: null is hidden until a URL is filled in.
+links:
+  - {label: "Stanford profile", url: "https://med.stanford.edu/profiles/zachary-dozier", kind: stanford}
+  - {label: "ORCID", url: "https://orcid.org/0000-0001-6419-0008", kind: orcid}
+  - {label: "OpenAlex", url: "https://openalex.org/A5080035458", kind: openalex}
+  - {label: "Google Scholar", url: null, kind: scholar}
+  - {label: "GitHub", url: "https://github.com/zbutzin", kind: github}
+  - {label: "LinkedIn", url: null, kind: linkedin}
+  - {label: "Email", url: "mailto:zdozier@stanford.edu", kind: email}
+  - {label: "CV (PDF)", url: "/cv.pdf", kind: cv}
+
+# Home page themes. Representative papers are pulled by topic id
+# (see content/publications.yml: topics), featured first, then most recent.
+research_themes:
+  - id: causal-ml-methods
+    title: "Causal machine learning for real-world data"
+    summary: "Methods for drawing causal conclusions from electronic health records and other observational data, including targeted learning, Super Learner, the highly adaptive lasso, and target trial emulation."
+    topics: [causal-ml]
+  - id: long-covid
+    title: "Long COVID and post-acute outcomes"
+    summary: "Studies in the National Clinical Cohort Collaborative (N3C) that evaluate existing medications, such as SSRIs, metformin, GLP-1 medications, and IL-6 receptor antagonists, as interventions against Long COVID and severe post-COVID-19 outcomes. Related work examines the timing of COVID-19 vaccination and racial bias in Long COVID diagnosis."
+    topics: [covid]
+  - id: pediatric-ehr
+    title: "Pediatric health research with electronic health records"
+    summary: "The lab at Stanford applies artificial intelligence and machine learning for causal inference to electronic health record data to improve pediatric health, using Epic Cosmos, PEDSnet, PCORnet, the UC Health Data Warehouse, and N3C."
+    topics: [pediatrics-ehr]
+  - id: child-global-health
+    title: "Child growth and development in global health"
+    summary: "Analyses of data from the WASH Benefits Bangladesh Project, several using targeted learning, on child growth, development, stress biomarkers, and antibiotic use. Earlier mixed-methods research examined antimicrobial resistance in Ecuador."
+    topics: [child-health]
+
+# Public repos of identity.github_user. include is the display order and
+# is shown even when a repo is a fork (HAL-in-R and TMLEbootstrap are forks).
+software:
+  include:
+    - LongCOVID
+    - TMLEbootstrap
+    - HAL-in-R
+    - ipv-dep-stress-telo
+  exclude:
+    - Intervention-Trials-Fall-2019     # course materials
+    - Intervention-Trials-GSIs-F2019    # course materials
+  # Shown instead of the repository's GitHub description. One plain sentence;
+  # repos not listed here keep their GitHub description.
+  descriptions:
+    ipv-dep-stress-telo: "Analysis code for intimate partner violence, maternal depression, parental stress, and child telomere length in Bangladesh"
+    HAL-in-R: "Example R code for the highly adaptive lasso (HAL): undersmoothed fits and delta-method confidence intervals for treatment effects"   # from the repo's Demo.Rmd (October 2026)

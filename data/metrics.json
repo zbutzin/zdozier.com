@@ -1,0 +1,231 @@
+{
+  "generated": "2026-10-12T01:39:54Z",
+  "works_count": 40,
+  "cited_by_count": 313,
+  "h_index": 7,
+  "i10_index": 6,
+  "counts_by_year": [
+    {
+      "year": 2010,
+      "works_count": 1,
+      "cited_by_count": 0
+    },
+    {
+      "year": 2011,
+      "works_count": 0,
+      "cited_by_count": 0
+    },
+    {
+      "year": 2012,
+      "works_count": 0,
+      "cited_by_count": 5
+    },
+    {
+      "year": 2013,
+      "works_count": 0,
+      "cited_by_count": 10
+    },
+    {
+      "year": 2014,
+      "works_count": 0,
+      "cited_by_count": 11
+    },
+    {
+      "year": 2015,
+      "works_count": 0,
+      "cited_by_count": 7
+    },
+    {
+      "year": 2016,
+      "works_count": 0,
+      "cited_by_count": 14
+    },
+    {
+      "year": 2017,
+      "works_count": 0,
+      "cited_by_count": 12
+    },
+    {
+      "year": 2018,
+      "works_count": 0,
+      "cited_by_count": 16
+    },
+    {
+      "year": 2019,
+      "works_count": 0,
+      "cited_by_count": 7
+    },
+    {
+      "year": 2020,
+      "works_count": 2,
+      "cited_by_count": 44
+    },
+    {
+      "year": 2021,
+      "works_count": 2,
+      "cited_by_count": 8
+    },
+    {
+      "year": 2022,
+      "works_count": 2,
+      "cited_by_count": 15
+    },
+    {
+      "year": 2023,
+      "works_count": 0,
+      "cited_by_count": 15
+    },
+    {
+      "year": 2024,
+      "works_count": 6,
+      "cited_by_count": 27
+    },
+    {
+      "year": 2025,
+      "works_count": 11,
+      "cited_by_count": 42
+    },
+    {
+      "year": 2026,
+      "works_count": 13,
+      "cited_by_count": 74
+    }
+  ],
+  "by_year_role": [
+    {
+      "year": 2010,
+      "first_or_senior": 0,
+      "coauthor": 1
+    },
+    {
+      "year": 2011,
+      "first_or_senior": 0,
+      "coauthor": 0
+    },
+    {
+      "year": 2012,
+      "first_or_senior": 0,
+      "coauthor": 0
+    },
+    {
+      "year": 2013,
+      "first_or_senior": 0,
+      "coauthor": 0
+    },
+    {
+      "year": 2014,
+      "first_or_senior": 0,
+      "coauthor": 0
+    },
+    {
+      "year": 2015,
+      "first_or_senior": 0,
+      "coauthor": 0
+    },
+    {
+      "year": 2016,
+      "first_or_senior": 0,
+      "coauthor": 0
+    },
+    {
+      "year": 2017,
+      "first_or_senior": 0,
+      "coauthor": 0
+    },
+    {
+      "year": 2018,
+      "first_or_senior": 0,
+      "coauthor": 0
+    },
+    {
+      "year": 2019,
+      "first_or_senior": 0,
+      "coauthor": 0
+    },
+    {
+      "year": 2020,
+      "first_or_senior": 1,
+      "coauthor": 1
+    },
+    {
+      "year": 2021,
+      "first_or_senior": 0,
+      "coauthor": 2
+    },
+    {
+      "year": 2022,
+      "first_or_senior": 1,
+      "coauthor": 1
+    },
+    {
+      "year": 2023,
+      "first_or_senior": 0,
+      "coauthor": 0
+    },
+    {
+      "year": 2024,
+      "first_or_senior": 4,
+      "coauthor": 2
+    },
+    {
+      "year": 2025,
+      "first_or_senior": 3,
+      "coauthor": 8
+    },
+    {
+      "year": 2026,
+      "first_or_senior": 6,
+      "coauthor": 7
+    }
+  ],
+  "charted_works_count": 37,
+  "first_or_senior_count": 17,
+  "preprint_count": 10,
+  "openalex_works_count": 56,
+  "openalex_author_id": "A5080035458",
+  "openalex_counts_by_year": [
+    {
+      "year": 2010,
+      "works_count": 1,
+      "cited_by_count": 156
+    },
+    {
+      "year": 2020,
+      "works_count": 1,
+      "cited_by_count": 14
+    },
+    {
+      "year": 2021,
+      "works_count": 4,
+      "cited_by_count": 7
+    },
+    {
+      "year": 2022,
+      "works_count": 2,
+      "cited_by_count": 17
+    },
+    {
+      "year": 2023,
+      "works_count": 2,
+      "cited_by_count": 5
+    },
+    {
+      "year": 2024,
+      "works_count": 13,
+      "cited_by_count": 80
+    },
+    {
+      "year": 2025,
+      "works_count": 15,
+      "cited_by_count": 28
+    },
+    {
+      "year": 2026,
+      "works_count": 18,
+      "cited_by_count": 6
+    }
+  ],
+  "adjusted_for_hidden": false,
+  "notes": "works_count, first_or_senior_count and preprint_count count every visible work. counts_by_year.works_count and by_year_role count only works that are publicly available (status published or preprint, or any work with a DOI), by year; in-press and under-review items without a DOI, and works dated after the current year, are left out until they appear, so by_year_role sums to charted_works_count. counts_by_year.cited_by_count is citations received in that year, summed from OpenAlex per-work counts. Totals and h-index are OpenAlex author summary_stats. openalex_counts_by_year is OpenAlex's author-level series as returned.",
+  "source": "openalex"
+}

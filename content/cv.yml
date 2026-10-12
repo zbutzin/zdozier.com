@@ -1,0 +1,176 @@
+# Curated CV sections, transcribed from the Word CV (updated August 19, 2026).
+# Funding and publications are not here: they are generated from data/ and
+# content/funding.yml / content/publications.yml.
+# The phone number in the Word CV is intentionally omitted.
+
+summary_statement: "I am an Assistant Professor at Stanford School of Medicine (Department of Pediatrics, Division of Clinical Informatics; Department of Medicine, Division of Computational Medicine) with a strong ability to communicate complex methods and findings to a broad range of audiences. My research applies machine learning for causal inference via electronic health record (EHR) data. This work is supported by an NIAID K01 award and primarily uses data from Epic Cosmos, PEDSnet, the UC Health Data Warehouse, and the National Clinical Cohort Collaborative."
+
+# From the CV "Research" section. end: null means Present.
+appointments:
+  - title: "Assistant Professor"
+    org: "Stanford University School of Medicine"
+    unit: "Department of Pediatrics (Clinical Informatics) and Department of Medicine (Computational Medicine / Center for Biomedical Informatics Research)"
+    start: "June 2026"
+    end: null
+    description: "I lead an independent research program applying artificial intelligence and machine learning for causal inference via electronic health record data to improve pediatric health. As an NIAID K01 scholar, I am building a lab with access to Epic COSMOS, PEDSnet, PCORnet, UCHDW, and N3C."
+  - title: "Postdoctoral Scholar"
+    org: "UC Berkeley School of Public Health"
+    unit: "Division of Biostatistics, Center for Targeted Machine Learning"
+    start: "September 2022"
+    end: "May 2026"
+    description: "My work applies a Targeted Machine Learning methodology (applied machine learning for causal inference) to evaluate interventions against Long COVID. I am an NIAID K01 scholar (2025-2029), my work was pivotal in maintaining continued funding from the Bill and Melinda Gates Foundation, I facilitated a Data Use Agreement between N3C and UC Berkeley, I led a team to third place in the NIH Long COVID Computational Challenge, and I forged multiple inter-institutional collaborations (UNC-Chapel Hill, Johns Hopkins, University of Washington, University of Minnesota, University of Alabama at Birmingham Medical Center)."
+  - title: "Graduate Student Researcher"
+    org: "UC Berkeley"
+    unit: null
+    start: "January 2020"
+    end: "August 2022"
+    description: "Worked under Professors Jack Colford, Alan Hubbard, and Mark van der Laan. Applied Targeted Learning methodology to data from the WASH Benefits Bangladesh Project. This work culminated in three first-author publications and several supporting-author publications."
+  - title: "Graduate Student Researcher"
+    org: "UC Berkeley/Universidad San Francisco de Quito"
+    unit: null
+    start: "May 2019"
+    end: "August 2019"
+    description: "Led a mixed-methods research project on antimicrobial resistance in Ecuador. This work culminated in one first-author publication and two supporting-author publications."
+
+education:
+  - degree: "Ph.D."
+    field: "Epidemiology"
+    institution: "UC Berkeley School of Public Health"
+    location: "Berkeley, CA"
+    year: 2022
+    honors: null
+    gpa: "4.0/4.0"
+  - degree: "Master of Public Health"
+    field: "Epidemiology and Biostatistics"
+    institution: "UC Berkeley School of Public Health"
+    location: "Berkeley, CA"
+    year: 2020
+    honors: null
+    gpa: "4.0/4.0"
+  - degree: "Bachelor of Science"
+    field: "Psychology"
+    institution: "Tufts University"
+    location: "Boston, MA"
+    year: 2015
+    honors: "Summa Cum Laude"
+    gpa: "3.8/4.0"
+
+honors:
+  - {year: 2024, text: "NIH NCATS Clinical and Translational Sciences Awards spotlight article of the month"}
+  - {year: 2024, text: "UC Berkeley School of Public Health Committee on Teaching Excellence Honoree"}
+  - {year: 2023, text: "Placed third in the NIH Long COVID Computational Challenge"}
+  - {year: 2020, text: "Marcus Foster Education Institute Graduate Fellowship"}
+  - {year: 2019, text: "FLAS Academic Year Fellowship for Portuguese language and Latin American studies"}
+  - {year: 2019, text: "Center for Latin American Studies Field Research Grant"}
+  - {year: 2016, text: "Elected Board Member, The Chain Collaborative"}
+  - {year: 2015, text: "Priscilla N. Dunn Award for achievement in psychology"}
+  - {year: 2015, text: "Graduated Summa Cum Laude"}
+  - {year: 2013, text: "Education Abroad Network Merit Scholarship"}
+  - {year: 2013, text: "University of New South Wales Scholarship"}
+  - {year: 2010, text: "Michael J. Ferguson Scholarship"}
+
+teaching:
+  - title: "Instructor"
+    org: "UC Berkeley School of Public Health, Department of Epidemiology"
+    start: "August 2022"
+    end: "June 2025"
+    description: "Instructor for graduate-level courses, including Introductory Methods in Epidemiology (Spring 2023–June 2025), Intermediate Methods in Epidemiology (Spring 2023), and Intervention Trial Design (Fall 2022)."
+  - title: "Graduate Student Instructor"
+    org: "UC Berkeley"
+    start: "January 2019"
+    end: "December 2021"
+    description: "Instructed courses in Epidemiologic Analysis, Intermediate Epidemiologic Methods, and Research Methods in Psychology. Developed online learning materials and converted residential materials for online use."
+
+trainees:
+  current:
+    - {name: "Anna Krasnova", role: "postdoc"}
+    - {name: "Peter Ju", role: "Data analyst"}
+    - {name: "Eric Hurwitz", role: "Health Informatics postdoc"}
+    - {name: "Ariana Budhihartanto", role: "undergraduate"}
+    - {name: "Manav Kumar", role: "undergraduate"}
+    - {name: "Sam (Lin-Chiun) Wang", role: "undergraduate"}
+  former:
+    - {name: "Yunwen Ji", role: "Biostatistics PhD student"}
+    - {name: "Seraphina Shi", role: "Biostatistics PhD student"}
+    - {name: "Haodong Li", role: "Biostatistics PhD student"}
+    - {name: "Sky Qiu", role: "Biostatistics PhD student"}
+    - {name: "Sarang Deshpande", role: "undergraduate"}
+    - {name: "Alexis Silvera", role: "undergraduate"}
+    - {name: "Farheen Jamshed", role: "undergraduate"}
+    - {name: "Da Kyung Jung", role: "undergraduate"}
+    - {name: "Ewen Huang", role: "undergraduate"}
+
+# Order as in the CV.
+presentations:
+  invited:
+    - title: "Causal Inference via Electronic Health Records in N3C"
+      venue: "Center for Targeted Machine Learning seminar series"
+      date: "September 17, 2025"
+      location: "Berkeley, CA"
+    - title: "GLP-1 Receptor Agonists and Mortality/Long COVID in Type 2 Diabetes Patients"
+      venue: "Diabetes and Obesity Domain Team, National Clinical Cohort Collaborative"
+      date: "July 18, 2025"
+      location: "remote via Zoom"
+    - title: "Targeted Learning in Health Services Research"
+      venue: "International Society of Pharmacoepidemiology (ISPE) University of Maryland, Baltimore (UMB)"
+      date: "March 14, 2025"
+      location: "remote via Zoom"
+    - title: "Racial bias in Long COVID diagnosis"
+      venue: "National Clinical Cohort Collaborative Immunosuppression Domain Team"
+      date: "October 7, 2024"
+      location: "remote via Zoom"
+    - title: "Evaluating preventive interventions against Long COVID through Targeted Learning"
+      venue: "UC Santa Cruz Microbiology and Environmental Toxicology Seminar Series"
+      date: "February 8, 2024"
+      location: "Santa Cruz, CA"
+    - title: "Evaluating preventive interventions against Long COVID"
+      venue: "UC Berkeley Center for Targeted Machine Learning Seminar Series"
+      date: "April 9, 2024"
+      location: "Berkeley, CA"
+  teaching:
+    - title: "Power and Sample Size Guest Lecture"
+      venue: "UC Berkeley Public Health, Epidemiologic Methods (graduate-level course)"
+      date: "February 28, 2024"
+      location: "Berkeley, CA"
+    - title: "Adaptive Trials Guest Lecture"
+      venue: "UC Berkeley Public Health, Intervention Trial Design (graduate-level course)"
+      date: "February 28, 2024"
+      location: "Berkeley, CA"
+    - title: "WASH Benefits Guest Lecture"
+      venue: "UC Berkeley Public Health, Introduction to Public Health guest lecture (undergraduate-level course)"
+      date: "February 14, 2024"
+      location: "Berkeley, CA"
+
+# note is optional free text shown after the entry.
+media:
+  - title: "Study shows use of SSRIs may protect against long COVID"
+    outlet: "University of California, Berkeley, School of Public Health"
+    author: "Sheila Kaplan"
+    date: "December 6, 2024"
+    url: "https://publichealth.berkeley.edu/news-media/research-highlights/ssris-may-protect-against-long-covid"
+  - title: "NIH NCATS Clinical and Translational Sciences Awards spotlight article of the month"
+    outlet: "NIH NCATS"
+    author: null
+    date: "September 10, 2024"
+    url: "https://ncats.nih.gov/news-events/news/n3c-study-shows-health-factors-covid-19-infection-may-predict-long-covid-risk"
+    note: "Featured article: “Predicting Long COVID…” (JMIR Public Health and Surveillance, 2024)"
+  - title: "Postdoc Spotlight: Zachary Butzin-Dozier Sheds Light on Long COVID with Advanced Machine Learning"
+    outlet: "Berkeley Visiting Scholars and Postdoc Affairs"
+    author: "Simmerdeep Kaur"
+    date: "June 24, 2024"
+    url: "https://vspa.berkeley.edu/news/postdoc-spotlight-zachary-butzin-dozier-sheds-light-long-covid-advanced-machine-learning"
+  - title: "UC Berkeley research team wins prize for long COVID-19 prediction model"
+    outlet: "University of California, Berkeley, School of Public Health"
+    author: "Sheila Kaplan"
+    date: "April 11, 2023"
+    url: "https://publichealth.berkeley.edu/covid-19/berkeley-research-teams-wins-prize-for-long-covid-prediction-model"
+
+peer_review:
+  - {text: "Stanford University Kidney Health Initiative Seed Grant program", date: "May 2026"}
+  - {text: "Social Science & Medicine", date: "January 25, 2025"}
+  - {text: "Rapid Reviews for Infectious Diseases", date: "October 1, 2024"}
+  - {text: "Cochrane Review Infectious Diseases Group", date: "September 30, 2021"}
+
+skills:
+  technical: ["R", "Python", "Camtasia", "Jupyter Notebooks", "Stata", "SPSS", "Microsoft Office"]
+  languages: ["Fluent in Spanish", "proficient in Portuguese"]
