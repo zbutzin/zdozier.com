@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-12T16:31:35Z",
+  "generated": "2026-10-12T16:51:17Z",
   "works": [
     {
       "id": "manual:wiley-environmental-health-nursing-chapter",
@@ -2597,9 +2597,7 @@
         "forced"
       ],
       "first_seen": "2026-10-09",
-      "alt_ids": [
-        "10.17615/3br4-ep29"
-      ],
+      "alt_ids": [],
       "openalex_id": "W7128798745"
     },
     {
@@ -2859,9 +2857,7 @@
         "europepmc"
       ],
       "first_seen": "2026-10-09",
-      "alt_ids": [
-        "10.17615/hymg-0n25"
-      ],
+      "alt_ids": [],
       "openalex_id": "W7124422752"
     },
     {
@@ -4476,9 +4472,7 @@
         "europepmc"
       ],
       "first_seen": "2026-10-09",
-      "alt_ids": [
-        "10.17615/58j5-x854"
-      ],
+      "alt_ids": [],
       "openalex_id": "W4407132144"
     },
     {
@@ -4659,9 +4653,7 @@
         "europepmc"
       ],
       "first_seen": "2026-10-09",
-      "alt_ids": [
-        "10.17615/7x87-z790"
-      ],
+      "alt_ids": [],
       "openalex_id": "W4417037749"
     },
     {

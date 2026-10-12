@@ -1,6 +1,6 @@
 {
-  "started": "2026-10-09T20:43:42Z",
-  "finished": "2026-10-12T16:31:36Z",
+  "started": "2026-10-12T16:51:07Z",
+  "finished": "2026-10-12T16:51:17Z",
   "ok": true,
   "sources": {
     "orcid": {
@@ -8,15 +8,15 @@
       "count": 44,
       "error": null,
       "used_cache": false,
-      "fetched_at": "2026-10-09T20:42:16Z",
+      "fetched_at": "2026-10-12T16:51:07Z",
       "requests": 3
     },
     "openalex": {
       "ok": true,
-      "count": 56,
+      "count": 52,
       "error": null,
       "used_cache": false,
-      "fetched_at": "2026-10-09T20:43:42Z",
+      "fetched_at": "2026-10-12T16:51:08Z",
       "requests": 2
     },
     "europepmc": {
@@ -24,7 +24,7 @@
       "count": 42,
       "error": null,
       "used_cache": false,
-      "fetched_at": "2026-10-09T20:42:18Z",
+      "fetched_at": "2026-10-12T16:51:09Z",
       "requests": 1
     },
     "crossref": {
@@ -32,23 +32,23 @@
       "count": 33,
       "error": null,
       "used_cache": false,
-      "fetched_at": "2026-10-09T20:42:19Z",
-      "requests": 3
+      "fetched_at": "2026-10-12T16:51:11Z",
+      "requests": 6
     },
     "reporter": {
       "ok": true,
       "count": 1,
       "error": null,
       "used_cache": false,
-      "fetched_at": "2026-10-09T20:42:21Z",
+      "fetched_at": "2026-10-12T16:51:12Z",
       "requests": 4
     },
     "github": {
       "ok": true,
-      "count": 6,
+      "count": 7,
       "error": null,
       "used_cache": false,
-      "fetched_at": "2026-10-09T20:42:26Z",
+      "fetched_at": "2026-10-12T16:51:16Z",
       "requests": 1
     }
   },
@@ -178,18 +178,6 @@
       "detail": "title 1.00, 15 shared authors"
     },
     {
-      "a": "10.1016/s2352-3018(25)00302-9",
-      "b": "10.17615/3br4-ep29",
-      "rule": "fuzzy-title",
-      "detail": "title 1.00, 14 shared authors"
-    },
-    {
-      "a": "10.1093/ofid/ofaf731",
-      "b": "10.17615/hymg-0n25",
-      "rule": "fuzzy-title",
-      "detail": "title 1.00, 14 shared authors"
-    },
-    {
       "a": "10.1093/ofid/ofag560",
       "b": "10.17615/a2qk-mm89",
       "rule": "fuzzy-title",
@@ -200,18 +188,6 @@
       "b": "orcid:139853979",
       "rule": "fuzzy-title",
       "detail": "title 1.00, 24 shared authors"
-    },
-    {
-      "a": "10.1136/bmjdrc-2024-004536",
-      "b": "10.17615/58j5-x854",
-      "rule": "fuzzy-title",
-      "detail": "title 1.00, 11 shared authors"
-    },
-    {
-      "a": "10.1155/pedi/3545727",
-      "b": "10.17615/7x87-z790",
-      "rule": "fuzzy-title",
-      "detail": "title 1.00, 13 shared authors"
     },
     {
       "a": "10.1186/s12916-024-03655-x",
@@ -227,12 +203,12 @@
     }
   ],
   "fetch": {
-    "started": "2026-10-09T20:43:42Z",
-    "finished": "2026-10-09T20:43:43Z"
+    "started": "2026-10-12T16:51:07Z",
+    "finished": "2026-10-12T16:51:16Z"
   },
   "merge": {
-    "started": "2026-10-12T16:31:35Z",
-    "finished": "2026-10-12T16:31:36Z",
+    "started": "2026-10-12T16:51:16Z",
+    "finished": "2026-10-12T16:51:17Z",
     "today": "2026-10-12"
   }
 }

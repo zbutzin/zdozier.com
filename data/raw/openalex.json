@@ -1,6 +1,6 @@
 {
   "source": "openalex",
-  "fetched_at": "2026-10-09T20:43:42Z",
+  "fetched_at": "2026-10-12T16:51:08Z",
   "filter": "author.orcid:0000-0001-6419-0008",
   "author": {
     "id": "A5080035458",
@@ -63,7 +63,7 @@
         "cited_by_count": 6
       }
     ],
-    "updated_date": "2026-10-08T12:30:13"
+    "updated_date": "2026-10-10T12:59:14"
   },
   "works": [
     {
@@ -948,7 +948,7 @@
         {
           "position": "middle",
           "author_id": "A5021336770",
-          "display_name": "Jessica Anne Grembi",
+          "display_name": "Jessica A. Grembi",
           "raw_author_name": "Jessica A. Grembi",
           "orcid": "0000-0001-6142-4913"
         },
@@ -1960,6 +1960,16 @@
           "source_type": "repository"
         },
         {
+          "id": "pmh:cdr.lib.unc.edu:3197z1780",
+          "doi": null,
+          "landing_page_url": "https://doi.org/10.17615/58j5-x854",
+          "pdf_url": "https://cdr.lib.unc.edu/downloads/zk51vz261",
+          "is_oa": true,
+          "version": "submittedVersion",
+          "source": "Carolina Digital Repository (University of North Carolina at Chapel Hill)",
+          "source_type": "repository"
+        },
+        {
           "id": "pmh:oai:escholarship.org:ark:/13030/qt6xp4q6fm",
           "doi": null,
           "landing_page_url": "https://escholarship.org/uc/item/6xp4q6fm",
@@ -1987,6 +1997,16 @@
           "is_oa": false,
           "version": "submittedVersion",
           "source": "DOAJ (DOAJ: Directory of Open Access Journals)",
+          "source_type": "repository"
+        },
+        {
+          "id": "doi:10.17615/58j5-x854",
+          "doi": "10.17615/58j5-x854",
+          "landing_page_url": "https://doi.org/10.17615/58j5-x854",
+          "pdf_url": null,
+          "is_oa": true,
+          "version": null,
+          "source": "UNC Libraries",
           "source_type": "repository"
         }
       ],
@@ -2239,7 +2259,7 @@
         {
           "position": "middle",
           "author_id": "A5021336770",
-          "display_name": "Jessica Anne Grembi",
+          "display_name": "Jessica A. Grembi",
           "raw_author_name": "Jessica Anne Grembi",
           "orcid": "0000-0001-6142-4913"
         },
@@ -2677,6 +2697,26 @@
           "version": "submittedVersion",
           "source": "eScholarship (California Digital Library)",
           "source_type": "repository"
+        },
+        {
+          "id": "doi:10.60692/c1n6z-5va13",
+          "doi": "10.60692/c1n6z-5va13",
+          "landing_page_url": "https://doi.org/10.60692/c1n6z-5va13",
+          "pdf_url": null,
+          "is_oa": true,
+          "version": null,
+          "source": "Greater South Information System",
+          "source_type": "repository"
+        },
+        {
+          "id": "doi:10.60692/rm9d6-fsk84",
+          "doi": "10.60692/rm9d6-fsk84",
+          "landing_page_url": "https://doi.org/10.60692/rm9d6-fsk84",
+          "pdf_url": null,
+          "is_oa": true,
+          "version": null,
+          "source": "Greater South Information System",
+          "source_type": "repository"
         }
       ],
       "authorships": [
@@ -2950,6 +2990,26 @@
           "is_oa": true,
           "version": "submittedVersion",
           "source": "PubMed Central",
+          "source_type": "repository"
+        },
+        {
+          "id": "doi:10.60692/mvc96-kx993",
+          "doi": "10.60692/mvc96-kx993",
+          "landing_page_url": "https://doi.org/10.60692/mvc96-kx993",
+          "pdf_url": null,
+          "is_oa": true,
+          "version": null,
+          "source": "Greater South Information System",
+          "source_type": "repository"
+        },
+        {
+          "id": "doi:10.60692/zxm69-0e314",
+          "doi": "10.60692/zxm69-0e314",
+          "landing_page_url": "https://doi.org/10.60692/zxm69-0e314",
+          "pdf_url": null,
+          "is_oa": true,
+          "version": null,
+          "source": "Greater South Information System",
           "source_type": "repository"
         }
       ],
@@ -3510,8 +3570,8 @@
         },
         {
           "position": "middle",
-          "author_id": "A5125899840",
-          "display_name": "Adam B. Wilcox",
+          "author_id": "A5064822514",
+          "display_name": "Adam B Wilcox",
           "raw_author_name": "Adam B. Wilcox",
           "orcid": "0000-0002-6305-735X"
         },
@@ -3573,10 +3633,10 @@
         },
         {
           "position": "middle",
-          "author_id": "A5124227100",
-          "display_name": "Andrew Southerland",
+          "author_id": "A5015115686",
+          "display_name": "Andrew M. Southerland",
           "raw_author_name": "Andrew Southerland",
-          "orcid": null
+          "orcid": "0000-0002-3646-358X"
         },
         {
           "position": "middle",
@@ -3594,8 +3654,8 @@
         },
         {
           "position": "middle",
-          "author_id": "A5137743596",
-          "display_name": "Anjali Sharathkumar",
+          "author_id": "A5037247838",
+          "display_name": "Anjali Alatkar Sharathkumar",
           "raw_author_name": "Anjali A. Sharathkumar",
           "orcid": "0000-0003-4574-6175"
         },
@@ -3657,10 +3717,10 @@
         },
         {
           "position": "middle",
-          "author_id": "A5143564026",
+          "author_id": "A5091900706",
           "display_name": "Christine Suver",
           "raw_author_name": "Christine Suver",
-          "orcid": null
+          "orcid": "0000-0002-2986-385X"
         },
         {
           "position": "middle",
@@ -3692,8 +3752,8 @@
         },
         {
           "position": "middle",
-          "author_id": "A5125918677",
-          "display_name": "Cliff Takemoto",
+          "author_id": "A5109409767",
+          "display_name": "Cliff M. Takemoto",
           "raw_author_name": "Cliff Takemoto",
           "orcid": null
         },
@@ -3720,10 +3780,10 @@
         },
         {
           "position": "middle",
-          "author_id": "A5136431917",
-          "display_name": "D R Mazzotti",
+          "author_id": "A5135667049",
+          "display_name": "Diego R Mazzotti",
           "raw_author_name": "Diego Mazzotti",
-          "orcid": null
+          "orcid": "0000-0003-3924-9199"
         },
         {
           "position": "middle",
@@ -3734,8 +3794,8 @@
         },
         {
           "position": "middle",
-          "author_id": "A5135670156",
-          "display_name": "Eilis Boudreau",
+          "author_id": "A5023894034",
+          "display_name": "Eilis Ann Boudreau",
           "raw_author_name": "Eilis Boudreau",
           "orcid": null
         },
@@ -3783,7 +3843,7 @@
         },
         {
           "position": "middle",
-          "author_id": "A5143564243",
+          "author_id": "A5072733996",
           "display_name": "Federico Mariona",
           "raw_author_name": "Federico Mariona",
           "orcid": null
@@ -3797,10 +3857,10 @@
         },
         {
           "position": "middle",
-          "author_id": "A5135689226",
-          "display_name": "George Sokos",
+          "author_id": "A5059177985",
+          "display_name": "George G. Sokos",
           "raw_author_name": "George Sokos",
-          "orcid": null
+          "orcid": "0000-0001-7421-0148"
         },
         {
           "position": "middle",
@@ -3853,10 +3913,10 @@
         },
         {
           "position": "middle",
-          "author_id": "A5143537801",
-          "display_name": "Jami Pincavitch",
+          "author_id": "A5040862197",
+          "display_name": "Jami D. Pincavitch",
           "raw_author_name": "Jami Pincavitch",
-          "orcid": null
+          "orcid": "0000-0003-1701-0005"
         },
         {
           "position": "middle",
@@ -3986,10 +4046,10 @@
         },
         {
           "position": "middle",
-          "author_id": "A5125941783",
+          "author_id": "A5025110908",
           "display_name": "Kenneth R. Gersing",
           "raw_author_name": "Kenneth R. Gersing",
-          "orcid": null
+          "orcid": "0000-0003-3897-3409"
         },
         {
           "position": "middle",
@@ -4070,8 +4130,8 @@
         },
         {
           "position": "middle",
-          "author_id": "A5125993406",
-          "display_name": "Mary Emmett",
+          "author_id": "A5026968199",
+          "display_name": "Mary S. Emmett",
           "raw_author_name": "Mary Emmett",
           "orcid": null
         },
@@ -4569,6 +4629,16 @@
           "source_type": "repository"
         },
         {
+          "id": "pmh:cdr.lib.unc.edu:8w32rn67r",
+          "doi": null,
+          "landing_page_url": "https://cdr.lib.unc.edu/downloads/j3860q53s",
+          "pdf_url": null,
+          "is_oa": false,
+          "version": "submittedVersion",
+          "source": "Carolina Digital Repository (University of North Carolina at Chapel Hill)",
+          "source_type": "repository"
+        },
+        {
           "id": "pmh:oai:pubmedcentral.nih.gov:12948494",
           "doi": null,
           "landing_page_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12948494/",
@@ -4576,6 +4646,16 @@
           "is_oa": true,
           "version": "submittedVersion",
           "source": "PubMed Central",
+          "source_type": "repository"
+        },
+        {
+          "id": "doi:10.17615/3br4-ep29",
+          "doi": "10.17615/3br4-ep29",
+          "landing_page_url": "https://doi.org/10.17615/3br4-ep29",
+          "pdf_url": null,
+          "is_oa": true,
+          "version": null,
+          "source": "UNC Libraries",
           "source_type": "repository"
         }
       ],
@@ -5640,7 +5720,7 @@
         {
           "position": "middle",
           "author_id": "A5021336770",
-          "display_name": "Jessica Anne Grembi",
+          "display_name": "Jessica A. Grembi",
           "raw_author_name": "Jessica A. Grembi",
           "orcid": "0000-0001-6142-4913"
         },
@@ -7020,10 +7100,10 @@
         },
         {
           "position": "middle",
-          "author_id": "A5114521133",
-          "display_name": "van der Laan M.J",
+          "author_id": "A5110130449",
+          "display_name": "Mark J. van der Laan",
           "raw_author_name": "van der Laan M.J",
-          "orcid": null
+          "orcid": "0000-0003-1432-5511"
         },
         {
           "position": "middle",
@@ -7209,154 +7289,6 @@
           "display_name": "Zachary Butzin-Dozier",
           "raw_author_name": "Zachary Butzin-Dozier",
           "orcid": "0000-0001-6419-0008"
-        }
-      ],
-      "cited_by_count": 0,
-      "counts_by_year": [],
-      "biblio": {
-        "volume": null,
-        "issue": null,
-        "first_page": null,
-        "last_page": null
-      },
-      "is_retracted": false,
-      "is_paratext": false
-    },
-    {
-      "id": "W4407569253",
-      "doi": "10.17615/58j5-x854",
-      "title": "Association of glycemic control with Long COVID in patients with type 2 diabetes: findings from the National COVID Cohort Collaborative (N3C)",
-      "publication_year": 2025,
-      "publication_date": "2025-02-14",
-      "type": "article",
-      "pmid": null,
-      "pmcid": null,
-      "primary_location": {
-        "id": "pmh:cdr.lib.unc.edu:3197z1780",
-        "doi": null,
-        "landing_page_url": "https://doi.org/10.17615/58j5-x854",
-        "pdf_url": "https://cdr.lib.unc.edu/downloads/zk51vz261",
-        "is_oa": true,
-        "version": "submittedVersion",
-        "source": "Carolina Digital Repository (University of North Carolina at Chapel Hill)",
-        "source_type": "repository"
-      },
-      "best_oa_location": {
-        "id": "pmh:cdr.lib.unc.edu:3197z1780",
-        "doi": null,
-        "landing_page_url": "https://doi.org/10.17615/58j5-x854",
-        "pdf_url": "https://cdr.lib.unc.edu/downloads/zk51vz261",
-        "is_oa": true,
-        "version": "submittedVersion",
-        "source": "Carolina Digital Repository (University of North Carolina at Chapel Hill)",
-        "source_type": "repository"
-      },
-      "locations": [
-        {
-          "id": "pmh:cdr.lib.unc.edu:3197z1780",
-          "doi": null,
-          "landing_page_url": "https://doi.org/10.17615/58j5-x854",
-          "pdf_url": "https://cdr.lib.unc.edu/downloads/zk51vz261",
-          "is_oa": true,
-          "version": "submittedVersion",
-          "source": "Carolina Digital Repository (University of North Carolina at Chapel Hill)",
-          "source_type": "repository"
-        },
-        {
-          "id": "doi:10.17615/58j5-x854",
-          "doi": "10.17615/58j5-x854",
-          "landing_page_url": "https://doi.org/10.17615/58j5-x854",
-          "pdf_url": null,
-          "is_oa": true,
-          "version": null,
-          "source": "UNC Libraries",
-          "source_type": "repository"
-        }
-      ],
-      "authorships": [
-        {
-          "position": "first",
-          "author_id": "A5043069598",
-          "display_name": "Til Stürmer‎",
-          "raw_author_name": "Sturmer, Til",
-          "orcid": "0000-0002-9204-7177"
-        },
-        {
-          "position": "middle",
-          "author_id": "A5009702241",
-          "display_name": "Carolyn T. Bramante",
-          "raw_author_name": "Bramante, Carolyn",
-          "orcid": "0000-0001-5858-2080"
-        },
-        {
-          "position": "middle",
-          "author_id": "A5053720298",
-          "display_name": "The N C Consortium",
-          "raw_author_name": "The N3C Consortium",
-          "orcid": null
-        },
-        {
-          "position": "middle",
-          "author_id": "A5086498395",
-          "display_name": "Rachel Wong",
-          "raw_author_name": "Wong, Rachel",
-          "orcid": "0000-0003-3108-7324"
-        },
-        {
-          "position": "middle",
-          "author_id": "A5115444811",
-          "display_name": "Margaret A Hall",
-          "raw_author_name": "Hall, Margaret A",
-          "orcid": "0000-0002-6263-440X"
-        },
-        {
-          "position": "middle",
-          "author_id": "A5116145435",
-          "display_name": "Samuel P. Soff",
-          "raw_author_name": "Soff, Samuel",
-          "orcid": "0000-0001-5851-6075"
-        },
-        {
-          "position": "middle",
-          "author_id": "A5029406825",
-          "display_name": "Jane E.B. Reusch",
-          "raw_author_name": "Reusch, Jane E B",
-          "orcid": "0000-0001-8620-1003"
-        },
-        {
-          "position": "middle",
-          "author_id": "A5015377962",
-          "display_name": "Yun Jae Yoo",
-          "raw_author_name": "Yoo, Yun Jae",
-          "orcid": "0000-0003-2144-8480"
-        },
-        {
-          "position": "middle",
-          "author_id": "A5022550153",
-          "display_name": "Richard A. Moffitt",
-          "raw_author_name": "Moffitt, Richard",
-          "orcid": "0000-0003-2723-5902"
-        },
-        {
-          "position": "middle",
-          "author_id": "A5086417145",
-          "display_name": "M. Daniel Brannock",
-          "raw_author_name": "Brannock, Daniel",
-          "orcid": "0000-0001-8095-547X"
-        },
-        {
-          "position": "middle",
-          "author_id": "A5080035458",
-          "display_name": "Zachary Butzin-Dozier",
-          "raw_author_name": "Butzin-Dozier, Zachary",
-          "orcid": "0000-0001-6419-0008"
-        },
-        {
-          "position": "last",
-          "author_id": "A5077107233",
-          "display_name": "Jared D. Huling",
-          "raw_author_name": "Huling, Jared Davis",
-          "orcid": "0000-0003-0670-4845"
         }
       ],
       "cited_by_count": 0,
@@ -8240,6 +8172,16 @@
           "source_type": "repository"
         },
         {
+          "id": "pmh:cdr.lib.unc.edu:p5548760c",
+          "doi": null,
+          "landing_page_url": "https://doi.org/10.17615/7x87-z790",
+          "pdf_url": "https://cdr.lib.unc.edu/downloads/rj430m17k",
+          "is_oa": true,
+          "version": "submittedVersion",
+          "source": "Carolina Digital Repository (University of North Carolina at Chapel Hill)",
+          "source_type": "repository"
+        },
+        {
           "id": "pmh:oai:europepmc.org:11516116",
           "doi": null,
           "landing_page_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/12707300",
@@ -8257,6 +8199,16 @@
           "is_oa": true,
           "version": "submittedVersion",
           "source": "PubMed Central",
+          "source_type": "repository"
+        },
+        {
+          "id": "doi:10.17615/7x87-z790",
+          "doi": "10.17615/7x87-z790",
+          "landing_page_url": "https://doi.org/10.17615/7x87-z790",
+          "pdf_url": null,
+          "is_oa": true,
+          "version": null,
+          "source": "UNC Libraries",
           "source_type": "repository"
         }
       ],
@@ -8365,168 +8317,6 @@
       "is_paratext": false
     },
     {
-      "id": "W4417223282",
-      "doi": "10.17615/7x87-z790",
-      "title": "The Effect of COVID‐19 on Incident Diabetes in Pediatric Patients: Findings From the National COVID‐19 Cohort Collaborative (N3C)",
-      "publication_year": 2025,
-      "publication_date": "2025-12-11",
-      "type": "article",
-      "pmid": null,
-      "pmcid": null,
-      "primary_location": {
-        "id": "pmh:cdr.lib.unc.edu:p5548760c",
-        "doi": null,
-        "landing_page_url": "https://doi.org/10.17615/7x87-z790",
-        "pdf_url": "https://cdr.lib.unc.edu/downloads/rj430m17k",
-        "is_oa": true,
-        "version": "submittedVersion",
-        "source": "Carolina Digital Repository (University of North Carolina at Chapel Hill)",
-        "source_type": "repository"
-      },
-      "best_oa_location": {
-        "id": "pmh:cdr.lib.unc.edu:p5548760c",
-        "doi": null,
-        "landing_page_url": "https://doi.org/10.17615/7x87-z790",
-        "pdf_url": "https://cdr.lib.unc.edu/downloads/rj430m17k",
-        "is_oa": true,
-        "version": "submittedVersion",
-        "source": "Carolina Digital Repository (University of North Carolina at Chapel Hill)",
-        "source_type": "repository"
-      },
-      "locations": [
-        {
-          "id": "pmh:cdr.lib.unc.edu:p5548760c",
-          "doi": null,
-          "landing_page_url": "https://doi.org/10.17615/7x87-z790",
-          "pdf_url": "https://cdr.lib.unc.edu/downloads/rj430m17k",
-          "is_oa": true,
-          "version": "submittedVersion",
-          "source": "Carolina Digital Repository (University of North Carolina at Chapel Hill)",
-          "source_type": "repository"
-        },
-        {
-          "id": "doi:10.17615/7x87-z790",
-          "doi": "10.17615/7x87-z790",
-          "landing_page_url": "https://doi.org/10.17615/7x87-z790",
-          "pdf_url": null,
-          "is_oa": true,
-          "version": null,
-          "source": "UNC Libraries",
-          "source_type": "repository"
-        }
-      ],
-      "authorships": [
-        {
-          "position": "first",
-          "author_id": "A5029406825",
-          "display_name": "Jane E.B. Reusch",
-          "raw_author_name": "Reusch, Jane",
-          "orcid": "0000-0001-8620-1003"
-        },
-        {
-          "position": "middle",
-          "author_id": "A5080035458",
-          "display_name": "Zachary Butzin-Dozier",
-          "raw_author_name": "Butzin-Dozier, Zachary",
-          "orcid": "0000-0001-6419-0008"
-        },
-        {
-          "position": "middle",
-          "author_id": "A5077107233",
-          "display_name": "Jared D. Huling",
-          "raw_author_name": "Huling, Jared D.",
-          "orcid": "0000-0003-0670-4845"
-        },
-        {
-          "position": "middle",
-          "author_id": "A5086498395",
-          "display_name": "Rachel Wong",
-          "raw_author_name": "Wong, Rachel",
-          "orcid": "0000-0003-3108-7324"
-        },
-        {
-          "position": "middle",
-          "author_id": "A5040182038",
-          "display_name": "John B. Buse",
-          "raw_author_name": "Buse, John B.",
-          "orcid": "0000-0002-9723-3876"
-        },
-        {
-          "position": "middle",
-          "author_id": "A5072378317",
-          "display_name": "Hsin‐Chieh Yeh",
-          "raw_author_name": "Yeh, Hsin-Chieh",
-          "orcid": "0000-0002-5738-0652"
-        },
-        {
-          "position": "middle",
-          "author_id": "A5017119016",
-          "display_name": "Talia D. Wiggen",
-          "raw_author_name": "Wiggen, Talia",
-          "orcid": "0000-0002-5234-3238"
-        },
-        {
-          "position": "middle",
-          "author_id": "A5045795759",
-          "display_name": "Steve Johnson",
-          "raw_author_name": "Johnson, Steven G.",
-          "orcid": "0000-0002-2983-6384"
-        },
-        {
-          "position": "middle",
-          "author_id": "A5043069598",
-          "display_name": "Til Stürmer‎",
-          "raw_author_name": "Stürmer, Til",
-          "orcid": "0000-0002-9204-7177"
-        },
-        {
-          "position": "middle",
-          "author_id": "A5111306521",
-          "display_name": "Lindsey E. Turner",
-          "raw_author_name": "Turner, Lindsey E.",
-          "orcid": "0000-0003-2839-901X"
-        },
-        {
-          "position": "middle",
-          "author_id": "A5009702241",
-          "display_name": "Carolyn T. Bramante",
-          "raw_author_name": "Bramante, Carolyn T.",
-          "orcid": "0000-0001-5858-2080"
-        },
-        {
-          "position": "middle",
-          "author_id": "A5085983888",
-          "display_name": "Kenneth J. Wilkins",
-          "raw_author_name": "Wilkins, Kenneth J.",
-          "orcid": "0000-0003-0531-7165"
-        },
-        {
-          "position": "middle",
-          "author_id": "A5108947425",
-          "display_name": "N C Consortium",
-          "raw_author_name": "N3C Consortium",
-          "orcid": null
-        },
-        {
-          "position": "last",
-          "author_id": null,
-          "display_name": "Hall, Margaret A.",
-          "raw_author_name": "Hall, Margaret A.",
-          "orcid": null
-        }
-      ],
-      "cited_by_count": 0,
-      "counts_by_year": [],
-      "biblio": {
-        "volume": null,
-        "issue": null,
-        "first_page": null,
-        "last_page": null
-      },
-      "is_retracted": false,
-      "is_paratext": false
-    },
-    {
       "id": "W7124422752",
       "doi": "10.1093/ofid/ofaf731",
       "title": "HIV Status and COVID-19 Treatment Disparities in the US National Clinical Cohort Collaborative",
@@ -8584,6 +8374,26 @@
           "is_oa": true,
           "version": "submittedVersion",
           "source": "PubMed Central",
+          "source_type": "repository"
+        },
+        {
+          "id": "pmh:cdr.lib.unc.edu:2227n539w",
+          "doi": null,
+          "landing_page_url": "https://doi.org/10.17615/hymg-0n25",
+          "pdf_url": null,
+          "is_oa": true,
+          "version": "submittedVersion",
+          "source": "Carolina Digital Repository (University of North Carolina at Chapel Hill)",
+          "source_type": "repository"
+        },
+        {
+          "id": "doi:10.17615/hymg-0n25",
+          "doi": "10.17615/hymg-0n25",
+          "landing_page_url": "https://doi.org/10.17615/hymg-0n25",
+          "pdf_url": null,
+          "is_oa": true,
+          "version": null,
+          "source": "UNC Libraries",
           "source_type": "repository"
         }
       ],
@@ -8701,175 +8511,6 @@
         "issue": "1",
         "first_page": "ofaf731",
         "last_page": "ofaf731"
-      },
-      "is_retracted": false,
-      "is_paratext": false
-    },
-    {
-      "id": "W7125409780",
-      "doi": "10.17615/hymg-0n25",
-      "title": "HIV Status and COVID-19 Treatment Disparities in the US National Clinical Cohort Collaborative",
-      "publication_year": 2026,
-      "publication_date": "2026-01-22",
-      "type": "article",
-      "pmid": null,
-      "pmcid": null,
-      "primary_location": {
-        "id": "pmh:cdr.lib.unc.edu:2227n539w",
-        "doi": null,
-        "landing_page_url": "https://doi.org/10.17615/hymg-0n25",
-        "pdf_url": null,
-        "is_oa": true,
-        "version": "submittedVersion",
-        "source": "Carolina Digital Repository (University of North Carolina at Chapel Hill)",
-        "source_type": "repository"
-      },
-      "best_oa_location": {
-        "id": "pmh:cdr.lib.unc.edu:2227n539w",
-        "doi": null,
-        "landing_page_url": "https://doi.org/10.17615/hymg-0n25",
-        "pdf_url": null,
-        "is_oa": true,
-        "version": "submittedVersion",
-        "source": "Carolina Digital Repository (University of North Carolina at Chapel Hill)",
-        "source_type": "repository"
-      },
-      "locations": [
-        {
-          "id": "pmh:cdr.lib.unc.edu:2227n539w",
-          "doi": null,
-          "landing_page_url": "https://doi.org/10.17615/hymg-0n25",
-          "pdf_url": null,
-          "is_oa": true,
-          "version": "submittedVersion",
-          "source": "Carolina Digital Repository (University of North Carolina at Chapel Hill)",
-          "source_type": "repository"
-        },
-        {
-          "id": "doi:10.17615/hymg-0n25",
-          "doi": "10.17615/hymg-0n25",
-          "landing_page_url": "https://doi.org/10.17615/hymg-0n25",
-          "pdf_url": null,
-          "is_oa": true,
-          "version": null,
-          "source": "UNC Libraries",
-          "source_type": "repository"
-        }
-      ],
-      "authorships": [
-        {
-          "position": "first",
-          "author_id": "A5070820216",
-          "display_name": "Sandra E. Safo",
-          "raw_author_name": "Safo, Sandra E",
-          "orcid": "0000-0001-9593-4778"
-        },
-        {
-          "position": "middle",
-          "author_id": "A5058772437",
-          "display_name": "Marlene Camacho‐Rivera",
-          "raw_author_name": "Camacho-Rivera, Marlene",
-          "orcid": "0000-0003-2343-2941"
-        },
-        {
-          "position": "middle",
-          "author_id": "A5116074964",
-          "display_name": "Emmanuel Nazaire Essam Nkodo",
-          "raw_author_name": "Nkodo, Emmanuel Nazaire Essam",
-          "orcid": "0009-0006-4388-8398"
-        },
-        {
-          "position": "middle",
-          "author_id": "A5002778123",
-          "display_name": "Nada A. Fadul",
-          "raw_author_name": "Fadul, Nada",
-          "orcid": "0000-0001-5022-9063"
-        },
-        {
-          "position": "middle",
-          "author_id": "A5056664137",
-          "display_name": "Alfred Jerrod Anzalone",
-          "raw_author_name": "Anzalone, Alfred Jerrod",
-          "orcid": "0000-0002-3212-7845"
-        },
-        {
-          "position": "middle",
-          "author_id": "A5117249010",
-          "display_name": "Pooja Maheria",
-          "raw_author_name": "Maheria, Pooja",
-          "orcid": "0009-0003-8462-9323"
-        },
-        {
-          "position": "middle",
-          "author_id": "A5080035458",
-          "display_name": "Zachary Butzin-Dozier",
-          "raw_author_name": "Butzin-Dozier, Zachary",
-          "orcid": "0000-0001-6419-0008"
-        },
-        {
-          "position": "middle",
-          "author_id": "A5056366854",
-          "display_name": "Shukri A. Hassan",
-          "raw_author_name": "Hassan, Shukri A",
-          "orcid": "0000-0001-6732-9263"
-        },
-        {
-          "position": "middle",
-          "author_id": "A5002618601",
-          "display_name": "Rena C. Patel",
-          "raw_author_name": "Patel, Rena C",
-          "orcid": "0000-0001-9893-5856"
-        },
-        {
-          "position": "middle",
-          "author_id": "A5100417629",
-          "display_name": "Dongmei Li",
-          "raw_author_name": "Li, Dongmei",
-          "orcid": "0000-0003-3819-355X"
-        },
-        {
-          "position": "middle",
-          "author_id": "A5085274034",
-          "display_name": "Eric G. Hurwitz",
-          "raw_author_name": "Hurwitz, Eric",
-          "orcid": "0000-0002-6581-7754"
-        },
-        {
-          "position": "middle",
-          "author_id": "A5123249596",
-          "display_name": "Kaylyn Kirksey",
-          "raw_author_name": "Kirksey, Kaylyn",
-          "orcid": "0009-0002-3360-6415"
-        },
-        {
-          "position": "middle",
-          "author_id": "A5123621713",
-          "display_name": "Jessica Y Islam",
-          "raw_author_name": "Islam, Jessica Y",
-          "orcid": null
-        },
-        {
-          "position": "middle",
-          "author_id": null,
-          "display_name": "Sun, Jing",
-          "raw_author_name": "Sun, Jing",
-          "orcid": null
-        },
-        {
-          "position": "last",
-          "author_id": "A5050612973",
-          "display_name": "Cara D Varley",
-          "raw_author_name": "Varley, Cara D",
-          "orcid": "0000-0003-3209-4489"
-        }
-      ],
-      "cited_by_count": 0,
-      "counts_by_year": [],
-      "biblio": {
-        "volume": null,
-        "issue": null,
-        "first_page": null,
-        "last_page": null
       },
       "is_retracted": false,
       "is_paratext": false
@@ -9088,10 +8729,10 @@
         },
         {
           "position": "middle",
-          "author_id": "A5135755150",
+          "author_id": "A5136221094",
           "display_name": "Andrew Mertens",
           "raw_author_name": "Andrew Mertens",
-          "orcid": null
+          "orcid": "0000-0002-1050-6721"
         },
         {
           "position": "last",
@@ -9608,10 +9249,10 @@
         },
         {
           "position": "middle",
-          "author_id": "A5140222045",
+          "author_id": "A5044934375",
           "display_name": "John M. Colford",
           "raw_author_name": "John M. Colford",
-          "orcid": null
+          "orcid": "0000-0002-3288-6956"
         },
         {
           "position": "middle",
@@ -9924,10 +9565,10 @@
         },
         {
           "position": "middle",
-          "author_id": "A5140222045",
+          "author_id": "A5044934375",
           "display_name": "John M. Colford",
           "raw_author_name": "John M. Colford",
-          "orcid": null
+          "orcid": "0000-0002-3288-6956"
         },
         {
           "position": "middle",
@@ -9952,10 +9593,10 @@
         },
         {
           "position": "middle",
-          "author_id": "A5133827022",
-          "display_name": "Jane Reusch",
+          "author_id": "A5029406825",
+          "display_name": "Jane E.B. Reusch",
           "raw_author_name": "Jane Reusch",
-          "orcid": null
+          "orcid": "0000-0001-8620-1003"
         },
         {
           "position": "middle",
@@ -10207,16 +9848,16 @@
         {
           "position": "middle",
           "author_id": "A5021336770",
-          "display_name": "Jessica Anne Grembi",
+          "display_name": "Jessica A. Grembi",
           "raw_author_name": "Jessica A Grembi",
           "orcid": "0000-0001-6142-4913"
         },
         {
           "position": "middle",
-          "author_id": "A5103161982",
+          "author_id": "A5072337131",
           "display_name": "Kaniz Jannat",
           "raw_author_name": "Kaniz Jannat",
-          "orcid": "0000-0002-5032-5327"
+          "orcid": "0000-0002-2993-1955"
         },
         {
           "position": "middle",
@@ -10357,175 +9998,6 @@
       "is_paratext": false
     },
     {
-      "id": "W7172207643",
-      "doi": "10.17615/3br4-ep29",
-      "title": "Racial, ethnic, and regional disparities in HIV testing during the COVID-19 pandemic in the USA: a nationwide, retrospective, observational study using National Clinical Cohort Collaborative data",
-      "publication_year": 2026,
-      "publication_date": "2026-08-02",
-      "type": "article",
-      "pmid": null,
-      "pmcid": null,
-      "primary_location": {
-        "id": "pmh:cdr.lib.unc.edu:8w32rn67r",
-        "doi": null,
-        "landing_page_url": "https://cdr.lib.unc.edu/downloads/j3860q53s",
-        "pdf_url": null,
-        "is_oa": false,
-        "version": "submittedVersion",
-        "source": "Carolina Digital Repository (University of North Carolina at Chapel Hill)",
-        "source_type": "repository"
-      },
-      "best_oa_location": {
-        "id": "doi:10.17615/3br4-ep29",
-        "doi": "10.17615/3br4-ep29",
-        "landing_page_url": "https://doi.org/10.17615/3br4-ep29",
-        "pdf_url": null,
-        "is_oa": true,
-        "version": null,
-        "source": "UNC Libraries",
-        "source_type": "repository"
-      },
-      "locations": [
-        {
-          "id": "pmh:cdr.lib.unc.edu:8w32rn67r",
-          "doi": null,
-          "landing_page_url": "https://cdr.lib.unc.edu/downloads/j3860q53s",
-          "pdf_url": null,
-          "is_oa": false,
-          "version": "submittedVersion",
-          "source": "Carolina Digital Repository (University of North Carolina at Chapel Hill)",
-          "source_type": "repository"
-        },
-        {
-          "id": "doi:10.17615/3br4-ep29",
-          "doi": "10.17615/3br4-ep29",
-          "landing_page_url": "https://doi.org/10.17615/3br4-ep29",
-          "pdf_url": null,
-          "is_oa": true,
-          "version": null,
-          "source": "UNC Libraries",
-          "source_type": "repository"
-        }
-      ],
-      "authorships": [
-        {
-          "position": "first",
-          "author_id": "A5042538268",
-          "display_name": "Duolan Han",
-          "raw_author_name": "Han, Duolan",
-          "orcid": null
-        },
-        {
-          "position": "middle",
-          "author_id": "A5144238643",
-          "display_name": "Jing Sun",
-          "raw_author_name": "Sun, Jing",
-          "orcid": null
-        },
-        {
-          "position": "middle",
-          "author_id": "A5050612973",
-          "display_name": "Cara D Varley",
-          "raw_author_name": "Varley, Cara D",
-          "orcid": "0000-0003-3209-4489"
-        },
-        {
-          "position": "middle",
-          "author_id": "A5080035458",
-          "display_name": "Zachary Butzin-Dozier",
-          "raw_author_name": "Butzin-Dozier, Zachary",
-          "orcid": "0000-0001-6419-0008"
-        },
-        {
-          "position": "middle",
-          "author_id": "A5070820216",
-          "display_name": "Sandra E. Safo",
-          "raw_author_name": "Safo, Sandra E",
-          "orcid": "0000-0001-9593-4778"
-        },
-        {
-          "position": "middle",
-          "author_id": "A5065274638",
-          "display_name": "Bohdan Nosyk",
-          "raw_author_name": "Nosyk, Bohdan",
-          "orcid": "0000-0003-2513-3718"
-        },
-        {
-          "position": "middle",
-          "author_id": "A5085274034",
-          "display_name": "Eric G. Hurwitz",
-          "raw_author_name": "Hurwitz, Eric",
-          "orcid": "0000-0002-6581-7754"
-        },
-        {
-          "position": "middle",
-          "author_id": "A5058772437",
-          "display_name": "Marlene Camacho‐Rivera",
-          "raw_author_name": "Camacho-Rivera, Marlene",
-          "orcid": "0000-0003-2343-2941"
-        },
-        {
-          "position": "middle",
-          "author_id": "A5144224637",
-          "display_name": "Xiao Zang",
-          "raw_author_name": "Zang, Xiao",
-          "orcid": null
-        },
-        {
-          "position": "middle",
-          "author_id": "A5037363029",
-          "display_name": "Jerrod Anzalone",
-          "raw_author_name": "Anzalone, Jerrod",
-          "orcid": null
-        },
-        {
-          "position": "middle",
-          "author_id": "A5100417629",
-          "display_name": "Dongmei Li",
-          "raw_author_name": "Li, Dongmei",
-          "orcid": "0000-0003-3819-355X"
-        },
-        {
-          "position": "middle",
-          "author_id": "A5002778123",
-          "display_name": "Nada A. Fadul",
-          "raw_author_name": "Fadul, Nada",
-          "orcid": "0000-0001-5022-9063"
-        },
-        {
-          "position": "middle",
-          "author_id": "A5144227871",
-          "display_name": "National Clinical Cohort Collaborative Consortium",
-          "raw_author_name": "National Clinical Cohort Collaborative Consortium",
-          "orcid": null
-        },
-        {
-          "position": "middle",
-          "author_id": "A5002618601",
-          "display_name": "Rena C. Patel",
-          "raw_author_name": "Patel, Rena C",
-          "orcid": "0000-0001-9893-5856"
-        },
-        {
-          "position": "last",
-          "author_id": "A5104163838",
-          "display_name": "Haishan Yang",
-          "raw_author_name": "Yang, Haishan",
-          "orcid": "0000-0001-9441-8990"
-        }
-      ],
-      "cited_by_count": 0,
-      "counts_by_year": [],
-      "biblio": {
-        "volume": null,
-        "issue": null,
-        "first_page": null,
-        "last_page": null
-      },
-      "is_retracted": false,
-      "is_paratext": false
-    },
-    {
       "id": "W7196923174",
       "doi": "10.17615/pg75-rh65",
       "title": "COVID-19 vaccination timing, relative to acute COVID-19, and subsequent risk of long COVID",
@@ -10625,10 +10097,10 @@
         },
         {
           "position": "middle",
-          "author_id": "A5140222045",
+          "author_id": "A5044934375",
           "display_name": "John M. Colford",
           "raw_author_name": "Colford, John M.",
-          "orcid": null
+          "orcid": "0000-0002-3288-6956"
         },
         {
           "position": "middle",
@@ -10972,8 +10444,8 @@
         },
         {
           "position": "middle",
-          "author_id": "A5137743596",
-          "display_name": "Anjali Sharathkumar",
+          "author_id": "A5037247838",
+          "display_name": "Anjali Alatkar Sharathkumar",
           "raw_author_name": "Anjali Sharathkumar",
           "orcid": "0000-0003-4574-6175"
         },
@@ -11035,10 +10507,10 @@
         },
         {
           "position": "middle",
-          "author_id": "A5143564026",
+          "author_id": "A5091900706",
           "display_name": "Christine Suver",
           "raw_author_name": "Christine Suver",
-          "orcid": null
+          "orcid": "0000-0002-2986-385X"
         },
         {
           "position": "middle",
@@ -11070,8 +10542,8 @@
         },
         {
           "position": "middle",
-          "author_id": "A5125918677",
-          "display_name": "Cliff Takemoto",
+          "author_id": "A5109409767",
+          "display_name": "Cliff M. Takemoto",
           "raw_author_name": "Cliff Takemoto",
           "orcid": null
         },
@@ -11112,8 +10584,8 @@
         },
         {
           "position": "middle",
-          "author_id": "A5135670156",
-          "display_name": "Eilis Boudreau",
+          "author_id": "A5023894034",
+          "display_name": "Eilis Ann Boudreau",
           "raw_author_name": "Eilis Boudreau",
           "orcid": null
         },
@@ -11154,7 +10626,7 @@
         },
         {
           "position": "middle",
-          "author_id": "A5143564243",
+          "author_id": "A5072733996",
           "display_name": "Federico Mariona",
           "raw_author_name": "Federico Mariona",
           "orcid": null
@@ -11168,10 +10640,10 @@
         },
         {
           "position": "middle",
-          "author_id": "A5135689226",
-          "display_name": "George Sokos",
+          "author_id": "A5059177985",
+          "display_name": "George G. Sokos",
           "raw_author_name": "George Sokos",
-          "orcid": null
+          "orcid": "0000-0001-7421-0148"
         },
         {
           "position": "middle",
@@ -11210,10 +10682,10 @@
         },
         {
           "position": "middle",
-          "author_id": "A5143537801",
-          "display_name": "Jami Pincavitch",
+          "author_id": "A5040862197",
+          "display_name": "Jami D. Pincavitch",
           "raw_author_name": "Jami Pincavitch",
-          "orcid": null
+          "orcid": "0000-0003-1701-0005"
         },
         {
           "position": "middle",
@@ -11245,10 +10717,10 @@
         },
         {
           "position": "middle",
-          "author_id": "A5138804296",
-          "display_name": "Joel Gagnier",
+          "author_id": "A5070094081",
+          "display_name": "Joel Joseph Gagnier",
           "raw_author_name": "Joel Gagnier",
-          "orcid": null
+          "orcid": "0000-0002-3162-3935"
         },
         {
           "position": "middle",
@@ -11364,10 +10836,10 @@
         },
         {
           "position": "middle",
-          "author_id": "A5134856440",
-          "display_name": "Lee Pyles",
+          "author_id": "A5104062516",
+          "display_name": "Lee A. Pyles",
           "raw_author_name": "Lee Pyles",
-          "orcid": null
+          "orcid": "0000-0003-1113-1092"
         },
         {
           "position": "middle",
@@ -11406,8 +10878,8 @@
         },
         {
           "position": "middle",
-          "author_id": "A5125993406",
-          "display_name": "Mary Emmett",
+          "author_id": "A5026968199",
+          "display_name": "Mary S. Emmett",
           "raw_author_name": "Mary Emmett",
           "orcid": null
         },
@@ -11523,10 +10995,10 @@
         },
         {
           "position": "middle",
-          "author_id": "A5152577836",
-          "display_name": "Melissa A Haendel",
+          "author_id": "A5064320417",
+          "display_name": "Melissa Anne Haendel",
           "raw_author_name": "Haendel, Melissa A",
-          "orcid": null
+          "orcid": "0000-0001-9114-8737"
         },
         {
           "position": "middle",
@@ -11579,17 +11051,17 @@
         },
         {
           "position": "middle",
-          "author_id": "A5136099939",
-          "display_name": "Ahmed Sabit",
+          "author_id": "A5091618924",
+          "display_name": "Ahmed H. Sabit",
           "raw_author_name": "Sabit, Ahmed",
-          "orcid": null
+          "orcid": "0000-0002-6535-0672"
         },
         {
           "position": "middle",
-          "author_id": "A5152761076",
-          "display_name": "Eric Hurwitz",
+          "author_id": "A5085274034",
+          "display_name": "Eric G. Hurwitz",
           "raw_author_name": "Hurwitz, Eric",
-          "orcid": null
+          "orcid": "0000-0002-6581-7754"
         },
         {
           "position": "middle",
