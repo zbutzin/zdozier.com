@@ -83,7 +83,8 @@ def fixture_works():
     ]
 
 
-def write_fixture(base, works=None, grants=None, software=True, run_report=True, extra_cv=None):
+def write_fixture(base, works=None, grants=None, software=True, run_report=True, extra_cv=None,
+                  citation_metrics=None):
     content = os.path.join(base, "content")
     data = os.path.join(base, "data")
     os.makedirs(content)
@@ -118,6 +119,8 @@ def write_fixture(base, works=None, grants=None, software=True, run_report=True,
           "skills": {"technical": ["R"], "languages": ["Spanish"]}}
     if extra_cv:
         cv.update(extra_cv)
+    if citation_metrics is not None:
+        site["site"]["show_citation_metrics"] = citation_metrics
     with open(os.path.join(content, "site.yml"), "w") as fh:
         yaml.safe_dump(site, fh)
     with open(os.path.join(content, "publications.yml"), "w") as fh:
@@ -173,6 +176,34 @@ def tags_of(html):
     return p.tags
 
 
+class TextCollector(HTMLParser):
+    """Text nodes a reader sees or a screen reader announces (not scripts,
+    styles, or attribute values)."""
+
+    def __init__(self):
+        HTMLParser.__init__(self, convert_charrefs=True)
+        self.parts = []
+        self.skip = 0
+
+    def handle_starttag(self, tag, attrs):
+        if tag in ("script", "style"):
+            self.skip += 1
+
+    def handle_endtag(self, tag):
+        if tag in ("script", "style") and self.skip:
+            self.skip -= 1
+
+    def handle_data(self, data):
+        if not self.skip:
+            self.parts.append(data)
+
+
+def visible_text(html):
+    p = TextCollector()
+    p.feed(html)
+    return " ".join(p.parts)
+
+
 def read(path):
     with open(path, encoding="utf-8") as fh:
         return fh.read()
@@ -189,6 +220,13 @@ class BuildTestBase(unittest.TestCase):
         out = os.path.join(base, "site")
         rc = build.main(["--content-dir", content, "--data-dir", data, "--out", out, "--now", NOW, "--quiet"])
         return base, out, rc
+
+    def assertNoCitationMetrics(self, html, where):
+        text = visible_text(html).lower()
+        for word in ("cited", "h-index", "citation", "i10"):
+            self.assertNotIn(word, text, "%s shows %r" % (where, word))
+        for raw in ('class="stats"', "stat-row", "viz-spark", "Cited by", "At a glance"):
+            self.assertNotIn(raw, html, "%s contains %r" % (where, raw))
 
 
 class TestFullBuild(BuildTestBase):
@@ -298,7 +336,7 @@ class TestFullBuild(BuildTestBase):
         self.assertIn("<i>Diabetes, Obesity and Metabolism</i>; preprint on <i>medRxiv</i>", pubs)
         self.assertIn('<span class="tag tag-status">Accepted</span>', pubs)
         self.assertIn(">medRxiv 2023</a>", pubs)
-        self.assertIn(">Cited by 15<", pubs)
+        self.assertNotIn("Cited by", pubs)  # site.show_citation_metrics is off by default
         self.assertIn("My contribution", pubs)
         self.assertIn('<svg class="viz viz-columns"', pubs)
         # The hidden data table sits in a clipped div: a <table> ignores the
@@ -545,7 +583,7 @@ class TestReviewFixes(BuildTestBase):
 
     def test_sync_labels_update_in_the_browser(self):
         home = self.page("index.html")
-        self.assertIn('<span data-synced="2026-10-06T14:02:00Z" data-cap>Synced 3 days ago</span>', home)
+        self.assertIn('<span class="pill-text" data-synced="2026-10-06T14:02:00Z">synced 3 days ago</span>', home)
         pubs = self.page("publications/index.html")
         self.assertIn('<span data-synced="2026-10-06T14:02:00Z">synced 3 days ago</span>', pubs)
         js = read(os.path.join(self.out, "js", "site.js"))
@@ -582,15 +620,6 @@ class TestReviewFixes(BuildTestBase):
         self.assertIn("<span>R</span>", hal)
         self.assertNotIn("HTML", hal)
 
-    def test_stat_strip_counts_works_not_publications(self):
-        home = self.page("index.html")
-        self.assertIn("<dt>Works</dt>", home)
-        self.assertNotIn("<dt>Publications</dt>", home)
-        self.assertIn('<dd class="stat-note">6 first or senior author</dd>', home)
-        self.assertIn("Work counts from the list on this site, including 1 preprint or "
-                      "manuscript under review.", home)
-        self.assertIn('per year, <span class="nowrap">2023–2026</span>', home)
-
     def test_in_press_item_shows_no_year(self):
         pubs = self.page("publications/index.html")
         li = pubs.split('id="pub-manual-inpress"', 1)[1].split("</li>", 1)[0]
@@ -624,6 +653,74 @@ class TestReviewFixes(BuildTestBase):
         self.assertIn('<td class="num"><span class="nowrap">Oct 6, 2026,</span> <span class="nowrap">14:00 UTC</span></td>', col)
         css = read(os.path.join(self.out, "css", "site.css"))
         self.assertIn('counter(page) " of " counter(pages)', css)
+
+
+class TestCitationMetricsSetting(BuildTestBase):
+    """site.show_citation_metrics (October 2026): off by default, so no page
+    shows citation counts or the h-index; true brings back the home stat
+    strip, the Publications summary sentence, and the per-paper badge."""
+
+    @classmethod
+    def setUpClass(cls):
+        cls.off_base, cls.off, cls.off_rc = cls.build_fixture()
+        cls.on_base, cls.on, cls.on_rc = cls.build_fixture(citation_metrics=True)
+
+    @classmethod
+    def tearDownClass(cls):
+        shutil.rmtree(cls.off_base, ignore_errors=True)
+        shutil.rmtree(cls.on_base, ignore_errors=True)
+
+    def test_both_build(self):
+        self.assertEqual((self.off_rc, self.on_rc), (0, 0))
+
+    def test_off_by_default_on_every_page(self):
+        for rel in self.PAGES + ["feed.xml"]:
+            self.assertNoCitationMetrics(read(os.path.join(self.off, rel)), rel)
+
+    def test_off_home_runs_from_hero_into_research(self):
+        home = read(os.path.join(self.off, "index.html"))
+        # No empty section, stray rule, or leftover heading where the strip was.
+        self.assertRegex(home, r'</div>\s*</section>\s*<section class="sec" aria-labelledby="research">')
+        self.assertNotIn("stats-title", home)
+        self.assertNotIn("stats-source", home)
+        css = read(os.path.join(self.off, "css", "site.css"))
+        self.assertIn(".hero + .sec { margin-top: 0; }", css)
+
+    def test_off_publications_keeps_counts_and_chart(self):
+        pubs = read(os.path.join(self.off, "publications", "index.html"))
+        self.assertIn('<p class="lede">6 works since 2010. 2 as first or senior author, 1 preprint or '
+                      "manuscript under review.</p>", pubs)
+        self.assertIn('<svg class="viz viz-columns"', pubs)
+        self.assertIn(">medRxiv 2023</a>", pubs)  # the other badges stay
+
+    def test_off_colophon_and_raw_exports(self):
+        col = read(os.path.join(self.off, "colophon", "index.html"))
+        self.assertIn('<td class="col-use">Discovery, venues, open access links</td>', col)
+        # Raw data keeps the counts.
+        exported = json.loads(read(os.path.join(self.off, "publications.json")))
+        self.assertIn(15, [w["cited_by"] for w in exported["works"]])
+
+    def test_on_renders_the_stat_strip(self):
+        home = read(os.path.join(self.on, "index.html"))
+        self.assertIn('<section class="stats" aria-labelledby="stats-title">', home)
+        for label in ("Works", "Citations", "h-index", "Active grants"):
+            self.assertIn("<dt>%s</dt>" % label, home)
+        self.assertNotIn("<dt>Publications</dt>", home)  # the count includes preprints
+        self.assertIn('<dd class="stat-value">313</dd>', home)
+        self.assertIn('<dd class="stat-note">2 first or senior author</dd>', home)
+        self.assertIn('<dd class="stat-note">i10-index 6</dd>', home)
+        self.assertIn("Work counts from the list on this site, including 1 preprint or "
+                      "manuscript under review.", home)
+        self.assertIn('<svg class="viz viz-spark"', home)
+        self.assertIn('per year, <span class="nowrap">2023–2026</span>', home)
+        self.assertIn('<span data-synced="2026-10-06T14:02:00Z" data-cap>Synced 3 days ago</span>', home)
+
+    def test_on_publications_and_colophon_show_citations(self):
+        pubs = read(os.path.join(self.on, "publications", "index.html"))
+        self.assertIn("1 preprint or manuscript under review. Cited 313 times, h-index 7 (OpenAlex).</p>", pubs)
+        self.assertIn(">Cited by 15<", pubs)
+        col = read(os.path.join(self.on, "colophon", "index.html"))
+        self.assertIn('<td class="col-use">Discovery, venues, open access links, citation counts, h-index</td>', col)
 
 
 class TestContentRules(unittest.TestCase):

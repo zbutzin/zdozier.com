@@ -410,6 +410,11 @@ main {
   padding-bottom: var(--s-7);
 }
 
+/* Without the stat strip (site.show_citation_metrics: false) the first
+   section follows the hero directly: the hero's bottom padding is the gap
+   above its rule, the same as between any two sections. */
+.hero + .sec { margin-top: 0; }
+
 .hero-name {
   font-size: clamp(2.3rem, 1.7rem + 2.4vw, var(--t-4xl));
   line-height: 1.04;

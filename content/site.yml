@@ -20,6 +20,10 @@ api:
 site:
   url: "https://zdozier.com"
   repo_url: "https://github.com/zbutzin/zdozier.com"
+  # true shows citation counts and the h-index: the home page stat strip, the
+  # Publications summary line, and a "Cited by N" link on each paper. The data
+  # is fetched either way.
+  show_citation_metrics: false
 
 # Person, links, research themes, and software selection (curated content).
 person:
@@ -43,6 +47,7 @@ person:
 # kind: stanford | orcid | openalex | scholar | github | email | cv | linkedin
 # A link with url: null is hidden until a URL is filled in.
 links:
+  - {label: "CV (PDF)", url: "/cv.pdf", kind: cv}
   - {label: "Stanford profile", url: "https://med.stanford.edu/profiles/zachary-dozier", kind: stanford}
   - {label: "ORCID", url: "https://orcid.org/0000-0001-6419-0008", kind: orcid}
   - {label: "OpenAlex", url: "https://openalex.org/A5080035458", kind: openalex}
@@ -50,7 +55,6 @@ links:
   - {label: "GitHub", url: "https://github.com/zbutzin", kind: github}
   - {label: "LinkedIn", url: null, kind: linkedin}
   - {label: "Email", url: "mailto:zdozier@stanford.edu", kind: email}
-  - {label: "CV (PDF)", url: "/cv.pdf", kind: cv}
 
 # Home page themes. Representative papers are pulled by topic id
 # (see content/publications.yml: topics), featured first, then most recent.

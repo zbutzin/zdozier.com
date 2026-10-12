@@ -64,6 +64,9 @@ SOURCE_LABELS = [
     ("reporter", "NIH RePORTER", "NIH grants"),
     ("github", "GitHub", "Public code repositories"),
 ]
+# The colophon's "Provides" text when site.show_citation_metrics is false: the
+# site then shows no citation counts, so the table does not list them.
+SOURCE_USE_NO_METRICS = {"openalex": "Discovery, venues, open access links"}
 
 ROLE_LABELS = {"first": "First author", "senior": "Senior author"}
 TYPE_LABELS = {"review": "Review", "conference": "Conference paper",
@@ -470,7 +473,7 @@ def oa_label(url):
     return "Free full text"
 
 
-def badges(w):
+def badges(w, show_cited=False):
     out = []
     if w.get("doi"):
         out.append({"label": "DOI", "url": doi_url(w["doi"]), "title": "doi:" + w["doi"]})
@@ -486,7 +489,7 @@ def badges(w):
         out.append({"label": "PubMed", "url": "https://pubmed.ncbi.nlm.nih.gov/%s/" % w["pmid"], "title": "PMID " + str(w["pmid"])})
     if w.get("code_url") and is_http(w["code_url"]):
         out.append({"label": "Code", "url": w["code_url"], "title": "Analysis code"})
-    if w.get("cited_by"):
+    if show_cited and w.get("cited_by"):
         n = int(w["cited_by"])
         url = None
         if w.get("openalex_id"):
@@ -495,7 +498,7 @@ def badges(w):
     return out
 
 
-def prepare_work(w, topic_labels):
+def prepare_work(w, topic_labels, show_cited=False):
     v = dict(w)
     v["anchor"] = work_anchor(w)
     v["link"] = doi_url(w.get("doi")) or (w.get("url") if is_http(w.get("url")) else None)
@@ -506,7 +509,7 @@ def prepare_work(w, topic_labels):
     v["apa_authors_html"] = authors_apa_html(w)
     v["venue_html"] = venue_html(w)
     v["venue_short_html"] = venue_short_html(w)
-    v["badges"] = badges(w)
+    v["badges"] = badges(w, show_cited)
     v["preprintish"] = is_preprintish(w)
     v["topic_list"] = [t for t in as_list(w.get("topics")) if t in topic_labels]
     kinds = ["type:%s" % (w.get("type") or "other"), "status:%s" % (w.get("status") or "published")]
@@ -827,7 +830,7 @@ def export_json(works, generated):
 # Model
 # --------------------------------------------------------------------------
 
-def sync_info(report, now):
+def sync_info(report, now, citation_metrics=False):
     report = as_dict(report)
     # "Synced" means the APIs were queried: use the fetch step's finish time.
     # A local merge from the committed snapshot (make offline) rewrites
@@ -837,6 +840,8 @@ def sync_info(report, now):
     rows = []
     known = set()
     for key, label, use in SOURCE_LABELS:
+        if not citation_metrics:
+            use = SOURCE_USE_NO_METRICS.get(key, use)
         s = as_dict(sources.get(key))
         known.add(key)
         if not s and sources:
@@ -1056,6 +1061,9 @@ def build_model(content_dir, data_dir, now):
 
     site = as_dict(site_yml.get("site"))
     site_url = (site.get("url") or "https://zdozier.com").rstrip("/")
+    # Off unless site.yml says true: no citation counts or h-index on any page
+    # (the data files and /publications.json still carry cited_by).
+    show_metrics = site.get("show_citation_metrics") is True
     person = as_dict(site_yml.get("person"))
     person.setdefault("name", "Zachary B. Dozier")
     person.setdefault("name_with_degrees", person["name"])
@@ -1071,7 +1079,7 @@ def build_model(content_dir, data_dir, now):
     raw_works = [as_dict(w) for w in as_list(pubs.get("works")) if as_dict(w).get("title")]
     raw_works = [w for w in raw_works if not w.get("hidden")]
     raw_works.sort(key=work_sort_key, reverse=True)
-    works = [prepare_work(w, topic_labels) for w in raw_works]
+    works = [prepare_work(w, topic_labels, show_metrics) for w in raw_works]
 
     today = now.date()
     show_amounts = bool(funding_yml.get("show_amounts")) and bool(grants_d.get("show_amounts", True))
@@ -1111,7 +1119,8 @@ def build_model(content_dir, data_dir, now):
             groups.append({"year": y, "works": []})
         groups[-1]["works"].append(w)
 
-    # Stats and charts.
+    # Stats and charts. The home stat strip and the citation sparkline are
+    # rendered only when show_metrics is true.
     m = metrics
     charted = [w for w in works if is_charted(w, today.year)]
     rows, earlier_rows = chart_window(per_year_rows(charted))
@@ -1153,7 +1162,7 @@ def build_model(content_dir, data_dir, now):
         team[grp] = [dict(as_dict(t), role_label=sentence_case_first(as_dict(t).get("role") or ""))
                      for t in as_list(team.get(grp)) if as_dict(t).get("name")]
 
-    sync = sync_info(report, now)
+    sync = sync_info(report, now, show_metrics)
 
     return {
         "now": now,
@@ -1179,6 +1188,7 @@ def build_model(content_dir, data_dir, now):
         "since_year": min(charted_years) if charted_years else None,
         "chart_earlier": earlier_note(earlier_rows),
         "metrics": m,
+        "show_citation_metrics": show_metrics,
         "stats": stats,
         "per_year": rows,
         "chart_wide": charts.pubs_per_year_svg(rows, compact=False, title_id="ppy-title", desc_id="ppy-desc"),

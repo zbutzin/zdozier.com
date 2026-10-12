@@ -4,7 +4,7 @@
 <div class="wrap">
   <header class="page-head">
     <h1>Publications</h1>
-    <p class="lede">{{ works|length }} works{% if since_year %} since {{ since_year }}{% endif %}. {{ n_lead }} as first or senior author{% if n_pre %}, {{ n_pre }} {{ 'preprint or manuscript' if n_pre == 1 else 'preprints or manuscripts' }} under review{% endif %}.{% if metrics.cited_by_count is not none %} Cited {{ metrics.cited_by_count|thousands }} times{% if metrics.h_index is not none %}, h-index {{ metrics.h_index }}{% endif %} (OpenAlex).{% endif %}</p>
+    <p class="lede">{{ works|length }} works{% if since_year %} since {{ since_year }}{% endif %}. {{ n_lead }} as first or senior author{% if n_pre %}, {{ n_pre }} {{ 'preprint or manuscript' if n_pre == 1 else 'preprints or manuscripts' }} under review{% endif %}.{% if show_citation_metrics and metrics.cited_by_count is not none %} Cited {{ metrics.cited_by_count|thousands }} times{% if metrics.h_index is not none %}, h-index {{ metrics.h_index }}{% endif %} (OpenAlex).{% endif %}</p>
     <p class="page-meta">Updated weekly from ORCID, OpenAlex, Crossref, and Europe PMC (<a href="/colophon/">{% if sync.iso %}<span data-synced="{{ sync.iso }}">{{ sync.label }}</span>{% else %}{{ sync.label }}{% endif %}</a>). Download as <a href="/publications.bib">BibTeX</a> or <a href="/publications.json">JSON</a>, or follow the <a href="/feed.xml">Atom feed</a>.</p>
   </header>
 

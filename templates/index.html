@@ -30,6 +30,7 @@
       <img src="/img/headshot-400.jpg" srcset="/img/headshot-400.jpg 400w, /img/headshot.jpg 800w" sizes="(min-width: 960px) 264px, 220px" width="400" height="400" alt="Portrait of {{ person.name }}" fetchpriority="high">
     </div>
   </section>
+  {% if show_citation_metrics %}
 
   <section class="stats" aria-labelledby="stats-title">
     <h2 class="sr-only" id="stats-title">At a glance</h2>
@@ -62,6 +63,7 @@
     </dl>
     <p class="stats-source">Work counts from the list on this site{% if n_pre %}, including {{ n_pre }} {{ 'preprint or manuscript' if n_pre == 1 else 'preprints or manuscripts' }} under review{% endif %}. Citations and <span class="nowrap">h-index</span> from <a href="https://openalex.org/">OpenAlex</a>. <a href="/colophon/">{% if sync.iso %}<span data-synced="{{ sync.iso }}" data-cap>{{ sync.label|cap }}</span>{% else %}{{ sync.label|cap }}{% endif %}</a>.</p>
   </section>
+  {% endif %}
 
   {% if themes %}
   <section class="sec" aria-labelledby="research">

@@ -280,14 +280,25 @@ tokens, and `mailto` values before they are stored or printed.
 - `/` Home: name, one-line research statement, affiliations, "Formerly published
   as" line, portrait (rounded rectangle, not a circle), short bio, link row
   (Stanford profile, ORCID, OpenAlex, Google Scholar if configured, GitHub,
-  Email, CV PDF). Stat strip (visible works, labeled "Works" because the count
-  includes preprints and manuscripts under review, with a note giving the
-  first/senior and preprint/under-review counts; citations, h-index, active
-  grants) with a small citations-per-year bar sparkline. Research themes (from
-  site.yml) each with 2 to 3 representative papers pulled by topic (featured
-  first, then most recent). Recent publications (5 newest, automatic). Current
-  funding (automatic). Software (automatic). Contact.
-- `/publications/`: summary line ("N works since <earliest public year>") +
+  Email, CV PDF). Research themes (from site.yml) each with 2 to 3
+  representative papers pulled by topic (featured first, then most recent).
+  Recent publications (5 newest, automatic). Current funding (automatic).
+  Software (automatic). Contact.
+- Citation metrics are hidden by default: `site.show_citation_metrics` in
+  `content/site.yml` (missing means false). When false, the home page has no
+  stat strip (the hero is followed directly by the first section, with the
+  usual section rule and spacing), the `/publications/` summary line gives
+  counts only, entries have no citations badge, and the colophon does not list
+  citation counts among what OpenAlex provides. `data/*.json` and
+  `/publications.json` keep `cited_by` either way. When true, the home page
+  adds a stat strip between the hero and Research (visible works, labeled
+  "Works" because the count includes preprints and manuscripts under review,
+  with a note giving the first/senior and preprint/under-review counts;
+  citations, h-index, active grants) with a small citations-per-year bar
+  sparkline, the summary line ends "Cited N times, h-index N (OpenAlex).",
+  and each entry gets a "Cited by N" badge.
+- `/publications/`: summary line ("N works since <earliest public year>. N as
+  first or senior author, N preprints or manuscripts under review.") +
   chart (publications per year, stacked first/senior vs co-author; same
   public-works rule as `metrics.by_year_role`, nothing dated after the
   current year; the latest year and the 7 before it, with a caption line
@@ -297,7 +308,8 @@ tokens, and `mailto` values before they are stored or printed.
   Each entry: title (links to DOI), authors (his name bold; long lists
   truncated APA-style with a "show all" toggle), venue (italic) + year, role
   tag for first/senior, status tag for preprint/accepted/under review, badges:
-  DOI, PDF (oa_url), preprint version(s), PubMed, code, citations count.
+  DOI, PDF (oa_url), preprint version(s), PubMed, code, citations count (only
+  with `show_citation_metrics: true`).
   Collapsible "My contribution" when `contribution` is set. Downloads:
   `/publications.bib` (BibTeX, all visible works), `/publications.json`.
 - `/funding/`: active and completed grants, automatic + manual.

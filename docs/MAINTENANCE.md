@@ -29,6 +29,7 @@ the files you edited (for example `git add content`), not `data/`.
 | Add a trainee | `content/cv.yml`: add `{name: "...", role: "..."}` under `trainees:` > `current:`. Move it to `former:` when they leave. |
 | Change the bio | `content/site.yml`: `person:` > `bio:` (home page) and `tagline:`. The CV summary is `summary_statement:` in `content/cv.yml`. |
 | Describe a code repository | `content/site.yml`: under `software:` > `descriptions:`, add `RepoName: "One plain sentence."`. It replaces the description from GitHub on the home page. To correct the language label (GitHub counts rendered HTML, so an R demo can show as "HTML"), add `RepoName: R` under `software:` > `languages:`. |
+| Show citation counts again | `content/site.yml`: under `site:`, set `show_citation_metrics: true`. This brings back the home page strip (works, citations, h-index, active grants), the citation sentence on the Publications page, and a "Cited by N" link on each paper. They are hidden while it is `false`. |
 | Add a paper the APIs cannot find | `content/publications.yml`: a DOI goes under `include_dois:`; a work with no DOI goes under `manual:` (copy an existing entry). |
 | Force a rebuild | github.com/zbutzin/zdozier.com > **Actions** > **Update site** > **Run workflow**. |
 | Preview locally | `make preview`, then open <http://localhost:8000> (Ctrl-C to stop). It builds from a scratch copy of `data/`, so `git status` stays clean. `make offline` and `make all` rewrite `data/*.json`; after using them, run `git checkout -- data` before `git pull` or committing. |
