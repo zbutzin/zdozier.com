@@ -1,6 +1,6 @@
 {
   "started": "2026-10-09T20:43:42Z",
-  "finished": "2026-10-12T01:39:55Z",
+  "finished": "2026-10-12T16:31:36Z",
   "ok": true,
   "sources": {
     "orcid": {
@@ -64,7 +64,9 @@
     "tripped": false,
     "previous": 40,
     "current": 40,
-    "max_drop": 0.15
+    "max_drop": 0.15,
+    "candidate": null,
+    "accepted": null
   },
   "counts": {
     "visible_works": 40,
@@ -229,8 +231,8 @@
     "finished": "2026-10-09T20:43:43Z"
   },
   "merge": {
-    "started": "2026-10-12T01:39:54Z",
-    "finished": "2026-10-12T01:39:55Z",
-    "today": "2026-10-11"
+    "started": "2026-10-12T16:31:35Z",
+    "finished": "2026-10-12T16:31:36Z",
+    "today": "2026-10-12"
   }
 }

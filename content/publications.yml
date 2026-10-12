@@ -115,13 +115,13 @@ same_as:
 overrides:
   # Peer-reviewed journal articles (original research), CV order
   "10.64898/2026.07.06.26357398":          # CV 1, Metformin (preprint; accepted)
+    group_author: "the National Clinical Cohort Collaborative (N3C) Consortium"   # medRxiv byline and the CV; Crossref and Europe PMC leave it out
     type: article                          # accepted journal article; the CV lists it under original research
     status: accepted
     status_note: "Diabetes, Obesity and Metabolism"
     topics: [covid, causal-ml]
     code_url: "https://github.com/zbutzin/LongCOVID"
   "10.1093/ofid/ofag560":                  # CV 2
-    authors_source: crossref               # the CV lists Crossref's full author list ("... Zhang, X. T."); the journal byline ends with the N3C group
     topics: [covid, hiv-id]
     contribution: "Supported causal inference considerations in the study design, analysis, and interpretation. I reviewed the manuscript and provided written feedback. I also provided insights regarding addressing heterogeneous healthcare utilization and COVID-19 sequelae in N3C."
   "10.1016/j.ebiom.2026.106382":           # CV 4, vaccination timing
@@ -204,13 +204,17 @@ overrides:
 
   # Manuscripts under review (CV), all medRxiv preprints
   "10.64898/2026.02.27.26347274":          # CV under review 2, IL-6 receptor antagonists
+    group_author: "the National Clinical Cohort Collaborative (N3C) Consortium"   # medRxiv byline and the CV; Crossref and Europe PMC leave it out
     topics: [covid, causal-ml]
     code_url: "https://github.com/zbutzin/LongCOVID"
   "10.64898/2026.07.06.26357401":          # CV under review 3, SSRI and Long COVID symptoms
+    group_author: "the National Clinical Cohort Collaborative (N3C) Consortium"   # medRxiv byline and the CV; Crossref and Europe PMC leave it out
     topics: [covid, causal-ml]
   "10.64898/2026.07.03.26357246":          # CV under review 4, GLP medications
+    group_author: "the National Clinical Cohort Collaborative (N3C) Consortium"   # medRxiv byline and the CV; Crossref and Europe PMC leave it out
     topics: [covid, causal-ml]
   "10.1101/2025.06.06.25329168":           # CV under review 5, causal inference in N3C
+    group_author: "the N3C Consortium"     # medRxiv byline ("on behalf of the N3C Consortium") and the CV
     topics: [covid, causal-ml]
   "10.1101/2024.10.18.24315778":           # CV under review 6, highly adaptive lasso
     featured: true

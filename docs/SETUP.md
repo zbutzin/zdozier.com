@@ -272,4 +272,6 @@ API key from your OpenAlex account (check the current menu wording on
 openalex.org), then add it to the repository: **Settings** > **Secrets and
 variables** > **Actions** > **New repository secret**, name
 `OPENALEX_API_KEY`, value: the key. The workflow passes it to the fetch step
-automatically. Nothing else changes, and the site works without it.
+automatically. Nothing else changes, and the site works without it. The key
+is removed from every error message before it is stored, so it never ends up
+in the committed `data/` files or in an issue.

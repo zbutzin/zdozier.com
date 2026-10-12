@@ -59,6 +59,7 @@ data/               machine-generated, committed (history + offline fallback)
   grants.json       merged funding (contract in section 4)
   metrics.json      author-level metrics (section 3.3)
   software.json     public GitHub repos (section 5)
+  seen.json         every work id/DOI ever listed -> first_seen (never pruned)
   run_report.json   per-run status (section 6)
 scripts/
   fetch.py          network: query all sources, write data/raw/*.json
@@ -155,6 +156,11 @@ work records `sources` (which sources found it). Works found ONLY by name search
 - Sanity guard: if the merged count of visible works drops by > 15% relative to
   the previous `data/publications.json`, keep the previous file, write the
   failure into `run_report.json`, and exit 0 (site still builds from last good).
+  The held-back list (count plus a hash of the ids) is recorded as
+  `sanity_guard.candidate`; when the next run holds back exactly the same list,
+  it is accepted (`sanity_guard.accepted: "repeat"`). A top-level
+  `accept_count_drop: YYYY-MM-DD` in `content/publications.yml` accepts a drop
+  for 14 days after that date (`"switch"`).
 
 ### 3.3 `data/publications.json` contract
 
@@ -198,7 +204,9 @@ work records `sources` (which sources found it). Works found ONLY by name search
 ```
 
 Sorted by date descending. `first_seen` persists across runs (read from the
-previous file) so "new since last run" is computable.
+previous file and `data/seen.json`) so "new since last run" is computable. A
+work is new only if none of its keys is in either, so one that drops out of
+the sources for a run and returns is not announced again.
 
 `data/metrics.json`: `{generated, works_count, cited_by_count, h_index,
 i10_index, counts_by_year: [{year, works_count, cited_by_count}],
@@ -236,7 +244,9 @@ env var set). Keep name, description, html_url, language, stargazers_count,
 pushed_at, topics. `content/site.yml: software.include` (ordered list) and
 `software.exclude` control what is shown; default shows non-fork repos not
 excluded. `software.descriptions: {RepoName: "text"}` replaces a repo's
-GitHub description on the site. The site does not label forks.
+GitHub description on the site, and `software.languages: {RepoName: R}` its
+language label (GitHub counts rendered HTML output). The site does not label
+forks.
 
 ## 6. Run report: `data/run_report.json`
 
@@ -248,9 +258,21 @@ GitHub description on the site. The site does not label forks.
 ```
 fetch.py: each source wrapped independently. On failure, keep the previous
 `data/raw/<source>.json`, record `used_cache: true` and the error. A source
-failing never fails the run. Network: requests with timeout 30s, 3 retries
-with backoff, polite User-Agent "zdozier.com-site-builder/1.0
-(+https://zdozier.com)". RePORTER: <= 1 request/second.
+failing never fails the run. Network: requests with timeout 30s (10s to
+connect), 3 retries with backoff (a 429 is retried once, honoring Retry-After
+up to 10s), polite User-Agent "zdozier.com-site-builder/1.0
+(+https://zdozier.com)". RePORTER: <= 1 request/second. Each source has a
+240s time budget (720s for all), after which it fails and uses its cache.
+`fetch_status.json` is rewritten after each source, with sources not yet run
+marked "fetch did not finish". A response that empties a source, or drops one
+with 5 or more records below half, is not written (error "suspicious drop",
+`candidate_count` recorded); a non-zero count that repeats on the next run is
+accepted. OpenAlex fails when its pages hold fewer works than its `meta.count`.
+Crossref caches a miss only for 404/400/410 and never over a good record;
+429, 401, 403, 5xx and connection errors keep the cached record, and 3 such
+failures in a row fail the source. If its ORCID filter fails and no lookup
+succeeds, Crossref fails too. Error messages are scrubbed of API keys,
+tokens, and `mailto` values before they are stored or printed.
 
 ## 7. Site
 
@@ -258,7 +280,9 @@ with backoff, polite User-Agent "zdozier.com-site-builder/1.0
 - `/` Home: name, one-line research statement, affiliations, "Formerly published
   as" line, portrait (rounded rectangle, not a circle), short bio, link row
   (Stanford profile, ORCID, OpenAlex, Google Scholar if configured, GitHub,
-  Email, CV PDF). Stat strip (visible publications, citations, h-index, active
+  Email, CV PDF). Stat strip (visible works, labeled "Works" because the count
+  includes preprints and manuscripts under review, with a note giving the
+  first/senior and preprint/under-review counts; citations, h-index, active
   grants) with a small citations-per-year bar sparkline. Research themes (from
   site.yml) each with 2 to 3 representative papers pulled by topic (featured
   first, then most recent). Recent publications (5 newest, automatic). Current
@@ -268,7 +292,7 @@ with backoff, polite User-Agent "zdozier.com-site-builder/1.0
   public-works rule as `metrics.by_year_role`, nothing dated after the
   current year; the latest year and the 7 before it, with a caption line
   "Plus N earlier works (years)." for anything older). Filter chips (All, First or senior author, each
-  topic, Preprints), text search, and type filter, all client-side vanilla JS
+  topic, "Preprints and under review"), text search, and type filter, all client-side vanilla JS
   with progressive enhancement (full list works without JS). Grouped by year.
   Each entry: title (links to DOI), authors (his name bold; long lists
   truncated APA-style with a "show all" toggle), venue (italic) + year, role
@@ -354,16 +378,22 @@ on PATH. Exit non-zero if Chrome is missing and `CI=true`; warn otherwise.
 Workflow `.github/workflows/update.yml`: triggers weekly cron (Mondays 14:00 UTC),
 `workflow_dispatch`, and `push` to main (ignore pushes that only touch
 `data/**` from the bot to avoid loops; note GITHUB_TOKEN pushes do not trigger
-workflows anyway). Steps: checkout, setup-python 3.12, pip install
--r requirements.txt, `make all` (Chrome preinstalled on ubuntu-latest), run
+workflows anyway). Steps: checkout of the branch tip (not the trigger SHA, so
+a run queued behind another starts after its data commit), setup-python 3.12,
+pip install -r requirements.txt -c constraints-ci.txt (pins the transitive
+dependencies; certifi stays unpinned), fetch under an outer `timeout 15m`
+then `make merge build pdf` (Chrome preinstalled on ubuntu-latest), run
 tests, commit changed `data/**` back as github-actions[bot] ("data: weekly
-refresh"), deploy `_site/` with actions/upload-pages-artifact + deploy-pages.
+refresh"; on a push conflict, rebase with `-X theirs`, else put this run's
+`data/` snapshot on the latest branch tip), deploy `_site/` with
+actions/upload-pages-artifact + deploy-pages.
 If `run_report.new_works` is non-empty, open one GitHub issue listing them (so he
 gets an email and can optionally hide one or add a contribution note). If a
 source has been failing (cached copy in use) for 14 days or more, or the
 sanity guard tripped, open one `site-health` issue ("Site data is going
 stale"; later runs comment on it) and close it after a run in which every
-source refreshes normally (`scripts/ci_issue.py --health`, `--health-state`).
+source refreshes normally with no partial error (`scripts/ci_issue.py
+--health`, `--health-state`).
 Hand-edited YAML is read with a loader that rejects repeated keys, and a YAML
 error stops merge/build with a one-line message before `data/` is rewritten. Keep the
 schedule alive past GitHub's 60-day inactivity auto-disable by calling the

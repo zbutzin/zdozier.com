@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-12T01:39:54Z",
+  "generated": "2026-10-12T16:31:35Z",
   "works": [
     {
       "id": "manual:wiley-environmental-health-nursing-chapter",
@@ -500,1149 +500,9 @@
           "orcid": null,
           "suffix": null,
           "apa": "National Clinical Cohort Collaborative (N3C)"
-        },
-        {
-          "given": "Adam B",
-          "family": "Wilcox",
-          "name": "Adam B Wilcox",
-          "is_me": false,
-          "is_group": false,
-          "orcid": null,
-          "suffix": null,
-          "apa": "Wilcox, A. B."
-        },
-        {
-          "given": "Adam M",
-          "family": "Lee",
-          "name": "Adam M Lee",
-          "is_me": false,
-          "is_group": false,
-          "orcid": null,
-          "suffix": null,
-          "apa": "Lee, A. M."
-        },
-        {
-          "given": "Alexis",
-          "family": "Graves",
-          "name": "Alexis Graves",
-          "is_me": false,
-          "is_group": false,
-          "orcid": null,
-          "suffix": null,
-          "apa": "Graves, A."
-        },
-        {
-          "given": "Alfred (Jerrod)",
-          "family": "Anzalone",
-          "name": "Alfred (Jerrod) Anzalone",
-          "is_me": false,
-          "is_group": false,
-          "orcid": null,
-          "suffix": null,
-          "apa": "Anzalone, A."
-        },
-        {
-          "given": "Amin",
-          "family": "Manna",
-          "name": "Amin Manna",
-          "is_me": false,
-          "is_group": false,
-          "orcid": null,
-          "suffix": null,
-          "apa": "Manna, A."
-        },
-        {
-          "given": "Amit",
-          "family": "Saha",
-          "name": "Amit Saha",
-          "is_me": false,
-          "is_group": false,
-          "orcid": null,
-          "suffix": null,
-          "apa": "Saha, A."
-        },
-        {
-          "given": "Amy",
-          "family": "Olex",
-          "name": "Amy Olex",
-          "is_me": false,
-          "is_group": false,
-          "orcid": null,
-          "suffix": null,
-          "apa": "Olex, A."
-        },
-        {
-          "given": "Andrea",
-          "family": "Zhou",
-          "name": "Andrea Zhou",
-          "is_me": false,
-          "is_group": false,
-          "orcid": null,
-          "suffix": null,
-          "apa": "Zhou, A."
-        },
-        {
-          "given": "Andrew E",
-          "family": "Williams",
-          "name": "Andrew E Williams",
-          "is_me": false,
-          "is_group": false,
-          "orcid": null,
-          "suffix": null,
-          "apa": "Williams, A. E."
-        },
-        {
-          "given": "Andrew M",
-          "family": "Southerland",
-          "name": "Andrew M Southerland",
-          "is_me": false,
-          "is_group": false,
-          "orcid": null,
-          "suffix": null,
-          "apa": "Southerland, A. M."
-        },
-        {
-          "given": "Andrew T",
-          "family": "Girvin",
-          "name": "Andrew T Girvin",
-          "is_me": false,
-          "is_group": false,
-          "orcid": null,
-          "suffix": null,
-          "apa": "Girvin, A. T."
-        },
-        {
-          "given": "Anita",
-          "family": "Walden",
-          "name": "Anita Walden",
-          "is_me": false,
-          "is_group": false,
-          "orcid": null,
-          "suffix": null,
-          "apa": "Walden, A."
-        },
-        {
-          "given": "Anjali",
-          "family": "Sharathkumar",
-          "name": "Anjali Sharathkumar",
-          "is_me": false,
-          "is_group": false,
-          "orcid": null,
-          "suffix": null,
-          "apa": "Sharathkumar, A."
-        },
-        {
-          "given": "Benjamin",
-          "family": "Amor",
-          "name": "Benjamin Amor",
-          "is_me": false,
-          "is_group": false,
-          "orcid": null,
-          "suffix": null,
-          "apa": "Amor, B."
-        },
-        {
-          "given": "Benjamin",
-          "family": "Bates",
-          "name": "Benjamin Bates",
-          "is_me": false,
-          "is_group": false,
-          "orcid": null,
-          "suffix": null,
-          "apa": "Bates, B."
-        },
-        {
-          "given": "Brian",
-          "family": "Hendricks",
-          "name": "Brian Hendricks",
-          "is_me": false,
-          "is_group": false,
-          "orcid": null,
-          "suffix": null,
-          "apa": "Hendricks, B."
-        },
-        {
-          "given": "Brijesh",
-          "family": "Patel",
-          "name": "Brijesh Patel",
-          "is_me": false,
-          "is_group": false,
-          "orcid": null,
-          "suffix": null,
-          "apa": "Patel, B."
-        },
-        {
-          "given": "G Caleb",
-          "family": "Alexander",
-          "name": "G Caleb Alexander",
-          "is_me": false,
-          "is_group": false,
-          "orcid": null,
-          "suffix": null,
-          "apa": "Alexander, G. C."
-        },
-        {
-          "given": "Carolyn T",
-          "family": "Bramante",
-          "name": "Carolyn T Bramante",
-          "is_me": false,
-          "is_group": false,
-          "orcid": null,
-          "suffix": null,
-          "apa": "Bramante, C. T."
-        },
-        {
-          "given": "Cavin",
-          "family": "Ward-Caviness",
-          "name": "Cavin Ward-Caviness",
-          "is_me": false,
-          "is_group": false,
-          "orcid": null,
-          "suffix": null,
-          "apa": "Ward-Caviness, C."
-        },
-        {
-          "given": "Charisse",
-          "family": "Madlock-Brown",
-          "name": "Charisse Madlock-Brown",
-          "is_me": false,
-          "is_group": false,
-          "orcid": null,
-          "suffix": null,
-          "apa": "Madlock-Brown, C."
-        },
-        {
-          "given": "Christine",
-          "family": "Suver",
-          "name": "Christine Suver",
-          "is_me": false,
-          "is_group": false,
-          "orcid": null,
-          "suffix": null,
-          "apa": "Suver, C."
-        },
-        {
-          "given": "Christopher",
-          "family": "Dillon",
-          "name": "Christopher Dillon",
-          "is_me": false,
-          "is_group": false,
-          "orcid": null,
-          "suffix": null,
-          "apa": "Dillon, C."
-        },
-        {
-          "given": "Chunlei",
-          "family": "Wu",
-          "name": "Chunlei Wu",
-          "is_me": false,
-          "is_group": false,
-          "orcid": null,
-          "suffix": null,
-          "apa": "Wu, C."
-        },
-        {
-          "given": "Clare",
-          "family": "Schmitt",
-          "name": "Clare Schmitt",
-          "is_me": false,
-          "is_group": false,
-          "orcid": null,
-          "suffix": null,
-          "apa": "Schmitt, C."
-        },
-        {
-          "given": "Cliff",
-          "family": "Takemoto",
-          "name": "Cliff Takemoto",
-          "is_me": false,
-          "is_group": false,
-          "orcid": null,
-          "suffix": null,
-          "apa": "Takemoto, C."
-        },
-        {
-          "given": "Dan",
-          "family": "Housman",
-          "name": "Dan Housman",
-          "is_me": false,
-          "is_group": false,
-          "orcid": null,
-          "suffix": null,
-          "apa": "Housman, D."
-        },
-        {
-          "given": "Davera",
-          "family": "Gabriel",
-          "name": "Davera Gabriel",
-          "is_me": false,
-          "is_group": false,
-          "orcid": null,
-          "suffix": null,
-          "apa": "Gabriel, D."
-        },
-        {
-          "given": "David A",
-          "family": "Eichmann",
-          "name": "David A Eichmann",
-          "is_me": false,
-          "is_group": false,
-          "orcid": null,
-          "suffix": null,
-          "apa": "Eichmann, D. A."
-        },
-        {
-          "given": "Diego",
-          "family": "Mazzotti",
-          "name": "Diego Mazzotti",
-          "is_me": false,
-          "is_group": false,
-          "orcid": null,
-          "suffix": null,
-          "apa": "Mazzotti, D."
-        },
-        {
-          "given": "Donald E",
-          "family": "Brown",
-          "name": "Donald E Brown",
-          "is_me": false,
-          "is_group": false,
-          "orcid": null,
-          "suffix": null,
-          "apa": "Brown, D. E."
-        },
-        {
-          "given": "Eilis",
-          "family": "Boudreau",
-          "name": "Eilis Boudreau",
-          "is_me": false,
-          "is_group": false,
-          "orcid": null,
-          "suffix": null,
-          "apa": "Boudreau, E."
-        },
-        {
-          "given": "Elaine L",
-          "family": "Hill",
-          "name": "Elaine L Hill",
-          "is_me": false,
-          "is_group": false,
-          "orcid": null,
-          "suffix": null,
-          "apa": "Hill, E. L."
-        },
-        {
-          "given": "Emily Carlson",
-          "family": "Marti",
-          "name": "Emily Carlson Marti",
-          "is_me": false,
-          "is_group": false,
-          "orcid": null,
-          "suffix": null,
-          "apa": "Marti, E. C."
-        },
-        {
-          "given": "Emily R",
-          "family": "Pfaff",
-          "name": "Emily R Pfaff",
-          "is_me": false,
-          "is_group": false,
-          "orcid": null,
-          "suffix": null,
-          "apa": "Pfaff, E. R."
-        },
-        {
-          "given": "Evan",
-          "family": "French",
-          "name": "Evan French",
-          "is_me": false,
-          "is_group": false,
-          "orcid": null,
-          "suffix": null,
-          "apa": "French, E."
-        },
-        {
-          "given": "Farrukh M",
-          "family": "Koraishy",
-          "name": "Farrukh M Koraishy",
-          "is_me": false,
-          "is_group": false,
-          "orcid": null,
-          "suffix": null,
-          "apa": "Koraishy, F. M."
-        },
-        {
-          "given": "Federico",
-          "family": "Mariona",
-          "name": "Federico Mariona",
-          "is_me": false,
-          "is_group": false,
-          "orcid": null,
-          "suffix": null,
-          "apa": "Mariona, F."
-        },
-        {
-          "given": "Fred",
-          "family": "Prior",
-          "name": "Fred Prior",
-          "is_me": false,
-          "is_group": false,
-          "orcid": null,
-          "suffix": null,
-          "apa": "Prior, F."
-        },
-        {
-          "given": "George",
-          "family": "Sokos",
-          "name": "George Sokos",
-          "is_me": false,
-          "is_group": false,
-          "orcid": null,
-          "suffix": null,
-          "apa": "Sokos, G."
-        },
-        {
-          "given": "Greg",
-          "family": "Martin",
-          "name": "Greg Martin",
-          "is_me": false,
-          "is_group": false,
-          "orcid": null,
-          "suffix": null,
-          "apa": "Martin, G."
-        },
-        {
-          "given": "Harold P",
-          "family": "Lehmann",
-          "name": "Harold P Lehmann",
-          "is_me": false,
-          "is_group": false,
-          "orcid": null,
-          "suffix": null,
-          "apa": "Lehmann, H. P."
-        },
-        {
-          "given": "Heidi",
-          "family": "Spratt",
-          "name": "Heidi Spratt",
-          "is_me": false,
-          "is_group": false,
-          "orcid": null,
-          "suffix": null,
-          "apa": "Spratt, H."
-        },
-        {
-          "given": "Hemalkumar B",
-          "family": "Mehta",
-          "name": "Hemalkumar B Mehta",
-          "is_me": false,
-          "is_group": false,
-          "orcid": null,
-          "suffix": null,
-          "apa": "Mehta, H. B."
-        },
-        {
-          "given": "J W Awori",
-          "family": "Hayanga",
-          "name": "J W Awori Hayanga",
-          "is_me": false,
-          "is_group": false,
-          "orcid": null,
-          "suffix": null,
-          "apa": "Hayanga, J. W. A."
-        },
-        {
-          "given": "Jami",
-          "family": "Pincavitch",
-          "name": "Jami Pincavitch",
-          "is_me": false,
-          "is_group": false,
-          "orcid": null,
-          "suffix": null,
-          "apa": "Pincavitch, J."
-        },
-        {
-          "given": "Jaylyn",
-          "family": "Clark",
-          "name": "Jaylyn Clark",
-          "is_me": false,
-          "is_group": false,
-          "orcid": null,
-          "suffix": null,
-          "apa": "Clark, J."
-        },
-        {
-          "given": "Jeremy Richard",
-          "family": "Harper",
-          "name": "Jeremy Richard Harper",
-          "is_me": false,
-          "is_group": false,
-          "orcid": null,
-          "suffix": null,
-          "apa": "Harper, J. R."
-        },
-        {
-          "given": "Jessica Yasmine",
-          "family": "Islam",
-          "name": "Jessica Yasmine Islam",
-          "is_me": false,
-          "is_group": false,
-          "orcid": null,
-          "suffix": null,
-          "apa": "Islam, J. Y."
-        },
-        {
-          "given": "Jin",
-          "family": "Ge",
-          "name": "Jin Ge",
-          "is_me": false,
-          "is_group": false,
-          "orcid": null,
-          "suffix": null,
-          "apa": "Ge, J."
-        },
-        {
-          "given": "Joel",
-          "family": "Gagnier",
-          "name": "Joel Gagnier",
-          "is_me": false,
-          "is_group": false,
-          "orcid": null,
-          "suffix": null,
-          "apa": "Gagnier, J."
-        },
-        {
-          "given": "Johanna J",
-          "family": "Loomba",
-          "name": "Johanna J Loomba",
-          "is_me": false,
-          "is_group": false,
-          "orcid": null,
-          "suffix": null,
-          "apa": "Loomba, J. J."
-        },
-        {
-          "given": "John B",
-          "family": "Buse",
-          "name": "John B Buse",
-          "is_me": false,
-          "is_group": false,
-          "orcid": null,
-          "suffix": null,
-          "apa": "Buse, J. B."
-        },
-        {
-          "given": "Jomol",
-          "family": "Mathew",
-          "name": "Jomol Mathew",
-          "is_me": false,
-          "is_group": false,
-          "orcid": null,
-          "suffix": null,
-          "apa": "Mathew, J."
-        },
-        {
-          "given": "Joni L",
-          "family": "Rutter",
-          "name": "Joni L Rutter",
-          "is_me": false,
-          "is_group": false,
-          "orcid": null,
-          "suffix": null,
-          "apa": "Rutter, J. L."
-        },
-        {
-          "given": "Julie A",
-          "family": "McMurry",
-          "name": "Julie A McMurry",
-          "is_me": false,
-          "is_group": false,
-          "orcid": null,
-          "suffix": null,
-          "apa": "McMurry, J. A."
-        },
-        {
-          "given": "Justin",
-          "family": "Guinney",
-          "name": "Justin Guinney",
-          "is_me": false,
-          "is_group": false,
-          "orcid": null,
-          "suffix": null,
-          "apa": "Guinney, J."
-        },
-        {
-          "given": "Justin",
-          "family": "Starren",
-          "name": "Justin Starren",
-          "is_me": false,
-          "is_group": false,
-          "orcid": null,
-          "suffix": null,
-          "apa": "Starren, J."
-        },
-        {
-          "given": "Karen",
-          "family": "Crowley",
-          "name": "Karen Crowley",
-          "is_me": false,
-          "is_group": false,
-          "orcid": null,
-          "suffix": null,
-          "apa": "Crowley, K."
-        },
-        {
-          "given": "Katie Rebecca",
-          "family": "Bradwell",
-          "name": "Katie Rebecca Bradwell",
-          "is_me": false,
-          "is_group": false,
-          "orcid": null,
-          "suffix": null,
-          "apa": "Bradwell, K. R."
-        },
-        {
-          "given": "Kellie M",
-          "family": "Walters",
-          "name": "Kellie M Walters",
-          "is_me": false,
-          "is_group": false,
-          "orcid": null,
-          "suffix": null,
-          "apa": "Walters, K. M."
-        },
-        {
-          "given": "Ken",
-          "family": "Wilkins",
-          "name": "Ken Wilkins",
-          "is_me": false,
-          "is_group": false,
-          "orcid": null,
-          "suffix": null,
-          "apa": "Wilkins, K."
-        },
-        {
-          "given": "Kenneth R",
-          "family": "Gersing",
-          "name": "Kenneth R Gersing",
-          "is_me": false,
-          "is_group": false,
-          "orcid": null,
-          "suffix": null,
-          "apa": "Gersing, K. R."
-        },
-        {
-          "given": "Kenrick",
-          "family": "Cato",
-          "name": "Kenrick Cato",
-          "is_me": false,
-          "is_group": false,
-          "orcid": null,
-          "suffix": null,
-          "apa": "Cato, K."
-        },
-        {
-          "given": "Kimberly",
-          "family": "Murray",
-          "name": "Kimberly Murray",
-          "is_me": false,
-          "is_group": false,
-          "orcid": null,
-          "suffix": null,
-          "apa": "Murray, K."
-        },
-        {
-          "given": "Kristin",
-          "family": "Kostka",
-          "name": "Kristin Kostka",
-          "is_me": false,
-          "is_group": false,
-          "orcid": null,
-          "suffix": null,
-          "apa": "Kostka, K."
-        },
-        {
-          "given": "Lavance",
-          "family": "Northington",
-          "name": "Lavance Northington",
-          "is_me": false,
-          "is_group": false,
-          "orcid": null,
-          "suffix": null,
-          "apa": "Northington, L."
-        },
-        {
-          "given": "Lee",
-          "family": "Pyles",
-          "name": "Lee Pyles",
-          "is_me": false,
-          "is_group": false,
-          "orcid": null,
-          "suffix": null,
-          "apa": "Pyles, L."
-        },
-        {
-          "given": "Lesley",
-          "family": "Cottrell",
-          "name": "Lesley Cottrell",
-          "is_me": false,
-          "is_group": false,
-          "orcid": null,
-          "suffix": null,
-          "apa": "Cottrell, L."
-        },
-        {
-          "given": "Lili M",
-          "family": "Portilla",
-          "name": "Lili M Portilla",
-          "is_me": false,
-          "is_group": false,
-          "orcid": null,
-          "suffix": null,
-          "apa": "Portilla, L. M."
-        },
-        {
-          "given": "Mariam",
-          "family": "Deacy",
-          "name": "Mariam Deacy",
-          "is_me": false,
-          "is_group": false,
-          "orcid": null,
-          "suffix": null,
-          "apa": "Deacy, M."
-        },
-        {
-          "given": "Mark M",
-          "family": "Bissell",
-          "name": "Mark M Bissell",
-          "is_me": false,
-          "is_group": false,
-          "orcid": null,
-          "suffix": null,
-          "apa": "Bissell, M. M."
-        },
-        {
-          "given": "Marshall",
-          "family": "Clark",
-          "name": "Marshall Clark",
-          "is_me": false,
-          "is_group": false,
-          "orcid": null,
-          "suffix": null,
-          "apa": "Clark, M."
-        },
-        {
-          "given": "Mary",
-          "family": "Emmett",
-          "name": "Mary Emmett",
-          "is_me": false,
-          "is_group": false,
-          "orcid": null,
-          "suffix": null,
-          "apa": "Emmett, M."
-        },
-        {
-          "given": "Matvey B",
-          "family": "Palchuk",
-          "name": "Matvey B Palchuk",
-          "is_me": false,
-          "is_group": false,
-          "orcid": null,
-          "suffix": null,
-          "apa": "Palchuk, M. B."
-        },
-        {
-          "given": "Meredith",
-          "family": "Adams",
-          "name": "Meredith Adams",
-          "is_me": false,
-          "is_group": false,
-          "orcid": null,
-          "suffix": null,
-          "apa": "Adams, M."
-        },
-        {
-          "given": "Meredith",
-          "family": "Temple-O'Connor",
-          "name": "Meredith Temple-O'Connor",
-          "is_me": false,
-          "is_group": false,
-          "orcid": null,
-          "suffix": null,
-          "apa": "Temple-O'Connor, M."
-        },
-        {
-          "given": "Michael G",
-          "family": "Kurilla",
-          "name": "Michael G Kurilla",
-          "is_me": false,
-          "is_group": false,
-          "orcid": null,
-          "suffix": null,
-          "apa": "Kurilla, M. G."
-        },
-        {
-          "given": "Michele",
-          "family": "Morris",
-          "name": "Michele Morris",
-          "is_me": false,
-          "is_group": false,
-          "orcid": null,
-          "suffix": null,
-          "apa": "Morris, M."
-        },
-        {
-          "given": "Nasia",
-          "family": "Safdar",
-          "name": "Nasia Safdar",
-          "is_me": false,
-          "is_group": false,
-          "orcid": null,
-          "suffix": null,
-          "apa": "Safdar, N."
-        },
-        {
-          "given": "Nicole",
-          "family": "Garbarini",
-          "name": "Nicole Garbarini",
-          "is_me": false,
-          "is_group": false,
-          "orcid": null,
-          "suffix": null,
-          "apa": "Garbarini, N."
-        },
-        {
-          "given": "Noha",
-          "family": "Sharafeldin",
-          "name": "Noha Sharafeldin",
-          "is_me": false,
-          "is_group": false,
-          "orcid": null,
-          "suffix": null,
-          "apa": "Sharafeldin, N."
-        },
-        {
-          "given": "Ofer",
-          "family": "Sadan",
-          "name": "Ofer Sadan",
-          "is_me": false,
-          "is_group": false,
-          "orcid": null,
-          "suffix": null,
-          "apa": "Sadan, O."
-        },
-        {
-          "given": "Patricia A",
-          "family": "Francis",
-          "name": "Patricia A Francis",
-          "is_me": false,
-          "is_group": false,
-          "orcid": null,
-          "suffix": null,
-          "apa": "Francis, P. A."
-        },
-        {
-          "given": "Penny Wung",
-          "family": "Burgoon",
-          "name": "Penny Wung Burgoon",
-          "is_me": false,
-          "is_group": false,
-          "orcid": null,
-          "suffix": null,
-          "apa": "Burgoon, P. W."
-        },
-        {
-          "given": "Philip R O",
-          "family": "Payne",
-          "name": "Philip R O Payne",
-          "is_me": false,
-          "is_group": false,
-          "orcid": null,
-          "suffix": null,
-          "apa": "Payne, P. R. O."
-        },
-        {
-          "given": "Randeep",
-          "family": "Jawa",
-          "name": "Randeep Jawa",
-          "is_me": false,
-          "is_group": false,
-          "orcid": null,
-          "suffix": null,
-          "apa": "Jawa, R."
-        },
-        {
-          "given": "Rebecca",
-          "family": "Erwin-Cohen",
-          "name": "Rebecca Erwin-Cohen",
-          "is_me": false,
-          "is_group": false,
-          "orcid": null,
-          "suffix": null,
-          "apa": "Erwin-Cohen, R."
-        },
-        {
-          "given": "Richard A",
-          "family": "Moffitt",
-          "name": "Richard A Moffitt",
-          "is_me": false,
-          "is_group": false,
-          "orcid": null,
-          "suffix": null,
-          "apa": "Moffitt, R. A."
-        },
-        {
-          "given": "Richard L",
-          "family": "Zhu",
-          "name": "Richard L Zhu",
-          "is_me": false,
-          "is_group": false,
-          "orcid": null,
-          "suffix": null,
-          "apa": "Zhu, R. L."
-        },
-        {
-          "given": "Rishikesan",
-          "family": "Kamaleswaran",
-          "name": "Rishikesan Kamaleswaran",
-          "is_me": false,
-          "is_group": false,
-          "orcid": null,
-          "suffix": null,
-          "apa": "Kamaleswaran, R."
-        },
-        {
-          "given": "Robert",
-          "family": "Hurley",
-          "name": "Robert Hurley",
-          "is_me": false,
-          "is_group": false,
-          "orcid": null,
-          "suffix": null,
-          "apa": "Hurley, R."
-        },
-        {
-          "given": "Robert T",
-          "family": "Miller",
-          "name": "Robert T Miller",
-          "is_me": false,
-          "is_group": false,
-          "orcid": null,
-          "suffix": null,
-          "apa": "Miller, R. T."
-        },
-        {
-          "given": "Saiju",
-          "family": "Pyarajan",
-          "name": "Saiju Pyarajan",
-          "is_me": false,
-          "is_group": false,
-          "orcid": null,
-          "suffix": null,
-          "apa": "Pyarajan, S."
-        },
-        {
-          "given": "Sam G",
-          "family": "Michael",
-          "name": "Sam G Michael",
-          "is_me": false,
-          "is_group": false,
-          "orcid": null,
-          "suffix": null,
-          "apa": "Michael, S. G."
-        },
-        {
-          "given": "Samuel",
-          "family": "Bozzette",
-          "name": "Samuel Bozzette",
-          "is_me": false,
-          "is_group": false,
-          "orcid": null,
-          "suffix": null,
-          "apa": "Bozzette, S."
-        },
-        {
-          "given": "Sandeep K",
-          "family": "Mallipattu",
-          "name": "Sandeep K Mallipattu",
-          "is_me": false,
-          "is_group": false,
-          "orcid": null,
-          "suffix": null,
-          "apa": "Mallipattu, S. K."
-        },
-        {
-          "given": "Satyanarayana",
-          "family": "Vedula",
-          "name": "Satyanarayana Vedula",
-          "is_me": false,
-          "is_group": false,
-          "orcid": null,
-          "suffix": null,
-          "apa": "Vedula, S."
-        },
-        {
-          "given": "Scott",
-          "family": "Chapman",
-          "name": "Scott Chapman",
-          "is_me": false,
-          "is_group": false,
-          "orcid": null,
-          "suffix": null,
-          "apa": "Chapman, S."
-        },
-        {
-          "given": "Shawn T",
-          "family": "O'Neil",
-          "name": "Shawn T O'Neil",
-          "is_me": false,
-          "is_group": false,
-          "orcid": null,
-          "suffix": null,
-          "apa": "O'Neil, S. T."
-        },
-        {
-          "given": "Soko",
-          "family": "Setoguchi",
-          "name": "Soko Setoguchi",
-          "is_me": false,
-          "is_group": false,
-          "orcid": null,
-          "suffix": null,
-          "apa": "Setoguchi, S."
-        },
-        {
-          "given": "Stephanie S",
-          "family": "Hong",
-          "name": "Stephanie S Hong",
-          "is_me": false,
-          "is_group": false,
-          "orcid": null,
-          "suffix": null,
-          "apa": "Hong, S. S."
-        },
-        {
-          "given": "Steven G",
-          "family": "Johnson",
-          "name": "Steven G Johnson",
-          "is_me": false,
-          "is_group": false,
-          "orcid": null,
-          "suffix": null,
-          "apa": "Johnson, S. G."
-        },
-        {
-          "given": "Tellen D",
-          "family": "Bennett",
-          "name": "Tellen D Bennett",
-          "is_me": false,
-          "is_group": false,
-          "orcid": null,
-          "suffix": null,
-          "apa": "Bennett, T. D."
-        },
-        {
-          "given": "Tiffany J",
-          "family": "Callahan",
-          "name": "Tiffany J Callahan",
-          "is_me": false,
-          "is_group": false,
-          "orcid": null,
-          "suffix": null,
-          "apa": "Callahan, T. J."
-        },
-        {
-          "given": "Umit",
-          "family": "Topaloglu",
-          "name": "Umit Topaloglu",
-          "is_me": false,
-          "is_group": false,
-          "orcid": null,
-          "suffix": null,
-          "apa": "Topaloglu, U."
-        },
-        {
-          "given": "Valery",
-          "family": "Gordon",
-          "name": "Valery Gordon",
-          "is_me": false,
-          "is_group": false,
-          "orcid": null,
-          "suffix": null,
-          "apa": "Gordon, V."
-        },
-        {
-          "given": "Vignesh",
-          "family": "Subbian",
-          "name": "Vignesh Subbian",
-          "is_me": false,
-          "is_group": false,
-          "orcid": null,
-          "suffix": null,
-          "apa": "Subbian, V."
-        },
-        {
-          "given": "Warren A",
-          "family": "Kibbe",
-          "name": "Warren A Kibbe",
-          "is_me": false,
-          "is_group": false,
-          "orcid": null,
-          "suffix": null,
-          "apa": "Kibbe, W. A."
-        },
-        {
-          "given": "Wenndy",
-          "family": "Hernandez",
-          "name": "Wenndy Hernandez",
-          "is_me": false,
-          "is_group": false,
-          "orcid": null,
-          "suffix": null,
-          "apa": "Hernandez, W."
-        },
-        {
-          "given": "Will",
-          "family": "Beasley",
-          "name": "Will Beasley",
-          "is_me": false,
-          "is_group": false,
-          "orcid": null,
-          "suffix": null,
-          "apa": "Beasley, W."
-        },
-        {
-          "given": "Will",
-          "family": "Cooper",
-          "name": "Will Cooper",
-          "is_me": false,
-          "is_group": false,
-          "orcid": null,
-          "suffix": null,
-          "apa": "Cooper, W."
-        },
-        {
-          "given": "William",
-          "family": "Hillegass",
-          "name": "William Hillegass",
-          "is_me": false,
-          "is_group": false,
-          "orcid": null,
-          "suffix": null,
-          "apa": "Hillegass, W."
-        },
-        {
-          "given": "Xiaohan Tanner",
-          "family": "Zhang",
-          "name": "Xiaohan Tanner Zhang",
-          "is_me": false,
-          "is_group": false,
-          "orcid": null,
-          "suffix": null,
-          "apa": "Zhang, X. T."
         }
       ],
-      "author_count": 134,
+      "author_count": 20,
       "my_position": 15,
       "role": "coauthor",
       "year": 2026,
@@ -1715,9 +575,9 @@
           "apa": "Wang, L.-C."
         },
         {
-          "given": "A Jerrod",
+          "given": "A. Jerrod",
           "family": "Anzalone",
-          "name": "A Jerrod Anzalone",
+          "name": "A. Jerrod Anzalone",
           "is_me": false,
           "is_group": false,
           "orcid": null,
@@ -1735,9 +595,9 @@
           "apa": "Coyle, J."
         },
         {
-          "given": "Rachael V",
+          "given": "Rachael V.",
           "family": "Phillips",
-          "name": "Rachael V Phillips",
+          "name": "Rachael V. Phillips",
           "is_me": false,
           "is_group": false,
           "orcid": null,
@@ -1745,9 +605,9 @@
           "apa": "Phillips, R. V."
         },
         {
-          "given": "Rena C",
+          "given": "Rena C.",
           "family": "Patel",
-          "name": "Rena C Patel",
+          "name": "Rena C. Patel",
           "is_me": false,
           "is_group": false,
           "orcid": null,
@@ -1785,14 +645,14 @@
           "apa": "Deshpande, S."
         },
         {
-          "given": "Junming Seraphina",
+          "given": "Junming (Seraphina)",
           "family": "Shi",
-          "name": "Junming Seraphina Shi",
+          "name": "Junming (Seraphina) Shi",
           "is_me": false,
           "is_group": false,
           "orcid": null,
           "suffix": null,
-          "apa": "Shi, J. S."
+          "apa": "Shi, J."
         },
         {
           "given": "Andrew",
@@ -1805,9 +665,9 @@
           "apa": "Mertens, A."
         },
         {
-          "given": "Mark J",
+          "given": "Mark J.",
           "family": "van der Laan",
-          "name": "Mark J van der Laan",
+          "name": "Mark J. van der Laan",
           "is_me": false,
           "is_group": false,
           "orcid": null,
@@ -1815,9 +675,9 @@
           "apa": "van der Laan, M. J."
         },
         {
-          "given": "John M",
+          "given": "John M.",
           "family": "Colford",
-          "name": "John M Colford Jr.",
+          "name": "John M. Colford Jr.",
           "is_me": false,
           "is_group": false,
           "orcid": null,
@@ -1825,9 +685,9 @@
           "apa": "Colford, J. M., Jr."
         },
         {
-          "given": "Alan E",
+          "given": "Alan E.",
           "family": "Hubbard",
-          "name": "Alan E Hubbard",
+          "name": "Alan E. Hubbard",
           "is_me": false,
           "is_group": false,
           "orcid": null,
@@ -2124,9 +984,19 @@
           "orcid": null,
           "suffix": null,
           "apa": "Halpern, J."
+        },
+        {
+          "given": null,
+          "family": null,
+          "name": "the National Clinical Cohort Collaborative (N3C) Consortium",
+          "is_me": false,
+          "is_group": true,
+          "orcid": null,
+          "suffix": null,
+          "apa": "the National Clinical Cohort Collaborative (N3C) Consortium"
         }
       ],
-      "author_count": 10,
+      "author_count": 11,
       "my_position": 1,
       "role": "first",
       "year": 2026,
@@ -2365,9 +1235,19 @@
           "orcid": "0000-0001-5858-2080",
           "suffix": null,
           "apa": "Bramante, C."
+        },
+        {
+          "given": null,
+          "family": null,
+          "name": "the National Clinical Cohort Collaborative (N3C) Consortium",
+          "is_me": false,
+          "is_group": true,
+          "orcid": null,
+          "suffix": null,
+          "apa": "the National Clinical Cohort Collaborative (N3C) Consortium"
         }
       ],
-      "author_count": 20,
+      "author_count": 21,
       "my_position": 1,
       "role": "first",
       "year": 2026,
@@ -2526,9 +1406,19 @@
           "orcid": null,
           "suffix": null,
           "apa": "Wong, R."
+        },
+        {
+          "given": null,
+          "family": null,
+          "name": "the National Clinical Cohort Collaborative (N3C) Consortium",
+          "is_me": false,
+          "is_group": true,
+          "orcid": null,
+          "suffix": null,
+          "apa": "the National Clinical Cohort Collaborative (N3C) Consortium"
         }
       ],
-      "author_count": 12,
+      "author_count": 13,
       "my_position": 1,
       "role": "first",
       "year": 2026,
@@ -3464,9 +2354,19 @@
           "orcid": null,
           "suffix": null,
           "apa": "Sines, B."
+        },
+        {
+          "given": null,
+          "family": null,
+          "name": "the National Clinical Cohort Collaborative (N3C) Consortium",
+          "is_me": false,
+          "is_group": true,
+          "orcid": null,
+          "suffix": null,
+          "apa": "the National Clinical Cohort Collaborative (N3C) Consortium"
         }
       ],
-      "author_count": 10,
+      "author_count": 11,
       "my_position": 1,
       "role": "first",
       "year": 2026,
@@ -4556,9 +3456,19 @@
           "orcid": "0000-0002-3769-0127",
           "suffix": null,
           "apa": "Hubbard, A. E."
+        },
+        {
+          "given": null,
+          "family": null,
+          "name": "the N3C Consortium",
+          "is_me": false,
+          "is_group": true,
+          "orcid": null,
+          "suffix": null,
+          "apa": "the N3C Consortium"
         }
       ],
-      "author_count": 9,
+      "author_count": 10,
       "my_position": 1,
       "role": "first",
       "year": 2025,
@@ -6560,9 +5470,9 @@
           "apa": "Shi, S."
         },
         {
-          "given": "Rachael V",
+          "given": "Rachael V.",
           "family": "Philips",
-          "name": "Rachael V Philips",
+          "name": "Rachael V. Philips",
           "is_me": false,
           "is_group": false,
           "orcid": null,
@@ -6600,9 +5510,9 @@
           "apa": "van der Laan, M."
         },
         {
-          "given": "John M",
+          "given": "John M.",
           "family": "Colford",
-          "name": "John M Colford Jr.",
+          "name": "John M. Colford Jr.",
           "is_me": false,
           "is_group": false,
           "orcid": null,

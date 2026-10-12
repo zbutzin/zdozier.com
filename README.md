@@ -28,8 +28,8 @@ See [docs/MAINTENANCE.md](docs/MAINTENANCE.md) for the optional edits, and
   (your hand edits)                        |
                                            v
                                     data/*.json  (publications, grants,
-                                           |      metrics, software, run report;
-                                           |      committed back to the repo)
+                                           |      metrics, software, run report,
+                                           |      seen list; committed back)
                                            v
                                     scripts/build.py + scripts/pdf.py
                                            |

@@ -281,7 +281,7 @@ class TestHttp(unittest.TestCase):
         self.assertEqual(h.get_json("https://api.example.org/x"), {"ok": 1})
         self.assertEqual(len(s.calls), 3)
         self.assertEqual(s.headers["User-Agent"], common.USER_AGENT)
-        self.assertEqual(s.calls[0][2]["timeout"], 30)
+        self.assertEqual(s.calls[0][2]["timeout"], (10, 30))  # (connect, read)
 
     def test_gives_up_after_three_retries(self):
         s = _Session([_Resp(500)] * 4)

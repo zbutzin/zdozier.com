@@ -17,7 +17,7 @@
     {{ section_head('Pipeline', none, 'pipeline') }}
     <div class="sec-body prose">
       <p>A scheduled GitHub Actions job runs every Monday at 14:00 UTC and whenever the site's code or content files change. It queries six public sources, merges what they report with a few hand-edited files, and rebuilds the pages, the charts, the BibTeX file, the feed, and the CV as HTML and PDF.</p>
-      <p>Each source is fetched on its own. If one is down, the job keeps that source's last good snapshot and the rest of the site still updates. If a run would drop more than 15% of the listed works at once, the previous list is kept and the run is flagged.</p>
+      <p>Each source is fetched on its own. If one is down, the job keeps that source's last good snapshot and the rest of the site still updates. If a run would drop more than 15% of the listed works at once, the previous list is kept and the run is flagged; the shorter list is accepted only if the next run returns exactly the same one. A source that answers with far fewer records than last time is treated the same way.</p>
       <p>Hand-edited files in <code>content/</code> hold what no API reports: contribution notes on co-authored papers, research themes, appointments, teaching, talks, and grants from foundations.</p>
     </div>
   </section>
@@ -38,7 +38,7 @@
               <th scope="row">{{ s.label }}</th>
               <td>{% if s.ok and not s.used_cache %}<span class="status is-ok"><span class="dot" aria-hidden="true"></span>OK</span>{% elif s.used_cache %}<span class="status is-warn"><span class="dot" aria-hidden="true"></span>Failed, used cached copy</span>{% else %}<span class="status is-warn"><span class="dot" aria-hidden="true"></span>Failed</span>{% endif %}</td>
               <td class="n">{{ s.count if s.count is not none else '' }}</td>
-              <td class="num">{{ s.fetched }}</td>
+              <td class="num">{% if s.fetched_date %}<span class="nowrap">{{ s.fetched_date }}</span> <span class="nowrap">{{ s.fetched_time }}</span>{% endif %}</td>
               <td class="col-use">{{ s.use }}</td>
             </tr>
             {% endfor %}

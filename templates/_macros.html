@@ -10,9 +10,9 @@
 
 {% macro pub_entry(w) -%}
 <li class="pub" id="{{ w.anchor }}" data-role="{{ w.role or 'coauthor' }}" data-topics="{{ w.topic_list|join(' ') }}" data-kind="{{ w.kinds }}" data-year="{{ w.year_label }}" data-preprint="{{ '1' if w.preprintish else '0' }}">
-  <h3 class="pub-title">{% if w.link %}<a href="{{ w.link }}">{{ w.title }}</a>{% else %}{{ w.title }}{% endif %}</h3>
+  <h3 class="pub-title">{% if w.link %}<a href="{{ w.link }}">{{ w.title|nobreak_codes }}</a>{% else %}{{ w.title|nobreak_codes }}{% endif %}</h3>
   <div class="pub-authors">{{ w.authors_html }}</div>
-  <p class="pub-meta"><span class="pub-venue">{{ w.venue_html }}</span>{% if w.year_label %} <span class="pub-year">{{ w.year_label }}</span>{% endif %}</p>
+  <p class="pub-meta"><span class="pub-venue">{{ w.venue_html }}</span>{% if w.year_shown %}<span class="pub-sep" aria-hidden="true">&nbsp;·</span> <span class="pub-year">{{ w.year_shown }}</span>{% endif %}</p>
   {% if w.role_label or w.status_label or w.type_label or w.badges %}
   <div class="pub-foot">
     {{ tags(w) }}
@@ -33,8 +33,8 @@
 
 {% macro pub_compact(w) -%}
 <li class="pub-c">
-  <a class="pub-c-title" href="{{ w.link or ('/publications/#' ~ w.anchor) }}">{{ w.title }}</a>
-  <p class="pub-c-meta"><span class="pub-venue">{{ w.venue_short_html }}</span>{% if w.year_label %} <span class="pub-year">{{ w.year_label }}</span>{% endif %}{% if w.role_label %}<span class="tag tag-role">{{ w.role_label }}</span>{% endif %}{% if w.status_label %}<span class="tag tag-status">{{ w.status_label }}</span>{% endif %}</p>
+  <a class="pub-c-title" href="{{ w.link or ('/publications/#' ~ w.anchor) }}">{{ w.title|nobreak_codes }}</a>
+  <p class="pub-c-meta"><span class="pub-venue">{{ w.venue_short_html }}</span>{% if w.year_shown %}<span class="pub-sep" aria-hidden="true">&nbsp;·</span> <span class="pub-year">{{ w.year_shown }}</span>{% endif %}{% if w.role_label %}<span class="tag tag-role">{{ w.role_label }}</span>{% endif %}{% if w.status_label %}<span class="tag tag-status">{{ w.status_label }}</span>{% endif %}</p>
 </li>
 {%- endmacro %}
 

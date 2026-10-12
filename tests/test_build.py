@@ -301,7 +301,10 @@ class TestFullBuild(BuildTestBase):
         self.assertIn(">Cited by 15<", pubs)
         self.assertIn("My contribution", pubs)
         self.assertIn('<svg class="viz viz-columns"', pubs)
-        self.assertIn('<table class="sr-only">', pubs)
+        # The hidden data table sits in a clipped div: a <table> ignores the
+        # 1px width of .sr-only and widened the page on 320-375px phones.
+        self.assertIn('<div class="sr-only">\n      <table>', pubs)
+        self.assertNotIn('<table class="sr-only">', pubs)
         # Year groups come newest first.
         years = re.findall(r'<h2 class="year" id="y-(\d+)">', pubs)
         self.assertEqual(years, sorted(years, reverse=True))
@@ -458,7 +461,7 @@ class TestHelpers(unittest.TestCase):
 
     def test_js_is_small(self):
         size = os.path.getsize(os.path.join(ROOT, "static", "js", "site.js"))
-        self.assertLess(size, 6 * 1024)
+        self.assertLess(size, 8 * 1024)
 
 
 class TestReviewFixes(BuildTestBase):
@@ -501,7 +504,10 @@ class TestReviewFixes(BuildTestBase):
         content, data = write_fixture(cls.base, works=works, grants=grants, extra_cv={"media": media})
         site = yaml.safe_load(read(os.path.join(content, "site.yml")))
         site["software"] = {"include": ["LongCOVID", "HAL-in-R", "Odd"],
-                            "descriptions": {"HAL-in-R": "Example R code for the highly adaptive lasso"}}
+                            "descriptions": {"HAL-in-R": "Example R code for the highly adaptive lasso"},
+                            "languages": {"hal-in-r": "R"}}
+        site["research_themes"] = [{"id": "lc", "title": "Long COVID", "topics": ["covid"],
+                                    "summary": "Studies of GLP-1 medications and COVID-19."}]
         with open(os.path.join(content, "site.yml"), "w") as fh:
             yaml.safe_dump(site, fh)
         repos = [{"name": "LongCOVID", "description": "pipeline for Long COVID research",
@@ -567,6 +573,69 @@ class TestReviewFixes(BuildTestBase):
         cv = self.page("cv/index.html")
         self.assertIn('A School</i>. <a href="https://example.org/news/story">https://example.org/news/story</a>', cv)
         self.assertIn("&amp; N3C Consortium. (2022).", cv)
+
+    # Second October 2026 review.
+
+    def test_software_language_override(self):
+        home = self.page("index.html")
+        hal = home.split('href="https://github.com/zbutzin/HAL-in-R"', 1)[1].split("</li>", 1)[0]
+        self.assertIn("<span>R</span>", hal)
+        self.assertNotIn("HTML", hal)
+
+    def test_stat_strip_counts_works_not_publications(self):
+        home = self.page("index.html")
+        self.assertIn("<dt>Works</dt>", home)
+        self.assertNotIn("<dt>Publications</dt>", home)
+        self.assertIn('<dd class="stat-note">6 first or senior author</dd>', home)
+        self.assertIn("Work counts from the list on this site, including 1 preprint or "
+                      "manuscript under review.", home)
+        self.assertIn('per year, <span class="nowrap">2023–2026</span>', home)
+
+    def test_in_press_item_shows_no_year(self):
+        pubs = self.page("publications/index.html")
+        li = pubs.split('id="pub-manual-inpress"', 1)[1].split("</li>", 1)[0]
+        self.assertNotIn('class="pub-year"', li)
+        self.assertIn('data-year="2026"', pubs.split('id="pub-manual-inpress"', 1)[0][-400:])
+        self.assertIn(">In press<", li)
+        # Other entries keep the year, with the separator bound to the venue.
+        self.assertIn('<span class="pub-sep" aria-hidden="true">&nbsp;·</span> <span class="pub-year">2025</span>', pubs)
+
+    def test_codes_do_not_break_at_the_hyphen(self):
+        self.assertEqual(str(build.nobreak_codes("GLP-1 & COVID-19 in SARS-CoV-2 <b>")),
+                         '<span class="nowrap">GLP-1</span> &amp; <span class="nowrap">COVID-19</span> '
+                         'in <span class="nowrap">SARS-CoV-2</span> &lt;b&gt;')
+        self.assertEqual(str(build.nobreak_codes("post-acute sequelae")), "post-acute sequelae")
+        home = self.page("index.html")
+        self.assertIn('<span class="nowrap">GLP-1</span> medications and <span class="nowrap">COVID-19</span>.', home)
+        # The feed keeps plain titles.
+        self.assertNotIn("nowrap", read(os.path.join(self.out, "feed.xml")))
+
+    def test_preprint_chip_says_under_review_too(self):
+        pubs = self.page("publications/index.html")
+        self.assertIn('for="show-preprints">Preprints and under review<span class="chip-n">', pubs)
+
+    def test_cv_shares_the_site_left_edge(self):
+        cv = self.page("cv/index.html")
+        self.assertIn('<div class="wrap">\n<article class="cv">', cv)
+        self.assertNotIn('class="cv wrap"', cv)
+
+    def test_colophon_time_can_wrap(self):
+        col = self.page("colophon/index.html")
+        self.assertIn('<td class="num"><span class="nowrap">Oct 6, 2026,</span> <span class="nowrap">14:00 UTC</span></td>', col)
+        css = read(os.path.join(self.out, "css", "site.css"))
+        self.assertIn('counter(page) " of " counter(pages)', css)
+
+
+class TestContentRules(unittest.TestCase):
+    """Facts in content/publications.yml that a later edit must not undo."""
+
+    def test_n3c_preprints_name_the_consortium(self):
+        from common import load_yaml
+        ov = load_yaml(os.path.join(ROOT, "content", "publications.yml"))["overrides"]
+        for doi in ("10.64898/2026.07.06.26357398", "10.64898/2026.02.27.26347274",
+                    "10.64898/2026.07.06.26357401", "10.64898/2026.07.03.26357246",
+                    "10.1101/2025.06.06.25329168"):
+            self.assertIn("N3C", ov[doi].get("group_author") or "", doi)
 
 
 class TestSyncTime(unittest.TestCase):

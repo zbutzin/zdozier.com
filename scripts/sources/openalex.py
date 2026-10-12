@@ -103,17 +103,25 @@ def fetch(ctx):
     author_id = _short_id(author.get("id"))
 
     def query(flt):
-        out, cursor, pages = [], "*", 0
+        """All works for a filter. Raises if the pages add up to fewer works
+        than OpenAlex's own count, so a cut-off list never replaces the cache."""
+        out, cursor, pages, total = [], "*", 0, None
         while cursor and pages < MAX_PAGES:
             page = http.get_json("%s/works" % BASE, params=_params(site, {
                 "filter": flt, "per-page": PER_PAGE, "cursor": cursor,
                 "select": ",".join(WORK_FIELDS)}))
             pages += 1
+            meta = page.get("meta") or {}
+            if total is None and isinstance(meta.get("count"), int):
+                total = meta["count"]
             results = as_list(page.get("results"))
             out.extend(_trim_work(w) for w in results)
-            cursor = (page.get("meta") or {}).get("next_cursor")
+            cursor = meta.get("next_cursor")
             if not results:
                 break
+        # One missing work is tolerated (the index can change between pages).
+        if total is not None and pages < MAX_PAGES and len(out) < total - max(1, total // 50):
+            raise HttpError("OpenAlex returned %d of %d works for %s" % (len(out), total, flt))
         return out
 
     # Primary query by ORCID; the author id is a fallback (merge.py still
@@ -123,6 +131,9 @@ def fetch(ctx):
     if not works and orcid and author_id and (author.get("works_count") or 0) > 0:
         flt = "authorships.author.id:%s" % author_id
         works = query(flt)
+    if not works and (author.get("works_count") or 0) > 0:
+        raise HttpError("OpenAlex returned no works, but the author record lists %d"
+                        % author["works_count"])
 
     payload = {
         "source": NAME,

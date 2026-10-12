@@ -28,7 +28,7 @@ the files you edited (for example `git add content`), not `data/`.
 | Add a talk | `content/cv.yml`: copy the first entry under `presentations:` > `invited:` (or `presentations:` > `teaching:` for guest lectures; not the top-level `teaching:` list, which is for courses) and paste it above that entry, so the newest talk is listed first. |
 | Add a trainee | `content/cv.yml`: add `{name: "...", role: "..."}` under `trainees:` > `current:`. Move it to `former:` when they leave. |
 | Change the bio | `content/site.yml`: `person:` > `bio:` (home page) and `tagline:`. The CV summary is `summary_statement:` in `content/cv.yml`. |
-| Describe a code repository | `content/site.yml`: under `software:` > `descriptions:`, add `RepoName: "One plain sentence."`. It replaces the description from GitHub on the home page. |
+| Describe a code repository | `content/site.yml`: under `software:` > `descriptions:`, add `RepoName: "One plain sentence."`. It replaces the description from GitHub on the home page. To correct the language label (GitHub counts rendered HTML, so an R demo can show as "HTML"), add `RepoName: R` under `software:` > `languages:`. |
 | Add a paper the APIs cannot find | `content/publications.yml`: a DOI goes under `include_dois:`; a work with no DOI goes under `manual:` (copy an existing entry). |
 | Force a rebuild | github.com/zbutzin/zdozier.com > **Actions** > **Update site** > **Run workflow**. |
 | Preview locally | `make preview`, then open <http://localhost:8000> (Ctrl-C to stop). It builds from a scratch copy of `data/`, so `git status` stays clean. `make offline` and `make all` rewrite `data/*.json`; after using them, run `git checkout -- data` before `git pull` or committing. |
@@ -58,7 +58,11 @@ issues.
 
 **An API is down.** Each source is fetched separately. If one fails, the run
 uses that source's last good snapshot from `data/raw/` and carries on, so the
-site still builds. The status pill in the top bar ("synced N days ago") and
+site still builds. The same happens when a source is very slow (each has about
+four minutes), rate-limits the run, or answers with far fewer records than
+last time (an empty answer, or less than half of five or more records). A
+smaller answer that comes back the same in the next run is accepted, so a
+real change (say, you delete some GitHub repositories) shows up a week later. The status pill in the top bar ("synced N days ago") and
 the table on the "How this site works" page (`/colophon/`) show how the last
 run went for each source. A short outage needs nothing from you. If a source
 has been on its cached copy for two weeks, the run opens one issue, "Site data
@@ -69,7 +73,17 @@ after a run in which every source refreshes normally.
 **The publication count drops sharply.** If a run would remove more than 15%
 of the visible works at once (for example, an API returning a partial list),
 it keeps the previous list instead, records why in `data/run_report.json`,
-and opens (or comments on) the same "Site data is going stale" issue.
+and opens (or comments on) the same "Site data is going stale" issue. While
+the old list is kept, new papers are not added. If the next run comes back
+with exactly the same shorter list, it is accepted automatically and the issue
+closes. If the drop is real and you want it at once (you hid several papers,
+say), add `accept_count_drop: 2026-10-12` (today's date) as a top-level line
+in `content/publications.yml`. It is honored for 14 days, so it can stay in
+the file afterwards and does nothing.
+
+A paper that drops out of the sources for a week and then returns keeps its
+original "first seen" date and is not reported as new a second time
+(`data/seen.json` remembers every work the site has listed).
 
 **"This scheduled workflow is disabled."** GitHub pauses scheduled workflows
 in repositories with no activity for 60 days. Each run re-enables itself and
@@ -81,3 +95,9 @@ The live site keeps the last good version until a run succeeds again. If the
 log mentions a deprecated or unsupported action version, raise the `@vN`
 numbers in `.github/workflows/update.yml` to the current major version shown
 on each action's GitHub page (for example `actions/checkout`).
+
+CI installs exact versions of the Python packages: `requirements.txt` pins
+Jinja2, PyYAML, and requests, and `constraints-ci.txt` pins what they pull in
+(MarkupSafe, urllib3, idna, charset-normalizer), so a new release of one of
+them cannot break the run. Nothing needs updating on a schedule. If you ever
+upgrade a package on purpose, change its line in the matching file.

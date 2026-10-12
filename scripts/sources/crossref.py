@@ -1,7 +1,16 @@
 """Crossref: works?filter=orcid:{orcid} for discovery, then works/{doi} for
 canonical metadata. Records are cached in data/raw/crossref.json keyed by DOI
-with fetched_at; a DOI is re-fetched only when missing or older than 30 days
-(7 days for DOIs Crossref did not know), so weekly runs stay light."""
+with fetched_at; a DOI is re-fetched only when missing or about 30 days old
+(about 7 days for DOIs Crossref did not know), so weekly runs stay light. The
+limits allow half a day of slack because scheduled runs start at slightly
+different times each week.
+
+Only a 404, 400, or 410 is cached as "Crossref does not know this DOI". Rate
+limiting (429), refusals (401, 403), server errors, and lost connections keep
+the cached record. After 3 such failures in a row the lookups stop and the
+source fails, so fetch.py keeps the previous crossref.json. If the ORCID
+filter fails and no lookup succeeds, the source fails too, so its age shows
+in the site-health check."""
 from __future__ import annotations
 
 import time
@@ -14,7 +23,10 @@ NAME = "crossref"
 BASE = "https://api.crossref.org"
 MAX_AGE_DAYS = 30
 MISS_MAX_AGE_DAYS = 7
+SLACK_DAYS = 0.5  # a record due "next Monday" is refreshed even if the run starts earlier
 PAUSE = 0.2  # seconds between per-DOI requests
+BREAKER = 3  # consecutive rate-limit, server, or connection failures before giving up
+MISS_STATUSES = (400, 410)  # (404 arrives as None) Crossref does not know this DOI
 KEEP = ["DOI", "type", "subtype", "title", "subtitle", "container-title",
         "short-container-title", "author", "published", "published-print",
         "published-online", "issued", "posted", "accepted", "volume", "issue", "page",
@@ -86,7 +98,7 @@ def _fresh(entry, now, force=False):
         return False
     age = (now - t).total_seconds() / 86400.0
     limit = MAX_AGE_DAYS if entry.get("status") == 200 else MISS_MAX_AGE_DAYS
-    return age < limit
+    return age < limit - SLACK_DAYS
 
 
 def fetch(ctx):
@@ -146,11 +158,11 @@ def fetch(ctx):
     # 2. Per-DOI lookups (cached).
     wanted = target_dois(ctx.get("raw") or {}, ctx.get("pubs") or {})
     wanted.update(orcid_dois)
-    fetched = failed = 0
+    fetched = failed = in_a_row = 0
     errors = []
 
     def lookup(doi):
-        nonlocal fetched, failed
+        nonlocal fetched, failed, in_a_row
         if _fresh(cache.get(doi), now, force):
             return
         try:
@@ -159,13 +171,26 @@ def fetch(ctx):
             fetched += 1
         except HttpError as exc:
             failed += 1
-            if exc.status == 404 or (exc.status and 400 <= exc.status < 500):
+            if exc.budget:
+                raise HttpError("crossref: stopped after %d lookups: %s" % (fetched + failed - 1, exc),
+                                budget=True)
+            old = as_dict(cache.get(doi))
+            if exc.status in MISS_STATUSES and old.get("status") != 200:
+                # Crossref does not know this DOI: a miss, retried in a week.
                 cache[doi] = {"fetched_at": now_iso, "status": exc.status, "message": None}
-            else:
-                errors.append("%s: %s" % (doi, exc))
+                in_a_row = 0
+                return
+            # Anything else (429, 401, 403, 5xx, no connection) says nothing
+            # about the record: keep the cached copy and count the failure.
+            errors.append("%s: %s" % (doi, exc))
+            in_a_row = in_a_row + 1 if exc.transient else 0
+            if in_a_row >= BREAKER:
+                raise HttpError("crossref: rate limited or unavailable (%d failed lookups in a row), "
+                                "e.g. %s" % (in_a_row, exc), exc.status)
             return
         finally:
             time.sleep(PAUSE)
+        in_a_row = 0
         if msg is None:
             cache[doi] = {"fetched_at": now_iso, "status": 404, "message": None}
         else:
@@ -184,13 +209,22 @@ def fetch(ctx):
 
     if len(errors) > max(5, len(wanted) // 2):
         raise HttpError("crossref: %d lookups failed, e.g. %s" % (len(errors), errors[0]))
+    if filter_error and fetched == 0:
+        # Nothing came from Crossref this run. Failing here keeps the previous
+        # file and its fetched_at, so a long outage reaches the health check.
+        raise HttpError("crossref unreachable: %s" % filter_error)
 
+    partial = filter_error
+    if errors:
+        note = "%d of %d lookups failed (cached records kept), e.g. %s" % (
+            len(errors), fetched + failed, errors[0])
+        partial = "%s; %s" % (filter_error, note) if filter_error else note
     payload = {
         "source": NAME,
         "fetched_at": now_iso,
         "orcid_filter": {"orcid": orcid, "dois": sorted(set(orcid_dois)),
                          "error": filter_error},
-        "partial_error": filter_error,
+        "partial_error": partial,
         "stats": {"wanted": len(wanted), "relation_targets": len(extra - wanted),
                   "fetched": fetched, "failed": failed, "errors": errors[:10]},
         "works": {k: cache[k] for k in sorted(cache)},

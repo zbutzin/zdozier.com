@@ -65,6 +65,23 @@ ROLE_LABELS = {
 # Site health: a failing source is reported once its last good copy is this old.
 STALE_DAYS = 14
 
+# Same rule as common.scrub (this script uses the standard library only):
+# API keys and tokens never go into an issue body.
+_SECRET_PARAM_RE = re.compile(
+    r"(?i)\b(api_key|apikey|key|token|access_token|mailto)=[^&\s'\")]+")
+SECRET_ENV_VARS = ("OPENALEX_API_KEY", "GITHUB_TOKEN")
+
+
+def scrub(text):
+    if text is None:
+        return None
+    out = _SECRET_PARAM_RE.sub(lambda m: m.group(1) + "=REDACTED", str(text))
+    for var in SECRET_ENV_VARS:
+        val = os.environ.get(var)
+        if val and len(val) >= 6:
+            out = out.replace(val, "REDACTED")
+    return out
+
 HEALTH_SOURCE_NAMES = {
     "orcid": "ORCID",
     "openalex": "OpenAlex",
@@ -428,9 +445,10 @@ def guard_tripped(report):
 
 
 def health_state(report, now=None):
-    """'stale' (an issue is due), 'ok' (every source refreshed and the list was
-    updated, so an open issue can be closed), or 'degraded' (something failed
-    but not for long enough to report yet)."""
+    """'stale' (an issue is due), 'ok' (every source refreshed without errors
+    and the list was updated, so an open issue can be closed), or 'degraded'
+    (something failed, or a source reported a partial error, but not for long
+    enough to report yet)."""
     if not isinstance(report, dict):
         return "degraded"
     if stale_sources(report, now) or guard_tripped(report):
@@ -439,7 +457,8 @@ def health_state(report, now=None):
     if not isinstance(sources, dict) or not sources:
         return "degraded"
     for status in sources.values():
-        if not isinstance(status, dict) or not status.get("ok") or status.get("used_cache"):
+        if not isinstance(status, dict) or not status.get("ok") or status.get("used_cache") \
+                or status.get("error"):
             return "degraded"
     return "ok"
 
@@ -475,7 +494,7 @@ def build_health_body(report, now=None):
                 line += " Affects %s." % shows
             parts.append(line)
             if status.get("error"):
-                parts.append("  Error: %s" % md_escape(str(status["error"])[:300]))
+                parts.append("  Error: %s" % md_escape(scrub(status["error"])[:300]))
         parts.append("")
     if tripped:
         parts.append("### Publication list kept from the previous run")
@@ -487,17 +506,25 @@ def build_health_body(report, now=None):
                 break
         parts.append(
             "This run would have removed more than 15% of the listed works at once, so the "
-            "previous list was kept. That usually means a source returned a partial list.")
+            "previous list was kept. That usually means a source returned a partial list. "
+            "New works are not added while the old list is kept.")
         if note:
             parts.append("")
-            parts.append("> " + md_escape(note))
+            parts.append("> " + md_escape(scrub(note)))
+        parts.append("")
+        parts.append(
+            "If the next run comes back with exactly the same shorter list, it is accepted "
+            "automatically and this issue closes. If the drop is real and you want it now "
+            "(for example, you hid several works or merged duplicates), add "
+            "`accept_count_drop: %s` at the top level of `content/publications.yml`; it is "
+            "honored for 14 days." % run_date(report))
         parts.append("")
     parts.extend([
         "### What you can do",
         "",
         "**Usually nothing.** Most outages end on their own. This issue closes itself after "
-        "the next run in which every source refreshes normally, and you get one more email "
-        "when that happens.",
+        "the next run in which every source refreshes normally (and the publication list is "
+        "updated), and you get one more email when that happens.",
         "",
         "If it stays open for several weeks, open the latest run under **Actions** > "
         "**Update site** and read the log of the step \"Fetch, merge, build, and print the CV\". "

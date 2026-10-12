@@ -42,14 +42,16 @@
         <dd class="stat-spark">
           <figure class="spark">
             {{ sparkline }}
-            <figcaption class="spark-cap"><span>per year, {{ spark_rows[0].year }}–{{ spark_rows[-1].year }}</span>{% if spark_last %}<span class="spark-last"><span class="key key-lead" aria-hidden="true"></span>{{ spark_last.value|thousands }} in {{ spark_last.year }}{% if spark_partial %} to date{% endif %}</span>{% endif %}</figcaption>
-            <table class="sr-only">
-              <caption>Citations per year (OpenAlex)</caption>
-              <thead><tr><th scope="col">Year</th><th scope="col">Citations</th></tr></thead>
-              <tbody>
-                {% for r in spark_rows %}<tr><th scope="row">{{ r.year }}</th><td>{{ r.value }}</td></tr>{% endfor %}
-              </tbody>
-            </table>
+            <figcaption class="spark-cap"><span>per year, <span class="nowrap">{{ spark_rows[0].year }}–{{ spark_rows[-1].year }}</span></span>{% if spark_last %}<span class="spark-last"><span class="key key-lead" aria-hidden="true"></span>{{ spark_last.value|thousands }} in {{ spark_last.year }}{% if spark_partial %} to date{% endif %}</span>{% endif %}</figcaption>
+            <div class="sr-only">
+              <table>
+                <caption>Citations per year (OpenAlex)</caption>
+                <thead><tr><th scope="col">Year</th><th scope="col">Citations</th></tr></thead>
+                <tbody>
+                  {% for r in spark_rows %}<tr><th scope="row">{{ r.year }}</th><td>{{ r.value }}</td></tr>{% endfor %}
+                </tbody>
+              </table>
+            </div>
           </figure>
         </dd>
         {% elif s.note %}
@@ -58,7 +60,7 @@
       </div>
       {% endfor %}
     </dl>
-    <p class="stats-source">Publication counts from the list on this site. Citations and <span class="nowrap">h-index</span> from <a href="https://openalex.org/">OpenAlex</a>. <a href="/colophon/">{% if sync.iso %}<span data-synced="{{ sync.iso }}" data-cap>{{ sync.label|cap }}</span>{% else %}{{ sync.label|cap }}{% endif %}</a>.</p>
+    <p class="stats-source">Work counts from the list on this site{% if n_pre %}, including {{ n_pre }} {{ 'preprint or manuscript' if n_pre == 1 else 'preprints or manuscripts' }} under review{% endif %}. Citations and <span class="nowrap">h-index</span> from <a href="https://openalex.org/">OpenAlex</a>. <a href="/colophon/">{% if sync.iso %}<span data-synced="{{ sync.iso }}" data-cap>{{ sync.label|cap }}</span>{% else %}{{ sync.label|cap }}{% endif %}</a>.</p>
   </section>
 
   {% if themes %}
@@ -69,7 +71,7 @@
         {% for th in themes %}
         <li class="theme">
           <h3 class="theme-title"><span class="theme-n" aria-hidden="true">{{ '%02d'|format(loop.index) }}</span>{{ th.title }}</h3>
-          {% if th.summary %}<p class="theme-summary">{{ th.summary }}</p>{% endif %}
+          {% if th.summary %}<p class="theme-summary">{{ th.summary|nobreak_codes }}</p>{% endif %}
           {% if th.papers %}
           <ul class="pub-c-list">
             {% for w in th.papers %}{{ pub_compact(w) }}{% endfor %}
@@ -92,7 +94,7 @@
       <ul class="pub-c-list">
         {% for w in recent %}{{ pub_compact(w) }}{% endfor %}
       </ul>
-      <p class="more"><a href="/publications/">All {{ works|length }} publications</a></p>
+      <p class="more"><a href="/publications/">All {{ works|length }} works</a></p>
     </div>
   </section>
   {% endif %}

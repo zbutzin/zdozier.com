@@ -56,6 +56,21 @@
     g.addEventListener("blur", hide);
   });
 
+  // Mobile menu (<details>): Escape or a tap outside closes it.
+  var menu = d.querySelector("details.menu");
+  if (menu) {
+    d.addEventListener("keydown", function (e) {
+      if ((e.key === "Escape" || e.key === "Esc") && menu.open) {
+        menu.open = false;
+        var sum = menu.querySelector("summary");
+        if (sum) sum.focus();
+      }
+    });
+    d.addEventListener("click", function (e) {
+      if (menu.open && !menu.contains(e.target)) menu.open = false;
+    });
+  }
+
   // Publication filters (chips, type, year, search), mirrored in the URL hash.
   var form = d.getElementById("pub-filters"), list = d.getElementById("pub-list");
   if (!form || !list) return;
@@ -113,7 +128,13 @@
       g.hidden = !v;
       if (c) c.textContent = v;
     });
-    count.textContent = n === items.length ? "Showing all " + n + " works" : "Showing " + n + " of " + items.length + " works";
+    var what = "";
+    if (s.show !== "all") {
+      var lab = checkedLabel();
+      if (lab && lab.firstChild) what = ": " + String(lab.firstChild.textContent).trim();
+    }
+    count.textContent = n === items.length ? "Showing all " + n + " works"
+      : "Showing " + n + " of " + items.length + " works" + what;
     empty.hidden = n > 0;
     if (write && history.replaceState) {
       var h = keys.filter(function (k) { return s[k] && s[k] !== "all"; })
@@ -121,13 +142,26 @@
       history.replaceState(null, "", h ? "#" + h : location.pathname + location.search);
     }
   }
-  function reset() { form.reset(); apply(true); el.q.focus(); }
+  function checkedLabel() {
+    var i = form.querySelector("input[name=show]:checked");
+    return i ? form.querySelector('label[for="' + i.id + '"]') : null;
+  }
+  // On a phone the chip row scrolls sideways; bring the active chip into view
+  // (sideways only, so the page itself does not jump).
+  function revealChip() {
+    var c = form.querySelector(".chips"), l = checkedLabel();
+    if (c && l && c.scrollWidth > c.clientWidth) {
+      c.scrollLeft = l.offsetLeft - (parseFloat(getComputedStyle(c).paddingLeft) || 0);
+    }
+  }
+  function reset() { form.reset(); apply(true); revealChip(); el.q.focus(); }
   form.hidden = false;
   form.addEventListener("input", function () { apply(true); });
   form.addEventListener("change", function () { apply(true); });
   form.addEventListener("submit", function (e) { e.preventDefault(); });
   all("#pub-reset, [data-reset]").forEach(function (b) { b.addEventListener("click", reset); });
-  window.addEventListener("hashchange", function () { if (decode()) apply(false); });
+  window.addEventListener("hashchange", function () { if (decode()) { apply(false); revealChip(); } });
   decode();
   apply(false);
+  revealChip();
 })();

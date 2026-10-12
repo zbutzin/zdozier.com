@@ -1,7 +1,8 @@
 {% extends "base.html" %}
 {% block main %}
 {% set c = cv %}
-<article class="cv wrap">
+<div class="wrap">
+<article class="cv">
   <header class="cv-head">
     <h1 class="cv-name">{{ person.name_with_degrees }}</h1>
     <p class="cv-contact">
@@ -193,4 +194,5 @@
   </section>
   {% endif %}
 </article>
+</div>
 {% endblock %}

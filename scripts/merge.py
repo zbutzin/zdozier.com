@@ -11,6 +11,8 @@ Usage: python3 scripts/merge.py [--today YYYY-MM-DD]
 from __future__ import annotations
 
 import argparse
+import datetime as _dt
+import hashlib
 import itertools
 import os
 import re
@@ -19,8 +21,8 @@ import sys
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 
 from common import (CONTENT_DIR, CROSSREF_EXCLUDED_TYPES, DATA_DIR, OPENALEX_EXCLUDED_TYPES,  # noqa: E402
-                    ORCID_EXCLUDED_TYPES, RAW_DIR, as_dict, as_list, author_from_string,
-                    clean_date, clean_title, date_sort_key, date_to_ordinal, doi_url,
+                    ORCID_EXCLUDED_TYPES, RAW_DIR, apa_name, as_dict, as_list, author_from_string,
+                    clean_date, clean_title, date_sort_key, date_to_ordinal, display_name, doi_url,
                     family_keys, identity_config, is_group_name, is_preprint_doi,
                     is_repository_doi, jmir_pair, load_json, load_yaml, log, make_author,
                     match_title, name_key, normalize_doi, normalize_orcid, normalize_pmcid,
@@ -41,6 +43,9 @@ OVERRIDE_BLOCKED = ("id", "sources", "first_seen", "versions", "alt_ids", "autho
 # Sources an `authors_source` override may pin a work's author list to.
 AUTHOR_SOURCES = ("crossref", "europepmc", "openalex", "orcid")
 SANITY_DROP = 0.15
+# content/publications.yml `accept_count_drop: YYYY-MM-DD` lets a tripped
+# sanity guard through for this many days after that date.
+ACCEPT_DROP_DAYS = 14
 FUZZY_RATIO = 0.88
 
 WORK_KEYS = ["id", "doi", "title", "authors", "author_count", "my_position", "role", "year",
@@ -258,6 +263,26 @@ def norm_orcid(w, me, my_orcid):
 PRECEDENCE = ["crossref", "openalex", "europepmc", "orcid"]
 
 
+def _borrow_given_names(epl, crl):
+    """Europe PMC's byline, taking Crossref's given name for each person who
+    has the same family name and first initial at the same position."""
+    out = []
+    for i, a in enumerate(epl):
+        c = crl[i] if i < len(crl) else None
+        if (c and not a.get("is_group") and not c.get("is_group") and c.get("given")
+                and a.get("given") and a.get("family")
+                and name_key(c.get("family")) == name_key(a.get("family"))
+                and strip_accents(c["given"]).lstrip("( ")[:1].lower()
+                == strip_accents(a["given"]).lstrip("( ")[:1].lower()):
+            b = dict(a, given=c["given"])
+            b["name"] = display_name(b["given"], b.get("family"), b.get("suffix"))
+            b["apa"] = apa_name(b)
+            out.append(b)
+        else:
+            out.append(a)
+    return out
+
+
 class Cand(object):
     def __init__(self, key, doi=None):
         self.key = key
@@ -297,7 +322,10 @@ class Cand(object):
         - Crossref sometimes deposits a consortium's whole member list as
           authors (eBioMedicine: 143 and 376 names) and leaves the group out.
           When that list is more than twice as long as Europe PMC's and Europe
-          PMC names the group, Europe PMC has the printed byline; use it.
+          PMC names the group, Europe PMC has the printed byline; use it,
+          with Crossref's given names where the same person sits at the same
+          position (Europe PMC turns "Junming (Seraphina)" into "Junming
+          Seraphina", which would print as a middle initial).
         - When Crossref drops a trailing group author that Europe PMC keeps
           and the people otherwise match one for one, the group is added back.
 
@@ -315,7 +343,7 @@ class Cand(object):
             ep_groups = [a for a in epl if a.get("is_group")]
             if ep_groups:
                 if len(crl) > 2 * len(epl):
-                    return epl
+                    return _borrow_given_names(epl, crl)
                 n_people = len(epl) - len(ep_groups)
                 groups_trail = all(a.get("is_group") for a in epl[n_people:])
                 if groups_trail and not any(a.get("is_group") for a in crl) \
@@ -1335,30 +1363,53 @@ def finalize_work(w):
 # first_seen, new/removed, sanity guard
 # --------------------------------------------------------------------------
 
-def carry_first_seen(works, prev_works, today):
-    index = {}
+def seen_ledger(ledger, prev_works):
+    """data/seen.json: {key: first_seen} for every id, DOI, and version DOI
+    ever listed. It is never pruned, so a work that drops out of the sources
+    for a run and comes back keeps its first_seen and is not announced as new
+    again. The first time, it is seeded from the previous publications.json."""
+    out = dict((str(k), str(v)) for k, v in as_dict(ledger).items() if k and v)
     for p in prev_works or []:
         fs = p.get("first_seen")
         if not fs:
             continue
         for k in _keyset(p):
-            if k not in index or fs < index[k]:
-                index[k] = fs
+            if k not in out or fs < out[k]:
+                out[k] = fs
+    return out
+
+
+def update_ledger(ledger, works):
+    out = dict(ledger)
+    for w in works:
+        fs = w.get("first_seen")
+        if not fs:
+            continue
+        for k in _keyset(w):
+            if k not in out or fs < out[k]:
+                out[k] = fs
+    return {k: out[k] for k in sorted(out)}
+
+
+def carry_first_seen(works, prev_works, today, ledger=None):
+    index = seen_ledger(ledger, prev_works)
     for w in works:
         seen = [index[k] for k in _keyset(w) if k in index]
         w["first_seen"] = min(seen) if seen else today
     return works
 
 
-def diff_works(works, prev_works):
-    """new: no key overlap with any previous work; removed: previous works with
-    no key overlap with any current work; promoted: preprint now published."""
+def diff_works(works, prev_works, ledger=None):
+    """new: no key overlap with any previous work or any key in the seen
+    ledger; removed: previous works with no key overlap with any current work;
+    promoted: preprint now published."""
     if prev_works is None:
         return [], [], []
     prev_index = {}
     for p in prev_works:
         for k in _keyset(p):
             prev_index.setdefault(k, p)
+    seen = as_dict(ledger)
     cur_keys = set()
     new, promoted = [], []
     for w in works:
@@ -1366,7 +1417,8 @@ def diff_works(works, prev_works):
         cur_keys |= ks
         match = next((prev_index[k] for k in ks if k in prev_index), None)
         if match is None:
-            new.append(_brief(w))
+            if not any(k in seen for k in ks):
+                new.append(_brief(w))
         elif match.get("status") == "preprint" and w.get("status") == "published" \
                 and match.get("id") != w.get("id"):
             b = _brief(w)
@@ -1389,6 +1441,34 @@ def sanity_check(n_new, prev_works, hidden_keys):
     n_prev = len(prev_works)
     now_hidden = sum(1 for p in prev_works if _keyset(p) & hidden_keys)
     return (n_new + now_hidden) < n_prev * (1.0 - SANITY_DROP)
+
+
+def guard_candidate(works):
+    """What a tripped guard held back: the count and a hash of the ids."""
+    ids = sorted(str(w.get("id")) for w in works)
+    return {"count": len(ids),
+            "ids_sha1": hashlib.sha1("\n".join(ids).encode("utf-8")).hexdigest()}
+
+
+def accept_drop(candidate, prev_report, pubs, today):
+    """Why a tripped guard may let the smaller list through, or None:
+    'repeat' when the previous run held back exactly the same list (two runs
+    in a row agree, so it is not a one-off glitch), or 'switch' when
+    content/publications.yml has accept_count_drop: <date> within the last
+    ACCEPT_DROP_DAYS days."""
+    prev_guard = as_dict(as_dict(prev_report).get("sanity_guard"))
+    if prev_guard.get("tripped") and as_dict(prev_guard.get("candidate")) == candidate:
+        return "repeat"
+    when = as_dict(pubs).get("accept_count_drop")
+    if when:
+        try:
+            d = _dt.date(*[int(x) for x in str(when)[:10].split("-")])
+            t = _dt.date(*[int(x) for x in str(today)[:10].split("-")])
+        except (TypeError, ValueError):
+            return None
+        if 0 <= (t - d).days <= ACCEPT_DROP_DAYS:
+            return "switch"
+    return None
 
 
 # --------------------------------------------------------------------------
@@ -1726,7 +1806,18 @@ def run(content, raw, prev, today, now):
     for w in hidden:
         hidden_keys |= _keyset(w)
 
+    ledger = seen_ledger(prev.get("seen"), prev_works)
     guard = sanity_check(len(works), prev_works, hidden_keys)
+    candidate = guard_candidate(works) if guard else None
+    accepted = accept_drop(candidate, prev.get("run_report"), content.get("publications"),
+                           today) if guard else None
+    if accepted:
+        warnings.insert(0, "sanity guard: visible works fell from %d to %d; accepted the new "
+                           "list (%s)"
+                        % (len(prev_works), len(works),
+                           "the same list two runs in a row" if accepted == "repeat"
+                           else "accept_count_drop in content/publications.yml"))
+        guard = False
     if guard:
         warnings.insert(0, "sanity guard: visible works fell from %d to %d (more than %d%%); "
                            "kept the previous data/publications.json"
@@ -1734,9 +1825,10 @@ def run(content, raw, prev, today, now):
         out_works = prev_works
         new = removed = promoted = []
     else:
-        carry_first_seen(works, prev_works, today)
+        carry_first_seen(works, prev_works, today, ledger)
         out_works = [finalize_work(w) for w in works]
-        new, removed, promoted = diff_works(out_works, prev_works)
+        new, removed, promoted = diff_works(out_works, prev_works, ledger)
+        ledger = update_ledger(ledger, out_works)
     publications = {"generated": now, "works": out_works}
     metrics = build_metrics(out_works, [finalize_work(w) for w in hidden], raw, now, today)
     grants = build_grants(raw, content, now, today, warnings)
@@ -1754,6 +1846,7 @@ def run(content, raw, prev, today, now):
         "new_works": new, "removed_works": removed, "promoted_works": promoted,
         "new_grants": new_grants, "hidden_count": len(hidden),
         "first_run": prev_works is None,
+        "seen": ledger, "guard_candidate": candidate, "guard_accepted": accepted,
     }
 
 
@@ -1770,13 +1863,16 @@ def main(argv=None):
     content = load_content(args.content_dir)
     raw = load_raw(raw_dir)
     prev = {"publications": load_json(os.path.join(data_dir, "publications.json"), None),
-            "grants": load_json(os.path.join(data_dir, "grants.json"), None)}
+            "grants": load_json(os.path.join(data_dir, "grants.json"), None),
+            "seen": load_json(os.path.join(data_dir, "seen.json"), None),
+            "run_report": load_json(os.path.join(data_dir, "run_report.json"), None)}
     fetch_status = load_json(os.path.join(raw_dir, "fetch_status.json"), {}) or {}
     now = utc_now_iso()
     res = run(content, raw, prev, today, now)
 
     if not res["guard"]:
         write_json_atomic(os.path.join(data_dir, "publications.json"), res["publications"])
+        write_json_atomic(os.path.join(data_dir, "seen.json"), res["seen"])
     write_json_atomic(os.path.join(data_dir, "metrics.json"), res["metrics"])
     write_json_atomic(os.path.join(data_dir, "grants.json"), res["grants"])
     write_json_atomic(os.path.join(data_dir, "software.json"), res["software"])
@@ -1805,7 +1901,10 @@ def main(argv=None):
         "sanity_guard": {"tripped": res["guard"],
                          "previous": len(as_list(as_dict(prev["publications"]).get("works"))),
                          "current": len(res["publications"]["works"]) if not res["guard"] else None,
-                         "max_drop": SANITY_DROP},
+                         "max_drop": SANITY_DROP,
+                         # The held-back list; if the next run holds back the same one, it is accepted.
+                         "candidate": res["guard_candidate"] if res["guard"] else None,
+                         "accepted": res["guard_accepted"]},
         "counts": {"visible_works": len(res["publications"]["works"]),
                    "hidden_works": res["hidden_count"],
                    "grants": len(res["grants"]["grants"]),

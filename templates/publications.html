@@ -22,13 +22,15 @@
       {{ chart_wide }}
       {{ chart_compact }}
     </div>
-    <table class="sr-only">
-      <caption>Publications per year by authorship role</caption>
-      <thead><tr><th scope="col">Year</th><th scope="col">First or senior author</th><th scope="col">Co-author</th><th scope="col">Total</th></tr></thead>
-      <tbody>
-        {% for r in per_year %}{% if r.lead + r.co %}<tr><th scope="row">{{ r.year }}</th><td>{{ r.lead }}</td><td>{{ r.co }}</td><td>{{ r.lead + r.co }}</td></tr>{% endif %}{% endfor %}
-      </tbody>
-    </table>
+    <div class="sr-only">
+      <table>
+        <caption>Publications per year by authorship role</caption>
+        <thead><tr><th scope="col">Year</th><th scope="col">First or senior author</th><th scope="col">Co-author</th><th scope="col">Total</th></tr></thead>
+        <tbody>
+          {% for r in per_year %}{% if r.lead + r.co %}<tr><th scope="row">{{ r.year }}</th><td>{{ r.lead }}</td><td>{{ r.co }}</td><td>{{ r.lead + r.co }}</td></tr>{% endif %}{% endfor %}
+        </tbody>
+      </table>
+    </div>
   </figure>
   {% endif %}
 

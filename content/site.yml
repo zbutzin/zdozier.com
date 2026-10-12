@@ -88,3 +88,8 @@ software:
   descriptions:
     ipv-dep-stress-telo: "Analysis code for intimate partner violence, maternal depression, parental stress, and child telomere length in Bangladesh"
     HAL-in-R: "Example R code for the highly adaptive lasso (HAL): undersmoothed fits and delta-method confidence intervals for treatment effects"   # from the repo's Demo.Rmd (October 2026)
+  # Shown instead of GitHub's language label, which counts rendered HTML
+  # output (HAL-in-R reads as "HTML") or is empty (TMLEbootstrap).
+  languages:
+    HAL-in-R: R
+    TMLEbootstrap: R

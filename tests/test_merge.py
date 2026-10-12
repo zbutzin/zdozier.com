@@ -754,7 +754,7 @@ class TestConsortiumBylines(unittest.TestCase):
         self.assertEqual(w["authors"][-1]["name"], "N3C Consortium")
         self.assertTrue(w["authors"][-1]["is_group"])
         self.assertEqual((w["my_position"], w["role"]), (1, "first"))
-        # authors_source pins Crossref's list (as his CV does for one OFID paper).
+        # authors_source pins Crossref's list (escape hatch for a paper where the Europe PMC byline is wrong).
         pubs = {"overrides": {self.DOI: {"authors_source": "crossref"}}}
         w = by_id(run(raw_from([copy.deepcopy(m)], epmc=[copy.deepcopy(ep)]), pubs=pubs), self.DOI)
         self.assertEqual(w["author_count"], 45)
@@ -812,6 +812,96 @@ class TestConsortiumBylines(unittest.TestCase):
                           "initials": "JR"}]}
         r = merge.norm_europepmc(x, common.DEFAULT_ME, ORCID)
         self.assertEqual([a["apa"] for a in r["authors"]], ["Colford, J. M., Jr.", "Smith, J. R."])
+
+
+class TestOctoberFixes(unittest.TestCase):
+    """Regression tests for the second October 2026 review."""
+    DOI = "10.1016/j.ebiom.2026.106382"
+
+    def test_consortium_byline_keeps_crossref_nickname(self):
+        # Europe PMC flattens "Junming (Seraphina)" to "Junming Seraphina",
+        # which would print as "Shi, J. S."; Crossref's form gives "Shi, J.".
+        people = [("Zachary", "Butzin-Dozier", ORCID), ("Junming Seraphina", "Shi", None),
+                  ("Yunwen", "Ji", None)]
+        members = [au("Ann" + "abcdefghij"[i % 10], "Member" + "abcd"[i // 10]) for i in range(40)]
+        crl = [au("Zachary", "Butzin-Dozier", ORCID), au("Junming (Seraphina)", "Shi"),
+               au("Yunwen", "Ji")] + members
+        m = cr(self.DOI, "COVID-19 vaccination timing", crl, [2026, 9, 1])
+        authors = [{"fullName": "%s %s" % (f, g[0]), "firstName": g, "lastName": f,
+                    "initials": "".join(x[0] for x in g.split()), "collectiveName": None,
+                    "orcid": o} for g, f, o in people]
+        authors.append({"fullName": None, "lastName": None, "collectiveName": "N3C Consortium"})
+        ep = {"id": "1", "source": "MED", "doi": self.DOI, "title": "COVID-19 vaccination timing",
+              "authors": authors, "pubYear": "2026", "journal": "eBioMedicine"}
+        w = by_id(run(raw_from([m], epmc=[ep])), self.DOI)
+        self.assertEqual(w["author_count"], 4)
+        self.assertEqual([a["apa"] for a in w["authors"]],
+                         ["Butzin-Dozier, Z.", "Shi, J.", "Ji, Y.", "N3C Consortium"])
+        self.assertEqual((w["my_position"], w["role"]), (1, "first"))
+
+    def test_given_name_not_borrowed_from_a_different_person(self):
+        epl = [common.make_author(given="Yi", family="Wang"),
+               common.make_author(name="N3C Consortium", is_group=True)]
+        crl = [common.make_author(given="Bo", family="Wang")] + \
+            [common.make_author(given="Ann", family="Member%d" % i) for i in range(5)]
+        out = merge._borrow_given_names(epl, crl)
+        self.assertEqual([a["apa"] for a in out], ["Wang, Y.", "N3C Consortium"])
+
+    def test_work_that_drops_out_for_a_run_is_not_new_again(self):
+        a = cr("10.1000/a", "Paper A", me_first(), [2026, 1, 1])
+        b = cr("10.1000/b", "Paper B", me_first(), [2026, 2, 1])
+        c = cr("10.1000/c", "Paper C", me_first(), [2026, 3, 1])
+        r1 = run(raw_from([a, b, c]), today="2026-10-05")
+        prev = {"publications": r1["publications"], "grants": None, "seen": r1["seen"]}
+        # Run 2: Paper C is missing (a partial source response under the guard).
+        r2 = run(raw_from([copy.deepcopy(a), copy.deepcopy(b), copy.deepcopy(c)][:2] +
+                          [cr("10.1000/d", "Paper D", me_first(), [2026, 4, 1])]),
+                 prev=prev, today="2026-10-12")
+        self.assertFalse(r2["guard"])
+        self.assertEqual([w["id"] for w in r2["new_works"]], ["10.1000/d"])
+        self.assertIn("10.1000/c", r2["seen"])
+        prev = {"publications": r2["publications"], "grants": None, "seen": r2["seen"]}
+        # Run 3: it is back. Not announced again, and first_seen is the original.
+        r3 = run(raw_from([cr(x["DOI"], x["title"][0], me_first(), [2026, 1, 1])
+                           for x in (a, b, c)] + [cr("10.1000/d", "Paper D", me_first(), [2026, 4, 1])]),
+                 prev=prev, today="2026-10-19")
+        self.assertEqual(r3["new_works"], [])
+        self.assertEqual(by_id(r3, "10.1000/c")["first_seen"], "2026-10-05")
+        self.assertEqual(by_id(r3, "10.1000/d")["first_seen"], "2026-10-12")
+
+    def guard_prev(self, n=20):
+        works_ = [{"id": "10.1000/%d" % i, "doi": "10.1000/%d" % i, "versions": [], "alt_ids": [],
+                   "first_seen": "2026-01-01", "title": "t%d" % i} for i in range(n)]
+        return {"publications": {"generated": "x", "works": works_}, "grants": None}
+
+    def test_guard_accepts_the_same_smaller_list_two_runs_in_a_row(self):
+        raw = raw_from([cr("10.1000/new", "Only one", me_first(), [2026, 1, 1])])
+        prev = self.guard_prev()
+        r1 = run(copy.deepcopy(raw), prev=prev)
+        self.assertTrue(r1["guard"])
+        self.assertEqual(r1["guard_candidate"]["count"], 1)
+        report = {"sanity_guard": {"tripped": True, "candidate": r1["guard_candidate"]}}
+        r2 = run(copy.deepcopy(raw), prev=dict(prev, run_report=report), today="2026-10-16")
+        self.assertFalse(r2["guard"])
+        self.assertEqual(r2["guard_accepted"], "repeat")
+        self.assertEqual([w["id"] for w in works(r2)], ["10.1000/new"])
+        self.assertIn("accepted the new list", r2["warnings"][0])
+        # A different held-back list does not count as a repeat.
+        other = {"sanity_guard": {"tripped": True,
+                                  "candidate": {"count": 1, "ids_sha1": "0" * 40}}}
+        self.assertTrue(run(copy.deepcopy(raw), prev=dict(prev, run_report=other))["guard"])
+
+    def test_guard_switch_in_publications_yml(self):
+        raw = raw_from([cr("10.1000/new", "Only one", me_first(), [2026, 1, 1])])
+        res = run(copy.deepcopy(raw), pubs={"accept_count_drop": "2026-10-01"},
+                  prev=self.guard_prev())
+        self.assertEqual((res["guard"], res["guard_accepted"]), (False, "switch"))
+        # Older than 14 days: ignored, the guard holds.
+        res = run(copy.deepcopy(raw), pubs={"accept_count_drop": "2026-09-01"},
+                  prev=self.guard_prev())
+        self.assertTrue(res["guard"])
+        res = run(copy.deepcopy(raw), pubs={"accept_count_drop": "soon"}, prev=self.guard_prev())
+        self.assertTrue(res["guard"])
 
 
 if __name__ == "__main__":

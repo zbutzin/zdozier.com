@@ -65,6 +65,23 @@ three), by the site's rule.
 
 Items 4 to 6 could be updated in the Word CV.
 
+## Word CV corrections (checked 12 October 2026)
+
+These are errors in the Word CV, not on the site, unless noted.
+
+| CV item | Word CV says | Source says |
+|---|---|---|
+| Original research 2, Wang (OFID) | Byline ends "... Patel, R. C., Sun, J., ... Zhang, X. T." | The journal byline (Europe PMC) is 19 people and then "National Clinical Cohort Collaborative (N3C)". Crossref adds the N3C member roster after the group, sorted by first name, so "Zhang, X. T." is just the last name in that roster, not the last author. The site now uses the journal byline (20 entries, your position 15 unchanged). |
+| Original research 13, Figueroa (Sci Rep) | "Li, A." | "Li, G." (Gaoge Li, per Crossref). The site already shows "Li, G.". |
+| Chapter 1 (Wiley) | "Anzalone, J.A.." | Every other record of this co-author has "A. J." (Alfred Jerrod). The site copies the CV for now (see below). |
+
+## Waiting on you
+
+The site keeps its current behavior on these until you decide.
+
+- **Chapter co-author initials.** If "Anzalone, A. J." is right, change it in the
+  `manual:wiley-environmental-health-nursing-chapter` entry and in the Word CV.
+
 ## On the site but not on your CV
 
 Found automatically. The publisher's author list names you on each one. To hide one, add
@@ -109,6 +126,8 @@ source, the site switches to the discovered record, keeps your contribution note
 - **NeurIPS** paper had no topic; it is now under "Causal inference and machine learning". Topic rules also match "artificial intelligence", "large language model" and "LLM".
 - **IJIC 2021**: issue 1 added, as on the CV.
 - **Year charts** count published works and anything with a DOI (37 of 40). Items with no DOI that are in press or under review are left out until they appear, so the 2027 chapter does not add a 2027 bar. The total in `metrics.json` (`works_count`) still counts all 40.
+- **N3C group author on five preprints** (12 October 2026). The medRxiv bylines of Metformin, IL-6 receptor antagonists, SSRI and Long COVID symptoms, GLP medications, and causal inference in N3C end with the N3C Consortium, as the Word CV does. Crossref and Europe PMC leave it out, so each now has `group_author` in `content/publications.yml`.
+- **"Shi, J. S." on eBioMedicine 2026** (12 October 2026). Europe PMC writes Junming (Seraphina) Shi as "Junming Seraphina", which printed as a middle initial. For consortium papers the site now takes the given name from Crossref when the same person sits at the same position, so the CV shows "Shi, J.", as on her other papers.
 - **Safeguards for later runs** (`merge.py`, with tests). A UNC deposit with no matching journal record is skipped instead of appearing as a new article. Research Square v1 and v2 DOIs count as one preprint. A manual entry is kept over a DOI-less ORCID copy of the same item. `run_report.json` now warns when a work matches no topic, when a contribution note sits on a first- or senior-author paper, and when a DOI-less ORCID item is shown on its own.
 
 ## Other checks

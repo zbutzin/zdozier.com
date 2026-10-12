@@ -43,18 +43,26 @@ jobs:
       health_state: ${{ steps.report.outputs.health_state }}
       health_body: ${{ steps.report.outputs.health_body }}
     steps:
+      # The branch tip, not the commit that triggered the run: a run that
+      # waited behind another one then starts after that run's data commit.
       - name: Check out
         uses: actions/checkout@v7
+        with:
+          ref: ${{ github.ref_name }}
 
       - name: Set up Python
         uses: actions/setup-python@v7
         with:
           python-version: "3.12"
           cache: pip
-          cache-dependency-path: requirements.txt
+          cache-dependency-path: |
+            requirements.txt
+            constraints-ci.txt
 
+      # constraints-ci.txt pins the packages that requirements.txt pulls in, so
+      # a new release of one of them cannot break the weekly run.
       - name: Install dependencies
-        run: pip install -r requirements.txt
+        run: pip install -r requirements.txt -c constraints-ci.txt
 
       # Palatino and Arial look-alikes for the CV PDF (the CSS names them).
       # Optional: if this fails, Chrome prints with the runner's default fonts.
@@ -78,7 +86,12 @@ jobs:
             export CHROME_PATH
             echo "Using Chrome at $CHROME_PATH"
           fi
-          make all
+          # fetch.py gives each source its own time limit. This outer limit
+          # only catches a hang those cannot (a stuck DNS lookup, say); the
+          # sources it did not finish keep their cached copies.
+          timeout 15m python scripts/fetch.py \
+            || echo "fetch.py stopped early (exit $?); unfinished sources use their cached data."
+          make merge build pdf
 
       - name: Run tests
         run: make test
@@ -124,14 +137,27 @@ jobs:
           fi
           git commit -m "data: weekly refresh"
           branch="${GITHUB_REF_NAME:-main}"
-          # Someone may have pushed while this run was working. Rebase onto the
-          # latest main and try again a few times before giving up.
+          snapshot="$RUNNER_TEMP/data-snapshot"
+          rm -rf "$snapshot"
+          cp -R data "$snapshot"
+          # Someone (or an earlier run) may have pushed while this run was
+          # working. Rebase onto the latest branch, keeping this run's data
+          # where files conflict (in a rebase, "theirs" is this run's commit).
+          # If that still fails, put this run's whole data/ snapshot on top of
+          # the latest branch instead.
           for attempt in 1 2 3; do
-            if git pull --rebase origin "$branch" && git push origin "HEAD:$branch"; then
+            if git pull --rebase -X theirs origin "$branch" && git push origin "HEAD:$branch"; then
               echo "Pushed data refresh (attempt $attempt)."
               exit 0
             fi
             git rebase --abort 2>/dev/null || true
+            if git fetch origin "$branch" && git reset --hard "origin/$branch" \
+                && rm -rf data && cp -R "$snapshot" data && git add -A data \
+                && { git diff --cached --quiet || git commit -m "data: weekly refresh"; } \
+                && git push origin "HEAD:$branch"; then
+              echo "Pushed data refresh on top of the latest $branch (attempt $attempt)."
+              exit 0
+            fi
             echo "Push attempt $attempt failed. Retrying."
             sleep $((attempt * 10))
           done

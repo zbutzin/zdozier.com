@@ -302,6 +302,29 @@ class HealthIssueTest(unittest.TestCase):
         self.assertIn("Publication list kept from the previous run", body)
         self.assertIn("fell from 40 to 20", body)
 
+    def test_partial_error_keeps_state_degraded(self):
+        # Crossref answered but reported a partial failure: not "ok", so an
+        # open site-health issue is not closed on a run like this.
+        partial = {"ok": True, "used_cache": False, "error": "GET https://api.crossref.org/works: HTTP 429",
+                   "fetched_at": "2026-10-12T14:01:00Z"}
+        self.assertEqual(self.health(self.report(crossref=partial)), ("", "degraded"))
+
+    def test_api_key_is_scrubbed_from_the_body(self):
+        failing = {"ok": False, "used_cache": True, "fetched_at": "2026-09-21T14:01:00Z",
+                   "error": "HttpError: GET https://api.openalex.org/authors/A1: Max retries "
+                            "exceeded with url: /authors/A1?api_key=SECRETKEY_TEST123 (x)"}
+        body, state = self.health(self.report(openalex=failing))
+        self.assertEqual(state, "stale")
+        self.assertNotIn("SECRETKEY", body)
+        self.assertIn("api\\_key=REDACTED", body)
+
+    def test_guard_body_explains_how_it_ends(self):
+        report = self.report()
+        report["sanity_guard"] = {"tripped": True, "previous": 40, "current": None}
+        body, _ = self.health(report)
+        self.assertIn("exactly the same shorter list", body)
+        self.assertIn("accept_count_drop:", body)
+
     def test_missing_or_malformed_report(self):
         self.assertEqual(self.run_script("--health").stdout, "")
         self.assertEqual(self.run_script("--health-state").stdout.strip(), "degraded")

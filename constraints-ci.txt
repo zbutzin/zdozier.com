@@ -1,0 +1,8 @@
+# Versions CI installs for the packages requirements.txt pulls in (Python 3.12,
+# October 2026). With these pinned, a new release of a dependency cannot break
+# the weekly run. certifi is left out on purpose so CA certificate updates
+# still arrive. Change a line only when deliberately upgrading a package.
+MarkupSafe==3.0.4
+charset-normalizer==3.5.2
+idna==3.20
+urllib3==2.8.0

@@ -32,8 +32,10 @@ DATA_DIR = os.path.join(ROOT, "data")
 RAW_DIR = os.path.join(DATA_DIR, "raw")
 
 USER_AGENT = "zdozier.com-site-builder/1.0 (+https://zdozier.com)"
-TIMEOUT = 30
+TIMEOUT = 30          # seconds to wait for a response
+CONNECT_TIMEOUT = 10  # seconds to wait for a connection
 RETRIES = 3
+RETRY_AFTER_MAX = 10.0  # longest Retry-After wait honored, in seconds
 
 
 def log(msg):
@@ -325,29 +327,71 @@ def contact_email(site):
 # HTTP
 # --------------------------------------------------------------------------
 
+# Query parameters whose values must never reach a log line, a committed
+# data file, or an issue body. The repository is public.
+_SECRET_PARAM_RE = re.compile(
+    r"(?i)\b(api_key|apikey|key|token|access_token|mailto)=[^&\s'\")]+")
+SECRET_ENV_VARS = ("OPENALEX_API_KEY", "GITHUB_TOKEN")
+
+
+def scrub(text):
+    """Text with API keys, tokens, and mailto values replaced by REDACTED:
+    both as URL parameters and as the literal values of the secret
+    environment variables. None stays None."""
+    if text is None:
+        return None
+    out = _SECRET_PARAM_RE.sub(lambda m: m.group(1) + "=REDACTED", str(text))
+    for var in SECRET_ENV_VARS:
+        val = os.environ.get(var)
+        if val and len(val) >= 6:
+            out = out.replace(val, "REDACTED")
+    return out
+
+
 class HttpError(Exception):
-    def __init__(self, message, status=None):
-        Exception.__init__(self, message)
+    """status: the HTTP status, or None for a connection error or timeout.
+    budget: True when the time budget for the current source ran out."""
+
+    def __init__(self, message, status=None, budget=False):
+        Exception.__init__(self, scrub(message))
         self.status = status
+        self.budget = budget
+
+    @property
+    def transient(self):
+        """Rate limiting, a server error, a lost connection, or no time left:
+        worth retrying next week, not a sign that the record is missing."""
+        return self.budget or self.status is None or self.status == 429 or self.status >= 500
 
 
 class Http(object):
-    """requests wrapper: timeout 30s, 3 retries with exponential backoff,
-    polite User-Agent, optional per-host minimum interval between requests."""
+    """requests wrapper: 10s to connect and 30s to respond, 3 retries with
+    exponential backoff (a 429 is retried once, honoring Retry-After up to
+    10s), polite User-Agent, optional per-host minimum interval between
+    requests, and an optional deadline (epoch seconds) after which requests
+    stop with HttpError(budget=True) so fetch.py falls back to the cache."""
 
     def __init__(self, user_agent=USER_AGENT, timeout=TIMEOUT, retries=RETRIES,
-                 backoff=1.5, min_interval=None, session=None):
+                 backoff=1.5, min_interval=None, session=None,
+                 connect_timeout=CONNECT_TIMEOUT):
         if session is None:
             import requests
             session = requests.Session()
         self.session = session
         self.session.headers.update({"User-Agent": user_agent})
         self.timeout = timeout
+        self.connect_timeout = connect_timeout
         self.retries = retries
         self.backoff = backoff
         self.min_interval = dict(min_interval or {})
         self._last = {}
         self.calls = 0
+        self.deadline = None
+
+    def _budget(self, method, url, wait=0.0):
+        if self.deadline is not None and time.time() + wait > self.deadline:
+            raise HttpError("%s %s: time budget for this source spent" % (method, url),
+                            budget=True)
 
     def _throttle(self, host):
         gap = self.min_interval.get(host)
@@ -361,20 +405,28 @@ class Http(object):
 
     def request(self, method, url, params=None, json_body=None, headers=None,
                 allow_404=False):
+        """`url` is the base URL; query parameters (which may hold an API key)
+        go in `params` and never into an error message unscrubbed."""
         import requests
         host = urlparse(url).netloc
         last_err = None
+        rate_limited = 0
+        timeout = (min(self.connect_timeout, self.timeout), self.timeout)
         for attempt in range(self.retries + 1):
+            self._budget(method, url)
             self._throttle(host)
             try:
                 self.calls += 1
                 resp = self.session.request(method, url, params=params, json=json_body,
-                                            headers=headers, timeout=self.timeout)
+                                            headers=headers, timeout=timeout)
             except (requests.ConnectionError, requests.Timeout) as exc:
-                last_err = HttpError("%s %s: %s" % (method, url, exc))
+                # str(exc) can repeat the full URL with its query string.
+                last_err = HttpError("%s %s: %s" % (method, url, scrub(str(exc))))
                 self._last[host] = time.time()
                 if attempt < self.retries:
-                    time.sleep(self.backoff * (2 ** attempt))
+                    wait = self.backoff * (2 ** attempt)
+                    self._budget(method, url, wait)
+                    time.sleep(wait)
                 continue
             self._last[host] = time.time()
             status = resp.status_code
@@ -382,14 +434,19 @@ class Http(object):
                 return None
             if status == 429 or status >= 500:
                 last_err = HttpError("%s %s: HTTP %d" % (method, url, status), status)
+                if status == 429:
+                    rate_limited += 1
+                    if rate_limited > 1:
+                        break  # asked to slow down twice: give up on this request
                 if attempt < self.retries:
                     wait = self.backoff * (2 ** attempt)
                     ra = resp.headers.get("Retry-After")
                     if ra:
                         try:
-                            wait = max(wait, min(float(ra), 60.0))
+                            wait = max(wait, min(float(ra), RETRY_AFTER_MAX))
                         except ValueError:
                             pass
+                    self._budget(method, url, wait)
                     time.sleep(wait)
                 continue
             if status >= 400:

@@ -512,7 +512,15 @@ def prepare_work(w, topic_labels):
     kinds = ["type:%s" % (w.get("type") or "other"), "status:%s" % (w.get("status") or "published")]
     v["kinds"] = " ".join(kinds)
     v["year_label"] = str(w.get("year") or "")
+    # The year printed next to the venue. An in-press item has no real year
+    # yet (its year only sorts it), so it shows none; the status tag already
+    # says "In press", as the CV's "(in press)" does.
+    v["year_shown"] = "" if is_in_press(w) else v["year_label"]
     return v
+
+
+def is_in_press(w):
+    return w.get("status") == "accepted" and (w.get("status_note") or "").strip().lower() == "in press"
 
 
 # --------------------------------------------------------------------------
@@ -543,7 +551,7 @@ def cite_apa(w):
     au = authors_apa_html(w)
     st = w.get("status")
     note = (w.get("status_note") or "").strip()
-    if st == "accepted" and note.lower() == "in press":
+    if is_in_press(w):
         when = "in press"
     else:
         when = str(w.get("year") or "n.d.")
@@ -833,15 +841,15 @@ def sync_info(report, now):
         known.add(key)
         if not s and sources:
             continue
-        rows.append({"key": key, "label": label, "use": use, "ok": bool(s.get("ok")) if s else None,
-                     "count": s.get("count"), "error": s.get("error"), "used_cache": bool(s.get("used_cache")),
-                     "fetched": fmt_utc(parse_iso(s.get("fetched_at"))) if s.get("fetched_at") else ""})
+        rows.append(dict({"key": key, "label": label, "use": use, "ok": bool(s.get("ok")) if s else None,
+                          "count": s.get("count"), "error": s.get("error"),
+                          "used_cache": bool(s.get("used_cache"))}, **fetched_parts(s.get("fetched_at"))))
     for key, s in sources.items():
         if key not in known:
             s = as_dict(s)
-            rows.append({"key": key, "label": key, "use": "", "ok": bool(s.get("ok")), "count": s.get("count"),
-                         "error": s.get("error"), "used_cache": bool(s.get("used_cache")),
-                         "fetched": fmt_utc(parse_iso(s.get("fetched_at"))) if s.get("fetched_at") else ""})
+            rows.append(dict({"key": key, "label": key, "use": "", "ok": bool(s.get("ok")), "count": s.get("count"),
+                              "error": s.get("error"), "used_cache": bool(s.get("used_cache"))},
+                             **fetched_parts(s.get("fetched_at"))))
     if not fin:
         return {"label": "sync status unknown", "state": "warn", "iso": None, "days": None,
                 "finished": None, "sources": rows, "failing": [], "ok": False,
@@ -860,6 +868,17 @@ def fmt_utc(d):
     if not d:
         return ""
     return "%s %d, %d, %02d:%02d UTC" % (MONTHS_SHORT[d.month - 1], d.day, d.year, d.hour, d.minute)
+
+
+def fetched_parts(value):
+    """'fetched' ('Oct 9, 2026, 20:42 UTC') plus its date and time halves, so
+    the colophon table can break between them on a phone."""
+    d = parse_iso(value) if value else None
+    if not d:
+        return {"fetched": "", "fetched_date": "", "fetched_time": ""}
+    return {"fetched": fmt_utc(d),
+            "fetched_date": "%s %d, %d," % (MONTHS_SHORT[d.month - 1], d.day, d.year),
+            "fetched_time": "%02d:%02d UTC" % (d.hour, d.minute)}
 
 
 # Publications-per-year chart: the latest charted year and the 7 before it.
@@ -972,11 +991,16 @@ def software_view(software, site_sw):
     # replaces the GitHub description, which is often terse or empty.
     descs = dict((str(k).lower(), str(v).strip()) for k, v in as_dict(site_sw.get("descriptions")).items()
                  if v and str(v).strip())
+    # software.languages: {RepoName: "R"} replaces GitHub's language guess,
+    # which counts rendered HTML output (an R demo can show up as "HTML").
+    langs = dict((str(k).lower(), str(v).strip()) for k, v in as_dict(site_sw.get("languages")).items()
+                 if v and str(v).strip())
     out = []
     for r in shown:
         v = dict(r)
         desc = descs.get(str(r.get("name")).lower()) or (r.get("description") or "").strip()
         v["description"] = sentence_case_first(desc) if desc else None
+        v["language"] = langs.get(str(r.get("name")).lower()) or r.get("language")
         v["html_url"] = r.get("html_url") if is_http(r.get("html_url")) else None
         v["updated"] = fmt_month_year((r.get("pushed_at") or "")[:7])
         out.append(v)
@@ -1068,7 +1092,9 @@ def build_model(content_dir, data_dir, now):
         if c:
             chips.append({"value": t["id"], "label": t.get("label") or t["id"], "count": c})
     if n_pre:
-        chips.append({"value": "preprints", "label": "Preprints", "count": n_pre})
+        # Counts manuscripts under review too, so the label says so (the Type
+        # select's "Preprints" option counts preprints only).
+        chips.append({"value": "preprints", "label": "Preprints and under review", "count": n_pre})
     type_options = []
     for val, label in TYPE_OPTIONS:
         c = sum(1 for w in works if val in w["kinds"].split())
@@ -1093,7 +1119,9 @@ def build_model(content_dir, data_dir, now):
     spark_rows = citation_rows(m, now)
     spark_hi = today.year if any(r["year"] == today.year for r in spark_rows) else (spark_rows[-1]["year"] if spark_rows else None)
     spark_last = spark_rows[-1] if spark_rows else None
-    stats = [{"label": "Publications", "value": len(works),
+    # "Works", not "Publications": the count includes preprints and manuscripts
+    # under review; the line under the strip says how many (n_pre).
+    stats = [{"label": "Works", "value": len(works),
               "note": "%d first or senior author" % n_lead if works else None}]
     if m.get("cited_by_count") is not None:
         stats.append({"label": "Citations", "value": m.get("cited_by_count"), "spark": True})
@@ -1202,6 +1230,20 @@ PAGES = [
 ]
 
 
+# Codes such as COVID-19, GLP-1, IL-6 and SARS-CoV-2: a line break at their
+# hyphen ("COVID-" / "19") is hard to read, so HTML pages keep them whole.
+NOBREAK_CODE_RE = re.compile(r"\b[A-Z][A-Za-z]*(?:-[A-Za-z]+)*-\d+[A-Za-z]*\b")
+
+
+def nobreak_codes(text):
+    """Escape text and wrap each code in <span class="nowrap">. For HTML
+    templates only (not the feed or BibTeX)."""
+    if text is None:
+        return Markup("")
+    s = str(escape(text))
+    return Markup(NOBREAK_CODE_RE.sub(lambda m: '<span class="nowrap">%s</span>' % m.group(0), s))
+
+
 def make_env(templates_dir):
     env = Environment(
         loader=FileSystemLoader(templates_dir),
@@ -1214,6 +1256,7 @@ def make_env(templates_dir):
     env.filters["month_year"] = fmt_month_year
     env.filters["thousands"] = lambda n: "{:,}".format(n) if isinstance(n, int) else n
     env.filters["cap"] = sentence_case_first
+    env.filters["nobreak_codes"] = nobreak_codes
     env.globals["fmt_period"] = fmt_period
     return env
 
