@@ -73,14 +73,7 @@ These are errors in the Word CV, not on the site, unless noted.
 |---|---|---|
 | Original research 2, Wang (OFID) | Byline ends "... Patel, R. C., Sun, J., ... Zhang, X. T." | The journal byline (Europe PMC) is 19 people and then "National Clinical Cohort Collaborative (N3C)". Crossref adds the N3C member roster after the group, sorted by first name, so "Zhang, X. T." is just the last name in that roster, not the last author. The site now uses the journal byline (20 entries, your position 15 unchanged). |
 | Original research 13, Figueroa (Sci Rep) | "Li, A." | "Li, G." (Gaoge Li, per Crossref). The site already shows "Li, G.". |
-| Chapter 1 (Wiley) | "Anzalone, J.A.." | Every other record of this co-author has "A. J." (Alfred Jerrod). The site copies the CV for now (see below). |
-
-## Waiting on you
-
-The site keeps its current behavior on these until you decide.
-
-- **Chapter co-author initials.** If "Anzalone, A. J." is right, change it in the
-  `manual:wiley-environmental-health-nursing-chapter` entry and in the Word CV.
+| Chapter 1 (Wiley) | "Anzalone, J.A.." | Every other record of this co-author has "A. J." (Alfred Jerrod). The site now uses "Anzalone, A. J." (confirmed 12 October 2026). |
 
 ## On the site but not on your CV
 

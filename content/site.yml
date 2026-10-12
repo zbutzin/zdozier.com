@@ -46,7 +46,7 @@ links:
   - {label: "Stanford profile", url: "https://med.stanford.edu/profiles/zachary-dozier", kind: stanford}
   - {label: "ORCID", url: "https://orcid.org/0000-0001-6419-0008", kind: orcid}
   - {label: "OpenAlex", url: "https://openalex.org/A5080035458", kind: openalex}
-  - {label: "Google Scholar", url: null, kind: scholar}
+  - {label: "Google Scholar", url: "https://scholar.google.com/citations?user=TAne42EAAAAJ", kind: scholar}
   - {label: "GitHub", url: "https://github.com/zbutzin", kind: github}
   - {label: "LinkedIn", url: null, kind: linkedin}
   - {label: "Email", url: "mailto:zdozier@stanford.edu", kind: email}

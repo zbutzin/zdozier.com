@@ -18,7 +18,7 @@ appointments:
     unit: "Division of Biostatistics, Center for Targeted Machine Learning"
     start: "September 2022"
     end: "May 2026"
-    description: "My work applies a Targeted Machine Learning methodology (applied machine learning for causal inference) to evaluate interventions against Long COVID. I am an NIAID K01 scholar (2025-2029), my work was pivotal in maintaining continued funding from the Bill and Melinda Gates Foundation, I facilitated a Data Use Agreement between N3C and UC Berkeley, I led a team to third place in the NIH Long COVID Computational Challenge, and I forged multiple inter-institutional collaborations (UNC-Chapel Hill, Johns Hopkins, University of Washington, University of Minnesota, University of Alabama at Birmingham Medical Center)."
+    description: "My work applies a Targeted Machine Learning methodology (applied machine learning for causal inference) to evaluate interventions against Long COVID. I am an NIAID K01 scholar (2024–2029), my work was pivotal in maintaining continued funding from the Bill and Melinda Gates Foundation, I facilitated a Data Use Agreement between N3C and UC Berkeley, I led a team to third place in the NIH Long COVID Computational Challenge, and I forged multiple inter-institutional collaborations (UNC-Chapel Hill, Johns Hopkins, University of Washington, University of Minnesota, University of Alabama at Birmingham Medical Center)."
   - title: "Graduate Student Researcher"
     org: "UC Berkeley"
     unit: null
@@ -83,13 +83,14 @@ teaching:
 
 trainees:
   current:
+    - {name: "Mingyi Li", role: "postdoc"}
     - {name: "Anna Krasnova", role: "postdoc"}
     - {name: "Peter Ju", role: "Data analyst"}
-    - {name: "Eric Hurwitz", role: "Health Informatics postdoc"}
     - {name: "Ariana Budhihartanto", role: "undergraduate"}
+  former:
+    - {name: "Eric Hurwitz", role: "Health Informatics postdoc"}
     - {name: "Manav Kumar", role: "undergraduate"}
     - {name: "Sam (Lin-Chiun) Wang", role: "undergraduate"}
-  former:
     - {name: "Yunwen Ji", role: "Biostatistics PhD student"}
     - {name: "Seraphina Shi", role: "Biostatistics PhD student"}
     - {name: "Haodong Li", role: "Biostatistics PhD student"}
