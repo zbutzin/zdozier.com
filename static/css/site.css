@@ -609,6 +609,11 @@ main {
   color: var(--ink-2);
 }
 
+/* Themes without paper lists (site.theme_papers: 0) sit closer together. */
+.themes-compact { gap: var(--s-6); }
+.themes-compact .theme-summary { margin-bottom: var(--s-2); }
+.themes-compact .more { margin-top: 0; }
+
 /* Compact publication and grant lists */
 
 .pub-c-list, .grant-c-list {

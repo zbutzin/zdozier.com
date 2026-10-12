@@ -677,10 +677,10 @@ class TestCitationMetricsSetting(BuildTestBase):
         for rel in self.PAGES + ["feed.xml"]:
             self.assertNoCitationMetrics(read(os.path.join(self.off, rel)), rel)
 
-    def test_off_home_runs_from_hero_into_research(self):
+    def test_off_home_runs_from_hero_into_recent(self):
         home = read(os.path.join(self.off, "index.html"))
         # No empty section, stray rule, or leftover heading where the strip was.
-        self.assertRegex(home, r'</div>\s*</section>\s*<section class="sec" aria-labelledby="research">')
+        self.assertRegex(home, r'</div>\s*</section>\s*<section class="sec" aria-labelledby="recent">')
         self.assertNotIn("stats-title", home)
         self.assertNotIn("stats-source", home)
         css = read(os.path.join(self.off, "css", "site.css"))
@@ -721,6 +721,57 @@ class TestCitationMetricsSetting(BuildTestBase):
         self.assertIn(">Cited by 15<", pubs)
         col = read(os.path.join(self.on, "colophon", "index.html"))
         self.assertIn('<td class="col-use">Discovery, venues, open access links, citation counts, h-index</td>', col)
+
+
+class TestHomeOrderAndThemes(BuildTestBase):
+    """October 2026: Recent publications comes first on the home page, and the
+    research themes list no papers unless site.theme_papers is set."""
+
+    @classmethod
+    def setUpClass(cls):
+        cls.base0, cls.out0, cls.rc0 = cls.build_fixture()
+        cls.base2 = tempfile.mkdtemp(prefix="zdozier-test-")
+        content, data = write_fixture(cls.base2)
+        p = os.path.join(content, "site.yml")
+        site = yaml.safe_load(read(p))
+        site["site"]["theme_papers"] = 2
+        with open(p, "w") as fh:
+            yaml.safe_dump(site, fh)
+        cls.out2 = os.path.join(cls.base2, "site")
+        cls.rc2 = build.main(["--content-dir", content, "--data-dir", data, "--out", cls.out2,
+                              "--now", NOW, "--quiet"])
+
+    @classmethod
+    def tearDownClass(cls):
+        shutil.rmtree(cls.base0, ignore_errors=True)
+        shutil.rmtree(cls.base2, ignore_errors=True)
+
+    def test_both_build(self):
+        self.assertEqual((self.rc0, self.rc2), (0, 0))
+
+    def test_recent_before_research(self):
+        home = read(os.path.join(self.out0, "index.html"))
+        self.assertLess(home.index('aria-labelledby="recent"'), home.index('aria-labelledby="research"'))
+
+    def test_default_themes_link_without_papers_or_counts(self):
+        home = read(os.path.join(self.out0, "index.html"))
+        sec = home[home.index('aria-labelledby="research"'):]
+        sec = sec[:sec.index("</section>")]
+        self.assertNotIn("pub-c-list", sec)
+        self.assertIn('<a href="/publications/#show=covid">Papers on this topic</a>', sec)
+        self.assertNotRegex(sec, r"All \d+ papers")
+
+    def test_theme_papers_setting_lists_papers(self):
+        home = read(os.path.join(self.out2, "index.html"))
+        sec = home[home.index('aria-labelledby="research"'):]
+        sec = sec[:sec.index("</section>")]
+        self.assertIn("pub-c-list", sec)
+
+    def test_theme_paper_count_parsing(self):
+        self.assertEqual(build.theme_paper_count({}), 0)
+        self.assertEqual(build.theme_paper_count({"theme_papers": 3}), 3)
+        for bad in (True, "2", -1, None, 1.5):
+            self.assertEqual(build.theme_paper_count({"theme_papers": bad}), 0)
 
 
 class TestContentRules(unittest.TestCase):

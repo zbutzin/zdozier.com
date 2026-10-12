@@ -65,11 +65,23 @@
   </section>
   {% endif %}
 
+  {% if recent %}
+  <section class="sec" aria-labelledby="recent">
+    {{ section_head('Recent publications', 'Newest first, updated weekly', 'recent') }}
+    <div class="sec-body">
+      <ul class="pub-c-list">
+        {% for w in recent %}{{ pub_compact(w) }}{% endfor %}
+      </ul>
+      <p class="more"><a href="/publications/">All {{ works|length }} works</a></p>
+    </div>
+  </section>
+  {% endif %}
+
   {% if themes %}
   <section class="sec" aria-labelledby="research">
     {{ section_head('Research', none, 'research') }}
     <div class="sec-body">
-      <ol class="themes">
+      <ol class="themes{% if not themes|selectattr('papers')|list %} themes-compact{% endif %}">
         {% for th in themes %}
         <li class="theme">
           <h3 class="theme-title"><span class="theme-n" aria-hidden="true">{{ '%02d'|format(loop.index) }}</span>{{ th.title }}</h3>
@@ -80,23 +92,11 @@
           </ul>
           {% endif %}
           {% if th.link_topic and th.count > th.papers|length %}
-          <p class="more"><a href="/publications/#show={{ th.link_topic }}">All {{ th.count }} papers on this topic</a></p>
+          <p class="more"><a href="/publications/#show={{ th.link_topic }}">{% if th.papers %}All {{ th.count }} papers on this topic{% else %}Papers on this topic{% endif %}</a></p>
           {% endif %}
         </li>
         {% endfor %}
       </ol>
-    </div>
-  </section>
-  {% endif %}
-
-  {% if recent %}
-  <section class="sec" aria-labelledby="recent">
-    {{ section_head('Recent publications', 'Newest first, updated weekly', 'recent') }}
-    <div class="sec-body">
-      <ul class="pub-c-list">
-        {% for w in recent %}{{ pub_compact(w) }}{% endfor %}
-      </ul>
-      <p class="more"><a href="/publications/">All {{ works|length }} works</a></p>
     </div>
   </section>
   {% endif %}

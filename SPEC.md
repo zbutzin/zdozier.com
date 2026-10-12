@@ -280,9 +280,11 @@ tokens, and `mailto` values before they are stored or printed.
 - `/` Home: name, one-line research statement, affiliations, "Formerly published
   as" line, portrait (rounded rectangle, not a circle), short bio, link row
   (Stanford profile, ORCID, OpenAlex, Google Scholar if configured, GitHub,
-  Email, CV PDF). Research themes (from site.yml) each with 2 to 3
-  representative papers pulled by topic (featured first, then most recent).
-  Recent publications (5 newest, automatic). Current funding (automatic).
+  Email, CV PDF). Recent publications (5 newest, automatic). Research themes
+  (from site.yml): title, one or two sentence summary, and a link to the
+  topic-filtered publications list; `site.theme_papers` (default 0) optionally
+  lists that many representative papers per theme (featured first, then most
+  recent). Current funding (automatic).
   Software (automatic). Contact.
 - Citation metrics are hidden by default: `site.show_citation_metrics` in
   `content/site.yml` (missing means false). When false, the home page has no

@@ -954,7 +954,17 @@ def citation_rows(metrics, now):
     return rows[-12:]
 
 
-def theme_views(themes, works, topic_labels):
+def theme_paper_count(site):
+    """content/site.yml site.theme_papers: papers listed under each home-page
+    research theme. Missing or invalid means 0 (the theme links to its
+    filtered publications list instead)."""
+    n = as_dict(site).get("theme_papers")
+    if isinstance(n, bool) or not isinstance(n, int) or n < 0:
+        return 0
+    return n
+
+
+def theme_views(themes, works, topic_labels, n_papers=0):
     used = set()
     out = []
     for th in as_list(themes):
@@ -963,10 +973,10 @@ def theme_views(themes, works, topic_labels):
         pool = [w for w in works if tset & set(as_list(w.get("topics")))]
         pool.sort(key=lambda w: (bool(w.get("featured")), work_sort_key(w)), reverse=True)
         linked = [w for w in pool if w.get("link")] or pool
-        pick = [w for w in linked if w["id"] not in used][:3]
-        if len(pick) < 2:
+        pick = [w for w in linked if w["id"] not in used][:n_papers] if n_papers > 0 else []
+        if 0 < len(pick) < min(2, n_papers):
             for w in linked:
-                if len(pick) >= 2:
+                if len(pick) >= min(2, n_papers):
                     break
                 if w not in pick:
                     pick.append(w)
@@ -1197,7 +1207,8 @@ def build_model(content_dir, data_dir, now):
         "spark_last": spark_last,
         "spark_partial": spark_last is not None and spark_last["year"] == today.year,
         "sparkline": charts.sparkline_svg(spark_rows, spark_hi, today.year),
-        "themes": theme_views(site_yml.get("research_themes"), works, topic_labels),
+        "themes": theme_views(site_yml.get("research_themes"), works, topic_labels,
+                              n_papers=theme_paper_count(site)),
         "recent": recent,
         "active_grants": active,
         "completed_grants": completed,

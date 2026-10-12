@@ -24,6 +24,9 @@ site:
   # Publications summary line, and a "Cited by N" link on each paper. The data
   # is fetched either way.
   show_citation_metrics: false
+  # Papers listed under each research theme on the home page. 0 = none: each
+  # theme shows its summary and links to its filtered publications list.
+  theme_papers: 0
 
 # Person, links, research themes, and software selection (curated content).
 person:
