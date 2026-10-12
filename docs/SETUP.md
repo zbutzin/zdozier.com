@@ -27,25 +27,27 @@ Go to <https://github.com/new>. Owner: `zbutzin`. Repository name:
 `zdozier.com`. Visibility: Public. Leave "Add a README", ".gitignore", and
 "license" all off, so the repository starts empty. Click **Create repository**.
 
-**2. Push the code.** In Terminal:
+**2. Push the code.** The folder is already a git repository with the code
+committed, so only three commands are needed. Paste them into Terminal:
 
 ```sh
 cd ~/GitHub/zdozier.com
-git init -b main            # harmless if the folder is already a git repository
-git add -A
-git status                  # look over the list; _site/ should not be in it
-git commit -m "Initial version of zdozier.com"
-git remote add origin https://github.com/zbutzin/zdozier.com.git
+git remote add origin git@github.com:zbutzin/zdozier.com.git
 git push -u origin main
-git config pull.rebase true   # later pulls replay your edits on top of the bot's data commits
+git config pull.rebase true
 ```
 
-If `git push` asks for a password, GitHub wants a token rather than your
-account password. Either run `gh auth login` once if you have the GitHub CLI,
-use GitHub Desktop, or, if you already use SSH keys with GitHub, switch the
-remote with
-`git remote set-url origin git@github.com:zbutzin/zdozier.com.git` and push
-again.
+The second line tells git where the GitHub copy lives (this uses your SSH key,
+which GitHub already accepts). The third uploads the code. The last one makes
+later `git pull` commands replay your edits on top of the weekly data commits
+the bot makes.
+
+If `git remote add` says "remote origin already exists", run
+`git remote set-url origin git@github.com:zbutzin/zdozier.com.git` instead and
+continue with `git push -u origin main`.
+
+If Terminal ever shows a `quote>` or `dquote>` prompt, it is waiting for a
+closing quote mark. Press Control-C to cancel; nothing has run.
 
 **3. Expect the first run to fail at the deploy step.** The push starts the "Update site" workflow
 (repository > **Actions** tab). Its `deploy` job will probably fail this first
@@ -166,11 +168,16 @@ restarts the certificate request.
 - You can watch progress from Terminal:
 
   ```sh
-  dig +short zdozier.com            # should list the four 185.199.x.153 addresses
-  dig +short AAAA zdozier.com       # the four 2606:50c0:... addresses
-  dig +short www.zdozier.com        # zbutzin.github.io. followed by GitHub addresses
+  dig +short zdozier.com
+  dig +short AAAA zdozier.com
+  dig +short www.zdozier.com
   dig +short TXT _github-pages-challenge-zbutzin.zdozier.com
   ```
+
+  When DNS has switched over, the first should list the four 185.199.x.153
+  addresses, the second the four 2606:50c0:... addresses, the third
+  `zbutzin.github.io.` followed by GitHub addresses, and the fourth the
+  verification code from step 8.
 
 - To undo: delete the A, AAAA, and `www` CNAME records you added in step 10
   and use "Restore default DNS records" on the domain's page at WordPress.com.
