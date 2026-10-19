@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-12T16:51:17Z",
+  "generated": "2026-10-19T19:39:43Z",
   "works": [
     {
       "id": "manual:wiley-environmental-health-nursing-chapter",
@@ -150,34 +150,34 @@
       "openalex_id": null
     },
     {
-      "id": "manual:singh-arthritis-rheumatology",
-      "doi": null,
-      "title": "Higher risk of Long COVID among patients with autoimmune rheumatic diseases and immunomodulatory therapy: A retrospective cohort analysis of national US data",
+      "id": "10.1002/art.70361",
+      "doi": "10.1002/art.70361",
+      "title": "Higher risk of Long COVID among patients with autoimmune rheumatic diseases and immunomodulatory therapy: a retrospective cohort analysis of national US data",
       "authors": [
         {
-          "given": "N.",
+          "given": "Namrata",
           "family": "Singh",
-          "name": "N. Singh",
+          "name": "Namrata Singh",
           "is_me": false,
           "is_group": false,
-          "orcid": null,
+          "orcid": "0000-0001-7149-363X",
           "suffix": null,
           "apa": "Singh, N."
         },
         {
-          "given": "A. J.",
+          "given": "A. Jerrod",
           "family": "Anzalone",
-          "name": "A. J. Anzalone",
+          "name": "A. Jerrod Anzalone",
           "is_me": false,
           "is_group": false,
-          "orcid": null,
+          "orcid": "0000-0002-3212-7845",
           "suffix": null,
           "apa": "Anzalone, A. J."
         },
         {
-          "given": "H.",
+          "given": "Holland",
           "family": "Stevenson",
-          "name": "H. Stevenson",
+          "name": "Holland Stevenson",
           "is_me": false,
           "is_group": false,
           "orcid": null,
@@ -185,9 +185,9 @@
           "apa": "Stevenson, H."
         },
         {
-          "given": "L.",
+          "given": "Londyn",
           "family": "Robinson",
-          "name": "L. Robinson",
+          "name": "Londyn Robinson",
           "is_me": false,
           "is_group": false,
           "orcid": null,
@@ -195,19 +195,19 @@
           "apa": "Robinson, L."
         },
         {
-          "given": "L. E.",
+          "given": "Lesley E.",
           "family": "Jackson",
-          "name": "L. E. Jackson",
+          "name": "Lesley E. Jackson",
           "is_me": false,
           "is_group": false,
-          "orcid": null,
+          "orcid": "0000-0002-9373-7620",
           "suffix": null,
           "apa": "Jackson, L. E."
         },
         {
-          "given": "S. E.",
+          "given": "Sandra E.",
           "family": "Safo",
-          "name": "S. E. Safo",
+          "name": "Sandra E. Safo",
           "is_me": false,
           "is_group": false,
           "orcid": null,
@@ -215,9 +215,9 @@
           "apa": "Safo, S. E."
         },
         {
-          "given": "Z.",
+          "given": "Zachary",
           "family": "Butzin-Dozier",
-          "name": "Z. Butzin-Dozier",
+          "name": "Zachary Butzin-Dozier",
           "is_me": true,
           "is_group": false,
           "orcid": null,
@@ -225,9 +225,9 @@
           "apa": "Butzin-Dozier, Z."
         },
         {
-          "given": "K.",
+          "given": "Kaleb",
           "family": "Michaud",
-          "name": "K. Michaud",
+          "name": "Kaleb Michaud",
           "is_me": false,
           "is_group": false,
           "orcid": null,
@@ -235,53 +235,63 @@
           "apa": "Michaud, K."
         },
         {
-          "given": "M. I.",
+          "given": "Maria I.",
           "family": "Danila",
-          "name": "M. I. Danila",
+          "name": "Maria I. Danila",
           "is_me": false,
           "is_group": false,
-          "orcid": null,
+          "orcid": "0000-0001-9246-6200",
           "suffix": null,
           "apa": "Danila, M. I."
         },
         {
-          "given": "J. A.",
+          "given": "Jasvinder A.",
           "family": "Singh",
-          "name": "J. A. Singh",
+          "name": "Jasvinder A. Singh",
           "is_me": false,
           "is_group": false,
-          "orcid": null,
+          "orcid": "0000-0003-3485-0006",
           "suffix": null,
           "apa": "Singh, J. A."
         },
         {
-          "given": "R. C.",
+          "given": "Rena C.",
           "family": "Patel",
-          "name": "R. C. Patel",
+          "name": "Rena C. Patel",
           "is_me": false,
           "is_group": false,
           "orcid": null,
           "suffix": null,
           "apa": "Patel, R. C."
+        },
+        {
+          "given": null,
+          "family": null,
+          "name": "the National Clinical Cohort Collaborative (N3C) Consortium",
+          "is_me": false,
+          "is_group": true,
+          "orcid": null,
+          "suffix": null,
+          "apa": "the National Clinical Cohort Collaborative (N3C) Consortium"
         }
       ],
-      "author_count": 11,
+      "author_count": 12,
       "my_position": 7,
       "role": "coauthor",
       "year": 2026,
-      "date": "2026",
+      "date": "2026-10-14",
       "venue": "Arthritis & Rheumatology",
       "volume": null,
       "issue": null,
-      "pages": null,
+      "pages": "art.70361",
       "type": "article",
-      "status": "accepted",
-      "status_note": "In press",
-      "url": null,
-      "oa_url": null,
-      "pmid": null,
+      "status": "published",
+      "status_note": null,
+      "url": "https://doi.org/10.1002/art.70361",
+      "oa_url": "https://onlinelibrary.wiley.com/doi/pdfdirect/10.1002/art.70361",
+      "pmid": "42870675",
       "pmcid": null,
-      "cited_by": null,
+      "cited_by": 0,
       "versions": [],
       "topics": [
         "covid"
@@ -290,11 +300,15 @@
       "featured": false,
       "code_url": null,
       "sources": [
-        "manual"
+        "openalex",
+        "crossref",
+        "europepmc"
       ],
       "first_seen": "2026-10-09",
-      "alt_ids": [],
-      "openalex_id": null
+      "alt_ids": [
+        "manual:singh-arthritis-rheumatology"
+      ],
+      "openalex_id": "W7221831451"
     },
     {
       "id": "10.1093/ofid/ofag560",
@@ -528,6 +542,7 @@
       "featured": false,
       "code_url": null,
       "sources": [
+        "orcid",
         "openalex",
         "crossref",
         "europepmc",
@@ -5257,7 +5272,7 @@
       "oa_url": "https://bmcmedicine.biomedcentral.com/counter/pdf/10.1186/s12916-024-03655-x",
       "pmid": "39380062",
       "pmcid": "PMC11462648",
-      "cited_by": 15,
+      "cited_by": 16,
       "versions": [
         {
           "doi": "10.1101/2024.02.05.24302352",

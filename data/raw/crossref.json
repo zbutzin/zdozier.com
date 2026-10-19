@@ -1,6 +1,6 @@
 {
   "source": "crossref",
-  "fetched_at": "2026-10-12T16:51:11Z",
+  "fetched_at": "2026-10-19T19:39:36Z",
   "orcid_filter": {
     "orcid": "0000-0001-6419-0008",
     "dois": [
@@ -42,9 +42,9 @@
   },
   "partial_error": null,
   "stats": {
-    "wanted": 57,
+    "wanted": 58,
     "relation_targets": 0,
-    "fetched": 4,
+    "fetched": 5,
     "failed": 0,
     "errors": []
   },
@@ -122,6 +122,126 @@
         "is-referenced-by-count": 109,
         "ISSN": [
           "1072-4710"
+        ]
+      }
+    },
+    "10.1002/art.70361": {
+      "fetched_at": "2026-10-19T19:39:36Z",
+      "status": 200,
+      "message": {
+        "DOI": "10.1002/art.70361",
+        "type": "journal-article",
+        "title": [
+          "Higher risk of Long\n                    <scp>COVID</scp>\n                    among patients with autoimmune rheumatic diseases and immunomodulatory therapy: a retrospective cohort analysis of national\n                    <scp>US</scp>\n                    data."
+        ],
+        "subtitle": [],
+        "container-title": [
+          "Arthritis &amp; Rheumatology"
+        ],
+        "short-container-title": [
+          "Arthritis &amp;amp; Rheumatology"
+        ],
+        "author": [
+          {
+            "given": "Namrata",
+            "family": "Singh",
+            "ORCID": "https://orcid.org/0000-0001-7149-363X",
+            "sequence": "first"
+          },
+          {
+            "given": "A. Jerrod",
+            "family": "Anzalone",
+            "ORCID": "https://orcid.org/0000-0002-3212-7845",
+            "sequence": "additional"
+          },
+          {
+            "given": "Holland",
+            "family": "Stevenson",
+            "sequence": "additional"
+          },
+          {
+            "given": "Londyn",
+            "family": "Robinson",
+            "sequence": "additional"
+          },
+          {
+            "given": "Lesley E.",
+            "family": "Jackson",
+            "ORCID": "https://orcid.org/0000-0002-9373-7620",
+            "sequence": "additional"
+          },
+          {
+            "given": "Sandra E.",
+            "family": "Safo",
+            "sequence": "additional"
+          },
+          {
+            "given": "Zachary",
+            "family": "Butzin‐Dozier",
+            "sequence": "additional"
+          },
+          {
+            "given": "Kaleb",
+            "family": "Michaud",
+            "sequence": "additional"
+          },
+          {
+            "given": "Maria I.",
+            "family": "Danila",
+            "ORCID": "https://orcid.org/0000-0001-9246-6200",
+            "sequence": "additional"
+          },
+          {
+            "given": "Jasvinder A.",
+            "family": "Singh",
+            "ORCID": "https://orcid.org/0000-0003-3485-0006",
+            "sequence": "additional"
+          },
+          {
+            "given": "Rena C.",
+            "family": "Patel",
+            "sequence": "additional"
+          },
+          {
+            "name": "the National Clinical Cohort Collaborative (N3C) Consortium",
+            "sequence": "additional"
+          }
+        ],
+        "published": {
+          "date-parts": [
+            [
+              2026,
+              10,
+              14
+            ]
+          ]
+        },
+        "published-online": {
+          "date-parts": [
+            [
+              2026,
+              10,
+              14
+            ]
+          ]
+        },
+        "issued": {
+          "date-parts": [
+            [
+              2026,
+              10,
+              14
+            ]
+          ]
+        },
+        "article-number": "art.70361",
+        "relation": {},
+        "URL": "https://doi.org/10.1002/art.70361",
+        "publisher": "Wiley",
+        "is-referenced-by-count": 0,
+        "ISSN": [
+          "2326-5191",
+          "2326-5205"
         ]
       }
     },
@@ -2406,7 +2526,7 @@
       }
     },
     "10.1016/j.ebiom.2026.106382": {
-      "fetched_at": "2026-10-12T16:51:11Z",
+      "fetched_at": "2026-10-19T19:39:36Z",
       "status": 200,
       "message": {
         "DOI": "10.1016/j.ebiom.2026.106382",
@@ -4058,7 +4178,7 @@
       }
     },
     "10.1093/ofid/ofaf731": {
-      "fetched_at": "2026-10-12T16:51:11Z",
+      "fetched_at": "2026-10-19T19:39:36Z",
       "status": 200,
       "message": {
         "DOI": "10.1093/ofid/ofaf731",
@@ -4211,7 +4331,7 @@
       }
     },
     "10.1093/ofid/ofag560": {
-      "fetched_at": "2026-10-12T16:51:11Z",
+      "fetched_at": "2026-10-19T19:39:36Z",
       "status": 200,
       "message": {
         "DOI": "10.1093/ofid/ofag560",
@@ -5164,7 +5284,7 @@
       }
     },
     "10.1101/2023.07.27.23293272": {
-      "fetched_at": "2026-10-12T16:51:11Z",
+      "fetched_at": "2026-10-19T19:39:36Z",
       "status": 200,
       "message": {
         "DOI": "10.1101/2023.07.27.23293272",
@@ -5292,7 +5412,7 @@
       }
     },
     "10.1101/2023.09.12.23295429": {
-      "fetched_at": "2026-10-12T16:51:11Z",
+      "fetched_at": "2026-10-19T19:39:36Z",
       "status": 200,
       "message": {
         "DOI": "10.1101/2023.09.12.23295429",
@@ -5542,7 +5662,7 @@
       }
     },
     "10.1101/2023.10.13.23296965": {
-      "fetched_at": "2026-10-12T16:51:11Z",
+      "fetched_at": "2026-10-19T19:39:36Z",
       "status": 200,
       "message": {
         "DOI": "10.1101/2023.10.13.23296965",
@@ -5653,7 +5773,7 @@
       }
     },
     "10.1101/2024.02.05.24302352": {
-      "fetched_at": "2026-10-12T16:51:11Z",
+      "fetched_at": "2026-10-19T19:39:36Z",
       "status": 200,
       "message": {
         "DOI": "10.1101/2024.02.05.24302352",
@@ -5779,7 +5899,7 @@
       }
     },
     "10.1101/2024.03.21.24304684": {
-      "fetched_at": "2026-10-12T16:51:11Z",
+      "fetched_at": "2026-10-19T19:39:36Z",
       "status": 200,
       "message": {
         "DOI": "10.1101/2024.03.21.24304684",
@@ -6005,7 +6125,7 @@
       }
     },
     "10.1101/2024.05.10.24307069": {
-      "fetched_at": "2026-10-12T16:51:11Z",
+      "fetched_at": "2026-10-19T19:39:36Z",
       "status": 200,
       "message": {
         "DOI": "10.1101/2024.05.10.24307069",
@@ -6246,7 +6366,7 @@
       }
     },
     "10.1101/2024.10.07.24315026": {
-      "fetched_at": "2026-10-12T16:51:11Z",
+      "fetched_at": "2026-10-19T19:39:36Z",
       "status": 200,
       "message": {
         "DOI": "10.1101/2024.10.07.24315026",
@@ -6345,7 +6465,7 @@
       }
     },
     "10.1101/2024.10.18.24315778": {
-      "fetched_at": "2026-10-12T16:51:11Z",
+      "fetched_at": "2026-10-19T19:39:36Z",
       "status": 200,
       "message": {
         "DOI": "10.1101/2024.10.18.24315778",
@@ -6438,7 +6558,7 @@
       }
     },
     "10.1101/2025.04.22.25326224": {
-      "fetched_at": "2026-10-12T16:51:11Z",
+      "fetched_at": "2026-10-19T19:39:36Z",
       "status": 200,
       "message": {
         "DOI": "10.1101/2025.04.22.25326224",
@@ -6599,7 +6719,7 @@
       }
     },
     "10.1101/2025.06.06.25329168": {
-      "fetched_at": "2026-10-12T16:51:11Z",
+      "fetched_at": "2026-10-19T19:39:36Z",
       "status": 200,
       "message": {
         "DOI": "10.1101/2025.06.06.25329168",
@@ -6710,7 +6830,7 @@
       }
     },
     "10.1136/bmjdrc-2024-004536": {
-      "fetched_at": "2026-10-12T16:51:11Z",
+      "fetched_at": "2026-10-19T19:39:36Z",
       "status": 200,
       "message": {
         "DOI": "10.1136/bmjdrc-2024-004536",
@@ -6848,7 +6968,7 @@
       }
     },
     "10.1155/pedi/3545727": {
-      "fetched_at": "2026-10-12T16:51:11Z",
+      "fetched_at": "2026-10-19T19:39:36Z",
       "status": 200,
       "message": {
         "DOI": "10.1155/pedi/3545727",
@@ -7223,7 +7343,7 @@
       }
     },
     "10.1186/s12916-024-03655-x": {
-      "fetched_at": "2026-10-12T16:51:11Z",
+      "fetched_at": "2026-10-19T19:39:36Z",
       "status": 200,
       "message": {
         "DOI": "10.1186/s12916-024-03655-x",
@@ -7339,14 +7459,14 @@
         "relation": {},
         "URL": "https://doi.org/10.1186/s12916-024-03655-x",
         "publisher": "Springer Science and Business Media LLC",
-        "is-referenced-by-count": 18,
+        "is-referenced-by-count": 19,
         "ISSN": [
           "1741-7015"
         ]
       }
     },
     "10.1371/journal.pntd.0012881": {
-      "fetched_at": "2026-10-12T16:51:11Z",
+      "fetched_at": "2026-10-19T19:39:36Z",
       "status": 200,
       "message": {
         "DOI": "10.1371/journal.pntd.0012881",
@@ -8085,7 +8205,7 @@
       }
     },
     "10.2196/53322": {
-      "fetched_at": "2026-10-12T16:51:11Z",
+      "fetched_at": "2026-10-19T19:39:36Z",
       "status": 200,
       "message": {
         "DOI": "10.2196/53322",
@@ -8225,7 +8345,7 @@
       }
     },
     "10.2196/54622": {
-      "fetched_at": "2026-10-12T16:51:11Z",
+      "fetched_at": "2026-10-19T19:39:36Z",
       "status": 200,
       "message": {
         "DOI": "10.2196/54622",
@@ -8344,7 +8464,7 @@
       }
     },
     "10.2196/67585": {
-      "fetched_at": "2026-10-12T16:51:11Z",
+      "fetched_at": "2026-10-19T19:39:36Z",
       "status": 200,
       "message": {
         "DOI": "10.2196/67585",
@@ -8444,7 +8564,7 @@
       }
     },
     "10.2196/68143": {
-      "fetched_at": "2026-10-12T16:51:11Z",
+      "fetched_at": "2026-10-19T19:39:36Z",
       "status": 200,
       "message": {
         "DOI": "10.2196/68143",
@@ -8632,7 +8752,7 @@
       }
     },
     "10.2196/preprints.53322": {
-      "fetched_at": "2026-10-12T16:51:11Z",
+      "fetched_at": "2026-10-19T19:39:36Z",
       "status": 200,
       "message": {
         "DOI": "10.2196/preprints.53322",
@@ -8765,7 +8885,7 @@
       }
     },
     "10.2196/preprints.54622": {
-      "fetched_at": "2026-10-12T16:51:11Z",
+      "fetched_at": "2026-10-19T19:39:36Z",
       "status": 200,
       "message": {
         "DOI": "10.2196/preprints.54622",
@@ -8870,7 +8990,7 @@
       }
     },
     "10.2196/preprints.67585": {
-      "fetched_at": "2026-10-12T16:51:11Z",
+      "fetched_at": "2026-10-19T19:39:36Z",
       "status": 200,
       "message": {
         "DOI": "10.2196/preprints.67585",
@@ -8963,7 +9083,7 @@
       }
     },
     "10.2196/preprints.68143": {
-      "fetched_at": "2026-10-12T16:51:11Z",
+      "fetched_at": "2026-10-19T19:39:36Z",
       "status": 200,
       "message": {
         "DOI": "10.2196/preprints.68143",
@@ -9144,7 +9264,7 @@
       }
     },
     "10.3390/antibiotics10010002": {
-      "fetched_at": "2026-10-12T16:51:11Z",
+      "fetched_at": "2026-10-19T19:39:36Z",
       "status": 200,
       "message": {
         "DOI": "10.3390/antibiotics10010002",
@@ -9367,27 +9487,27 @@
       }
     },
     "10.60692/c1n6z-5va13": {
-      "fetched_at": "2026-10-12T16:51:11Z",
+      "fetched_at": "2026-10-19T19:39:36Z",
       "status": 404,
       "message": null
     },
     "10.60692/mvc96-kx993": {
-      "fetched_at": "2026-10-12T16:51:11Z",
+      "fetched_at": "2026-10-19T19:39:36Z",
       "status": 404,
       "message": null
     },
     "10.60692/rm9d6-fsk84": {
-      "fetched_at": "2026-10-12T16:51:11Z",
+      "fetched_at": "2026-10-19T19:39:36Z",
       "status": 404,
       "message": null
     },
     "10.60692/zxm69-0e314": {
-      "fetched_at": "2026-10-12T16:51:11Z",
+      "fetched_at": "2026-10-19T19:39:36Z",
       "status": 404,
       "message": null
     },
     "10.64898/2026.02.27.26347274": {
-      "fetched_at": "2026-10-12T16:51:11Z",
+      "fetched_at": "2026-10-19T19:39:36Z",
       "status": 200,
       "message": {
         "DOI": "10.64898/2026.02.27.26347274",
@@ -9503,7 +9623,7 @@
       }
     },
     "10.64898/2026.03.06.26347799": {
-      "fetched_at": "2026-10-12T16:51:11Z",
+      "fetched_at": "2026-10-19T19:39:36Z",
       "status": 200,
       "message": {
         "DOI": "10.64898/2026.03.06.26347799",
@@ -9702,7 +9822,7 @@
       }
     },
     "10.64898/2026.06.22.26356274": {
-      "fetched_at": "2026-10-12T16:51:11Z",
+      "fetched_at": "2026-10-19T19:39:36Z",
       "status": 200,
       "message": {
         "DOI": "10.64898/2026.06.22.26356274",
@@ -9807,7 +9927,7 @@
       }
     },
     "10.64898/2026.07.03.26357246": {
-      "fetched_at": "2026-10-12T16:51:11Z",
+      "fetched_at": "2026-10-19T19:39:36Z",
       "status": 200,
       "message": {
         "DOI": "10.64898/2026.07.03.26357246",
@@ -9933,7 +10053,7 @@
       }
     },
     "10.64898/2026.07.06.26357398": {
-      "fetched_at": "2026-10-12T16:51:11Z",
+      "fetched_at": "2026-10-19T19:39:36Z",
       "status": 200,
       "message": {
         "DOI": "10.64898/2026.07.06.26357398",
@@ -10102,7 +10222,7 @@
       }
     },
     "10.64898/2026.07.06.26357401": {
-      "fetched_at": "2026-10-12T16:51:11Z",
+      "fetched_at": "2026-10-19T19:39:36Z",
       "status": 200,
       "message": {
         "DOI": "10.64898/2026.07.06.26357401",
@@ -10218,7 +10338,7 @@
       }
     },
     "10.64898/2026.07.21.26358594": {
-      "fetched_at": "2026-10-12T16:51:11Z",
+      "fetched_at": "2026-10-19T19:39:36Z",
       "status": 200,
       "message": {
         "DOI": "10.64898/2026.07.21.26358594",

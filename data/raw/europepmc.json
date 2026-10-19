@@ -1,6 +1,6 @@
 {
   "source": "europepmc",
-  "fetched_at": "2026-10-12T16:51:09Z",
+  "fetched_at": "2026-10-19T19:39:35Z",
   "query": "AUTH:\"Butzin-Dozier Z\" OR AUTHORID:\"0000-0001-6419-0008\" OR AUTH:\"Dozier ZB\"",
   "results": [
     {
@@ -1201,6 +1201,128 @@
       "firstPublicationDate": "2026-09-18",
       "electronicPublicationDate": "2026-09-18",
       "printPublicationDate": "2026-09-01",
+      "pubTypes": [
+        "Journal Article"
+      ],
+      "publisher": null,
+      "commentCorrections": [],
+      "citedByCount": 0,
+      "isOpenAccess": "N"
+    },
+    {
+      "id": "42870675",
+      "source": "MED",
+      "pmid": "42870675",
+      "pmcid": null,
+      "doi": "10.1002/art.70361",
+      "title": "Higher risk of Long COVID among patients with autoimmune rheumatic diseases and immunomodulatory therapy: a retrospective cohort analysis of national US data.",
+      "authorString": "Singh N, Anzalone AJ, Stevenson H, Robinson L, Jackson LE, Safo SE, Butzin-Dozier Z, Michaud K, Danila MI, Singh JA, Patel RC, National Clinical Cohort Collaborative (N3C) Consortium.",
+      "authors": [
+        {
+          "fullName": "Singh N",
+          "firstName": "Namrata",
+          "lastName": "Singh",
+          "initials": "N",
+          "collectiveName": null,
+          "orcid": "0000-0001-7149-363X"
+        },
+        {
+          "fullName": "Anzalone AJ",
+          "firstName": "A Jerrod",
+          "lastName": "Anzalone",
+          "initials": "AJ",
+          "collectiveName": null,
+          "orcid": "0000-0002-3212-7845"
+        },
+        {
+          "fullName": "Stevenson H",
+          "firstName": "Holland",
+          "lastName": "Stevenson",
+          "initials": "H",
+          "collectiveName": null,
+          "orcid": null
+        },
+        {
+          "fullName": "Robinson L",
+          "firstName": "Londyn",
+          "lastName": "Robinson",
+          "initials": "L",
+          "collectiveName": null,
+          "orcid": null
+        },
+        {
+          "fullName": "Jackson LE",
+          "firstName": "Lesley E",
+          "lastName": "Jackson",
+          "initials": "LE",
+          "collectiveName": null,
+          "orcid": "0000-0002-9373-7620"
+        },
+        {
+          "fullName": "Safo SE",
+          "firstName": "Sandra E",
+          "lastName": "Safo",
+          "initials": "SE",
+          "collectiveName": null,
+          "orcid": null
+        },
+        {
+          "fullName": "Butzin-Dozier Z",
+          "firstName": "Zachary",
+          "lastName": "Butzin-Dozier",
+          "initials": "Z",
+          "collectiveName": null,
+          "orcid": null
+        },
+        {
+          "fullName": "Michaud K",
+          "firstName": "Kaleb",
+          "lastName": "Michaud",
+          "initials": "K",
+          "collectiveName": null,
+          "orcid": null
+        },
+        {
+          "fullName": "Danila MI",
+          "firstName": "Maria I",
+          "lastName": "Danila",
+          "initials": "MI",
+          "collectiveName": null,
+          "orcid": "0000-0001-9246-6200"
+        },
+        {
+          "fullName": "Singh JA",
+          "firstName": "Jasvinder A",
+          "lastName": "Singh",
+          "initials": "JA",
+          "collectiveName": null,
+          "orcid": "0000-0003-3485-0006"
+        },
+        {
+          "fullName": "Patel RC",
+          "firstName": "Rena C",
+          "lastName": "Patel",
+          "initials": "RC",
+          "collectiveName": null,
+          "orcid": null
+        },
+        {
+          "fullName": null,
+          "firstName": null,
+          "lastName": null,
+          "initials": null,
+          "collectiveName": "National Clinical Cohort Collaborative (N3C) Consortium",
+          "orcid": null
+        }
+      ],
+      "journal": "Arthritis & rheumatology (Hoboken, N.J.)",
+      "volume": null,
+      "issue": null,
+      "pageInfo": null,
+      "pubYear": "2026",
+      "firstPublicationDate": "2026-10-14",
+      "electronicPublicationDate": "2026-10-14",
+      "printPublicationDate": "2026-10-01",
       "pubTypes": [
         "Journal Article"
       ],
@@ -3027,283 +3149,6 @@
       "isOpenAccess": "Y"
     },
     {
-      "id": "39788996",
-      "source": "MED",
-      "pmid": "39788996",
-      "pmcid": "PMC11718192",
-      "doi": "10.1038/s41467-024-55801-x",
-      "title": "Water, sanitation, handwashing, and nutritional interventions can reduce child antibiotic use: evidence from Bangladesh and Kenya.",
-      "authorString": "Ercumen A, Mertens AN, Butzin-Dozier Z, Jung DK, Ali S, Achando BS, Rao G, Hemlock C, Pickering AJ, Stewart CP, Tan ST, Grembi JA, Benjamin-Chung J, Wolfe M, Ho GG, Rahman MZ, Arnold CD, Dentz HN, Njenga SM, Meerkerk T, Chen B, Nadimpalli M, Islam MA, Hubbard AE, Null C, Unicomb L, Rahman M, Colford JM, Luby SP, Arnold BF, Lin A.",
-      "authors": [
-        {
-          "fullName": "Ercumen A",
-          "firstName": "Ayse",
-          "lastName": "Ercumen",
-          "initials": "A",
-          "collectiveName": null,
-          "orcid": "0000-0001-6002-1514"
-        },
-        {
-          "fullName": "Mertens AN",
-          "firstName": "Andrew N",
-          "lastName": "Mertens",
-          "initials": "AN",
-          "collectiveName": null,
-          "orcid": "0000-0002-1050-6721"
-        },
-        {
-          "fullName": "Butzin-Dozier Z",
-          "firstName": "Zachary",
-          "lastName": "Butzin-Dozier",
-          "initials": "Z",
-          "collectiveName": null,
-          "orcid": "0000-0001-6419-0008"
-        },
-        {
-          "fullName": "Jung DK",
-          "firstName": "Da Kyung",
-          "lastName": "Jung",
-          "initials": "DK",
-          "collectiveName": null,
-          "orcid": "0009-0009-8510-2033"
-        },
-        {
-          "fullName": "Ali S",
-          "firstName": "Shahjahan",
-          "lastName": "Ali",
-          "initials": "S",
-          "collectiveName": null,
-          "orcid": "0000-0003-3883-1208"
-        },
-        {
-          "fullName": "Achando BS",
-          "firstName": "Beryl S",
-          "lastName": "Achando",
-          "initials": "BS",
-          "collectiveName": null,
-          "orcid": null
-        },
-        {
-          "fullName": "Rao G",
-          "firstName": "Gouthami",
-          "lastName": "Rao",
-          "initials": "G",
-          "collectiveName": null,
-          "orcid": null
-        },
-        {
-          "fullName": "Hemlock C",
-          "firstName": "Caitlin",
-          "lastName": "Hemlock",
-          "initials": "C",
-          "collectiveName": null,
-          "orcid": null
-        },
-        {
-          "fullName": "Pickering AJ",
-          "firstName": "Amy J",
-          "lastName": "Pickering",
-          "initials": "AJ",
-          "collectiveName": null,
-          "orcid": "0000-0001-6193-2221"
-        },
-        {
-          "fullName": "Stewart CP",
-          "firstName": "Christine P",
-          "lastName": "Stewart",
-          "initials": "CP",
-          "collectiveName": null,
-          "orcid": "0000-0003-4575-8571"
-        },
-        {
-          "fullName": "Tan ST",
-          "firstName": "Sophia T",
-          "lastName": "Tan",
-          "initials": "ST",
-          "collectiveName": null,
-          "orcid": null
-        },
-        {
-          "fullName": "Grembi JA",
-          "firstName": "Jessica A",
-          "lastName": "Grembi",
-          "initials": "JA",
-          "collectiveName": null,
-          "orcid": "0000-0001-6142-4913"
-        },
-        {
-          "fullName": "Benjamin-Chung J",
-          "firstName": "Jade",
-          "lastName": "Benjamin-Chung",
-          "initials": "J",
-          "collectiveName": null,
-          "orcid": "0000-0003-3631-3132"
-        },
-        {
-          "fullName": "Wolfe M",
-          "firstName": "Marlene",
-          "lastName": "Wolfe",
-          "initials": "M",
-          "collectiveName": null,
-          "orcid": "0000-0002-6476-0450"
-        },
-        {
-          "fullName": "Ho GG",
-          "firstName": "Gene G",
-          "lastName": "Ho",
-          "initials": "GG",
-          "collectiveName": null,
-          "orcid": null
-        },
-        {
-          "fullName": "Rahman MZ",
-          "firstName": "Md Ziaur",
-          "lastName": "Rahman",
-          "initials": "MZ",
-          "collectiveName": null,
-          "orcid": null
-        },
-        {
-          "fullName": "Arnold CD",
-          "firstName": "Charles D",
-          "lastName": "Arnold",
-          "initials": "CD",
-          "collectiveName": null,
-          "orcid": null
-        },
-        {
-          "fullName": "Dentz HN",
-          "firstName": "Holly N",
-          "lastName": "Dentz",
-          "initials": "HN",
-          "collectiveName": null,
-          "orcid": null
-        },
-        {
-          "fullName": "Njenga SM",
-          "firstName": "Sammy M",
-          "lastName": "Njenga",
-          "initials": "SM",
-          "collectiveName": null,
-          "orcid": null
-        },
-        {
-          "fullName": "Meerkerk T",
-          "firstName": "Theodora",
-          "lastName": "Meerkerk",
-          "initials": "T",
-          "collectiveName": null,
-          "orcid": null
-        },
-        {
-          "fullName": "Chen B",
-          "firstName": "Belinda",
-          "lastName": "Chen",
-          "initials": "B",
-          "collectiveName": null,
-          "orcid": null
-        },
-        {
-          "fullName": "Nadimpalli M",
-          "firstName": "Maya",
-          "lastName": "Nadimpalli",
-          "initials": "M",
-          "collectiveName": null,
-          "orcid": "0000-0002-6526-116X"
-        },
-        {
-          "fullName": "Islam MA",
-          "firstName": "Mohammad Aminul",
-          "lastName": "Islam",
-          "initials": "MA",
-          "collectiveName": null,
-          "orcid": "0000-0001-5107-5289"
-        },
-        {
-          "fullName": "Hubbard AE",
-          "firstName": "Alan E",
-          "lastName": "Hubbard",
-          "initials": "AE",
-          "collectiveName": null,
-          "orcid": "0000-0002-3769-0127"
-        },
-        {
-          "fullName": "Null C",
-          "firstName": "Clair",
-          "lastName": "Null",
-          "initials": "C",
-          "collectiveName": null,
-          "orcid": null
-        },
-        {
-          "fullName": "Unicomb L",
-          "firstName": "Leanne",
-          "lastName": "Unicomb",
-          "initials": "L",
-          "collectiveName": null,
-          "orcid": null
-        },
-        {
-          "fullName": "Rahman M",
-          "firstName": "Mahbubur",
-          "lastName": "Rahman",
-          "initials": "M",
-          "collectiveName": null,
-          "orcid": "0000-0003-0520-2683"
-        },
-        {
-          "fullName": "Colford JM Jr",
-          "firstName": "John M",
-          "lastName": "Colford",
-          "initials": "JM",
-          "collectiveName": null,
-          "orcid": null
-        },
-        {
-          "fullName": "Luby SP",
-          "firstName": "Stephen P",
-          "lastName": "Luby",
-          "initials": "SP",
-          "collectiveName": null,
-          "orcid": "0000-0001-5385-899X"
-        },
-        {
-          "fullName": "Arnold BF",
-          "firstName": "Benjamin F",
-          "lastName": "Arnold",
-          "initials": "BF",
-          "collectiveName": null,
-          "orcid": "0000-0001-6105-7295"
-        },
-        {
-          "fullName": "Lin A",
-          "firstName": "Audrie",
-          "lastName": "Lin",
-          "initials": "A",
-          "collectiveName": null,
-          "orcid": "0000-0002-3877-3469"
-        }
-      ],
-      "journal": "Nature communications",
-      "volume": "16",
-      "issue": "1",
-      "pageInfo": "556",
-      "pubYear": "2025",
-      "firstPublicationDate": "2025-01-09",
-      "electronicPublicationDate": "2025-01-09",
-      "printPublicationDate": "2025-01-01",
-      "pubTypes": [
-        "research-article",
-        "Multicenter Study",
-        "Randomized Controlled Trial",
-        "Journal Article"
-      ],
-      "publisher": null,
-      "commentCorrections": [],
-      "citedByCount": 11,
-      "isOpenAccess": "Y"
-    },
-    {
       "id": "39904520",
       "source": "MED",
       "pmid": "39904520",
@@ -3699,6 +3544,283 @@
       "commentCorrections": [],
       "citedByCount": 1,
       "isOpenAccess": "N"
+    },
+    {
+      "id": "39788996",
+      "source": "MED",
+      "pmid": "39788996",
+      "pmcid": "PMC11718192",
+      "doi": "10.1038/s41467-024-55801-x",
+      "title": "Water, sanitation, handwashing, and nutritional interventions can reduce child antibiotic use: evidence from Bangladesh and Kenya.",
+      "authorString": "Ercumen A, Mertens AN, Butzin-Dozier Z, Jung DK, Ali S, Achando BS, Rao G, Hemlock C, Pickering AJ, Stewart CP, Tan ST, Grembi JA, Benjamin-Chung J, Wolfe M, Ho GG, Rahman MZ, Arnold CD, Dentz HN, Njenga SM, Meerkerk T, Chen B, Nadimpalli M, Islam MA, Hubbard AE, Null C, Unicomb L, Rahman M, Colford JM, Luby SP, Arnold BF, Lin A.",
+      "authors": [
+        {
+          "fullName": "Ercumen A",
+          "firstName": "Ayse",
+          "lastName": "Ercumen",
+          "initials": "A",
+          "collectiveName": null,
+          "orcid": "0000-0001-6002-1514"
+        },
+        {
+          "fullName": "Mertens AN",
+          "firstName": "Andrew N",
+          "lastName": "Mertens",
+          "initials": "AN",
+          "collectiveName": null,
+          "orcid": "0000-0002-1050-6721"
+        },
+        {
+          "fullName": "Butzin-Dozier Z",
+          "firstName": "Zachary",
+          "lastName": "Butzin-Dozier",
+          "initials": "Z",
+          "collectiveName": null,
+          "orcid": "0000-0001-6419-0008"
+        },
+        {
+          "fullName": "Jung DK",
+          "firstName": "Da Kyung",
+          "lastName": "Jung",
+          "initials": "DK",
+          "collectiveName": null,
+          "orcid": "0009-0009-8510-2033"
+        },
+        {
+          "fullName": "Ali S",
+          "firstName": "Shahjahan",
+          "lastName": "Ali",
+          "initials": "S",
+          "collectiveName": null,
+          "orcid": "0000-0003-3883-1208"
+        },
+        {
+          "fullName": "Achando BS",
+          "firstName": "Beryl S",
+          "lastName": "Achando",
+          "initials": "BS",
+          "collectiveName": null,
+          "orcid": null
+        },
+        {
+          "fullName": "Rao G",
+          "firstName": "Gouthami",
+          "lastName": "Rao",
+          "initials": "G",
+          "collectiveName": null,
+          "orcid": null
+        },
+        {
+          "fullName": "Hemlock C",
+          "firstName": "Caitlin",
+          "lastName": "Hemlock",
+          "initials": "C",
+          "collectiveName": null,
+          "orcid": null
+        },
+        {
+          "fullName": "Pickering AJ",
+          "firstName": "Amy J",
+          "lastName": "Pickering",
+          "initials": "AJ",
+          "collectiveName": null,
+          "orcid": "0000-0001-6193-2221"
+        },
+        {
+          "fullName": "Stewart CP",
+          "firstName": "Christine P",
+          "lastName": "Stewart",
+          "initials": "CP",
+          "collectiveName": null,
+          "orcid": "0000-0003-4575-8571"
+        },
+        {
+          "fullName": "Tan ST",
+          "firstName": "Sophia T",
+          "lastName": "Tan",
+          "initials": "ST",
+          "collectiveName": null,
+          "orcid": null
+        },
+        {
+          "fullName": "Grembi JA",
+          "firstName": "Jessica A",
+          "lastName": "Grembi",
+          "initials": "JA",
+          "collectiveName": null,
+          "orcid": "0000-0001-6142-4913"
+        },
+        {
+          "fullName": "Benjamin-Chung J",
+          "firstName": "Jade",
+          "lastName": "Benjamin-Chung",
+          "initials": "J",
+          "collectiveName": null,
+          "orcid": "0000-0003-3631-3132"
+        },
+        {
+          "fullName": "Wolfe M",
+          "firstName": "Marlene",
+          "lastName": "Wolfe",
+          "initials": "M",
+          "collectiveName": null,
+          "orcid": "0000-0002-6476-0450"
+        },
+        {
+          "fullName": "Ho GG",
+          "firstName": "Gene G",
+          "lastName": "Ho",
+          "initials": "GG",
+          "collectiveName": null,
+          "orcid": null
+        },
+        {
+          "fullName": "Rahman MZ",
+          "firstName": "Md Ziaur",
+          "lastName": "Rahman",
+          "initials": "MZ",
+          "collectiveName": null,
+          "orcid": null
+        },
+        {
+          "fullName": "Arnold CD",
+          "firstName": "Charles D",
+          "lastName": "Arnold",
+          "initials": "CD",
+          "collectiveName": null,
+          "orcid": null
+        },
+        {
+          "fullName": "Dentz HN",
+          "firstName": "Holly N",
+          "lastName": "Dentz",
+          "initials": "HN",
+          "collectiveName": null,
+          "orcid": null
+        },
+        {
+          "fullName": "Njenga SM",
+          "firstName": "Sammy M",
+          "lastName": "Njenga",
+          "initials": "SM",
+          "collectiveName": null,
+          "orcid": null
+        },
+        {
+          "fullName": "Meerkerk T",
+          "firstName": "Theodora",
+          "lastName": "Meerkerk",
+          "initials": "T",
+          "collectiveName": null,
+          "orcid": null
+        },
+        {
+          "fullName": "Chen B",
+          "firstName": "Belinda",
+          "lastName": "Chen",
+          "initials": "B",
+          "collectiveName": null,
+          "orcid": null
+        },
+        {
+          "fullName": "Nadimpalli M",
+          "firstName": "Maya",
+          "lastName": "Nadimpalli",
+          "initials": "M",
+          "collectiveName": null,
+          "orcid": "0000-0002-6526-116X"
+        },
+        {
+          "fullName": "Islam MA",
+          "firstName": "Mohammad Aminul",
+          "lastName": "Islam",
+          "initials": "MA",
+          "collectiveName": null,
+          "orcid": "0000-0001-5107-5289"
+        },
+        {
+          "fullName": "Hubbard AE",
+          "firstName": "Alan E",
+          "lastName": "Hubbard",
+          "initials": "AE",
+          "collectiveName": null,
+          "orcid": "0000-0002-3769-0127"
+        },
+        {
+          "fullName": "Null C",
+          "firstName": "Clair",
+          "lastName": "Null",
+          "initials": "C",
+          "collectiveName": null,
+          "orcid": null
+        },
+        {
+          "fullName": "Unicomb L",
+          "firstName": "Leanne",
+          "lastName": "Unicomb",
+          "initials": "L",
+          "collectiveName": null,
+          "orcid": null
+        },
+        {
+          "fullName": "Rahman M",
+          "firstName": "Mahbubur",
+          "lastName": "Rahman",
+          "initials": "M",
+          "collectiveName": null,
+          "orcid": "0000-0003-0520-2683"
+        },
+        {
+          "fullName": "Colford JM Jr",
+          "firstName": "John M",
+          "lastName": "Colford",
+          "initials": "JM",
+          "collectiveName": null,
+          "orcid": null
+        },
+        {
+          "fullName": "Luby SP",
+          "firstName": "Stephen P",
+          "lastName": "Luby",
+          "initials": "SP",
+          "collectiveName": null,
+          "orcid": "0000-0001-5385-899X"
+        },
+        {
+          "fullName": "Arnold BF",
+          "firstName": "Benjamin F",
+          "lastName": "Arnold",
+          "initials": "BF",
+          "collectiveName": null,
+          "orcid": "0000-0001-6105-7295"
+        },
+        {
+          "fullName": "Lin A",
+          "firstName": "Audrie",
+          "lastName": "Lin",
+          "initials": "A",
+          "collectiveName": null,
+          "orcid": "0000-0002-3877-3469"
+        }
+      ],
+      "journal": "Nature communications",
+      "volume": "16",
+      "issue": "1",
+      "pageInfo": "556",
+      "pubYear": "2025",
+      "firstPublicationDate": "2025-01-09",
+      "electronicPublicationDate": "2025-01-09",
+      "printPublicationDate": "2025-01-01",
+      "pubTypes": [
+        "research-article",
+        "Multicenter Study",
+        "Randomized Controlled Trial",
+        "Journal Article"
+      ],
+      "publisher": null,
+      "commentCorrections": [],
+      "citedByCount": 11,
+      "isOpenAccess": "Y"
     },
     {
       "id": "PPR803013",

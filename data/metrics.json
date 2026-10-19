@@ -1,7 +1,7 @@
 {
-  "generated": "2026-10-12T16:51:17Z",
+  "generated": "2026-10-19T19:39:43Z",
   "works_count": 40,
-  "cited_by_count": 313,
+  "cited_by_count": 314,
   "h_index": 7,
   "i10_index": 6,
   "counts_by_year": [
@@ -87,8 +87,8 @@
     },
     {
       "year": 2026,
-      "works_count": 13,
-      "cited_by_count": 74
+      "works_count": 14,
+      "cited_by_count": 75
     }
   ],
   "by_year_role": [
@@ -175,13 +175,13 @@
     {
       "year": 2026,
       "first_or_senior": 6,
-      "coauthor": 7
+      "coauthor": 8
     }
   ],
-  "charted_works_count": 37,
+  "charted_works_count": 38,
   "first_or_senior_count": 17,
   "preprint_count": 10,
-  "openalex_works_count": 56,
+  "openalex_works_count": 89,
   "openalex_author_id": "A5080035458",
   "openalex_counts_by_year": [
     {
@@ -191,17 +191,17 @@
     },
     {
       "year": 2020,
-      "works_count": 1,
+      "works_count": 13,
       "cited_by_count": 14
     },
     {
       "year": 2021,
-      "works_count": 4,
+      "works_count": 16,
       "cited_by_count": 7
     },
     {
       "year": 2022,
-      "works_count": 2,
+      "works_count": 4,
       "cited_by_count": 17
     },
     {
@@ -211,17 +211,17 @@
     },
     {
       "year": 2024,
-      "works_count": 13,
-      "cited_by_count": 80
+      "works_count": 16,
+      "cited_by_count": 81
     },
     {
       "year": 2025,
-      "works_count": 15,
+      "works_count": 13,
       "cited_by_count": 28
     },
     {
       "year": 2026,
-      "works_count": 18,
+      "works_count": 17,
       "cited_by_count": 6
     }
   ],

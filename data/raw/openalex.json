@@ -1,15 +1,15 @@
 {
   "source": "openalex",
-  "fetched_at": "2026-10-12T16:51:08Z",
+  "fetched_at": "2026-10-19T19:39:33Z",
   "filter": "author.orcid:0000-0001-6419-0008",
   "author": {
     "id": "A5080035458",
     "display_name": "Zachary Butzin-Dozier",
     "orcid": "0000-0001-6419-0008",
-    "works_count": 56,
-    "cited_by_count": 313,
+    "works_count": 89,
+    "cited_by_count": 314,
     "summary_stats": {
-      "2yr_mean_citedness": 2.4782608695652173,
+      "2yr_mean_citedness": 2.5,
       "h_index": 7,
       "i10_index": 6
     },
@@ -22,20 +22,20 @@
       },
       {
         "year": 2020,
-        "works_count": 1,
-        "oa_works_count": 1,
+        "works_count": 13,
+        "oa_works_count": 12,
         "cited_by_count": 14
       },
       {
         "year": 2021,
-        "works_count": 4,
-        "oa_works_count": 4,
+        "works_count": 16,
+        "oa_works_count": 16,
         "cited_by_count": 7
       },
       {
         "year": 2022,
-        "works_count": 2,
-        "oa_works_count": 2,
+        "works_count": 4,
+        "oa_works_count": 3,
         "cited_by_count": 17
       },
       {
@@ -46,24 +46,24 @@
       },
       {
         "year": 2024,
-        "works_count": 13,
-        "oa_works_count": 13,
-        "cited_by_count": 80
+        "works_count": 16,
+        "oa_works_count": 15,
+        "cited_by_count": 81
       },
       {
         "year": 2025,
-        "works_count": 15,
-        "oa_works_count": 14,
+        "works_count": 13,
+        "oa_works_count": 12,
         "cited_by_count": 28
       },
       {
         "year": 2026,
-        "works_count": 18,
-        "oa_works_count": 17,
+        "works_count": 17,
+        "oa_works_count": 16,
         "cited_by_count": 6
       }
     ],
-    "updated_date": "2026-10-10T12:59:14"
+    "updated_date": "2026-10-15T12:44:11"
   },
   "works": [
     {
@@ -152,7 +152,7 @@
         {
           "position": "last",
           "author_id": "A5018065406",
-          "display_name": "Mary G. Dozier",
+          "display_name": "Mary Dozier",
           "raw_author_name": "Mary Dozier",
           "orcid": "0000-0002-3618-4361"
         }
@@ -526,7 +526,7 @@
         {
           "position": "middle",
           "author_id": "A5011313784",
-          "display_name": "Andrew  N. Mertens",
+          "display_name": "Andrew Mertens",
           "raw_author_name": "Andrew Mertens",
           "orcid": "0000-0002-1050-6721"
         },
@@ -559,11 +559,11 @@
           "orcid": "0000-0002-3769-0127"
         }
       ],
-      "cited_by_count": 15,
+      "cited_by_count": 16,
       "counts_by_year": [
         {
           "year": 2026,
-          "cited_by_count": 6
+          "cited_by_count": 7
         },
         {
           "year": 2025,
@@ -706,7 +706,7 @@
         {
           "position": "middle",
           "author_id": "A5011313784",
-          "display_name": "Andrew  N. Mertens",
+          "display_name": "Andrew Mertens",
           "raw_author_name": "Andrew N Mertens",
           "orcid": "0000-0002-1050-6721"
         },
@@ -878,7 +878,7 @@
         {
           "position": "middle",
           "author_id": "A5011313784",
-          "display_name": "Andrew  N. Mertens",
+          "display_name": "Andrew Mertens",
           "raw_author_name": "Andrew N. Mertens",
           "orcid": "0000-0002-1050-6721"
         },
@@ -1317,7 +1317,7 @@
         {
           "position": "middle",
           "author_id": "A5011313784",
-          "display_name": "Andrew  N. Mertens",
+          "display_name": "Andrew Mertens",
           "raw_author_name": "Andrew Mertens",
           "orcid": "0000-0002-1050-6721"
         },
@@ -1477,10 +1477,10 @@
         },
         {
           "position": "middle",
-          "author_id": null,
+          "author_id": "A5066816655",
           "display_name": "Joseph Agor",
           "raw_author_name": "Joseph Agor",
-          "orcid": null
+          "orcid": "0000-0002-9380-4256"
         },
         {
           "position": "middle",
@@ -2266,7 +2266,7 @@
         {
           "position": "middle",
           "author_id": "A5051818098",
-          "display_name": "James A Platts-Mills",
+          "display_name": "James Alexander Platts-Mills",
           "raw_author_name": "James A. Platts-Mills",
           "orcid": "0000-0002-4956-0418"
         },
@@ -2413,7 +2413,7 @@
         {
           "position": "middle",
           "author_id": "A5011313784",
-          "display_name": "Andrew  N. Mertens",
+          "display_name": "Andrew Mertens",
           "raw_author_name": "Andrew N. Mertens",
           "orcid": "0000-0002-1050-6721"
         },
@@ -3024,7 +3024,7 @@
         {
           "position": "middle",
           "author_id": "A5011313784",
-          "display_name": "Andrew  N. Mertens",
+          "display_name": "Andrew Mertens",
           "raw_author_name": "Andrew N. Mertens",
           "orcid": "0000-0002-1050-6721"
         },
@@ -3543,7 +3543,7 @@
         {
           "position": "middle",
           "author_id": "A5011313784",
-          "display_name": "Andrew  N. Mertens",
+          "display_name": "Andrew Mertens",
           "raw_author_name": "Andrew Mertens",
           "orcid": "0000-0002-1050-6721"
         },
@@ -3605,10 +3605,10 @@
         },
         {
           "position": "middle",
-          "author_id": "A5143601789",
-          "display_name": "Amit Saha",
+          "author_id": "A5102899942",
+          "display_name": "Amit K. Saha",
           "raw_author_name": "Amit Saha",
-          "orcid": null
+          "orcid": "0000-0002-3542-4319"
         },
         {
           "position": "middle",
@@ -3682,10 +3682,10 @@
         },
         {
           "position": "middle",
-          "author_id": "A5128340062",
-          "display_name": "Brijesh Patel",
+          "author_id": "A5077100152",
+          "display_name": "Brijesh D. Patel",
           "raw_author_name": "Brijesh Patel",
-          "orcid": null
+          "orcid": "0000-0001-8973-8228"
         },
         {
           "position": "middle",
@@ -3724,10 +3724,10 @@
         },
         {
           "position": "middle",
-          "author_id": "A5129457170",
-          "display_name": "Christopher Chute",
+          "author_id": "A5060390916",
+          "display_name": "Christopher G. Chute",
           "raw_author_name": "Christopher Chute",
-          "orcid": null
+          "orcid": "0000-0001-5437-2545"
         },
         {
           "position": "middle",
@@ -3871,10 +3871,10 @@
         },
         {
           "position": "middle",
-          "author_id": "A5143541287",
-          "display_name": "Harold Lehmann",
+          "author_id": "A5010827397",
+          "display_name": "Harold P. Lehmann",
           "raw_author_name": "Harold Lehmann",
-          "orcid": null
+          "orcid": "0000-0002-7698-219X"
         },
         {
           "position": "middle",
@@ -3934,10 +3934,10 @@
         },
         {
           "position": "middle",
-          "author_id": "A5143547342",
-          "display_name": "Jessica Islam",
+          "author_id": "A5012690958",
+          "display_name": "Jessica Y. Islam",
           "raw_author_name": "Jessica Islam",
-          "orcid": null
+          "orcid": "0000-0002-3690-3848"
         },
         {
           "position": "middle",
@@ -3976,10 +3976,10 @@
         },
         {
           "position": "middle",
-          "author_id": "A5134668813",
-          "display_name": "John Buse",
+          "author_id": "A5040182038",
+          "display_name": "John B. Buse",
           "raw_author_name": "John Buse",
-          "orcid": null
+          "orcid": "0000-0002-9723-3876"
         },
         {
           "position": "middle",
@@ -4844,7 +4844,7 @@
         {
           "position": "middle",
           "author_id": "A5011313784",
-          "display_name": "Andrew  N. Mertens",
+          "display_name": "Andrew Mertens",
           "raw_author_name": "Andrew N. Mertens",
           "orcid": "0000-0002-1050-6721"
         },
@@ -5121,7 +5121,7 @@
         {
           "position": "middle",
           "author_id": "A5011313784",
-          "display_name": "Andrew  N. Mertens",
+          "display_name": "Andrew Mertens",
           "raw_author_name": "Andrew Mertens",
           "orcid": "0000-0002-1050-6721"
         },
@@ -5542,7 +5542,7 @@
         {
           "position": "middle",
           "author_id": "A5011313784",
-          "display_name": "Andrew  N. Mertens",
+          "display_name": "Andrew Mertens",
           "raw_author_name": "Andrew Mertens",
           "orcid": "0000-0002-1050-6721"
         },
@@ -5650,7 +5650,7 @@
         {
           "position": "middle",
           "author_id": "A5011313784",
-          "display_name": "Andrew  N. Mertens",
+          "display_name": "Andrew Mertens",
           "raw_author_name": "Andrew N. Mertens",
           "orcid": "0000-0002-1050-6721"
         },
@@ -6493,10 +6493,10 @@
         },
         {
           "position": "middle",
-          "author_id": null,
-          "display_name": "Sophia Tan",
+          "author_id": "A5103212330",
+          "display_name": "Sophia T. Tan",
           "raw_author_name": "Sophia Tan",
-          "orcid": null
+          "orcid": "0009-0000-5421-4627"
         },
         {
           "position": "middle",
@@ -6626,10 +6626,10 @@
         },
         {
           "position": "middle",
-          "author_id": null,
-          "display_name": "Lia Fernald",
+          "author_id": "A5059886126",
+          "display_name": "Lia C. H. Fernald",
           "raw_author_name": "Lia Fernald",
-          "orcid": null
+          "orcid": "0000-0003-1555-4607"
         },
         {
           "position": "middle",
@@ -6640,17 +6640,17 @@
         },
         {
           "position": "middle",
-          "author_id": null,
-          "display_name": "Stephen Luby",
+          "author_id": "A5035517653",
+          "display_name": "Stephen P. Luby",
           "raw_author_name": "Stephen Luby",
-          "orcid": null
+          "orcid": "0000-0001-5385-899X"
         },
         {
           "position": "last",
-          "author_id": null,
+          "author_id": "A5045948196",
           "display_name": "Firdaus S. Dhabhar",
           "raw_author_name": "Firdaus S. Dhabhar",
-          "orcid": null
+          "orcid": "0000-0002-2721-6130"
         }
       ],
       "cited_by_count": 0,
@@ -6918,7 +6918,7 @@
         {
           "position": "middle",
           "author_id": "A5011313784",
-          "display_name": "Andrew  N. Mertens",
+          "display_name": "Andrew Mertens",
           "raw_author_name": "Mertens A",
           "orcid": "0000-0002-1050-6721"
         },
@@ -7115,7 +7115,7 @@
         {
           "position": "middle",
           "author_id": "A5011313784",
-          "display_name": "Andrew  N. Mertens",
+          "display_name": "Andrew Mertens",
           "raw_author_name": "Mertens A",
           "orcid": "0000-0002-1050-6721"
         },
@@ -7456,7 +7456,7 @@
         {
           "position": "middle",
           "author_id": "A5011313784",
-          "display_name": "Andrew  N. Mertens",
+          "display_name": "Andrew Mertens",
           "raw_author_name": "Andrew N. Mertens",
           "orcid": "0000-0002-1050-6721"
         },
@@ -7602,10 +7602,10 @@
         },
         {
           "position": "middle",
-          "author_id": "A5110028661",
+          "author_id": "A5035517653",
           "display_name": "Stephen P. Luby",
           "raw_author_name": "Stephen P. Luby",
-          "orcid": null
+          "orcid": "0000-0001-5385-899X"
         },
         {
           "position": "middle",
@@ -7884,7 +7884,7 @@
         {
           "position": "middle",
           "author_id": "A5011313784",
-          "display_name": "Andrew  N. Mertens",
+          "display_name": "Andrew Mertens",
           "raw_author_name": "Andrew N Mertens",
           "orcid": "0000-0002-1050-6721"
         },
@@ -8701,10 +8701,10 @@
         },
         {
           "position": "middle",
-          "author_id": "A5135749050",
-          "display_name": "Sophia Tan",
+          "author_id": "A5103212330",
+          "display_name": "Sophia T. Tan",
           "raw_author_name": "Sophia Tan",
-          "orcid": null
+          "orcid": "0009-0000-5421-4627"
         },
         {
           "position": "middle",
@@ -9089,10 +9089,10 @@
         },
         {
           "position": "middle",
-          "author_id": "A5069165806",
-          "display_name": "SB Johnson",
+          "author_id": "A5045795759",
+          "display_name": "Steve Johnson",
           "raw_author_name": "Steven Johnson",
-          "orcid": null
+          "orcid": "0000-0002-2983-6384"
         },
         {
           "position": "middle",
@@ -9586,10 +9586,10 @@
         },
         {
           "position": "middle",
-          "author_id": "A5069165806",
-          "display_name": "SB Johnson",
+          "author_id": "A5045795759",
+          "display_name": "Steve Johnson",
           "raw_author_name": "Steven Johnson",
-          "orcid": null
+          "orcid": "0000-0002-2983-6384"
         },
         {
           "position": "middle",
@@ -9959,10 +9959,10 @@
         },
         {
           "position": "middle",
-          "author_id": "A5110028661",
+          "author_id": "A5035517653",
           "display_name": "Stephen P. Luby",
           "raw_author_name": "Stephen P Luby",
-          "orcid": null
+          "orcid": "0000-0001-5385-899X"
         },
         {
           "position": "middle",
@@ -9974,7 +9974,7 @@
         {
           "position": "middle",
           "author_id": "A5011313784",
-          "display_name": "Andrew  N. Mertens",
+          "display_name": "Andrew Mertens",
           "raw_author_name": "Andrew N Mertens",
           "orcid": "0000-0002-1050-6721"
         },
@@ -10416,10 +10416,10 @@
         },
         {
           "position": "middle",
-          "author_id": "A5070550028",
-          "display_name": "Andrew Evan Williams",
+          "author_id": null,
+          "display_name": "Andrew E Williams",
           "raw_author_name": "Andrew E Williams",
-          "orcid": "0000-0002-0908-0364"
+          "orcid": null
         },
         {
           "position": "middle",
@@ -10577,10 +10577,10 @@
         },
         {
           "position": "middle",
-          "author_id": "A5152137739",
-          "display_name": "Donald E Brown",
+          "author_id": "A5086462231",
+          "display_name": "Donald E. Brown",
           "raw_author_name": "Donald E Brown",
-          "orcid": null
+          "orcid": "0000-0002-9140-2632"
         },
         {
           "position": "middle",
@@ -11023,10 +11023,10 @@
         },
         {
           "position": "middle",
-          "author_id": "A5152690372",
-          "display_name": "Jessica Y Islam",
+          "author_id": "A5012690958",
+          "display_name": "Jessica Y. Islam",
           "raw_author_name": "Islam, Jessica Y",
-          "orcid": null
+          "orcid": "0000-0002-3690-3848"
         },
         {
           "position": "middle",
@@ -11044,10 +11044,10 @@
         },
         {
           "position": "middle",
-          "author_id": "A5152715275",
-          "display_name": "Christopher G Chute",
+          "author_id": "A5060390916",
+          "display_name": "Christopher G. Chute",
           "raw_author_name": "Chute, Christopher G",
-          "orcid": null
+          "orcid": "0000-0001-5437-2545"
         },
         {
           "position": "middle",
@@ -11118,6 +11118,147 @@
           "display_name": "Emmanuel Nazaire Essam Nkodo",
           "raw_author_name": "Nkodo, Emmanuel Nazaire Essam",
           "orcid": "0009-0006-4388-8398"
+        }
+      ],
+      "cited_by_count": 0,
+      "counts_by_year": [],
+      "biblio": {
+        "volume": null,
+        "issue": null,
+        "first_page": null,
+        "last_page": null
+      },
+      "is_retracted": false,
+      "is_paratext": false
+    },
+    {
+      "id": "W7221831451",
+      "doi": "10.1002/art.70361",
+      "title": "Higher risk of Long COVID among patients with autoimmune rheumatic diseases and immunomodulatory therapy: a retrospective cohort analysis of national US data.",
+      "publication_year": 2026,
+      "publication_date": "2026-10-14",
+      "type": "article",
+      "pmid": "https://pubmed.ncbi.nlm.nih.gov/42870675",
+      "pmcid": null,
+      "primary_location": {
+        "id": "doi:10.1002/art.70361",
+        "doi": "10.1002/art.70361",
+        "landing_page_url": "https://doi.org/10.1002/art.70361",
+        "pdf_url": "https://onlinelibrary.wiley.com/doi/pdfdirect/10.1002/art.70361",
+        "is_oa": true,
+        "version": "publishedVersion",
+        "source": "Arthritis & Rheumatology",
+        "source_type": "journal"
+      },
+      "best_oa_location": {
+        "id": "doi:10.1002/art.70361",
+        "doi": "10.1002/art.70361",
+        "landing_page_url": "https://doi.org/10.1002/art.70361",
+        "pdf_url": "https://onlinelibrary.wiley.com/doi/pdfdirect/10.1002/art.70361",
+        "is_oa": true,
+        "version": "publishedVersion",
+        "source": "Arthritis & Rheumatology",
+        "source_type": "journal"
+      },
+      "locations": [
+        {
+          "id": "doi:10.1002/art.70361",
+          "doi": "10.1002/art.70361",
+          "landing_page_url": "https://doi.org/10.1002/art.70361",
+          "pdf_url": "https://onlinelibrary.wiley.com/doi/pdfdirect/10.1002/art.70361",
+          "is_oa": true,
+          "version": "publishedVersion",
+          "source": "Arthritis & Rheumatology",
+          "source_type": "journal"
+        },
+        {
+          "id": "pmid:42870675",
+          "doi": null,
+          "landing_page_url": "https://pubmed.ncbi.nlm.nih.gov/42870675",
+          "pdf_url": null,
+          "is_oa": false,
+          "version": "publishedVersion",
+          "source": "PubMed",
+          "source_type": "repository"
+        }
+      ],
+      "authorships": [
+        {
+          "position": "first",
+          "author_id": "A5013326966",
+          "display_name": "Namrata Singh",
+          "raw_author_name": "Namrata Singh",
+          "orcid": "0000-0001-7149-363X"
+        },
+        {
+          "position": "middle",
+          "author_id": "A5056664137",
+          "display_name": "Alfred Jerrod Anzalone",
+          "raw_author_name": "A. Jerrod Anzalone",
+          "orcid": "0000-0002-3212-7845"
+        },
+        {
+          "position": "middle",
+          "author_id": "A5158754680",
+          "display_name": "Holland Stevenson",
+          "raw_author_name": "Holland Stevenson",
+          "orcid": null
+        },
+        {
+          "position": "middle",
+          "author_id": "A5030030208",
+          "display_name": "Londyn J. Robinson",
+          "raw_author_name": "Londyn Robinson",
+          "orcid": "0000-0002-0961-4020"
+        },
+        {
+          "position": "middle",
+          "author_id": "A5084815102",
+          "display_name": "Lesley E. Jackson",
+          "raw_author_name": "Lesley E. Jackson",
+          "orcid": "0000-0002-9373-7620"
+        },
+        {
+          "position": "middle",
+          "author_id": "A5070820216",
+          "display_name": "Sandra E. Safo",
+          "raw_author_name": "Sandra E. Safo",
+          "orcid": "0000-0001-9593-4778"
+        },
+        {
+          "position": "middle",
+          "author_id": "A5080035458",
+          "display_name": "Zachary Butzin-Dozier",
+          "raw_author_name": "Zachary Butzin‐Dozier",
+          "orcid": "0000-0001-6419-0008"
+        },
+        {
+          "position": "middle",
+          "author_id": "A5044067217",
+          "display_name": "Kaleb D. Michaud",
+          "raw_author_name": "Kaleb Michaud",
+          "orcid": "0000-0002-5350-3934"
+        },
+        {
+          "position": "middle",
+          "author_id": "A5084524552",
+          "display_name": "Maria I. Danila",
+          "raw_author_name": "Maria I. Danila",
+          "orcid": "0000-0001-9246-6200"
+        },
+        {
+          "position": "middle",
+          "author_id": "A5046999547",
+          "display_name": "Jasvinder A. Singh",
+          "raw_author_name": "Jasvinder A. Singh",
+          "orcid": "0000-0003-3485-0006"
+        },
+        {
+          "position": "last",
+          "author_id": "A5002618601",
+          "display_name": "Rena C. Patel",
+          "raw_author_name": "Rena C. Patel",
+          "orcid": "0000-0001-9893-5856"
         }
       ],
       "cited_by_count": 0,

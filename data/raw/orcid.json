@@ -1,11 +1,143 @@
 {
   "source": "orcid",
-  "fetched_at": "2026-10-12T16:51:07Z",
+  "fetched_at": "2026-10-19T19:39:33Z",
   "orcid": "0000-0001-6419-0008",
   "works": [
     {
-      "put_code": 221742688,
+      "put_code": 229822379,
       "group": 0,
+      "type": "journal-article",
+      "title": "Increasing Multimorbidity Burden After COVID-19 Infection Among People With and Without HIV in the United States: Insights From the National Clinical Cohort Collaborative (N3C)",
+      "subtitle": null,
+      "journal_title": "OPEN FORUM INFECTIOUS DISEASES",
+      "date": "2026-09-01",
+      "dois": [
+        "10.1093/ofid/ofag560"
+      ],
+      "pmid": null,
+      "pmcid": null,
+      "url": null,
+      "source_name": "Stanford University",
+      "contributors": [
+        {
+          "name": "Wang, Yumeng",
+          "orcid": null,
+          "sequence": null,
+          "role": "author"
+        },
+        {
+          "name": "Sabit, Ahmed",
+          "orcid": null,
+          "sequence": null,
+          "role": "author"
+        },
+        {
+          "name": "Anzalone, Jerrod",
+          "orcid": null,
+          "sequence": null,
+          "role": "author"
+        },
+        {
+          "name": "Li, Dongmei",
+          "orcid": null,
+          "sequence": null,
+          "role": "author"
+        },
+        {
+          "name": "Hurwitz, Eric",
+          "orcid": null,
+          "sequence": null,
+          "role": "author"
+        },
+        {
+          "name": "Fadul, Nada",
+          "orcid": null,
+          "sequence": null,
+          "role": "author"
+        },
+        {
+          "name": "Wei, Shixiong",
+          "orcid": null,
+          "sequence": null,
+          "role": "author"
+        },
+        {
+          "name": "Olex, Amy L.",
+          "orcid": null,
+          "sequence": null,
+          "role": "author"
+        },
+        {
+          "name": "Safo, Sandra E.",
+          "orcid": null,
+          "sequence": null,
+          "role": "author"
+        },
+        {
+          "name": "Islam, Jessica Y.",
+          "orcid": null,
+          "sequence": null,
+          "role": "author"
+        },
+        {
+          "name": "Brown, Todd T.",
+          "orcid": null,
+          "sequence": null,
+          "role": "author"
+        },
+        {
+          "name": "Chute, Christopher G.",
+          "orcid": null,
+          "sequence": null,
+          "role": "author"
+        },
+        {
+          "name": "Haendel, Melissa A.",
+          "orcid": null,
+          "sequence": null,
+          "role": "author"
+        },
+        {
+          "name": "Varley, Cara D.",
+          "orcid": null,
+          "sequence": null,
+          "role": "author"
+        },
+        {
+          "name": "Butzin-Dozier, Zachary",
+          "orcid": null,
+          "sequence": null,
+          "role": "author"
+        },
+        {
+          "name": "Camacho-Rivera, Marlene",
+          "orcid": null,
+          "sequence": null,
+          "role": "author"
+        },
+        {
+          "name": "Nkodo, Emmanuel Nazaire Essam",
+          "orcid": null,
+          "sequence": null,
+          "role": "author"
+        },
+        {
+          "name": "Patel, Rena C.",
+          "orcid": null,
+          "sequence": null,
+          "role": "author"
+        },
+        {
+          "name": "Sun, Jing",
+          "orcid": null,
+          "sequence": null,
+          "role": "author"
+        }
+      ]
+    },
+    {
+      "put_code": 221742688,
+      "group": 1,
       "type": "journal-article",
       "title": "COVID-19 vaccination timing, relative to acute COVID-19, and subsequent risk of long COVID",
       "subtitle": null,
@@ -881,7 +1013,7 @@
     },
     {
       "put_code": 224490334,
-      "group": 0,
+      "group": 1,
       "type": "journal-article",
       "title": "COVID-19 vaccination timing, relative to acute COVID-19, and subsequent risk of long COVID.",
       "subtitle": null,
@@ -989,7 +1121,7 @@
     },
     {
       "put_code": 221527150,
-      "group": 1,
+      "group": 2,
       "type": "preprint",
       "title": "Precision psychological markers enable targeted treatment in digital eating disorder interventions",
       "subtitle": null,
@@ -1061,7 +1193,7 @@
     },
     {
       "put_code": 220203582,
-      "group": 2,
+      "group": 3,
       "type": "preprint",
       "title": "Metformin and Severe Post-COVID-19 Outcomes Among Individuals with Diabetes Mellitus",
       "subtitle": null,
@@ -1199,7 +1331,7 @@
     },
     {
       "put_code": 224490335,
-      "group": 2,
+      "group": 3,
       "type": "journal-article",
       "title": "Metformin and Severe Post-COVID-19 Outcomes Among Individuals with Diabetes Mellitus.",
       "subtitle": null,
@@ -1337,7 +1469,7 @@
     },
     {
       "put_code": 220203585,
-      "group": 3,
+      "group": 4,
       "type": "preprint",
       "title": "SSRI prescription during acute COVID-19 and risk of Long COVID symptoms and conditions among patients with depression",
       "subtitle": null,
@@ -1415,7 +1547,7 @@
     },
     {
       "put_code": 224490333,
-      "group": 3,
+      "group": 4,
       "type": "journal-article",
       "title": "SSRI prescription during acute COVID-19 and risk of Long COVID symptoms and conditions among patients with depression.",
       "subtitle": null,
@@ -1493,7 +1625,7 @@
     },
     {
       "put_code": 219851209,
-      "group": 4,
+      "group": 5,
       "type": "preprint",
       "title": "GLP Medications and Severe Post-COVID-19 Outcomes Among Individuals with Type 2 Diabetes Mellitus",
       "subtitle": null,
@@ -1583,7 +1715,7 @@
     },
     {
       "put_code": 224490332,
-      "group": 4,
+      "group": 5,
       "type": "journal-article",
       "title": "GLP Medications and Severe Post-COVID-19 Outcomes Among Individuals with Type 2 Diabetes Mellitus.",
       "subtitle": null,
@@ -1673,7 +1805,7 @@
     },
     {
       "put_code": 218713768,
-      "group": 5,
+      "group": 6,
       "type": "preprint",
       "title": "Differential COVID-19 Outcomes Across Lysosomal Disorders",
       "subtitle": null,
@@ -1732,8 +1864,68 @@
       ]
     },
     {
-      "put_code": 207665165,
+      "put_code": 229822378,
       "group": 6,
+      "type": "journal-article",
+      "title": "Differential COVID-19 Outcomes Across Lysosomal Disorders.",
+      "subtitle": null,
+      "journal_title": "medRxiv : the preprint server for health sciences",
+      "date": "2026-06-24",
+      "dois": [
+        "10.64898/2026.06.22.26356274"
+      ],
+      "pmid": "42396310",
+      "pmcid": "PMC13321181",
+      "url": null,
+      "source_name": "Stanford University",
+      "contributors": [
+        {
+          "name": "Blake K Byer",
+          "orcid": null,
+          "sequence": null,
+          "role": "author"
+        },
+        {
+          "name": "Zachary Butzin-Dozier",
+          "orcid": null,
+          "sequence": null,
+          "role": "author"
+        },
+        {
+          "name": "Brenda M McGrath",
+          "orcid": null,
+          "sequence": null,
+          "role": "author"
+        },
+        {
+          "name": "Joseph Muenzer",
+          "orcid": null,
+          "sequence": null,
+          "role": "author"
+        },
+        {
+          "name": "Lorne Clarke",
+          "orcid": null,
+          "sequence": null,
+          "role": "author"
+        },
+        {
+          "name": "Melissa A Haendel",
+          "orcid": null,
+          "sequence": null,
+          "role": "author"
+        },
+        {
+          "name": "Shawn T O'Neil",
+          "orcid": null,
+          "sequence": null,
+          "role": "author"
+        }
+      ]
+    },
+    {
+      "put_code": 207665165,
+      "group": 7,
       "type": "preprint",
       "title": "Population differences in wearable device wear time: Rescuing data to address biases and advance health equity",
       "subtitle": null,
@@ -1799,7 +1991,7 @@
     },
     {
       "put_code": 207896481,
-      "group": 6,
+      "group": 7,
       "type": "other",
       "title": "Population differences in wearable device wear time: Rescuing data to address biases and advance health equity",
       "subtitle": null,
@@ -1865,7 +2057,7 @@
     },
     {
       "put_code": 207163024,
-      "group": 7,
+      "group": 8,
       "type": "preprint",
       "title": "IL-6 Receptor Antagonists and Severe Post-COVID-19 Outcomes: An Emulated Target Trial",
       "subtitle": null,
@@ -1943,7 +2135,7 @@
     },
     {
       "put_code": 207896478,
-      "group": 7,
+      "group": 8,
       "type": "other",
       "title": "IL-6 Receptor Antagonists and Severe Post-COVID-19 Outcomes: An Emulated Target Trial",
       "subtitle": null,
@@ -2021,7 +2213,7 @@
     },
     {
       "put_code": 219339798,
-      "group": 7,
+      "group": 8,
       "type": "journal-article",
       "title": "IL-6 Receptor Antagonists and Severe Post-COVID-19 Outcomes: An Emulated Target Trial.",
       "subtitle": null,
@@ -2099,7 +2291,7 @@
     },
     {
       "put_code": 224490331,
-      "group": 8,
+      "group": 9,
       "type": "journal-article",
       "title": "Black Patients Underdiagnosed With Long COVID In The US Compared With White Patients.",
       "subtitle": null,
@@ -2207,7 +2399,7 @@
     },
     {
       "put_code": 198544822,
-      "group": 9,
+      "group": 10,
       "type": "journal-article",
       "title": "HIV Status and COVID-19 Treatment Disparities in the US National Clinical Cohort Collaborative",
       "subtitle": null,
@@ -2315,7 +2507,7 @@
     },
     {
       "put_code": 203166336,
-      "group": 9,
+      "group": 10,
       "type": "journal-article",
       "title": "HIV Status and COVID-19 Treatment Disparities in the US National Clinical Cohort Collaborative",
       "subtitle": null,
@@ -2423,7 +2615,7 @@
     },
     {
       "put_code": 219339800,
-      "group": 9,
+      "group": 10,
       "type": "journal-article",
       "title": "HIV Status and COVID-19 Treatment Disparities in the US National Clinical Cohort Collaborative",
       "subtitle": null,
@@ -2531,7 +2723,7 @@
     },
     {
       "put_code": 185597141,
-      "group": 10,
+      "group": 11,
       "type": "preprint",
       "title": "Causal Inference via Electronic Health Records in the National Clinical Cohort Collaborative: Challenges and Solutions in Long COVID Research",
       "subtitle": null,
@@ -2603,7 +2795,7 @@
     },
     {
       "put_code": 186328789,
-      "group": 10,
+      "group": 11,
       "type": "journal-article",
       "title": "Causal Inference via Electronic Health Records in the National Clinical Cohort Collaborative: Challenges and Solutions in Long COVID Research",
       "subtitle": null,
@@ -2675,7 +2867,7 @@
     },
     {
       "put_code": 219339796,
-      "group": 10,
+      "group": 11,
       "type": "journal-article",
       "title": "Causal Inference via Electronic Health Records in the National Clinical Cohort Collaborative: Challenges and Solutions in Long COVID Research.",
       "subtitle": null,
@@ -2747,7 +2939,7 @@
     },
     {
       "put_code": 184657956,
-      "group": 11,
+      "group": 12,
       "type": "journal-article",
       "title": "Unlocking the Potential of Wear Time of a Wearable Device to Enhance Postpartum Depression Screening and Detection: Cross-Sectional Study",
       "subtitle": null,
@@ -2801,7 +2993,7 @@
     },
     {
       "put_code": 184709481,
-      "group": 11,
+      "group": 12,
       "type": "journal-article",
       "title": "Unlocking the Potential of Wear Time of a Wearable Device to Enhance Postpartum Depression Screening and Detection: Cross-Sectional Study",
       "subtitle": null,
@@ -2855,7 +3047,7 @@
     },
     {
       "put_code": 219339788,
-      "group": 11,
+      "group": 12,
       "type": "journal-article",
       "title": "Unlocking the Potential of Wear Time of a Wearable Device to Enhance Postpartum Depression Screening and Detection: Cross-Sectional Study.",
       "subtitle": null,
@@ -2909,7 +3101,7 @@
     },
     {
       "put_code": 182791361,
-      "group": 12,
+      "group": 13,
       "type": "preprint",
       "title": "COVID-19 Vaccination Timing, Relative to Acute COVID-19, and Subsequent Risk of Long COVID",
       "subtitle": null,
@@ -3017,7 +3209,7 @@
     },
     {
       "put_code": 182986090,
-      "group": 12,
+      "group": 13,
       "type": "other",
       "title": "COVID-19 Vaccination Timing, Relative to Acute COVID-19, and Subsequent Risk of Long COVID",
       "subtitle": null,
@@ -3125,7 +3317,7 @@
     },
     {
       "put_code": 219339797,
-      "group": 12,
+      "group": 13,
       "type": "journal-article",
       "title": "COVID-19 Vaccination Timing, Relative to Acute COVID-19, and Subsequent Risk of Long COVID.",
       "subtitle": null,
@@ -3233,7 +3425,7 @@
     },
     {
       "put_code": 219339777,
-      "group": 13,
+      "group": 14,
       "type": "journal-article",
       "title": "Maternal experience of intimate partner violence, maternal depression, and parental stress are not associated with child telomere length in Bangladesh.",
       "subtitle": null,
@@ -3443,7 +3635,7 @@
     },
     {
       "put_code": 179453355,
-      "group": 14,
+      "group": 15,
       "type": "journal-article",
       "title": "Treatment heterogeneity of water, sanitation, hygiene, and nutrition interventions on child growth by environmental enteric dysfunction and pathogen status for young children in Bangladesh",
       "subtitle": null,
@@ -3641,7 +3833,7 @@
     },
     {
       "put_code": 179937978,
-      "group": 14,
+      "group": 15,
       "type": "journal-article",
       "title": "Treatment heterogeneity of water, sanitation, hygiene, and nutrition interventions on child growth by environmental enteric dysfunction and pathogen status for young children in Bangladesh",
       "subtitle": null,
@@ -3833,7 +4025,7 @@
     },
     {
       "put_code": 219339778,
-      "group": 14,
+      "group": 15,
       "type": "journal-article",
       "title": "Treatment heterogeneity of water, sanitation, hygiene, and nutrition interventions on child growth by environmental enteric dysfunction and pathogen status for young children in Bangladesh.",
       "subtitle": null,
@@ -4025,7 +4217,7 @@
     },
     {
       "put_code": 177337855,
-      "group": 15,
+      "group": 16,
       "type": "journal-article",
       "title": "Association of glycemic control with Long COVID in patients with type 2 diabetes: findings from the National COVID Cohort Collaborative (N3C)",
       "subtitle": null,
@@ -4109,7 +4301,7 @@
     },
     {
       "put_code": 178062365,
-      "group": 15,
+      "group": 16,
       "type": "journal-article",
       "title": "Association of glycemic control with Long COVID in patients with type 2 diabetes: findings from the National COVID Cohort Collaborative (N3C)",
       "subtitle": null,
@@ -4955,7 +5147,7 @@
     },
     {
       "put_code": 219339789,
-      "group": 15,
+      "group": 16,
       "type": "journal-article",
       "title": "Association of glycemic control with Long COVID in patients with type 2 diabetes: findings from the National COVID Cohort Collaborative (N3C).",
       "subtitle": null,
@@ -5039,7 +5231,7 @@
     },
     {
       "put_code": 219339779,
-      "group": 16,
+      "group": 17,
       "type": "journal-article",
       "title": "Water, sanitation, handwashing, and nutritional interventions can reduce child antibiotic use: evidence from Bangladesh and Kenya.",
       "subtitle": null,
@@ -5243,7 +5435,7 @@
     },
     {
       "put_code": 200621356,
-      "group": 17,
+      "group": 18,
       "type": "journal-article",
       "title": "The Effect of COVID‐19 on Incident Diabetes in Pediatric Patients: Findings From the National COVID‐19 Cohort Collaborative (N3C)",
       "subtitle": null,
@@ -5345,7 +5537,7 @@
     },
     {
       "put_code": 219339786,
-      "group": 17,
+      "group": 18,
       "type": "journal-article",
       "title": "The Effect of COVID-19 on Incident Diabetes in Pediatric Patients: Findings From the National COVID-19 Cohort Collaborative (N3C).",
       "subtitle": null,
@@ -5441,7 +5633,7 @@
     },
     {
       "put_code": 219339783,
-      "group": 18,
+      "group": 19,
       "type": "journal-article",
       "title": "Associations Between Micronutrient Status, Hormones, and Immune Status During Pregnancy and Child Growth in Rural Bangladesh: A Prospective Cohort Study.",
       "subtitle": null,
@@ -5579,7 +5771,7 @@
     },
     {
       "put_code": 169918527,
-      "group": 19,
+      "group": 20,
       "type": "preprint",
       "title": "Highly adaptive LASSO: Machine learning that provides valid nonparametric inference in realistic models",
       "subtitle": null,
@@ -5627,7 +5819,7 @@
     },
     {
       "put_code": 170368710,
-      "group": 19,
+      "group": 20,
       "type": "other",
       "title": "Highly adaptive LASSO: Machine learning that provides valid nonparametric inference in realistic models",
       "subtitle": null,
@@ -5675,7 +5867,7 @@
     },
     {
       "put_code": 184657957,
-      "group": 20,
+      "group": 21,
       "type": "preprint",
       "title": "Unlocking the Potential of Wear Time of a Wearable Device to Enhance Postpartum Depression Screening and Detection: Cross-Sectional Study (Preprint)",
       "subtitle": null,
@@ -5729,7 +5921,7 @@
     },
     {
       "put_code": 184709480,
-      "group": 20,
+      "group": 21,
       "type": "other",
       "title": "Unlocking the Potential of Wear Time of a Wearable Device to Enhance Postpartum Depression Screening and Detection: Cross-Sectional Study (Preprint)",
       "subtitle": null,
@@ -5783,7 +5975,7 @@
     },
     {
       "put_code": 169153083,
-      "group": 21,
+      "group": 22,
       "type": "journal-article",
       "title": "SSRI use during acute COVID-19 and risk of Long COVID among patients with depression",
       "subtitle": null,
@@ -5873,7 +6065,7 @@
     },
     {
       "put_code": 169334327,
-      "group": 21,
+      "group": 22,
       "type": "journal-article",
       "title": "SSRI use during acute COVID-19 and risk of Long COVID among patients with depression",
       "subtitle": null,
@@ -5963,7 +6155,7 @@
     },
     {
       "put_code": 219339790,
-      "group": 21,
+      "group": 22,
       "type": "journal-article",
       "title": "SSRI use during acute COVID-19 and risk of long COVID among patients with depression.",
       "subtitle": null,
@@ -6053,7 +6245,7 @@
     },
     {
       "put_code": 169098670,
-      "group": 22,
+      "group": 23,
       "type": "preprint",
       "title": "Unlocking the potential of wearable device wear time to enhance postpartum depression screening and detection",
       "subtitle": null,
@@ -6107,7 +6299,7 @@
     },
     {
       "put_code": 169425192,
-      "group": 22,
+      "group": 23,
       "type": "other",
       "title": "Unlocking the potential of wearable device wear time to enhance postpartum depression screening and detection",
       "subtitle": null,
@@ -6161,7 +6353,7 @@
     },
     {
       "put_code": 219339791,
-      "group": 23,
+      "group": 24,
       "type": "journal-article",
       "title": "Predicting Long COVID in the National COVID Cohort Collaborative Using Super Learner: Cohort Study.",
       "subtitle": null,
@@ -6251,7 +6443,7 @@
     },
     {
       "put_code": 159755308,
-      "group": 23,
+      "group": 24,
       "type": "journal-article",
       "title": "Predicting Long COVID in the National COVID Cohort Collaborative Using Super Learner: Cohort Study",
       "subtitle": null,
@@ -6341,7 +6533,7 @@
     },
     {
       "put_code": 160268089,
-      "group": 23,
+      "group": 24,
       "type": "journal-article",
       "title": "Predicting Long COVID in the National COVID Cohort Collaborative Using Super Learner: Cohort Study",
       "subtitle": null,
@@ -6437,7 +6629,7 @@
     },
     {
       "put_code": 159383450,
-      "group": 24,
+      "group": 25,
       "type": "preprint",
       "title": "Can drinking water, sanitation, handwashing, and nutritional interventions reduce antibiotic use in young children?",
       "subtitle": null,
@@ -6641,7 +6833,7 @@
     },
     {
       "put_code": 159972029,
-      "group": 24,
+      "group": 25,
       "type": "other",
       "title": "Can drinking water, sanitation, handwashing, and nutritional interventions reduce antibiotic use in young children?",
       "subtitle": null,
@@ -6845,7 +7037,7 @@
     },
     {
       "put_code": 219339785,
-      "group": 25,
+      "group": 26,
       "type": "journal-article",
       "title": "Harnessing Consumer Wearable Digital Biomarkers for Individualized Recognition of Postpartum Depression Using the All of Us Research Program Data Set: Cross-Sectional Study.",
       "subtitle": null,
@@ -6911,7 +7103,7 @@
     },
     {
       "put_code": 158871416,
-      "group": 25,
+      "group": 26,
       "type": "journal-article",
       "title": "Harnessing Consumer Wearable Digital Biomarkers for Individualized Recognition of Postpartum Depression Using the All of Us Research Program Data Set: Cross-Sectional Study",
       "subtitle": null,
@@ -6977,7 +7169,7 @@
     },
     {
       "put_code": 159304983,
-      "group": 25,
+      "group": 26,
       "type": "journal-article",
       "title": "Harnessing Consumer Wearable Digital Biomarkers for Individualized Recognition of Postpartum Depression Using the All of Us Research Program Data Set: Cross-Sectional Study",
       "subtitle": null,
@@ -7043,7 +7235,7 @@
     },
     {
       "put_code": 156313671,
-      "group": 26,
+      "group": 27,
       "type": "preprint",
       "title": "Treatment Heterogeneity of Water, Sanitation, Hygiene, and Nutrition Interventions on Child Growth by Environmental Enteric Dysfunction and Pathogen Status for Young Children in Bangladesh",
       "subtitle": null,
@@ -7235,7 +7427,7 @@
     },
     {
       "put_code": 156577573,
-      "group": 26,
+      "group": 27,
       "type": "other",
       "title": "Treatment Heterogeneity of Water, Sanitation, Hygiene, and Nutrition Interventions on Child Growth by Environmental Enteric Dysfunction and Pathogen Status for Young Children in Bangladesh",
       "subtitle": null,
@@ -7427,7 +7619,7 @@
     },
     {
       "put_code": 219339780,
-      "group": 27,
+      "group": 28,
       "type": "journal-article",
       "title": "Stress biomarkers and child development in young children in Bangladesh.",
       "subtitle": null,
@@ -7643,7 +7835,7 @@
     },
     {
       "put_code": 152541533,
-      "group": 28,
+      "group": 29,
       "type": "preprint",
       "title": "SSRI Use During Acute COVID-19 Infection Associated with Lower Risk of Long COVID Among Patients with Depression",
       "subtitle": null,
@@ -7727,7 +7919,7 @@
     },
     {
       "put_code": 153385549,
-      "group": 28,
+      "group": 29,
       "type": "other",
       "title": "SSRI Use During Acute COVID-19 Infection Associated with Lower Risk of Long COVID Among Patients with Depression",
       "subtitle": null,
@@ -7817,7 +8009,7 @@
     },
     {
       "put_code": 219339784,
-      "group": 29,
+      "group": 30,
       "type": "journal-article",
       "title": "Crowd-sourced machine learning prediction of long COVID using data from the National COVID Cohort Collaborative.",
       "subtitle": null,
@@ -8075,7 +8267,7 @@
     },
     {
       "put_code": 158871417,
-      "group": 30,
+      "group": 31,
       "type": "preprint",
       "title": "Harnessing Consumer Wearable Digital Biomarkers for Individualized Recognition of Postpartum Depression Using the All of Us Research Program Data Set: Cross-Sectional Study (Preprint)",
       "subtitle": null,
@@ -8141,7 +8333,7 @@
     },
     {
       "put_code": 159383166,
-      "group": 30,
+      "group": 31,
       "type": "other",
       "title": "Harnessing Consumer Wearable Digital Biomarkers for Individualized Recognition of Postpartum Depression Using the All of Us Research Program Data Set: Cross-Sectional Study (Preprint)",
       "subtitle": null,
@@ -8207,7 +8399,7 @@
     },
     {
       "put_code": 144427168,
-      "group": 31,
+      "group": 32,
       "type": "preprint",
       "title": "Harnessing consumer wearable digital biomarkers for individualized recognition of postpartum depression using theAll of UsResearch Program dataset",
       "subtitle": null,
@@ -8273,7 +8465,7 @@
     },
     {
       "put_code": 145337382,
-      "group": 31,
+      "group": 32,
       "type": "journal-article",
       "title": "Harnessing consumer wearable digital biomarkers for individualized recognition of postpartum depression using the All of Us Research Program dataset",
       "subtitle": null,
@@ -8339,7 +8531,7 @@
     },
     {
       "put_code": 144274534,
-      "group": 32,
+      "group": 33,
       "type": "preprint",
       "title": "Predicting Long COVID in the National COVID Cohort Collaborative Using Super Learner: Cohort Study (Preprint)",
       "subtitle": null,
@@ -8429,7 +8621,7 @@
     },
     {
       "put_code": 144347376,
-      "group": 32,
+      "group": 33,
       "type": "other",
       "title": "Predicting Long COVID in the National COVID Cohort Collaborative Using Super Learner: Cohort Study (Preprint)",
       "subtitle": null,
@@ -8519,7 +8711,7 @@
     },
     {
       "put_code": 219339781,
-      "group": 33,
+      "group": 34,
       "type": "journal-article",
       "title": "Stress Biomarkers and Child Development in Young Children in Bangladesh.",
       "subtitle": null,
@@ -8735,7 +8927,7 @@
     },
     {
       "put_code": 142260109,
-      "group": 33,
+      "group": 34,
       "type": "preprint",
       "title": "Stress Biomarkers and Child Development in Young Children in Bangladesh",
       "subtitle": null,
@@ -8951,7 +9143,7 @@
     },
     {
       "put_code": 142394686,
-      "group": 33,
+      "group": 34,
       "type": "other",
       "title": "Stress Biomarkers and Child Development in Young Children in Bangladesh",
       "subtitle": null,
@@ -9167,7 +9359,7 @@
     },
     {
       "put_code": 139922723,
-      "group": 34,
+      "group": 35,
       "type": "preprint",
       "title": "Predicting Long COVID in the National COVID Cohort Collaborative Using Super Learner",
       "subtitle": null,
@@ -9257,7 +9449,7 @@
     },
     {
       "put_code": 140698558,
-      "group": 34,
+      "group": 35,
       "type": "other",
       "title": "Predicting Long COVID in the National COVID Cohort Collaborative Using Super Learner",
       "subtitle": null,
@@ -9347,7 +9539,7 @@
     },
     {
       "put_code": 127593739,
-      "group": 35,
+      "group": 36,
       "type": "journal-article",
       "title": "A Review of the Ring Trial Design for Evaluating Ring Interventions for Infectious Diseases",
       "subtitle": null,
@@ -9383,7 +9575,7 @@
     },
     {
       "put_code": 219339782,
-      "group": 35,
+      "group": 36,
       "type": "journal-article",
       "title": "A Review of the Ring Trial Design for Evaluating Ring Interventions for Infectious Diseases.",
       "subtitle": null,
@@ -9419,7 +9611,7 @@
     },
     {
       "put_code": 139853984,
-      "group": 35,
+      "group": 36,
       "type": "journal-article",
       "title": "A Review of the Ring Trial Design for Evaluating Ring Interventions for Infectious Diseases",
       "subtitle": null,
@@ -9455,7 +9647,7 @@
     },
     {
       "put_code": 127593793,
-      "group": 36,
+      "group": 37,
       "type": "journal-article",
       "title": "Antibiotic use by backyard food animal producers in Ecuador: a qualitative study",
       "subtitle": null,
@@ -9503,7 +9695,7 @@
     },
     {
       "put_code": 219339792,
-      "group": 36,
+      "group": 37,
       "type": "journal-article",
       "title": "Antibiotic use by backyard food animal producers in Ecuador: a qualitative study.",
       "subtitle": null,
@@ -9551,7 +9743,7 @@
     },
     {
       "put_code": 139853988,
-      "group": 36,
+      "group": 37,
       "type": "journal-article",
       "title": "Antibiotic use by backyard food animal producers in Ecuador: a qualitative study",
       "subtitle": null,
@@ -9599,7 +9791,7 @@
     },
     {
       "put_code": 127593831,
-      "group": 37,
+      "group": 38,
       "type": "preprint",
       "title": "Effects of drinking water, sanitation, handwashing, and nutritional interventions on immune status in young children: a cluster-randomized controlled trial in rural Bangladesh",
       "subtitle": null,
@@ -9767,7 +9959,7 @@
     },
     {
       "put_code": 139853981,
-      "group": 37,
+      "group": 38,
       "type": "other",
       "title": "Effects of drinking water, sanitation, handwashing, and nutritional interventions on immune status in young children: a cluster-randomized controlled trial in rural Bangladesh",
       "subtitle": null,
@@ -9935,7 +10127,7 @@
     },
     {
       "put_code": 219339775,
-      "group": 38,
+      "group": 39,
       "type": "conference-paper",
       "title": "EFFECTS OF DRINKING WATER, SANITATION, HANDWASHING, AND NUTRITIONAL INTERVENTIONS ON IMMUNE STATUS IN YOUNG CHILDREN: A CLUSTER-RANDOMIZED CONTROLLED TRIAL IN RURAL BANGLADESH",
       "subtitle": null,
@@ -10101,7 +10293,7 @@
     },
     {
       "put_code": 139853979,
-      "group": 38,
+      "group": 39,
       "type": "conference-paper",
       "title": "EFFECTS OF DRINKING WATER, SANITATION, HANDWASHING, AND NUTRITIONAL INTERVENTIONS ON IMMUNE STATUS IN YOUNG CHILDREN: A CLUSTER-RANDOMIZED CONTROLLED TRIAL IN RURAL BANGLADESH",
       "subtitle": null,
@@ -10267,7 +10459,7 @@
     },
     {
       "put_code": 139853976,
-      "group": 39,
+      "group": 40,
       "type": "other",
       "title": "Effects of Drinking Water, Sanitation, Handwashing, and Nutritional Interventions on Immune Status in Young Children: A Cluster-Randomised Controlled Trial in Rural Bangladesh",
       "subtitle": null,
@@ -10435,7 +10627,7 @@
     },
     {
       "put_code": 109904868,
-      "group": 40,
+      "group": 41,
       "type": "journal-article",
       "title": "Challenges and opportunities for scaling up infection prevention and control programmes in rural district hospitals of Tamil Nadu, India",
       "subtitle": null,
@@ -10452,7 +10644,7 @@
     },
     {
       "put_code": 139853974,
-      "group": 40,
+      "group": 41,
       "type": "journal-article",
       "title": "Challenges and opportunities for scaling up infection prevention and control programmes in rural district hospitals of Tamil Nadu, India",
       "subtitle": null,
@@ -10494,7 +10686,7 @@
     },
     {
       "put_code": 219339793,
-      "group": 41,
+      "group": 42,
       "type": "journal-article",
       "title": "Assessing Upstream Determinants of Antibiotic Use in Small-Scale Food Animal Production through a Simulated Client Method.",
       "subtitle": null,
@@ -10548,7 +10740,7 @@
     },
     {
       "put_code": 85877497,
-      "group": 41,
+      "group": 42,
       "type": "journal-article",
       "title": "Assessing Upstream Determinants of Antibiotic Use in Small-Scale Food Animal Production through a Simulated Client Method",
       "subtitle": null,
@@ -10602,7 +10794,7 @@
     },
     {
       "put_code": 95907755,
-      "group": 41,
+      "group": 42,
       "type": "journal-article",
       "title": "Assessing Upstream Determinants of Antibiotic Use in Small-Scale Food Animal Production through a Simulated Client Method",
       "subtitle": null,
@@ -10656,7 +10848,7 @@
     },
     {
       "put_code": 139853986,
-      "group": 41,
+      "group": 42,
       "type": "journal-article",
       "title": "Assessing Upstream Determinants of Antibiotic Use in Small-Scale Food Animal Production through a Simulated Client Method",
       "subtitle": null,
@@ -10710,7 +10902,7 @@
     },
     {
       "put_code": 109904882,
-      "group": 42,
+      "group": 43,
       "type": "journal-article",
       "title": "Cortisol Production Patterns in Young Children Living With Birth Parents vs Children Placed in Foster Care Following Involvement of Child Protective Services",
       "subtitle": null,
@@ -10727,7 +10919,7 @@
     },
     {
       "put_code": 219339794,
-      "group": 42,
+      "group": 43,
       "type": "journal-article",
       "title": "Cortisol production patterns in young children living with birth parents vs children placed in foster care following involvement of Child Protective Services.",
       "subtitle": null,
@@ -10769,7 +10961,7 @@
     },
     {
       "put_code": 139853980,
-      "group": 42,
+      "group": 43,
       "type": "journal-article",
       "title": "Cortisol Production Patterns in Young Children Living With Birth Parents vs Children Placed in Foster Care Following Involvement of Child Protective Services",
       "subtitle": null,
@@ -10811,7 +11003,7 @@
     },
     {
       "put_code": 187773726,
-      "group": 43,
+      "group": 44,
       "type": "journal-article",
       "title": "Identifying People Living With or Those at Risk for HIV in a Nationally Sampled Electronic Health Record Repository Called the National Clinical Cohort Collaborative: Computational Phenotyping Study",
       "subtitle": null,
@@ -10955,7 +11147,7 @@
     },
     {
       "put_code": 219339787,
-      "group": 43,
+      "group": 44,
       "type": "journal-article",
       "title": "Identifying People Living With or Those at Risk for HIV in a Nationally Sampled Electronic Health Record Repository Called the National Clinical Cohort Collaborative: Computational Phenotyping Study.",
       "subtitle": null,

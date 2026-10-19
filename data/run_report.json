@@ -1,30 +1,30 @@
 {
-  "started": "2026-10-12T16:51:07Z",
-  "finished": "2026-10-12T16:51:17Z",
+  "started": "2026-10-19T19:39:33Z",
+  "finished": "2026-10-19T19:39:44Z",
   "ok": true,
   "sources": {
     "orcid": {
       "ok": true,
-      "count": 44,
+      "count": 45,
       "error": null,
       "used_cache": false,
-      "fetched_at": "2026-10-12T16:51:07Z",
+      "fetched_at": "2026-10-19T19:39:33Z",
       "requests": 3
     },
     "openalex": {
       "ok": true,
-      "count": 52,
+      "count": 53,
       "error": null,
       "used_cache": false,
-      "fetched_at": "2026-10-12T16:51:08Z",
+      "fetched_at": "2026-10-19T19:39:33Z",
       "requests": 2
     },
     "europepmc": {
       "ok": true,
-      "count": 42,
+      "count": 43,
       "error": null,
       "used_cache": false,
-      "fetched_at": "2026-10-12T16:51:09Z",
+      "fetched_at": "2026-10-19T19:39:35Z",
       "requests": 1
     },
     "crossref": {
@@ -32,23 +32,23 @@
       "count": 33,
       "error": null,
       "used_cache": false,
-      "fetched_at": "2026-10-12T16:51:11Z",
-      "requests": 6
+      "fetched_at": "2026-10-19T19:39:36Z",
+      "requests": 7
     },
     "reporter": {
       "ok": true,
       "count": 1,
       "error": null,
       "used_cache": false,
-      "fetched_at": "2026-10-12T16:51:12Z",
+      "fetched_at": "2026-10-19T19:39:38Z",
       "requests": 4
     },
     "github": {
       "ok": true,
-      "count": 7,
+      "count": 8,
       "error": null,
       "used_cache": false,
-      "fetched_at": "2026-10-12T16:51:16Z",
+      "fetched_at": "2026-10-19T19:39:42Z",
       "requests": 1
     }
   },
@@ -57,7 +57,8 @@
   "new_grants": [],
   "warnings": [
     "OpenAlex work without a DOI skipped: W7160730250 \"WASH Benefits Bangladesh Analysis of Nutrition, Stress, Estriol, and Inflammation During P\"",
-    "OpenAlex items that are not publications were skipped: 10.1162/2e3983f5.ce1c98c7 (peer-review), 10.1162/2e3983f5.c3345096 (peer-review)"
+    "OpenAlex items that are not publications were skipped: 10.1162/2e3983f5.ce1c98c7 (peer-review), 10.1162/2e3983f5.c3345096 (peer-review)",
+    "manual entry manual:singh-arthritis-rheumatology matches discovered work 10.1002/art.70361 (Arthritis & Rheumatology); the discovered record is used and the manual entry can be removed"
   ],
   "promoted_works": [],
   "sanity_guard": {
@@ -203,12 +204,12 @@
     }
   ],
   "fetch": {
-    "started": "2026-10-12T16:51:07Z",
-    "finished": "2026-10-12T16:51:16Z"
+    "started": "2026-10-19T19:39:33Z",
+    "finished": "2026-10-19T19:39:43Z"
   },
   "merge": {
-    "started": "2026-10-12T16:51:16Z",
-    "finished": "2026-10-12T16:51:17Z",
-    "today": "2026-10-12"
+    "started": "2026-10-19T19:39:43Z",
+    "finished": "2026-10-19T19:39:44Z",
+    "today": "2026-10-19"
   }
 }
