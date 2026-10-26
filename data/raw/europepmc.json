@@ -1,155 +1,8 @@
 {
   "source": "europepmc",
-  "fetched_at": "2026-10-19T19:39:35Z",
+  "fetched_at": "2026-10-26T19:46:28Z",
   "query": "AUTH:\"Butzin-Dozier Z\" OR AUTHORID:\"0000-0001-6419-0008\" OR AUTH:\"Dozier ZB\"",
   "results": [
-    {
-      "id": "42413051",
-      "source": "MED",
-      "pmid": "42413051",
-      "pmcid": null,
-      "doi": "10.1377/hlthaff.2025.00179",
-      "title": "Black Patients Underdiagnosed With Long COVID In The US Compared With White Patients.",
-      "authorString": "Butzin-Dozier Z, Ji Y, Deshpande S, Anzalone AJ, Wang LC, Hurwitz E, Kumar M, Patel RC, Sun J, Robertson M, Mertens A, Camacho-Rivera M, Colford JM, Hubbard AE, Madlock-Brown C.",
-      "authors": [
-        {
-          "fullName": "Butzin-Dozier Z",
-          "firstName": "Zachary",
-          "lastName": "Butzin-Dozier",
-          "initials": "Z",
-          "collectiveName": null,
-          "orcid": null
-        },
-        {
-          "fullName": "Ji Y",
-          "firstName": "Yunwen",
-          "lastName": "Ji",
-          "initials": "Y",
-          "collectiveName": null,
-          "orcid": null
-        },
-        {
-          "fullName": "Deshpande S",
-          "firstName": "Sarang",
-          "lastName": "Deshpande",
-          "initials": "S",
-          "collectiveName": null,
-          "orcid": null
-        },
-        {
-          "fullName": "Anzalone AJ",
-          "firstName": "A Jerrod",
-          "lastName": "Anzalone",
-          "initials": "AJ",
-          "collectiveName": null,
-          "orcid": null
-        },
-        {
-          "fullName": "Wang LC",
-          "firstName": "Lin-Chiun",
-          "lastName": "Wang",
-          "initials": "LC",
-          "collectiveName": null,
-          "orcid": null
-        },
-        {
-          "fullName": "Hurwitz E",
-          "firstName": "Eric",
-          "lastName": "Hurwitz",
-          "initials": "E",
-          "collectiveName": null,
-          "orcid": null
-        },
-        {
-          "fullName": "Kumar M",
-          "firstName": "Manav",
-          "lastName": "Kumar",
-          "initials": "M",
-          "collectiveName": null,
-          "orcid": null
-        },
-        {
-          "fullName": "Patel RC",
-          "firstName": "Rena C",
-          "lastName": "Patel",
-          "initials": "RC",
-          "collectiveName": null,
-          "orcid": null
-        },
-        {
-          "fullName": "Sun J",
-          "firstName": "Jing",
-          "lastName": "Sun",
-          "initials": "J",
-          "collectiveName": null,
-          "orcid": null
-        },
-        {
-          "fullName": "Robertson M",
-          "firstName": "McKaylee",
-          "lastName": "Robertson",
-          "initials": "M",
-          "collectiveName": null,
-          "orcid": null
-        },
-        {
-          "fullName": "Mertens A",
-          "firstName": "Andrew",
-          "lastName": "Mertens",
-          "initials": "A",
-          "collectiveName": null,
-          "orcid": null
-        },
-        {
-          "fullName": "Camacho-Rivera M",
-          "firstName": "Marlene",
-          "lastName": "Camacho-Rivera",
-          "initials": "M",
-          "collectiveName": null,
-          "orcid": null
-        },
-        {
-          "fullName": "Colford JM",
-          "firstName": "John M",
-          "lastName": "Colford",
-          "initials": "JM",
-          "collectiveName": null,
-          "orcid": null
-        },
-        {
-          "fullName": "Hubbard AE",
-          "firstName": "Alan E",
-          "lastName": "Hubbard",
-          "initials": "AE",
-          "collectiveName": null,
-          "orcid": null
-        },
-        {
-          "fullName": "Madlock-Brown C",
-          "firstName": "Charisse",
-          "lastName": "Madlock-Brown",
-          "initials": "C",
-          "collectiveName": null,
-          "orcid": null
-        }
-      ],
-      "journal": "Health affairs (Project Hope)",
-      "volume": "45",
-      "issue": "7",
-      "pageInfo": "775-781",
-      "pubYear": "2026",
-      "firstPublicationDate": "2026-07-01",
-      "electronicPublicationDate": null,
-      "printPublicationDate": "2026-07-01",
-      "pubTypes": [
-        "Comparative Study",
-        "Journal Article"
-      ],
-      "publisher": null,
-      "commentCorrections": [],
-      "citedByCount": 0,
-      "isOpenAccess": "N"
-    },
     {
       "id": "PPR1272205",
       "source": "PPR",
@@ -454,6 +307,153 @@
         "Preprint"
       ],
       "publisher": "medRxiv",
+      "commentCorrections": [],
+      "citedByCount": 0,
+      "isOpenAccess": "N"
+    },
+    {
+      "id": "42413051",
+      "source": "MED",
+      "pmid": "42413051",
+      "pmcid": null,
+      "doi": "10.1377/hlthaff.2025.00179",
+      "title": "Black Patients Underdiagnosed With Long COVID In The US Compared With White Patients.",
+      "authorString": "Butzin-Dozier Z, Ji Y, Deshpande S, Anzalone AJ, Wang LC, Hurwitz E, Kumar M, Patel RC, Sun J, Robertson M, Mertens A, Camacho-Rivera M, Colford JM, Hubbard AE, Madlock-Brown C.",
+      "authors": [
+        {
+          "fullName": "Butzin-Dozier Z",
+          "firstName": "Zachary",
+          "lastName": "Butzin-Dozier",
+          "initials": "Z",
+          "collectiveName": null,
+          "orcid": null
+        },
+        {
+          "fullName": "Ji Y",
+          "firstName": "Yunwen",
+          "lastName": "Ji",
+          "initials": "Y",
+          "collectiveName": null,
+          "orcid": null
+        },
+        {
+          "fullName": "Deshpande S",
+          "firstName": "Sarang",
+          "lastName": "Deshpande",
+          "initials": "S",
+          "collectiveName": null,
+          "orcid": null
+        },
+        {
+          "fullName": "Anzalone AJ",
+          "firstName": "A Jerrod",
+          "lastName": "Anzalone",
+          "initials": "AJ",
+          "collectiveName": null,
+          "orcid": null
+        },
+        {
+          "fullName": "Wang LC",
+          "firstName": "Lin-Chiun",
+          "lastName": "Wang",
+          "initials": "LC",
+          "collectiveName": null,
+          "orcid": null
+        },
+        {
+          "fullName": "Hurwitz E",
+          "firstName": "Eric",
+          "lastName": "Hurwitz",
+          "initials": "E",
+          "collectiveName": null,
+          "orcid": null
+        },
+        {
+          "fullName": "Kumar M",
+          "firstName": "Manav",
+          "lastName": "Kumar",
+          "initials": "M",
+          "collectiveName": null,
+          "orcid": null
+        },
+        {
+          "fullName": "Patel RC",
+          "firstName": "Rena C",
+          "lastName": "Patel",
+          "initials": "RC",
+          "collectiveName": null,
+          "orcid": null
+        },
+        {
+          "fullName": "Sun J",
+          "firstName": "Jing",
+          "lastName": "Sun",
+          "initials": "J",
+          "collectiveName": null,
+          "orcid": null
+        },
+        {
+          "fullName": "Robertson M",
+          "firstName": "McKaylee",
+          "lastName": "Robertson",
+          "initials": "M",
+          "collectiveName": null,
+          "orcid": "0000-0002-8426-6572"
+        },
+        {
+          "fullName": "Mertens A",
+          "firstName": "Andrew",
+          "lastName": "Mertens",
+          "initials": "A",
+          "collectiveName": null,
+          "orcid": null
+        },
+        {
+          "fullName": "Camacho-Rivera M",
+          "firstName": "Marlene",
+          "lastName": "Camacho-Rivera",
+          "initials": "M",
+          "collectiveName": null,
+          "orcid": null
+        },
+        {
+          "fullName": "Colford JM",
+          "firstName": "John M",
+          "lastName": "Colford",
+          "initials": "JM",
+          "collectiveName": null,
+          "orcid": null
+        },
+        {
+          "fullName": "Hubbard AE",
+          "firstName": "Alan E",
+          "lastName": "Hubbard",
+          "initials": "AE",
+          "collectiveName": null,
+          "orcid": null
+        },
+        {
+          "fullName": "Madlock-Brown C",
+          "firstName": "Charisse",
+          "lastName": "Madlock-Brown",
+          "initials": "C",
+          "collectiveName": null,
+          "orcid": null
+        }
+      ],
+      "journal": "Health affairs (Project Hope)",
+      "volume": "45",
+      "issue": "7",
+      "pageInfo": "775-781",
+      "pubYear": "2026",
+      "firstPublicationDate": "2026-07-01",
+      "electronicPublicationDate": null,
+      "printPublicationDate": "2026-07-01",
+      "pubTypes": [
+        "Comparative Study",
+        "Journal Article"
+      ],
+      "publisher": null,
       "commentCorrections": [],
       "citedByCount": 0,
       "isOpenAccess": "N"
@@ -1019,7 +1019,7 @@
       "id": "42787535",
       "source": "MED",
       "pmid": "42787535",
-      "pmcid": null,
+      "pmcid": "PMC13601801",
       "doi": "10.1093/ofid/ofag560",
       "title": "Increasing Multimorbidity Burden After COVID-19 Infection Among People With and Without HIV in the United States: Insights From the National Clinical Cohort Collaborative (N3C).",
       "authorString": "Wang Y, Sabit A, Anzalone J, Li D, Hurwitz E, Fadul N, Wei S, Olex AL, Safo SE, Islam JY, Brown TT, Chute CG, Haendel MA, Varley CD, Butzin-Dozier Z, Camacho-Rivera M, Nkodo ENE, Patel RC, Sun J, National Clinical Cohort Collaborative (N3C), National Clinical Cohort Collaborative (N3C) .",
@@ -1202,12 +1202,13 @@
       "electronicPublicationDate": "2026-09-18",
       "printPublicationDate": "2026-09-01",
       "pubTypes": [
+        "research-article",
         "Journal Article"
       ],
       "publisher": null,
       "commentCorrections": [],
       "citedByCount": 0,
-      "isOpenAccess": "N"
+      "isOpenAccess": "Y"
     },
     {
       "id": "42870675",
@@ -4311,7 +4312,7 @@
       "id": "38522372",
       "source": "MED",
       "pmid": "38522372",
-      "pmcid": null,
+      "pmcid": "PMC11157411",
       "doi": "10.1016/j.psyneuen.2024.107023",
       "title": "Stress biomarkers and child development in young children in Bangladesh.",
       "authorString": "Butzin-Dozier Z, Mertens AN, Tan ST, Granger DA, Pitchik HO, Il'yasova D, Tofail F, Rahman MZ, Spasojevic I, Shalev I, Ali S, Karim MR, Shahriar S, Famida SL, Shuman G, Shoab AK, Akther S, Hossen MS, Mutsuddi P, Rahman M, Unicomb L, Das KK, Yan L, Meyer A, Stewart CP, Hubbard AE, Naved RT, Parvin K, Mamun MMA, Luby SP, Colford JM, Fernald LCH, Lin A.",
@@ -4591,6 +4592,7 @@
       "printPublicationDate": "2024-06-01",
       "pubTypes": [
         "Research Support, Non-U.S. Gov't",
+        "research-article",
         "Journal Article",
         "Research Support, N.I.H., Extramural"
       ],
@@ -4608,7 +4610,7 @@
         }
       ],
       "citedByCount": 4,
-      "isOpenAccess": "N"
+      "isOpenAccess": "Y"
     },
     {
       "id": "PPR1008105",
@@ -6482,7 +6484,7 @@
           "source": "MED"
         }
       ],
-      "citedByCount": 79,
+      "citedByCount": 80,
       "isOpenAccess": "N"
     }
   ]

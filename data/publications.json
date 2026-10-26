@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-19T19:39:43Z",
+  "generated": "2026-10-26T19:46:39Z",
   "works": [
     {
       "id": "manual:wiley-environmental-health-nursing-chapter",
@@ -531,7 +531,7 @@
       "url": "https://doi.org/10.1093/ofid/ofag560",
       "oa_url": null,
       "pmid": "42787535",
-      "pmcid": null,
+      "pmcid": "PMC13601801",
       "cited_by": 0,
       "versions": [],
       "topics": [
@@ -1650,7 +1650,7 @@
       "oa_url": null,
       "pmid": "42413051",
       "pmcid": null,
-      "cited_by": 0,
+      "cited_by": 2,
       "versions": [],
       "topics": [
         "covid"
@@ -2247,7 +2247,7 @@
       "oa_url": "https://www.medrxiv.org/content/medrxiv/early/2026/03/06/2026.03.06.26347799.full.pdf",
       "pmid": "41867235",
       "pmcid": null,
-      "cited_by": 1,
+      "cited_by": 2,
       "versions": [],
       "topics": [
         "digital-health"
@@ -5003,7 +5003,7 @@
       "oa_url": "https://www.nature.com/articles/s41467-024-55801-x.pdf",
       "pmid": "39788996",
       "pmcid": "PMC11718192",
-      "cited_by": 9,
+      "cited_by": 10,
       "versions": [
         {
           "doi": "10.1101/2024.05.10.24307069",
@@ -6436,7 +6436,7 @@
       "url": "https://doi.org/10.1016/j.psyneuen.2024.107023",
       "oa_url": null,
       "pmid": "38522372",
-      "pmcid": null,
+      "pmcid": "PMC11157411",
       "cited_by": 5,
       "versions": [
         {
