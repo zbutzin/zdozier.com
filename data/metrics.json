@@ -1,7 +1,7 @@
 {
-  "generated": "2026-10-26T19:46:39Z",
+  "generated": "2026-11-02T22:36:01Z",
   "works_count": 40,
-  "cited_by_count": 318,
+  "cited_by_count": 319,
   "h_index": 7,
   "i10_index": 7,
   "counts_by_year": [
@@ -88,7 +88,7 @@
     {
       "year": 2026,
       "works_count": 14,
-      "cited_by_count": 79
+      "cited_by_count": 80
     }
   ],
   "by_year_role": [
@@ -187,42 +187,82 @@
     {
       "year": 2010,
       "works_count": 1,
-      "cited_by_count": 156
+      "cited_by_count": 0
+    },
+    {
+      "year": 2012,
+      "works_count": 0,
+      "cited_by_count": 5
+    },
+    {
+      "year": 2013,
+      "works_count": 0,
+      "cited_by_count": 10
+    },
+    {
+      "year": 2014,
+      "works_count": 0,
+      "cited_by_count": 11
+    },
+    {
+      "year": 2015,
+      "works_count": 0,
+      "cited_by_count": 7
+    },
+    {
+      "year": 2016,
+      "works_count": 0,
+      "cited_by_count": 14
+    },
+    {
+      "year": 2017,
+      "works_count": 0,
+      "cited_by_count": 12
+    },
+    {
+      "year": 2018,
+      "works_count": 0,
+      "cited_by_count": 16
+    },
+    {
+      "year": 2019,
+      "works_count": 0,
+      "cited_by_count": 7
     },
     {
       "year": 2020,
       "works_count": 13,
-      "cited_by_count": 14
+      "cited_by_count": 44
     },
     {
       "year": 2021,
       "works_count": 16,
-      "cited_by_count": 7
+      "cited_by_count": 8
     },
     {
       "year": 2022,
       "works_count": 4,
-      "cited_by_count": 17
+      "cited_by_count": 15
     },
     {
       "year": 2023,
       "works_count": 2,
-      "cited_by_count": 5
+      "cited_by_count": 15
     },
     {
       "year": 2024,
       "works_count": 16,
-      "cited_by_count": 81
+      "cited_by_count": 27
     },
     {
       "year": 2025,
       "works_count": 13,
-      "cited_by_count": 29
+      "cited_by_count": 42
     },
     {
       "year": 2026,
       "works_count": 17,
-      "cited_by_count": 9
+      "cited_by_count": 80
     }
   ],
   "adjusted_for_hidden": false,

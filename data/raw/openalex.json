@@ -1,15 +1,15 @@
 {
   "source": "openalex",
-  "fetched_at": "2026-10-26T19:46:27Z",
+  "fetched_at": "2026-11-02T22:35:45Z",
   "filter": "author.orcid:0000-0001-6419-0008",
   "author": {
     "id": "A5080035458",
     "display_name": "Zachary Butzin-Dozier",
     "orcid": "0000-0001-6419-0008",
     "works_count": 89,
-    "cited_by_count": 318,
+    "cited_by_count": 319,
     "summary_stats": {
-      "2yr_mean_citedness": 2.5869565217391304,
+      "2yr_mean_citedness": 2.608695652173913,
       "h_index": 7,
       "i10_index": 7
     },
@@ -18,52 +18,100 @@
         "year": 2010,
         "works_count": 1,
         "oa_works_count": 1,
-        "cited_by_count": 156
+        "cited_by_count": 0
+      },
+      {
+        "year": 2012,
+        "works_count": 0,
+        "oa_works_count": 0,
+        "cited_by_count": 5
+      },
+      {
+        "year": 2013,
+        "works_count": 0,
+        "oa_works_count": 0,
+        "cited_by_count": 10
+      },
+      {
+        "year": 2014,
+        "works_count": 0,
+        "oa_works_count": 0,
+        "cited_by_count": 11
+      },
+      {
+        "year": 2015,
+        "works_count": 0,
+        "oa_works_count": 0,
+        "cited_by_count": 7
+      },
+      {
+        "year": 2016,
+        "works_count": 0,
+        "oa_works_count": 0,
+        "cited_by_count": 14
+      },
+      {
+        "year": 2017,
+        "works_count": 0,
+        "oa_works_count": 0,
+        "cited_by_count": 12
+      },
+      {
+        "year": 2018,
+        "works_count": 0,
+        "oa_works_count": 0,
+        "cited_by_count": 16
+      },
+      {
+        "year": 2019,
+        "works_count": 0,
+        "oa_works_count": 0,
+        "cited_by_count": 7
       },
       {
         "year": 2020,
         "works_count": 13,
         "oa_works_count": 12,
-        "cited_by_count": 14
+        "cited_by_count": 44
       },
       {
         "year": 2021,
         "works_count": 16,
         "oa_works_count": 16,
-        "cited_by_count": 7
+        "cited_by_count": 8
       },
       {
         "year": 2022,
         "works_count": 4,
         "oa_works_count": 3,
-        "cited_by_count": 17
+        "cited_by_count": 15
       },
       {
         "year": 2023,
         "works_count": 2,
         "oa_works_count": 2,
-        "cited_by_count": 5
+        "cited_by_count": 15
       },
       {
         "year": 2024,
         "works_count": 16,
         "oa_works_count": 15,
-        "cited_by_count": 81
+        "cited_by_count": 27
       },
       {
         "year": 2025,
         "works_count": 13,
         "oa_works_count": 12,
-        "cited_by_count": 29
+        "cited_by_count": 42
       },
       {
         "year": 2026,
         "works_count": 17,
         "oa_works_count": 16,
-        "cited_by_count": 9
+        "cited_by_count": 80
       }
     ],
-    "updated_date": "2026-10-25T12:29:02"
+    "updated_date": "2026-10-28T12:34:19"
   },
   "works": [
     {
@@ -74,7 +122,7 @@
       "publication_date": "2010-05-01",
       "type": "article",
       "pmid": "https://pubmed.ncbi.nlm.nih.gov/20439794",
-      "pmcid": null,
+      "pmcid": "https://www.ncbi.nlm.nih.gov/pmc/articles/3213033",
       "primary_location": {
         "id": "doi:10.1001/archpediatrics.2010.54",
         "doi": "10.1001/archpediatrics.2010.54",
@@ -91,7 +139,7 @@
         "landing_page_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/3213033",
         "pdf_url": null,
         "is_oa": true,
-        "version": "submittedVersion",
+        "version": "acceptedVersion",
         "source": "PubMed Central",
         "source_type": "repository"
       },
@@ -122,7 +170,7 @@
           "landing_page_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/3213033",
           "pdf_url": null,
           "is_oa": true,
-          "version": "submittedVersion",
+          "version": "acceptedVersion",
           "source": "PubMed Central",
           "source_type": "repository"
         }
@@ -237,7 +285,7 @@
       "publication_date": "2024-05-02",
       "type": "article",
       "pmid": "https://pubmed.ncbi.nlm.nih.gov/38696234",
-      "pmcid": null,
+      "pmcid": "https://www.ncbi.nlm.nih.gov/pmc/articles/11099816",
       "primary_location": {
         "id": "doi:10.2196/54622",
         "doi": "10.2196/54622",
@@ -280,6 +328,16 @@
           "source_type": null
         },
         {
+          "id": "pmh:oai:pubmedcentral.nih.gov:11099816",
+          "doi": null,
+          "landing_page_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/11099816",
+          "pdf_url": "https://cdn.aaai.org/ocs/ws/ws1266/8850-38024-1-PB.pdf",
+          "is_oa": true,
+          "version": "publishedVersion",
+          "source": "PubMed Central",
+          "source_type": "repository"
+        },
+        {
           "id": "pmid:38696234",
           "doi": null,
           "landing_page_url": "https://pubmed.ncbi.nlm.nih.gov/38696234",
@@ -287,16 +345,6 @@
           "is_oa": false,
           "version": "publishedVersion",
           "source": "PubMed",
-          "source_type": "repository"
-        },
-        {
-          "id": "pmh:oai:pubmedcentral.nih.gov:11099816",
-          "doi": null,
-          "landing_page_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/11099816",
-          "pdf_url": "https://cdn.aaai.org/ocs/ws/ws1266/8850-38024-1-PB.pdf",
-          "is_oa": true,
-          "version": "submittedVersion",
-          "source": "PubMed Central",
           "source_type": "repository"
         },
         {
@@ -400,7 +448,7 @@
       "publication_date": "2024-10-08",
       "type": "article",
       "pmid": "https://pubmed.ncbi.nlm.nih.gov/39380062",
-      "pmcid": null,
+      "pmcid": "https://www.ncbi.nlm.nih.gov/pmc/articles/11462648",
       "primary_location": {
         "id": "doi:10.1186/s12916-024-03655-x",
         "doi": "10.1186/s12916-024-03655-x",
@@ -433,6 +481,16 @@
           "source_type": "journal"
         },
         {
+          "id": "pmh:oai:pubmedcentral.nih.gov:11462648",
+          "doi": null,
+          "landing_page_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/11462648",
+          "pdf_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11462648/pdf/12916_2024_Article_3655.pdf",
+          "is_oa": true,
+          "version": "publishedVersion",
+          "source": "PubMed Central",
+          "source_type": "repository"
+        },
+        {
           "id": "pmid:39380062",
           "doi": null,
           "landing_page_url": "https://pubmed.ncbi.nlm.nih.gov/39380062",
@@ -450,16 +508,6 @@
           "is_oa": true,
           "version": "submittedVersion",
           "source": "eScholarship (California Digital Library)",
-          "source_type": "repository"
-        },
-        {
-          "id": "pmh:oai:pubmedcentral.nih.gov:11462648",
-          "doi": null,
-          "landing_page_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/11462648",
-          "pdf_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11462648/pdf/12916_2024_Article_3655.pdf",
-          "is_oa": true,
-          "version": "submittedVersion",
-          "source": "PubMed Central",
           "source_type": "repository"
         },
         {
@@ -587,7 +635,7 @@
       "publication_date": "2024-05-16",
       "type": "article",
       "pmid": "https://pubmed.ncbi.nlm.nih.gov/39146534",
-      "pmcid": null,
+      "pmcid": "https://www.ncbi.nlm.nih.gov/pmc/articles/11364083",
       "primary_location": {
         "id": "doi:10.2196/53322",
         "doi": "10.2196/53322",
@@ -640,6 +688,16 @@
           "source_type": "repository"
         },
         {
+          "id": "pmh:oai:pubmedcentral.nih.gov:11364083",
+          "doi": null,
+          "landing_page_url": "https://pmc.ncbi.nlm.nih.gov/articles/instance/11364083/bin/publichealth_v10i1e53322_app3.pdf",
+          "pdf_url": null,
+          "is_oa": true,
+          "version": "publishedVersion",
+          "source": "PubMed Central",
+          "source_type": "repository"
+        },
+        {
           "id": "pmh:oai:doaj.org/article:54e3e207a3e34b1aa772b40f500dee76",
           "doi": null,
           "landing_page_url": "https://doaj.org/article/54e3e207a3e34b1aa772b40f500dee76",
@@ -647,16 +705,6 @@
           "is_oa": true,
           "version": "submittedVersion",
           "source": "DOAJ (DOAJ: Directory of Open Access Journals)",
-          "source_type": "repository"
-        },
-        {
-          "id": "pmh:oai:pubmedcentral.nih.gov:11364083",
-          "doi": null,
-          "landing_page_url": "https://pmc.ncbi.nlm.nih.gov/articles/instance/11364083/bin/publichealth_v10i1e53322_app3.pdf",
-          "pdf_url": null,
-          "is_oa": true,
-          "version": "submittedVersion",
-          "source": "PubMed Central",
           "source_type": "repository"
         }
       ],
@@ -746,11 +794,11 @@
           "orcid": "0000-0002-3769-0127"
         }
       ],
-      "cited_by_count": 11,
+      "cited_by_count": 12,
       "counts_by_year": [
         {
           "year": 2026,
-          "cited_by_count": 8
+          "cited_by_count": 9
         },
         {
           "year": 2025,
@@ -774,7 +822,7 @@
       "publication_date": "2025-01-09",
       "type": "article",
       "pmid": "https://pubmed.ncbi.nlm.nih.gov/39788996",
-      "pmcid": null,
+      "pmcid": "https://www.ncbi.nlm.nih.gov/pmc/articles/11718192",
       "primary_location": {
         "id": "doi:10.1038/s41467-024-55801-x",
         "doi": "10.1038/s41467-024-55801-x",
@@ -807,6 +855,16 @@
           "source_type": "journal"
         },
         {
+          "id": "pmh:oai:pubmedcentral.nih.gov:11718192",
+          "doi": null,
+          "landing_page_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/11718192",
+          "pdf_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11718192/pdf/41467_2024_Article_55801.pdf",
+          "is_oa": true,
+          "version": "publishedVersion",
+          "source": "PubMed Central",
+          "source_type": "repository"
+        },
+        {
           "id": "pmid:39788996",
           "doi": null,
           "landing_page_url": "https://pubmed.ncbi.nlm.nih.gov/39788996",
@@ -827,23 +885,13 @@
           "source_type": "repository"
         },
         {
-          "id": "pmh:oai:pubmedcentral.nih.gov:11718192",
-          "doi": null,
-          "landing_page_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/11718192",
-          "pdf_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11718192/pdf/41467_2024_Article_55801.pdf",
-          "is_oa": true,
-          "version": "submittedVersion",
-          "source": "PubMed Central",
-          "source_type": "repository"
-        },
-        {
           "id": "pmh:oai:DiVA.org:uu-551604",
           "doi": null,
           "landing_page_url": "https://uu.diva-portal.org/smash/get/diva2:1941181/FULLTEXT01",
           "pdf_url": null,
           "is_oa": true,
           "version": "submittedVersion",
-          "source": "KTH Publication Database DiVA (KTH Royal Institute of Technology)",
+          "source": "Uppsala University Publications (Uppsala University)",
           "source_type": "repository"
         },
         {
@@ -1114,7 +1162,7 @@
       "publication_date": "2024-09-24",
       "type": "article",
       "pmid": "https://pubmed.ncbi.nlm.nih.gov/39321500",
-      "pmcid": null,
+      "pmcid": "https://www.ncbi.nlm.nih.gov/pmc/articles/11462169",
       "primary_location": {
         "id": "doi:10.1016/j.ebiom.2024.105333",
         "doi": "10.1016/j.ebiom.2024.105333",
@@ -1147,6 +1195,16 @@
           "source_type": "journal"
         },
         {
+          "id": "pmh:oai:pubmedcentral.nih.gov:11462169",
+          "doi": null,
+          "landing_page_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/11462169",
+          "pdf_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11462169/pdf/main.pdf",
+          "is_oa": true,
+          "version": "publishedVersion",
+          "source": "PubMed Central",
+          "source_type": "repository"
+        },
+        {
           "id": "pmid:39321500",
           "doi": null,
           "landing_page_url": "https://pubmed.ncbi.nlm.nih.gov/39321500",
@@ -1164,16 +1222,6 @@
           "is_oa": true,
           "version": "submittedVersion",
           "source": "eScholarship (California Digital Library)",
-          "source_type": "repository"
-        },
-        {
-          "id": "pmh:oai:pubmedcentral.nih.gov:11462169",
-          "doi": null,
-          "landing_page_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/11462169",
-          "pdf_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11462169/pdf/main.pdf",
-          "is_oa": true,
-          "version": "submittedVersion",
-          "source": "PubMed Central",
           "source_type": "repository"
         },
         {
@@ -1354,7 +1402,7 @@
           "author_id": "A5101792930",
           "display_name": "Jifan Gao",
           "raw_author_name": "Jifan Gao",
-          "orcid": "0000-0002-6414-130X"
+          "orcid": "0009-0002-6819-166X"
         },
         {
           "position": "middle",
@@ -1917,7 +1965,7 @@
       "publication_date": "2025-02-01",
       "type": "article",
       "pmid": "https://pubmed.ncbi.nlm.nih.gov/39904520",
-      "pmcid": null,
+      "pmcid": "https://www.ncbi.nlm.nih.gov/pmc/articles/11795369",
       "primary_location": {
         "id": "doi:10.1136/bmjdrc-2024-004536",
         "doi": "10.1136/bmjdrc-2024-004536",
@@ -1950,6 +1998,16 @@
           "source_type": "journal"
         },
         {
+          "id": "pmh:oai:pubmedcentral.nih.gov:11795369",
+          "doi": null,
+          "landing_page_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/11795369",
+          "pdf_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11795369/pdf/bmjdrc-13-1.pdf",
+          "is_oa": true,
+          "version": "publishedVersion",
+          "source": "PubMed Central",
+          "source_type": "repository"
+        },
+        {
           "id": "pmid:39904520",
           "doi": null,
           "landing_page_url": "https://pubmed.ncbi.nlm.nih.gov/39904520",
@@ -1977,16 +2035,6 @@
           "is_oa": true,
           "version": "submittedVersion",
           "source": "eScholarship (California Digital Library)",
-          "source_type": "repository"
-        },
-        {
-          "id": "pmh:oai:pubmedcentral.nih.gov:11795369",
-          "doi": null,
-          "landing_page_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/11795369",
-          "pdf_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11795369/pdf/bmjdrc-13-1.pdf",
-          "is_oa": true,
-          "version": "submittedVersion",
-          "source": "PubMed Central",
           "source_type": "repository"
         },
         {
@@ -2117,7 +2165,7 @@
       "publication_date": "2025-02-18",
       "type": "article",
       "pmid": "https://pubmed.ncbi.nlm.nih.gov/38585931",
-      "pmcid": null,
+      "pmcid": "https://www.ncbi.nlm.nih.gov/pmc/articles/10996736",
       "primary_location": {
         "id": "doi:10.1371/journal.pntd.0012881",
         "doi": "10.1371/journal.pntd.0012881",
@@ -2160,6 +2208,16 @@
           "source_type": "repository"
         },
         {
+          "id": "pmh:oai:pubmedcentral.nih.gov:11882089",
+          "doi": null,
+          "landing_page_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/11882089",
+          "pdf_url": null,
+          "is_oa": true,
+          "version": "publishedVersion",
+          "source": "PubMed Central",
+          "source_type": "repository"
+        },
+        {
           "id": "pmid:38585931",
           "doi": null,
           "landing_page_url": "https://pubmed.ncbi.nlm.nih.gov/38585931",
@@ -2194,16 +2252,6 @@
           "doi": null,
           "landing_page_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/10996736",
           "pdf_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10996736/pdf/nihpp-2024.03.21.24304684v1.pdf",
-          "is_oa": true,
-          "version": "submittedVersion",
-          "source": "PubMed Central",
-          "source_type": "repository"
-        },
-        {
-          "id": "pmh:oai:pubmedcentral.nih.gov:11882089",
-          "doi": null,
-          "landing_page_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/11882089",
-          "pdf_url": null,
           "is_oa": true,
           "version": "submittedVersion",
           "source": "PubMed Central",
@@ -2453,7 +2501,7 @@
       "publication_date": "2020-12-23",
       "type": "article",
       "pmid": "https://pubmed.ncbi.nlm.nih.gov/33374513",
-      "pmcid": null,
+      "pmcid": "https://www.ncbi.nlm.nih.gov/pmc/articles/7822171",
       "primary_location": {
         "id": "doi:10.3390/antibiotics10010002",
         "doi": "10.3390/antibiotics10010002",
@@ -2486,22 +2534,12 @@
           "source_type": "journal"
         },
         {
-          "id": "pmid:33374513",
-          "doi": null,
-          "landing_page_url": "https://pubmed.ncbi.nlm.nih.gov/33374513",
-          "pdf_url": null,
-          "is_oa": false,
-          "version": "publishedVersion",
-          "source": "PubMed",
-          "source_type": "repository"
-        },
-        {
           "id": "pmh:oai:europepmc.org:6730077",
           "doi": null,
           "landing_page_url": "http://europepmc.org/pmc/articles/PMC7822171",
           "pdf_url": null,
           "is_oa": true,
-          "version": "submittedVersion",
+          "version": "publishedVersion",
           "source": "Europe PMC (PubMed Central)",
           "source_type": "repository"
         },
@@ -2511,8 +2549,18 @@
           "landing_page_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/7822171",
           "pdf_url": null,
           "is_oa": true,
-          "version": "submittedVersion",
+          "version": "publishedVersion",
           "source": "PubMed Central",
+          "source_type": "repository"
+        },
+        {
+          "id": "pmid:33374513",
+          "doi": null,
+          "landing_page_url": "https://pubmed.ncbi.nlm.nih.gov/33374513",
+          "pdf_url": null,
+          "is_oa": false,
+          "version": "publishedVersion",
+          "source": "PubMed",
           "source_type": "repository"
         },
         {
@@ -2626,7 +2674,7 @@
       "publication_date": "2022-04-08",
       "type": "article",
       "pmid": "https://pubmed.ncbi.nlm.nih.gov/35395759",
-      "pmcid": null,
+      "pmcid": "https://www.ncbi.nlm.nih.gov/pmc/articles/8991794",
       "primary_location": {
         "id": "doi:10.1186/s12889-022-13073-4",
         "doi": "10.1186/s12889-022-13073-4",
@@ -2659,6 +2707,16 @@
           "source_type": "journal"
         },
         {
+          "id": "pmh:oai:pubmedcentral.nih.gov:8991794",
+          "doi": null,
+          "landing_page_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/8991794",
+          "pdf_url": null,
+          "is_oa": true,
+          "version": "publishedVersion",
+          "source": "PubMed Central",
+          "source_type": "repository"
+        },
+        {
           "id": "pmid:35395759",
           "doi": null,
           "landing_page_url": "https://pubmed.ncbi.nlm.nih.gov/35395759",
@@ -2666,16 +2724,6 @@
           "is_oa": false,
           "version": "publishedVersion",
           "source": "PubMed",
-          "source_type": "repository"
-        },
-        {
-          "id": "pmh:oai:pubmedcentral.nih.gov:8991794",
-          "doi": null,
-          "landing_page_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/8991794",
-          "pdf_url": null,
-          "is_oa": true,
-          "version": "submittedVersion",
-          "source": "PubMed Central",
           "source_type": "repository"
         },
         {
@@ -2790,9 +2838,9 @@
       "title": "A Review of the Ring Trial Design for Evaluating Ring Interventions for Infectious Diseases",
       "publication_year": 2022,
       "publication_date": "2022-01-01",
-      "type": "article",
+      "type": "review",
       "pmid": "https://pubmed.ncbi.nlm.nih.gov/35593400",
-      "pmcid": null,
+      "pmcid": "https://www.ncbi.nlm.nih.gov/pmc/articles/10362935",
       "primary_location": {
         "id": "doi:10.1093/epirev/mxac003",
         "doi": "10.1093/epirev/mxac003",
@@ -2809,7 +2857,7 @@
         "landing_page_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/10362935",
         "pdf_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10362935/pdf/mxac003.pdf",
         "is_oa": true,
-        "version": "submittedVersion",
+        "version": "publishedVersion",
         "source": "PubMed Central",
         "source_type": "repository"
       },
@@ -2825,6 +2873,16 @@
           "source_type": "journal"
         },
         {
+          "id": "pmh:oai:pubmedcentral.nih.gov:10362935",
+          "doi": null,
+          "landing_page_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/10362935",
+          "pdf_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10362935/pdf/mxac003.pdf",
+          "is_oa": true,
+          "version": "publishedVersion",
+          "source": "PubMed Central",
+          "source_type": "repository"
+        },
+        {
           "id": "pmid:35593400",
           "doi": null,
           "landing_page_url": "https://pubmed.ncbi.nlm.nih.gov/35593400",
@@ -2832,16 +2890,6 @@
           "is_oa": false,
           "version": "publishedVersion",
           "source": "PubMed",
-          "source_type": "repository"
-        },
-        {
-          "id": "pmh:oai:pubmedcentral.nih.gov:10362935",
-          "doi": null,
-          "landing_page_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/10362935",
-          "pdf_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10362935/pdf/mxac003.pdf",
-          "is_oa": true,
-          "version": "submittedVersion",
-          "source": "PubMed Central",
           "source_type": "repository"
         },
         {
@@ -2910,7 +2958,7 @@
       "publication_date": "2024-03-11",
       "type": "article",
       "pmid": "https://pubmed.ncbi.nlm.nih.gov/37745503",
-      "pmcid": null,
+      "pmcid": "https://www.ncbi.nlm.nih.gov/pmc/articles/10516093",
       "primary_location": {
         "id": "doi:10.1016/j.psyneuen.2024.107023",
         "doi": "10.1016/j.psyneuen.2024.107023",
@@ -2953,6 +3001,16 @@
           "source_type": "repository"
         },
         {
+          "id": "pmh:oai:pubmedcentral.nih.gov:11157411",
+          "doi": null,
+          "landing_page_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/11157411",
+          "pdf_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11157411/pdf/main.pdf",
+          "is_oa": true,
+          "version": "publishedVersion",
+          "source": "PubMed Central",
+          "source_type": "repository"
+        },
+        {
           "id": "pmid:37745503",
           "doi": null,
           "landing_page_url": "https://pubmed.ncbi.nlm.nih.gov/37745503",
@@ -2977,16 +3035,6 @@
           "doi": null,
           "landing_page_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/10516093",
           "pdf_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10516093/pdf/nihpp-2023.09.12.23295429v1.pdf",
-          "is_oa": true,
-          "version": "submittedVersion",
-          "source": "PubMed Central",
-          "source_type": "repository"
-        },
-        {
-          "id": "pmh:oai:pubmedcentral.nih.gov:11157411",
-          "doi": null,
-          "landing_page_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/11157411",
-          "pdf_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11157411/pdf/main.pdf",
           "is_oa": true,
           "version": "submittedVersion",
           "source": "PubMed Central",
@@ -3166,7 +3214,7 @@
           "author_id": "A5062225190",
           "display_name": "Kishor Kumar Das",
           "raw_author_name": "Kishor K. Das",
-          "orcid": "0000-0002-1137-9058"
+          "orcid": "0009-0000-3360-6410"
         },
         {
           "position": "middle",
@@ -3379,7 +3427,7 @@
       "publication_date": "2026-07-24",
       "type": "article",
       "pmid": "https://pubmed.ncbi.nlm.nih.gov/40313290",
-      "pmcid": null,
+      "pmcid": "https://www.ncbi.nlm.nih.gov/pmc/articles/12045423",
       "primary_location": {
         "id": "doi:10.1016/j.ebiom.2026.106382",
         "doi": "10.1016/j.ebiom.2026.106382",
@@ -3415,7 +3463,7 @@
           "id": "doi:10.1101/2025.04.22.25326224",
           "doi": "10.1101/2025.04.22.25326224",
           "landing_page_url": "https://doi.org/10.1101/2025.04.22.25326224",
-          "pdf_url": null,
+          "pdf_url": "https://www.medrxiv.org/content/medrxiv/early/2025/04/23/2025.04.22.25326224.full.pdf",
           "is_oa": true,
           "version": "acceptedVersion",
           "source": "medRxiv",
@@ -3442,19 +3490,19 @@
           "source_type": "repository"
         },
         {
-          "id": "pmh:oai:pubmedcentral.nih.gov:12045423",
+          "id": "pmh:oai:pubmedcentral.nih.gov:13445364",
           "doi": null,
-          "landing_page_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/12045423",
+          "landing_page_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13445364/",
           "pdf_url": null,
           "is_oa": true,
-          "version": "submittedVersion",
+          "version": "publishedVersion",
           "source": "PubMed Central",
           "source_type": "repository"
         },
         {
-          "id": "pmh:oai:pubmedcentral.nih.gov:13445364",
+          "id": "pmh:oai:pubmedcentral.nih.gov:12045423",
           "doi": null,
-          "landing_page_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13445364/",
+          "landing_page_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/12045423",
           "pdf_url": null,
           "is_oa": true,
           "version": "submittedVersion",
@@ -4192,7 +4240,7 @@
       "publication_date": "2025-05-15",
       "type": "article",
       "pmid": "https://pubmed.ncbi.nlm.nih.gov/40644699",
-      "pmcid": null,
+      "pmcid": "https://www.ncbi.nlm.nih.gov/pmc/articles/12299939",
       "primary_location": {
         "id": "doi:10.2196/68143",
         "doi": "10.2196/68143",
@@ -4235,6 +4283,16 @@
           "source_type": null
         },
         {
+          "id": "pmh:oai:pubmedcentral.nih.gov:12299939",
+          "doi": null,
+          "landing_page_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/12299939",
+          "pdf_url": null,
+          "is_oa": true,
+          "version": "publishedVersion",
+          "source": "PubMed Central",
+          "source_type": "repository"
+        },
+        {
           "id": "pmid:40644699",
           "doi": null,
           "landing_page_url": "https://pubmed.ncbi.nlm.nih.gov/40644699",
@@ -4242,16 +4300,6 @@
           "is_oa": false,
           "version": "publishedVersion",
           "source": "PubMed",
-          "source_type": "repository"
-        },
-        {
-          "id": "pmh:oai:pubmedcentral.nih.gov:12299939",
-          "doi": null,
-          "landing_page_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/12299939",
-          "pdf_url": null,
-          "is_oa": true,
-          "version": "submittedVersion",
-          "source": "PubMed Central",
           "source_type": "repository"
         },
         {
@@ -4435,7 +4483,7 @@
       "publication_date": "2025-05-23",
       "type": "article",
       "pmid": "https://pubmed.ncbi.nlm.nih.gov/40409746",
-      "pmcid": null,
+      "pmcid": "https://www.ncbi.nlm.nih.gov/pmc/articles/12144471",
       "primary_location": {
         "id": "doi:10.2196/67585",
         "doi": "10.2196/67585",
@@ -4478,6 +4526,16 @@
           "source_type": null
         },
         {
+          "id": "pmh:oai:pubmedcentral.nih.gov:12144471",
+          "doi": null,
+          "landing_page_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/12144471",
+          "pdf_url": null,
+          "is_oa": true,
+          "version": "publishedVersion",
+          "source": "PubMed Central",
+          "source_type": "repository"
+        },
+        {
           "id": "pmid:40409746",
           "doi": null,
           "landing_page_url": "https://pubmed.ncbi.nlm.nih.gov/40409746",
@@ -4495,16 +4553,6 @@
           "is_oa": true,
           "version": "submittedVersion",
           "source": "Carolina Digital Repository (University of North Carolina at Chapel Hill)",
-          "source_type": "repository"
-        },
-        {
-          "id": "pmh:oai:pubmedcentral.nih.gov:12144471",
-          "doi": null,
-          "landing_page_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/12144471",
-          "pdf_url": null,
-          "is_oa": true,
-          "version": "submittedVersion",
-          "source": "PubMed Central",
           "source_type": "repository"
         },
         {
@@ -4751,7 +4799,7 @@
       "publication_date": "2026-02-13",
       "type": "article",
       "pmid": "https://pubmed.ncbi.nlm.nih.gov/41698379",
-      "pmcid": null,
+      "pmcid": "https://www.ncbi.nlm.nih.gov/pmc/articles/12948494",
       "primary_location": {
         "id": "doi:10.1016/s2352-3018(25)00302-9",
         "doi": "10.1016/s2352-3018(25)00302-9",
@@ -4794,6 +4842,16 @@
           "source_type": "repository"
         },
         {
+          "id": "pmh:oai:pubmedcentral.nih.gov:12948494",
+          "doi": null,
+          "landing_page_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12948494/",
+          "pdf_url": null,
+          "is_oa": true,
+          "version": "publishedVersion",
+          "source": "PubMed Central",
+          "source_type": "repository"
+        },
+        {
           "id": "pmh:cdr.lib.unc.edu:8w32rn67r",
           "doi": null,
           "landing_page_url": "https://cdr.lib.unc.edu/downloads/j3860q53s",
@@ -4801,16 +4859,6 @@
           "is_oa": false,
           "version": "submittedVersion",
           "source": "Carolina Digital Repository (University of North Carolina at Chapel Hill)",
-          "source_type": "repository"
-        },
-        {
-          "id": "pmh:oai:pubmedcentral.nih.gov:12948494",
-          "doi": null,
-          "landing_page_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12948494/",
-          "pdf_url": null,
-          "is_oa": true,
-          "version": "submittedVersion",
-          "source": "PubMed Central",
           "source_type": "repository"
         },
         {
@@ -5347,7 +5395,7 @@
       "publication_date": "2023-10-14",
       "type": "preprint",
       "pmid": "https://pubmed.ncbi.nlm.nih.gov/37873471",
-      "pmcid": null,
+      "pmcid": "https://www.ncbi.nlm.nih.gov/pmc/articles/10593061",
       "primary_location": {
         "id": "doi:10.1101/2023.10.13.23296965",
         "doi": "10.1101/2023.10.13.23296965",
@@ -5486,7 +5534,7 @@
       "publication_date": "2025-06-08",
       "type": "preprint",
       "pmid": "https://pubmed.ncbi.nlm.nih.gov/40502605",
-      "pmcid": null,
+      "pmcid": "https://www.ncbi.nlm.nih.gov/pmc/articles/12155030",
       "primary_location": {
         "id": "doi:10.1101/2025.06.06.25329168",
         "doi": "10.1101/2025.06.06.25329168",
@@ -6051,7 +6099,7 @@
       "publication_date": "2024-10-07",
       "type": "preprint",
       "pmid": "https://pubmed.ncbi.nlm.nih.gov/39417142",
-      "pmcid": null,
+      "pmcid": "https://www.ncbi.nlm.nih.gov/pmc/articles/11483018",
       "primary_location": {
         "id": "doi:10.1101/2024.10.07.24315026",
         "doi": "10.1101/2024.10.07.24315026",
@@ -6176,7 +6224,7 @@
       "publication_date": "2026-03-06",
       "type": "preprint",
       "pmid": "https://pubmed.ncbi.nlm.nih.gov/41867235",
-      "pmcid": null,
+      "pmcid": "https://www.ncbi.nlm.nih.gov/pmc/articles/13004077",
       "primary_location": {
         "id": "doi:10.64898/2026.03.06.26347799",
         "doi": "10.64898/2026.03.06.26347799",
@@ -6209,6 +6257,16 @@
           "source_type": "repository"
         },
         {
+          "id": "pmh:oai:pubmedcentral.nih.gov:13004077",
+          "doi": null,
+          "landing_page_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13004077/",
+          "pdf_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13004077/pdf/nihpp-2026.03.06.26347799v1.pdf",
+          "is_oa": true,
+          "version": "publishedVersion",
+          "source": "PubMed Central",
+          "source_type": "repository"
+        },
+        {
           "id": "pmid:41867235",
           "doi": null,
           "landing_page_url": "https://pubmed.ncbi.nlm.nih.gov/41867235",
@@ -6216,16 +6274,6 @@
           "is_oa": false,
           "version": "publishedVersion",
           "source": "PubMed",
-          "source_type": "repository"
-        },
-        {
-          "id": "pmh:oai:pubmedcentral.nih.gov:13004077",
-          "doi": null,
-          "landing_page_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13004077/",
-          "pdf_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13004077/pdf/nihpp-2026.03.06.26347799v1.pdf",
-          "is_oa": true,
-          "version": "submittedVersion",
-          "source": "PubMed Central",
           "source_type": "repository"
         }
       ],
@@ -6311,7 +6359,7 @@
       "publication_date": "2024-10-19",
       "type": "preprint",
       "pmid": "https://pubmed.ncbi.nlm.nih.gov/39484253",
-      "pmcid": null,
+      "pmcid": "https://www.ncbi.nlm.nih.gov/pmc/articles/11527044",
       "primary_location": {
         "id": "doi:10.1101/2024.10.18.24315778",
         "doi": "10.1101/2024.10.18.24315778",
@@ -7475,7 +7523,7 @@
       "publication_date": "2025-03-12",
       "type": "article",
       "pmid": "https://pubmed.ncbi.nlm.nih.gov/40075126",
-      "pmcid": null,
+      "pmcid": "https://www.ncbi.nlm.nih.gov/pmc/articles/11903653",
       "primary_location": {
         "id": "doi:10.1038/s41598-025-90505-2",
         "doi": "10.1038/s41598-025-90505-2",
@@ -7508,22 +7556,12 @@
           "source_type": "journal"
         },
         {
-          "id": "pmid:40075126",
-          "doi": null,
-          "landing_page_url": "https://pubmed.ncbi.nlm.nih.gov/40075126",
-          "pdf_url": null,
-          "is_oa": false,
-          "version": "publishedVersion",
-          "source": "PubMed",
-          "source_type": "repository"
-        },
-        {
           "id": "pmh:oai:europepmc.org:10719936",
           "doi": null,
           "landing_page_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/11903653",
           "pdf_url": null,
           "is_oa": true,
-          "version": "submittedVersion",
+          "version": "publishedVersion",
           "source": "Europe PMC (PubMed Central)",
           "source_type": "repository"
         },
@@ -7533,8 +7571,18 @@
           "landing_page_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/11903653",
           "pdf_url": null,
           "is_oa": true,
-          "version": "submittedVersion",
+          "version": "publishedVersion",
           "source": "PubMed Central",
+          "source_type": "repository"
+        },
+        {
+          "id": "pmid:40075126",
+          "doi": null,
+          "landing_page_url": "https://pubmed.ncbi.nlm.nih.gov/40075126",
+          "pdf_url": null,
+          "is_oa": false,
+          "version": "publishedVersion",
+          "source": "PubMed",
           "source_type": "repository"
         },
         {
@@ -7965,7 +8013,7 @@
       "publication_date": "2025-11-08",
       "type": "article",
       "pmid": "https://pubmed.ncbi.nlm.nih.gov/41467215",
-      "pmcid": null,
+      "pmcid": "https://www.ncbi.nlm.nih.gov/pmc/articles/12744257",
       "primary_location": {
         "id": "doi:10.1016/j.cdnut.2025.107596",
         "doi": "10.1016/j.cdnut.2025.107596",
@@ -8008,13 +8056,23 @@
           "source_type": "repository"
         },
         {
+          "id": "pmh:oai:pubmedcentral.nih.gov:12744257",
+          "doi": null,
+          "landing_page_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12744257/",
+          "pdf_url": null,
+          "is_oa": true,
+          "version": "publishedVersion",
+          "source": "PubMed Central",
+          "source_type": "repository"
+        },
+        {
           "id": "pmh:oai:DiVA.org:uu-575554",
           "doi": null,
           "landing_page_url": "http://urn.kb.se/resolve?urn=urn:nbn:se:uu:diva-575554",
           "pdf_url": "https://uu.diva-portal.org/smash/get/diva2:2027808/FULLTEXT01",
           "is_oa": true,
           "version": "submittedVersion",
-          "source": "Uppsala University Publications (Uppsala University)",
+          "source": "Diva portal (Dalarna University Library)",
           "source_type": "repository"
         },
         {
@@ -8025,16 +8083,6 @@
           "is_oa": true,
           "version": "submittedVersion",
           "source": "DOAJ (DOAJ: Directory of Open Access Journals)",
-          "source_type": "repository"
-        },
-        {
-          "id": "pmh:oai:pubmedcentral.nih.gov:12744257",
-          "doi": null,
-          "landing_page_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12744257/",
-          "pdf_url": null,
-          "is_oa": true,
-          "version": "submittedVersion",
-          "source": "PubMed Central",
           "source_type": "repository"
         }
       ],
@@ -8294,7 +8342,7 @@
       "publication_date": "2025-01-01",
       "type": "article",
       "pmid": "https://pubmed.ncbi.nlm.nih.gov/41409341",
-      "pmcid": null,
+      "pmcid": "https://www.ncbi.nlm.nih.gov/pmc/articles/12707300",
       "primary_location": {
         "id": "doi:10.1155/pedi/3545727",
         "doi": "10.1155/pedi/3545727",
@@ -8327,6 +8375,16 @@
           "source_type": "journal"
         },
         {
+          "id": "pmh:oai:europepmc.org:11516116",
+          "doi": null,
+          "landing_page_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/12707300",
+          "pdf_url": null,
+          "is_oa": true,
+          "version": "publishedVersion",
+          "source": "Europe PMC (PubMed Central)",
+          "source_type": "repository"
+        },
+        {
           "id": "pmid:41409341",
           "doi": null,
           "landing_page_url": "https://pubmed.ncbi.nlm.nih.gov/41409341",
@@ -8337,6 +8395,16 @@
           "source_type": "repository"
         },
         {
+          "id": "pmh:oai:pubmedcentral.nih.gov:12707300",
+          "doi": null,
+          "landing_page_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12707300/",
+          "pdf_url": null,
+          "is_oa": true,
+          "version": "publishedVersion",
+          "source": "PubMed Central",
+          "source_type": "repository"
+        },
+        {
           "id": "pmh:cdr.lib.unc.edu:p5548760c",
           "doi": null,
           "landing_page_url": "https://doi.org/10.17615/7x87-z790",
@@ -8344,26 +8412,6 @@
           "is_oa": true,
           "version": "submittedVersion",
           "source": "Carolina Digital Repository (University of North Carolina at Chapel Hill)",
-          "source_type": "repository"
-        },
-        {
-          "id": "pmh:oai:europepmc.org:11516116",
-          "doi": null,
-          "landing_page_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/12707300",
-          "pdf_url": null,
-          "is_oa": true,
-          "version": "submittedVersion",
-          "source": "Europe PMC (PubMed Central)",
-          "source_type": "repository"
-        },
-        {
-          "id": "pmh:oai:pubmedcentral.nih.gov:12707300",
-          "doi": null,
-          "landing_page_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12707300/",
-          "pdf_url": null,
-          "is_oa": true,
-          "version": "submittedVersion",
-          "source": "PubMed Central",
           "source_type": "repository"
         },
         {
@@ -8489,7 +8537,7 @@
       "publication_date": "2025-12-02",
       "type": "article",
       "pmid": "https://pubmed.ncbi.nlm.nih.gov/41550697",
-      "pmcid": null,
+      "pmcid": "https://www.ncbi.nlm.nih.gov/pmc/articles/12805825",
       "primary_location": {
         "id": "doi:10.1093/ofid/ofaf731",
         "doi": "10.1093/ofid/ofaf731",
@@ -8522,6 +8570,16 @@
           "source_type": "journal"
         },
         {
+          "id": "pmh:oai:pubmedcentral.nih.gov:12805825",
+          "doi": null,
+          "landing_page_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12805825/",
+          "pdf_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12805825/pdf/ofaf731.pdf",
+          "is_oa": true,
+          "version": "publishedVersion",
+          "source": "PubMed Central",
+          "source_type": "repository"
+        },
+        {
           "id": "pmid:41550697",
           "doi": null,
           "landing_page_url": "https://pubmed.ncbi.nlm.nih.gov/41550697",
@@ -8529,16 +8587,6 @@
           "is_oa": false,
           "version": "publishedVersion",
           "source": "PubMed",
-          "source_type": "repository"
-        },
-        {
-          "id": "pmh:oai:pubmedcentral.nih.gov:12805825",
-          "doi": null,
-          "landing_page_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12805825/",
-          "pdf_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12805825/pdf/ofaf731.pdf",
-          "is_oa": true,
-          "version": "submittedVersion",
-          "source": "PubMed Central",
           "source_type": "repository"
         },
         {
@@ -8688,7 +8736,7 @@
       "publication_date": "2026-03-02",
       "type": "preprint",
       "pmid": "https://pubmed.ncbi.nlm.nih.gov/41822694",
-      "pmcid": null,
+      "pmcid": "https://www.ncbi.nlm.nih.gov/pmc/articles/12976917",
       "primary_location": {
         "id": "doi:10.64898/2026.02.27.26347274",
         "doi": "10.64898/2026.02.27.26347274",
@@ -8736,7 +8784,7 @@
           "landing_page_url": "https://pubmed.ncbi.nlm.nih.gov/41822694/",
           "pdf_url": null,
           "is_oa": true,
-          "version": "submittedVersion",
+          "version": "publishedVersion",
           "source": "PubMed Central",
           "source_type": "repository"
         }
@@ -8793,7 +8841,7 @@
         },
         {
           "position": "middle",
-          "author_id": null,
+          "author_id": "A5130339162",
           "display_name": "Rachel Wong",
           "raw_author_name": "Rachel Wong",
           "orcid": null
@@ -8926,7 +8974,7 @@
       "publication_date": "2026-06-24",
       "type": "preprint",
       "pmid": "https://pubmed.ncbi.nlm.nih.gov/42396310",
-      "pmcid": null,
+      "pmcid": "https://www.ncbi.nlm.nih.gov/pmc/articles/13321181",
       "primary_location": {
         "id": "doi:10.64898/2026.06.22.26356274",
         "doi": "10.64898/2026.06.22.26356274",
@@ -9135,7 +9183,7 @@
       "publication_date": "2026-07-06",
       "type": "preprint",
       "pmid": "https://pubmed.ncbi.nlm.nih.gov/42465874",
-      "pmcid": null,
+      "pmcid": "https://www.ncbi.nlm.nih.gov/pmc/articles/13370558",
       "primary_location": {
         "id": "doi:10.64898/2026.07.03.26357246",
         "doi": "10.64898/2026.07.03.26357246",
@@ -9183,7 +9231,7 @@
           "landing_page_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13370558/",
           "pdf_url": null,
           "is_oa": true,
-          "version": "submittedVersion",
+          "version": "publishedVersion",
           "source": "PubMed Central",
           "source_type": "repository"
         }
@@ -9293,7 +9341,7 @@
       "publication_date": "2026-07-09",
       "type": "preprint",
       "pmid": "https://pubmed.ncbi.nlm.nih.gov/42465882",
-      "pmcid": null,
+      "pmcid": "https://www.ncbi.nlm.nih.gov/pmc/articles/13370595",
       "primary_location": {
         "id": "doi:10.64898/2026.07.06.26357401",
         "doi": "10.64898/2026.07.06.26357401",
@@ -9326,6 +9374,16 @@
           "source_type": "repository"
         },
         {
+          "id": "pmh:oai:pubmedcentral.nih.gov:13370595",
+          "doi": null,
+          "landing_page_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13370595/",
+          "pdf_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13370595/pdf/nihpp-2026.07.06.26357401v1.pdf",
+          "is_oa": true,
+          "version": "publishedVersion",
+          "source": "PubMed Central",
+          "source_type": "repository"
+        },
+        {
           "id": "pmid:42465882",
           "doi": null,
           "landing_page_url": "https://pubmed.ncbi.nlm.nih.gov/42465882",
@@ -9333,16 +9391,6 @@
           "is_oa": false,
           "version": "publishedVersion",
           "source": "PubMed",
-          "source_type": "repository"
-        },
-        {
-          "id": "pmh:oai:pubmedcentral.nih.gov:13370595",
-          "doi": null,
-          "landing_page_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13370595/",
-          "pdf_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13370595/pdf/nihpp-2026.07.06.26357401v1.pdf",
-          "is_oa": true,
-          "version": "submittedVersion",
-          "source": "PubMed Central",
           "source_type": "repository"
         }
       ],
@@ -9437,12 +9485,12 @@
       "publication_date": "2026-07-09",
       "type": "preprint",
       "pmid": "https://pubmed.ncbi.nlm.nih.gov/42465953",
-      "pmcid": null,
+      "pmcid": "https://www.ncbi.nlm.nih.gov/pmc/articles/13370604",
       "primary_location": {
         "id": "doi:10.64898/2026.07.06.26357398",
         "doi": "10.64898/2026.07.06.26357398",
         "landing_page_url": "https://doi.org/10.64898/2026.07.06.26357398",
-        "pdf_url": null,
+        "pdf_url": "https://www.medrxiv.org/content/medrxiv/early/2026/07/09/2026.07.06.26357398.full.pdf",
         "is_oa": true,
         "version": "acceptedVersion",
         "source": "medRxiv",
@@ -9452,7 +9500,7 @@
         "id": "doi:10.64898/2026.07.06.26357398",
         "doi": "10.64898/2026.07.06.26357398",
         "landing_page_url": "https://doi.org/10.64898/2026.07.06.26357398",
-        "pdf_url": null,
+        "pdf_url": "https://www.medrxiv.org/content/medrxiv/early/2026/07/09/2026.07.06.26357398.full.pdf",
         "is_oa": true,
         "version": "acceptedVersion",
         "source": "medRxiv",
@@ -9463,7 +9511,7 @@
           "id": "doi:10.64898/2026.07.06.26357398",
           "doi": "10.64898/2026.07.06.26357398",
           "landing_page_url": "https://doi.org/10.64898/2026.07.06.26357398",
-          "pdf_url": null,
+          "pdf_url": "https://www.medrxiv.org/content/medrxiv/early/2026/07/09/2026.07.06.26357398.full.pdf",
           "is_oa": true,
           "version": "acceptedVersion",
           "source": "medRxiv",
@@ -9485,7 +9533,7 @@
           "landing_page_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13370604/",
           "pdf_url": null,
           "is_oa": true,
-          "version": "submittedVersion",
+          "version": "publishedVersion",
           "source": "PubMed Central",
           "source_type": "repository"
         }
@@ -9651,12 +9699,12 @@
       "publication_date": "2026-07-22",
       "type": "preprint",
       "pmid": "https://pubmed.ncbi.nlm.nih.gov/42539037",
-      "pmcid": null,
+      "pmcid": "https://www.ncbi.nlm.nih.gov/pmc/articles/13419651",
       "primary_location": {
         "id": "doi:10.64898/2026.07.21.26358594",
         "doi": "10.64898/2026.07.21.26358594",
         "landing_page_url": "https://doi.org/10.64898/2026.07.21.26358594",
-        "pdf_url": null,
+        "pdf_url": "https://www.medrxiv.org/content/medrxiv/early/2026/07/22/2026.07.21.26358594.full.pdf",
         "is_oa": true,
         "version": "acceptedVersion",
         "source": "medRxiv",
@@ -9666,7 +9714,7 @@
         "id": "doi:10.64898/2026.07.21.26358594",
         "doi": "10.64898/2026.07.21.26358594",
         "landing_page_url": "https://doi.org/10.64898/2026.07.21.26358594",
-        "pdf_url": null,
+        "pdf_url": "https://www.medrxiv.org/content/medrxiv/early/2026/07/22/2026.07.21.26358594.full.pdf",
         "is_oa": true,
         "version": "acceptedVersion",
         "source": "medRxiv",
@@ -9677,7 +9725,7 @@
           "id": "doi:10.64898/2026.07.21.26358594",
           "doi": "10.64898/2026.07.21.26358594",
           "landing_page_url": "https://doi.org/10.64898/2026.07.21.26358594",
-          "pdf_url": null,
+          "pdf_url": "https://www.medrxiv.org/content/medrxiv/early/2026/07/22/2026.07.21.26358594.full.pdf",
           "is_oa": true,
           "version": "acceptedVersion",
           "source": "medRxiv",
@@ -9699,7 +9747,7 @@
           "landing_page_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13419651/",
           "pdf_url": null,
           "is_oa": true,
-          "version": "submittedVersion",
+          "version": "publishedVersion",
           "source": "PubMed Central",
           "source_type": "repository"
         }
@@ -10060,8 +10108,8 @@
         },
         {
           "position": "middle",
-          "author_id": null,
-          "display_name": "Deshpande, Sarang",
+          "author_id": "A5159382334",
+          "display_name": "Sarang Deshpande",
           "raw_author_name": "Deshpande, Sarang",
           "orcid": null
         },
@@ -10176,7 +10224,7 @@
       "publication_date": "2026-09-01",
       "type": "article",
       "pmid": "https://pubmed.ncbi.nlm.nih.gov/42787535",
-      "pmcid": null,
+      "pmcid": "https://www.ncbi.nlm.nih.gov/pmc/articles/13601801",
       "primary_location": {
         "id": "doi:10.1093/ofid/ofag560",
         "doi": "10.1093/ofid/ofag560",
@@ -10224,7 +10272,7 @@
           "landing_page_url": "https://pubmed.ncbi.nlm.nih.gov/42787535/",
           "pdf_url": null,
           "is_oa": true,
-          "version": "submittedVersion",
+          "version": "publishedVersion",
           "source": "PubMed Central",
           "source_type": "repository"
         }
@@ -10428,10 +10476,10 @@
         },
         {
           "position": "middle",
-          "author_id": null,
-          "display_name": "Andrew M Southerland",
+          "author_id": "A5015115686",
+          "display_name": "Andrew M. Southerland",
           "raw_author_name": "Andrew M Southerland",
-          "orcid": null
+          "orcid": "0000-0002-3646-358X"
         },
         {
           "position": "middle",

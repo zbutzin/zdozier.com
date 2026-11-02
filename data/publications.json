@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-26T19:46:39Z",
+  "generated": "2026-11-02T22:36:01Z",
   "works": [
     {
       "id": "manual:wiley-environmental-health-nursing-chapter",
@@ -401,7 +401,7 @@
           "name": "Sandra E Safo",
           "is_me": false,
           "is_group": false,
-          "orcid": null,
+          "orcid": "0000-0001-9593-4778",
           "suffix": null,
           "apa": "Safo, S. E."
         },
@@ -874,9 +874,9 @@
       "status": "preprint",
       "status_note": null,
       "url": "https://doi.org/10.64898/2026.07.21.26358594",
-      "oa_url": null,
+      "oa_url": "https://www.medrxiv.org/content/medrxiv/early/2026/07/22/2026.07.21.26358594.full.pdf",
       "pmid": "42539037",
-      "pmcid": null,
+      "pmcid": "PMC13419651",
       "cited_by": 0,
       "versions": [],
       "topics": [
@@ -1026,7 +1026,7 @@
       "url": "https://doi.org/10.64898/2026.07.06.26357401",
       "oa_url": "https://www.medrxiv.org/content/medrxiv/early/2026/07/09/2026.07.06.26357401.full.pdf",
       "pmid": "42465882",
-      "pmcid": null,
+      "pmcid": "PMC13370595",
       "cited_by": 0,
       "versions": [],
       "topics": [
@@ -1275,9 +1275,9 @@
       "status": "accepted",
       "status_note": "Diabetes, Obesity and Metabolism",
       "url": "https://doi.org/10.64898/2026.07.06.26357398",
-      "oa_url": null,
+      "oa_url": "https://www.medrxiv.org/content/medrxiv/early/2026/07/09/2026.07.06.26357398.full.pdf",
       "pmid": "42465953",
-      "pmcid": null,
+      "pmcid": "PMC13370604",
       "cited_by": 0,
       "versions": [],
       "topics": [
@@ -1448,7 +1448,7 @@
       "url": "https://doi.org/10.64898/2026.07.03.26357246",
       "oa_url": "https://www.medrxiv.org/content/medrxiv/early/2026/07/06/2026.07.03.26357246.full.pdf",
       "pmid": "42465874",
-      "pmcid": null,
+      "pmcid": "PMC13370558",
       "cited_by": 0,
       "versions": [],
       "topics": [
@@ -2037,7 +2037,7 @@
       "url": "https://doi.org/10.64898/2026.06.22.26356274",
       "oa_url": "https://www.medrxiv.org/content/medrxiv/early/2026/06/24/2026.06.22.26356274.full.pdf",
       "pmid": "42396310",
-      "pmcid": null,
+      "pmcid": "PMC13321181",
       "cited_by": 0,
       "versions": [],
       "topics": [
@@ -2246,7 +2246,7 @@
       "url": "https://doi.org/10.64898/2026.03.06.26347799",
       "oa_url": "https://www.medrxiv.org/content/medrxiv/early/2026/03/06/2026.03.06.26347799.full.pdf",
       "pmid": "41867235",
-      "pmcid": null,
+      "pmcid": "PMC13004077",
       "cited_by": 2,
       "versions": [],
       "topics": [
@@ -2396,7 +2396,7 @@
       "url": "https://doi.org/10.64898/2026.02.27.26347274",
       "oa_url": null,
       "pmid": "41822694",
-      "pmcid": null,
+      "pmcid": "PMC12976917",
       "cited_by": 0,
       "versions": [],
       "topics": [
@@ -3494,7 +3494,7 @@
       "url": "https://doi.org/10.1101/2025.06.06.25329168",
       "oa_url": "https://www.medrxiv.org/content/medrxiv/early/2025/06/08/2025.06.06.25329168.full.pdf",
       "pmid": "40502605",
-      "pmcid": null,
+      "pmcid": "PMC12155030",
       "cited_by": 3,
       "versions": [],
       "topics": [
@@ -5101,7 +5101,7 @@
       "url": "https://doi.org/10.1101/2024.10.18.24315778",
       "oa_url": "https://www.medrxiv.org/content/medrxiv/early/2024/10/19/2024.10.18.24315778.full.pdf",
       "pmid": "39484253",
-      "pmcid": null,
+      "pmcid": "PMC11527044",
       "cited_by": 1,
       "versions": [],
       "topics": [
@@ -5916,7 +5916,7 @@
       "oa_url": null,
       "pmid": "39146534",
       "pmcid": "PMC11364083",
-      "cited_by": 11,
+      "cited_by": 12,
       "versions": [
         {
           "doi": "10.1101/2023.07.27.23293272",

@@ -1,130 +1,8 @@
 {
   "source": "europepmc",
-  "fetched_at": "2026-10-26T19:46:28Z",
+  "fetched_at": "2026-11-02T22:35:49Z",
   "query": "AUTH:\"Butzin-Dozier Z\" OR AUTHORID:\"0000-0001-6419-0008\" OR AUTH:\"Dozier ZB\"",
   "results": [
-    {
-      "id": "PPR1272205",
-      "source": "PPR",
-      "pmid": null,
-      "pmcid": null,
-      "doi": "10.64898/2026.07.03.26357246",
-      "title": "GLP Medications and Severe Post-COVID-19 Outcomes Among Individuals with Type 2 Diabetes Mellitus",
-      "authorString": "Butzin-Dozier Z, Wang L, Ji Y, Kumar M, Anzalone AJ, Hurwitz E, Patel RC, Budhihartanto A, Buse JB, Johnson S, Bramante C, Wong R.",
-      "authors": [
-        {
-          "fullName": "Butzin-Dozier Z",
-          "firstName": "Zachary",
-          "lastName": "Butzin-Dozier",
-          "initials": "Z",
-          "collectiveName": null,
-          "orcid": "0000-0001-6419-0008"
-        },
-        {
-          "fullName": "Wang L",
-          "firstName": "Lin-Chiun",
-          "lastName": "Wang",
-          "initials": "L",
-          "collectiveName": null,
-          "orcid": null
-        },
-        {
-          "fullName": "Ji Y",
-          "firstName": "Yunwen",
-          "lastName": "Ji",
-          "initials": "Y",
-          "collectiveName": null,
-          "orcid": null
-        },
-        {
-          "fullName": "Kumar M",
-          "firstName": "Manav",
-          "lastName": "Kumar",
-          "initials": "M",
-          "collectiveName": null,
-          "orcid": null
-        },
-        {
-          "fullName": "Anzalone AJ",
-          "firstName": "Jerrod",
-          "lastName": "Anzalone",
-          "initials": "AJ",
-          "collectiveName": null,
-          "orcid": null
-        },
-        {
-          "fullName": "Hurwitz E",
-          "firstName": "Eric",
-          "lastName": "Hurwitz",
-          "initials": "E",
-          "collectiveName": null,
-          "orcid": "0000-0002-6581-7754"
-        },
-        {
-          "fullName": "Patel RC",
-          "firstName": "Rena",
-          "lastName": "Patel",
-          "initials": "RC",
-          "collectiveName": null,
-          "orcid": null
-        },
-        {
-          "fullName": "Budhihartanto A",
-          "firstName": "Ariana",
-          "lastName": "Budhihartanto",
-          "initials": "A",
-          "collectiveName": null,
-          "orcid": null
-        },
-        {
-          "fullName": "Buse JB",
-          "firstName": "John",
-          "lastName": "Buse",
-          "initials": "JB",
-          "collectiveName": null,
-          "orcid": null
-        },
-        {
-          "fullName": "Johnson S",
-          "firstName": "Steven",
-          "lastName": "Johnson",
-          "initials": "S",
-          "collectiveName": null,
-          "orcid": null
-        },
-        {
-          "fullName": "Bramante C",
-          "firstName": "Carolyn",
-          "lastName": "Bramante",
-          "initials": "C",
-          "collectiveName": null,
-          "orcid": null
-        },
-        {
-          "fullName": "Wong R",
-          "firstName": "Rachel",
-          "lastName": "Wong",
-          "initials": "R",
-          "collectiveName": null,
-          "orcid": null
-        }
-      ],
-      "journal": null,
-      "volume": null,
-      "issue": null,
-      "pageInfo": null,
-      "pubYear": "2026",
-      "firstPublicationDate": "2026-07-06",
-      "electronicPublicationDate": null,
-      "printPublicationDate": null,
-      "pubTypes": [
-        "Preprint"
-      ],
-      "publisher": "medRxiv",
-      "commentCorrections": [],
-      "citedByCount": 0,
-      "isOpenAccess": "N"
-    },
     {
       "id": "PPR1276315",
       "source": "PPR",
@@ -301,6 +179,128 @@
       "pageInfo": null,
       "pubYear": "2026",
       "firstPublicationDate": "2026-07-09",
+      "electronicPublicationDate": null,
+      "printPublicationDate": null,
+      "pubTypes": [
+        "Preprint"
+      ],
+      "publisher": "medRxiv",
+      "commentCorrections": [],
+      "citedByCount": 0,
+      "isOpenAccess": "N"
+    },
+    {
+      "id": "PPR1272205",
+      "source": "PPR",
+      "pmid": null,
+      "pmcid": null,
+      "doi": "10.64898/2026.07.03.26357246",
+      "title": "GLP Medications and Severe Post-COVID-19 Outcomes Among Individuals with Type 2 Diabetes Mellitus",
+      "authorString": "Butzin-Dozier Z, Wang L, Ji Y, Kumar M, Anzalone AJ, Hurwitz E, Patel RC, Budhihartanto A, Buse JB, Johnson S, Bramante C, Wong R.",
+      "authors": [
+        {
+          "fullName": "Butzin-Dozier Z",
+          "firstName": "Zachary",
+          "lastName": "Butzin-Dozier",
+          "initials": "Z",
+          "collectiveName": null,
+          "orcid": "0000-0001-6419-0008"
+        },
+        {
+          "fullName": "Wang L",
+          "firstName": "Lin-Chiun",
+          "lastName": "Wang",
+          "initials": "L",
+          "collectiveName": null,
+          "orcid": null
+        },
+        {
+          "fullName": "Ji Y",
+          "firstName": "Yunwen",
+          "lastName": "Ji",
+          "initials": "Y",
+          "collectiveName": null,
+          "orcid": null
+        },
+        {
+          "fullName": "Kumar M",
+          "firstName": "Manav",
+          "lastName": "Kumar",
+          "initials": "M",
+          "collectiveName": null,
+          "orcid": null
+        },
+        {
+          "fullName": "Anzalone AJ",
+          "firstName": "Jerrod",
+          "lastName": "Anzalone",
+          "initials": "AJ",
+          "collectiveName": null,
+          "orcid": null
+        },
+        {
+          "fullName": "Hurwitz E",
+          "firstName": "Eric",
+          "lastName": "Hurwitz",
+          "initials": "E",
+          "collectiveName": null,
+          "orcid": "0000-0002-6581-7754"
+        },
+        {
+          "fullName": "Patel RC",
+          "firstName": "Rena",
+          "lastName": "Patel",
+          "initials": "RC",
+          "collectiveName": null,
+          "orcid": null
+        },
+        {
+          "fullName": "Budhihartanto A",
+          "firstName": "Ariana",
+          "lastName": "Budhihartanto",
+          "initials": "A",
+          "collectiveName": null,
+          "orcid": null
+        },
+        {
+          "fullName": "Buse JB",
+          "firstName": "John",
+          "lastName": "Buse",
+          "initials": "JB",
+          "collectiveName": null,
+          "orcid": null
+        },
+        {
+          "fullName": "Johnson S",
+          "firstName": "Steven",
+          "lastName": "Johnson",
+          "initials": "S",
+          "collectiveName": null,
+          "orcid": null
+        },
+        {
+          "fullName": "Bramante C",
+          "firstName": "Carolyn",
+          "lastName": "Bramante",
+          "initials": "C",
+          "collectiveName": null,
+          "orcid": null
+        },
+        {
+          "fullName": "Wong R",
+          "firstName": "Rachel",
+          "lastName": "Wong",
+          "initials": "R",
+          "collectiveName": null,
+          "orcid": null
+        }
+      ],
+      "journal": null,
+      "volume": null,
+      "issue": null,
+      "pageInfo": null,
+      "pubYear": "2026",
+      "firstPublicationDate": "2026-07-06",
       "electronicPublicationDate": null,
       "printPublicationDate": null,
       "pubTypes": [
@@ -1094,7 +1094,7 @@
           "lastName": "Safo",
           "initials": "SE",
           "collectiveName": null,
-          "orcid": null
+          "orcid": "0000-0001-9593-4778"
         },
         {
           "fullName": "Islam JY",
@@ -4613,6 +4613,238 @@
       "isOpenAccess": "Y"
     },
     {
+      "id": "38696234",
+      "source": "MED",
+      "pmid": "38696234",
+      "pmcid": "PMC11099816",
+      "doi": "10.2196/54622",
+      "title": "Harnessing Consumer Wearable Digital Biomarkers for Individualized Recognition of Postpartum Depression Using the All of Us Research Program Data Set: Cross-Sectional Study.",
+      "authorString": "Hurwitz E, Butzin-Dozier Z, Master H, O'Neil ST, Walden A, Holko M, Patel RC, Haendel MA.",
+      "authors": [
+        {
+          "fullName": "Hurwitz E",
+          "firstName": "Eric",
+          "lastName": "Hurwitz",
+          "initials": "E",
+          "collectiveName": null,
+          "orcid": "0000-0002-6581-7754"
+        },
+        {
+          "fullName": "Butzin-Dozier Z",
+          "firstName": "Zachary",
+          "lastName": "Butzin-Dozier",
+          "initials": "Z",
+          "collectiveName": null,
+          "orcid": "0000-0001-6419-0008"
+        },
+        {
+          "fullName": "Master H",
+          "firstName": "Hiral",
+          "lastName": "Master",
+          "initials": "H",
+          "collectiveName": null,
+          "orcid": "0000-0003-0019-3087"
+        },
+        {
+          "fullName": "O'Neil ST",
+          "firstName": "Shawn T",
+          "lastName": "O'Neil",
+          "initials": "ST",
+          "collectiveName": null,
+          "orcid": "0000-0001-6220-7080"
+        },
+        {
+          "fullName": "Walden A",
+          "firstName": "Anita",
+          "lastName": "Walden",
+          "initials": "A",
+          "collectiveName": null,
+          "orcid": "0000-0002-3327-7423"
+        },
+        {
+          "fullName": "Holko M",
+          "firstName": "Michelle",
+          "lastName": "Holko",
+          "initials": "M",
+          "collectiveName": null,
+          "orcid": "0000-0001-9325-4082"
+        },
+        {
+          "fullName": "Patel RC",
+          "firstName": "Rena C",
+          "lastName": "Patel",
+          "initials": "RC",
+          "collectiveName": null,
+          "orcid": "0000-0001-9893-5856"
+        },
+        {
+          "fullName": "Haendel MA",
+          "firstName": "Melissa A",
+          "lastName": "Haendel",
+          "initials": "MA",
+          "collectiveName": null,
+          "orcid": "0000-0001-9114-8737"
+        }
+      ],
+      "journal": "JMIR mHealth and uHealth",
+      "volume": "12",
+      "issue": null,
+      "pageInfo": "e54622",
+      "pubYear": "2024",
+      "firstPublicationDate": "2024-05-02",
+      "electronicPublicationDate": "2024-05-02",
+      "printPublicationDate": "2024-05-01",
+      "pubTypes": [
+        "Research Support, Non-U.S. Gov't",
+        "research-article",
+        "Journal Article",
+        "Research Support, N.I.H., Extramural"
+      ],
+      "publisher": null,
+      "commentCorrections": [
+        {
+          "type": "Update of",
+          "id": "37873471",
+          "source": "MED"
+        }
+      ],
+      "citedByCount": 24,
+      "isOpenAccess": "Y"
+    },
+    {
+      "id": "39146534",
+      "source": "MED",
+      "pmid": "39146534",
+      "pmcid": "PMC11364083",
+      "doi": "10.2196/53322",
+      "title": "Predicting Long COVID in the National COVID Cohort Collaborative Using Super Learner: Cohort Study.",
+      "authorString": "Butzin-Dozier Z, Ji Y, Li H, Coyle J, Shi J, Phillips RV, Mertens AN, Pirracchio R, van der Laan MJ, Patel RC, Colford JM, Hubbard AE, National COVID Cohort Collaborative (N3C) Consortium.",
+      "authors": [
+        {
+          "fullName": "Butzin-Dozier Z",
+          "firstName": "Zachary",
+          "lastName": "Butzin-Dozier",
+          "initials": "Z",
+          "collectiveName": null,
+          "orcid": "0000-0001-6419-0008"
+        },
+        {
+          "fullName": "Ji Y",
+          "firstName": "Yunwen",
+          "lastName": "Ji",
+          "initials": "Y",
+          "collectiveName": null,
+          "orcid": "0000-0002-6077-5102"
+        },
+        {
+          "fullName": "Li H",
+          "firstName": "Haodong",
+          "lastName": "Li",
+          "initials": "H",
+          "collectiveName": null,
+          "orcid": "0000-0003-4069-5743"
+        },
+        {
+          "fullName": "Coyle J",
+          "firstName": "Jeremy",
+          "lastName": "Coyle",
+          "initials": "J",
+          "collectiveName": null,
+          "orcid": "0000-0002-9874-6649"
+        },
+        {
+          "fullName": "Shi J",
+          "firstName": "Junming",
+          "lastName": "Shi",
+          "initials": "J",
+          "collectiveName": null,
+          "orcid": "0000-0002-1520-8387"
+        },
+        {
+          "fullName": "Phillips RV",
+          "firstName": "Rachael V",
+          "lastName": "Phillips",
+          "initials": "RV",
+          "collectiveName": null,
+          "orcid": "0000-0002-8474-591X"
+        },
+        {
+          "fullName": "Mertens AN",
+          "firstName": "Andrew N",
+          "lastName": "Mertens",
+          "initials": "AN",
+          "collectiveName": null,
+          "orcid": "0000-0002-1050-6721"
+        },
+        {
+          "fullName": "Pirracchio R",
+          "firstName": "Romain",
+          "lastName": "Pirracchio",
+          "initials": "R",
+          "collectiveName": null,
+          "orcid": "0000-0002-7007-4908"
+        },
+        {
+          "fullName": "van der Laan MJ",
+          "firstName": "Mark J",
+          "lastName": "van der Laan",
+          "initials": "MJ",
+          "collectiveName": null,
+          "orcid": "0000-0003-1432-5511"
+        },
+        {
+          "fullName": "Patel RC",
+          "firstName": "Rena C",
+          "lastName": "Patel",
+          "initials": "RC",
+          "collectiveName": null,
+          "orcid": "0000-0001-9893-5856"
+        },
+        {
+          "fullName": "Colford JM",
+          "firstName": "John M",
+          "lastName": "Colford",
+          "initials": "JM",
+          "collectiveName": null,
+          "orcid": "0000-0002-3288-6956"
+        },
+        {
+          "fullName": "Hubbard AE",
+          "firstName": "Alan E",
+          "lastName": "Hubbard",
+          "initials": "AE",
+          "collectiveName": null,
+          "orcid": "0000-0002-3769-0127"
+        },
+        {
+          "fullName": null,
+          "firstName": null,
+          "lastName": null,
+          "initials": null,
+          "collectiveName": "National COVID Cohort Collaborative (N3C) Consortium",
+          "orcid": null
+        }
+      ],
+      "journal": "JMIR public health and surveillance",
+      "volume": "10",
+      "issue": null,
+      "pageInfo": "e53322",
+      "pubYear": "2024",
+      "firstPublicationDate": "2024-08-15",
+      "electronicPublicationDate": "2024-08-15",
+      "printPublicationDate": "2024-08-01",
+      "pubTypes": [
+        "Research Support, Non-U.S. Gov't",
+        "research-article",
+        "Journal Article",
+        "Research Support, N.I.H., Extramural"
+      ],
+      "publisher": null,
+      "commentCorrections": [],
+      "citedByCount": 13,
+      "isOpenAccess": "Y"
+    },
+    {
       "id": "PPR1008105",
       "source": "PPR",
       "pmid": null,
@@ -4763,238 +4995,6 @@
       ],
       "citedByCount": 0,
       "isOpenAccess": "N"
-    },
-    {
-      "id": "39146534",
-      "source": "MED",
-      "pmid": "39146534",
-      "pmcid": "PMC11364083",
-      "doi": "10.2196/53322",
-      "title": "Predicting Long COVID in the National COVID Cohort Collaborative Using Super Learner: Cohort Study.",
-      "authorString": "Butzin-Dozier Z, Ji Y, Li H, Coyle J, Shi J, Phillips RV, Mertens AN, Pirracchio R, van der Laan MJ, Patel RC, Colford JM, Hubbard AE, National COVID Cohort Collaborative (N3C) Consortium.",
-      "authors": [
-        {
-          "fullName": "Butzin-Dozier Z",
-          "firstName": "Zachary",
-          "lastName": "Butzin-Dozier",
-          "initials": "Z",
-          "collectiveName": null,
-          "orcid": "0000-0001-6419-0008"
-        },
-        {
-          "fullName": "Ji Y",
-          "firstName": "Yunwen",
-          "lastName": "Ji",
-          "initials": "Y",
-          "collectiveName": null,
-          "orcid": "0000-0002-6077-5102"
-        },
-        {
-          "fullName": "Li H",
-          "firstName": "Haodong",
-          "lastName": "Li",
-          "initials": "H",
-          "collectiveName": null,
-          "orcid": "0000-0003-4069-5743"
-        },
-        {
-          "fullName": "Coyle J",
-          "firstName": "Jeremy",
-          "lastName": "Coyle",
-          "initials": "J",
-          "collectiveName": null,
-          "orcid": "0000-0002-9874-6649"
-        },
-        {
-          "fullName": "Shi J",
-          "firstName": "Junming",
-          "lastName": "Shi",
-          "initials": "J",
-          "collectiveName": null,
-          "orcid": "0000-0002-1520-8387"
-        },
-        {
-          "fullName": "Phillips RV",
-          "firstName": "Rachael V",
-          "lastName": "Phillips",
-          "initials": "RV",
-          "collectiveName": null,
-          "orcid": "0000-0002-8474-591X"
-        },
-        {
-          "fullName": "Mertens AN",
-          "firstName": "Andrew N",
-          "lastName": "Mertens",
-          "initials": "AN",
-          "collectiveName": null,
-          "orcid": "0000-0002-1050-6721"
-        },
-        {
-          "fullName": "Pirracchio R",
-          "firstName": "Romain",
-          "lastName": "Pirracchio",
-          "initials": "R",
-          "collectiveName": null,
-          "orcid": "0000-0002-7007-4908"
-        },
-        {
-          "fullName": "van der Laan MJ",
-          "firstName": "Mark J",
-          "lastName": "van der Laan",
-          "initials": "MJ",
-          "collectiveName": null,
-          "orcid": "0000-0003-1432-5511"
-        },
-        {
-          "fullName": "Patel RC",
-          "firstName": "Rena C",
-          "lastName": "Patel",
-          "initials": "RC",
-          "collectiveName": null,
-          "orcid": "0000-0001-9893-5856"
-        },
-        {
-          "fullName": "Colford JM",
-          "firstName": "John M",
-          "lastName": "Colford",
-          "initials": "JM",
-          "collectiveName": null,
-          "orcid": "0000-0002-3288-6956"
-        },
-        {
-          "fullName": "Hubbard AE",
-          "firstName": "Alan E",
-          "lastName": "Hubbard",
-          "initials": "AE",
-          "collectiveName": null,
-          "orcid": "0000-0002-3769-0127"
-        },
-        {
-          "fullName": null,
-          "firstName": null,
-          "lastName": null,
-          "initials": null,
-          "collectiveName": "National COVID Cohort Collaborative (N3C) Consortium",
-          "orcid": null
-        }
-      ],
-      "journal": "JMIR public health and surveillance",
-      "volume": "10",
-      "issue": null,
-      "pageInfo": "e53322",
-      "pubYear": "2024",
-      "firstPublicationDate": "2024-08-15",
-      "electronicPublicationDate": "2024-08-15",
-      "printPublicationDate": "2024-08-01",
-      "pubTypes": [
-        "Research Support, Non-U.S. Gov't",
-        "research-article",
-        "Journal Article",
-        "Research Support, N.I.H., Extramural"
-      ],
-      "publisher": null,
-      "commentCorrections": [],
-      "citedByCount": 13,
-      "isOpenAccess": "Y"
-    },
-    {
-      "id": "38696234",
-      "source": "MED",
-      "pmid": "38696234",
-      "pmcid": "PMC11099816",
-      "doi": "10.2196/54622",
-      "title": "Harnessing Consumer Wearable Digital Biomarkers for Individualized Recognition of Postpartum Depression Using the All of Us Research Program Data Set: Cross-Sectional Study.",
-      "authorString": "Hurwitz E, Butzin-Dozier Z, Master H, O'Neil ST, Walden A, Holko M, Patel RC, Haendel MA.",
-      "authors": [
-        {
-          "fullName": "Hurwitz E",
-          "firstName": "Eric",
-          "lastName": "Hurwitz",
-          "initials": "E",
-          "collectiveName": null,
-          "orcid": "0000-0002-6581-7754"
-        },
-        {
-          "fullName": "Butzin-Dozier Z",
-          "firstName": "Zachary",
-          "lastName": "Butzin-Dozier",
-          "initials": "Z",
-          "collectiveName": null,
-          "orcid": "0000-0001-6419-0008"
-        },
-        {
-          "fullName": "Master H",
-          "firstName": "Hiral",
-          "lastName": "Master",
-          "initials": "H",
-          "collectiveName": null,
-          "orcid": "0000-0003-0019-3087"
-        },
-        {
-          "fullName": "O'Neil ST",
-          "firstName": "Shawn T",
-          "lastName": "O'Neil",
-          "initials": "ST",
-          "collectiveName": null,
-          "orcid": "0000-0001-6220-7080"
-        },
-        {
-          "fullName": "Walden A",
-          "firstName": "Anita",
-          "lastName": "Walden",
-          "initials": "A",
-          "collectiveName": null,
-          "orcid": "0000-0002-3327-7423"
-        },
-        {
-          "fullName": "Holko M",
-          "firstName": "Michelle",
-          "lastName": "Holko",
-          "initials": "M",
-          "collectiveName": null,
-          "orcid": "0000-0001-9325-4082"
-        },
-        {
-          "fullName": "Patel RC",
-          "firstName": "Rena C",
-          "lastName": "Patel",
-          "initials": "RC",
-          "collectiveName": null,
-          "orcid": "0000-0001-9893-5856"
-        },
-        {
-          "fullName": "Haendel MA",
-          "firstName": "Melissa A",
-          "lastName": "Haendel",
-          "initials": "MA",
-          "collectiveName": null,
-          "orcid": "0000-0001-9114-8737"
-        }
-      ],
-      "journal": "JMIR mHealth and uHealth",
-      "volume": "12",
-      "issue": null,
-      "pageInfo": "e54622",
-      "pubYear": "2024",
-      "firstPublicationDate": "2024-05-02",
-      "electronicPublicationDate": "2024-05-02",
-      "printPublicationDate": "2024-05-01",
-      "pubTypes": [
-        "Research Support, Non-U.S. Gov't",
-        "research-article",
-        "Journal Article",
-        "Research Support, N.I.H., Extramural"
-      ],
-      "publisher": null,
-      "commentCorrections": [
-        {
-          "type": "Update of",
-          "id": "37873471",
-          "source": "MED"
-        }
-      ],
-      "citedByCount": 24,
-      "isOpenAccess": "Y"
     },
     {
       "id": "PPR1033134",
