@@ -1,46 +1,46 @@
 {
-  "started": "2026-11-02T22:35:45Z",
-  "finished": "2026-11-02T22:36:02Z",
+  "started": "2026-11-09T23:16:24Z",
+  "finished": "2026-11-09T23:16:43Z",
   "ok": true,
   "sources": {
     "orcid": {
       "ok": true,
-      "count": 45,
+      "count": 46,
       "error": null,
       "used_cache": false,
-      "fetched_at": "2026-11-02T22:35:45Z",
+      "fetched_at": "2026-11-09T23:16:24Z",
       "requests": 3
     },
     "openalex": {
       "ok": true,
-      "count": 53,
+      "count": 46,
       "error": null,
       "used_cache": false,
-      "fetched_at": "2026-11-02T22:35:45Z",
+      "fetched_at": "2026-11-09T23:16:25Z",
       "requests": 2
     },
     "europepmc": {
       "ok": true,
-      "count": 43,
+      "count": 44,
       "error": null,
       "used_cache": false,
-      "fetched_at": "2026-11-02T22:35:49Z",
+      "fetched_at": "2026-11-09T23:16:26Z",
       "requests": 1
     },
     "crossref": {
       "ok": true,
-      "count": 33,
+      "count": 34,
       "error": null,
       "used_cache": false,
-      "fetched_at": "2026-11-02T22:35:50Z",
-      "requests": 6
+      "fetched_at": "2026-11-09T23:16:28Z",
+      "requests": 30
     },
     "reporter": {
       "ok": true,
       "count": 1,
       "error": null,
       "used_cache": false,
-      "fetched_at": "2026-11-02T22:35:57Z",
+      "fetched_at": "2026-11-09T23:16:38Z",
       "requests": 4
     },
     "github": {
@@ -48,29 +48,62 @@
       "count": 8,
       "error": null,
       "used_cache": false,
-      "fetched_at": "2026-11-02T22:36:01Z",
+      "fetched_at": "2026-11-09T23:16:42Z",
       "requests": 1
     }
   },
-  "new_works": [],
+  "new_works": [
+    {
+      "id": "10.2337/figshare.33894268",
+      "title": "Risk Factors for Incident Diabetes following SARS-CoV-2 Infection Across Variant Eras: Findings from the National Clinical Cohort Collaborative (N3C) COVID-19 Enclave",
+      "venue": "American Diabetes Association",
+      "year": 2026,
+      "sources": [
+        "openalex",
+        "crossref"
+      ]
+    },
+    {
+      "id": "10.2337/figshare.33894268.v1",
+      "title": "Risk Factors for Incident Diabetes following SARS-CoV-2 Infection Across Variant Eras: Findings from the National Clinical Cohort Collaborative (N3C) COVID-19 Enclave",
+      "venue": "American Diabetes Association",
+      "year": 2026,
+      "sources": [
+        "openalex",
+        "crossref"
+      ]
+    },
+    {
+      "id": "10.2337/doc26-0057",
+      "title": "Risk Factors for Incident Diabetes After SARS-CoV-2 Infection Across Variant Eras: Findings From the National Clinical Cohort Collaborative (N3C) COVID-19 Enclave",
+      "venue": "Diabetes, Obesity, and CardioMetabolic CARE",
+      "year": 2026,
+      "sources": [
+        "crossref"
+      ]
+    }
+  ],
   "removed_works": [],
   "new_grants": [],
   "warnings": [
     "OpenAlex work without a DOI skipped: W7160730250 \"WASH Benefits Bangladesh Analysis of Nutrition, Stress, Estriol, and Inflammation During P\"",
     "OpenAlex items that are not publications were skipped: 10.1162/2e3983f5.ce1c98c7 (peer-review), 10.1162/2e3983f5.c3345096 (peer-review)",
-    "manual entry manual:singh-arthritis-rheumatology matches discovered work 10.1002/art.70361 (Arthritis & Rheumatology); the discovered record is used and the manual entry can be removed"
+    "version link 10.2337/figshare.33894268 <-> 10.2337/doc26-0057 (crossref-relation) not applied: two published DOIs (10.2337/doc26-0057, 10.2337/figshare.33894268)",
+    "version link 10.2337/figshare.33894268.v1 <-> 10.2337/doc26-0057 (crossref-relation) not applied: two published DOIs (10.2337/doc26-0057, 10.2337/figshare.33894268.v1)",
+    "manual entry manual:singh-arthritis-rheumatology matches discovered work 10.1002/art.70361 (Arthritis & Rheumatology); the discovered record is used and the manual entry can be removed",
+    "found only by name search, please confirm: 10.2337/doc26-0057 \"Risk Factors for Incident Diabetes After SARS-CoV-2 Infection Across Variant Eras: Findings From the National Clinical Cohort Collaborative (N3C) COVID-19 Enclave\" (crossref)"
   ],
   "promoted_works": [],
   "sanity_guard": {
     "tripped": false,
     "previous": 40,
-    "current": 40,
+    "current": 43,
     "max_drop": 0.15,
     "candidate": null,
     "accepted": null
   },
   "counts": {
-    "visible_works": 40,
+    "visible_works": 43,
     "hidden_works": 0,
     "grants": 3,
     "repos_shown": 4
@@ -161,16 +194,16 @@
       "detail": ""
     },
     {
-      "a": "10.2196/67585",
-      "b": "10.17615/0sh5-mt86",
+      "a": "10.1111/dom.71502",
+      "b": "10.64898/2026.07.06.26357398",
       "rule": "openalex-location",
       "detail": ""
     },
     {
-      "a": "10.1016/j.ebiom.2024.105333",
-      "b": "10.17615/xhdk-h129",
-      "rule": "fuzzy-title",
-      "detail": "title 1.00, 35 shared authors"
+      "a": "10.2196/67585",
+      "b": "10.17615/0sh5-mt86",
+      "rule": "openalex-location",
+      "detail": ""
     },
     {
       "a": "10.1016/j.ebiom.2026.106382",
@@ -191,12 +224,6 @@
       "detail": "title 1.00, 24 shared authors"
     },
     {
-      "a": "10.1186/s12916-024-03655-x",
-      "b": "10.17615/qzk6-0023",
-      "rule": "fuzzy-title",
-      "detail": "title 1.00, 8 shared authors"
-    },
-    {
       "a": "10.1101/2021.11.10.21266206",
       "b": "10.2139/ssrn.3918273",
       "rule": "fuzzy-title",
@@ -204,12 +231,12 @@
     }
   ],
   "fetch": {
-    "started": "2026-11-02T22:35:45Z",
-    "finished": "2026-11-02T22:36:01Z"
+    "started": "2026-11-09T23:16:24Z",
+    "finished": "2026-11-09T23:16:42Z"
   },
   "merge": {
-    "started": "2026-11-02T22:36:01Z",
-    "finished": "2026-11-02T22:36:02Z",
-    "today": "2026-11-02"
+    "started": "2026-11-09T23:16:42Z",
+    "finished": "2026-11-09T23:16:43Z",
+    "today": "2026-11-09"
   }
 }

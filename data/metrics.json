@@ -1,8 +1,8 @@
 {
-  "generated": "2026-11-02T22:36:01Z",
-  "works_count": 40,
-  "cited_by_count": 319,
-  "h_index": 7,
+  "generated": "2026-11-09T23:16:42Z",
+  "works_count": 43,
+  "cited_by_count": 328,
+  "h_index": 8,
   "i10_index": 7,
   "counts_by_year": [
     {
@@ -33,12 +33,12 @@
     {
       "year": 2015,
       "works_count": 0,
-      "cited_by_count": 7
+      "cited_by_count": 8
     },
     {
       "year": 2016,
       "works_count": 0,
-      "cited_by_count": 14
+      "cited_by_count": 15
     },
     {
       "year": 2017,
@@ -63,32 +63,32 @@
     {
       "year": 2021,
       "works_count": 2,
-      "cited_by_count": 8
+      "cited_by_count": 6
     },
     {
       "year": 2022,
       "works_count": 2,
-      "cited_by_count": 15
+      "cited_by_count": 14
     },
     {
       "year": 2023,
       "works_count": 0,
-      "cited_by_count": 15
+      "cited_by_count": 16
     },
     {
       "year": 2024,
       "works_count": 6,
-      "cited_by_count": 27
+      "cited_by_count": 23
     },
     {
       "year": 2025,
       "works_count": 11,
-      "cited_by_count": 42
+      "cited_by_count": 45
     },
     {
       "year": 2026,
-      "works_count": 14,
-      "cited_by_count": 80
+      "works_count": 17,
+      "cited_by_count": 90
     }
   ],
   "by_year_role": [
@@ -175,13 +175,13 @@
     {
       "year": 2026,
       "first_or_senior": 6,
-      "coauthor": 8
+      "coauthor": 11
     }
   ],
-  "charted_works_count": 38,
+  "charted_works_count": 41,
   "first_or_senior_count": 17,
   "preprint_count": 10,
-  "openalex_works_count": 89,
+  "openalex_works_count": 81,
   "openalex_author_id": "A5080035458",
   "openalex_counts_by_year": [
     {
@@ -207,12 +207,12 @@
     {
       "year": 2015,
       "works_count": 0,
-      "cited_by_count": 7
+      "cited_by_count": 8
     },
     {
       "year": 2016,
       "works_count": 0,
-      "cited_by_count": 14
+      "cited_by_count": 15
     },
     {
       "year": 2017,
@@ -231,38 +231,38 @@
     },
     {
       "year": 2020,
-      "works_count": 13,
+      "works_count": 12,
       "cited_by_count": 44
     },
     {
       "year": 2021,
-      "works_count": 16,
-      "cited_by_count": 8
+      "works_count": 15,
+      "cited_by_count": 6
     },
     {
       "year": 2022,
       "works_count": 4,
-      "cited_by_count": 15
+      "cited_by_count": 14
     },
     {
       "year": 2023,
-      "works_count": 2,
-      "cited_by_count": 15
+      "works_count": 0,
+      "cited_by_count": 16
     },
     {
       "year": 2024,
-      "works_count": 16,
-      "cited_by_count": 27
+      "works_count": 11,
+      "cited_by_count": 23
     },
     {
       "year": 2025,
-      "works_count": 13,
-      "cited_by_count": 42
+      "works_count": 14,
+      "cited_by_count": 45
     },
     {
       "year": 2026,
       "works_count": 17,
-      "cited_by_count": 80
+      "cited_by_count": 90
     }
   ],
   "adjusted_for_hidden": false,

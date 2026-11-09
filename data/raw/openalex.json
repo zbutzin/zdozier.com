@@ -1,16 +1,16 @@
 {
   "source": "openalex",
-  "fetched_at": "2026-11-02T22:35:45Z",
+  "fetched_at": "2026-11-09T23:16:25Z",
   "filter": "author.orcid:0000-0001-6419-0008",
   "author": {
     "id": "A5080035458",
     "display_name": "Zachary Butzin-Dozier",
     "orcid": "0000-0001-6419-0008",
-    "works_count": 89,
-    "cited_by_count": 319,
+    "works_count": 81,
+    "cited_by_count": 328,
     "summary_stats": {
-      "2yr_mean_citedness": 2.608695652173913,
-      "h_index": 7,
+      "2yr_mean_citedness": 3.1666666666666665,
+      "h_index": 8,
       "i10_index": 7
     },
     "counts_by_year": [
@@ -42,13 +42,13 @@
         "year": 2015,
         "works_count": 0,
         "oa_works_count": 0,
-        "cited_by_count": 7
+        "cited_by_count": 8
       },
       {
         "year": 2016,
         "works_count": 0,
         "oa_works_count": 0,
-        "cited_by_count": 14
+        "cited_by_count": 15
       },
       {
         "year": 2017,
@@ -70,48 +70,48 @@
       },
       {
         "year": 2020,
-        "works_count": 13,
+        "works_count": 12,
         "oa_works_count": 12,
         "cited_by_count": 44
       },
       {
         "year": 2021,
-        "works_count": 16,
-        "oa_works_count": 16,
-        "cited_by_count": 8
+        "works_count": 15,
+        "oa_works_count": 15,
+        "cited_by_count": 6
       },
       {
         "year": 2022,
         "works_count": 4,
         "oa_works_count": 3,
-        "cited_by_count": 15
+        "cited_by_count": 14
       },
       {
         "year": 2023,
-        "works_count": 2,
-        "oa_works_count": 2,
-        "cited_by_count": 15
+        "works_count": 0,
+        "oa_works_count": 0,
+        "cited_by_count": 16
       },
       {
         "year": 2024,
-        "works_count": 16,
-        "oa_works_count": 15,
-        "cited_by_count": 27
+        "works_count": 11,
+        "oa_works_count": 10,
+        "cited_by_count": 23
       },
       {
         "year": 2025,
-        "works_count": 13,
-        "oa_works_count": 12,
-        "cited_by_count": 42
+        "works_count": 14,
+        "oa_works_count": 13,
+        "cited_by_count": 45
       },
       {
         "year": 2026,
         "works_count": 17,
         "oa_works_count": 16,
-        "cited_by_count": 80
+        "cited_by_count": 90
       }
     ],
-    "updated_date": "2026-10-28T12:34:19"
+    "updated_date": "2026-11-09T14:06:01"
   },
   "works": [
     {
@@ -205,7 +205,7 @@
           "orcid": "0000-0002-3618-4361"
         }
       ],
-      "cited_by_count": 156,
+      "cited_by_count": 159,
       "counts_by_year": [
         {
           "year": 2026,
@@ -217,7 +217,7 @@
         },
         {
           "year": 2024,
-          "cited_by_count": 3
+          "cited_by_count": 4
         },
         {
           "year": 2023,
@@ -249,11 +249,11 @@
         },
         {
           "year": 2016,
-          "cited_by_count": 14
+          "cited_by_count": 15
         },
         {
           "year": 2015,
-          "cited_by_count": 7
+          "cited_by_count": 8
         },
         {
           "year": 2014,
@@ -284,8 +284,8 @@
       "publication_year": 2024,
       "publication_date": "2024-05-02",
       "type": "article",
-      "pmid": "https://pubmed.ncbi.nlm.nih.gov/38696234",
-      "pmcid": "https://www.ncbi.nlm.nih.gov/pmc/articles/11099816",
+      "pmid": "https://pubmed.ncbi.nlm.nih.gov/37873471",
+      "pmcid": "https://www.ncbi.nlm.nih.gov/pmc/articles/10593061",
       "primary_location": {
         "id": "doi:10.2196/54622",
         "doi": "10.2196/54622",
@@ -323,9 +323,19 @@
           "landing_page_url": "https://doi.org/10.2196/preprints.54622",
           "pdf_url": null,
           "is_oa": false,
-          "version": "acceptedVersion",
+          "version": "submittedVersion",
           "source": null,
           "source_type": null
+        },
+        {
+          "id": "doi:10.1101/2023.10.13.23296965",
+          "doi": "10.1101/2023.10.13.23296965",
+          "landing_page_url": "https://doi.org/10.1101/2023.10.13.23296965",
+          "pdf_url": "https://www.medrxiv.org/content/medrxiv/early/2023/10/14/2023.10.13.23296965.full.pdf",
+          "is_oa": true,
+          "version": "submittedVersion",
+          "source": "medRxiv",
+          "source_type": "repository"
         },
         {
           "id": "pmh:oai:pubmedcentral.nih.gov:11099816",
@@ -338,6 +348,16 @@
           "source_type": "repository"
         },
         {
+          "id": "pmid:37873471",
+          "doi": null,
+          "landing_page_url": "https://pubmed.ncbi.nlm.nih.gov/37873471",
+          "pdf_url": null,
+          "is_oa": false,
+          "version": "publishedVersion",
+          "source": "PubMed",
+          "source_type": "repository"
+        },
+        {
           "id": "pmid:38696234",
           "doi": null,
           "landing_page_url": "https://pubmed.ncbi.nlm.nih.gov/38696234",
@@ -345,6 +365,16 @@
           "is_oa": false,
           "version": "publishedVersion",
           "source": "PubMed",
+          "source_type": "repository"
+        },
+        {
+          "id": "pmh:oai:pubmedcentral.nih.gov:10593061",
+          "doi": null,
+          "landing_page_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/10593061",
+          "pdf_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10593061/pdf/nihpp-2023.10.13.23296965v1.pdf",
+          "is_oa": true,
+          "version": "submittedVersion",
+          "source": "PubMed Central",
           "source_type": "repository"
         },
         {
@@ -384,7 +414,7 @@
           "position": "middle",
           "author_id": "A5014471765",
           "display_name": "Shawn T. O’Neil",
-          "raw_author_name": "Shawn T O'Neil",
+          "raw_author_name": "Shawn T. O’Neil",
           "orcid": "0000-0001-6220-7080"
         },
         {
@@ -405,26 +435,26 @@
           "position": "middle",
           "author_id": "A5002618601",
           "display_name": "Rena C. Patel",
-          "raw_author_name": "Rena C Patel",
+          "raw_author_name": "Rena C. Patel",
           "orcid": "0000-0001-9893-5856"
         },
         {
           "position": "last",
           "author_id": "A5064320417",
           "display_name": "Melissa Anne Haendel",
-          "raw_author_name": "Melissa A Haendel",
+          "raw_author_name": "Melissa A. Haendel",
           "orcid": "0000-0001-9114-8737"
         }
       ],
-      "cited_by_count": 33,
+      "cited_by_count": 37,
       "counts_by_year": [
         {
           "year": 2026,
-          "cited_by_count": 20
+          "cited_by_count": 23
         },
         {
           "year": 2025,
-          "cited_by_count": 8
+          "cited_by_count": 9
         },
         {
           "year": 2024,
@@ -481,6 +511,16 @@
           "source_type": "journal"
         },
         {
+          "id": "doi:10.1101/2024.02.05.24302352",
+          "doi": "10.1101/2024.02.05.24302352",
+          "landing_page_url": "http://dx.doi.org/10.1101/2024.02.05.24302352",
+          "pdf_url": "https://www.medrxiv.org/content/medrxiv/early/2024/02/06/2024.02.05.24302352.full.pdf",
+          "is_oa": true,
+          "version": "submittedVersion",
+          "source": "medRxiv",
+          "source_type": "repository"
+        },
+        {
           "id": "pmh:oai:pubmedcentral.nih.gov:11462648",
           "doi": null,
           "landing_page_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/11462648",
@@ -501,6 +541,16 @@
           "source_type": "repository"
         },
         {
+          "id": "pmh:cdr.lib.unc.edu:xp68kx219",
+          "doi": null,
+          "landing_page_url": "https://doi.org/10.17615/qzk6-0023",
+          "pdf_url": "https://cdr.lib.unc.edu/downloads/6h4417081",
+          "is_oa": true,
+          "version": "submittedVersion",
+          "source": "Carolina Digital Repository (University of North Carolina at Chapel Hill)",
+          "source_type": "repository"
+        },
+        {
           "id": "pmh:oai:escholarship.org:ark:/13030/qt5c73f5kg",
           "doi": null,
           "landing_page_url": "https://escholarship.org/uc/item/5c73f5kg",
@@ -518,6 +568,16 @@
           "is_oa": true,
           "version": "submittedVersion",
           "source": "DOAJ (DOAJ: Directory of Open Access Journals)",
+          "source_type": "repository"
+        },
+        {
+          "id": "doi:10.17615/qzk6-0023",
+          "doi": "10.17615/qzk6-0023",
+          "landing_page_url": "https://doi.org/10.17615/qzk6-0023",
+          "pdf_url": null,
+          "is_oa": true,
+          "version": null,
+          "source": "UNC Libraries",
           "source_type": "repository"
         }
       ],
@@ -607,7 +667,7 @@
           "orcid": "0000-0002-3769-0127"
         }
       ],
-      "cited_by_count": 16,
+      "cited_by_count": 20,
       "counts_by_year": [
         {
           "year": 2026,
@@ -615,7 +675,11 @@
         },
         {
           "year": 2025,
-          "cited_by_count": 9
+          "cited_by_count": 10
+        },
+        {
+          "year": 2024,
+          "cited_by_count": 3
         }
       ],
       "biblio": {
@@ -673,9 +737,19 @@
           "landing_page_url": "https://doi.org/10.2196/preprints.53322",
           "pdf_url": null,
           "is_oa": true,
-          "version": "acceptedVersion",
+          "version": "submittedVersion",
           "source": null,
           "source_type": null
+        },
+        {
+          "id": "doi:10.1101/2023.07.27.23293272",
+          "doi": "10.1101/2023.07.27.23293272",
+          "landing_page_url": "https://doi.org/10.1101/2023.07.27.23293272",
+          "pdf_url": "https://www.medrxiv.org/content/medrxiv/early/2023/09/19/2023.07.27.23293272.full.pdf",
+          "is_oa": true,
+          "version": "submittedVersion",
+          "source": "medRxiv",
+          "source_type": "repository"
         },
         {
           "id": "pmid:39146534",
@@ -741,21 +815,21 @@
           "position": "middle",
           "author_id": "A5086728908",
           "display_name": "Junming Shi",
-          "raw_author_name": "Junming Shi",
+          "raw_author_name": "Junming (Seraphina) Shi",
           "orcid": "0000-0002-1520-8387"
         },
         {
           "position": "middle",
           "author_id": "A5016848069",
           "display_name": "Rachael V. Phillips",
-          "raw_author_name": "Rachael V Phillips",
+          "raw_author_name": "Rachael V. Philips",
           "orcid": "0000-0002-8474-591X"
         },
         {
           "position": "middle",
           "author_id": "A5011313784",
           "display_name": "Andrew Mertens",
-          "raw_author_name": "Andrew N Mertens",
+          "raw_author_name": "Andrew Mertens",
           "orcid": "0000-0002-1050-6721"
         },
         {
@@ -769,40 +843,44 @@
           "position": "middle",
           "author_id": "A5110130449",
           "display_name": "Mark J. van der Laan",
-          "raw_author_name": "Mark J van der Laan",
+          "raw_author_name": "Mark J. van der Laan",
           "orcid": "0000-0003-1432-5511"
         },
         {
           "position": "middle",
           "author_id": "A5002618601",
           "display_name": "Rena C. Patel",
-          "raw_author_name": "Rena C Patel",
+          "raw_author_name": "Rena Patel",
           "orcid": "0000-0001-9893-5856"
         },
         {
           "position": "middle",
           "author_id": "A5044934375",
           "display_name": "John M. Colford",
-          "raw_author_name": "John M Colford",
+          "raw_author_name": "John M. Colford",
           "orcid": "0000-0002-3288-6956"
         },
         {
           "position": "last",
           "author_id": "A5013304554",
           "display_name": "Alan Hubbard",
-          "raw_author_name": "Alan E Hubbard",
+          "raw_author_name": "Alan E. Hubbard",
           "orcid": "0000-0002-3769-0127"
         }
       ],
-      "cited_by_count": 12,
+      "cited_by_count": 16,
       "counts_by_year": [
         {
           "year": 2026,
-          "cited_by_count": 9
+          "cited_by_count": 10
         },
         {
           "year": 2025,
-          "cited_by_count": 3
+          "cited_by_count": 4
+        },
+        {
+          "year": 2024,
+          "cited_by_count": 2
         }
       ],
       "biblio": {
@@ -853,6 +931,16 @@
           "version": "publishedVersion",
           "source": "Nature Communications",
           "source_type": "journal"
+        },
+        {
+          "id": "doi:10.1101/2024.05.10.24307069",
+          "doi": "10.1101/2024.05.10.24307069",
+          "landing_page_url": "https://doi.org/10.1101/2024.05.10.24307069",
+          "pdf_url": null,
+          "is_oa": true,
+          "version": "submittedVersion",
+          "source": "medRxiv",
+          "source_type": "repository"
         },
         {
           "id": "pmh:oai:pubmedcentral.nih.gov:11718192",
@@ -1134,15 +1222,15 @@
           "orcid": "0000-0002-3877-3469"
         }
       ],
-      "cited_by_count": 10,
+      "cited_by_count": 11,
       "counts_by_year": [
         {
           "year": 2026,
-          "cited_by_count": 6
+          "cited_by_count": 8
         },
         {
           "year": 2025,
-          "cited_by_count": 4
+          "cited_by_count": 3
         }
       ],
       "biblio": {
@@ -1150,6 +1238,206 @@
         "issue": "1",
         "first_page": "556",
         "last_page": "556"
+      },
+      "is_retracted": false,
+      "is_paratext": false
+    },
+    {
+      "id": "W4407132144",
+      "doi": "10.1136/bmjdrc-2024-004536",
+      "title": "Association of glycemic control with Long COVID in patients with type 2 diabetes: findings from the National COVID Cohort Collaborative (N3C)",
+      "publication_year": 2025,
+      "publication_date": "2025-02-01",
+      "type": "article",
+      "pmid": "https://pubmed.ncbi.nlm.nih.gov/39904520",
+      "pmcid": "https://www.ncbi.nlm.nih.gov/pmc/articles/11795369",
+      "primary_location": {
+        "id": "doi:10.1136/bmjdrc-2024-004536",
+        "doi": "10.1136/bmjdrc-2024-004536",
+        "landing_page_url": "https://doi.org/10.1136/bmjdrc-2024-004536",
+        "pdf_url": "https://drc.bmj.com/content/13/1/e004536.full.pdf",
+        "is_oa": true,
+        "version": "publishedVersion",
+        "source": "BMJ Open Diabetes Research & Care",
+        "source_type": "journal"
+      },
+      "best_oa_location": {
+        "id": "doi:10.1136/bmjdrc-2024-004536",
+        "doi": "10.1136/bmjdrc-2024-004536",
+        "landing_page_url": "https://doi.org/10.1136/bmjdrc-2024-004536",
+        "pdf_url": "https://drc.bmj.com/content/13/1/e004536.full.pdf",
+        "is_oa": true,
+        "version": "publishedVersion",
+        "source": "BMJ Open Diabetes Research & Care",
+        "source_type": "journal"
+      },
+      "locations": [
+        {
+          "id": "doi:10.1136/bmjdrc-2024-004536",
+          "doi": "10.1136/bmjdrc-2024-004536",
+          "landing_page_url": "https://doi.org/10.1136/bmjdrc-2024-004536",
+          "pdf_url": "https://drc.bmj.com/content/13/1/e004536.full.pdf",
+          "is_oa": true,
+          "version": "publishedVersion",
+          "source": "BMJ Open Diabetes Research & Care",
+          "source_type": "journal"
+        },
+        {
+          "id": "pmh:oai:pubmedcentral.nih.gov:11795369",
+          "doi": null,
+          "landing_page_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/11795369",
+          "pdf_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11795369/pdf/bmjdrc-13-1.pdf",
+          "is_oa": true,
+          "version": "publishedVersion",
+          "source": "PubMed Central",
+          "source_type": "repository"
+        },
+        {
+          "id": "pmid:39904520",
+          "doi": null,
+          "landing_page_url": "https://pubmed.ncbi.nlm.nih.gov/39904520",
+          "pdf_url": null,
+          "is_oa": false,
+          "version": "publishedVersion",
+          "source": "PubMed",
+          "source_type": "repository"
+        },
+        {
+          "id": "pmh:cdr.lib.unc.edu:3197z1780",
+          "doi": null,
+          "landing_page_url": "https://doi.org/10.17615/58j5-x854",
+          "pdf_url": "https://cdr.lib.unc.edu/downloads/zk51vz261",
+          "is_oa": true,
+          "version": "submittedVersion",
+          "source": "Carolina Digital Repository (University of North Carolina at Chapel Hill)",
+          "source_type": "repository"
+        },
+        {
+          "id": "pmh:oai:escholarship.org:ark:/13030/qt6xp4q6fm",
+          "doi": null,
+          "landing_page_url": "https://escholarship.org/uc/item/6xp4q6fm",
+          "pdf_url": "https://escholarship.org/content/qt6xp4q6fm/qt6xp4q6fm.pdf",
+          "is_oa": true,
+          "version": "submittedVersion",
+          "source": "eScholarship (California Digital Library)",
+          "source_type": "repository"
+        },
+        {
+          "id": "pmh:oai:doaj.org/article:3c1f9bb4182849c88d4cc56ab4cd95c7",
+          "doi": null,
+          "landing_page_url": "https://doaj.org/article/3c1f9bb4182849c88d4cc56ab4cd95c7",
+          "pdf_url": null,
+          "is_oa": false,
+          "version": "submittedVersion",
+          "source": "DOAJ (DOAJ: Directory of Open Access Journals)",
+          "source_type": "repository"
+        },
+        {
+          "id": "doi:10.17615/58j5-x854",
+          "doi": "10.17615/58j5-x854",
+          "landing_page_url": "https://doi.org/10.17615/58j5-x854",
+          "pdf_url": null,
+          "is_oa": true,
+          "version": null,
+          "source": "UNC Libraries",
+          "source_type": "repository"
+        }
+      ],
+      "authorships": [
+        {
+          "position": "first",
+          "author_id": "A5116145435",
+          "display_name": "Samuel P. Soff",
+          "raw_author_name": "Samuel Soff",
+          "orcid": "0000-0001-5851-6075"
+        },
+        {
+          "position": "middle",
+          "author_id": "A5015377962",
+          "display_name": "Yun Jae Yoo",
+          "raw_author_name": "Yun Jae Yoo",
+          "orcid": "0000-0003-2144-8480"
+        },
+        {
+          "position": "middle",
+          "author_id": "A5009702241",
+          "display_name": "Carolyn T. Bramante",
+          "raw_author_name": "Carolyn Bramante",
+          "orcid": "0000-0001-5858-2080"
+        },
+        {
+          "position": "middle",
+          "author_id": "A5029406825",
+          "display_name": "Jane E.B. Reusch",
+          "raw_author_name": "Jane E B Reusch",
+          "orcid": "0000-0001-8620-1003"
+        },
+        {
+          "position": "middle",
+          "author_id": "A5077107233",
+          "display_name": "Jared D. Huling",
+          "raw_author_name": "Jared Davis Huling",
+          "orcid": "0000-0003-0670-4845"
+        },
+        {
+          "position": "middle",
+          "author_id": "A5115444811",
+          "display_name": "Margaret A Hall",
+          "raw_author_name": "Margaret A Hall",
+          "orcid": "0000-0002-6263-440X"
+        },
+        {
+          "position": "middle",
+          "author_id": "A5086417145",
+          "display_name": "Daniel Brannock",
+          "raw_author_name": "Daniel Brannock",
+          "orcid": "0000-0001-8095-547X"
+        },
+        {
+          "position": "middle",
+          "author_id": "A5043069598",
+          "display_name": "Til Stürmer‎",
+          "raw_author_name": "Til Sturmer",
+          "orcid": "0000-0002-9204-7177"
+        },
+        {
+          "position": "middle",
+          "author_id": "A5080035458",
+          "display_name": "Zachary Butzin-Dozier",
+          "raw_author_name": "Zachary Butzin-Dozier",
+          "orcid": "0000-0001-6419-0008"
+        },
+        {
+          "position": "middle",
+          "author_id": "A5086498395",
+          "display_name": "Rachel Wong",
+          "raw_author_name": "Rachel Wong",
+          "orcid": "0000-0003-3108-7324"
+        },
+        {
+          "position": "last",
+          "author_id": "A5022550153",
+          "display_name": "Richard A. Moffitt",
+          "raw_author_name": "Richard Moffitt",
+          "orcid": "0000-0003-2723-5902"
+        }
+      ],
+      "cited_by_count": 9,
+      "counts_by_year": [
+        {
+          "year": 2026,
+          "cited_by_count": 6
+        },
+        {
+          "year": 2025,
+          "cited_by_count": 3
+        }
+      ],
+      "biblio": {
+        "volume": "13",
+        "issue": "1",
+        "first_page": "e004536",
+        "last_page": "e004536"
       },
       "is_retracted": false,
       "is_paratext": false
@@ -1215,6 +1503,16 @@
           "source_type": "repository"
         },
         {
+          "id": "pmh:cdr.lib.unc.edu:0p096n32v",
+          "doi": null,
+          "landing_page_url": "https://doi.org/10.17615/xhdk-h129",
+          "pdf_url": "https://cdr.lib.unc.edu/downloads/cc08hw42q",
+          "is_oa": true,
+          "version": "submittedVersion",
+          "source": "Carolina Digital Repository (University of North Carolina at Chapel Hill)",
+          "source_type": "repository"
+        },
+        {
           "id": "pmh:oai:escholarship.org:ark:/13030/qt60q7s9vn",
           "doi": null,
           "landing_page_url": "https://escholarship.org/uc/item/60q7s9vn",
@@ -1222,6 +1520,16 @@
           "is_oa": true,
           "version": "submittedVersion",
           "source": "eScholarship (California Digital Library)",
+          "source_type": "repository"
+        },
+        {
+          "id": "pmh:cdr.lib.unc.edu:n583z875s",
+          "doi": null,
+          "landing_page_url": "https://cdr.lib.unc.edu/concern/articles/n583z875s",
+          "pdf_url": null,
+          "is_oa": false,
+          "version": "submittedVersion",
+          "source": "Carolina Digital Repository (University of North Carolina at Chapel Hill)",
           "source_type": "repository"
         },
         {
@@ -1233,13 +1541,23 @@
           "version": "submittedVersion",
           "source": "DOAJ (DOAJ: Directory of Open Access Journals)",
           "source_type": "repository"
+        },
+        {
+          "id": "doi:10.17615/xhdk-h129",
+          "doi": "10.17615/xhdk-h129",
+          "landing_page_url": "https://doi.org/10.17615/xhdk-h129",
+          "pdf_url": null,
+          "is_oa": true,
+          "version": null,
+          "source": "UNC Libraries",
+          "source_type": "repository"
         }
       ],
       "authorships": [
         {
           "position": "first",
           "author_id": "A5089789268",
-          "display_name": "Timothy R. Bergquist",
+          "display_name": "Timothy Bergquist",
           "raw_author_name": "Timothy Bergquist",
           "orcid": "0000-0001-5614-8977"
         },
@@ -1840,10 +2158,10 @@
         },
         {
           "position": "middle",
-          "author_id": null,
+          "author_id": "A5032226587",
           "display_name": "Sunyang Fu",
           "raw_author_name": "Sunyang Fu",
-          "orcid": null
+          "orcid": "0000-0003-1691-5179"
         },
         {
           "position": "middle",
@@ -1937,11 +2255,11 @@
           "orcid": null
         }
       ],
-      "cited_by_count": 7,
+      "cited_by_count": 8,
       "counts_by_year": [
         {
           "year": 2026,
-          "cited_by_count": 5
+          "cited_by_count": 6
         },
         {
           "year": 2025,
@@ -1958,59 +2276,69 @@
       "is_paratext": false
     },
     {
-      "id": "W4407132144",
-      "doi": "10.1136/bmjdrc-2024-004536",
-      "title": "Association of glycemic control with Long COVID in patients with type 2 diabetes: findings from the National COVID Cohort Collaborative (N3C)",
-      "publication_year": 2025,
-      "publication_date": "2025-02-01",
+      "id": "W3115837294",
+      "doi": "10.3390/antibiotics10010002",
+      "title": "Assessing Upstream Determinants of Antibiotic Use in Small-Scale Food Animal Production through a Simulated Client Method",
+      "publication_year": 2020,
+      "publication_date": "2020-12-23",
       "type": "article",
-      "pmid": "https://pubmed.ncbi.nlm.nih.gov/39904520",
-      "pmcid": "https://www.ncbi.nlm.nih.gov/pmc/articles/11795369",
+      "pmid": "https://pubmed.ncbi.nlm.nih.gov/33374513",
+      "pmcid": "https://www.ncbi.nlm.nih.gov/pmc/articles/7822171",
       "primary_location": {
-        "id": "doi:10.1136/bmjdrc-2024-004536",
-        "doi": "10.1136/bmjdrc-2024-004536",
-        "landing_page_url": "https://doi.org/10.1136/bmjdrc-2024-004536",
-        "pdf_url": "https://drc.bmj.com/content/13/1/e004536.full.pdf",
+        "id": "doi:10.3390/antibiotics10010002",
+        "doi": "10.3390/antibiotics10010002",
+        "landing_page_url": "https://doi.org/10.3390/antibiotics10010002",
+        "pdf_url": "https://www.mdpi.com/2079-6382/10/1/2/pdf?version=1608805768",
         "is_oa": true,
         "version": "publishedVersion",
-        "source": "BMJ Open Diabetes Research & Care",
+        "source": "Antibiotics",
         "source_type": "journal"
       },
       "best_oa_location": {
-        "id": "doi:10.1136/bmjdrc-2024-004536",
-        "doi": "10.1136/bmjdrc-2024-004536",
-        "landing_page_url": "https://doi.org/10.1136/bmjdrc-2024-004536",
-        "pdf_url": "https://drc.bmj.com/content/13/1/e004536.full.pdf",
+        "id": "doi:10.3390/antibiotics10010002",
+        "doi": "10.3390/antibiotics10010002",
+        "landing_page_url": "https://doi.org/10.3390/antibiotics10010002",
+        "pdf_url": "https://www.mdpi.com/2079-6382/10/1/2/pdf?version=1608805768",
         "is_oa": true,
         "version": "publishedVersion",
-        "source": "BMJ Open Diabetes Research & Care",
+        "source": "Antibiotics",
         "source_type": "journal"
       },
       "locations": [
         {
-          "id": "doi:10.1136/bmjdrc-2024-004536",
-          "doi": "10.1136/bmjdrc-2024-004536",
-          "landing_page_url": "https://doi.org/10.1136/bmjdrc-2024-004536",
-          "pdf_url": "https://drc.bmj.com/content/13/1/e004536.full.pdf",
+          "id": "doi:10.3390/antibiotics10010002",
+          "doi": "10.3390/antibiotics10010002",
+          "landing_page_url": "https://doi.org/10.3390/antibiotics10010002",
+          "pdf_url": "https://www.mdpi.com/2079-6382/10/1/2/pdf?version=1608805768",
           "is_oa": true,
           "version": "publishedVersion",
-          "source": "BMJ Open Diabetes Research & Care",
+          "source": "Antibiotics",
           "source_type": "journal"
         },
         {
-          "id": "pmh:oai:pubmedcentral.nih.gov:11795369",
+          "id": "pmh:oai:europepmc.org:6730077",
           "doi": null,
-          "landing_page_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/11795369",
-          "pdf_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11795369/pdf/bmjdrc-13-1.pdf",
+          "landing_page_url": "http://europepmc.org/pmc/articles/PMC7822171",
+          "pdf_url": null,
+          "is_oa": true,
+          "version": "publishedVersion",
+          "source": "Europe PMC (PubMed Central)",
+          "source_type": "repository"
+        },
+        {
+          "id": "pmh:oai:pubmedcentral.nih.gov:7822171",
+          "doi": null,
+          "landing_page_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/7822171",
+          "pdf_url": null,
           "is_oa": true,
           "version": "publishedVersion",
           "source": "PubMed Central",
           "source_type": "repository"
         },
         {
-          "id": "pmid:39904520",
+          "id": "pmid:33374513",
           "doi": null,
-          "landing_page_url": "https://pubmed.ncbi.nlm.nih.gov/39904520",
+          "landing_page_url": "https://pubmed.ncbi.nlm.nih.gov/33374513",
           "pdf_url": null,
           "is_oa": false,
           "version": "publishedVersion",
@@ -2018,29 +2346,182 @@
           "source_type": "repository"
         },
         {
-          "id": "pmh:cdr.lib.unc.edu:3197z1780",
+          "id": "pmh:oai:doaj.org/article:98aec5b0164a41f8b19a1bf544f33121",
           "doi": null,
-          "landing_page_url": "https://doi.org/10.17615/58j5-x854",
-          "pdf_url": "https://cdr.lib.unc.edu/downloads/zk51vz261",
+          "landing_page_url": "https://doaj.org/article/98aec5b0164a41f8b19a1bf544f33121",
+          "pdf_url": null,
           "is_oa": true,
           "version": "submittedVersion",
-          "source": "Carolina Digital Repository (University of North Carolina at Chapel Hill)",
+          "source": "DOAJ (DOAJ: Directory of Open Access Journals)",
           "source_type": "repository"
         },
         {
-          "id": "pmh:oai:escholarship.org:ark:/13030/qt6xp4q6fm",
+          "id": "pmh:oai:escholarship.org/ark:/13030/qt8993v7hv",
           "doi": null,
-          "landing_page_url": "https://escholarship.org/uc/item/6xp4q6fm",
-          "pdf_url": "https://escholarship.org/content/qt6xp4q6fm/qt6xp4q6fm.pdf",
-          "is_oa": true,
+          "landing_page_url": "https://escholarship.org/uc/item/8993v7hv",
+          "pdf_url": null,
+          "is_oa": false,
           "version": "submittedVersion",
           "source": "eScholarship (California Digital Library)",
           "source_type": "repository"
         },
         {
-          "id": "pmh:oai:doaj.org/article:3c1f9bb4182849c88d4cc56ab4cd95c7",
+          "id": "pmh:oai:escholarship.org:ark:/13030/qt8993v7hv",
           "doi": null,
-          "landing_page_url": "https://doaj.org/article/3c1f9bb4182849c88d4cc56ab4cd95c7",
+          "landing_page_url": "https://escholarship.org/uc/item/8993v7hv",
+          "pdf_url": null,
+          "is_oa": true,
+          "version": "submittedVersion",
+          "source": "eScholarship (California Digital Library)",
+          "source_type": "repository"
+        }
+      ],
+      "authorships": [
+        {
+          "position": "first",
+          "author_id": "A5080035458",
+          "display_name": "Zachary Butzin-Dozier",
+          "raw_author_name": "Zachary Butzin-Dozier",
+          "orcid": "0000-0001-6419-0008"
+        },
+        {
+          "position": "middle",
+          "author_id": "A5035913759",
+          "display_name": "William F. Waters",
+          "raw_author_name": "William F. Waters",
+          "orcid": "0000-0001-6222-8551"
+        },
+        {
+          "position": "middle",
+          "author_id": "A5014160871",
+          "display_name": "Martin Baca",
+          "raw_author_name": "Martin Baca",
+          "orcid": "0009-0004-4392-4120"
+        },
+        {
+          "position": "middle",
+          "author_id": "A5043010974",
+          "display_name": "Rommel Lenin Vinueza",
+          "raw_author_name": "Rommel Lenin Vinueza",
+          "orcid": "0000-0002-4587-8795"
+        },
+        {
+          "position": "middle",
+          "author_id": "A5038358864",
+          "display_name": "Carlos Saraiva-Garcia",
+          "raw_author_name": "Carlos Saraiva-Garcia",
+          "orcid": "0000-0003-0224-9734"
+        },
+        {
+          "position": "last",
+          "author_id": "A5020714393",
+          "display_name": "Jay P. Graham",
+          "raw_author_name": "Jay Graham",
+          "orcid": "0000-0001-7062-6293"
+        }
+      ],
+      "cited_by_count": 13,
+      "counts_by_year": [
+        {
+          "year": 2025,
+          "cited_by_count": 2
+        },
+        {
+          "year": 2023,
+          "cited_by_count": 6
+        },
+        {
+          "year": 2022,
+          "cited_by_count": 4
+        },
+        {
+          "year": 2021,
+          "cited_by_count": 1
+        }
+      ],
+      "biblio": {
+        "volume": "10",
+        "issue": "1",
+        "first_page": "2",
+        "last_page": "2"
+      },
+      "is_retracted": false,
+      "is_paratext": false
+    },
+    {
+      "id": "W4223418940",
+      "doi": "10.1186/s12889-022-13073-4",
+      "title": "Antibiotic use by backyard food animal producers in Ecuador: a qualitative study",
+      "publication_year": 2022,
+      "publication_date": "2022-04-08",
+      "type": "article",
+      "pmid": "https://pubmed.ncbi.nlm.nih.gov/35395759",
+      "pmcid": "https://www.ncbi.nlm.nih.gov/pmc/articles/8991794",
+      "primary_location": {
+        "id": "doi:10.1186/s12889-022-13073-4",
+        "doi": "10.1186/s12889-022-13073-4",
+        "landing_page_url": "https://doi.org/10.1186/s12889-022-13073-4",
+        "pdf_url": "https://bmcpublichealth.biomedcentral.com/track/pdf/10.1186/s12889-022-13073-4",
+        "is_oa": true,
+        "version": "publishedVersion",
+        "source": "BMC Public Health",
+        "source_type": "journal"
+      },
+      "best_oa_location": {
+        "id": "doi:10.1186/s12889-022-13073-4",
+        "doi": "10.1186/s12889-022-13073-4",
+        "landing_page_url": "https://doi.org/10.1186/s12889-022-13073-4",
+        "pdf_url": "https://bmcpublichealth.biomedcentral.com/track/pdf/10.1186/s12889-022-13073-4",
+        "is_oa": true,
+        "version": "publishedVersion",
+        "source": "BMC Public Health",
+        "source_type": "journal"
+      },
+      "locations": [
+        {
+          "id": "doi:10.1186/s12889-022-13073-4",
+          "doi": "10.1186/s12889-022-13073-4",
+          "landing_page_url": "https://doi.org/10.1186/s12889-022-13073-4",
+          "pdf_url": "https://bmcpublichealth.biomedcentral.com/track/pdf/10.1186/s12889-022-13073-4",
+          "is_oa": true,
+          "version": "publishedVersion",
+          "source": "BMC Public Health",
+          "source_type": "journal"
+        },
+        {
+          "id": "doi:10.21203/rs.3.rs-455696/v1",
+          "doi": "10.21203/rs.3.rs-455696/v1",
+          "landing_page_url": "https://doi.org/10.21203/rs.3.rs-455696/v1",
+          "pdf_url": "https://www.researchsquare.com/article/rs-455696/latest.pdf",
+          "is_oa": true,
+          "version": "submittedVersion",
+          "source": "Research Square",
+          "source_type": "repository"
+        },
+        {
+          "id": "pmh:oai:pubmedcentral.nih.gov:8991794",
+          "doi": null,
+          "landing_page_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/8991794",
+          "pdf_url": null,
+          "is_oa": true,
+          "version": "publishedVersion",
+          "source": "PubMed Central",
+          "source_type": "repository"
+        },
+        {
+          "id": "pmid:35395759",
+          "doi": null,
+          "landing_page_url": "https://pubmed.ncbi.nlm.nih.gov/35395759",
+          "pdf_url": null,
+          "is_oa": false,
+          "version": "publishedVersion",
+          "source": "PubMed",
+          "source_type": "repository"
+        },
+        {
+          "id": "pmh:oai:doaj.org/article:839c1ad96f0d419da348fbd5b518c474",
+          "doi": null,
+          "landing_page_url": "https://doaj.org/article/839c1ad96f0d419da348fbd5b518c474",
           "pdf_url": null,
           "is_oa": false,
           "version": "submittedVersion",
@@ -2048,72 +2529,57 @@
           "source_type": "repository"
         },
         {
-          "id": "doi:10.17615/58j5-x854",
-          "doi": "10.17615/58j5-x854",
-          "landing_page_url": "https://doi.org/10.17615/58j5-x854",
+          "id": "pmh:oai:escholarship.org:ark:/13030/qt2fc8583x",
+          "doi": null,
+          "landing_page_url": "https://escholarship.org/uc/item/2fc8583x",
+          "pdf_url": null,
+          "is_oa": true,
+          "version": "submittedVersion",
+          "source": "eScholarship (California Digital Library)",
+          "source_type": "repository"
+        },
+        {
+          "id": "doi:10.60692/c1n6z-5va13",
+          "doi": "10.60692/c1n6z-5va13",
+          "landing_page_url": "https://doi.org/10.60692/c1n6z-5va13",
           "pdf_url": null,
           "is_oa": true,
           "version": null,
-          "source": "UNC Libraries",
+          "source": "Greater South Information System",
+          "source_type": "repository"
+        },
+        {
+          "id": "doi:10.60692/rm9d6-fsk84",
+          "doi": "10.60692/rm9d6-fsk84",
+          "landing_page_url": "https://doi.org/10.60692/rm9d6-fsk84",
+          "pdf_url": null,
+          "is_oa": true,
+          "version": null,
+          "source": "Greater South Information System",
           "source_type": "repository"
         }
       ],
       "authorships": [
         {
           "position": "first",
-          "author_id": "A5116145435",
-          "display_name": "Samuel P. Soff",
-          "raw_author_name": "Samuel Soff",
-          "orcid": "0000-0001-5851-6075"
+          "author_id": "A5035913759",
+          "display_name": "William F. Waters",
+          "raw_author_name": "William F. Waters",
+          "orcid": "0000-0001-6222-8551"
         },
         {
           "position": "middle",
-          "author_id": "A5015377962",
-          "display_name": "Yun Jae Yoo",
-          "raw_author_name": "Yun Jae Yoo",
-          "orcid": "0000-0003-2144-8480"
+          "author_id": "A5014160871",
+          "display_name": "Martin Baca",
+          "raw_author_name": "Martin Baca",
+          "orcid": "0009-0004-4392-4120"
         },
         {
           "position": "middle",
-          "author_id": "A5009702241",
-          "display_name": "Carolyn T. Bramante",
-          "raw_author_name": "Carolyn Bramante",
-          "orcid": "0000-0001-5858-2080"
-        },
-        {
-          "position": "middle",
-          "author_id": "A5029406825",
-          "display_name": "Jane E.B. Reusch",
-          "raw_author_name": "Jane E B Reusch",
-          "orcid": "0000-0001-8620-1003"
-        },
-        {
-          "position": "middle",
-          "author_id": "A5077107233",
-          "display_name": "Jared D. Huling",
-          "raw_author_name": "Jared Davis Huling",
-          "orcid": "0000-0003-0670-4845"
-        },
-        {
-          "position": "middle",
-          "author_id": "A5115444811",
-          "display_name": "Margaret A Hall",
-          "raw_author_name": "Margaret A Hall",
-          "orcid": "0000-0002-6263-440X"
-        },
-        {
-          "position": "middle",
-          "author_id": "A5086417145",
-          "display_name": "M. Daniel Brannock",
-          "raw_author_name": "Daniel Brannock",
-          "orcid": "0000-0001-8095-547X"
-        },
-        {
-          "position": "middle",
-          "author_id": "A5043069598",
-          "display_name": "Til Stürmer‎",
-          "raw_author_name": "Til Sturmer",
-          "orcid": "0000-0002-9204-7177"
+          "author_id": "A5020714393",
+          "display_name": "Jay P. Graham",
+          "raw_author_name": "Jay P. Graham",
+          "orcid": "0000-0001-7062-6293"
         },
         {
           "position": "middle",
@@ -2123,36 +2589,37 @@
           "orcid": "0000-0001-6419-0008"
         },
         {
-          "position": "middle",
-          "author_id": "A5086498395",
-          "display_name": "Rachel Wong",
-          "raw_author_name": "Rachel Wong",
-          "orcid": "0000-0003-3108-7324"
-        },
-        {
           "position": "last",
-          "author_id": "A5022550153",
-          "display_name": "Richard A. Moffitt",
-          "raw_author_name": "Richard Moffitt",
-          "orcid": "0000-0003-2723-5902"
+          "author_id": "A5043010974",
+          "display_name": "Rommel Lenin Vinueza",
+          "raw_author_name": "Lenin Vinueza",
+          "orcid": "0000-0002-4587-8795"
         }
       ],
-      "cited_by_count": 6,
+      "cited_by_count": 12,
       "counts_by_year": [
         {
           "year": 2026,
-          "cited_by_count": 5
+          "cited_by_count": 1
         },
         {
           "year": 2025,
-          "cited_by_count": 1
+          "cited_by_count": 3
+        },
+        {
+          "year": 2024,
+          "cited_by_count": 3
+        },
+        {
+          "year": 2023,
+          "cited_by_count": 5
         }
       ],
       "biblio": {
-        "volume": "13",
+        "volume": "22",
         "issue": "1",
-        "first_page": "e004536",
-        "last_page": "e004536"
+        "first_page": "685",
+        "last_page": "685"
       },
       "is_retracted": false,
       "is_paratext": false
@@ -2203,7 +2670,7 @@
           "landing_page_url": "https://doi.org/10.1101/2024.03.21.24304684",
           "pdf_url": "https://www.medrxiv.org/content/medrxiv/early/2024/03/26/2024.03.21.24304684.full.pdf",
           "is_oa": true,
-          "version": "acceptedVersion",
+          "version": "submittedVersion",
           "source": "medRxiv",
           "source_type": "repository"
         },
@@ -2358,7 +2825,7 @@
           "author_id": "A5046245557",
           "display_name": "Syeda Luthfa Famida",
           "raw_author_name": "Syeda L. Famida",
-          "orcid": null
+          "orcid": "0000-0002-3403-6736"
         },
         {
           "position": "middle",
@@ -2400,7 +2867,7 @@
           "author_id": "A5048723336",
           "display_name": "Md Ohedul Islam",
           "raw_author_name": "Md. Ohedul Islam",
-          "orcid": "0000-0002-3403-6736"
+          "orcid": "0000-0001-6105-7295"
         },
         {
           "position": "middle",
@@ -2473,11 +2940,11 @@
           "orcid": "0000-0002-3877-3469"
         }
       ],
-      "cited_by_count": 5,
+      "cited_by_count": 6,
       "counts_by_year": [
         {
           "year": 2026,
-          "cited_by_count": 4
+          "cited_by_count": 5
         },
         {
           "year": 2025,
@@ -2494,59 +2961,69 @@
       "is_paratext": false
     },
     {
-      "id": "W3115837294",
-      "doi": "10.3390/antibiotics10010002",
-      "title": "Assessing Upstream Determinants of Antibiotic Use in Small-Scale Food Animal Production through a Simulated Client Method",
-      "publication_year": 2020,
-      "publication_date": "2020-12-23",
+      "id": "W4410632753",
+      "doi": "10.2196/67585",
+      "title": "Unlocking the Potential of Wear Time of a Wearable Device to Enhance Postpartum Depression Screening and Detection: Cross-Sectional Study",
+      "publication_year": 2025,
+      "publication_date": "2025-05-23",
       "type": "article",
-      "pmid": "https://pubmed.ncbi.nlm.nih.gov/33374513",
-      "pmcid": "https://www.ncbi.nlm.nih.gov/pmc/articles/7822171",
+      "pmid": "https://pubmed.ncbi.nlm.nih.gov/39417142",
+      "pmcid": "https://www.ncbi.nlm.nih.gov/pmc/articles/11483018",
       "primary_location": {
-        "id": "doi:10.3390/antibiotics10010002",
-        "doi": "10.3390/antibiotics10010002",
-        "landing_page_url": "https://doi.org/10.3390/antibiotics10010002",
-        "pdf_url": "https://www.mdpi.com/2079-6382/10/1/2/pdf?version=1608805768",
+        "id": "doi:10.2196/67585",
+        "doi": "10.2196/67585",
+        "landing_page_url": "https://doi.org/10.2196/67585",
+        "pdf_url": "https://formative.jmir.org/2025/1/e67585/PDF",
         "is_oa": true,
         "version": "publishedVersion",
-        "source": "Antibiotics",
+        "source": "JMIR Formative Research",
         "source_type": "journal"
       },
       "best_oa_location": {
-        "id": "doi:10.3390/antibiotics10010002",
-        "doi": "10.3390/antibiotics10010002",
-        "landing_page_url": "https://doi.org/10.3390/antibiotics10010002",
-        "pdf_url": "https://www.mdpi.com/2079-6382/10/1/2/pdf?version=1608805768",
+        "id": "doi:10.2196/67585",
+        "doi": "10.2196/67585",
+        "landing_page_url": "https://doi.org/10.2196/67585",
+        "pdf_url": "https://formative.jmir.org/2025/1/e67585/PDF",
         "is_oa": true,
         "version": "publishedVersion",
-        "source": "Antibiotics",
+        "source": "JMIR Formative Research",
         "source_type": "journal"
       },
       "locations": [
         {
-          "id": "doi:10.3390/antibiotics10010002",
-          "doi": "10.3390/antibiotics10010002",
-          "landing_page_url": "https://doi.org/10.3390/antibiotics10010002",
-          "pdf_url": "https://www.mdpi.com/2079-6382/10/1/2/pdf?version=1608805768",
+          "id": "doi:10.2196/67585",
+          "doi": "10.2196/67585",
+          "landing_page_url": "https://doi.org/10.2196/67585",
+          "pdf_url": "https://formative.jmir.org/2025/1/e67585/PDF",
           "is_oa": true,
           "version": "publishedVersion",
-          "source": "Antibiotics",
+          "source": "JMIR Formative Research",
           "source_type": "journal"
         },
         {
-          "id": "pmh:oai:europepmc.org:6730077",
-          "doi": null,
-          "landing_page_url": "http://europepmc.org/pmc/articles/PMC7822171",
+          "id": "doi:10.2196/preprints.67585",
+          "doi": "10.2196/preprints.67585",
+          "landing_page_url": "https://doi.org/10.2196/preprints.67585",
+          "pdf_url": null,
+          "is_oa": false,
+          "version": "submittedVersion",
+          "source": null,
+          "source_type": null
+        },
+        {
+          "id": "doi:10.1101/2024.10.07.24315026",
+          "doi": "10.1101/2024.10.07.24315026",
+          "landing_page_url": "https://doi.org/10.1101/2024.10.07.24315026",
           "pdf_url": null,
           "is_oa": true,
-          "version": "publishedVersion",
-          "source": "Europe PMC (PubMed Central)",
+          "version": "submittedVersion",
+          "source": "medRxiv",
           "source_type": "repository"
         },
         {
-          "id": "pmh:oai:pubmedcentral.nih.gov:7822171",
+          "id": "pmh:oai:pubmedcentral.nih.gov:12144471",
           "doi": null,
-          "landing_page_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/7822171",
+          "landing_page_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/12144471",
           "pdf_url": null,
           "is_oa": true,
           "version": "publishedVersion",
@@ -2554,9 +3031,9 @@
           "source_type": "repository"
         },
         {
-          "id": "pmid:33374513",
+          "id": "pmid:39417142",
           "doi": null,
-          "landing_page_url": "https://pubmed.ncbi.nlm.nih.gov/33374513",
+          "landing_page_url": "https://pubmed.ncbi.nlm.nih.gov/39417142",
           "pdf_url": null,
           "is_oa": false,
           "version": "publishedVersion",
@@ -2564,30 +3041,155 @@
           "source_type": "repository"
         },
         {
-          "id": "pmh:oai:doaj.org/article:98aec5b0164a41f8b19a1bf544f33121",
+          "id": "pmid:40409746",
           "doi": null,
-          "landing_page_url": "https://doaj.org/article/98aec5b0164a41f8b19a1bf544f33121",
+          "landing_page_url": "https://pubmed.ncbi.nlm.nih.gov/40409746",
+          "pdf_url": null,
+          "is_oa": false,
+          "version": "publishedVersion",
+          "source": "PubMed",
+          "source_type": "repository"
+        },
+        {
+          "id": "pmh:cdr.lib.unc.edu:xp68kx732",
+          "doi": null,
+          "landing_page_url": "https://doi.org/10.17615/0sh5-mt86",
+          "pdf_url": "https://cdr.lib.unc.edu/downloads/3n204c708",
+          "is_oa": true,
+          "version": "submittedVersion",
+          "source": "Carolina Digital Repository (University of North Carolina at Chapel Hill)",
+          "source_type": "repository"
+        },
+        {
+          "id": "pmh:oai:pubmedcentral.nih.gov:11483018",
+          "doi": null,
+          "landing_page_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/11483018",
+          "pdf_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11483018/pdf/nihpp-2024.10.07.24315026v1.pdf",
+          "is_oa": true,
+          "version": "submittedVersion",
+          "source": "PubMed Central",
+          "source_type": "repository"
+        },
+        {
+          "id": "pmh:oai:doaj.org/article:54ee9b548a9d4d2a97f7544411e0deb2",
+          "doi": null,
+          "landing_page_url": "https://doaj.org/article/54ee9b548a9d4d2a97f7544411e0deb2",
           "pdf_url": null,
           "is_oa": true,
           "version": "submittedVersion",
           "source": "DOAJ (DOAJ: Directory of Open Access Journals)",
           "source_type": "repository"
+        }
+      ],
+      "authorships": [
+        {
+          "position": "first",
+          "author_id": "A5085274034",
+          "display_name": "Eric G. Hurwitz",
+          "raw_author_name": "Eric Hurwitz",
+          "orcid": "0000-0002-6581-7754"
         },
         {
-          "id": "pmh:oai:escholarship.org/ark:/13030/qt8993v7hv",
-          "doi": null,
-          "landing_page_url": "https://escholarship.org/uc/item/8993v7hv",
-          "pdf_url": null,
-          "is_oa": false,
-          "version": "submittedVersion",
-          "source": "eScholarship (California Digital Library)",
-          "source_type": "repository"
+          "position": "middle",
+          "author_id": "A5000446863",
+          "display_name": "Samantha E Meltzer-Brody",
+          "raw_author_name": "Samantha Meltzer-Brody",
+          "orcid": "0000-0002-8509-408X"
         },
         {
-          "id": "pmh:oai:escholarship.org:ark:/13030/qt8993v7hv",
+          "position": "middle",
+          "author_id": "A5080035458",
+          "display_name": "Zachary Butzin-Dozier",
+          "raw_author_name": "Zachary Butzin-Dozier",
+          "orcid": "0000-0001-6419-0008"
+        },
+        {
+          "position": "middle",
+          "author_id": "A5002618601",
+          "display_name": "Rena C. Patel",
+          "raw_author_name": "Rena C. Patel",
+          "orcid": "0000-0001-9893-5856"
+        },
+        {
+          "position": "middle",
+          "author_id": "A5047270546",
+          "display_name": "Noémie Elhadad",
+          "raw_author_name": "Noémie Elhadad",
+          "orcid": "0000-0001-9721-5240"
+        },
+        {
+          "position": "last",
+          "author_id": "A5064320417",
+          "display_name": "Melissa Anne Haendel",
+          "raw_author_name": "Melissa A. Haendel",
+          "orcid": "0000-0001-9114-8737"
+        }
+      ],
+      "cited_by_count": 4,
+      "counts_by_year": [
+        {
+          "year": 2026,
+          "cited_by_count": 3
+        },
+        {
+          "year": 2025,
+          "cited_by_count": 1
+        }
+      ],
+      "biblio": {
+        "volume": "9",
+        "issue": null,
+        "first_page": "e67585",
+        "last_page": "e67585"
+      },
+      "is_retracted": false,
+      "is_paratext": false
+    },
+    {
+      "id": "W3200908016",
+      "doi": "10.3396/ijic.v17.20628",
+      "title": "Challenges and opportunities for scaling up infection prevention and control programmes in rural district hospitals of Tamil Nadu, India",
+      "publication_year": 2021,
+      "publication_date": "2021-09-20",
+      "type": "article",
+      "pmid": null,
+      "pmcid": null,
+      "primary_location": {
+        "id": "doi:10.3396/ijic.v17.20628",
+        "doi": "10.3396/ijic.v17.20628",
+        "landing_page_url": "https://doi.org/10.3396/ijic.v17.20628",
+        "pdf_url": "https://www.ijic.info/article/download/20628/14187",
+        "is_oa": true,
+        "version": "publishedVersion",
+        "source": "International journal of infection control",
+        "source_type": "journal"
+      },
+      "best_oa_location": {
+        "id": "doi:10.3396/ijic.v17.20628",
+        "doi": "10.3396/ijic.v17.20628",
+        "landing_page_url": "https://doi.org/10.3396/ijic.v17.20628",
+        "pdf_url": "https://www.ijic.info/article/download/20628/14187",
+        "is_oa": true,
+        "version": "publishedVersion",
+        "source": "International journal of infection control",
+        "source_type": "journal"
+      },
+      "locations": [
+        {
+          "id": "doi:10.3396/ijic.v17.20628",
+          "doi": "10.3396/ijic.v17.20628",
+          "landing_page_url": "https://doi.org/10.3396/ijic.v17.20628",
+          "pdf_url": "https://www.ijic.info/article/download/20628/14187",
+          "is_oa": true,
+          "version": "publishedVersion",
+          "source": "International journal of infection control",
+          "source_type": "journal"
+        },
+        {
+          "id": "pmh:oai:escholarship.org:ark:/13030/qt9f3418kj",
           "doi": null,
-          "landing_page_url": "https://escholarship.org/uc/item/8993v7hv",
-          "pdf_url": null,
+          "landing_page_url": "https://escholarship.org/uc/item/9f3418kj",
+          "pdf_url": "https://escholarship.org/content/qt9f3418kj/qt9f3418kj.pdf",
           "is_oa": true,
           "version": "submittedVersion",
           "source": "eScholarship (California Digital Library)",
@@ -2597,38 +3199,24 @@
       "authorships": [
         {
           "position": "first",
+          "author_id": "A5058313322",
+          "display_name": "Maya Guhan",
+          "raw_author_name": "Maya Guhan",
+          "orcid": "0000-0002-6960-5978"
+        },
+        {
+          "position": "middle",
+          "author_id": "A5101840736",
+          "display_name": "Mohan Kumar M",
+          "raw_author_name": "Mohan Kumar",
+          "orcid": "0000-0003-4599-4160"
+        },
+        {
+          "position": "middle",
           "author_id": "A5080035458",
           "display_name": "Zachary Butzin-Dozier",
           "raw_author_name": "Zachary Butzin-Dozier",
           "orcid": "0000-0001-6419-0008"
-        },
-        {
-          "position": "middle",
-          "author_id": "A5035913759",
-          "display_name": "William F. Waters",
-          "raw_author_name": "William F. Waters",
-          "orcid": "0000-0001-6222-8551"
-        },
-        {
-          "position": "middle",
-          "author_id": "A5014160871",
-          "display_name": "Martin Baca",
-          "raw_author_name": "Martin Baca",
-          "orcid": "0009-0004-4392-4120"
-        },
-        {
-          "position": "middle",
-          "author_id": "A5043010974",
-          "display_name": "Rommel Lenin Vinueza",
-          "raw_author_name": "Rommel Lenin Vinueza",
-          "orcid": "0000-0002-4587-8795"
-        },
-        {
-          "position": "middle",
-          "author_id": "A5038358864",
-          "display_name": "Carlos Saraiva-Garcia",
-          "raw_author_name": "Carlos Saraiva-Garcia",
-          "orcid": "0000-0003-0224-9734"
         },
         {
           "position": "last",
@@ -2638,314 +3226,18 @@
           "orcid": "0000-0001-7062-6293"
         }
       ],
-      "cited_by_count": 14,
-      "counts_by_year": [
-        {
-          "year": 2025,
-          "cited_by_count": 2
-        },
-        {
-          "year": 2023,
-          "cited_by_count": 6
-        },
-        {
-          "year": 2022,
-          "cited_by_count": 4
-        },
-        {
-          "year": 2021,
-          "cited_by_count": 2
-        }
-      ],
-      "biblio": {
-        "volume": "10",
-        "issue": "1",
-        "first_page": "2",
-        "last_page": "2"
-      },
-      "is_retracted": false,
-      "is_paratext": false
-    },
-    {
-      "id": "W4223418940",
-      "doi": "10.1186/s12889-022-13073-4",
-      "title": "Antibiotic use by backyard food animal producers in Ecuador: a qualitative study",
-      "publication_year": 2022,
-      "publication_date": "2022-04-08",
-      "type": "article",
-      "pmid": "https://pubmed.ncbi.nlm.nih.gov/35395759",
-      "pmcid": "https://www.ncbi.nlm.nih.gov/pmc/articles/8991794",
-      "primary_location": {
-        "id": "doi:10.1186/s12889-022-13073-4",
-        "doi": "10.1186/s12889-022-13073-4",
-        "landing_page_url": "https://doi.org/10.1186/s12889-022-13073-4",
-        "pdf_url": "https://bmcpublichealth.biomedcentral.com/track/pdf/10.1186/s12889-022-13073-4",
-        "is_oa": true,
-        "version": "publishedVersion",
-        "source": "BMC Public Health",
-        "source_type": "journal"
-      },
-      "best_oa_location": {
-        "id": "doi:10.1186/s12889-022-13073-4",
-        "doi": "10.1186/s12889-022-13073-4",
-        "landing_page_url": "https://doi.org/10.1186/s12889-022-13073-4",
-        "pdf_url": "https://bmcpublichealth.biomedcentral.com/track/pdf/10.1186/s12889-022-13073-4",
-        "is_oa": true,
-        "version": "publishedVersion",
-        "source": "BMC Public Health",
-        "source_type": "journal"
-      },
-      "locations": [
-        {
-          "id": "doi:10.1186/s12889-022-13073-4",
-          "doi": "10.1186/s12889-022-13073-4",
-          "landing_page_url": "https://doi.org/10.1186/s12889-022-13073-4",
-          "pdf_url": "https://bmcpublichealth.biomedcentral.com/track/pdf/10.1186/s12889-022-13073-4",
-          "is_oa": true,
-          "version": "publishedVersion",
-          "source": "BMC Public Health",
-          "source_type": "journal"
-        },
-        {
-          "id": "pmh:oai:pubmedcentral.nih.gov:8991794",
-          "doi": null,
-          "landing_page_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/8991794",
-          "pdf_url": null,
-          "is_oa": true,
-          "version": "publishedVersion",
-          "source": "PubMed Central",
-          "source_type": "repository"
-        },
-        {
-          "id": "pmid:35395759",
-          "doi": null,
-          "landing_page_url": "https://pubmed.ncbi.nlm.nih.gov/35395759",
-          "pdf_url": null,
-          "is_oa": false,
-          "version": "publishedVersion",
-          "source": "PubMed",
-          "source_type": "repository"
-        },
-        {
-          "id": "pmh:oai:doaj.org/article:839c1ad96f0d419da348fbd5b518c474",
-          "doi": null,
-          "landing_page_url": "https://doaj.org/article/839c1ad96f0d419da348fbd5b518c474",
-          "pdf_url": null,
-          "is_oa": false,
-          "version": "submittedVersion",
-          "source": "DOAJ (DOAJ: Directory of Open Access Journals)",
-          "source_type": "repository"
-        },
-        {
-          "id": "pmh:oai:escholarship.org:ark:/13030/qt2fc8583x",
-          "doi": null,
-          "landing_page_url": "https://escholarship.org/uc/item/2fc8583x",
-          "pdf_url": null,
-          "is_oa": true,
-          "version": "submittedVersion",
-          "source": "eScholarship (California Digital Library)",
-          "source_type": "repository"
-        },
-        {
-          "id": "doi:10.60692/c1n6z-5va13",
-          "doi": "10.60692/c1n6z-5va13",
-          "landing_page_url": "https://doi.org/10.60692/c1n6z-5va13",
-          "pdf_url": null,
-          "is_oa": true,
-          "version": null,
-          "source": "Greater South Information System",
-          "source_type": "repository"
-        },
-        {
-          "id": "doi:10.60692/rm9d6-fsk84",
-          "doi": "10.60692/rm9d6-fsk84",
-          "landing_page_url": "https://doi.org/10.60692/rm9d6-fsk84",
-          "pdf_url": null,
-          "is_oa": true,
-          "version": null,
-          "source": "Greater South Information System",
-          "source_type": "repository"
-        }
-      ],
-      "authorships": [
-        {
-          "position": "first",
-          "author_id": "A5035913759",
-          "display_name": "William F. Waters",
-          "raw_author_name": "William F. Waters",
-          "orcid": "0000-0001-6222-8551"
-        },
-        {
-          "position": "middle",
-          "author_id": "A5014160871",
-          "display_name": "Martin Baca",
-          "raw_author_name": "Martin Baca",
-          "orcid": "0009-0004-4392-4120"
-        },
-        {
-          "position": "middle",
-          "author_id": "A5020714393",
-          "display_name": "Jay P. Graham",
-          "raw_author_name": "Jay P. Graham",
-          "orcid": "0000-0001-7062-6293"
-        },
-        {
-          "position": "middle",
-          "author_id": "A5080035458",
-          "display_name": "Zachary Butzin-Dozier",
-          "raw_author_name": "Zachary Butzin-Dozier",
-          "orcid": "0000-0001-6419-0008"
-        },
-        {
-          "position": "last",
-          "author_id": "A5043010974",
-          "display_name": "Rommel Lenin Vinueza",
-          "raw_author_name": "Lenin Vinueza",
-          "orcid": "0000-0002-4587-8795"
-        }
-      ],
-      "cited_by_count": 12,
-      "counts_by_year": [
-        {
-          "year": 2025,
-          "cited_by_count": 3
-        },
-        {
-          "year": 2024,
-          "cited_by_count": 4
-        },
-        {
-          "year": 2023,
-          "cited_by_count": 4
-        },
-        {
-          "year": 2022,
-          "cited_by_count": 1
-        }
-      ],
-      "biblio": {
-        "volume": "22",
-        "issue": "1",
-        "first_page": "685",
-        "last_page": "685"
-      },
-      "is_retracted": false,
-      "is_paratext": false
-    },
-    {
-      "id": "W4280492772",
-      "doi": "10.1093/epirev/mxac003",
-      "title": "A Review of the Ring Trial Design for Evaluating Ring Interventions for Infectious Diseases",
-      "publication_year": 2022,
-      "publication_date": "2022-01-01",
-      "type": "review",
-      "pmid": "https://pubmed.ncbi.nlm.nih.gov/35593400",
-      "pmcid": "https://www.ncbi.nlm.nih.gov/pmc/articles/10362935",
-      "primary_location": {
-        "id": "doi:10.1093/epirev/mxac003",
-        "doi": "10.1093/epirev/mxac003",
-        "landing_page_url": "https://doi.org/10.1093/epirev/mxac003",
-        "pdf_url": null,
-        "is_oa": false,
-        "version": "publishedVersion",
-        "source": "Epidemiologic Reviews",
-        "source_type": "journal"
-      },
-      "best_oa_location": {
-        "id": "pmh:oai:pubmedcentral.nih.gov:10362935",
-        "doi": null,
-        "landing_page_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/10362935",
-        "pdf_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10362935/pdf/mxac003.pdf",
-        "is_oa": true,
-        "version": "publishedVersion",
-        "source": "PubMed Central",
-        "source_type": "repository"
-      },
-      "locations": [
-        {
-          "id": "doi:10.1093/epirev/mxac003",
-          "doi": "10.1093/epirev/mxac003",
-          "landing_page_url": "https://doi.org/10.1093/epirev/mxac003",
-          "pdf_url": null,
-          "is_oa": false,
-          "version": "publishedVersion",
-          "source": "Epidemiologic Reviews",
-          "source_type": "journal"
-        },
-        {
-          "id": "pmh:oai:pubmedcentral.nih.gov:10362935",
-          "doi": null,
-          "landing_page_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/10362935",
-          "pdf_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10362935/pdf/mxac003.pdf",
-          "is_oa": true,
-          "version": "publishedVersion",
-          "source": "PubMed Central",
-          "source_type": "repository"
-        },
-        {
-          "id": "pmid:35593400",
-          "doi": null,
-          "landing_page_url": "https://pubmed.ncbi.nlm.nih.gov/35593400",
-          "pdf_url": null,
-          "is_oa": false,
-          "version": "publishedVersion",
-          "source": "PubMed",
-          "source_type": "repository"
-        },
-        {
-          "id": "pmh:oai:escholarship.org:ark:/13030/qt0r0565dn",
-          "doi": null,
-          "landing_page_url": "https://escholarship.org/uc/item/0r0565dn",
-          "pdf_url": null,
-          "is_oa": false,
-          "version": "submittedVersion",
-          "source": "eScholarship (California Digital Library)",
-          "source_type": "repository"
-        }
-      ],
-      "authorships": [
-        {
-          "position": "first",
-          "author_id": "A5080035458",
-          "display_name": "Zachary Butzin-Dozier",
-          "raw_author_name": "Zachary Butzin-Dozier",
-          "orcid": "0000-0001-6419-0008"
-        },
-        {
-          "position": "middle",
-          "author_id": "A5082017981",
-          "display_name": "Tejas S. Athni",
-          "raw_author_name": "Tejas S Athni",
-          "orcid": "0000-0002-6336-0826"
-        },
-        {
-          "position": "last",
-          "author_id": "A5078448184",
-          "display_name": "Jade Benjamin‐Chung",
-          "raw_author_name": "Jade Benjamin-Chung",
-          "orcid": "0000-0003-3631-3132"
-        }
-      ],
-      "cited_by_count": 5,
+      "cited_by_count": 2,
       "counts_by_year": [
         {
           "year": 2026,
-          "cited_by_count": 1
-        },
-        {
-          "year": 2024,
-          "cited_by_count": 3
-        },
-        {
-          "year": 2023,
-          "cited_by_count": 1
+          "cited_by_count": 2
         }
       ],
       "biblio": {
-        "volume": "44",
-        "issue": "1",
-        "first_page": "29",
-        "last_page": "54"
+        "volume": "17",
+        "issue": null,
+        "first_page": null,
+        "last_page": null
       },
       "is_retracted": false,
       "is_paratext": false
@@ -2996,7 +3288,7 @@
           "landing_page_url": "http://dx.doi.org/10.1101/2023.09.12.23295429",
           "pdf_url": "https://www.medrxiv.org/content/medrxiv/early/2023/09/12/2023.09.12.23295429.full.pdf",
           "is_oa": true,
-          "version": "acceptedVersion",
+          "version": "submittedVersion",
           "source": "medRxiv",
           "source_type": "repository"
         },
@@ -3158,7 +3450,7 @@
           "author_id": "A5046245557",
           "display_name": "Syeda Luthfa Famida",
           "raw_author_name": "Syeda Luthfa Famida",
-          "orcid": null
+          "orcid": "0000-0002-3403-6736"
         },
         {
           "position": "middle",
@@ -3319,51 +3611,71 @@
       "is_paratext": false
     },
     {
-      "id": "W3200908016",
-      "doi": "10.3396/ijic.v17.20628",
-      "title": "Challenges and opportunities for scaling up infection prevention and control programmes in rural district hospitals of Tamil Nadu, India",
-      "publication_year": 2021,
-      "publication_date": "2021-09-20",
-      "type": "article",
-      "pmid": null,
-      "pmcid": null,
+      "id": "W4280492772",
+      "doi": "10.1093/epirev/mxac003",
+      "title": "A Review of the Ring Trial Design for Evaluating Ring Interventions for Infectious Diseases",
+      "publication_year": 2022,
+      "publication_date": "2022-01-01",
+      "type": "review",
+      "pmid": "https://pubmed.ncbi.nlm.nih.gov/35593400",
+      "pmcid": "https://www.ncbi.nlm.nih.gov/pmc/articles/10362935",
       "primary_location": {
-        "id": "doi:10.3396/ijic.v17.20628",
-        "doi": "10.3396/ijic.v17.20628",
-        "landing_page_url": "https://doi.org/10.3396/ijic.v17.20628",
-        "pdf_url": "https://www.ijic.info/article/download/20628/14187",
-        "is_oa": true,
+        "id": "doi:10.1093/epirev/mxac003",
+        "doi": "10.1093/epirev/mxac003",
+        "landing_page_url": "https://doi.org/10.1093/epirev/mxac003",
+        "pdf_url": null,
+        "is_oa": false,
         "version": "publishedVersion",
-        "source": "International journal of infection control",
+        "source": "Epidemiologic Reviews",
         "source_type": "journal"
       },
       "best_oa_location": {
-        "id": "doi:10.3396/ijic.v17.20628",
-        "doi": "10.3396/ijic.v17.20628",
-        "landing_page_url": "https://doi.org/10.3396/ijic.v17.20628",
-        "pdf_url": "https://www.ijic.info/article/download/20628/14187",
+        "id": "pmh:oai:pubmedcentral.nih.gov:10362935",
+        "doi": null,
+        "landing_page_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/10362935",
+        "pdf_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10362935/pdf/mxac003.pdf",
         "is_oa": true,
         "version": "publishedVersion",
-        "source": "International journal of infection control",
-        "source_type": "journal"
+        "source": "PubMed Central",
+        "source_type": "repository"
       },
       "locations": [
         {
-          "id": "doi:10.3396/ijic.v17.20628",
-          "doi": "10.3396/ijic.v17.20628",
-          "landing_page_url": "https://doi.org/10.3396/ijic.v17.20628",
-          "pdf_url": "https://www.ijic.info/article/download/20628/14187",
-          "is_oa": true,
+          "id": "doi:10.1093/epirev/mxac003",
+          "doi": "10.1093/epirev/mxac003",
+          "landing_page_url": "https://doi.org/10.1093/epirev/mxac003",
+          "pdf_url": null,
+          "is_oa": false,
           "version": "publishedVersion",
-          "source": "International journal of infection control",
+          "source": "Epidemiologic Reviews",
           "source_type": "journal"
         },
         {
-          "id": "pmh:oai:escholarship.org:ark:/13030/qt9f3418kj",
+          "id": "pmh:oai:pubmedcentral.nih.gov:10362935",
           "doi": null,
-          "landing_page_url": "https://escholarship.org/uc/item/9f3418kj",
-          "pdf_url": "https://escholarship.org/content/qt9f3418kj/qt9f3418kj.pdf",
+          "landing_page_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/10362935",
+          "pdf_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10362935/pdf/mxac003.pdf",
           "is_oa": true,
+          "version": "publishedVersion",
+          "source": "PubMed Central",
+          "source_type": "repository"
+        },
+        {
+          "id": "pmid:35593400",
+          "doi": null,
+          "landing_page_url": "https://pubmed.ncbi.nlm.nih.gov/35593400",
+          "pdf_url": null,
+          "is_oa": false,
+          "version": "publishedVersion",
+          "source": "PubMed",
+          "source_type": "repository"
+        },
+        {
+          "id": "pmh:oai:escholarship.org:ark:/13030/qt0r0565dn",
+          "doi": null,
+          "landing_page_url": "https://escholarship.org/uc/item/0r0565dn",
+          "pdf_url": null,
+          "is_oa": false,
           "version": "submittedVersion",
           "source": "eScholarship (California Digital Library)",
           "source_type": "repository"
@@ -3372,49 +3684,42 @@
       "authorships": [
         {
           "position": "first",
-          "author_id": "A5058313322",
-          "display_name": "Maya Guhan",
-          "raw_author_name": "Maya Guhan",
-          "orcid": "0000-0002-6960-5978"
-        },
-        {
-          "position": "middle",
-          "author_id": "A5101840736",
-          "display_name": "Mohan Kumar M",
-          "raw_author_name": "Mohan Kumar",
-          "orcid": "0000-0003-4599-4160"
-        },
-        {
-          "position": "middle",
           "author_id": "A5080035458",
           "display_name": "Zachary Butzin-Dozier",
           "raw_author_name": "Zachary Butzin-Dozier",
           "orcid": "0000-0001-6419-0008"
         },
         {
+          "position": "middle",
+          "author_id": "A5082017981",
+          "display_name": "Tejas S. Athni",
+          "raw_author_name": "Tejas S Athni",
+          "orcid": "0000-0002-6336-0826"
+        },
+        {
           "position": "last",
-          "author_id": "A5020714393",
-          "display_name": "Jay P. Graham",
-          "raw_author_name": "Jay Graham",
-          "orcid": "0000-0001-7062-6293"
+          "author_id": "A5078448184",
+          "display_name": "Jade Benjamin‐Chung",
+          "raw_author_name": "Jade Benjamin-Chung",
+          "orcid": "0000-0003-3631-3132"
         }
       ],
-      "cited_by_count": 3,
+      "cited_by_count": 4,
       "counts_by_year": [
         {
           "year": 2026,
-          "cited_by_count": 2
+          "cited_by_count": 1
         },
         {
-          "year": 2021,
-          "cited_by_count": 1
+          "year": 2024,
+          "cited_by_count": 3
         }
       ],
       "biblio": {
-        "volume": "17",
-        "issue": null,
-        "first_page": null,
-        "last_page": null
+        "volume": "44",
+        "issue": "1",
+        "first_page": "29",
+        "last_page": "54"
       },
       "is_retracted": false,
       "is_paratext": false
@@ -3465,7 +3770,7 @@
           "landing_page_url": "https://doi.org/10.1101/2025.04.22.25326224",
           "pdf_url": "https://www.medrxiv.org/content/medrxiv/early/2025/04/23/2025.04.22.25326224.full.pdf",
           "is_oa": true,
-          "version": "acceptedVersion",
+          "version": "submittedVersion",
           "source": "medRxiv",
           "source_type": "repository"
         },
@@ -4233,6 +4538,171 @@
       "is_paratext": false
     },
     {
+      "id": "W7167598324",
+      "doi": "10.1377/hlthaff.2025.00179",
+      "title": "Black Patients Underdiagnosed With Long COVID In The US Compared With White Patients",
+      "publication_year": 2026,
+      "publication_date": "2026-07-01",
+      "type": "article",
+      "pmid": "https://pubmed.ncbi.nlm.nih.gov/42413051",
+      "pmcid": null,
+      "primary_location": {
+        "id": "doi:10.1377/hlthaff.2025.00179",
+        "doi": "10.1377/hlthaff.2025.00179",
+        "landing_page_url": "https://doi.org/10.1377/hlthaff.2025.00179",
+        "pdf_url": null,
+        "is_oa": false,
+        "version": "publishedVersion",
+        "source": "Health Affairs",
+        "source_type": "journal"
+      },
+      "best_oa_location": null,
+      "locations": [
+        {
+          "id": "doi:10.1377/hlthaff.2025.00179",
+          "doi": "10.1377/hlthaff.2025.00179",
+          "landing_page_url": "https://doi.org/10.1377/hlthaff.2025.00179",
+          "pdf_url": null,
+          "is_oa": false,
+          "version": "publishedVersion",
+          "source": "Health Affairs",
+          "source_type": "journal"
+        },
+        {
+          "id": "pmid:42413051",
+          "doi": null,
+          "landing_page_url": "https://pubmed.ncbi.nlm.nih.gov/42413051",
+          "pdf_url": null,
+          "is_oa": false,
+          "version": "publishedVersion",
+          "source": "PubMed",
+          "source_type": "repository"
+        }
+      ],
+      "authorships": [
+        {
+          "position": "first",
+          "author_id": "A5080035458",
+          "display_name": "Zachary Butzin-Dozier",
+          "raw_author_name": "Zachary Butzin-Dozier",
+          "orcid": "0000-0001-6419-0008"
+        },
+        {
+          "position": "middle",
+          "author_id": "A5014831537",
+          "display_name": "Yunwen Ji",
+          "raw_author_name": "Yunwen Ji",
+          "orcid": "0000-0002-6077-5102"
+        },
+        {
+          "position": "middle",
+          "author_id": "A5159382334",
+          "display_name": "Sarang Deshpande",
+          "raw_author_name": "Sarang Deshpande",
+          "orcid": null
+        },
+        {
+          "position": "middle",
+          "author_id": "A5122873197",
+          "display_name": "A. Jerrod Anzalone",
+          "raw_author_name": "A. Jerrod Anzalone",
+          "orcid": null
+        },
+        {
+          "position": "middle",
+          "author_id": "A5082284400",
+          "display_name": "Letianchu Wang",
+          "raw_author_name": "Lin-Chiun Wang",
+          "orcid": null
+        },
+        {
+          "position": "middle",
+          "author_id": "A5085274034",
+          "display_name": "Eric G. Hurwitz",
+          "raw_author_name": "Eric Hurwitz",
+          "orcid": "0000-0002-6581-7754"
+        },
+        {
+          "position": "middle",
+          "author_id": "A5007448347",
+          "display_name": "M Narendra Kumar",
+          "raw_author_name": "Manav Kumar",
+          "orcid": null
+        },
+        {
+          "position": "middle",
+          "author_id": "A5002618601",
+          "display_name": "Rena C. Patel",
+          "raw_author_name": "Rena C. Patel",
+          "orcid": "0000-0001-9893-5856"
+        },
+        {
+          "position": "middle",
+          "author_id": "A5140176109",
+          "display_name": "Jing Sun",
+          "raw_author_name": "Jing Sun",
+          "orcid": null
+        },
+        {
+          "position": "middle",
+          "author_id": "A5079280628",
+          "display_name": "McKaylee Robertson",
+          "raw_author_name": "McKaylee Robertson",
+          "orcid": null
+        },
+        {
+          "position": "middle",
+          "author_id": "A5136221094",
+          "display_name": "Andrew Mertens",
+          "raw_author_name": "Andrew Mertens",
+          "orcid": "0000-0002-1050-6721"
+        },
+        {
+          "position": "middle",
+          "author_id": "A5058772437",
+          "display_name": "Marlene Camacho‐Rivera",
+          "raw_author_name": "Marlene Camacho-Rivera",
+          "orcid": "0000-0003-2343-2941"
+        },
+        {
+          "position": "middle",
+          "author_id": "A5044934375",
+          "display_name": "John M. Colford",
+          "raw_author_name": "John M. Colford",
+          "orcid": "0000-0002-3288-6956"
+        },
+        {
+          "position": "middle",
+          "author_id": "A5013304554",
+          "display_name": "Alan Hubbard",
+          "raw_author_name": "Alan E. Hubbard",
+          "orcid": "0000-0002-3769-0127"
+        },
+        {
+          "position": "last",
+          "author_id": "A5075276624",
+          "display_name": "Charisse Madlock‐Brown",
+          "raw_author_name": "Charisse Madlock-Brown",
+          "orcid": "0000-0002-3647-1045"
+        }
+      ],
+      "cited_by_count": 2,
+      "counts_by_year": [
+        {
+          "year": 2026,
+          "cited_by_count": 2
+        }
+      ],
+      "biblio": {
+        "volume": "45",
+        "issue": "7",
+        "first_page": "775",
+        "last_page": "781"
+      },
+      "is_retracted": false,
+      "is_paratext": false
+    },
+    {
       "id": "W4410391103",
       "doi": "10.2196/68143",
       "title": "Identifying People Living With or Those at Risk for HIV in a Nationally Sampled Electronic Health Record Repository Called the National Clinical Cohort Collaborative: Computational Phenotyping Study",
@@ -4278,7 +4748,7 @@
           "landing_page_url": "https://doi.org/10.2196/preprints.68143",
           "pdf_url": null,
           "is_oa": false,
-          "version": "acceptedVersion",
+          "version": "submittedVersion",
           "source": null,
           "source_type": null
         },
@@ -4459,11 +4929,11 @@
       "counts_by_year": [
         {
           "year": 2026,
-          "cited_by_count": 2
+          "cited_by_count": 1
         },
         {
           "year": 2025,
-          "cited_by_count": 1
+          "cited_by_count": 2
         }
       ],
       "biblio": {
@@ -4476,69 +4946,49 @@
       "is_paratext": false
     },
     {
-      "id": "W4410632753",
-      "doi": "10.2196/67585",
-      "title": "Unlocking the Potential of Wear Time of a Wearable Device to Enhance Postpartum Depression Screening and Detection: Cross-Sectional Study",
+      "id": "W4416041107",
+      "doi": "10.1016/j.cdnut.2025.107596",
+      "title": "Associations Between Micronutrient Status, Hormones, and Immune Status During Pregnancy and Child Growth in Rural Bangladesh: A Prospective Cohort Study",
       "publication_year": 2025,
-      "publication_date": "2025-05-23",
+      "publication_date": "2025-11-08",
       "type": "article",
-      "pmid": "https://pubmed.ncbi.nlm.nih.gov/40409746",
-      "pmcid": "https://www.ncbi.nlm.nih.gov/pmc/articles/12144471",
+      "pmid": "https://pubmed.ncbi.nlm.nih.gov/41467215",
+      "pmcid": "https://www.ncbi.nlm.nih.gov/pmc/articles/12744257",
       "primary_location": {
-        "id": "doi:10.2196/67585",
-        "doi": "10.2196/67585",
-        "landing_page_url": "https://doi.org/10.2196/67585",
-        "pdf_url": "https://formative.jmir.org/2025/1/e67585/PDF",
+        "id": "doi:10.1016/j.cdnut.2025.107596",
+        "doi": "10.1016/j.cdnut.2025.107596",
+        "landing_page_url": "https://doi.org/10.1016/j.cdnut.2025.107596",
+        "pdf_url": "https://cdn.nutrition.org/article/S2475-2991(25)03058-6/pdf",
         "is_oa": true,
         "version": "publishedVersion",
-        "source": "JMIR Formative Research",
+        "source": "Current Developments in Nutrition",
         "source_type": "journal"
       },
       "best_oa_location": {
-        "id": "doi:10.2196/67585",
-        "doi": "10.2196/67585",
-        "landing_page_url": "https://doi.org/10.2196/67585",
-        "pdf_url": "https://formative.jmir.org/2025/1/e67585/PDF",
+        "id": "doi:10.1016/j.cdnut.2025.107596",
+        "doi": "10.1016/j.cdnut.2025.107596",
+        "landing_page_url": "https://doi.org/10.1016/j.cdnut.2025.107596",
+        "pdf_url": "https://cdn.nutrition.org/article/S2475-2991(25)03058-6/pdf",
         "is_oa": true,
         "version": "publishedVersion",
-        "source": "JMIR Formative Research",
+        "source": "Current Developments in Nutrition",
         "source_type": "journal"
       },
       "locations": [
         {
-          "id": "doi:10.2196/67585",
-          "doi": "10.2196/67585",
-          "landing_page_url": "https://doi.org/10.2196/67585",
-          "pdf_url": "https://formative.jmir.org/2025/1/e67585/PDF",
+          "id": "doi:10.1016/j.cdnut.2025.107596",
+          "doi": "10.1016/j.cdnut.2025.107596",
+          "landing_page_url": "https://doi.org/10.1016/j.cdnut.2025.107596",
+          "pdf_url": "https://cdn.nutrition.org/article/S2475-2991(25)03058-6/pdf",
           "is_oa": true,
           "version": "publishedVersion",
-          "source": "JMIR Formative Research",
+          "source": "Current Developments in Nutrition",
           "source_type": "journal"
         },
         {
-          "id": "doi:10.2196/preprints.67585",
-          "doi": "10.2196/preprints.67585",
-          "landing_page_url": "https://doi.org/10.2196/preprints.67585",
-          "pdf_url": null,
-          "is_oa": false,
-          "version": "acceptedVersion",
-          "source": null,
-          "source_type": null
-        },
-        {
-          "id": "pmh:oai:pubmedcentral.nih.gov:12144471",
+          "id": "pmid:41467215",
           "doi": null,
-          "landing_page_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/12144471",
-          "pdf_url": null,
-          "is_oa": true,
-          "version": "publishedVersion",
-          "source": "PubMed Central",
-          "source_type": "repository"
-        },
-        {
-          "id": "pmid:40409746",
-          "doi": null,
-          "landing_page_url": "https://pubmed.ncbi.nlm.nih.gov/40409746",
+          "landing_page_url": "https://pubmed.ncbi.nlm.nih.gov/41467215",
           "pdf_url": null,
           "is_oa": false,
           "version": "publishedVersion",
@@ -4546,19 +4996,29 @@
           "source_type": "repository"
         },
         {
-          "id": "pmh:cdr.lib.unc.edu:xp68kx732",
+          "id": "pmh:oai:pubmedcentral.nih.gov:12744257",
           "doi": null,
-          "landing_page_url": "https://doi.org/10.17615/0sh5-mt86",
-          "pdf_url": "https://cdr.lib.unc.edu/downloads/3n204c708",
+          "landing_page_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12744257/",
+          "pdf_url": null,
           "is_oa": true,
-          "version": "submittedVersion",
-          "source": "Carolina Digital Repository (University of North Carolina at Chapel Hill)",
+          "version": "publishedVersion",
+          "source": "PubMed Central",
           "source_type": "repository"
         },
         {
-          "id": "pmh:oai:doaj.org/article:54ee9b548a9d4d2a97f7544411e0deb2",
+          "id": "pmh:oai:DiVA.org:uu-575554",
           "doi": null,
-          "landing_page_url": "https://doaj.org/article/54ee9b548a9d4d2a97f7544411e0deb2",
+          "landing_page_url": "http://urn.kb.se/resolve?urn=urn:nbn:se:uu:diva-575554",
+          "pdf_url": "https://uu.diva-portal.org/smash/get/diva2:2027808/FULLTEXT01",
+          "is_oa": true,
+          "version": "submittedVersion",
+          "source": "KTH Publication Database DiVA (KTH Royal Institute of Technology)",
+          "source_type": "repository"
+        },
+        {
+          "id": "pmh:oai:doaj.org/article:99fbc5ba05b1493da4c2db068e3da45d",
+          "doi": null,
+          "landing_page_url": "https://doaj.org/article/99fbc5ba05b1493da4c2db068e3da45d",
           "pdf_url": null,
           "is_oa": true,
           "version": "submittedVersion",
@@ -4569,224 +5029,157 @@
       "authorships": [
         {
           "position": "first",
-          "author_id": "A5085274034",
-          "display_name": "Eric G. Hurwitz",
-          "raw_author_name": "Eric Hurwitz",
-          "orcid": "0000-0002-6581-7754"
+          "author_id": "A5042635376",
+          "display_name": "Belinda C. Chen",
+          "raw_author_name": "Belinda Chen",
+          "orcid": "0000-0002-8951-9866"
         },
         {
           "position": "middle",
-          "author_id": "A5000446863",
-          "display_name": "Samantha E Meltzer-Brody",
-          "raw_author_name": "Samantha Meltzer-Brody",
-          "orcid": "0000-0002-8509-408X"
-        },
-        {
-          "position": "middle",
-          "author_id": "A5080035458",
-          "display_name": "Zachary Butzin-Dozier",
-          "raw_author_name": "Zachary Butzin-Dozier",
-          "orcid": "0000-0001-6419-0008"
-        },
-        {
-          "position": "middle",
-          "author_id": "A5002618601",
-          "display_name": "Rena C. Patel",
-          "raw_author_name": "Rena C Patel",
-          "orcid": "0000-0001-9893-5856"
-        },
-        {
-          "position": "middle",
-          "author_id": "A5047270546",
-          "display_name": "Noémie Elhadad",
-          "raw_author_name": "Noémie Elhadad",
-          "orcid": "0000-0001-9721-5240"
-        },
-        {
-          "position": "last",
-          "author_id": "A5064320417",
-          "display_name": "Melissa Anne Haendel",
-          "raw_author_name": "Melissa A Haendel",
-          "orcid": "0000-0001-9114-8737"
-        }
-      ],
-      "cited_by_count": 2,
-      "counts_by_year": [
-        {
-          "year": 2026,
-          "cited_by_count": 2
-        }
-      ],
-      "biblio": {
-        "volume": "9",
-        "issue": null,
-        "first_page": "e67585",
-        "last_page": "e67585"
-      },
-      "is_retracted": false,
-      "is_paratext": false
-    },
-    {
-      "id": "W7167598324",
-      "doi": "10.1377/hlthaff.2025.00179",
-      "title": "Black Patients Underdiagnosed With Long COVID In The US Compared With White Patients",
-      "publication_year": 2026,
-      "publication_date": "2026-07-01",
-      "type": "article",
-      "pmid": "https://pubmed.ncbi.nlm.nih.gov/42413051",
-      "pmcid": null,
-      "primary_location": {
-        "id": "doi:10.1377/hlthaff.2025.00179",
-        "doi": "10.1377/hlthaff.2025.00179",
-        "landing_page_url": "https://doi.org/10.1377/hlthaff.2025.00179",
-        "pdf_url": null,
-        "is_oa": false,
-        "version": "publishedVersion",
-        "source": "Health Affairs",
-        "source_type": "journal"
-      },
-      "best_oa_location": null,
-      "locations": [
-        {
-          "id": "doi:10.1377/hlthaff.2025.00179",
-          "doi": "10.1377/hlthaff.2025.00179",
-          "landing_page_url": "https://doi.org/10.1377/hlthaff.2025.00179",
-          "pdf_url": null,
-          "is_oa": false,
-          "version": "publishedVersion",
-          "source": "Health Affairs",
-          "source_type": "journal"
-        },
-        {
-          "id": "pmid:42413051",
-          "doi": null,
-          "landing_page_url": "https://pubmed.ncbi.nlm.nih.gov/42413051",
-          "pdf_url": null,
-          "is_oa": false,
-          "version": "publishedVersion",
-          "source": "PubMed",
-          "source_type": "repository"
-        }
-      ],
-      "authorships": [
-        {
-          "position": "first",
-          "author_id": "A5080035458",
-          "display_name": "Zachary Butzin-Dozier",
-          "raw_author_name": "Zachary Butzin-Dozier",
-          "orcid": "0000-0001-6419-0008"
-        },
-        {
-          "position": "middle",
-          "author_id": "A5014831537",
-          "display_name": "Yunwen Ji",
-          "raw_author_name": "Yunwen Ji",
-          "orcid": "0000-0002-6077-5102"
-        },
-        {
-          "position": "middle",
-          "author_id": "A5159382334",
-          "display_name": "Sarang Deshpande",
-          "raw_author_name": "Sarang Deshpande",
-          "orcid": null
-        },
-        {
-          "position": "middle",
-          "author_id": "A5122873197",
-          "display_name": "A. Jerrod Anzalone",
-          "raw_author_name": "A. Jerrod Anzalone",
-          "orcid": null
-        },
-        {
-          "position": "middle",
-          "author_id": "A5082284400",
-          "display_name": "Letianchu Wang",
-          "raw_author_name": "Lin-Chiun Wang",
-          "orcid": null
-        },
-        {
-          "position": "middle",
-          "author_id": "A5085274034",
-          "display_name": "Eric G. Hurwitz",
-          "raw_author_name": "Eric Hurwitz",
-          "orcid": "0000-0002-6581-7754"
-        },
-        {
-          "position": "middle",
-          "author_id": "A5007448347",
-          "display_name": "M Narendra Kumar",
-          "raw_author_name": "Manav Kumar",
-          "orcid": null
-        },
-        {
-          "position": "middle",
-          "author_id": "A5002618601",
-          "display_name": "Rena C. Patel",
-          "raw_author_name": "Rena C. Patel",
-          "orcid": "0000-0001-9893-5856"
-        },
-        {
-          "position": "middle",
-          "author_id": "A5140176109",
-          "display_name": "Jing Sun",
-          "raw_author_name": "Jing Sun",
-          "orcid": null
-        },
-        {
-          "position": "middle",
-          "author_id": "A5079280628",
-          "display_name": "McKaylee Robertson",
-          "raw_author_name": "McKaylee Robertson",
-          "orcid": null
-        },
-        {
-          "position": "middle",
-          "author_id": "A5136221094",
+          "author_id": "A5011313784",
           "display_name": "Andrew Mertens",
-          "raw_author_name": "Andrew Mertens",
+          "raw_author_name": "Andrew N Mertens",
           "orcid": "0000-0002-1050-6721"
         },
         {
           "position": "middle",
-          "author_id": "A5058772437",
-          "display_name": "Marlene Camacho‐Rivera",
-          "raw_author_name": "Marlene Camacho-Rivera",
-          "orcid": "0000-0003-2343-2941"
+          "author_id": "A5073621812",
+          "display_name": "Chih-Hsien Lin",
+          "raw_author_name": "Chih-Hsien Lin",
+          "orcid": "0000-0003-2680-2784"
         },
         {
           "position": "middle",
-          "author_id": "A5044934375",
-          "display_name": "John M. Colford",
-          "raw_author_name": "John M. Colford",
-          "orcid": "0000-0002-3288-6956"
+          "author_id": "A5103212330",
+          "display_name": "Sophia T. Tan",
+          "raw_author_name": "Sophia T Tan",
+          "orcid": "0009-0000-5421-4627"
+        },
+        {
+          "position": "middle",
+          "author_id": "A5111062196",
+          "display_name": "Farheen Jamshed",
+          "raw_author_name": "Farheen Jamshed",
+          "orcid": null
+        },
+        {
+          "position": "middle",
+          "author_id": null,
+          "display_name": "Diego Figueroa",
+          "raw_author_name": "Diego Figueroa",
+          "orcid": null
+        },
+        {
+          "position": "middle",
+          "author_id": "A5010604844",
+          "display_name": "Caitlin Hemlock",
+          "raw_author_name": "Caitlin Hemlock",
+          "orcid": "0000-0002-1714-1016"
+        },
+        {
+          "position": "middle",
+          "author_id": "A5080035458",
+          "display_name": "Zachary Butzin-Dozier",
+          "raw_author_name": "Zachary Butzin-Dozier",
+          "orcid": "0000-0001-6419-0008"
+        },
+        {
+          "position": "middle",
+          "author_id": "A5059886126",
+          "display_name": "Lia C. H. Fernald",
+          "raw_author_name": "Lia CH Fernald",
+          "orcid": "0000-0003-1555-4607"
+        },
+        {
+          "position": "middle",
+          "author_id": "A5066146615",
+          "display_name": "Christine P. Stewart",
+          "raw_author_name": "Christine P Stewart",
+          "orcid": "0000-0003-4575-8571"
         },
         {
           "position": "middle",
           "author_id": "A5013304554",
           "display_name": "Alan Hubbard",
-          "raw_author_name": "Alan E. Hubbard",
+          "raw_author_name": "Alan E Hubbard",
           "orcid": "0000-0002-3769-0127"
         },
         {
+          "position": "middle",
+          "author_id": "A5024900485",
+          "display_name": "Md Ziaur Rahman",
+          "raw_author_name": "Md Ziaur Rahman",
+          "orcid": "0000-0002-8058-4602"
+        },
+        {
+          "position": "middle",
+          "author_id": "A5076513732",
+          "display_name": "Shahjahan Ali",
+          "raw_author_name": "Shahjahan Ali",
+          "orcid": "0000-0003-3883-1208"
+        },
+        {
+          "position": "middle",
+          "author_id": "A5008209846",
+          "display_name": "Benjamin F. Arnold",
+          "raw_author_name": "Benjamin F Arnold",
+          "orcid": "0000-0001-6105-7295"
+        },
+        {
+          "position": "middle",
+          "author_id": "A5045948196",
+          "display_name": "Firdaus S. Dhabhar",
+          "raw_author_name": "Firdaus S Dhabhar",
+          "orcid": "0000-0002-2721-6130"
+        },
+        {
+          "position": "middle",
+          "author_id": "A5073050075",
+          "display_name": "Douglas Alan Granger",
+          "raw_author_name": "Douglas A Granger",
+          "orcid": "0000-0002-1355-0218"
+        },
+        {
+          "position": "middle",
+          "author_id": "A5016593334",
+          "display_name": "Mahbubur Rahman",
+          "raw_author_name": "Mahbubur Rahman",
+          "orcid": null
+        },
+        {
+          "position": "middle",
+          "author_id": "A5035517653",
+          "display_name": "Stephen P. Luby",
+          "raw_author_name": "Stephen P Luby",
+          "orcid": "0000-0001-5385-899X"
+        },
+        {
+          "position": "middle",
+          "author_id": "A5044934375",
+          "display_name": "John M. Colford",
+          "raw_author_name": "John M Colford",
+          "orcid": "0000-0002-3288-6956"
+        },
+        {
           "position": "last",
-          "author_id": "A5075276624",
-          "display_name": "Charisse Madlock‐Brown",
-          "raw_author_name": "Charisse Madlock-Brown",
-          "orcid": "0000-0002-3647-1045"
+          "author_id": "A5056679159",
+          "display_name": "Audrie Lin",
+          "raw_author_name": "Audrie Lin",
+          "orcid": "0000-0002-3877-3469"
         }
       ],
-      "cited_by_count": 2,
+      "cited_by_count": 1,
       "counts_by_year": [
         {
           "year": 2026,
-          "cited_by_count": 2
+          "cited_by_count": 1
         }
       ],
       "biblio": {
-        "volume": "45",
-        "issue": "7",
-        "first_page": "775",
-        "last_page": "781"
+        "volume": "9",
+        "issue": "12",
+        "first_page": "107596",
+        "last_page": "107596"
       },
       "is_retracted": false,
       "is_paratext": false
@@ -4795,8 +5188,8 @@
       "id": "W7128798745",
       "doi": "10.1016/s2352-3018(25)00302-9",
       "title": "Racial, ethnic, and regional disparities in HIV testing during the COVID-19 pandemic in the USA: a nationwide, retrospective, observational study using National Clinical Cohort Collaborative data",
-      "publication_year": 2026,
-      "publication_date": "2026-02-13",
+      "publication_year": 2025,
+      "publication_date": "2025-01-01",
       "type": "article",
       "pmid": "https://pubmed.ncbi.nlm.nih.gov/41698379",
       "pmcid": "https://www.ncbi.nlm.nih.gov/pmc/articles/12948494",
@@ -4830,6 +5223,16 @@
           "version": "acceptedVersion",
           "source": "The Lancet HIV",
           "source_type": "journal"
+        },
+        {
+          "id": "doi:10.2139/ssrn.5273921",
+          "doi": "10.2139/ssrn.5273921",
+          "landing_page_url": "https://doi.org/10.2139/ssrn.5273921",
+          "pdf_url": null,
+          "is_oa": true,
+          "version": "submittedVersion",
+          "source": "SSRN Electronic Journal",
+          "source_type": "repository"
         },
         {
           "id": "pmid:41698379",
@@ -5010,7 +5413,7 @@
         "landing_page_url": "https://doi.org/10.1101/2021.11.10.21266206",
         "pdf_url": "https://www.medrxiv.org/content/medrxiv/early/2021/11/14/2021.11.10.21266206.full.pdf",
         "is_oa": true,
-        "version": "acceptedVersion",
+        "version": "submittedVersion",
         "source": "medRxiv",
         "source_type": "repository"
       },
@@ -5020,7 +5423,7 @@
         "landing_page_url": "https://doi.org/10.1101/2021.11.10.21266206",
         "pdf_url": "https://www.medrxiv.org/content/medrxiv/early/2021/11/14/2021.11.10.21266206.full.pdf",
         "is_oa": true,
-        "version": "acceptedVersion",
+        "version": "submittedVersion",
         "source": "medRxiv",
         "source_type": "repository"
       },
@@ -5031,7 +5434,7 @@
           "landing_page_url": "https://doi.org/10.1101/2021.11.10.21266206",
           "pdf_url": "https://www.medrxiv.org/content/medrxiv/early/2021/11/14/2021.11.10.21266206.full.pdf",
           "is_oa": true,
-          "version": "acceptedVersion",
+          "version": "submittedVersion",
           "source": "medRxiv",
           "source_type": "repository"
         },
@@ -5143,7 +5546,7 @@
           "author_id": "A5046245557",
           "display_name": "Syeda Luthfa Famida",
           "raw_author_name": "Syeda Luthfa Famida",
-          "orcid": null
+          "orcid": "0000-0002-3403-6736"
         },
         {
           "position": "middle",
@@ -5223,297 +5626,22 @@
           "orcid": "0000-0002-2721-6130"
         }
       ],
-      "cited_by_count": 4,
+      "cited_by_count": 5,
       "counts_by_year": [
         {
           "year": 2026,
           "cited_by_count": 1
         },
         {
+          "year": 2025,
+          "cited_by_count": 1
+        },
+        {
           "year": 2024,
-          "cited_by_count": 2
+          "cited_by_count": 1
         },
         {
           "year": 2023,
-          "cited_by_count": 1
-        }
-      ],
-      "biblio": {
-        "volume": null,
-        "issue": null,
-        "first_page": null,
-        "last_page": null
-      },
-      "is_retracted": false,
-      "is_paratext": false
-    },
-    {
-      "id": "W4391708418",
-      "doi": "10.1101/2024.02.05.24302352",
-      "title": "SSRI Use During Acute COVID-19 Infection Associated with Lower Risk of Long COVID Among Patients with Depression",
-      "publication_year": 2024,
-      "publication_date": "2024-02-06",
-      "type": "preprint",
-      "pmid": null,
-      "pmcid": null,
-      "primary_location": {
-        "id": "doi:10.1101/2024.02.05.24302352",
-        "doi": "10.1101/2024.02.05.24302352",
-        "landing_page_url": "http://dx.doi.org/10.1101/2024.02.05.24302352",
-        "pdf_url": "https://www.medrxiv.org/content/medrxiv/early/2024/02/06/2024.02.05.24302352.full.pdf",
-        "is_oa": true,
-        "version": "acceptedVersion",
-        "source": "medRxiv",
-        "source_type": "repository"
-      },
-      "best_oa_location": {
-        "id": "doi:10.1101/2024.02.05.24302352",
-        "doi": "10.1101/2024.02.05.24302352",
-        "landing_page_url": "http://dx.doi.org/10.1101/2024.02.05.24302352",
-        "pdf_url": "https://www.medrxiv.org/content/medrxiv/early/2024/02/06/2024.02.05.24302352.full.pdf",
-        "is_oa": true,
-        "version": "acceptedVersion",
-        "source": "medRxiv",
-        "source_type": "repository"
-      },
-      "locations": [
-        {
-          "id": "doi:10.1101/2024.02.05.24302352",
-          "doi": "10.1101/2024.02.05.24302352",
-          "landing_page_url": "http://dx.doi.org/10.1101/2024.02.05.24302352",
-          "pdf_url": "https://www.medrxiv.org/content/medrxiv/early/2024/02/06/2024.02.05.24302352.full.pdf",
-          "is_oa": true,
-          "version": "acceptedVersion",
-          "source": "medRxiv",
-          "source_type": "repository"
-        }
-      ],
-      "authorships": [
-        {
-          "position": "first",
-          "author_id": "A5080035458",
-          "display_name": "Zachary Butzin-Dozier",
-          "raw_author_name": "Zachary Butzin-Dozier",
-          "orcid": "0000-0001-6419-0008"
-        },
-        {
-          "position": "middle",
-          "author_id": "A5014831537",
-          "display_name": "Yunwen Ji",
-          "raw_author_name": "Yunwen Ji",
-          "orcid": "0000-0002-6077-5102"
-        },
-        {
-          "position": "middle",
-          "author_id": null,
-          "display_name": "Sarang Deshpande",
-          "raw_author_name": "Sarang Deshpande",
-          "orcid": null
-        },
-        {
-          "position": "middle",
-          "author_id": "A5085274034",
-          "display_name": "Eric G. Hurwitz",
-          "raw_author_name": "Eric Hurwitz",
-          "orcid": "0000-0002-6581-7754"
-        },
-        {
-          "position": "middle",
-          "author_id": "A5056213580",
-          "display_name": "Jeremy Coyle",
-          "raw_author_name": "Jeremy Coyle",
-          "orcid": "0000-0002-9874-6649"
-        },
-        {
-          "position": "middle",
-          "author_id": "A5102542900",
-          "display_name": "Junming Shi",
-          "raw_author_name": "Junming (Seraphina) Shi",
-          "orcid": null
-        },
-        {
-          "position": "middle",
-          "author_id": "A5011313784",
-          "display_name": "Andrew Mertens",
-          "raw_author_name": "Andrew Mertens",
-          "orcid": "0000-0002-1050-6721"
-        },
-        {
-          "position": "middle",
-          "author_id": "A5110130449",
-          "display_name": "Mark J. van der Laan",
-          "raw_author_name": "Mark J. van der Laan",
-          "orcid": "0000-0003-1432-5511"
-        },
-        {
-          "position": "middle",
-          "author_id": "A5044934375",
-          "display_name": "John M. Colford",
-          "raw_author_name": "John M. Colford",
-          "orcid": "0000-0002-3288-6956"
-        },
-        {
-          "position": "middle",
-          "author_id": "A5002618601",
-          "display_name": "Rena C. Patel",
-          "raw_author_name": "Rena C. Patel",
-          "orcid": "0000-0001-9893-5856"
-        },
-        {
-          "position": "last",
-          "author_id": "A5013304554",
-          "display_name": "Alan Hubbard",
-          "raw_author_name": "Alan E. Hubbard",
-          "orcid": "0000-0002-3769-0127"
-        }
-      ],
-      "cited_by_count": 4,
-      "counts_by_year": [
-        {
-          "year": 2025,
-          "cited_by_count": 1
-        },
-        {
-          "year": 2024,
-          "cited_by_count": 3
-        }
-      ],
-      "biblio": {
-        "volume": null,
-        "issue": null,
-        "first_page": null,
-        "last_page": null
-      },
-      "is_retracted": false,
-      "is_paratext": false
-    },
-    {
-      "id": "W4387638844",
-      "doi": "10.1101/2023.10.13.23296965",
-      "title": "Harnessing consumer wearable digital biomarkers for individualized recognition of postpartum depression using the All of Us Research Program dataset",
-      "publication_year": 2023,
-      "publication_date": "2023-10-14",
-      "type": "preprint",
-      "pmid": "https://pubmed.ncbi.nlm.nih.gov/37873471",
-      "pmcid": "https://www.ncbi.nlm.nih.gov/pmc/articles/10593061",
-      "primary_location": {
-        "id": "doi:10.1101/2023.10.13.23296965",
-        "doi": "10.1101/2023.10.13.23296965",
-        "landing_page_url": "https://doi.org/10.1101/2023.10.13.23296965",
-        "pdf_url": "https://www.medrxiv.org/content/medrxiv/early/2023/10/14/2023.10.13.23296965.full.pdf",
-        "is_oa": true,
-        "version": "acceptedVersion",
-        "source": "medRxiv",
-        "source_type": "repository"
-      },
-      "best_oa_location": {
-        "id": "doi:10.1101/2023.10.13.23296965",
-        "doi": "10.1101/2023.10.13.23296965",
-        "landing_page_url": "https://doi.org/10.1101/2023.10.13.23296965",
-        "pdf_url": "https://www.medrxiv.org/content/medrxiv/early/2023/10/14/2023.10.13.23296965.full.pdf",
-        "is_oa": true,
-        "version": "acceptedVersion",
-        "source": "medRxiv",
-        "source_type": "repository"
-      },
-      "locations": [
-        {
-          "id": "doi:10.1101/2023.10.13.23296965",
-          "doi": "10.1101/2023.10.13.23296965",
-          "landing_page_url": "https://doi.org/10.1101/2023.10.13.23296965",
-          "pdf_url": "https://www.medrxiv.org/content/medrxiv/early/2023/10/14/2023.10.13.23296965.full.pdf",
-          "is_oa": true,
-          "version": "acceptedVersion",
-          "source": "medRxiv",
-          "source_type": "repository"
-        },
-        {
-          "id": "pmid:37873471",
-          "doi": null,
-          "landing_page_url": "https://pubmed.ncbi.nlm.nih.gov/37873471",
-          "pdf_url": null,
-          "is_oa": false,
-          "version": "publishedVersion",
-          "source": "PubMed",
-          "source_type": "repository"
-        },
-        {
-          "id": "pmh:oai:pubmedcentral.nih.gov:10593061",
-          "doi": null,
-          "landing_page_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/10593061",
-          "pdf_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10593061/pdf/nihpp-2023.10.13.23296965v1.pdf",
-          "is_oa": true,
-          "version": "submittedVersion",
-          "source": "PubMed Central",
-          "source_type": "repository"
-        }
-      ],
-      "authorships": [
-        {
-          "position": "first",
-          "author_id": "A5085274034",
-          "display_name": "Eric G. Hurwitz",
-          "raw_author_name": "Eric Hurwitz",
-          "orcid": "0000-0002-6581-7754"
-        },
-        {
-          "position": "middle",
-          "author_id": "A5080035458",
-          "display_name": "Zachary Butzin-Dozier",
-          "raw_author_name": "Zachary Butzin-Dozier",
-          "orcid": "0000-0001-6419-0008"
-        },
-        {
-          "position": "middle",
-          "author_id": "A5073857898",
-          "display_name": "Hiral Master",
-          "raw_author_name": "Hiral Master",
-          "orcid": "0000-0003-0019-3087"
-        },
-        {
-          "position": "middle",
-          "author_id": "A5014471765",
-          "display_name": "Shawn T. O’Neil",
-          "raw_author_name": "Shawn T. O’Neil",
-          "orcid": "0000-0001-6220-7080"
-        },
-        {
-          "position": "middle",
-          "author_id": "A5039048947",
-          "display_name": "Anita Walden",
-          "raw_author_name": "Anita Walden",
-          "orcid": "0000-0002-3327-7423"
-        },
-        {
-          "position": "middle",
-          "author_id": "A5013664352",
-          "display_name": "Michelle Holko",
-          "raw_author_name": "Michelle Holko",
-          "orcid": "0000-0001-9325-4082"
-        },
-        {
-          "position": "middle",
-          "author_id": "A5002618601",
-          "display_name": "Rena C. Patel",
-          "raw_author_name": "Rena C. Patel",
-          "orcid": "0000-0001-9893-5856"
-        },
-        {
-          "position": "last",
-          "author_id": "A5064320417",
-          "display_name": "Melissa Anne Haendel",
-          "raw_author_name": "Melissa A. Haendel",
-          "orcid": "0000-0001-9114-8737"
-        }
-      ],
-      "cited_by_count": 3,
-      "counts_by_year": [
-        {
-          "year": 2025,
-          "cited_by_count": 1
-        },
-        {
-          "year": 2024,
           "cited_by_count": 2
         }
       ],
@@ -5541,7 +5669,7 @@
         "landing_page_url": "https://doi.org/10.1101/2025.06.06.25329168",
         "pdf_url": "https://www.medrxiv.org/content/medrxiv/early/2025/06/08/2025.06.06.25329168.full.pdf",
         "is_oa": true,
-        "version": "acceptedVersion",
+        "version": "submittedVersion",
         "source": "medRxiv",
         "source_type": "repository"
       },
@@ -5551,7 +5679,7 @@
         "landing_page_url": "https://doi.org/10.1101/2025.06.06.25329168",
         "pdf_url": "https://www.medrxiv.org/content/medrxiv/early/2025/06/08/2025.06.06.25329168.full.pdf",
         "is_oa": true,
-        "version": "acceptedVersion",
+        "version": "submittedVersion",
         "source": "medRxiv",
         "source_type": "repository"
       },
@@ -5562,7 +5690,7 @@
           "landing_page_url": "https://doi.org/10.1101/2025.06.06.25329168",
           "pdf_url": "https://www.medrxiv.org/content/medrxiv/early/2025/06/08/2025.06.06.25329168.full.pdf",
           "is_oa": true,
-          "version": "acceptedVersion",
+          "version": "submittedVersion",
           "source": "medRxiv",
           "source_type": "repository"
         },
@@ -5652,11 +5780,11 @@
           "orcid": "0000-0002-3769-0127"
         }
       ],
-      "cited_by_count": 3,
+      "cited_by_count": 4,
       "counts_by_year": [
         {
           "year": 2026,
-          "cited_by_count": 3
+          "cited_by_count": 4
         }
       ],
       "biblio": {
@@ -5669,472 +5797,49 @@
       "is_paratext": false
     },
     {
-      "id": "W4385644835",
-      "doi": "10.1101/2023.07.27.23293272",
-      "title": "Predicting Long COVID in the National COVID Cohort Collaborative Using Super Learner",
-      "publication_year": 2023,
-      "publication_date": "2023-08-04",
-      "type": "preprint",
-      "pmid": null,
-      "pmcid": null,
-      "primary_location": {
-        "id": "doi:10.1101/2023.07.27.23293272",
-        "doi": "10.1101/2023.07.27.23293272",
-        "landing_page_url": "https://doi.org/10.1101/2023.07.27.23293272",
-        "pdf_url": "https://www.medrxiv.org/content/medrxiv/early/2023/09/19/2023.07.27.23293272.full.pdf",
-        "is_oa": true,
-        "version": "acceptedVersion",
-        "source": "medRxiv",
-        "source_type": "repository"
-      },
-      "best_oa_location": {
-        "id": "doi:10.1101/2023.07.27.23293272",
-        "doi": "10.1101/2023.07.27.23293272",
-        "landing_page_url": "https://doi.org/10.1101/2023.07.27.23293272",
-        "pdf_url": "https://www.medrxiv.org/content/medrxiv/early/2023/09/19/2023.07.27.23293272.full.pdf",
-        "is_oa": true,
-        "version": "acceptedVersion",
-        "source": "medRxiv",
-        "source_type": "repository"
-      },
-      "locations": [
-        {
-          "id": "doi:10.1101/2023.07.27.23293272",
-          "doi": "10.1101/2023.07.27.23293272",
-          "landing_page_url": "https://doi.org/10.1101/2023.07.27.23293272",
-          "pdf_url": "https://www.medrxiv.org/content/medrxiv/early/2023/09/19/2023.07.27.23293272.full.pdf",
-          "is_oa": true,
-          "version": "acceptedVersion",
-          "source": "medRxiv",
-          "source_type": "repository"
-        }
-      ],
-      "authorships": [
-        {
-          "position": "first",
-          "author_id": "A5080035458",
-          "display_name": "Zachary Butzin-Dozier",
-          "raw_author_name": "Zachary Butzin-Dozier",
-          "orcid": "0000-0001-6419-0008"
-        },
-        {
-          "position": "middle",
-          "author_id": "A5014831537",
-          "display_name": "Yunwen Ji",
-          "raw_author_name": "Yunwen Ji",
-          "orcid": "0000-0002-6077-5102"
-        },
-        {
-          "position": "middle",
-          "author_id": "A5101554420",
-          "display_name": "Haodong Li",
-          "raw_author_name": "Haodong Li",
-          "orcid": "0000-0003-4069-5743"
-        },
-        {
-          "position": "middle",
-          "author_id": "A5056213580",
-          "display_name": "Jeremy Coyle",
-          "raw_author_name": "Jeremy Coyle",
-          "orcid": "0000-0002-9874-6649"
-        },
-        {
-          "position": "middle",
-          "author_id": "A5102542900",
-          "display_name": "Junming Shi",
-          "raw_author_name": "Junming (Seraphina) Shi",
-          "orcid": null
-        },
-        {
-          "position": "middle",
-          "author_id": "A5112976050",
-          "display_name": "Rachael V. Philips",
-          "raw_author_name": "Rachael V. Philips",
-          "orcid": null
-        },
-        {
-          "position": "middle",
-          "author_id": "A5011313784",
-          "display_name": "Andrew Mertens",
-          "raw_author_name": "Andrew Mertens",
-          "orcid": "0000-0002-1050-6721"
-        },
-        {
-          "position": "middle",
-          "author_id": "A5032275725",
-          "display_name": "Romain Pirracchio",
-          "raw_author_name": "Romain Pirracchio",
-          "orcid": "0000-0002-7007-4908"
-        },
-        {
-          "position": "middle",
-          "author_id": "A5110130449",
-          "display_name": "Mark J. van der Laan",
-          "raw_author_name": "Mark J. van der Laan",
-          "orcid": "0000-0003-1432-5511"
-        },
-        {
-          "position": "middle",
-          "author_id": "A5002618601",
-          "display_name": "Rena C. Patel",
-          "raw_author_name": "Rena Patel",
-          "orcid": "0000-0001-9893-5856"
-        },
-        {
-          "position": "middle",
-          "author_id": "A5044934375",
-          "display_name": "John M. Colford",
-          "raw_author_name": "John M. Colford",
-          "orcid": "0000-0002-3288-6956"
-        },
-        {
-          "position": "last",
-          "author_id": "A5013304554",
-          "display_name": "Alan Hubbard",
-          "raw_author_name": "Alan E. Hubbard",
-          "orcid": "0000-0002-3769-0127"
-        }
-      ],
-      "cited_by_count": 2,
-      "counts_by_year": [
-        {
-          "year": 2024,
-          "cited_by_count": 2
-        }
-      ],
-      "biblio": {
-        "volume": null,
-        "issue": null,
-        "first_page": null,
-        "last_page": null
-      },
-      "is_retracted": false,
-      "is_paratext": false
-    },
-    {
-      "id": "W4396830228",
-      "doi": "10.1101/2024.05.10.24307069",
-      "title": "Can drinking water, sanitation, handwashing, and nutritional interventions reduce antibiotic use in young children?",
+      "id": "W4403565813",
+      "doi": "10.1101/2024.10.18.24315778",
+      "title": "Highly adaptive LASSO: Machine learning that provides valid nonparametric inference in realistic models",
       "publication_year": 2024,
-      "publication_date": "2024-05-10",
+      "publication_date": "2024-10-19",
       "type": "preprint",
-      "pmid": null,
-      "pmcid": null,
+      "pmid": "https://pubmed.ncbi.nlm.nih.gov/39484253",
+      "pmcid": "https://www.ncbi.nlm.nih.gov/pmc/articles/11527044",
       "primary_location": {
-        "id": "doi:10.1101/2024.05.10.24307069",
-        "doi": "10.1101/2024.05.10.24307069",
-        "landing_page_url": "https://doi.org/10.1101/2024.05.10.24307069",
-        "pdf_url": null,
+        "id": "doi:10.1101/2024.10.18.24315778",
+        "doi": "10.1101/2024.10.18.24315778",
+        "landing_page_url": "https://doi.org/10.1101/2024.10.18.24315778",
+        "pdf_url": "https://www.medrxiv.org/content/medrxiv/early/2024/10/19/2024.10.18.24315778.full.pdf",
         "is_oa": true,
-        "version": "acceptedVersion",
+        "version": "submittedVersion",
         "source": "medRxiv",
         "source_type": "repository"
       },
       "best_oa_location": {
-        "id": "doi:10.1101/2024.05.10.24307069",
-        "doi": "10.1101/2024.05.10.24307069",
-        "landing_page_url": "https://doi.org/10.1101/2024.05.10.24307069",
-        "pdf_url": null,
+        "id": "doi:10.1101/2024.10.18.24315778",
+        "doi": "10.1101/2024.10.18.24315778",
+        "landing_page_url": "https://doi.org/10.1101/2024.10.18.24315778",
+        "pdf_url": "https://www.medrxiv.org/content/medrxiv/early/2024/10/19/2024.10.18.24315778.full.pdf",
         "is_oa": true,
-        "version": "acceptedVersion",
+        "version": "submittedVersion",
         "source": "medRxiv",
         "source_type": "repository"
       },
       "locations": [
         {
-          "id": "doi:10.1101/2024.05.10.24307069",
-          "doi": "10.1101/2024.05.10.24307069",
-          "landing_page_url": "https://doi.org/10.1101/2024.05.10.24307069",
-          "pdf_url": null,
+          "id": "doi:10.1101/2024.10.18.24315778",
+          "doi": "10.1101/2024.10.18.24315778",
+          "landing_page_url": "https://doi.org/10.1101/2024.10.18.24315778",
+          "pdf_url": "https://www.medrxiv.org/content/medrxiv/early/2024/10/19/2024.10.18.24315778.full.pdf",
           "is_oa": true,
-          "version": "acceptedVersion",
-          "source": "medRxiv",
-          "source_type": "repository"
-        }
-      ],
-      "authorships": [
-        {
-          "position": "first",
-          "author_id": "A5009135000",
-          "display_name": "Ayşe Ercümen",
-          "raw_author_name": "Ayse Ercumen",
-          "orcid": "0000-0001-6002-1514"
-        },
-        {
-          "position": "middle",
-          "author_id": "A5011313784",
-          "display_name": "Andrew Mertens",
-          "raw_author_name": "Andrew N. Mertens",
-          "orcid": "0000-0002-1050-6721"
-        },
-        {
-          "position": "middle",
-          "author_id": "A5080035458",
-          "display_name": "Zachary Butzin-Dozier",
-          "raw_author_name": "Zachary Butzin-Dozier",
-          "orcid": "0000-0001-6419-0008"
-        },
-        {
-          "position": "middle",
-          "author_id": "A5080876898",
-          "display_name": "Da Kyung Jung",
-          "raw_author_name": "Da Kyung Jung",
-          "orcid": "0009-0009-8510-2033"
-        },
-        {
-          "position": "middle",
-          "author_id": "A5076513732",
-          "display_name": "Shahjahan Ali",
-          "raw_author_name": "Shahjahan Ali",
-          "orcid": "0000-0003-3883-1208"
-        },
-        {
-          "position": "middle",
-          "author_id": "A5040109832",
-          "display_name": "Beryl S. Achando",
-          "raw_author_name": "Beryl S. Achando",
-          "orcid": null
-        },
-        {
-          "position": "middle",
-          "author_id": "A5062969911",
-          "display_name": "Gouthami Rao",
-          "raw_author_name": "Gouthami Rao",
-          "orcid": "0000-0002-0459-5852"
-        },
-        {
-          "position": "middle",
-          "author_id": "A5010604844",
-          "display_name": "Caitlin Hemlock",
-          "raw_author_name": "Caitlin Hemlock",
-          "orcid": "0000-0002-1714-1016"
-        },
-        {
-          "position": "middle",
-          "author_id": "A5061386593",
-          "display_name": "Amy J. Pickering",
-          "raw_author_name": "Amy J. Pickering",
-          "orcid": "0000-0001-6193-2221"
-        },
-        {
-          "position": "middle",
-          "author_id": "A5066146615",
-          "display_name": "Christine P. Stewart",
-          "raw_author_name": "Christine P. Stewart",
-          "orcid": "0000-0003-4575-8571"
-        },
-        {
-          "position": "middle",
-          "author_id": "A5103212330",
-          "display_name": "Sophia T. Tan",
-          "raw_author_name": "Sophia T. Tan",
-          "orcid": "0009-0000-5421-4627"
-        },
-        {
-          "position": "middle",
-          "author_id": "A5021336770",
-          "display_name": "Jessica A. Grembi",
-          "raw_author_name": "Jessica A. Grembi",
-          "orcid": "0000-0001-6142-4913"
-        },
-        {
-          "position": "middle",
-          "author_id": "A5078448184",
-          "display_name": "Jade Benjamin‐Chung",
-          "raw_author_name": "Jade Benjamin-Chung",
-          "orcid": "0000-0003-3631-3132"
-        },
-        {
-          "position": "middle",
-          "author_id": "A5058534119",
-          "display_name": "Marlene K. Wolfe",
-          "raw_author_name": "Marlene Wolfe",
-          "orcid": "0000-0002-6476-0450"
-        },
-        {
-          "position": "middle",
-          "author_id": "A5104298659",
-          "display_name": "Gene G. Ho",
-          "raw_author_name": "Gene G. Ho",
-          "orcid": null
-        },
-        {
-          "position": "middle",
-          "author_id": "A5024900485",
-          "display_name": "Md Ziaur Rahman",
-          "raw_author_name": "Md. Ziaur Rahman",
-          "orcid": "0000-0002-8058-4602"
-        },
-        {
-          "position": "middle",
-          "author_id": "A5050726596",
-          "display_name": "Charles D. Arnold",
-          "raw_author_name": "Charles D. Arnold",
-          "orcid": "0000-0001-6510-3172"
-        },
-        {
-          "position": "middle",
-          "author_id": "A5066800645",
-          "display_name": "Holly N. Dentz",
-          "raw_author_name": "Holly N. Dentz",
-          "orcid": null
-        },
-        {
-          "position": "middle",
-          "author_id": "A5036681346",
-          "display_name": "Sammy M. Njenga",
-          "raw_author_name": "Sammy M Njenga",
-          "orcid": "0000-0001-6309-476X"
-        },
-        {
-          "position": "middle",
-          "author_id": "A5097605381",
-          "display_name": "Dorie Meerkerk",
-          "raw_author_name": "Dorie Meerkerk",
-          "orcid": null
-        },
-        {
-          "position": "middle",
-          "author_id": "A5042635376",
-          "display_name": "Belinda C. Chen",
-          "raw_author_name": "Belinda Chen",
-          "orcid": "0000-0002-8951-9866"
-        },
-        {
-          "position": "middle",
-          "author_id": "A5075128719",
-          "display_name": "Maya L. Nadimpalli",
-          "raw_author_name": "Maya Nadimpalli",
-          "orcid": "0000-0002-6526-116X"
-        },
-        {
-          "position": "middle",
-          "author_id": "A5010121897",
-          "display_name": "Mohammad Aminul Islam",
-          "raw_author_name": "Mohammad Aminul Islam",
-          "orcid": "0000-0001-5636-3140"
-        },
-        {
-          "position": "middle",
-          "author_id": "A5013304554",
-          "display_name": "Alan Hubbard",
-          "raw_author_name": "Alan E. Hubbard",
-          "orcid": "0000-0002-3769-0127"
-        },
-        {
-          "position": "middle",
-          "author_id": "A5091572367",
-          "display_name": "Clair Null",
-          "raw_author_name": "Clair Null",
-          "orcid": "0000-0003-0819-536X"
-        },
-        {
-          "position": "middle",
-          "author_id": "A5039005269",
-          "display_name": "LEANNE E. UNICOMB",
-          "raw_author_name": "Leanne Unicomb",
-          "orcid": "0000-0002-7757-5641"
-        },
-        {
-          "position": "middle",
-          "author_id": "A5089705081",
-          "display_name": "Mahbubur M. Rahman",
-          "raw_author_name": "Mahbubur Rahman",
-          "orcid": "0000-0003-0520-2683"
-        },
-        {
-          "position": "middle",
-          "author_id": "A5044934375",
-          "display_name": "John M. Colford",
-          "raw_author_name": "John M. Colford",
-          "orcid": "0000-0002-3288-6956"
-        },
-        {
-          "position": "middle",
-          "author_id": "A5035517653",
-          "display_name": "Stephen P. Luby",
-          "raw_author_name": "Stephen P. Luby",
-          "orcid": "0000-0001-5385-899X"
-        },
-        {
-          "position": "middle",
-          "author_id": "A5008209846",
-          "display_name": "Benjamin F. Arnold",
-          "raw_author_name": "Benjamin F. Arnold",
-          "orcid": "0000-0001-6105-7295"
-        },
-        {
-          "position": "last",
-          "author_id": "A5056679159",
-          "display_name": "Audrie Lin",
-          "raw_author_name": "Audrie Lin",
-          "orcid": "0000-0002-3877-3469"
-        }
-      ],
-      "cited_by_count": 2,
-      "counts_by_year": [
-        {
-          "year": 2025,
-          "cited_by_count": 1
-        },
-        {
-          "year": 2024,
-          "cited_by_count": 1
-        }
-      ],
-      "biblio": {
-        "volume": null,
-        "issue": null,
-        "first_page": null,
-        "last_page": null
-      },
-      "is_retracted": false,
-      "is_paratext": false
-    },
-    {
-      "id": "W4403175267",
-      "doi": "10.1101/2024.10.07.24315026",
-      "title": "Unlocking the potential of wearable device wear time to enhance postpartum depression screening and detection",
-      "publication_year": 2024,
-      "publication_date": "2024-10-07",
-      "type": "preprint",
-      "pmid": "https://pubmed.ncbi.nlm.nih.gov/39417142",
-      "pmcid": "https://www.ncbi.nlm.nih.gov/pmc/articles/11483018",
-      "primary_location": {
-        "id": "doi:10.1101/2024.10.07.24315026",
-        "doi": "10.1101/2024.10.07.24315026",
-        "landing_page_url": "https://doi.org/10.1101/2024.10.07.24315026",
-        "pdf_url": null,
-        "is_oa": true,
-        "version": "acceptedVersion",
-        "source": "medRxiv",
-        "source_type": "repository"
-      },
-      "best_oa_location": {
-        "id": "doi:10.1101/2024.10.07.24315026",
-        "doi": "10.1101/2024.10.07.24315026",
-        "landing_page_url": "https://doi.org/10.1101/2024.10.07.24315026",
-        "pdf_url": null,
-        "is_oa": true,
-        "version": "acceptedVersion",
-        "source": "medRxiv",
-        "source_type": "repository"
-      },
-      "locations": [
-        {
-          "id": "doi:10.1101/2024.10.07.24315026",
-          "doi": "10.1101/2024.10.07.24315026",
-          "landing_page_url": "https://doi.org/10.1101/2024.10.07.24315026",
-          "pdf_url": null,
-          "is_oa": true,
-          "version": "acceptedVersion",
+          "version": "submittedVersion",
           "source": "medRxiv",
           "source_type": "repository"
         },
         {
-          "id": "pmid:39417142",
+          "id": "pmid:39484253",
           "doi": null,
-          "landing_page_url": "https://pubmed.ncbi.nlm.nih.gov/39417142",
+          "landing_page_url": "https://pubmed.ncbi.nlm.nih.gov/39484253",
           "pdf_url": null,
           "is_oa": false,
           "version": "publishedVersion",
@@ -6142,10 +5847,10 @@
           "source_type": "repository"
         },
         {
-          "id": "pmh:oai:pubmedcentral.nih.gov:11483018",
+          "id": "pmh:oai:pubmedcentral.nih.gov:11527044",
           "doi": null,
-          "landing_page_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/11483018",
-          "pdf_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11483018/pdf/nihpp-2024.10.07.24315026v1.pdf",
+          "landing_page_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/11527044",
+          "pdf_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11527044/pdf/nihpp-2024.10.18.24315778v1.pdf",
           "is_oa": true,
           "version": "submittedVersion",
           "source": "PubMed Central",
@@ -6155,20 +5860,6 @@
       "authorships": [
         {
           "position": "first",
-          "author_id": "A5085274034",
-          "display_name": "Eric G. Hurwitz",
-          "raw_author_name": "Eric Hurwitz",
-          "orcid": "0000-0002-6581-7754"
-        },
-        {
-          "position": "middle",
-          "author_id": "A5000446863",
-          "display_name": "Samantha E Meltzer-Brody",
-          "raw_author_name": "Samantha Meltzer-Brody",
-          "orcid": "0000-0002-8509-408X"
-        },
-        {
-          "position": "middle",
           "author_id": "A5080035458",
           "display_name": "Zachary Butzin-Dozier",
           "raw_author_name": "Zachary Butzin-Dozier",
@@ -6176,34 +5867,37 @@
         },
         {
           "position": "middle",
-          "author_id": "A5002618601",
-          "display_name": "Rena C. Patel",
-          "raw_author_name": "Rena C. Patel",
-          "orcid": "0000-0001-9893-5856"
+          "author_id": "A5102013471",
+          "display_name": "Shawn Qiu",
+          "raw_author_name": "Sky Qiu",
+          "orcid": "0009-0006-5944-0782"
         },
         {
           "position": "middle",
-          "author_id": "A5047270546",
-          "display_name": "Noémie Elhadad",
-          "raw_author_name": "Noémie Elhadad",
-          "orcid": "0000-0001-9721-5240"
+          "author_id": "A5013304554",
+          "display_name": "Alan Hubbard",
+          "raw_author_name": "Alan E. Hubbard",
+          "orcid": "0000-0002-3769-0127"
+        },
+        {
+          "position": "middle",
+          "author_id": "A5086728908",
+          "display_name": "Junming Shi",
+          "raw_author_name": "Junming (Seraphina) Shi",
+          "orcid": "0000-0002-1520-8387"
         },
         {
           "position": "last",
-          "author_id": "A5064320417",
-          "display_name": "Melissa Anne Haendel",
-          "raw_author_name": "Melissa A. Haendel",
-          "orcid": "0000-0001-9114-8737"
+          "author_id": "A5110130449",
+          "display_name": "Mark J. van der Laan",
+          "raw_author_name": "Mark J. van der Laan",
+          "orcid": "0000-0003-1432-5511"
         }
       ],
-      "cited_by_count": 2,
+      "cited_by_count": 1,
       "counts_by_year": [
         {
           "year": 2026,
-          "cited_by_count": 1
-        },
-        {
-          "year": 2025,
           "cited_by_count": 1
         }
       ],
@@ -6231,7 +5925,7 @@
         "landing_page_url": "https://doi.org/10.64898/2026.03.06.26347799",
         "pdf_url": "https://www.medrxiv.org/content/medrxiv/early/2026/03/06/2026.03.06.26347799.full.pdf",
         "is_oa": true,
-        "version": "acceptedVersion",
+        "version": "submittedVersion",
         "source": "medRxiv",
         "source_type": "repository"
       },
@@ -6241,7 +5935,7 @@
         "landing_page_url": "https://doi.org/10.64898/2026.03.06.26347799",
         "pdf_url": "https://www.medrxiv.org/content/medrxiv/early/2026/03/06/2026.03.06.26347799.full.pdf",
         "is_oa": true,
-        "version": "acceptedVersion",
+        "version": "submittedVersion",
         "source": "medRxiv",
         "source_type": "repository"
       },
@@ -6252,7 +5946,7 @@
           "landing_page_url": "https://doi.org/10.64898/2026.03.06.26347799",
           "pdf_url": "https://www.medrxiv.org/content/medrxiv/early/2026/03/06/2026.03.06.26347799.full.pdf",
           "is_oa": true,
-          "version": "acceptedVersion",
+          "version": "submittedVersion",
           "source": "medRxiv",
           "source_type": "repository"
         },
@@ -6335,120 +6029,6 @@
           "orcid": "0000-0001-9114-8737"
         }
       ],
-      "cited_by_count": 2,
-      "counts_by_year": [
-        {
-          "year": 2026,
-          "cited_by_count": 2
-        }
-      ],
-      "biblio": {
-        "volume": null,
-        "issue": null,
-        "first_page": null,
-        "last_page": null
-      },
-      "is_retracted": false,
-      "is_paratext": false
-    },
-    {
-      "id": "W4403565813",
-      "doi": "10.1101/2024.10.18.24315778",
-      "title": "Highly adaptive LASSO: Machine learning that provides valid nonparametric inference in realistic models",
-      "publication_year": 2024,
-      "publication_date": "2024-10-19",
-      "type": "preprint",
-      "pmid": "https://pubmed.ncbi.nlm.nih.gov/39484253",
-      "pmcid": "https://www.ncbi.nlm.nih.gov/pmc/articles/11527044",
-      "primary_location": {
-        "id": "doi:10.1101/2024.10.18.24315778",
-        "doi": "10.1101/2024.10.18.24315778",
-        "landing_page_url": "https://doi.org/10.1101/2024.10.18.24315778",
-        "pdf_url": "https://www.medrxiv.org/content/medrxiv/early/2024/10/19/2024.10.18.24315778.full.pdf",
-        "is_oa": true,
-        "version": "acceptedVersion",
-        "source": "medRxiv",
-        "source_type": "repository"
-      },
-      "best_oa_location": {
-        "id": "doi:10.1101/2024.10.18.24315778",
-        "doi": "10.1101/2024.10.18.24315778",
-        "landing_page_url": "https://doi.org/10.1101/2024.10.18.24315778",
-        "pdf_url": "https://www.medrxiv.org/content/medrxiv/early/2024/10/19/2024.10.18.24315778.full.pdf",
-        "is_oa": true,
-        "version": "acceptedVersion",
-        "source": "medRxiv",
-        "source_type": "repository"
-      },
-      "locations": [
-        {
-          "id": "doi:10.1101/2024.10.18.24315778",
-          "doi": "10.1101/2024.10.18.24315778",
-          "landing_page_url": "https://doi.org/10.1101/2024.10.18.24315778",
-          "pdf_url": "https://www.medrxiv.org/content/medrxiv/early/2024/10/19/2024.10.18.24315778.full.pdf",
-          "is_oa": true,
-          "version": "acceptedVersion",
-          "source": "medRxiv",
-          "source_type": "repository"
-        },
-        {
-          "id": "pmid:39484253",
-          "doi": null,
-          "landing_page_url": "https://pubmed.ncbi.nlm.nih.gov/39484253",
-          "pdf_url": null,
-          "is_oa": false,
-          "version": "publishedVersion",
-          "source": "PubMed",
-          "source_type": "repository"
-        },
-        {
-          "id": "pmh:oai:pubmedcentral.nih.gov:11527044",
-          "doi": null,
-          "landing_page_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/11527044",
-          "pdf_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11527044/pdf/nihpp-2024.10.18.24315778v1.pdf",
-          "is_oa": true,
-          "version": "submittedVersion",
-          "source": "PubMed Central",
-          "source_type": "repository"
-        }
-      ],
-      "authorships": [
-        {
-          "position": "first",
-          "author_id": "A5080035458",
-          "display_name": "Zachary Butzin-Dozier",
-          "raw_author_name": "Zachary Butzin-Dozier",
-          "orcid": "0000-0001-6419-0008"
-        },
-        {
-          "position": "middle",
-          "author_id": "A5102013471",
-          "display_name": "Shawn Qiu",
-          "raw_author_name": "Sky Qiu",
-          "orcid": "0009-0006-5944-0782"
-        },
-        {
-          "position": "middle",
-          "author_id": "A5013304554",
-          "display_name": "Alan Hubbard",
-          "raw_author_name": "Alan E. Hubbard",
-          "orcid": "0000-0002-3769-0127"
-        },
-        {
-          "position": "middle",
-          "author_id": "A5086728908",
-          "display_name": "Junming Shi",
-          "raw_author_name": "Junming (Seraphina) Shi",
-          "orcid": "0000-0002-1520-8387"
-        },
-        {
-          "position": "last",
-          "author_id": "A5110130449",
-          "display_name": "Mark J. van der Laan",
-          "raw_author_name": "Mark J. van der Laan",
-          "orcid": "0000-0003-1432-5511"
-        }
-      ],
       "cited_by_count": 1,
       "counts_by_year": [
         {
@@ -6480,7 +6060,7 @@
         "landing_page_url": "https://doi.org/10.64898/2026.04.06.26350259",
         "pdf_url": "https://www.medrxiv.org/content/medrxiv/early/2026/04/07/2026.04.06.26350259.full.pdf",
         "is_oa": true,
-        "version": "acceptedVersion",
+        "version": "submittedVersion",
         "source": "medRxiv",
         "source_type": "repository"
       },
@@ -6490,7 +6070,7 @@
         "landing_page_url": "https://doi.org/10.64898/2026.04.06.26350259",
         "pdf_url": "https://www.medrxiv.org/content/medrxiv/early/2026/04/07/2026.04.06.26350259.full.pdf",
         "is_oa": true,
-        "version": "acceptedVersion",
+        "version": "submittedVersion",
         "source": "medRxiv",
         "source_type": "repository"
       },
@@ -6501,7 +6081,7 @@
           "landing_page_url": "https://doi.org/10.64898/2026.04.06.26350259",
           "pdf_url": "https://www.medrxiv.org/content/medrxiv/early/2026/04/07/2026.04.06.26350259.full.pdf",
           "is_oa": true,
-          "version": "acceptedVersion",
+          "version": "submittedVersion",
           "source": "medRxiv",
           "source_type": "repository"
         }
@@ -6560,95 +6140,6 @@
       "is_paratext": false
     },
     {
-      "id": "W3163096083",
-      "doi": "10.21203/rs.3.rs-455696/v1",
-      "title": "Antimicrobial Use by Backyard Food Animal Producers in Ecuador: A Qualitative Study",
-      "publication_year": 2021,
-      "publication_date": "2021-05-06",
-      "type": "preprint",
-      "pmid": null,
-      "pmcid": null,
-      "primary_location": {
-        "id": "doi:10.21203/rs.3.rs-455696/v1",
-        "doi": "10.21203/rs.3.rs-455696/v1",
-        "landing_page_url": "https://doi.org/10.21203/rs.3.rs-455696/v1",
-        "pdf_url": "https://www.researchsquare.com/article/rs-455696/latest.pdf",
-        "is_oa": true,
-        "version": "acceptedVersion",
-        "source": "Research Square",
-        "source_type": "repository"
-      },
-      "best_oa_location": {
-        "id": "doi:10.21203/rs.3.rs-455696/v1",
-        "doi": "10.21203/rs.3.rs-455696/v1",
-        "landing_page_url": "https://doi.org/10.21203/rs.3.rs-455696/v1",
-        "pdf_url": "https://www.researchsquare.com/article/rs-455696/latest.pdf",
-        "is_oa": true,
-        "version": "acceptedVersion",
-        "source": "Research Square",
-        "source_type": "repository"
-      },
-      "locations": [
-        {
-          "id": "doi:10.21203/rs.3.rs-455696/v1",
-          "doi": "10.21203/rs.3.rs-455696/v1",
-          "landing_page_url": "https://doi.org/10.21203/rs.3.rs-455696/v1",
-          "pdf_url": "https://www.researchsquare.com/article/rs-455696/latest.pdf",
-          "is_oa": true,
-          "version": "acceptedVersion",
-          "source": "Research Square",
-          "source_type": "repository"
-        }
-      ],
-      "authorships": [
-        {
-          "position": "first",
-          "author_id": "A5035913759",
-          "display_name": "William F. Waters",
-          "raw_author_name": "William F. Waters",
-          "orcid": "0000-0001-6222-8551"
-        },
-        {
-          "position": "middle",
-          "author_id": "A5014160871",
-          "display_name": "Martin Baca",
-          "raw_author_name": "Martin Baca",
-          "orcid": "0009-0004-4392-4120"
-        },
-        {
-          "position": "middle",
-          "author_id": "A5020714393",
-          "display_name": "Jay P. Graham",
-          "raw_author_name": "Jay P. Graham",
-          "orcid": "0000-0001-7062-6293"
-        },
-        {
-          "position": "middle",
-          "author_id": "A5080035458",
-          "display_name": "Zachary Butzin-Dozier",
-          "raw_author_name": "Zachary Butzin-Dozier",
-          "orcid": "0000-0001-6419-0008"
-        },
-        {
-          "position": "last",
-          "author_id": "A5043010974",
-          "display_name": "Rommel Lenin Vinueza",
-          "raw_author_name": "Lenin Vinueza",
-          "orcid": "0000-0002-4587-8795"
-        }
-      ],
-      "cited_by_count": 0,
-      "counts_by_year": [],
-      "biblio": {
-        "volume": null,
-        "issue": null,
-        "first_page": null,
-        "last_page": null
-      },
-      "is_retracted": false,
-      "is_paratext": false
-    },
-    {
       "id": "W3198931857",
       "doi": "10.2139/ssrn.3918273",
       "title": "Effects of Drinking Water, Sanitation, Handwashing, and Nutritional Interventions on Immune Status in Young Children: A Cluster-Randomised Controlled Trial in Rural Bangladesh",
@@ -6692,10 +6183,10 @@
       "authorships": [
         {
           "position": "first",
-          "author_id": null,
+          "author_id": "A5056679159",
           "display_name": "Audrie Lin",
           "raw_author_name": "Audrie Lin",
-          "orcid": null
+          "orcid": "0000-0002-3877-3469"
         },
         {
           "position": "middle",
@@ -6804,10 +6295,10 @@
         },
         {
           "position": "middle",
-          "author_id": null,
-          "display_name": "Leanne Unicomb",
+          "author_id": "A5039005269",
+          "display_name": "LEANNE E. UNICOMB",
           "raw_author_name": "Leanne Unicomb",
-          "orcid": null
+          "orcid": "0000-0002-7757-5641"
         },
         {
           "position": "middle",
@@ -6864,522 +6355,6 @@
           "display_name": "Firdaus S. Dhabhar",
           "raw_author_name": "Firdaus S. Dhabhar",
           "orcid": "0000-0002-2721-6130"
-        }
-      ],
-      "cited_by_count": 0,
-      "counts_by_year": [],
-      "biblio": {
-        "volume": null,
-        "issue": null,
-        "first_page": null,
-        "last_page": null
-      },
-      "is_retracted": false,
-      "is_paratext": false
-    },
-    {
-      "id": "W4403085400",
-      "doi": "10.17615/xhdk-h129",
-      "title": "Crowd-sourced machine learning prediction of long COVID using data from the National COVID Cohort Collaborative",
-      "publication_year": 2024,
-      "publication_date": "2024-10-03",
-      "type": "article",
-      "pmid": null,
-      "pmcid": null,
-      "primary_location": {
-        "id": "pmh:cdr.lib.unc.edu:0p096n32v",
-        "doi": null,
-        "landing_page_url": "https://doi.org/10.17615/xhdk-h129",
-        "pdf_url": "https://cdr.lib.unc.edu/downloads/cc08hw42q",
-        "is_oa": true,
-        "version": "submittedVersion",
-        "source": "Carolina Digital Repository (University of North Carolina at Chapel Hill)",
-        "source_type": "repository"
-      },
-      "best_oa_location": {
-        "id": "pmh:cdr.lib.unc.edu:0p096n32v",
-        "doi": null,
-        "landing_page_url": "https://doi.org/10.17615/xhdk-h129",
-        "pdf_url": "https://cdr.lib.unc.edu/downloads/cc08hw42q",
-        "is_oa": true,
-        "version": "submittedVersion",
-        "source": "Carolina Digital Repository (University of North Carolina at Chapel Hill)",
-        "source_type": "repository"
-      },
-      "locations": [
-        {
-          "id": "pmh:cdr.lib.unc.edu:0p096n32v",
-          "doi": null,
-          "landing_page_url": "https://doi.org/10.17615/xhdk-h129",
-          "pdf_url": "https://cdr.lib.unc.edu/downloads/cc08hw42q",
-          "is_oa": true,
-          "version": "submittedVersion",
-          "source": "Carolina Digital Repository (University of North Carolina at Chapel Hill)",
-          "source_type": "repository"
-        },
-        {
-          "id": "pmh:cdr.lib.unc.edu:n583z875s",
-          "doi": null,
-          "landing_page_url": "https://cdr.lib.unc.edu/concern/articles/n583z875s",
-          "pdf_url": null,
-          "is_oa": false,
-          "version": "submittedVersion",
-          "source": "Carolina Digital Repository (University of North Carolina at Chapel Hill)",
-          "source_type": "repository"
-        },
-        {
-          "id": "doi:10.17615/xhdk-h129",
-          "doi": "10.17615/xhdk-h129",
-          "landing_page_url": "https://doi.org/10.17615/xhdk-h129",
-          "pdf_url": null,
-          "is_oa": true,
-          "version": null,
-          "source": "UNC Libraries",
-          "source_type": "repository"
-        }
-      ],
-      "authorships": [
-        {
-          "position": "first",
-          "author_id": "A5108947425",
-          "display_name": "N C Consortium",
-          "raw_author_name": "N3C Consortium",
-          "orcid": null
-        },
-        {
-          "position": "middle",
-          "author_id": null,
-          "display_name": "Dai Z",
-          "raw_author_name": "Dai Z",
-          "orcid": null
-        },
-        {
-          "position": "middle",
-          "author_id": "A5099096899",
-          "display_name": "Neelay Velingker",
-          "raw_author_name": "Velingker N",
-          "orcid": null
-        },
-        {
-          "position": "middle",
-          "author_id": "A5086837953",
-          "display_name": "Emily Pfaff",
-          "raw_author_name": "Pfaff E",
-          "orcid": "0000-0002-6840-9756"
-        },
-        {
-          "position": "middle",
-          "author_id": "A5100389826",
-          "display_name": "Gong Chen",
-          "raw_author_name": "Chen G",
-          "orcid": "0000-0002-1857-3670"
-        },
-        {
-          "position": "middle",
-          "author_id": null,
-          "display_name": "Bhattacharya B",
-          "raw_author_name": "Bhattacharya B",
-          "orcid": null
-        },
-        {
-          "position": "middle",
-          "author_id": "A5100627446",
-          "display_name": "Yinlian Wu",
-          "raw_author_name": "Wu Y",
-          "orcid": "0000-0001-9298-8367"
-        },
-        {
-          "position": "middle",
-          "author_id": "A5100700811",
-          "display_name": "Hongmin Li",
-          "raw_author_name": "Li H",
-          "orcid": "0000-0002-8684-5308"
-        },
-        {
-          "position": "middle",
-          "author_id": "A5034733471",
-          "display_name": "Jennifer L. Blase",
-          "raw_author_name": "Blase J.",
-          "orcid": "0000-0001-7116-1141"
-        },
-        {
-          "position": "middle",
-          "author_id": "A5092023924",
-          "display_name": "Grant DeLong",
-          "raw_author_name": "Delong G",
-          "orcid": "0000-0003-0848-0769"
-        },
-        {
-          "position": "middle",
-          "author_id": "A5075879790",
-          "display_name": "Mayur Naik",
-          "raw_author_name": "Naik M",
-          "orcid": "0000-0003-1348-8618"
-        },
-        {
-          "position": "middle",
-          "author_id": "A5002149616",
-          "display_name": "Qi Long",
-          "raw_author_name": "Long Q",
-          "orcid": "0000-0003-0660-5230"
-        },
-        {
-          "position": "middle",
-          "author_id": "A5062095782",
-          "display_name": "Zhimin Li",
-          "raw_author_name": "Li Z",
-          "orcid": "0000-0002-0988-9374"
-        },
-        {
-          "position": "middle",
-          "author_id": "A5114239290",
-          "display_name": "van der Laan M",
-          "raw_author_name": "van der Laan M",
-          "orcid": null
-        },
-        {
-          "position": "middle",
-          "author_id": "A5032275725",
-          "display_name": "Romain Pirracchio",
-          "raw_author_name": "Pirracchio R",
-          "orcid": "0000-0002-7007-4908"
-        },
-        {
-          "position": "middle",
-          "author_id": "A5033328883",
-          "display_name": "Zhongying Zhao",
-          "raw_author_name": "Zhao Z",
-          "orcid": "0000-0003-2743-9008"
-        },
-        {
-          "position": "middle",
-          "author_id": "A5100742564",
-          "display_name": "Jiechun Huang",
-          "raw_author_name": "Huang J",
-          "orcid": "0000-0003-4441-1584"
-        },
-        {
-          "position": "middle",
-          "author_id": "A5106403167",
-          "display_name": "Ji Y",
-          "raw_author_name": "Ji Y",
-          "orcid": null
-        },
-        {
-          "position": "middle",
-          "author_id": "A5091096966",
-          "display_name": "Tamanna T. K. Munia",
-          "raw_author_name": "Munia T",
-          "orcid": "0000-0001-9446-7370"
-        },
-        {
-          "position": "middle",
-          "author_id": null,
-          "display_name": "Stein A",
-          "raw_author_name": "Stein A",
-          "orcid": null
-        },
-        {
-          "position": "middle",
-          "author_id": null,
-          "display_name": "Tariq A",
-          "raw_author_name": "Tariq A",
-          "orcid": null
-        },
-        {
-          "position": "middle",
-          "author_id": "A5012740004",
-          "display_name": "Emily J. Getzen",
-          "raw_author_name": "Getzen E.",
-          "orcid": "0000-0001-7283-1653"
-        },
-        {
-          "position": "middle",
-          "author_id": "A5063582426",
-          "display_name": "Jian Gao",
-          "raw_author_name": "Gao J",
-          "orcid": "0000-0001-6723-0490"
-        },
-        {
-          "position": "middle",
-          "author_id": "A5112643338",
-          "display_name": "Shi S",
-          "raw_author_name": "Shi S",
-          "orcid": null
-        },
-        {
-          "position": "middle",
-          "author_id": "A5077461380",
-          "display_name": "Danielle L. Mowery",
-          "raw_author_name": "Mowery D",
-          "orcid": "0000-0003-3802-4457"
-        },
-        {
-          "position": "middle",
-          "author_id": "A5044934375",
-          "display_name": "John M. Colford",
-          "raw_author_name": "Colford Jr., J.M",
-          "orcid": "0000-0002-3288-6956"
-        },
-        {
-          "position": "middle",
-          "author_id": "A5016180789",
-          "display_name": "Johanna Jean Loomba",
-          "raw_author_name": "Loomba J",
-          "orcid": "0000-0003-3673-5423"
-        },
-        {
-          "position": "middle",
-          "author_id": "A5011313784",
-          "display_name": "Andrew Mertens",
-          "raw_author_name": "Mertens A",
-          "orcid": "0000-0002-1050-6721"
-        },
-        {
-          "position": "middle",
-          "author_id": "A5056213580",
-          "display_name": "Jeremy Coyle",
-          "raw_author_name": "Coyle J",
-          "orcid": "0000-0002-9874-6649"
-        },
-        {
-          "position": "middle",
-          "author_id": null,
-          "display_name": "Parekh R",
-          "raw_author_name": "Parekh R",
-          "orcid": null
-        },
-        {
-          "position": "middle",
-          "author_id": "A5107717477",
-          "display_name": "Long COVID Computational Challenge Participants",
-          "raw_author_name": "Long COVID Computational Challenge Participants",
-          "orcid": null
-        },
-        {
-          "position": "middle",
-          "author_id": "A5023320104",
-          "display_name": "Thomas F. Bergquist",
-          "raw_author_name": "Bergquist T",
-          "orcid": "0000-0002-8518-0383"
-        },
-        {
-          "position": "middle",
-          "author_id": "A5032708536",
-          "display_name": "John H. Holmes",
-          "raw_author_name": "Holmes J",
-          "orcid": "0000-0003-2167-3602"
-        },
-        {
-          "position": "middle",
-          "author_id": null,
-          "display_name": "Zhu Y",
-          "raw_author_name": "Zhu Y",
-          "orcid": null
-        },
-        {
-          "position": "middle",
-          "author_id": "A5100781188",
-          "display_name": "Xia Fang",
-          "raw_author_name": "Xia F",
-          "orcid": "0000-0003-2470-5446"
-        },
-        {
-          "position": "middle",
-          "author_id": "A5013304554",
-          "display_name": "Alan Hubbard",
-          "raw_author_name": "Hubbard A",
-          "orcid": "0000-0002-3769-0127"
-        },
-        {
-          "position": "middle",
-          "author_id": "A5080035458",
-          "display_name": "Zachary Butzin-Dozier",
-          "raw_author_name": "Butzin-Dozier Z",
-          "orcid": "0000-0001-6419-0008"
-        },
-        {
-          "position": "middle",
-          "author_id": "A5113415415",
-          "display_name": "Philips R.V",
-          "raw_author_name": "Philips R.V",
-          "orcid": null
-        },
-        {
-          "position": "middle",
-          "author_id": "A5111338406",
-          "display_name": "J. Hightower",
-          "raw_author_name": "Hightower J.",
-          "orcid": "0000-0002-6913-7158"
-        },
-        {
-          "position": "middle",
-          "author_id": null,
-          "display_name": "Shetty G",
-          "raw_author_name": "Shetty G",
-          "orcid": null
-        },
-        {
-          "position": "middle",
-          "author_id": null,
-          "display_name": "Wong E",
-          "raw_author_name": "Wong E",
-          "orcid": null
-        },
-        {
-          "position": "last",
-          "author_id": "A5031995784",
-          "display_name": "Elizabeth Mitchell",
-          "raw_author_name": "Mitchell E",
-          "orcid": "0000-0002-2830-1978"
-        }
-      ],
-      "cited_by_count": 0,
-      "counts_by_year": [],
-      "biblio": {
-        "volume": null,
-        "issue": null,
-        "first_page": null,
-        "last_page": null
-      },
-      "is_retracted": false,
-      "is_paratext": false
-    },
-    {
-      "id": "W4404053975",
-      "doi": "10.17615/qzk6-0023",
-      "title": "SSRI use during acute COVID-19 and risk of long COVID among patients with depression",
-      "publication_year": 2024,
-      "publication_date": "2024-11-05",
-      "type": "article",
-      "pmid": null,
-      "pmcid": null,
-      "primary_location": {
-        "id": "pmh:cdr.lib.unc.edu:xp68kx219",
-        "doi": null,
-        "landing_page_url": "https://doi.org/10.17615/qzk6-0023",
-        "pdf_url": "https://cdr.lib.unc.edu/downloads/6h4417081",
-        "is_oa": true,
-        "version": "submittedVersion",
-        "source": "Carolina Digital Repository (University of North Carolina at Chapel Hill)",
-        "source_type": "repository"
-      },
-      "best_oa_location": {
-        "id": "pmh:cdr.lib.unc.edu:xp68kx219",
-        "doi": null,
-        "landing_page_url": "https://doi.org/10.17615/qzk6-0023",
-        "pdf_url": "https://cdr.lib.unc.edu/downloads/6h4417081",
-        "is_oa": true,
-        "version": "submittedVersion",
-        "source": "Carolina Digital Repository (University of North Carolina at Chapel Hill)",
-        "source_type": "repository"
-      },
-      "locations": [
-        {
-          "id": "pmh:cdr.lib.unc.edu:xp68kx219",
-          "doi": null,
-          "landing_page_url": "https://doi.org/10.17615/qzk6-0023",
-          "pdf_url": "https://cdr.lib.unc.edu/downloads/6h4417081",
-          "is_oa": true,
-          "version": "submittedVersion",
-          "source": "Carolina Digital Repository (University of North Carolina at Chapel Hill)",
-          "source_type": "repository"
-        },
-        {
-          "id": "doi:10.17615/qzk6-0023",
-          "doi": "10.17615/qzk6-0023",
-          "landing_page_url": "https://doi.org/10.17615/qzk6-0023",
-          "pdf_url": null,
-          "is_oa": true,
-          "version": null,
-          "source": "UNC Libraries",
-          "source_type": "repository"
-        }
-      ],
-      "authorships": [
-        {
-          "position": "first",
-          "author_id": "A5100699396",
-          "display_name": "Jianxin Shi",
-          "raw_author_name": "Shi J",
-          "orcid": "0000-0001-8606-4707"
-        },
-        {
-          "position": "middle",
-          "author_id": "A5152946432",
-          "display_name": "Patel R.C",
-          "raw_author_name": "Patel R.C",
-          "orcid": null
-        },
-        {
-          "position": "middle",
-          "author_id": "A5110130449",
-          "display_name": "Mark J. van der Laan",
-          "raw_author_name": "van der Laan M.J",
-          "orcid": "0000-0003-1432-5511"
-        },
-        {
-          "position": "middle",
-          "author_id": "A5114521132",
-          "display_name": "Hubbard A.E.",
-          "raw_author_name": "Hubbard A.E.",
-          "orcid": null
-        },
-        {
-          "position": "middle",
-          "author_id": "A5011313784",
-          "display_name": "Andrew Mertens",
-          "raw_author_name": "Mertens A",
-          "orcid": "0000-0002-1050-6721"
-        },
-        {
-          "position": "middle",
-          "author_id": "A5056213580",
-          "display_name": "Jeremy Coyle",
-          "raw_author_name": "Coyle J",
-          "orcid": "0000-0002-9874-6649"
-        },
-        {
-          "position": "middle",
-          "author_id": "A5044934375",
-          "display_name": "John M. Colford",
-          "raw_author_name": "Colford, Jr., J.M",
-          "orcid": "0000-0002-3288-6956"
-        },
-        {
-          "position": "middle",
-          "author_id": "A5152918633",
-          "display_name": "Anzalone A.J",
-          "raw_author_name": "Anzalone A.J",
-          "orcid": null
-        },
-        {
-          "position": "middle",
-          "author_id": "A5080035458",
-          "display_name": "Zachary Butzin-Dozier",
-          "raw_author_name": "Butzin-Dozier Z",
-          "orcid": "0000-0001-6419-0008"
-        },
-        {
-          "position": "middle",
-          "author_id": "A5106403167",
-          "display_name": "Ji Y",
-          "raw_author_name": "Ji Y",
-          "orcid": null
-        },
-        {
-          "position": "middle",
-          "author_id": null,
-          "display_name": "Deshpande S",
-          "raw_author_name": "Deshpande S",
-          "orcid": null
-        },
-        {
-          "position": "last",
-          "author_id": null,
-          "display_name": "Hurwitz E",
-          "raw_author_name": "Hurwitz E",
-          "orcid": null
         }
       ],
       "cited_by_count": 0,
@@ -7734,7 +6709,7 @@
           "author_id": "A5046245557",
           "display_name": "Syeda Luthfa Famida",
           "raw_author_name": "Syeda Luthfa Famida",
-          "orcid": null
+          "orcid": "0000-0002-3403-6736"
         },
         {
           "position": "middle",
@@ -7849,392 +6824,6 @@
         "issue": "1",
         "first_page": "8499",
         "last_page": "8499"
-      },
-      "is_retracted": false,
-      "is_paratext": false
-    },
-    {
-      "id": "W4410910112",
-      "doi": "10.2139/ssrn.5273921",
-      "title": "Racial/Ethnic and Regional Disparities in HIV Testing Amidst the COVID-19 Pandemic: A Nationwide Retrospective Analysis Using N3C Data",
-      "publication_year": 2025,
-      "publication_date": "2025-01-01",
-      "type": "preprint",
-      "pmid": null,
-      "pmcid": null,
-      "primary_location": {
-        "id": "doi:10.2139/ssrn.5273921",
-        "doi": "10.2139/ssrn.5273921",
-        "landing_page_url": "https://doi.org/10.2139/ssrn.5273921",
-        "pdf_url": null,
-        "is_oa": true,
-        "version": "acceptedVersion",
-        "source": "SSRN Electronic Journal",
-        "source_type": "repository"
-      },
-      "best_oa_location": {
-        "id": "doi:10.2139/ssrn.5273921",
-        "doi": "10.2139/ssrn.5273921",
-        "landing_page_url": "https://doi.org/10.2139/ssrn.5273921",
-        "pdf_url": null,
-        "is_oa": true,
-        "version": "acceptedVersion",
-        "source": "SSRN Electronic Journal",
-        "source_type": "repository"
-      },
-      "locations": [
-        {
-          "id": "doi:10.2139/ssrn.5273921",
-          "doi": "10.2139/ssrn.5273921",
-          "landing_page_url": "https://doi.org/10.2139/ssrn.5273921",
-          "pdf_url": null,
-          "is_oa": true,
-          "version": "acceptedVersion",
-          "source": "SSRN Electronic Journal",
-          "source_type": "repository"
-        }
-      ],
-      "authorships": [
-        {
-          "position": "first",
-          "author_id": "A5104163838",
-          "display_name": "Haishan Yang",
-          "raw_author_name": "Yang Haishan",
-          "orcid": "0000-0001-9441-8990"
-        },
-        {
-          "position": "middle",
-          "author_id": "A5042538268",
-          "display_name": "Duolan Han",
-          "raw_author_name": "Duolan Han",
-          "orcid": null
-        },
-        {
-          "position": "middle",
-          "author_id": "A5085274034",
-          "display_name": "Eric G. Hurwitz",
-          "raw_author_name": "Eric Hurwitz",
-          "orcid": "0000-0002-6581-7754"
-        },
-        {
-          "position": "middle",
-          "author_id": "A5037363029",
-          "display_name": "Jerrod Anzalone",
-          "raw_author_name": "Jerrod Anzalone",
-          "orcid": null
-        },
-        {
-          "position": "middle",
-          "author_id": "A5050612973",
-          "display_name": "Cara D Varley",
-          "raw_author_name": "Cara  D. Varley",
-          "orcid": "0000-0003-3209-4489"
-        },
-        {
-          "position": "middle",
-          "author_id": "A5070820216",
-          "display_name": "Sandra E. Safo",
-          "raw_author_name": "Sandra  E. Safo",
-          "orcid": "0000-0001-9593-4778"
-        },
-        {
-          "position": "middle",
-          "author_id": "A5014310245",
-          "display_name": "Jing Sun",
-          "raw_author_name": "Jing Sun",
-          "orcid": "0000-0003-3741-0962"
-        },
-        {
-          "position": "middle",
-          "author_id": "A5100417601",
-          "display_name": "Dongmei Li",
-          "raw_author_name": "Dongmei Li",
-          "orcid": "0000-0001-9140-2483"
-        },
-        {
-          "position": "middle",
-          "author_id": "A5058772437",
-          "display_name": "Marlene Camacho‐Rivera",
-          "raw_author_name": "Marlene Camacho-Rivera",
-          "orcid": "0000-0003-2343-2941"
-        },
-        {
-          "position": "middle",
-          "author_id": "A5002778123",
-          "display_name": "Nada A. Fadul",
-          "raw_author_name": "Nada Fadul",
-          "orcid": "0000-0001-5022-9063"
-        },
-        {
-          "position": "middle",
-          "author_id": "A5080035458",
-          "display_name": "Zachary Butzin-Dozier",
-          "raw_author_name": "Zachary Butzin-Dozier",
-          "orcid": "0000-0001-6419-0008"
-        },
-        {
-          "position": "middle",
-          "author_id": "A5065274638",
-          "display_name": "Bohdan Nosyk",
-          "raw_author_name": "Bohdyn Nosyk",
-          "orcid": "0000-0003-2513-3718"
-        },
-        {
-          "position": "middle",
-          "author_id": "A5002618601",
-          "display_name": "Rena C. Patel",
-          "raw_author_name": "Rena Patel",
-          "orcid": "0000-0001-9893-5856"
-        },
-        {
-          "position": "last",
-          "author_id": "A5035163426",
-          "display_name": "Xiao Zang",
-          "raw_author_name": "Xiao Zang",
-          "orcid": "0000-0002-5722-8255"
-        }
-      ],
-      "cited_by_count": 0,
-      "counts_by_year": [],
-      "biblio": {
-        "volume": null,
-        "issue": null,
-        "first_page": null,
-        "last_page": null
-      },
-      "is_retracted": false,
-      "is_paratext": false
-    },
-    {
-      "id": "W4416041107",
-      "doi": "10.1016/j.cdnut.2025.107596",
-      "title": "Associations Between Micronutrient Status, Hormones, and Immune Status During Pregnancy and Child Growth in Rural Bangladesh: A Prospective Cohort Study",
-      "publication_year": 2025,
-      "publication_date": "2025-11-08",
-      "type": "article",
-      "pmid": "https://pubmed.ncbi.nlm.nih.gov/41467215",
-      "pmcid": "https://www.ncbi.nlm.nih.gov/pmc/articles/12744257",
-      "primary_location": {
-        "id": "doi:10.1016/j.cdnut.2025.107596",
-        "doi": "10.1016/j.cdnut.2025.107596",
-        "landing_page_url": "https://doi.org/10.1016/j.cdnut.2025.107596",
-        "pdf_url": "https://cdn.nutrition.org/article/S2475-2991(25)03058-6/pdf",
-        "is_oa": true,
-        "version": "publishedVersion",
-        "source": "Current Developments in Nutrition",
-        "source_type": "journal"
-      },
-      "best_oa_location": {
-        "id": "doi:10.1016/j.cdnut.2025.107596",
-        "doi": "10.1016/j.cdnut.2025.107596",
-        "landing_page_url": "https://doi.org/10.1016/j.cdnut.2025.107596",
-        "pdf_url": "https://cdn.nutrition.org/article/S2475-2991(25)03058-6/pdf",
-        "is_oa": true,
-        "version": "publishedVersion",
-        "source": "Current Developments in Nutrition",
-        "source_type": "journal"
-      },
-      "locations": [
-        {
-          "id": "doi:10.1016/j.cdnut.2025.107596",
-          "doi": "10.1016/j.cdnut.2025.107596",
-          "landing_page_url": "https://doi.org/10.1016/j.cdnut.2025.107596",
-          "pdf_url": "https://cdn.nutrition.org/article/S2475-2991(25)03058-6/pdf",
-          "is_oa": true,
-          "version": "publishedVersion",
-          "source": "Current Developments in Nutrition",
-          "source_type": "journal"
-        },
-        {
-          "id": "pmid:41467215",
-          "doi": null,
-          "landing_page_url": "https://pubmed.ncbi.nlm.nih.gov/41467215",
-          "pdf_url": null,
-          "is_oa": false,
-          "version": "publishedVersion",
-          "source": "PubMed",
-          "source_type": "repository"
-        },
-        {
-          "id": "pmh:oai:pubmedcentral.nih.gov:12744257",
-          "doi": null,
-          "landing_page_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12744257/",
-          "pdf_url": null,
-          "is_oa": true,
-          "version": "publishedVersion",
-          "source": "PubMed Central",
-          "source_type": "repository"
-        },
-        {
-          "id": "pmh:oai:DiVA.org:uu-575554",
-          "doi": null,
-          "landing_page_url": "http://urn.kb.se/resolve?urn=urn:nbn:se:uu:diva-575554",
-          "pdf_url": "https://uu.diva-portal.org/smash/get/diva2:2027808/FULLTEXT01",
-          "is_oa": true,
-          "version": "submittedVersion",
-          "source": "Diva portal (Dalarna University Library)",
-          "source_type": "repository"
-        },
-        {
-          "id": "pmh:oai:doaj.org/article:99fbc5ba05b1493da4c2db068e3da45d",
-          "doi": null,
-          "landing_page_url": "https://doaj.org/article/99fbc5ba05b1493da4c2db068e3da45d",
-          "pdf_url": null,
-          "is_oa": true,
-          "version": "submittedVersion",
-          "source": "DOAJ (DOAJ: Directory of Open Access Journals)",
-          "source_type": "repository"
-        }
-      ],
-      "authorships": [
-        {
-          "position": "first",
-          "author_id": "A5042635376",
-          "display_name": "Belinda C. Chen",
-          "raw_author_name": "Belinda Chen",
-          "orcid": "0000-0002-8951-9866"
-        },
-        {
-          "position": "middle",
-          "author_id": "A5011313784",
-          "display_name": "Andrew Mertens",
-          "raw_author_name": "Andrew N Mertens",
-          "orcid": "0000-0002-1050-6721"
-        },
-        {
-          "position": "middle",
-          "author_id": "A5073621812",
-          "display_name": "Chih-Hsien Lin",
-          "raw_author_name": "Chih-Hsien Lin",
-          "orcid": "0000-0003-2680-2784"
-        },
-        {
-          "position": "middle",
-          "author_id": "A5103212330",
-          "display_name": "Sophia T. Tan",
-          "raw_author_name": "Sophia T Tan",
-          "orcid": "0009-0000-5421-4627"
-        },
-        {
-          "position": "middle",
-          "author_id": "A5111062196",
-          "display_name": "Farheen Jamshed",
-          "raw_author_name": "Farheen Jamshed",
-          "orcid": null
-        },
-        {
-          "position": "middle",
-          "author_id": null,
-          "display_name": "Diego Figueroa",
-          "raw_author_name": "Diego Figueroa",
-          "orcid": null
-        },
-        {
-          "position": "middle",
-          "author_id": "A5010604844",
-          "display_name": "Caitlin Hemlock",
-          "raw_author_name": "Caitlin Hemlock",
-          "orcid": "0000-0002-1714-1016"
-        },
-        {
-          "position": "middle",
-          "author_id": "A5080035458",
-          "display_name": "Zachary Butzin-Dozier",
-          "raw_author_name": "Zachary Butzin-Dozier",
-          "orcid": "0000-0001-6419-0008"
-        },
-        {
-          "position": "middle",
-          "author_id": "A5059886126",
-          "display_name": "Lia C. H. Fernald",
-          "raw_author_name": "Lia CH Fernald",
-          "orcid": "0000-0003-1555-4607"
-        },
-        {
-          "position": "middle",
-          "author_id": "A5066146615",
-          "display_name": "Christine P. Stewart",
-          "raw_author_name": "Christine P Stewart",
-          "orcid": "0000-0003-4575-8571"
-        },
-        {
-          "position": "middle",
-          "author_id": "A5013304554",
-          "display_name": "Alan Hubbard",
-          "raw_author_name": "Alan E Hubbard",
-          "orcid": "0000-0002-3769-0127"
-        },
-        {
-          "position": "middle",
-          "author_id": "A5024900485",
-          "display_name": "Md Ziaur Rahman",
-          "raw_author_name": "Md Ziaur Rahman",
-          "orcid": "0000-0002-8058-4602"
-        },
-        {
-          "position": "middle",
-          "author_id": "A5076513732",
-          "display_name": "Shahjahan Ali",
-          "raw_author_name": "Shahjahan Ali",
-          "orcid": "0000-0003-3883-1208"
-        },
-        {
-          "position": "middle",
-          "author_id": "A5008209846",
-          "display_name": "Benjamin F. Arnold",
-          "raw_author_name": "Benjamin F Arnold",
-          "orcid": "0000-0001-6105-7295"
-        },
-        {
-          "position": "middle",
-          "author_id": "A5045948196",
-          "display_name": "Firdaus S. Dhabhar",
-          "raw_author_name": "Firdaus S Dhabhar",
-          "orcid": "0000-0002-2721-6130"
-        },
-        {
-          "position": "middle",
-          "author_id": "A5073050075",
-          "display_name": "Douglas Alan Granger",
-          "raw_author_name": "Douglas A Granger",
-          "orcid": "0000-0002-1355-0218"
-        },
-        {
-          "position": "middle",
-          "author_id": "A5016593334",
-          "display_name": "Mahbubur Rahman",
-          "raw_author_name": "Mahbubur Rahman",
-          "orcid": null
-        },
-        {
-          "position": "middle",
-          "author_id": "A5035517653",
-          "display_name": "Stephen P. Luby",
-          "raw_author_name": "Stephen P Luby",
-          "orcid": "0000-0001-5385-899X"
-        },
-        {
-          "position": "middle",
-          "author_id": "A5044934375",
-          "display_name": "John M. Colford",
-          "raw_author_name": "John M Colford",
-          "orcid": "0000-0002-3288-6956"
-        },
-        {
-          "position": "last",
-          "author_id": "A5056679159",
-          "display_name": "Audrie Lin",
-          "raw_author_name": "Audrie Lin",
-          "orcid": "0000-0002-3877-3469"
-        }
-      ],
-      "cited_by_count": 0,
-      "counts_by_year": [],
-      "biblio": {
-        "volume": "9",
-        "issue": "12",
-        "first_page": "107596",
-        "last_page": "107596"
       },
       "is_retracted": false,
       "is_paratext": false
@@ -8743,7 +7332,7 @@
         "landing_page_url": "https://doi.org/10.64898/2026.02.27.26347274",
         "pdf_url": null,
         "is_oa": true,
-        "version": "acceptedVersion",
+        "version": "submittedVersion",
         "source": "medRxiv",
         "source_type": "repository"
       },
@@ -8753,7 +7342,7 @@
         "landing_page_url": "https://doi.org/10.64898/2026.02.27.26347274",
         "pdf_url": null,
         "is_oa": true,
-        "version": "acceptedVersion",
+        "version": "submittedVersion",
         "source": "medRxiv",
         "source_type": "repository"
       },
@@ -8764,7 +7353,7 @@
           "landing_page_url": "https://doi.org/10.64898/2026.02.27.26347274",
           "pdf_url": null,
           "is_oa": true,
-          "version": "acceptedVersion",
+          "version": "submittedVersion",
           "source": "medRxiv",
           "source_type": "repository"
         },
@@ -8981,7 +7570,7 @@
         "landing_page_url": "https://doi.org/10.64898/2026.06.22.26356274",
         "pdf_url": "https://www.medrxiv.org/content/medrxiv/early/2026/06/24/2026.06.22.26356274.full.pdf",
         "is_oa": true,
-        "version": "acceptedVersion",
+        "version": "submittedVersion",
         "source": "medRxiv",
         "source_type": "repository"
       },
@@ -8991,7 +7580,7 @@
         "landing_page_url": "https://doi.org/10.64898/2026.06.22.26356274",
         "pdf_url": "https://www.medrxiv.org/content/medrxiv/early/2026/06/24/2026.06.22.26356274.full.pdf",
         "is_oa": true,
-        "version": "acceptedVersion",
+        "version": "submittedVersion",
         "source": "medRxiv",
         "source_type": "repository"
       },
@@ -9002,7 +7591,7 @@
           "landing_page_url": "https://doi.org/10.64898/2026.06.22.26356274",
           "pdf_url": "https://www.medrxiv.org/content/medrxiv/early/2026/06/24/2026.06.22.26356274.full.pdf",
           "is_oa": true,
-          "version": "acceptedVersion",
+          "version": "submittedVersion",
           "source": "medRxiv",
           "source_type": "repository"
         },
@@ -9083,8 +7672,8 @@
       "id": "W7166855572",
       "doi": "10.17615/0sh5-mt86",
       "title": "Unlocking the Potential of Wear Time of a Wearable Device to Enhance Postpartum Depression Screening and Detection: Cross-Sectional Study.",
-      "publication_year": 2026,
-      "publication_date": "2026-07-01",
+      "publication_year": 2025,
+      "publication_date": "2025-01-01",
       "type": "article",
       "pmid": null,
       "pmcid": null,
@@ -9190,7 +7779,7 @@
         "landing_page_url": "https://doi.org/10.64898/2026.07.03.26357246",
         "pdf_url": "https://www.medrxiv.org/content/medrxiv/early/2026/07/06/2026.07.03.26357246.full.pdf",
         "is_oa": true,
-        "version": "acceptedVersion",
+        "version": "submittedVersion",
         "source": "medRxiv",
         "source_type": "repository"
       },
@@ -9200,7 +7789,7 @@
         "landing_page_url": "https://doi.org/10.64898/2026.07.03.26357246",
         "pdf_url": "https://www.medrxiv.org/content/medrxiv/early/2026/07/06/2026.07.03.26357246.full.pdf",
         "is_oa": true,
-        "version": "acceptedVersion",
+        "version": "submittedVersion",
         "source": "medRxiv",
         "source_type": "repository"
       },
@@ -9211,7 +7800,7 @@
           "landing_page_url": "https://doi.org/10.64898/2026.07.03.26357246",
           "pdf_url": "https://www.medrxiv.org/content/medrxiv/early/2026/07/06/2026.07.03.26357246.full.pdf",
           "is_oa": true,
-          "version": "acceptedVersion",
+          "version": "submittedVersion",
           "source": "medRxiv",
           "source_type": "repository"
         },
@@ -9348,7 +7937,7 @@
         "landing_page_url": "https://doi.org/10.64898/2026.07.06.26357401",
         "pdf_url": "https://www.medrxiv.org/content/medrxiv/early/2026/07/09/2026.07.06.26357401.full.pdf",
         "is_oa": true,
-        "version": "acceptedVersion",
+        "version": "submittedVersion",
         "source": "medRxiv",
         "source_type": "repository"
       },
@@ -9358,7 +7947,7 @@
         "landing_page_url": "https://doi.org/10.64898/2026.07.06.26357401",
         "pdf_url": "https://www.medrxiv.org/content/medrxiv/early/2026/07/09/2026.07.06.26357401.full.pdf",
         "is_oa": true,
-        "version": "acceptedVersion",
+        "version": "submittedVersion",
         "source": "medRxiv",
         "source_type": "repository"
       },
@@ -9369,7 +7958,7 @@
           "landing_page_url": "https://doi.org/10.64898/2026.07.06.26357401",
           "pdf_url": "https://www.medrxiv.org/content/medrxiv/early/2026/07/09/2026.07.06.26357401.full.pdf",
           "is_oa": true,
-          "version": "acceptedVersion",
+          "version": "submittedVersion",
           "source": "medRxiv",
           "source_type": "repository"
         },
@@ -9479,41 +8068,51 @@
     },
     {
       "id": "W7167846090",
-      "doi": "10.64898/2026.07.06.26357398",
-      "title": "Metformin and Severe Post-COVID-19 Outcomes Among Individuals with Diabetes Mellitus",
+      "doi": "10.1111/dom.71502",
+      "title": "Metformin and Severe Post‐ COVID ‐19 Outcomes Among Individuals With Diabetes Mellitus",
       "publication_year": 2026,
-      "publication_date": "2026-07-09",
-      "type": "preprint",
+      "publication_date": "2026-11-05",
+      "type": "article",
       "pmid": "https://pubmed.ncbi.nlm.nih.gov/42465953",
       "pmcid": "https://www.ncbi.nlm.nih.gov/pmc/articles/13370604",
       "primary_location": {
-        "id": "doi:10.64898/2026.07.06.26357398",
-        "doi": "10.64898/2026.07.06.26357398",
-        "landing_page_url": "https://doi.org/10.64898/2026.07.06.26357398",
-        "pdf_url": "https://www.medrxiv.org/content/medrxiv/early/2026/07/09/2026.07.06.26357398.full.pdf",
+        "id": "doi:10.1111/dom.71502",
+        "doi": "10.1111/dom.71502",
+        "landing_page_url": "https://doi.org/10.1111/dom.71502",
+        "pdf_url": "https://onlinelibrary.wiley.com/doi/pdfdirect/10.1111/dom.71502",
         "is_oa": true,
-        "version": "acceptedVersion",
-        "source": "medRxiv",
-        "source_type": "repository"
+        "version": "publishedVersion",
+        "source": "Diabetes Obesity and Metabolism",
+        "source_type": "journal"
       },
       "best_oa_location": {
-        "id": "doi:10.64898/2026.07.06.26357398",
-        "doi": "10.64898/2026.07.06.26357398",
-        "landing_page_url": "https://doi.org/10.64898/2026.07.06.26357398",
-        "pdf_url": "https://www.medrxiv.org/content/medrxiv/early/2026/07/09/2026.07.06.26357398.full.pdf",
+        "id": "doi:10.1111/dom.71502",
+        "doi": "10.1111/dom.71502",
+        "landing_page_url": "https://doi.org/10.1111/dom.71502",
+        "pdf_url": "https://onlinelibrary.wiley.com/doi/pdfdirect/10.1111/dom.71502",
         "is_oa": true,
-        "version": "acceptedVersion",
-        "source": "medRxiv",
-        "source_type": "repository"
+        "version": "publishedVersion",
+        "source": "Diabetes Obesity and Metabolism",
+        "source_type": "journal"
       },
       "locations": [
+        {
+          "id": "doi:10.1111/dom.71502",
+          "doi": "10.1111/dom.71502",
+          "landing_page_url": "https://doi.org/10.1111/dom.71502",
+          "pdf_url": "https://onlinelibrary.wiley.com/doi/pdfdirect/10.1111/dom.71502",
+          "is_oa": true,
+          "version": "publishedVersion",
+          "source": "Diabetes Obesity and Metabolism",
+          "source_type": "journal"
+        },
         {
           "id": "doi:10.64898/2026.07.06.26357398",
           "doi": "10.64898/2026.07.06.26357398",
           "landing_page_url": "https://doi.org/10.64898/2026.07.06.26357398",
           "pdf_url": "https://www.medrxiv.org/content/medrxiv/early/2026/07/09/2026.07.06.26357398.full.pdf",
           "is_oa": true,
-          "version": "acceptedVersion",
+          "version": "submittedVersion",
           "source": "medRxiv",
           "source_type": "repository"
         },
@@ -9521,6 +8120,16 @@
           "id": "pmid:42465953",
           "doi": null,
           "landing_page_url": "https://pubmed.ncbi.nlm.nih.gov/42465953",
+          "pdf_url": null,
+          "is_oa": false,
+          "version": "publishedVersion",
+          "source": "PubMed",
+          "source_type": "repository"
+        },
+        {
+          "id": "pmid:42988585",
+          "doi": null,
+          "landing_page_url": "https://pubmed.ncbi.nlm.nih.gov/42988585",
           "pdf_url": null,
           "is_oa": false,
           "version": "publishedVersion",
@@ -9543,14 +8152,14 @@
           "position": "first",
           "author_id": "A5080035458",
           "display_name": "Zachary Butzin-Dozier",
-          "raw_author_name": "Zachary Butzin-Dozier",
+          "raw_author_name": "Zachary B. Dozier",
           "orcid": "0000-0001-6419-0008"
         },
         {
           "position": "middle",
           "author_id": "A5082284400",
           "display_name": "Letianchu Wang",
-          "raw_author_name": "Lin-Chiun Wang",
+          "raw_author_name": "Lin‐Chiun Wang",
           "orcid": null
         },
         {
@@ -9639,10 +8248,10 @@
         },
         {
           "position": "middle",
-          "author_id": "A5045795759",
-          "display_name": "Steve Johnson",
-          "raw_author_name": "Steven Johnson",
-          "orcid": "0000-0002-2983-6384"
+          "author_id": "A5069165806",
+          "display_name": "SB Johnson",
+          "raw_author_name": "Steven G. Johnson",
+          "orcid": null
         },
         {
           "position": "middle",
@@ -9706,7 +8315,7 @@
         "landing_page_url": "https://doi.org/10.64898/2026.07.21.26358594",
         "pdf_url": "https://www.medrxiv.org/content/medrxiv/early/2026/07/22/2026.07.21.26358594.full.pdf",
         "is_oa": true,
-        "version": "acceptedVersion",
+        "version": "submittedVersion",
         "source": "medRxiv",
         "source_type": "repository"
       },
@@ -9716,7 +8325,7 @@
         "landing_page_url": "https://doi.org/10.64898/2026.07.21.26358594",
         "pdf_url": "https://www.medrxiv.org/content/medrxiv/early/2026/07/22/2026.07.21.26358594.full.pdf",
         "is_oa": true,
-        "version": "acceptedVersion",
+        "version": "submittedVersion",
         "source": "medRxiv",
         "source_type": "repository"
       },
@@ -9727,7 +8336,7 @@
           "landing_page_url": "https://doi.org/10.64898/2026.07.21.26358594",
           "pdf_url": "https://www.medrxiv.org/content/medrxiv/early/2026/07/22/2026.07.21.26358594.full.pdf",
           "is_oa": true,
-          "version": "acceptedVersion",
+          "version": "submittedVersion",
           "source": "medRxiv",
           "source_type": "repository"
         },
@@ -9945,7 +8554,7 @@
           "author_id": "A5046245557",
           "display_name": "Syeda Luthfa Famida",
           "raw_author_name": "Syeda L Famida",
-          "orcid": null
+          "orcid": "0000-0002-3403-6736"
         },
         {
           "position": "middle",
@@ -11312,6 +9921,296 @@
           "display_name": "Rena C. Patel",
           "raw_author_name": "Rena C. Patel",
           "orcid": "0000-0001-9893-5856"
+        }
+      ],
+      "cited_by_count": 0,
+      "counts_by_year": [],
+      "biblio": {
+        "volume": null,
+        "issue": null,
+        "first_page": null,
+        "last_page": null
+      },
+      "is_retracted": false,
+      "is_paratext": false
+    },
+    {
+      "id": "W7225294963",
+      "doi": "10.2337/figshare.33894268",
+      "title": "Risk Factors for Incident Diabetes following SARS-CoV-2 Infection Across Variant Eras: Findings from the National Clinical Cohort Collaborative (N3C) COVID-19 Enclave",
+      "publication_year": 2026,
+      "publication_date": "2026-11-05",
+      "type": "other",
+      "pmid": null,
+      "pmcid": null,
+      "primary_location": {
+        "id": "doi:10.2337/figshare.33894268",
+        "doi": "10.2337/figshare.33894268",
+        "landing_page_url": "https://doi.org/10.2337/figshare.33894268",
+        "pdf_url": null,
+        "is_oa": true,
+        "version": "submittedVersion",
+        "source": null,
+        "source_type": null
+      },
+      "best_oa_location": {
+        "id": "doi:10.2337/figshare.33894268",
+        "doi": "10.2337/figshare.33894268",
+        "landing_page_url": "https://doi.org/10.2337/figshare.33894268",
+        "pdf_url": null,
+        "is_oa": true,
+        "version": "submittedVersion",
+        "source": null,
+        "source_type": null
+      },
+      "locations": [
+        {
+          "id": "doi:10.2337/figshare.33894268",
+          "doi": "10.2337/figshare.33894268",
+          "landing_page_url": "https://doi.org/10.2337/figshare.33894268",
+          "pdf_url": null,
+          "is_oa": true,
+          "version": "submittedVersion",
+          "source": null,
+          "source_type": null
+        }
+      ],
+      "authorships": [
+        {
+          "position": "first",
+          "author_id": "A5086498395",
+          "display_name": "Rachel Wong",
+          "raw_author_name": "Rachel Wong",
+          "orcid": "0000-0003-3108-7324"
+        },
+        {
+          "position": "middle",
+          "author_id": "A5111306521",
+          "display_name": "Lindsey E. Turner",
+          "raw_author_name": "Lindsey E. Turner",
+          "orcid": "0000-0003-2839-901X"
+        },
+        {
+          "position": "middle",
+          "author_id": "A5091182705",
+          "display_name": "Margaret D. Hall",
+          "raw_author_name": "Margaret Hall",
+          "orcid": "0000-0001-6683-2254"
+        },
+        {
+          "position": "middle",
+          "author_id": "A5160978938",
+          "display_name": "Carolyn Bramante",
+          "raw_author_name": "Carolyn Bramante",
+          "orcid": null
+        },
+        {
+          "position": "middle",
+          "author_id": "A5160927483",
+          "display_name": "John Buse",
+          "raw_author_name": "John Buse",
+          "orcid": null
+        },
+        {
+          "position": "middle",
+          "author_id": "A5077107233",
+          "display_name": "Jared D. Huling",
+          "raw_author_name": "Jared D. Huling",
+          "orcid": "0000-0003-0670-4845"
+        },
+        {
+          "position": "middle",
+          "author_id": "A5160847179",
+          "display_name": "Steven G. Johnson",
+          "raw_author_name": "Steven G. Johnson",
+          "orcid": null
+        },
+        {
+          "position": "middle",
+          "author_id": "A5160925462",
+          "display_name": "Til Stürmer",
+          "raw_author_name": "Til Stürmer",
+          "orcid": null
+        },
+        {
+          "position": "middle",
+          "author_id": "A5017119016",
+          "display_name": "Talia D. Wiggen",
+          "raw_author_name": "Talia Wiggen",
+          "orcid": "0000-0002-5234-3238"
+        },
+        {
+          "position": "middle",
+          "author_id": "A5085983888",
+          "display_name": "Kenneth J. Wilkins",
+          "raw_author_name": "Kenneth Wilkins",
+          "orcid": "0000-0003-0531-7165"
+        },
+        {
+          "position": "middle",
+          "author_id": "A5072378317",
+          "display_name": "Hsin‐Chieh Yeh",
+          "raw_author_name": "Hsin-Chieh Yeh",
+          "orcid": "0000-0002-5738-0652"
+        },
+        {
+          "position": "middle",
+          "author_id": "A5080035458",
+          "display_name": "Zachary Butzin-Dozier",
+          "raw_author_name": "Zachary Butzin-Dozier",
+          "orcid": "0000-0001-6419-0008"
+        },
+        {
+          "position": "last",
+          "author_id": "A5160756578",
+          "display_name": "Jane Reusch",
+          "raw_author_name": "Jane Reusch",
+          "orcid": null
+        }
+      ],
+      "cited_by_count": 0,
+      "counts_by_year": [],
+      "biblio": {
+        "volume": null,
+        "issue": null,
+        "first_page": null,
+        "last_page": null
+      },
+      "is_retracted": false,
+      "is_paratext": false
+    },
+    {
+      "id": "W7225347184",
+      "doi": "10.2337/figshare.33894268.v1",
+      "title": "Risk Factors for Incident Diabetes following SARS-CoV-2 Infection Across Variant Eras: Findings from the National Clinical Cohort Collaborative (N3C) COVID-19 Enclave",
+      "publication_year": 2026,
+      "publication_date": "2026-11-05",
+      "type": "other",
+      "pmid": null,
+      "pmcid": null,
+      "primary_location": {
+        "id": "doi:10.2337/figshare.33894268.v1",
+        "doi": "10.2337/figshare.33894268.v1",
+        "landing_page_url": "https://doi.org/10.2337/figshare.33894268.v1",
+        "pdf_url": null,
+        "is_oa": true,
+        "version": "submittedVersion",
+        "source": null,
+        "source_type": null
+      },
+      "best_oa_location": {
+        "id": "doi:10.2337/figshare.33894268.v1",
+        "doi": "10.2337/figshare.33894268.v1",
+        "landing_page_url": "https://doi.org/10.2337/figshare.33894268.v1",
+        "pdf_url": null,
+        "is_oa": true,
+        "version": "submittedVersion",
+        "source": null,
+        "source_type": null
+      },
+      "locations": [
+        {
+          "id": "doi:10.2337/figshare.33894268.v1",
+          "doi": "10.2337/figshare.33894268.v1",
+          "landing_page_url": "https://doi.org/10.2337/figshare.33894268.v1",
+          "pdf_url": null,
+          "is_oa": true,
+          "version": "submittedVersion",
+          "source": null,
+          "source_type": null
+        }
+      ],
+      "authorships": [
+        {
+          "position": "first",
+          "author_id": "A5086498395",
+          "display_name": "Rachel Wong",
+          "raw_author_name": "Rachel Wong",
+          "orcid": "0000-0003-3108-7324"
+        },
+        {
+          "position": "middle",
+          "author_id": "A5111306521",
+          "display_name": "Lindsey E. Turner",
+          "raw_author_name": "Lindsey E. Turner",
+          "orcid": "0000-0003-2839-901X"
+        },
+        {
+          "position": "middle",
+          "author_id": "A5091182705",
+          "display_name": "Margaret D. Hall",
+          "raw_author_name": "Margaret Hall",
+          "orcid": "0000-0001-6683-2254"
+        },
+        {
+          "position": "middle",
+          "author_id": "A5160978938",
+          "display_name": "Carolyn Bramante",
+          "raw_author_name": "Carolyn Bramante",
+          "orcid": null
+        },
+        {
+          "position": "middle",
+          "author_id": "A5160927483",
+          "display_name": "John Buse",
+          "raw_author_name": "John Buse",
+          "orcid": null
+        },
+        {
+          "position": "middle",
+          "author_id": "A5077107233",
+          "display_name": "Jared D. Huling",
+          "raw_author_name": "Jared D. Huling",
+          "orcid": "0000-0003-0670-4845"
+        },
+        {
+          "position": "middle",
+          "author_id": "A5160847179",
+          "display_name": "Steven G. Johnson",
+          "raw_author_name": "Steven G. Johnson",
+          "orcid": null
+        },
+        {
+          "position": "middle",
+          "author_id": "A5160925462",
+          "display_name": "Til Stürmer",
+          "raw_author_name": "Til Stürmer",
+          "orcid": null
+        },
+        {
+          "position": "middle",
+          "author_id": "A5017119016",
+          "display_name": "Talia D. Wiggen",
+          "raw_author_name": "Talia Wiggen",
+          "orcid": "0000-0002-5234-3238"
+        },
+        {
+          "position": "middle",
+          "author_id": "A5085983888",
+          "display_name": "Kenneth J. Wilkins",
+          "raw_author_name": "Kenneth Wilkins",
+          "orcid": "0000-0003-0531-7165"
+        },
+        {
+          "position": "middle",
+          "author_id": "A5072378317",
+          "display_name": "Hsin‐Chieh Yeh",
+          "raw_author_name": "Hsin-Chieh Yeh",
+          "orcid": "0000-0002-5738-0652"
+        },
+        {
+          "position": "middle",
+          "author_id": "A5080035458",
+          "display_name": "Zachary Butzin-Dozier",
+          "raw_author_name": "Zachary Butzin-Dozier",
+          "orcid": "0000-0001-6419-0008"
+        },
+        {
+          "position": "last",
+          "author_id": "A5160756578",
+          "display_name": "Jane Reusch",
+          "raw_author_name": "Jane Reusch",
+          "orcid": null
         }
       ],
       "cited_by_count": 0,

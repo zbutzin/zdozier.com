@@ -1,45 +1,45 @@
 {
-  "started": "2026-11-02T22:35:45Z",
-  "finished": "2026-11-02T22:36:01Z",
+  "started": "2026-11-09T23:16:24Z",
+  "finished": "2026-11-09T23:16:42Z",
   "sources": {
     "orcid": {
       "ok": true,
-      "count": 45,
+      "count": 46,
       "error": null,
       "used_cache": false,
-      "fetched_at": "2026-11-02T22:35:45Z",
+      "fetched_at": "2026-11-09T23:16:24Z",
       "requests": 3
     },
     "openalex": {
       "ok": true,
-      "count": 53,
+      "count": 46,
       "error": null,
       "used_cache": false,
-      "fetched_at": "2026-11-02T22:35:45Z",
+      "fetched_at": "2026-11-09T23:16:25Z",
       "requests": 2
     },
     "europepmc": {
       "ok": true,
-      "count": 43,
+      "count": 44,
       "error": null,
       "used_cache": false,
-      "fetched_at": "2026-11-02T22:35:49Z",
+      "fetched_at": "2026-11-09T23:16:26Z",
       "requests": 1
     },
     "crossref": {
       "ok": true,
-      "count": 33,
+      "count": 34,
       "error": null,
       "used_cache": false,
-      "fetched_at": "2026-11-02T22:35:50Z",
-      "requests": 6
+      "fetched_at": "2026-11-09T23:16:28Z",
+      "requests": 30
     },
     "reporter": {
       "ok": true,
       "count": 1,
       "error": null,
       "used_cache": false,
-      "fetched_at": "2026-11-02T22:35:57Z",
+      "fetched_at": "2026-11-09T23:16:38Z",
       "requests": 4
     },
     "github": {
@@ -47,7 +47,7 @@
       "count": 8,
       "error": null,
       "used_cache": false,
-      "fetched_at": "2026-11-02T22:36:01Z",
+      "fetched_at": "2026-11-09T23:16:42Z",
       "requests": 1
     }
   }

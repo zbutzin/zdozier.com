@@ -1,6 +1,6 @@
 {
   "source": "crossref",
-  "fetched_at": "2026-11-02T22:35:50Z",
+  "fetched_at": "2026-11-09T23:16:28Z",
   "orcid_filter": {
     "orcid": "0000-0001-6419-0008",
     "dois": [
@@ -17,6 +17,7 @@
       "10.1101/2024.10.18.24315778",
       "10.1101/2025.04.22.25326224",
       "10.1101/2025.06.06.25329168",
+      "10.1111/dom.71502",
       "10.1136/bmjdrc-2024-004536",
       "10.1155/pedi/3545727",
       "10.1186/s12916-024-03655-x",
@@ -42,15 +43,15 @@
   },
   "partial_error": null,
   "stats": {
-    "wanted": 58,
-    "relation_targets": 0,
-    "fetched": 4,
+    "wanted": 61,
+    "relation_targets": 1,
+    "fetched": 28,
     "failed": 0,
     "errors": []
   },
   "works": {
     "10.1001/archpediatrics.2010.54": {
-      "fetched_at": "2026-10-09T20:28:33Z",
+      "fetched_at": "2026-11-09T23:16:28Z",
       "status": 200,
       "message": {
         "DOI": "10.1001/archpediatrics.2010.54",
@@ -246,7 +247,7 @@
       }
     },
     "10.1016/j.cdnut.2025.107596": {
-      "fetched_at": "2026-10-09T20:28:33Z",
+      "fetched_at": "2026-11-09T23:16:28Z",
       "status": 200,
       "message": {
         "DOI": "10.1016/j.cdnut.2025.107596",
@@ -396,14 +397,14 @@
         "relation": {},
         "URL": "https://doi.org/10.1016/j.cdnut.2025.107596",
         "publisher": "Elsevier BV",
-        "is-referenced-by-count": 0,
+        "is-referenced-by-count": 1,
         "ISSN": [
           "2475-2991"
         ]
       }
     },
     "10.1016/j.cdnut.2026.108692": {
-      "fetched_at": "2026-10-09T20:28:33Z",
+      "fetched_at": "2026-11-09T23:16:28Z",
       "status": 200,
       "message": {
         "DOI": "10.1016/j.cdnut.2026.108692",
@@ -577,7 +578,7 @@
       }
     },
     "10.1016/j.ebiom.2024.105333": {
-      "fetched_at": "2026-10-09T20:28:33Z",
+      "fetched_at": "2026-11-09T23:16:28Z",
       "status": 200,
       "message": {
         "DOI": "10.1016/j.ebiom.2024.105333",
@@ -2526,7 +2527,7 @@
       }
     },
     "10.1016/j.ebiom.2026.106382": {
-      "fetched_at": "2026-11-02T22:35:50Z",
+      "fetched_at": "2026-11-09T23:16:28Z",
       "status": 200,
       "message": {
         "DOI": "10.1016/j.ebiom.2026.106382",
@@ -3300,7 +3301,7 @@
       }
     },
     "10.1016/j.psyneuen.2024.107023": {
-      "fetched_at": "2026-10-09T20:28:33Z",
+      "fetched_at": "2026-11-09T23:16:28Z",
       "status": 200,
       "message": {
         "DOI": "10.1016/j.psyneuen.2024.107023",
@@ -3528,7 +3529,7 @@
       }
     },
     "10.1016/s2352-3018(25)00302-9": {
-      "fetched_at": "2026-10-09T20:28:33Z",
+      "fetched_at": "2026-11-09T23:16:28Z",
       "status": 200,
       "message": {
         "DOI": "10.1016/s2352-3018(25)00302-9",
@@ -3658,7 +3659,7 @@
       }
     },
     "10.1038/s41467-024-55801-x": {
-      "fetched_at": "2026-10-09T20:28:33Z",
+      "fetched_at": "2026-11-09T23:16:28Z",
       "status": 200,
       "message": {
         "DOI": "10.1038/s41467-024-55801-x",
@@ -3878,14 +3879,14 @@
         "relation": {},
         "URL": "https://doi.org/10.1038/s41467-024-55801-x",
         "publisher": "Springer Science and Business Media LLC",
-        "is-referenced-by-count": 10,
+        "is-referenced-by-count": 12,
         "ISSN": [
           "2041-1723"
         ]
       }
     },
     "10.1038/s41598-025-90505-2": {
-      "fetched_at": "2026-10-09T20:28:33Z",
+      "fetched_at": "2026-11-09T23:16:28Z",
       "status": 200,
       "message": {
         "DOI": "10.1038/s41598-025-90505-2",
@@ -4103,7 +4104,7 @@
       }
     },
     "10.1093/epirev/mxac003": {
-      "fetched_at": "2026-10-09T20:28:33Z",
+      "fetched_at": "2026-11-09T23:16:28Z",
       "status": 200,
       "message": {
         "DOI": "10.1093/epirev/mxac003",
@@ -4178,7 +4179,7 @@
       }
     },
     "10.1093/ofid/ofaf731": {
-      "fetched_at": "2026-11-02T22:35:50Z",
+      "fetched_at": "2026-11-09T23:16:28Z",
       "status": 200,
       "message": {
         "DOI": "10.1093/ofid/ofaf731",
@@ -4331,7 +4332,7 @@
       }
     },
     "10.1093/ofid/ofag560": {
-      "fetched_at": "2026-11-02T22:35:50Z",
+      "fetched_at": "2026-11-09T23:16:28Z",
       "status": 200,
       "message": {
         "DOI": "10.1093/ofid/ofag560",
@@ -5091,7 +5092,7 @@
       }
     },
     "10.1101/2021.11.10.21266206": {
-      "fetched_at": "2026-10-09T20:28:33Z",
+      "fetched_at": "2026-11-09T23:16:28Z",
       "status": 200,
       "message": {
         "DOI": "10.1101/2021.11.10.21266206",
@@ -5284,7 +5285,7 @@
       }
     },
     "10.1101/2023.07.27.23293272": {
-      "fetched_at": "2026-11-02T22:35:50Z",
+      "fetched_at": "2026-11-09T23:16:28Z",
       "status": 200,
       "message": {
         "DOI": "10.1101/2023.07.27.23293272",
@@ -5412,7 +5413,7 @@
       }
     },
     "10.1101/2023.09.12.23295429": {
-      "fetched_at": "2026-11-02T22:35:50Z",
+      "fetched_at": "2026-11-09T23:16:28Z",
       "status": 200,
       "message": {
         "DOI": "10.1101/2023.09.12.23295429",
@@ -5662,7 +5663,7 @@
       }
     },
     "10.1101/2023.10.13.23296965": {
-      "fetched_at": "2026-11-02T22:35:50Z",
+      "fetched_at": "2026-11-09T23:16:28Z",
       "status": 200,
       "message": {
         "DOI": "10.1101/2023.10.13.23296965",
@@ -5773,7 +5774,7 @@
       }
     },
     "10.1101/2024.02.05.24302352": {
-      "fetched_at": "2026-11-02T22:35:50Z",
+      "fetched_at": "2026-11-09T23:16:28Z",
       "status": 200,
       "message": {
         "DOI": "10.1101/2024.02.05.24302352",
@@ -5899,7 +5900,7 @@
       }
     },
     "10.1101/2024.03.21.24304684": {
-      "fetched_at": "2026-11-02T22:35:50Z",
+      "fetched_at": "2026-11-09T23:16:28Z",
       "status": 200,
       "message": {
         "DOI": "10.1101/2024.03.21.24304684",
@@ -6125,7 +6126,7 @@
       }
     },
     "10.1101/2024.05.10.24307069": {
-      "fetched_at": "2026-11-02T22:35:50Z",
+      "fetched_at": "2026-11-09T23:16:28Z",
       "status": 200,
       "message": {
         "DOI": "10.1101/2024.05.10.24307069",
@@ -6366,7 +6367,7 @@
       }
     },
     "10.1101/2024.10.07.24315026": {
-      "fetched_at": "2026-11-02T22:35:50Z",
+      "fetched_at": "2026-11-09T23:16:28Z",
       "status": 200,
       "message": {
         "DOI": "10.1101/2024.10.07.24315026",
@@ -6465,7 +6466,7 @@
       }
     },
     "10.1101/2024.10.18.24315778": {
-      "fetched_at": "2026-11-02T22:35:50Z",
+      "fetched_at": "2026-11-09T23:16:28Z",
       "status": 200,
       "message": {
         "DOI": "10.1101/2024.10.18.24315778",
@@ -6558,7 +6559,7 @@
       }
     },
     "10.1101/2025.04.22.25326224": {
-      "fetched_at": "2026-11-02T22:35:50Z",
+      "fetched_at": "2026-11-09T23:16:28Z",
       "status": 200,
       "message": {
         "DOI": "10.1101/2025.04.22.25326224",
@@ -6719,7 +6720,7 @@
       }
     },
     "10.1101/2025.06.06.25329168": {
-      "fetched_at": "2026-11-02T22:35:50Z",
+      "fetched_at": "2026-11-09T23:16:28Z",
       "status": 200,
       "message": {
         "DOI": "10.1101/2025.06.06.25329168",
@@ -6829,8 +6830,172 @@
         "is-referenced-by-count": 4
       }
     },
+    "10.1111/dom.71502": {
+      "fetched_at": "2026-11-09T23:16:28Z",
+      "status": 200,
+      "message": {
+        "DOI": "10.1111/dom.71502",
+        "type": "journal-article",
+        "title": [
+          "Metformin and Severe Post‐\n                    <scp>COVID</scp>\n                    ‐19 Outcomes Among Individuals With Diabetes Mellitus"
+        ],
+        "subtitle": [],
+        "container-title": [
+          "Diabetes, Obesity and Metabolism"
+        ],
+        "short-container-title": [
+          "Diabetes Obesity Metabolism"
+        ],
+        "author": [
+          {
+            "given": "Zachary B.",
+            "family": "Dozier",
+            "ORCID": "https://orcid.org/0000-0001-6419-0008",
+            "sequence": "first"
+          },
+          {
+            "given": "Lin‐Chiun",
+            "family": "Wang",
+            "sequence": "additional"
+          },
+          {
+            "given": "Yunwen",
+            "family": "Ji",
+            "sequence": "additional"
+          },
+          {
+            "given": "A. Jerrod",
+            "family": "Anzalone",
+            "sequence": "additional"
+          },
+          {
+            "given": "Oluwasolape",
+            "family": "Olawore",
+            "sequence": "additional"
+          },
+          {
+            "given": "Ryan",
+            "family": "Hafen",
+            "sequence": "additional"
+          },
+          {
+            "given": "Eric",
+            "family": "Hurwitz",
+            "sequence": "additional"
+          },
+          {
+            "given": "Manav",
+            "family": "Kumar",
+            "sequence": "additional"
+          },
+          {
+            "given": "Rena C.",
+            "family": "Patel",
+            "sequence": "additional"
+          },
+          {
+            "given": "Ariana",
+            "family": "Budhihartanto",
+            "sequence": "additional"
+          },
+          {
+            "given": "Mark",
+            "family": "van der Laan",
+            "sequence": "additional"
+          },
+          {
+            "given": "John M.",
+            "family": "Colford",
+            "suffix": "Jr.",
+            "sequence": "additional"
+          },
+          {
+            "given": "Alan E.",
+            "family": "Hubbard",
+            "sequence": "additional"
+          },
+          {
+            "given": "John B.",
+            "family": "Buse",
+            "ORCID": "https://orcid.org/0000-0002-9723-3876",
+            "sequence": "additional"
+          },
+          {
+            "given": "Steven G.",
+            "family": "Johnson",
+            "sequence": "additional"
+          },
+          {
+            "given": "Jane",
+            "family": "Reusch",
+            "sequence": "additional"
+          },
+          {
+            "given": "Lauren E.",
+            "family": "Chan",
+            "sequence": "additional"
+          },
+          {
+            "given": "Richard",
+            "family": "Moffitt",
+            "sequence": "additional"
+          },
+          {
+            "given": "Rachel",
+            "family": "Wong",
+            "sequence": "additional"
+          },
+          {
+            "given": "Carolyn",
+            "family": "Bramante",
+            "ORCID": "https://orcid.org/0000-0001-5858-2080",
+            "sequence": "additional"
+          },
+          {
+            "name": "the National Clinical Cohort Collaborative (N3C) Consortium",
+            "sequence": "additional"
+          }
+        ],
+        "published": {
+          "date-parts": [
+            [
+              2026,
+              11,
+              5
+            ]
+          ]
+        },
+        "published-online": {
+          "date-parts": [
+            [
+              2026,
+              11,
+              5
+            ]
+          ]
+        },
+        "issued": {
+          "date-parts": [
+            [
+              2026,
+              11,
+              5
+            ]
+          ]
+        },
+        "article-number": "dom.71502",
+        "relation": {},
+        "URL": "https://doi.org/10.1111/dom.71502",
+        "publisher": "Wiley",
+        "is-referenced-by-count": 0,
+        "ISSN": [
+          "1462-8902",
+          "1463-1326"
+        ]
+      }
+    },
     "10.1136/bmjdrc-2024-004536": {
-      "fetched_at": "2026-11-02T22:35:50Z",
+      "fetched_at": "2026-11-09T23:16:28Z",
       "status": 200,
       "message": {
         "DOI": "10.1136/bmjdrc-2024-004536",
@@ -6968,7 +7133,7 @@
       }
     },
     "10.1155/pedi/3545727": {
-      "fetched_at": "2026-11-02T22:35:50Z",
+      "fetched_at": "2026-11-09T23:16:28Z",
       "status": 200,
       "message": {
         "DOI": "10.1155/pedi/3545727",
@@ -7114,7 +7279,7 @@
       }
     },
     "10.1162/2e3983f5.c3345096": {
-      "fetched_at": "2026-10-09T20:28:33Z",
+      "fetched_at": "2026-11-09T23:16:28Z",
       "status": 200,
       "message": {
         "DOI": "10.1162/2e3983f5.c3345096",
@@ -7186,7 +7351,7 @@
       }
     },
     "10.1162/2e3983f5.ce1c98c7": {
-      "fetched_at": "2026-10-09T20:28:33Z",
+      "fetched_at": "2026-11-09T23:16:28Z",
       "status": 200,
       "message": {
         "DOI": "10.1162/2e3983f5.ce1c98c7",
@@ -7253,7 +7418,7 @@
       }
     },
     "10.1186/s12889-022-13073-4": {
-      "fetched_at": "2026-10-09T20:28:33Z",
+      "fetched_at": "2026-11-09T23:16:28Z",
       "status": 200,
       "message": {
         "DOI": "10.1186/s12889-022-13073-4",
@@ -7343,7 +7508,7 @@
       }
     },
     "10.1186/s12916-024-03655-x": {
-      "fetched_at": "2026-11-02T22:35:50Z",
+      "fetched_at": "2026-11-09T23:16:28Z",
       "status": 200,
       "message": {
         "DOI": "10.1186/s12916-024-03655-x",
@@ -7466,7 +7631,7 @@
       }
     },
     "10.1371/journal.pntd.0012881": {
-      "fetched_at": "2026-11-02T22:35:50Z",
+      "fetched_at": "2026-11-09T23:16:28Z",
       "status": 200,
       "message": {
         "DOI": "10.1371/journal.pntd.0012881",
@@ -7703,7 +7868,7 @@
       }
     },
     "10.1377/hlthaff.2025.00179": {
-      "fetched_at": "2026-10-09T20:28:33Z",
+      "fetched_at": "2026-11-09T23:16:28Z",
       "status": 200,
       "message": {
         "DOI": "10.1377/hlthaff.2025.00179",
@@ -7830,7 +7995,7 @@
         "relation": {},
         "URL": "https://doi.org/10.1377/hlthaff.2025.00179",
         "publisher": "Health Affairs Publishing, LLC",
-        "is-referenced-by-count": 0,
+        "is-referenced-by-count": 2,
         "ISSN": [
           "0278-2715",
           "1544-5208"
@@ -7838,7 +8003,7 @@
       }
     },
     "10.21203/rs.3.rs-455696/v1": {
-      "fetched_at": "2026-10-09T20:28:33Z",
+      "fetched_at": "2026-11-09T23:16:28Z",
       "status": 200,
       "message": {
         "DOI": "10.21203/rs.3.rs-455696/v1",
@@ -7926,7 +8091,7 @@
       }
     },
     "10.2139/ssrn.3918273": {
-      "fetched_at": "2026-10-09T20:28:33Z",
+      "fetched_at": "2026-11-09T23:16:28Z",
       "status": 200,
       "message": {
         "DOI": "10.2139/ssrn.3918273",
@@ -8092,7 +8257,7 @@
       }
     },
     "10.2139/ssrn.5273921": {
-      "fetched_at": "2026-10-09T20:28:33Z",
+      "fetched_at": "2026-11-09T23:16:28Z",
       "status": 200,
       "message": {
         "DOI": "10.2139/ssrn.5273921",
@@ -8205,7 +8370,7 @@
       }
     },
     "10.2196/53322": {
-      "fetched_at": "2026-11-02T22:35:50Z",
+      "fetched_at": "2026-11-09T23:16:28Z",
       "status": 200,
       "message": {
         "DOI": "10.2196/53322",
@@ -8338,14 +8503,14 @@
         },
         "URL": "https://doi.org/10.2196/53322",
         "publisher": "JMIR Publications Inc.",
-        "is-referenced-by-count": 12,
+        "is-referenced-by-count": 13,
         "ISSN": [
           "2369-2960"
         ]
       }
     },
     "10.2196/54622": {
-      "fetched_at": "2026-11-02T22:35:50Z",
+      "fetched_at": "2026-11-09T23:16:28Z",
       "status": 200,
       "message": {
         "DOI": "10.2196/54622",
@@ -8457,14 +8622,14 @@
         },
         "URL": "https://doi.org/10.2196/54622",
         "publisher": "JMIR Publications Inc.",
-        "is-referenced-by-count": 35,
+        "is-referenced-by-count": 36,
         "ISSN": [
           "2291-5222"
         ]
       }
     },
     "10.2196/67585": {
-      "fetched_at": "2026-11-02T22:35:50Z",
+      "fetched_at": "2026-11-09T23:16:28Z",
       "status": 200,
       "message": {
         "DOI": "10.2196/67585",
@@ -8564,7 +8729,7 @@
       }
     },
     "10.2196/68143": {
-      "fetched_at": "2026-11-02T22:35:50Z",
+      "fetched_at": "2026-11-09T23:16:28Z",
       "status": 200,
       "message": {
         "DOI": "10.2196/68143",
@@ -8752,7 +8917,7 @@
       }
     },
     "10.2196/preprints.53322": {
-      "fetched_at": "2026-11-02T22:35:50Z",
+      "fetched_at": "2026-11-09T23:16:28Z",
       "status": 200,
       "message": {
         "DOI": "10.2196/preprints.53322",
@@ -8885,7 +9050,7 @@
       }
     },
     "10.2196/preprints.54622": {
-      "fetched_at": "2026-11-02T22:35:50Z",
+      "fetched_at": "2026-11-09T23:16:28Z",
       "status": 200,
       "message": {
         "DOI": "10.2196/preprints.54622",
@@ -8990,7 +9155,7 @@
       }
     },
     "10.2196/preprints.67585": {
-      "fetched_at": "2026-11-02T22:35:50Z",
+      "fetched_at": "2026-11-09T23:16:28Z",
       "status": 200,
       "message": {
         "DOI": "10.2196/preprints.67585",
@@ -9083,7 +9248,7 @@
       }
     },
     "10.2196/preprints.68143": {
-      "fetched_at": "2026-11-02T22:35:50Z",
+      "fetched_at": "2026-11-09T23:16:28Z",
       "status": 200,
       "message": {
         "DOI": "10.2196/preprints.68143",
@@ -9263,8 +9428,408 @@
         "is-referenced-by-count": 0
       }
     },
+    "10.2337/doc26-0057": {
+      "fetched_at": "2026-11-09T23:16:28Z",
+      "status": 200,
+      "message": {
+        "DOI": "10.2337/doc26-0057",
+        "type": "journal-article",
+        "title": [
+          "Risk Factors for Incident Diabetes After SARS-CoV-2 Infection Across Variant Eras: Findings From the National Clinical Cohort Collaborative (N3C) COVID-19 Enclave"
+        ],
+        "subtitle": [],
+        "container-title": [
+          "Diabetes, Obesity, and CardioMetabolic CARE"
+        ],
+        "short-container-title": [],
+        "author": [
+          {
+            "given": "Rachel",
+            "family": "Wong",
+            "ORCID": "https://orcid.org/0000-0003-3108-7324",
+            "sequence": "first"
+          },
+          {
+            "given": "Lindsey E.",
+            "family": "Turner",
+            "sequence": "additional"
+          },
+          {
+            "given": "Margaret A.",
+            "family": "Hall",
+            "sequence": "additional"
+          },
+          {
+            "given": "Carolyn T.",
+            "family": "Bramante",
+            "sequence": "additional"
+          },
+          {
+            "given": "John B.",
+            "family": "Buse",
+            "sequence": "additional"
+          },
+          {
+            "given": "Jared D.",
+            "family": "Huling",
+            "sequence": "additional"
+          },
+          {
+            "given": "Steven G.",
+            "family": "Johnson",
+            "sequence": "additional"
+          },
+          {
+            "given": "Til",
+            "family": "Stürmer",
+            "sequence": "additional"
+          },
+          {
+            "given": "Talia D.",
+            "family": "Wiggen",
+            "sequence": "additional"
+          },
+          {
+            "given": "Kenneth J.",
+            "family": "Wilkins",
+            "sequence": "additional"
+          },
+          {
+            "given": "Hsin-Chieh",
+            "family": "Yeh",
+            "sequence": "additional"
+          },
+          {
+            "given": "Zachary B.",
+            "family": "Dozier",
+            "sequence": "additional"
+          },
+          {
+            "given": "Jane",
+            "family": "Reusch",
+            "sequence": "additional"
+          },
+          {
+            "name": "N3C Consortium*",
+            "sequence": "additional"
+          }
+        ],
+        "published": {
+          "date-parts": [
+            [
+              2026,
+              11,
+              5
+            ]
+          ]
+        },
+        "published-online": {
+          "date-parts": [
+            [
+              2026,
+              11,
+              5
+            ]
+          ]
+        },
+        "issued": {
+          "date-parts": [
+            [
+              2026,
+              11,
+              5
+            ]
+          ]
+        },
+        "article-number": "doc260057",
+        "relation": {},
+        "URL": "https://doi.org/10.2337/doc26-0057",
+        "publisher": "American Diabetes Association",
+        "is-referenced-by-count": 0,
+        "ISSN": [
+          "3067-3518",
+          "3067-3534"
+        ]
+      }
+    },
+    "10.2337/figshare.33894268": {
+      "fetched_at": "2026-11-09T23:16:28Z",
+      "status": 200,
+      "message": {
+        "DOI": "10.2337/figshare.33894268",
+        "type": "posted-content",
+        "subtype": "other",
+        "title": [
+          "&lt;b&gt;Risk Factors for Incident Diabetes following SARS-CoV-2 Infection Across Variant Eras: Findings from the National Clinical Cohort Collaborative (N3C) COVID-19 Enclave&lt;/b&gt;"
+        ],
+        "subtitle": [],
+        "container-title": [],
+        "short-container-title": [],
+        "author": [
+          {
+            "given": "Rachel",
+            "family": "Wong",
+            "sequence": "first"
+          },
+          {
+            "given": "Lindsey",
+            "family": "E. Turner",
+            "sequence": "first"
+          },
+          {
+            "given": "Margaret",
+            "family": "Hall",
+            "sequence": "first"
+          },
+          {
+            "given": "Carolyn",
+            "family": "Bramante",
+            "sequence": "first"
+          },
+          {
+            "given": "John",
+            "family": "Buse",
+            "sequence": "first"
+          },
+          {
+            "given": "Jared",
+            "family": "D. Huling",
+            "sequence": "first"
+          },
+          {
+            "given": "Steven",
+            "family": "G. Johnson",
+            "sequence": "first"
+          },
+          {
+            "given": "Til",
+            "family": "Stürmer",
+            "sequence": "first"
+          },
+          {
+            "given": "Talia",
+            "family": "Wiggen",
+            "sequence": "first"
+          },
+          {
+            "given": "Kenneth",
+            "family": "Wilkins",
+            "sequence": "first"
+          },
+          {
+            "given": "Hsin-Chieh",
+            "family": "Yeh",
+            "sequence": "first"
+          },
+          {
+            "given": "Zachary",
+            "family": "Butzin-Dozier",
+            "sequence": "first"
+          },
+          {
+            "given": "Jane",
+            "family": "Reusch",
+            "sequence": "first"
+          },
+          {
+            "given": "On",
+            "family": "behalf of N3C Consortium",
+            "sequence": "first"
+          }
+        ],
+        "published": {
+          "date-parts": [
+            [
+              2026,
+              11,
+              5
+            ]
+          ]
+        },
+        "issued": {
+          "date-parts": [
+            [
+              2026,
+              11,
+              5
+            ]
+          ]
+        },
+        "posted": {
+          "date-parts": [
+            [
+              2026,
+              11,
+              5
+            ]
+          ]
+        },
+        "relation": {
+          "references": [
+            {
+              "id-type": "doi",
+              "id": "10.2337/doc26-0057",
+              "asserted-by": "subject"
+            }
+          ],
+          "is-preprint-of": [
+            {
+              "id-type": "doi",
+              "id": "10.2337/doc26-0057",
+              "asserted-by": "subject"
+            }
+          ]
+        },
+        "URL": "https://doi.org/10.2337/figshare.33894268",
+        "publisher": "American Diabetes Association",
+        "institution": [
+          {
+            "name": "American Diabetes Association"
+          }
+        ],
+        "is-referenced-by-count": 0
+      }
+    },
+    "10.2337/figshare.33894268.v1": {
+      "fetched_at": "2026-11-09T23:16:28Z",
+      "status": 200,
+      "message": {
+        "DOI": "10.2337/figshare.33894268.v1",
+        "type": "posted-content",
+        "subtype": "other",
+        "title": [
+          "&lt;b&gt;Risk Factors for Incident Diabetes following SARS-CoV-2 Infection Across Variant Eras: Findings from the National Clinical Cohort Collaborative (N3C) COVID-19 Enclave&lt;/b&gt;"
+        ],
+        "subtitle": [],
+        "container-title": [],
+        "short-container-title": [],
+        "author": [
+          {
+            "given": "Rachel",
+            "family": "Wong",
+            "sequence": "first"
+          },
+          {
+            "given": "Lindsey",
+            "family": "E. Turner",
+            "sequence": "first"
+          },
+          {
+            "given": "Margaret",
+            "family": "Hall",
+            "sequence": "first"
+          },
+          {
+            "given": "Carolyn",
+            "family": "Bramante",
+            "sequence": "first"
+          },
+          {
+            "given": "John",
+            "family": "Buse",
+            "sequence": "first"
+          },
+          {
+            "given": "Jared",
+            "family": "D. Huling",
+            "sequence": "first"
+          },
+          {
+            "given": "Steven",
+            "family": "G. Johnson",
+            "sequence": "first"
+          },
+          {
+            "given": "Til",
+            "family": "Stürmer",
+            "sequence": "first"
+          },
+          {
+            "given": "Talia",
+            "family": "Wiggen",
+            "sequence": "first"
+          },
+          {
+            "given": "Kenneth",
+            "family": "Wilkins",
+            "sequence": "first"
+          },
+          {
+            "given": "Hsin-Chieh",
+            "family": "Yeh",
+            "sequence": "first"
+          },
+          {
+            "given": "Zachary",
+            "family": "Butzin-Dozier",
+            "sequence": "first"
+          },
+          {
+            "given": "Jane",
+            "family": "Reusch",
+            "sequence": "first"
+          },
+          {
+            "given": "On",
+            "family": "behalf of N3C Consortium",
+            "sequence": "first"
+          }
+        ],
+        "published": {
+          "date-parts": [
+            [
+              2026,
+              11,
+              5
+            ]
+          ]
+        },
+        "issued": {
+          "date-parts": [
+            [
+              2026,
+              11,
+              5
+            ]
+          ]
+        },
+        "posted": {
+          "date-parts": [
+            [
+              2026,
+              11,
+              5
+            ]
+          ]
+        },
+        "relation": {
+          "references": [
+            {
+              "id-type": "doi",
+              "id": "10.2337/doc26-0057",
+              "asserted-by": "subject"
+            }
+          ],
+          "is-preprint-of": [
+            {
+              "id-type": "doi",
+              "id": "10.2337/doc26-0057",
+              "asserted-by": "subject"
+            }
+          ]
+        },
+        "URL": "https://doi.org/10.2337/figshare.33894268.v1",
+        "publisher": "American Diabetes Association",
+        "institution": [
+          {
+            "name": "American Diabetes Association"
+          }
+        ],
+        "is-referenced-by-count": 0
+      }
+    },
     "10.3390/antibiotics10010002": {
-      "fetched_at": "2026-11-02T22:35:50Z",
+      "fetched_at": "2026-11-09T23:16:28Z",
       "status": 200,
       "message": {
         "DOI": "10.3390/antibiotics10010002",
@@ -9353,7 +9918,7 @@
       }
     },
     "10.3396/ijic.v17.20628": {
-      "fetched_at": "2026-10-09T20:28:33Z",
+      "fetched_at": "2026-11-09T23:16:28Z",
       "status": 200,
       "message": {
         "DOI": "10.3396/ijic.v17.20628",
@@ -9428,7 +9993,7 @@
       }
     },
     "10.52202/085713-4650": {
-      "fetched_at": "2026-10-09T20:28:33Z",
+      "fetched_at": "2026-11-09T23:16:28Z",
       "status": 200,
       "message": {
         "DOI": "10.52202/085713-4650",
@@ -9487,27 +10052,27 @@
       }
     },
     "10.60692/c1n6z-5va13": {
-      "fetched_at": "2026-11-02T22:35:50Z",
+      "fetched_at": "2026-11-09T23:16:28Z",
       "status": 404,
       "message": null
     },
     "10.60692/mvc96-kx993": {
-      "fetched_at": "2026-11-02T22:35:50Z",
+      "fetched_at": "2026-11-09T23:16:28Z",
       "status": 404,
       "message": null
     },
     "10.60692/rm9d6-fsk84": {
-      "fetched_at": "2026-11-02T22:35:50Z",
+      "fetched_at": "2026-11-09T23:16:28Z",
       "status": 404,
       "message": null
     },
     "10.60692/zxm69-0e314": {
-      "fetched_at": "2026-11-02T22:35:50Z",
+      "fetched_at": "2026-11-09T23:16:28Z",
       "status": 404,
       "message": null
     },
     "10.64898/2026.02.27.26347274": {
-      "fetched_at": "2026-11-02T22:35:50Z",
+      "fetched_at": "2026-11-09T23:16:28Z",
       "status": 200,
       "message": {
         "DOI": "10.64898/2026.02.27.26347274",
@@ -9623,7 +10188,7 @@
       }
     },
     "10.64898/2026.03.06.26347799": {
-      "fetched_at": "2026-11-02T22:35:50Z",
+      "fetched_at": "2026-11-09T23:16:28Z",
       "status": 200,
       "message": {
         "DOI": "10.64898/2026.03.06.26347799",
@@ -9734,7 +10299,7 @@
       }
     },
     "10.64898/2026.04.06.26350259": {
-      "fetched_at": "2026-10-09T20:28:33Z",
+      "fetched_at": "2026-11-09T23:16:28Z",
       "status": 200,
       "message": {
         "DOI": "10.64898/2026.04.06.26350259",
@@ -9822,7 +10387,7 @@
       }
     },
     "10.64898/2026.06.22.26356274": {
-      "fetched_at": "2026-11-02T22:35:50Z",
+      "fetched_at": "2026-11-09T23:16:28Z",
       "status": 200,
       "message": {
         "DOI": "10.64898/2026.06.22.26356274",
@@ -9927,7 +10492,7 @@
       }
     },
     "10.64898/2026.07.03.26357246": {
-      "fetched_at": "2026-11-02T22:35:50Z",
+      "fetched_at": "2026-11-09T23:16:28Z",
       "status": 200,
       "message": {
         "DOI": "10.64898/2026.07.03.26357246",
@@ -10053,7 +10618,7 @@
       }
     },
     "10.64898/2026.07.06.26357398": {
-      "fetched_at": "2026-11-02T22:35:50Z",
+      "fetched_at": "2026-11-09T23:16:28Z",
       "status": 200,
       "message": {
         "DOI": "10.64898/2026.07.06.26357398",
@@ -10222,7 +10787,7 @@
       }
     },
     "10.64898/2026.07.06.26357401": {
-      "fetched_at": "2026-11-02T22:35:50Z",
+      "fetched_at": "2026-11-09T23:16:28Z",
       "status": 200,
       "message": {
         "DOI": "10.64898/2026.07.06.26357401",
@@ -10338,7 +10903,7 @@
       }
     },
     "10.64898/2026.07.21.26358594": {
-      "fetched_at": "2026-11-02T22:35:50Z",
+      "fetched_at": "2026-11-09T23:16:28Z",
       "status": 200,
       "message": {
         "DOI": "10.64898/2026.07.21.26358594",
