@@ -913,6 +913,15 @@ def dedupe_authors(authors):
     return out
 
 
+def _real_pages(pages, doi, volume):
+    """Page range or article number. An online-first record with no volume
+    sometimes gives the DOI suffix as its "page" (Wiley: "dom.71502"); that
+    is not a page number, so it is dropped."""
+    if pages and doi and not volume and str(doi).lower().endswith("/" + str(pages).strip().lower()):
+        return None
+    return expand_pages(pages)
+
+
 def assemble_group(members, cands, ident, same_as_pos, warnings, author_pins=None):
     ms = sorted((cands[k] for k in members), key=lambda c: _rank(c, same_as_pos))
     primary = ms[0]
@@ -976,7 +985,7 @@ def assemble_group(members, cands, ident, same_as_pos, warnings, author_pins=Non
         "venue": venue,
         "volume": primary.get("volume"),
         "issue": primary.get("issue"),
-        "pages": expand_pages(primary.get("pages")),
+        "pages": _real_pages(primary.get("pages"), primary.doi, primary.get("volume")),
         "type": wtype,
         "status": status,
         "status_note": None,

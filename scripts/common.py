@@ -657,10 +657,18 @@ def normalize_dashes(s):
     return _DASH_RE.sub("-", s) if s else s
 
 
+# Inline markup that a source wraps onto its own lines ("Post-\n  <scp>COVID</scp>\n  -19"):
+# a line break between a hyphen and a tag is layout, not a space.
+_DASH_BREAK_BEFORE_TAG = re.compile(r"([-\u2010-\u2013])\s*\n\s*(?=<)")
+_DASH_BREAK_AFTER_TAG = re.compile(r"(?<=>)\s*\n\s*(?=[-\u2010-\u2013])")
+
+
 def strip_html(s):
     if s is None:
         return None
-    s = _TAG_RE.sub("", str(s))
+    s = _DASH_BREAK_BEFORE_TAG.sub(r"\1", str(s))
+    s = _DASH_BREAK_AFTER_TAG.sub("", s)
+    s = _TAG_RE.sub("", s)
     s = html.unescape(s)
     s = s.replace("\u00a0", " ")
     return re.sub(r"\s+", " ", s).strip()
@@ -978,7 +986,9 @@ def make_author(given=None, family=None, name=None, orcid=None, suffix=None,
     if is_group is None:
         is_group = bool(name) and not family and is_group_name(name)
     if is_group:
-        a = {"given": None, "family": None, "name": strip_html(name), "is_me": False,
+        # A trailing footnote mark ("N3C Consortium*") is not part of the name.
+        gname = (strip_html(name) or "").rstrip("*\u2020\u2021 ") or None
+        a = {"given": None, "family": None, "name": gname, "is_me": False,
              "is_group": True, "orcid": None, "suffix": None}
         a["apa"] = apa_name(a)
         return a

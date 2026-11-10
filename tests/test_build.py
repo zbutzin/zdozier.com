@@ -780,7 +780,9 @@ class TestContentRules(unittest.TestCase):
     def test_n3c_preprints_name_the_consortium(self):
         from common import load_yaml
         ov = load_yaml(os.path.join(ROOT, "content", "publications.yml"))["overrides"]
-        for doi in ("10.64898/2026.07.06.26357398", "10.64898/2026.02.27.26347274",
+        # The Metformin preprint (10.64898/2026.07.06.26357398) is no longer listed:
+        # the published DOM record (10.1111/dom.71502) names the consortium in Crossref.
+        for doi in ("10.64898/2026.02.27.26347274",
                     "10.64898/2026.07.06.26357401", "10.64898/2026.07.03.26357246",
                     "10.1101/2025.06.06.25329168"):
             self.assertIn("N3C", ov[doi].get("group_author") or "", doi)

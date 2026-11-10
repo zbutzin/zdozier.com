@@ -904,5 +904,18 @@ class TestOctoberFixes(unittest.TestCase):
         self.assertTrue(res["guard"])
 
 
+
+class TestRealPages(unittest.TestCase):
+    def test_doi_suffix_is_not_a_page(self):
+        self.assertIsNone(merge._real_pages("dom.71502", "10.1111/dom.71502", None))
+        self.assertIsNone(merge._real_pages("art.70361", "10.1002/art.70361", None))
+
+    def test_article_numbers_and_ranges_stay(self):
+        self.assertEqual(merge._real_pages("ofaf731", "10.1093/ofid/ofaf731", "13"), "ofaf731")
+        self.assertEqual(merge._real_pages("e53322", "10.2196/53322", "10"), "e53322")
+        self.assertEqual(merge._real_pages("106382", "10.1016/j.ebiom.2026.106382", None), "106382")
+        self.assertIsNone(merge._real_pages(None, "10.1/x", None))
+
+
 if __name__ == "__main__":
     unittest.main()

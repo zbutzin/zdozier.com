@@ -170,6 +170,21 @@ class TestGroupAuthors(unittest.TestCase):
 
 
 class TestTitlesAndIO(unittest.TestCase):
+    def test_markup_wrapped_onto_lines_next_to_a_hyphen(self):
+        # Wiley Crossref deposit for 10.1111/dom.71502
+        raw = ("Metformin and Severe Post\u2010\n                    <scp>COVID</scp>\n"
+               "                    \u201019 Outcomes Among Individuals With Diabetes Mellitus")
+        self.assertEqual(common.clean_title(raw),
+                         "Metformin and Severe Post-COVID-19 Outcomes Among Individuals With Diabetes Mellitus")
+        # A line break between words still reads as a space.
+        self.assertEqual(common.clean_title("Effects of\n  <i>E. coli</i>\n  on growth"),
+                         "Effects of E. coli on growth")
+
+    def test_group_author_footnote_mark_dropped(self):
+        a = make_author(name="N3C Consortium*", is_group=True)
+        self.assertEqual(a["name"], "N3C Consortium")
+        self.assertEqual(make_author(name="N3C Consortium\u2020", is_group=True)["name"], "N3C Consortium")
+
     def test_clean_title(self):
         self.assertEqual(common.clean_title("Stress biomarkers in <i>Bangladesh</i>."),
                          "Stress biomarkers in Bangladesh")
