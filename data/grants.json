@@ -1,5 +1,5 @@
 {
-  "generated": "2026-11-09T23:16:42Z",
+  "generated": "2026-11-10T00:33:31Z",
   "show_amounts": false,
   "grants": [
     {
@@ -51,7 +51,7 @@
       "status": "completed",
       "institutions": [],
       "url": null,
-      "description": "As a postdoctoral scholar, I support the study design, methodologic considerations, and data analyses of this project.",
+      "description": "As a postdoctoral scholar, I supported the study design, methodologic considerations, and data analyses of this project.",
       "source": "manual",
       "pis": [
         "Rakesh Ghosh"

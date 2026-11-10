@@ -1,6 +1,6 @@
 {
-  "generated": "2026-11-09T23:16:42Z",
-  "works_count": 43,
+  "generated": "2026-11-10T00:33:31Z",
+  "works_count": 41,
   "cited_by_count": 328,
   "h_index": 8,
   "i10_index": 7,
@@ -87,7 +87,7 @@
     },
     {
       "year": 2026,
-      "works_count": 17,
+      "works_count": 15,
       "cited_by_count": 90
     }
   ],
@@ -175,10 +175,10 @@
     {
       "year": 2026,
       "first_or_senior": 6,
-      "coauthor": 11
+      "coauthor": 9
     }
   ],
-  "charted_works_count": 41,
+  "charted_works_count": 39,
   "first_or_senior_count": 17,
   "preprint_count": 10,
   "openalex_works_count": 81,

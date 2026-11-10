@@ -1,6 +1,6 @@
 {
-  "started": "2026-11-09T23:16:24Z",
-  "finished": "2026-11-09T23:16:43Z",
+  "started": "2026-11-10T00:33:19Z",
+  "finished": "2026-11-10T00:33:31Z",
   "ok": true,
   "sources": {
     "orcid": {
@@ -8,7 +8,7 @@
       "count": 46,
       "error": null,
       "used_cache": false,
-      "fetched_at": "2026-11-09T23:16:24Z",
+      "fetched_at": "2026-11-10T00:33:19Z",
       "requests": 3
     },
     "openalex": {
@@ -16,7 +16,7 @@
       "count": 46,
       "error": null,
       "used_cache": false,
-      "fetched_at": "2026-11-09T23:16:25Z",
+      "fetched_at": "2026-11-10T00:33:20Z",
       "requests": 2
     },
     "europepmc": {
@@ -24,7 +24,7 @@
       "count": 44,
       "error": null,
       "used_cache": false,
-      "fetched_at": "2026-11-09T23:16:26Z",
+      "fetched_at": "2026-11-10T00:33:22Z",
       "requests": 1
     },
     "crossref": {
@@ -32,15 +32,15 @@
       "count": 34,
       "error": null,
       "used_cache": false,
-      "fetched_at": "2026-11-09T23:16:28Z",
-      "requests": 30
+      "fetched_at": "2026-11-10T00:33:24Z",
+      "requests": 3
     },
     "reporter": {
       "ok": true,
       "count": 1,
       "error": null,
       "used_cache": false,
-      "fetched_at": "2026-11-09T23:16:38Z",
+      "fetched_at": "2026-11-10T00:33:26Z",
       "requests": 4
     },
     "github": {
@@ -48,11 +48,12 @@
       "count": 8,
       "error": null,
       "used_cache": false,
-      "fetched_at": "2026-11-09T23:16:42Z",
+      "fetched_at": "2026-11-10T00:33:30Z",
       "requests": 1
     }
   },
-  "new_works": [
+  "new_works": [],
+  "removed_works": [
     {
       "id": "10.2337/figshare.33894268",
       "title": "Risk Factors for Incident Diabetes following SARS-CoV-2 Infection Across Variant Eras: Findings from the National Clinical Cohort Collaborative (N3C) COVID-19 Enclave",
@@ -72,18 +73,8 @@
         "openalex",
         "crossref"
       ]
-    },
-    {
-      "id": "10.2337/doc26-0057",
-      "title": "Risk Factors for Incident Diabetes After SARS-CoV-2 Infection Across Variant Eras: Findings From the National Clinical Cohort Collaborative (N3C) COVID-19 Enclave",
-      "venue": "Diabetes, Obesity, and CardioMetabolic CARE",
-      "year": 2026,
-      "sources": [
-        "crossref"
-      ]
     }
   ],
-  "removed_works": [],
   "new_grants": [],
   "warnings": [
     "OpenAlex work without a DOI skipped: W7160730250 \"WASH Benefits Bangladesh Analysis of Nutrition, Stress, Estriol, and Inflammation During P\"",
@@ -96,19 +87,25 @@
   "promoted_works": [],
   "sanity_guard": {
     "tripped": false,
-    "previous": 40,
-    "current": 43,
+    "previous": 43,
+    "current": 41,
     "max_drop": 0.15,
     "candidate": null,
     "accepted": null
   },
   "counts": {
-    "visible_works": 43,
-    "hidden_works": 0,
+    "visible_works": 41,
+    "hidden_works": 2,
     "grants": 3,
     "repos_shown": 4
   },
   "version_links": [
+    {
+      "a": "10.1111/dom.71502",
+      "b": "10.64898/2026.07.06.26357398",
+      "rule": "same_as",
+      "detail": ""
+    },
     {
       "a": "10.1016/j.ebiom.2026.106382",
       "b": "10.1101/2025.04.22.25326224",
@@ -194,12 +191,6 @@
       "detail": ""
     },
     {
-      "a": "10.1111/dom.71502",
-      "b": "10.64898/2026.07.06.26357398",
-      "rule": "openalex-location",
-      "detail": ""
-    },
-    {
       "a": "10.2196/67585",
       "b": "10.17615/0sh5-mt86",
       "rule": "openalex-location",
@@ -231,12 +222,12 @@
     }
   ],
   "fetch": {
-    "started": "2026-11-09T23:16:24Z",
-    "finished": "2026-11-09T23:16:42Z"
+    "started": "2026-11-10T00:33:19Z",
+    "finished": "2026-11-10T00:33:31Z"
   },
   "merge": {
-    "started": "2026-11-09T23:16:42Z",
-    "finished": "2026-11-09T23:16:43Z",
-    "today": "2026-11-09"
+    "started": "2026-11-10T00:33:31Z",
+    "finished": "2026-11-10T00:33:31Z",
+    "today": "2026-11-10"
   }
 }

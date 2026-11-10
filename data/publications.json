@@ -1,5 +1,5 @@
 {
-  "generated": "2026-11-09T23:16:42Z",
+  "generated": "2026-11-10T00:33:31Z",
   "works": [
     {
       "id": "manual:wiley-environmental-health-nursing-chapter",
@@ -17,14 +17,14 @@
           "apa": "Butzin-Dozier, Z."
         },
         {
-          "given": "J. A.",
+          "given": "A. J.",
           "family": "Anzalone",
-          "name": "J. A. Anzalone",
+          "name": "A. J. Anzalone",
           "is_me": false,
           "is_group": false,
           "orcid": null,
           "suffix": null,
-          "apa": "Anzalone, J. A."
+          "apa": "Anzalone, A. J."
         }
       ],
       "author_count": 2,
@@ -148,362 +148,6 @@
       "first_seen": "2026-10-09",
       "alt_ids": [],
       "openalex_id": null
-    },
-    {
-      "id": "10.2337/figshare.33894268",
-      "doi": "10.2337/figshare.33894268",
-      "title": "Risk Factors for Incident Diabetes following SARS-CoV-2 Infection Across Variant Eras: Findings from the National Clinical Cohort Collaborative (N3C) COVID-19 Enclave",
-      "authors": [
-        {
-          "given": "Rachel",
-          "family": "Wong",
-          "name": "Rachel Wong",
-          "is_me": false,
-          "is_group": false,
-          "orcid": null,
-          "suffix": null,
-          "apa": "Wong, R."
-        },
-        {
-          "given": "Lindsey",
-          "family": "E. Turner",
-          "name": "Lindsey E. Turner",
-          "is_me": false,
-          "is_group": false,
-          "orcid": null,
-          "suffix": null,
-          "apa": "E. Turner, L."
-        },
-        {
-          "given": "Margaret",
-          "family": "Hall",
-          "name": "Margaret Hall",
-          "is_me": false,
-          "is_group": false,
-          "orcid": null,
-          "suffix": null,
-          "apa": "Hall, M."
-        },
-        {
-          "given": "Carolyn",
-          "family": "Bramante",
-          "name": "Carolyn Bramante",
-          "is_me": false,
-          "is_group": false,
-          "orcid": null,
-          "suffix": null,
-          "apa": "Bramante, C."
-        },
-        {
-          "given": "John",
-          "family": "Buse",
-          "name": "John Buse",
-          "is_me": false,
-          "is_group": false,
-          "orcid": null,
-          "suffix": null,
-          "apa": "Buse, J."
-        },
-        {
-          "given": "Jared",
-          "family": "D. Huling",
-          "name": "Jared D. Huling",
-          "is_me": false,
-          "is_group": false,
-          "orcid": null,
-          "suffix": null,
-          "apa": "D. Huling, J."
-        },
-        {
-          "given": "Steven",
-          "family": "G. Johnson",
-          "name": "Steven G. Johnson",
-          "is_me": false,
-          "is_group": false,
-          "orcid": null,
-          "suffix": null,
-          "apa": "G. Johnson, S."
-        },
-        {
-          "given": "Til",
-          "family": "Stürmer",
-          "name": "Til Stürmer",
-          "is_me": false,
-          "is_group": false,
-          "orcid": null,
-          "suffix": null,
-          "apa": "Stürmer, T."
-        },
-        {
-          "given": "Talia",
-          "family": "Wiggen",
-          "name": "Talia Wiggen",
-          "is_me": false,
-          "is_group": false,
-          "orcid": null,
-          "suffix": null,
-          "apa": "Wiggen, T."
-        },
-        {
-          "given": "Kenneth",
-          "family": "Wilkins",
-          "name": "Kenneth Wilkins",
-          "is_me": false,
-          "is_group": false,
-          "orcid": null,
-          "suffix": null,
-          "apa": "Wilkins, K."
-        },
-        {
-          "given": "Hsin-Chieh",
-          "family": "Yeh",
-          "name": "Hsin-Chieh Yeh",
-          "is_me": false,
-          "is_group": false,
-          "orcid": null,
-          "suffix": null,
-          "apa": "Yeh, H.-C."
-        },
-        {
-          "given": "Zachary",
-          "family": "Butzin-Dozier",
-          "name": "Zachary Butzin-Dozier",
-          "is_me": true,
-          "is_group": false,
-          "orcid": null,
-          "suffix": null,
-          "apa": "Butzin-Dozier, Z."
-        },
-        {
-          "given": "Jane",
-          "family": "Reusch",
-          "name": "Jane Reusch",
-          "is_me": false,
-          "is_group": false,
-          "orcid": null,
-          "suffix": null,
-          "apa": "Reusch, J."
-        },
-        {
-          "given": "On",
-          "family": "behalf of N3C Consortium",
-          "name": "On behalf of N3C Consortium",
-          "is_me": false,
-          "is_group": false,
-          "orcid": null,
-          "suffix": null,
-          "apa": "behalf of N3C Consortium, O."
-        }
-      ],
-      "author_count": 14,
-      "my_position": 12,
-      "role": "coauthor",
-      "year": 2026,
-      "date": "2026-11-05",
-      "venue": "American Diabetes Association",
-      "volume": null,
-      "issue": null,
-      "pages": null,
-      "type": "other",
-      "status": "published",
-      "status_note": null,
-      "url": "https://doi.org/10.2337/figshare.33894268",
-      "oa_url": null,
-      "pmid": null,
-      "pmcid": null,
-      "cited_by": 0,
-      "versions": [],
-      "topics": [
-        "covid"
-      ],
-      "contribution": null,
-      "featured": false,
-      "code_url": null,
-      "sources": [
-        "openalex",
-        "crossref"
-      ],
-      "first_seen": "2026-11-09",
-      "alt_ids": [],
-      "openalex_id": "W7225294963"
-    },
-    {
-      "id": "10.2337/figshare.33894268.v1",
-      "doi": "10.2337/figshare.33894268.v1",
-      "title": "Risk Factors for Incident Diabetes following SARS-CoV-2 Infection Across Variant Eras: Findings from the National Clinical Cohort Collaborative (N3C) COVID-19 Enclave",
-      "authors": [
-        {
-          "given": "Rachel",
-          "family": "Wong",
-          "name": "Rachel Wong",
-          "is_me": false,
-          "is_group": false,
-          "orcid": null,
-          "suffix": null,
-          "apa": "Wong, R."
-        },
-        {
-          "given": "Lindsey",
-          "family": "E. Turner",
-          "name": "Lindsey E. Turner",
-          "is_me": false,
-          "is_group": false,
-          "orcid": null,
-          "suffix": null,
-          "apa": "E. Turner, L."
-        },
-        {
-          "given": "Margaret",
-          "family": "Hall",
-          "name": "Margaret Hall",
-          "is_me": false,
-          "is_group": false,
-          "orcid": null,
-          "suffix": null,
-          "apa": "Hall, M."
-        },
-        {
-          "given": "Carolyn",
-          "family": "Bramante",
-          "name": "Carolyn Bramante",
-          "is_me": false,
-          "is_group": false,
-          "orcid": null,
-          "suffix": null,
-          "apa": "Bramante, C."
-        },
-        {
-          "given": "John",
-          "family": "Buse",
-          "name": "John Buse",
-          "is_me": false,
-          "is_group": false,
-          "orcid": null,
-          "suffix": null,
-          "apa": "Buse, J."
-        },
-        {
-          "given": "Jared",
-          "family": "D. Huling",
-          "name": "Jared D. Huling",
-          "is_me": false,
-          "is_group": false,
-          "orcid": null,
-          "suffix": null,
-          "apa": "D. Huling, J."
-        },
-        {
-          "given": "Steven",
-          "family": "G. Johnson",
-          "name": "Steven G. Johnson",
-          "is_me": false,
-          "is_group": false,
-          "orcid": null,
-          "suffix": null,
-          "apa": "G. Johnson, S."
-        },
-        {
-          "given": "Til",
-          "family": "Stürmer",
-          "name": "Til Stürmer",
-          "is_me": false,
-          "is_group": false,
-          "orcid": null,
-          "suffix": null,
-          "apa": "Stürmer, T."
-        },
-        {
-          "given": "Talia",
-          "family": "Wiggen",
-          "name": "Talia Wiggen",
-          "is_me": false,
-          "is_group": false,
-          "orcid": null,
-          "suffix": null,
-          "apa": "Wiggen, T."
-        },
-        {
-          "given": "Kenneth",
-          "family": "Wilkins",
-          "name": "Kenneth Wilkins",
-          "is_me": false,
-          "is_group": false,
-          "orcid": null,
-          "suffix": null,
-          "apa": "Wilkins, K."
-        },
-        {
-          "given": "Hsin-Chieh",
-          "family": "Yeh",
-          "name": "Hsin-Chieh Yeh",
-          "is_me": false,
-          "is_group": false,
-          "orcid": null,
-          "suffix": null,
-          "apa": "Yeh, H.-C."
-        },
-        {
-          "given": "Zachary",
-          "family": "Butzin-Dozier",
-          "name": "Zachary Butzin-Dozier",
-          "is_me": true,
-          "is_group": false,
-          "orcid": null,
-          "suffix": null,
-          "apa": "Butzin-Dozier, Z."
-        },
-        {
-          "given": "Jane",
-          "family": "Reusch",
-          "name": "Jane Reusch",
-          "is_me": false,
-          "is_group": false,
-          "orcid": null,
-          "suffix": null,
-          "apa": "Reusch, J."
-        },
-        {
-          "given": "On",
-          "family": "behalf of N3C Consortium",
-          "name": "On behalf of N3C Consortium",
-          "is_me": false,
-          "is_group": false,
-          "orcid": null,
-          "suffix": null,
-          "apa": "behalf of N3C Consortium, O."
-        }
-      ],
-      "author_count": 14,
-      "my_position": 12,
-      "role": "coauthor",
-      "year": 2026,
-      "date": "2026-11-05",
-      "venue": "American Diabetes Association",
-      "volume": null,
-      "issue": null,
-      "pages": null,
-      "type": "other",
-      "status": "published",
-      "status_note": null,
-      "url": "https://doi.org/10.2337/figshare.33894268.v1",
-      "oa_url": null,
-      "pmid": null,
-      "pmcid": null,
-      "cited_by": 0,
-      "versions": [],
-      "topics": [
-        "covid"
-      ],
-      "contribution": null,
-      "featured": false,
-      "code_url": null,
-      "sources": [
-        "openalex",
-        "crossref"
-      ],
-      "first_seen": "2026-11-09",
-      "alt_ids": [],
-      "openalex_id": "W7225347184"
     },
     {
       "id": "10.2337/doc26-0057",
@@ -643,12 +287,12 @@
         {
           "given": null,
           "family": null,
-          "name": "N3C Consortium*",
+          "name": "N3C Consortium",
           "is_me": false,
           "is_group": true,
           "orcid": null,
           "suffix": null,
-          "apa": "N3C Consortium*"
+          "apa": "N3C Consortium"
         }
       ],
       "author_count": 14,
@@ -685,7 +329,7 @@
     {
       "id": "10.1111/dom.71502",
       "doi": "10.1111/dom.71502",
-      "title": "Metformin and Severe Post- COVID -19 Outcomes Among Individuals With Diabetes Mellitus",
+      "title": "Metformin and Severe Post-COVID-19 Outcomes Among Individuals With Diabetes Mellitus",
       "authors": [
         {
           "given": "Zachary B.",
@@ -906,7 +550,7 @@
       "venue": "Diabetes, Obesity and Metabolism",
       "volume": null,
       "issue": null,
-      "pages": "dom.71502",
+      "pages": null,
       "type": "article",
       "status": "published",
       "status_note": null,
@@ -929,13 +573,14 @@
         "covid"
       ],
       "contribution": null,
-      "featured": false,
+      "featured": true,
       "code_url": "https://github.com/zbutzin/LongCOVID",
       "sources": [
         "orcid",
         "openalex",
         "crossref",
-        "europepmc"
+        "europepmc",
+        "forced"
       ],
       "first_seen": "2026-10-09",
       "alt_ids": [],
@@ -1075,7 +720,7 @@
       "venue": "Arthritis & Rheumatology",
       "volume": null,
       "issue": null,
-      "pages": "art.70361",
+      "pages": null,
       "type": "article",
       "status": "published",
       "status_note": null,

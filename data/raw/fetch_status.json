@@ -1,13 +1,13 @@
 {
-  "started": "2026-11-09T23:16:24Z",
-  "finished": "2026-11-09T23:16:42Z",
+  "started": "2026-11-10T00:33:19Z",
+  "finished": "2026-11-10T00:33:31Z",
   "sources": {
     "orcid": {
       "ok": true,
       "count": 46,
       "error": null,
       "used_cache": false,
-      "fetched_at": "2026-11-09T23:16:24Z",
+      "fetched_at": "2026-11-10T00:33:19Z",
       "requests": 3
     },
     "openalex": {
@@ -15,7 +15,7 @@
       "count": 46,
       "error": null,
       "used_cache": false,
-      "fetched_at": "2026-11-09T23:16:25Z",
+      "fetched_at": "2026-11-10T00:33:20Z",
       "requests": 2
     },
     "europepmc": {
@@ -23,7 +23,7 @@
       "count": 44,
       "error": null,
       "used_cache": false,
-      "fetched_at": "2026-11-09T23:16:26Z",
+      "fetched_at": "2026-11-10T00:33:22Z",
       "requests": 1
     },
     "crossref": {
@@ -31,15 +31,15 @@
       "count": 34,
       "error": null,
       "used_cache": false,
-      "fetched_at": "2026-11-09T23:16:28Z",
-      "requests": 30
+      "fetched_at": "2026-11-10T00:33:24Z",
+      "requests": 3
     },
     "reporter": {
       "ok": true,
       "count": 1,
       "error": null,
       "used_cache": false,
-      "fetched_at": "2026-11-09T23:16:38Z",
+      "fetched_at": "2026-11-10T00:33:26Z",
       "requests": 4
     },
     "github": {
@@ -47,7 +47,7 @@
       "count": 8,
       "error": null,
       "used_cache": false,
-      "fetched_at": "2026-11-09T23:16:42Z",
+      "fetched_at": "2026-11-10T00:33:30Z",
       "requests": 1
     }
   }
