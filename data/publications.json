@@ -1,5 +1,5 @@
 {
-  "generated": "2026-11-10T00:33:31Z",
+  "generated": "2026-11-11T00:33:55Z",
   "works": [
     {
       "id": "manual:wiley-environmental-health-nursing-chapter",
@@ -4159,7 +4159,7 @@
       "oa_url": null,
       "pmid": "40075126",
       "pmcid": "PMC11903653",
-      "cited_by": 0,
+      "cited_by": 1,
       "versions": [],
       "topics": [
         "child-health"
@@ -4489,7 +4489,7 @@
       "oa_url": null,
       "pmid": "39965021",
       "pmcid": "PMC11882089",
-      "cited_by": 6,
+      "cited_by": 8,
       "versions": [
         {
           "doi": "10.1101/2024.03.21.24304684",
@@ -4658,7 +4658,7 @@
       "oa_url": "https://drc.bmj.com/content/13/1/e004536.full.pdf",
       "pmid": "39904520",
       "pmcid": "PMC11795369",
-      "cited_by": 9,
+      "cited_by": 11,
       "versions": [],
       "topics": [
         "covid"
@@ -5189,7 +5189,7 @@
       "oa_url": "https://www.nature.com/articles/s41467-024-55801-x.pdf",
       "pmid": "39788996",
       "pmcid": "PMC11718192",
-      "cited_by": 11,
+      "cited_by": 12,
       "versions": [
         {
           "doi": "10.1101/2024.05.10.24307069",
@@ -5458,7 +5458,7 @@
       "oa_url": "https://bmcmedicine.biomedcentral.com/counter/pdf/10.1186/s12916-024-03655-x",
       "pmid": "39380062",
       "pmcid": "PMC11462648",
-      "cited_by": 20,
+      "cited_by": 22,
       "versions": [
         {
           "doi": "10.1101/2024.02.05.24302352",
@@ -7167,7 +7167,7 @@
       "oa_url": null,
       "pmid": null,
       "pmcid": null,
-      "cited_by": 2,
+      "cited_by": 3,
       "versions": [],
       "topics": [
         "hiv-id"
@@ -7410,7 +7410,7 @@
       "status": "published",
       "status_note": null,
       "url": "https://doi.org/10.1001/archpediatrics.2010.54",
-      "oa_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/3213033",
+      "oa_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3213033/",
       "pmid": "20439794",
       "pmcid": "PMC3213033",
       "cited_by": 159,

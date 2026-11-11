@@ -1,6 +1,6 @@
 {
   "source": "europepmc",
-  "fetched_at": "2026-11-10T00:33:22Z",
+  "fetched_at": "2026-11-11T00:33:43Z",
   "query": "AUTH:\"Butzin-Dozier Z\" OR AUTHORID:\"0000-0001-6419-0008\" OR AUTH:\"Dozier ZB\"",
   "results": [
     {

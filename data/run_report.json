@@ -1,6 +1,6 @@
 {
-  "started": "2026-11-10T00:33:19Z",
-  "finished": "2026-11-10T00:33:31Z",
+  "started": "2026-11-11T00:33:42Z",
+  "finished": "2026-11-11T00:33:56Z",
   "ok": true,
   "sources": {
     "orcid": {
@@ -8,7 +8,7 @@
       "count": 46,
       "error": null,
       "used_cache": false,
-      "fetched_at": "2026-11-10T00:33:19Z",
+      "fetched_at": "2026-11-11T00:33:42Z",
       "requests": 3
     },
     "openalex": {
@@ -16,7 +16,7 @@
       "count": 46,
       "error": null,
       "used_cache": false,
-      "fetched_at": "2026-11-10T00:33:20Z",
+      "fetched_at": "2026-11-11T00:33:43Z",
       "requests": 2
     },
     "europepmc": {
@@ -24,7 +24,7 @@
       "count": 44,
       "error": null,
       "used_cache": false,
-      "fetched_at": "2026-11-10T00:33:22Z",
+      "fetched_at": "2026-11-11T00:33:43Z",
       "requests": 1
     },
     "crossref": {
@@ -32,15 +32,15 @@
       "count": 34,
       "error": null,
       "used_cache": false,
-      "fetched_at": "2026-11-10T00:33:24Z",
-      "requests": 3
+      "fetched_at": "2026-11-11T00:33:51Z",
+      "requests": 2
     },
     "reporter": {
       "ok": true,
       "count": 1,
       "error": null,
       "used_cache": false,
-      "fetched_at": "2026-11-10T00:33:26Z",
+      "fetched_at": "2026-11-11T00:33:51Z",
       "requests": 4
     },
     "github": {
@@ -48,33 +48,12 @@
       "count": 8,
       "error": null,
       "used_cache": false,
-      "fetched_at": "2026-11-10T00:33:30Z",
+      "fetched_at": "2026-11-11T00:33:55Z",
       "requests": 1
     }
   },
   "new_works": [],
-  "removed_works": [
-    {
-      "id": "10.2337/figshare.33894268",
-      "title": "Risk Factors for Incident Diabetes following SARS-CoV-2 Infection Across Variant Eras: Findings from the National Clinical Cohort Collaborative (N3C) COVID-19 Enclave",
-      "venue": "American Diabetes Association",
-      "year": 2026,
-      "sources": [
-        "openalex",
-        "crossref"
-      ]
-    },
-    {
-      "id": "10.2337/figshare.33894268.v1",
-      "title": "Risk Factors for Incident Diabetes following SARS-CoV-2 Infection Across Variant Eras: Findings from the National Clinical Cohort Collaborative (N3C) COVID-19 Enclave",
-      "venue": "American Diabetes Association",
-      "year": 2026,
-      "sources": [
-        "openalex",
-        "crossref"
-      ]
-    }
-  ],
+  "removed_works": [],
   "new_grants": [],
   "warnings": [
     "OpenAlex work without a DOI skipped: W7160730250 \"WASH Benefits Bangladesh Analysis of Nutrition, Stress, Estriol, and Inflammation During P\"",
@@ -87,7 +66,7 @@
   "promoted_works": [],
   "sanity_guard": {
     "tripped": false,
-    "previous": 43,
+    "previous": 41,
     "current": 41,
     "max_drop": 0.15,
     "candidate": null,
@@ -222,12 +201,12 @@
     }
   ],
   "fetch": {
-    "started": "2026-11-10T00:33:19Z",
-    "finished": "2026-11-10T00:33:31Z"
+    "started": "2026-11-11T00:33:42Z",
+    "finished": "2026-11-11T00:33:55Z"
   },
   "merge": {
-    "started": "2026-11-10T00:33:31Z",
-    "finished": "2026-11-10T00:33:31Z",
-    "today": "2026-11-10"
+    "started": "2026-11-11T00:33:55Z",
+    "finished": "2026-11-11T00:33:56Z",
+    "today": "2026-11-11"
   }
 }
