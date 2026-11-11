@@ -83,12 +83,12 @@ teaching:
 
 trainees:
   current:
-    - {name: "Mingyi Li", role: "postdoc"}
-    - {name: "Anna Krasnova", role: "postdoc"}
-    - {name: "Peter Ju", role: "Data analyst"}
-    - {name: "Ariana Budhihartanto", role: "undergraduate"}
+    - {name: "Mingyi Li", role: "Postdoctoral Scholar"}
+    - {name: "Anna Krasnova", role: "Postdoctoral Scholar"}
+    - {name: "Peter Ju", role: "Research Data Analyst"}
+    - {name: "Ariana Budhihartanto", role: "Undergraduate Research Assistant"}
   former:
-    - {name: "Eric Hurwitz", role: "Health Informatics postdoc"}
+    - {name: "Eric Hurwitz", role: "Health Informatics Postdoctoral Scholar, now Assistant Professor"}
     - {name: "Manav Kumar", role: "undergraduate"}
     - {name: "Sam (Lin-Chiun) Wang", role: "undergraduate"}
     - {name: "Yunwen Ji", role: "Biostatistics PhD student"}
