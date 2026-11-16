@@ -1,5 +1,5 @@
 {
-  "generated": "2026-11-11T00:33:55Z",
+  "generated": "2026-11-16T23:12:07Z",
   "works": [
     {
       "id": "manual:wiley-environmental-health-nursing-chapter",
@@ -557,7 +557,7 @@
       "url": "https://doi.org/10.1111/dom.71502",
       "oa_url": "https://onlinelibrary.wiley.com/doi/pdfdirect/10.1111/dom.71502",
       "pmid": "42988585",
-      "pmcid": "PMC13370604",
+      "pmcid": null,
       "cited_by": 0,
       "versions": [
         {
@@ -2433,7 +2433,7 @@
       "oa_url": "https://www.medrxiv.org/content/medrxiv/early/2026/03/06/2026.03.06.26347799.full.pdf",
       "pmid": "41867235",
       "pmcid": "PMC13004077",
-      "cited_by": 1,
+      "cited_by": 2,
       "versions": [],
       "topics": [
         "digital-health"
@@ -2771,10 +2771,10 @@
       "status": "published",
       "status_note": null,
       "url": "https://doi.org/10.1016/s2352-3018(25)00302-9",
-      "oa_url": null,
+      "oa_url": "https://www.sciencedirect.com/science/article/am/pii/S2352301825003029",
       "pmid": "41698379",
       "pmcid": "PMC12948494",
-      "cited_by": 1,
+      "cited_by": 3,
       "versions": [
         {
           "doi": "10.2139/ssrn.5273921",
@@ -2853,7 +2853,7 @@
       "oa_url": "https://arxiv.org/pdf/2511.01077",
       "pmid": null,
       "pmcid": null,
-      "cited_by": 0,
+      "cited_by": 3,
       "versions": [],
       "topics": [
         "causal-ml"
@@ -3782,7 +3782,7 @@
       "oa_url": "https://formative.jmir.org/2025/1/e67585/PDF",
       "pmid": "40409746",
       "pmcid": "PMC12144471",
-      "cited_by": 4,
+      "cited_by": 8,
       "versions": [
         {
           "doi": "10.1101/2024.10.07.24315026",
@@ -4489,7 +4489,7 @@
       "oa_url": null,
       "pmid": "39965021",
       "pmcid": "PMC11882089",
-      "cited_by": 8,
+      "cited_by": 9,
       "versions": [
         {
           "doi": "10.1101/2024.03.21.24304684",
@@ -4658,7 +4658,7 @@
       "oa_url": "https://drc.bmj.com/content/13/1/e004536.full.pdf",
       "pmid": "39904520",
       "pmcid": "PMC11795369",
-      "cited_by": 11,
+      "cited_by": 12,
       "versions": [],
       "topics": [
         "covid"
@@ -5189,7 +5189,7 @@
       "oa_url": "https://www.nature.com/articles/s41467-024-55801-x.pdf",
       "pmid": "39788996",
       "pmcid": "PMC11718192",
-      "cited_by": 12,
+      "cited_by": 14,
       "versions": [
         {
           "doi": "10.1101/2024.05.10.24307069",
@@ -5288,7 +5288,7 @@
       "oa_url": "https://www.medrxiv.org/content/medrxiv/early/2024/10/19/2024.10.18.24315778.full.pdf",
       "pmid": "39484253",
       "pmcid": "PMC11527044",
-      "cited_by": 1,
+      "cited_by": 6,
       "versions": [],
       "topics": [
         "causal-ml"
@@ -5458,7 +5458,7 @@
       "oa_url": "https://bmcmedicine.biomedcentral.com/counter/pdf/10.1186/s12916-024-03655-x",
       "pmid": "39380062",
       "pmcid": "PMC11462648",
-      "cited_by": 22,
+      "cited_by": 23,
       "versions": [
         {
           "doi": "10.1101/2024.02.05.24302352",
@@ -5927,7 +5927,7 @@
       "oa_url": null,
       "pmid": "39321500",
       "pmcid": "PMC11462169",
-      "cited_by": 8,
+      "cited_by": 12,
       "versions": [],
       "topics": [
         "causal-ml",
@@ -6098,7 +6098,7 @@
       "oa_url": null,
       "pmid": "39146534",
       "pmcid": "PMC11364083",
-      "cited_by": 16,
+      "cited_by": 20,
       "versions": [
         {
           "doi": "10.1101/2023.07.27.23293272",
@@ -6234,7 +6234,7 @@
       "oa_url": "https://mhealth.jmir.org/2024/1/e54622/PDF",
       "pmid": "38696234",
       "pmcid": "PMC11099816",
-      "cited_by": 37,
+      "cited_by": 44,
       "versions": [
         {
           "doi": "10.1101/2023.10.13.23296965",
@@ -6697,7 +6697,7 @@
       "oa_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10362935/pdf/mxac003.pdf",
       "pmid": "35593400",
       "pmcid": "PMC10362935",
-      "cited_by": 4,
+      "cited_by": 6,
       "versions": [],
       "topics": [
         "hiv-id"
@@ -6787,7 +6787,7 @@
       "oa_url": "https://bmcpublichealth.biomedcentral.com/track/pdf/10.1186/s12889-022-13073-4",
       "pmid": "35395759",
       "pmcid": "PMC8991794",
-      "cited_by": 12,
+      "cited_by": 13,
       "versions": [
         {
           "doi": "10.21203/rs.3.rs-455696/v1",
@@ -7333,7 +7333,7 @@
       "oa_url": "https://www.mdpi.com/2079-6382/10/1/2/pdf?version=1608805768",
       "pmid": "33374513",
       "pmcid": "PMC7822171",
-      "cited_by": 13,
+      "cited_by": 15,
       "versions": [],
       "topics": [
         "hiv-id"
@@ -7413,7 +7413,7 @@
       "oa_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3213033/",
       "pmid": "20439794",
       "pmcid": "PMC3213033",
-      "cited_by": 159,
+      "cited_by": 167,
       "versions": [],
       "topics": [
         "child-health"
