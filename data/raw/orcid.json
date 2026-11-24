@@ -1,6 +1,6 @@
 {
   "source": "orcid",
-  "fetched_at": "2026-11-16T23:11:57Z",
+  "fetched_at": "2026-11-24T01:28:43Z",
   "orcid": "0000-0001-6419-0008",
   "works": [
     {
@@ -117,6 +117,144 @@
         },
         {
           "name": "Lauren E. Chan",
+          "orcid": null,
+          "sequence": null,
+          "role": "author"
+        },
+        {
+          "name": "Richard Moffitt",
+          "orcid": null,
+          "sequence": null,
+          "role": "author"
+        },
+        {
+          "name": "Rachel Wong",
+          "orcid": null,
+          "sequence": null,
+          "role": "author"
+        },
+        {
+          "name": "Carolyn Bramante",
+          "orcid": null,
+          "sequence": null,
+          "role": "author"
+        }
+      ]
+    },
+    {
+      "put_code": 233978405,
+      "group": 0,
+      "type": "journal-article",
+      "title": "Metformin and Severe Post-COVID-19 Outcomes Among Individuals With Diabetes Mellitus.",
+      "subtitle": null,
+      "journal_title": "Diabetes, obesity & metabolism",
+      "date": "2026-11-05",
+      "dois": [
+        "10.1111/dom.71502"
+      ],
+      "pmid": "42988585",
+      "pmcid": null,
+      "url": null,
+      "source_name": "Stanford University",
+      "contributors": [
+        {
+          "name": "Zachary B Dozier",
+          "orcid": null,
+          "sequence": null,
+          "role": "author"
+        },
+        {
+          "name": "Lin-Chiun C Wang",
+          "orcid": null,
+          "sequence": null,
+          "role": "author"
+        },
+        {
+          "name": "Yunwen Ji",
+          "orcid": null,
+          "sequence": null,
+          "role": "author"
+        },
+        {
+          "name": "A Jerrod Anzalone",
+          "orcid": null,
+          "sequence": null,
+          "role": "author"
+        },
+        {
+          "name": "Oluwasolape Olawore",
+          "orcid": null,
+          "sequence": null,
+          "role": "author"
+        },
+        {
+          "name": "Ryan Hafen",
+          "orcid": null,
+          "sequence": null,
+          "role": "author"
+        },
+        {
+          "name": "Eric Hurwitz",
+          "orcid": null,
+          "sequence": null,
+          "role": "author"
+        },
+        {
+          "name": "Manav Kumar",
+          "orcid": null,
+          "sequence": null,
+          "role": "author"
+        },
+        {
+          "name": "Rena C Patel",
+          "orcid": null,
+          "sequence": null,
+          "role": "author"
+        },
+        {
+          "name": "Ariana Budhihartanto",
+          "orcid": null,
+          "sequence": null,
+          "role": "author"
+        },
+        {
+          "name": "Mark van der Laan",
+          "orcid": null,
+          "sequence": null,
+          "role": "author"
+        },
+        {
+          "name": "John M Colford",
+          "orcid": null,
+          "sequence": null,
+          "role": "author"
+        },
+        {
+          "name": "Alan E Hubbard",
+          "orcid": null,
+          "sequence": null,
+          "role": "author"
+        },
+        {
+          "name": "John B Buse",
+          "orcid": null,
+          "sequence": null,
+          "role": "author"
+        },
+        {
+          "name": "Steven G Johnson",
+          "orcid": null,
+          "sequence": null,
+          "role": "author"
+        },
+        {
+          "name": "Jane Reusch",
+          "orcid": null,
+          "sequence": null,
+          "role": "author"
+        },
+        {
+          "name": "Lauren E Chan",
           "orcid": null,
           "sequence": null,
           "role": "author"

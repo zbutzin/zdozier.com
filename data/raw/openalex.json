@@ -1,15 +1,15 @@
 {
   "source": "openalex",
-  "fetched_at": "2026-11-16T23:11:59Z",
+  "fetched_at": "2026-11-24T01:28:44Z",
   "filter": "author.orcid:0000-0001-6419-0008",
   "author": {
     "id": "A5080035458",
     "display_name": "Zachary Butzin-Dozier",
     "orcid": "0000-0001-6419-0008",
     "works_count": 81,
-    "cited_by_count": 386,
+    "cited_by_count": 392,
     "summary_stats": {
-      "2yr_mean_citedness": 3.090909090909091,
+      "2yr_mean_citedness": 3.1818181818181817,
       "h_index": 9,
       "i10_index": 9
     },
@@ -30,13 +30,13 @@
         "year": 2013,
         "works_count": 0,
         "oa_works_count": 0,
-        "cited_by_count": 10
+        "cited_by_count": 9
       },
       {
         "year": 2014,
         "works_count": 0,
         "oa_works_count": 0,
-        "cited_by_count": 11
+        "cited_by_count": 12
       },
       {
         "year": 2015,
@@ -60,7 +60,7 @@
         "year": 2018,
         "works_count": 0,
         "oa_works_count": 0,
-        "cited_by_count": 17
+        "cited_by_count": 18
       },
       {
         "year": 2019,
@@ -70,14 +70,14 @@
       },
       {
         "year": 2020,
-        "works_count": 12,
-        "oa_works_count": 12,
-        "cited_by_count": 45
+        "works_count": 5,
+        "oa_works_count": 5,
+        "cited_by_count": 46
       },
       {
         "year": 2021,
-        "works_count": 15,
-        "oa_works_count": 15,
+        "works_count": 22,
+        "oa_works_count": 22,
         "cited_by_count": 6
       },
       {
@@ -102,16 +102,16 @@
         "year": 2025,
         "works_count": 14,
         "oa_works_count": 13,
-        "cited_by_count": 57
+        "cited_by_count": 58
       },
       {
         "year": 2026,
         "works_count": 17,
         "oa_works_count": 16,
-        "cited_by_count": 124
+        "cited_by_count": 127
       }
     ],
-    "updated_date": "2026-11-16T12:53:42"
+    "updated_date": "2026-11-23T12:36:22"
   },
   "works": [
     {
@@ -205,7 +205,7 @@
           "orcid": "0000-0002-3618-4361"
         }
       ],
-      "cited_by_count": 167,
+      "cited_by_count": 169,
       "counts_by_year": [
         {
           "year": 2026,
@@ -233,7 +233,7 @@
         },
         {
           "year": 2020,
-          "cited_by_count": 45
+          "cited_by_count": 46
         },
         {
           "year": 2019,
@@ -241,7 +241,7 @@
         },
         {
           "year": 2018,
-          "cited_by_count": 17
+          "cited_by_count": 18
         },
         {
           "year": 2017,
@@ -257,11 +257,11 @@
         },
         {
           "year": 2014,
-          "cited_by_count": 11
+          "cited_by_count": 12
         },
         {
           "year": 2013,
-          "cited_by_count": 10
+          "cited_by_count": 9
         },
         {
           "year": 2012,
@@ -348,16 +348,6 @@
           "source_type": "repository"
         },
         {
-          "id": "pmid:37873471",
-          "doi": null,
-          "landing_page_url": "https://pubmed.ncbi.nlm.nih.gov/37873471",
-          "pdf_url": null,
-          "is_oa": false,
-          "version": "publishedVersion",
-          "source": "PubMed",
-          "source_type": "repository"
-        },
-        {
           "id": "pmid:38696234",
           "doi": null,
           "landing_page_url": "https://pubmed.ncbi.nlm.nih.gov/38696234",
@@ -375,6 +365,16 @@
           "is_oa": true,
           "version": "submittedVersion",
           "source": "PubMed Central",
+          "source_type": "repository"
+        },
+        {
+          "id": "pmid:37873471",
+          "doi": null,
+          "landing_page_url": "https://pubmed.ncbi.nlm.nih.gov/37873471",
+          "pdf_url": null,
+          "is_oa": false,
+          "version": "submittedVersion",
+          "source": "PubMed",
           "source_type": "repository"
         },
         {
@@ -446,11 +446,11 @@
           "orcid": "0000-0001-9114-8737"
         }
       ],
-      "cited_by_count": 44,
+      "cited_by_count": 45,
       "counts_by_year": [
         {
           "year": 2026,
-          "cited_by_count": 26
+          "cited_by_count": 27
         },
         {
           "year": 2025,
@@ -565,7 +565,7 @@
           "doi": null,
           "landing_page_url": "https://doaj.org/article/1969af9d330a45e98fa675bf9ca85285",
           "pdf_url": null,
-          "is_oa": true,
+          "is_oa": false,
           "version": "submittedVersion",
           "source": "DOAJ (DOAJ: Directory of Open Access Journals)",
           "source_type": "repository"
@@ -598,7 +598,7 @@
         },
         {
           "position": "middle",
-          "author_id": null,
+          "author_id": "A5159382334",
           "display_name": "Sarang Deshpande",
           "raw_author_name": "Sarang Deshpande",
           "orcid": null
@@ -667,15 +667,15 @@
           "orcid": "0000-0002-3769-0127"
         }
       ],
-      "cited_by_count": 23,
+      "cited_by_count": 25,
       "counts_by_year": [
         {
           "year": 2026,
-          "cited_by_count": 10
+          "cited_by_count": 11
         },
         {
           "year": 2025,
-          "cited_by_count": 10
+          "cited_by_count": 11
         },
         {
           "year": 2024,
@@ -696,7 +696,7 @@
       "doi": "10.2196/53322",
       "title": "Predicting Long COVID in the National COVID Cohort Collaborative Using Super Learner: Cohort Study",
       "publication_year": 2024,
-      "publication_date": "2024-05-16",
+      "publication_date": "2024-08-15",
       "type": "article",
       "pmid": "https://pubmed.ncbi.nlm.nih.gov/39146534",
       "pmcid": "https://www.ncbi.nlm.nih.gov/pmc/articles/11364083",
@@ -704,7 +704,7 @@
         "id": "doi:10.2196/53322",
         "doi": "10.2196/53322",
         "landing_page_url": "https://doi.org/10.2196/53322",
-        "pdf_url": null,
+        "pdf_url": "https://s3.ca-central-1.amazonaws.com/assets.jmir.org/assets/preprints/preprint-53322-accepted.pdf",
         "is_oa": true,
         "version": "publishedVersion",
         "source": "JMIR Public Health and Surveillance",
@@ -714,7 +714,7 @@
         "id": "doi:10.2196/53322",
         "doi": "10.2196/53322",
         "landing_page_url": "https://doi.org/10.2196/53322",
-        "pdf_url": null,
+        "pdf_url": "https://s3.ca-central-1.amazonaws.com/assets.jmir.org/assets/preprints/preprint-53322-accepted.pdf",
         "is_oa": true,
         "version": "publishedVersion",
         "source": "JMIR Public Health and Surveillance",
@@ -725,7 +725,7 @@
           "id": "doi:10.2196/53322",
           "doi": "10.2196/53322",
           "landing_page_url": "https://doi.org/10.2196/53322",
-          "pdf_url": null,
+          "pdf_url": "https://s3.ca-central-1.amazonaws.com/assets.jmir.org/assets/preprints/preprint-53322-accepted.pdf",
           "is_oa": true,
           "version": "publishedVersion",
           "source": "JMIR Public Health and Surveillance",
@@ -752,16 +752,6 @@
           "source_type": "repository"
         },
         {
-          "id": "pmid:39146534",
-          "doi": null,
-          "landing_page_url": "https://pubmed.ncbi.nlm.nih.gov/39146534",
-          "pdf_url": null,
-          "is_oa": false,
-          "version": "publishedVersion",
-          "source": "PubMed",
-          "source_type": "repository"
-        },
-        {
           "id": "pmh:oai:pubmedcentral.nih.gov:11364083",
           "doi": null,
           "landing_page_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11364083/",
@@ -772,11 +762,21 @@
           "source_type": "repository"
         },
         {
+          "id": "pmid:39146534",
+          "doi": null,
+          "landing_page_url": "https://pubmed.ncbi.nlm.nih.gov/39146534",
+          "pdf_url": null,
+          "is_oa": false,
+          "version": "publishedVersion",
+          "source": "PubMed",
+          "source_type": "repository"
+        },
+        {
           "id": "pmh:oai:doaj.org/article:54e3e207a3e34b1aa772b40f500dee76",
           "doi": null,
           "landing_page_url": "https://doaj.org/article/54e3e207a3e34b1aa772b40f500dee76",
           "pdf_url": null,
-          "is_oa": true,
+          "is_oa": false,
           "version": "submittedVersion",
           "source": "DOAJ (DOAJ: Directory of Open Access Journals)",
           "source_type": "repository"
@@ -868,11 +868,11 @@
           "orcid": "0000-0002-3769-0127"
         }
       ],
-      "cited_by_count": 20,
+      "cited_by_count": 21,
       "counts_by_year": [
         {
           "year": 2026,
-          "cited_by_count": 13
+          "cited_by_count": 14
         },
         {
           "year": 2025,
@@ -936,7 +936,7 @@
           "id": "doi:10.1101/2024.05.10.24307069",
           "doi": "10.1101/2024.05.10.24307069",
           "landing_page_url": "https://doi.org/10.1101/2024.05.10.24307069",
-          "pdf_url": null,
+          "pdf_url": "https://www.medrxiv.org/content/medrxiv/early/2024/05/10/2024.05.10.24307069.full.pdf",
           "is_oa": true,
           "version": "submittedVersion",
           "source": "medRxiv",
@@ -997,7 +997,7 @@
           "doi": null,
           "landing_page_url": "https://doaj.org/article/3443618f92024fd38ee5d7fcd235e2a5",
           "pdf_url": null,
-          "is_oa": true,
+          "is_oa": false,
           "version": "submittedVersion",
           "source": "DOAJ (DOAJ: Directory of Open Access Journals)",
           "source_type": "repository"
@@ -1337,7 +1337,7 @@
           "doi": null,
           "landing_page_url": "https://doaj.org/article/fc8b927c62764ca1b7f11ebc4c7f5aba",
           "pdf_url": null,
-          "is_oa": true,
+          "is_oa": false,
           "version": "submittedVersion",
           "source": "DOAJ (DOAJ: Directory of Open Access Journals)",
           "source_type": "repository"
@@ -2326,13 +2326,13 @@
           "source_type": "repository"
         },
         {
-          "id": "pmid:38585931",
+          "id": "pmh:oai:pubmedcentral.nih.gov:11882089",
           "doi": null,
-          "landing_page_url": "https://pubmed.ncbi.nlm.nih.gov/38585931",
+          "landing_page_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11882089/",
           "pdf_url": null,
-          "is_oa": false,
+          "is_oa": true,
           "version": "publishedVersion",
-          "source": "PubMed",
+          "source": "PubMed Central",
           "source_type": "repository"
         },
         {
@@ -2346,12 +2346,12 @@
           "source_type": "repository"
         },
         {
-          "id": "pmh:oai:pubmedcentral.nih.gov:11882089",
+          "id": "pmh:oai:pubmedcentral.nih.gov:10996736",
           "doi": null,
-          "landing_page_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11882089/",
-          "pdf_url": null,
+          "landing_page_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/10996736",
+          "pdf_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10996736/pdf/nihpp-2024.03.21.24304684v1.pdf",
           "is_oa": true,
-          "version": "publishedVersion",
+          "version": "submittedVersion",
           "source": "PubMed Central",
           "source_type": "repository"
         },
@@ -2366,13 +2366,13 @@
           "source_type": "repository"
         },
         {
-          "id": "pmh:oai:pubmedcentral.nih.gov:10996736",
+          "id": "pmid:38585931",
           "doi": null,
-          "landing_page_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/10996736",
-          "pdf_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10996736/pdf/nihpp-2024.03.21.24304684v1.pdf",
-          "is_oa": true,
+          "landing_page_url": "https://pubmed.ncbi.nlm.nih.gov/38585931",
+          "pdf_url": null,
+          "is_oa": false,
           "version": "submittedVersion",
-          "source": "PubMed Central",
+          "source": "PubMed",
           "source_type": "repository"
         },
         {
@@ -2380,7 +2380,7 @@
           "doi": null,
           "landing_page_url": "https://doaj.org/article/eae57b1c7c5440b5affef9ed50556e0e",
           "pdf_url": null,
-          "is_oa": true,
+          "is_oa": false,
           "version": "submittedVersion",
           "source": "DOAJ (DOAJ: Directory of Open Access Journals)",
           "source_type": "repository"
@@ -2476,7 +2476,7 @@
           "author_id": "A5046245557",
           "display_name": "Syeda Luthfa Famida",
           "raw_author_name": "Syeda L. Famida",
-          "orcid": "0000-0002-3403-6736"
+          "orcid": null
         },
         {
           "position": "middle",
@@ -2518,7 +2518,7 @@
           "author_id": "A5048723336",
           "display_name": "Md Ohedul Islam",
           "raw_author_name": "Md. Ohedul Islam",
-          "orcid": "0000-0001-6105-7295"
+          "orcid": "0000-0002-3403-6736"
         },
         {
           "position": "middle",
@@ -2662,16 +2662,6 @@
           "source_type": "repository"
         },
         {
-          "id": "pmid:33374513",
-          "doi": null,
-          "landing_page_url": "https://pubmed.ncbi.nlm.nih.gov/33374513",
-          "pdf_url": null,
-          "is_oa": false,
-          "version": "publishedVersion",
-          "source": "PubMed",
-          "source_type": "repository"
-        },
-        {
           "id": "pmh:oai:pubmedcentral.nih.gov:7822171",
           "doi": null,
           "landing_page_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7822171/",
@@ -2682,11 +2672,21 @@
           "source_type": "repository"
         },
         {
+          "id": "pmid:33374513",
+          "doi": null,
+          "landing_page_url": "https://pubmed.ncbi.nlm.nih.gov/33374513",
+          "pdf_url": null,
+          "is_oa": false,
+          "version": "publishedVersion",
+          "source": "PubMed",
+          "source_type": "repository"
+        },
+        {
           "id": "pmh:oai:doaj.org/article:98aec5b0164a41f8b19a1bf544f33121",
           "doi": null,
           "landing_page_url": "https://doaj.org/article/98aec5b0164a41f8b19a1bf544f33121",
           "pdf_url": null,
-          "is_oa": true,
+          "is_oa": false,
           "version": "submittedVersion",
           "source": "DOAJ (DOAJ: Directory of Open Access Journals)",
           "source_type": "repository"
@@ -2835,16 +2835,6 @@
           "source_type": "repository"
         },
         {
-          "id": "pmid:35395759",
-          "doi": null,
-          "landing_page_url": "https://pubmed.ncbi.nlm.nih.gov/35395759",
-          "pdf_url": null,
-          "is_oa": false,
-          "version": "publishedVersion",
-          "source": "PubMed",
-          "source_type": "repository"
-        },
-        {
           "id": "pmh:oai:pubmedcentral.nih.gov:8991794",
           "doi": null,
           "landing_page_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8991794/",
@@ -2852,6 +2842,16 @@
           "is_oa": true,
           "version": "publishedVersion",
           "source": "PubMed Central",
+          "source_type": "repository"
+        },
+        {
+          "id": "pmid:35395759",
+          "doi": null,
+          "landing_page_url": "https://pubmed.ncbi.nlm.nih.gov/35395759",
+          "pdf_url": null,
+          "is_oa": false,
+          "version": "publishedVersion",
+          "source": "PubMed",
           "source_type": "repository"
         },
         {
@@ -3014,20 +3014,20 @@
           "id": "doi:10.1101/2024.10.07.24315026",
           "doi": "10.1101/2024.10.07.24315026",
           "landing_page_url": "https://doi.org/10.1101/2024.10.07.24315026",
-          "pdf_url": null,
+          "pdf_url": "https://www.medrxiv.org/content/medrxiv/early/2024/10/07/2024.10.07.24315026.full.pdf",
           "is_oa": true,
           "version": "submittedVersion",
           "source": "medRxiv",
           "source_type": "repository"
         },
         {
-          "id": "pmid:39417142",
+          "id": "pmh:oai:pubmedcentral.nih.gov:12144471",
           "doi": null,
-          "landing_page_url": "https://pubmed.ncbi.nlm.nih.gov/39417142",
+          "landing_page_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12144471/",
           "pdf_url": null,
-          "is_oa": false,
+          "is_oa": true,
           "version": "publishedVersion",
-          "source": "PubMed",
+          "source": "PubMed Central",
           "source_type": "repository"
         },
         {
@@ -3041,12 +3041,12 @@
           "source_type": "repository"
         },
         {
-          "id": "pmh:oai:pubmedcentral.nih.gov:12144471",
+          "id": "pmh:oai:pubmedcentral.nih.gov:11483018",
           "doi": null,
-          "landing_page_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12144471/",
-          "pdf_url": null,
+          "landing_page_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/11483018",
+          "pdf_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11483018/pdf/nihpp-2024.10.07.24315026v1.pdf",
           "is_oa": true,
-          "version": "publishedVersion",
+          "version": "submittedVersion",
           "source": "PubMed Central",
           "source_type": "repository"
         },
@@ -3061,13 +3061,13 @@
           "source_type": "repository"
         },
         {
-          "id": "pmh:oai:pubmedcentral.nih.gov:11483018",
+          "id": "pmid:39417142",
           "doi": null,
-          "landing_page_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/11483018",
-          "pdf_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11483018/pdf/nihpp-2024.10.07.24315026v1.pdf",
-          "is_oa": true,
+          "landing_page_url": "https://pubmed.ncbi.nlm.nih.gov/39417142",
+          "pdf_url": null,
+          "is_oa": false,
           "version": "submittedVersion",
-          "source": "PubMed Central",
+          "source": "PubMed",
           "source_type": "repository"
         },
         {
@@ -3075,7 +3075,7 @@
           "doi": null,
           "landing_page_url": "https://doaj.org/article/54ee9b548a9d4d2a97f7544411e0deb2",
           "pdf_url": null,
-          "is_oa": true,
+          "is_oa": false,
           "version": "submittedVersion",
           "source": "DOAJ (DOAJ: Directory of Open Access Journals)",
           "source_type": "repository"
@@ -3256,20 +3256,20 @@
         "doi": "10.52202/085713-4650",
         "landing_page_url": "https://doi.org/10.52202/085713-4650",
         "pdf_url": null,
-        "is_oa": false,
+        "is_oa": true,
         "version": "publishedVersion",
         "source": "neural information processing systems",
         "source_type": "conference"
       },
       "best_oa_location": {
-        "id": "pmh:oai:arXiv.org:2511.01077",
-        "doi": null,
-        "landing_page_url": "http://arxiv.org/abs/2511.01077",
-        "pdf_url": "https://arxiv.org/pdf/2511.01077",
+        "id": "doi:10.52202/085713-4650",
+        "doi": "10.52202/085713-4650",
+        "landing_page_url": "https://doi.org/10.52202/085713-4650",
+        "pdf_url": null,
         "is_oa": true,
-        "version": "submittedVersion",
-        "source": "arXiv (Cornell University)",
-        "source_type": "repository"
+        "version": "publishedVersion",
+        "source": "neural information processing systems",
+        "source_type": "conference"
       },
       "locations": [
         {
@@ -3277,28 +3277,18 @@
           "doi": "10.52202/085713-4650",
           "landing_page_url": "https://doi.org/10.52202/085713-4650",
           "pdf_url": null,
-          "is_oa": false,
+          "is_oa": true,
           "version": "publishedVersion",
           "source": "neural information processing systems",
           "source_type": "conference"
         },
         {
           "id": "pmh:oai:arXiv.org:2511.01077",
-          "doi": null,
+          "doi": "10.48550/arxiv.2511.01077",
           "landing_page_url": "http://arxiv.org/abs/2511.01077",
           "pdf_url": "https://arxiv.org/pdf/2511.01077",
           "is_oa": true,
           "version": "submittedVersion",
-          "source": "arXiv (Cornell University)",
-          "source_type": "repository"
-        },
-        {
-          "id": "doi:10.48550/arxiv.2511.01077",
-          "doi": "10.48550/arxiv.2511.01077",
-          "landing_page_url": "https://doi.org/10.48550/arxiv.2511.01077",
-          "pdf_url": null,
-          "is_oa": true,
-          "version": null,
           "source": "arXiv (Cornell University)",
           "source_type": "repository"
         }
@@ -3735,16 +3725,6 @@
           "source_type": "repository"
         },
         {
-          "id": "pmid:37745503",
-          "doi": null,
-          "landing_page_url": "https://pubmed.ncbi.nlm.nih.gov/37745503",
-          "pdf_url": null,
-          "is_oa": false,
-          "version": "publishedVersion",
-          "source": "PubMed",
-          "source_type": "repository"
-        },
-        {
           "id": "pmid:38522372",
           "doi": null,
           "landing_page_url": "https://pubmed.ncbi.nlm.nih.gov/38522372",
@@ -3762,6 +3742,16 @@
           "is_oa": true,
           "version": "submittedVersion",
           "source": "PubMed Central",
+          "source_type": "repository"
+        },
+        {
+          "id": "pmid:37745503",
+          "doi": null,
+          "landing_page_url": "https://pubmed.ncbi.nlm.nih.gov/37745503",
+          "pdf_url": null,
+          "is_oa": false,
+          "version": "submittedVersion",
+          "source": "PubMed",
           "source_type": "repository"
         },
         {
@@ -3882,7 +3872,7 @@
           "author_id": "A5046245557",
           "display_name": "Syeda Luthfa Famida",
           "raw_author_name": "Syeda Luthfa Famida",
-          "orcid": "0000-0002-3403-6736"
+          "orcid": null
         },
         {
           "position": "middle",
@@ -4043,6 +4033,249 @@
       "is_paratext": false
     },
     {
+      "id": "W4410391103",
+      "doi": "10.2196/68143",
+      "title": "Identifying People Living With or Those at Risk for HIV in a Nationally Sampled Electronic Health Record Repository Called the National Clinical Cohort Collaborative: Computational Phenotyping Study",
+      "publication_year": 2025,
+      "publication_date": "2025-07-11",
+      "type": "article",
+      "pmid": "https://pubmed.ncbi.nlm.nih.gov/40644699",
+      "pmcid": "https://www.ncbi.nlm.nih.gov/pmc/articles/12299939",
+      "primary_location": {
+        "id": "doi:10.2196/68143",
+        "doi": "10.2196/68143",
+        "landing_page_url": "https://doi.org/10.2196/68143",
+        "pdf_url": null,
+        "is_oa": true,
+        "version": "publishedVersion",
+        "source": "JMIR Medical Informatics",
+        "source_type": "journal"
+      },
+      "best_oa_location": {
+        "id": "doi:10.2196/68143",
+        "doi": "10.2196/68143",
+        "landing_page_url": "https://doi.org/10.2196/68143",
+        "pdf_url": null,
+        "is_oa": true,
+        "version": "publishedVersion",
+        "source": "JMIR Medical Informatics",
+        "source_type": "journal"
+      },
+      "locations": [
+        {
+          "id": "doi:10.2196/68143",
+          "doi": "10.2196/68143",
+          "landing_page_url": "https://doi.org/10.2196/68143",
+          "pdf_url": null,
+          "is_oa": true,
+          "version": "publishedVersion",
+          "source": "JMIR Medical Informatics",
+          "source_type": "journal"
+        },
+        {
+          "id": "doi:10.2196/preprints.68143",
+          "doi": "10.2196/preprints.68143",
+          "landing_page_url": "https://doi.org/10.2196/preprints.68143",
+          "pdf_url": null,
+          "is_oa": false,
+          "version": "submittedVersion",
+          "source": null,
+          "source_type": null
+        },
+        {
+          "id": "pmh:oai:pubmedcentral.nih.gov:12299939",
+          "doi": null,
+          "landing_page_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12299939/",
+          "pdf_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12299939/pdf/",
+          "is_oa": true,
+          "version": "publishedVersion",
+          "source": "PubMed Central",
+          "source_type": "repository"
+        },
+        {
+          "id": "pmid:40644699",
+          "doi": null,
+          "landing_page_url": "https://pubmed.ncbi.nlm.nih.gov/40644699",
+          "pdf_url": null,
+          "is_oa": false,
+          "version": "publishedVersion",
+          "source": "PubMed",
+          "source_type": "repository"
+        },
+        {
+          "id": "pmh:oai:doaj.org/article:31e666c9163a46448ed1640ce50ce87b",
+          "doi": null,
+          "landing_page_url": "https://doaj.org/article/31e666c9163a46448ed1640ce50ce87b",
+          "pdf_url": null,
+          "is_oa": false,
+          "version": "submittedVersion",
+          "source": "DOAJ (DOAJ: Directory of Open Access Journals)",
+          "source_type": "repository"
+        }
+      ],
+      "authorships": [
+        {
+          "position": "first",
+          "author_id": "A5085274034",
+          "display_name": "Eric G. Hurwitz",
+          "raw_author_name": "Eric Hurwitz",
+          "orcid": "0000-0002-6581-7754"
+        },
+        {
+          "position": "middle",
+          "author_id": "A5050612973",
+          "display_name": "Cara D Varley",
+          "raw_author_name": "Cara D Varley",
+          "orcid": "0000-0003-3209-4489"
+        },
+        {
+          "position": "middle",
+          "author_id": "A5056664137",
+          "display_name": "Alfred Jerrod Anzalone",
+          "raw_author_name": "A Jerrod Anzolone",
+          "orcid": "0000-0002-3212-7845"
+        },
+        {
+          "position": "middle",
+          "author_id": "A5048962942",
+          "display_name": "Vithal Madhira",
+          "raw_author_name": "Vithal Madhira",
+          "orcid": "0000-0001-5359-1703"
+        },
+        {
+          "position": "middle",
+          "author_id": "A5000376105",
+          "display_name": "Amy L. Olex",
+          "raw_author_name": "Amy L Olex",
+          "orcid": "0000-0001-8064-521X"
+        },
+        {
+          "position": "middle",
+          "author_id": "A5014310245",
+          "display_name": "Jing Sun",
+          "raw_author_name": "Jing Sun",
+          "orcid": "0000-0003-3741-0962"
+        },
+        {
+          "position": "middle",
+          "author_id": "A5044326194",
+          "display_name": "Dimple Vaidya",
+          "raw_author_name": "Dimple Vaidya",
+          "orcid": "0000-0002-2850-8880"
+        },
+        {
+          "position": "middle",
+          "author_id": "A5002778123",
+          "display_name": "Nada A. Fadul",
+          "raw_author_name": "Nada Fadul",
+          "orcid": "0000-0001-5022-9063"
+        },
+        {
+          "position": "middle",
+          "author_id": "A5012690958",
+          "display_name": "Jessica Y. Islam",
+          "raw_author_name": "Jessica Y Islam",
+          "orcid": "0000-0002-3690-3848"
+        },
+        {
+          "position": "middle",
+          "author_id": "A5084815102",
+          "display_name": "Lesley E. Jackson",
+          "raw_author_name": "Lesley E Jackson",
+          "orcid": "0000-0002-9373-7620"
+        },
+        {
+          "position": "middle",
+          "author_id": "A5085983888",
+          "display_name": "Kenneth J. Wilkins",
+          "raw_author_name": "Kenneth J Wilkins",
+          "orcid": "0000-0003-0531-7165"
+        },
+        {
+          "position": "middle",
+          "author_id": "A5080035458",
+          "display_name": "Zachary Butzin-Dozier",
+          "raw_author_name": "Zachary Butzin-Dozier",
+          "orcid": "0000-0001-6419-0008"
+        },
+        {
+          "position": "middle",
+          "author_id": "A5100417601",
+          "display_name": "Dongmei Li",
+          "raw_author_name": "Dongmei Li",
+          "orcid": "0000-0001-9140-2483"
+        },
+        {
+          "position": "middle",
+          "author_id": "A5070820216",
+          "display_name": "Sandra E. Safo",
+          "raw_author_name": "Sandra E Safo",
+          "orcid": "0000-0001-9593-4778"
+        },
+        {
+          "position": "middle",
+          "author_id": "A5050577151",
+          "display_name": "Julie A. McMurry",
+          "raw_author_name": "Julie A McMurry",
+          "orcid": "0000-0002-9353-5498"
+        },
+        {
+          "position": "middle",
+          "author_id": "A5117249010",
+          "display_name": "Pooja Maheria",
+          "raw_author_name": "Pooja Maheria",
+          "orcid": "0009-0003-8462-9323"
+        },
+        {
+          "position": "middle",
+          "author_id": "A5008716136",
+          "display_name": "Tommy L Williams",
+          "raw_author_name": "Tommy Williams",
+          "orcid": "0009-0004-4153-1227"
+        },
+        {
+          "position": "middle",
+          "author_id": "A5056366854",
+          "display_name": "Shukri Ahmed Hassan",
+          "raw_author_name": "Shukri A Hassan",
+          "orcid": "0000-0001-6732-9263"
+        },
+        {
+          "position": "middle",
+          "author_id": "A5064320417",
+          "display_name": "Melissa Anne Haendel",
+          "raw_author_name": "Melissa A Haendel",
+          "orcid": "0000-0001-9114-8737"
+        },
+        {
+          "position": "last",
+          "author_id": "A5002618601",
+          "display_name": "Rena C. Patel",
+          "raw_author_name": "Rena C Patel",
+          "orcid": "0000-0001-9893-5856"
+        }
+      ],
+      "cited_by_count": 4,
+      "counts_by_year": [
+        {
+          "year": 2026,
+          "cited_by_count": 2
+        },
+        {
+          "year": 2025,
+          "cited_by_count": 2
+        }
+      ],
+      "biblio": {
+        "volume": "13",
+        "issue": null,
+        "first_page": "e68143",
+        "last_page": "e68143"
+      },
+      "is_retracted": false,
+      "is_paratext": false
+    },
+    {
       "id": "W4409721707",
       "doi": "10.1016/j.ebiom.2026.106382",
       "title": "COVID-19 vaccination timing, relative to acute COVID-19, and subsequent risk of long COVID",
@@ -4093,13 +4326,13 @@
           "source_type": "repository"
         },
         {
-          "id": "pmid:40313290",
+          "id": "pmh:oai:pubmedcentral.nih.gov:13445364",
           "doi": null,
-          "landing_page_url": "https://pubmed.ncbi.nlm.nih.gov/40313290",
+          "landing_page_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13445364/",
           "pdf_url": null,
-          "is_oa": false,
+          "is_oa": true,
           "version": "publishedVersion",
-          "source": "PubMed",
+          "source": "PubMed Central",
           "source_type": "repository"
         },
         {
@@ -4113,16 +4346,6 @@
           "source_type": "repository"
         },
         {
-          "id": "pmh:oai:pubmedcentral.nih.gov:13445364",
-          "doi": null,
-          "landing_page_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13445364/",
-          "pdf_url": null,
-          "is_oa": true,
-          "version": "publishedVersion",
-          "source": "PubMed Central",
-          "source_type": "repository"
-        },
-        {
           "id": "pmh:oai:pubmedcentral.nih.gov:12045423",
           "doi": null,
           "landing_page_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12045423/",
@@ -4130,6 +4353,16 @@
           "is_oa": true,
           "version": "submittedVersion",
           "source": "PubMed Central",
+          "source_type": "repository"
+        },
+        {
+          "id": "pmid:40313290",
+          "doi": null,
+          "landing_page_url": "https://pubmed.ncbi.nlm.nih.gov/40313290",
+          "pdf_url": null,
+          "is_oa": false,
+          "version": "submittedVersion",
+          "source": "PubMed",
           "source_type": "repository"
         }
       ],
@@ -4335,7 +4568,7 @@
           "author_id": "A5035214967",
           "display_name": "Benjamin Amor",
           "raw_author_name": "Benjamin Amor",
-          "orcid": null
+          "orcid": "0000-0002-7841-8672"
         },
         {
           "position": "middle",
@@ -5021,249 +5254,6 @@
       "is_paratext": false
     },
     {
-      "id": "W4410391103",
-      "doi": "10.2196/68143",
-      "title": "Identifying People Living With or Those at Risk for HIV in a Nationally Sampled Electronic Health Record Repository Called the National Clinical Cohort Collaborative: Computational Phenotyping Study",
-      "publication_year": 2025,
-      "publication_date": "2025-05-15",
-      "type": "article",
-      "pmid": "https://pubmed.ncbi.nlm.nih.gov/40644699",
-      "pmcid": "https://www.ncbi.nlm.nih.gov/pmc/articles/12299939",
-      "primary_location": {
-        "id": "doi:10.2196/68143",
-        "doi": "10.2196/68143",
-        "landing_page_url": "https://doi.org/10.2196/68143",
-        "pdf_url": null,
-        "is_oa": true,
-        "version": "publishedVersion",
-        "source": "JMIR Medical Informatics",
-        "source_type": "journal"
-      },
-      "best_oa_location": {
-        "id": "doi:10.2196/68143",
-        "doi": "10.2196/68143",
-        "landing_page_url": "https://doi.org/10.2196/68143",
-        "pdf_url": null,
-        "is_oa": true,
-        "version": "publishedVersion",
-        "source": "JMIR Medical Informatics",
-        "source_type": "journal"
-      },
-      "locations": [
-        {
-          "id": "doi:10.2196/68143",
-          "doi": "10.2196/68143",
-          "landing_page_url": "https://doi.org/10.2196/68143",
-          "pdf_url": null,
-          "is_oa": true,
-          "version": "publishedVersion",
-          "source": "JMIR Medical Informatics",
-          "source_type": "journal"
-        },
-        {
-          "id": "doi:10.2196/preprints.68143",
-          "doi": "10.2196/preprints.68143",
-          "landing_page_url": "https://doi.org/10.2196/preprints.68143",
-          "pdf_url": null,
-          "is_oa": false,
-          "version": "submittedVersion",
-          "source": null,
-          "source_type": null
-        },
-        {
-          "id": "pmh:oai:pubmedcentral.nih.gov:12299939",
-          "doi": null,
-          "landing_page_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12299939/",
-          "pdf_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12299939/pdf/",
-          "is_oa": true,
-          "version": "publishedVersion",
-          "source": "PubMed Central",
-          "source_type": "repository"
-        },
-        {
-          "id": "pmid:40644699",
-          "doi": null,
-          "landing_page_url": "https://pubmed.ncbi.nlm.nih.gov/40644699",
-          "pdf_url": null,
-          "is_oa": false,
-          "version": "publishedVersion",
-          "source": "PubMed",
-          "source_type": "repository"
-        },
-        {
-          "id": "pmh:oai:doaj.org/article:31e666c9163a46448ed1640ce50ce87b",
-          "doi": null,
-          "landing_page_url": "https://doaj.org/article/31e666c9163a46448ed1640ce50ce87b",
-          "pdf_url": null,
-          "is_oa": true,
-          "version": "submittedVersion",
-          "source": "DOAJ (DOAJ: Directory of Open Access Journals)",
-          "source_type": "repository"
-        }
-      ],
-      "authorships": [
-        {
-          "position": "first",
-          "author_id": "A5085274034",
-          "display_name": "Eric G. Hurwitz",
-          "raw_author_name": "Eric Hurwitz",
-          "orcid": "0000-0002-6581-7754"
-        },
-        {
-          "position": "middle",
-          "author_id": "A5050612973",
-          "display_name": "Cara D Varley",
-          "raw_author_name": "Cara D Varley",
-          "orcid": "0000-0003-3209-4489"
-        },
-        {
-          "position": "middle",
-          "author_id": "A5056664137",
-          "display_name": "Alfred Jerrod Anzalone",
-          "raw_author_name": "A Jerrod Anzolone",
-          "orcid": "0000-0002-3212-7845"
-        },
-        {
-          "position": "middle",
-          "author_id": "A5048962942",
-          "display_name": "Vithal Madhira",
-          "raw_author_name": "Vithal Madhira",
-          "orcid": "0000-0001-5359-1703"
-        },
-        {
-          "position": "middle",
-          "author_id": "A5000376105",
-          "display_name": "Amy L. Olex",
-          "raw_author_name": "Amy L Olex",
-          "orcid": "0000-0001-8064-521X"
-        },
-        {
-          "position": "middle",
-          "author_id": "A5014310245",
-          "display_name": "Jing Sun",
-          "raw_author_name": "Jing Sun",
-          "orcid": "0000-0003-3741-0962"
-        },
-        {
-          "position": "middle",
-          "author_id": "A5044326194",
-          "display_name": "Dimple Vaidya",
-          "raw_author_name": "Dimple Vaidya",
-          "orcid": "0000-0002-2850-8880"
-        },
-        {
-          "position": "middle",
-          "author_id": "A5002778123",
-          "display_name": "Nada A. Fadul",
-          "raw_author_name": "Nada Fadul",
-          "orcid": "0000-0001-5022-9063"
-        },
-        {
-          "position": "middle",
-          "author_id": "A5012690958",
-          "display_name": "Jessica Y. Islam",
-          "raw_author_name": "Jessica Y Islam",
-          "orcid": "0000-0002-3690-3848"
-        },
-        {
-          "position": "middle",
-          "author_id": "A5084815102",
-          "display_name": "Lesley E. Jackson",
-          "raw_author_name": "Lesley E Jackson",
-          "orcid": "0000-0002-9373-7620"
-        },
-        {
-          "position": "middle",
-          "author_id": "A5085983888",
-          "display_name": "Kenneth J. Wilkins",
-          "raw_author_name": "Kenneth J Wilkins",
-          "orcid": "0000-0003-0531-7165"
-        },
-        {
-          "position": "middle",
-          "author_id": "A5080035458",
-          "display_name": "Zachary Butzin-Dozier",
-          "raw_author_name": "Zachary Butzin-Dozier",
-          "orcid": "0000-0001-6419-0008"
-        },
-        {
-          "position": "middle",
-          "author_id": "A5100417601",
-          "display_name": "Dongmei Li",
-          "raw_author_name": "Dongmei Li",
-          "orcid": "0000-0001-9140-2483"
-        },
-        {
-          "position": "middle",
-          "author_id": "A5070820216",
-          "display_name": "Sandra E. Safo",
-          "raw_author_name": "Sandra E Safo",
-          "orcid": "0000-0001-9593-4778"
-        },
-        {
-          "position": "middle",
-          "author_id": "A5050577151",
-          "display_name": "Julie A. McMurry",
-          "raw_author_name": "Julie A McMurry",
-          "orcid": "0000-0002-9353-5498"
-        },
-        {
-          "position": "middle",
-          "author_id": "A5117249010",
-          "display_name": "Pooja Maheria",
-          "raw_author_name": "Pooja Maheria",
-          "orcid": "0009-0003-8462-9323"
-        },
-        {
-          "position": "middle",
-          "author_id": "A5008716136",
-          "display_name": "Tommy L Williams",
-          "raw_author_name": "Tommy Williams",
-          "orcid": "0009-0004-4153-1227"
-        },
-        {
-          "position": "middle",
-          "author_id": "A5056366854",
-          "display_name": "Shukri Ahmed Hassan",
-          "raw_author_name": "Shukri A Hassan",
-          "orcid": "0000-0001-6732-9263"
-        },
-        {
-          "position": "middle",
-          "author_id": "A5064320417",
-          "display_name": "Melissa Anne Haendel",
-          "raw_author_name": "Melissa A Haendel",
-          "orcid": "0000-0001-9114-8737"
-        },
-        {
-          "position": "last",
-          "author_id": "A5002618601",
-          "display_name": "Rena C. Patel",
-          "raw_author_name": "Rena C Patel",
-          "orcid": "0000-0001-9893-5856"
-        }
-      ],
-      "cited_by_count": 3,
-      "counts_by_year": [
-        {
-          "year": 2026,
-          "cited_by_count": 1
-        },
-        {
-          "year": 2025,
-          "cited_by_count": 2
-        }
-      ],
-      "biblio": {
-        "volume": "13",
-        "issue": null,
-        "first_page": "e68143",
-        "last_page": "e68143"
-      },
-      "is_retracted": false,
-      "is_paratext": false
-    },
-    {
       "id": "W4408380552",
       "doi": "10.1038/s41598-025-90505-2",
       "title": "Maternal experience of intimate partner violence, maternal depression, and parental stress are not associated with child telomere length in Bangladesh",
@@ -5348,7 +5338,7 @@
           "doi": null,
           "landing_page_url": "https://doaj.org/article/4c1d8c920387435fab6a7959911b1053",
           "pdf_url": null,
-          "is_oa": true,
+          "is_oa": false,
           "version": "submittedVersion",
           "source": "DOAJ (DOAJ: Directory of Open Access Journals)",
           "source_type": "repository"
@@ -5482,7 +5472,7 @@
           "author_id": "A5046245557",
           "display_name": "Syeda Luthfa Famida",
           "raw_author_name": "Syeda Luthfa Famida",
-          "orcid": "0000-0002-3403-6736"
+          "orcid": null
         },
         {
           "position": "middle",
@@ -5647,16 +5637,6 @@
           "source_type": "journal"
         },
         {
-          "id": "pmid:41467215",
-          "doi": null,
-          "landing_page_url": "https://pubmed.ncbi.nlm.nih.gov/41467215",
-          "pdf_url": null,
-          "is_oa": false,
-          "version": "publishedVersion",
-          "source": "PubMed",
-          "source_type": "repository"
-        },
-        {
           "id": "pmh:oai:pubmedcentral.nih.gov:12744257",
           "doi": null,
           "landing_page_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12744257/",
@@ -5667,13 +5647,23 @@
           "source_type": "repository"
         },
         {
+          "id": "pmid:41467215",
+          "doi": null,
+          "landing_page_url": "https://pubmed.ncbi.nlm.nih.gov/41467215",
+          "pdf_url": null,
+          "is_oa": false,
+          "version": "publishedVersion",
+          "source": "PubMed",
+          "source_type": "repository"
+        },
+        {
           "id": "pmh:oai:DiVA.org:uu-575554",
           "doi": null,
           "landing_page_url": "http://urn.kb.se/resolve?urn=urn:nbn:se:uu:diva-575554",
           "pdf_url": "https://uu.diva-portal.org/smash/get/diva2:2027808/FULLTEXT01",
           "is_oa": true,
           "version": "submittedVersion",
-          "source": "KTH Publication Database DiVA (KTH Royal Institute of Technology)",
+          "source": "Uppsala University Publications (Uppsala University)",
           "source_type": "repository"
         },
         {
@@ -5681,7 +5671,7 @@
           "doi": null,
           "landing_page_url": "https://doaj.org/article/99fbc5ba05b1493da4c2db068e3da45d",
           "pdf_url": null,
-          "is_oa": true,
+          "is_oa": false,
           "version": "submittedVersion",
           "source": "DOAJ (DOAJ: Directory of Open Access Journals)",
           "source_type": "repository"
@@ -5886,16 +5876,6 @@
           "source_type": "repository"
         },
         {
-          "id": "pmid:39484253",
-          "doi": null,
-          "landing_page_url": "https://pubmed.ncbi.nlm.nih.gov/39484253",
-          "pdf_url": null,
-          "is_oa": false,
-          "version": "publishedVersion",
-          "source": "PubMed",
-          "source_type": "repository"
-        },
-        {
           "id": "pmh:oai:pubmedcentral.nih.gov:11527044",
           "doi": null,
           "landing_page_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/11527044",
@@ -5903,6 +5883,16 @@
           "is_oa": true,
           "version": "submittedVersion",
           "source": "PubMed Central",
+          "source_type": "repository"
+        },
+        {
+          "id": "pmid:39484253",
+          "doi": null,
+          "landing_page_url": "https://pubmed.ncbi.nlm.nih.gov/39484253",
+          "pdf_url": null,
+          "is_oa": false,
+          "version": "submittedVersion",
+          "source": "PubMed",
           "source_type": "repository"
         }
       ],
@@ -6111,7 +6101,7 @@
           "author_id": "A5046245557",
           "display_name": "Syeda Luthfa Famida",
           "raw_author_name": "Syeda Luthfa Famida",
-          "orcid": "0000-0002-3403-6736"
+          "orcid": null
         },
         {
           "position": "middle",
@@ -6211,8 +6201,8 @@
         }
       ],
       "biblio": {
-        "volume": null,
-        "issue": null,
+        "volume": "105",
+        "issue": "5",
         "first_page": null,
         "last_page": null
       },
@@ -6260,16 +6250,6 @@
           "source_type": "repository"
         },
         {
-          "id": "pmid:40502605",
-          "doi": null,
-          "landing_page_url": "https://pubmed.ncbi.nlm.nih.gov/40502605",
-          "pdf_url": null,
-          "is_oa": false,
-          "version": "publishedVersion",
-          "source": "PubMed",
-          "source_type": "repository"
-        },
-        {
           "id": "pmh:oai:pubmedcentral.nih.gov:12155030",
           "doi": null,
           "landing_page_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12155030/",
@@ -6277,6 +6257,16 @@
           "is_oa": true,
           "version": "submittedVersion",
           "source": "PubMed Central",
+          "source_type": "repository"
+        },
+        {
+          "id": "pmid:40502605",
+          "doi": null,
+          "landing_page_url": "https://pubmed.ncbi.nlm.nih.gov/40502605",
+          "pdf_url": null,
+          "is_oa": false,
+          "version": "submittedVersion",
+          "source": "PubMed",
           "source_type": "repository"
         }
       ],
@@ -6417,7 +6407,7 @@
           "landing_page_url": "https://pubmed.ncbi.nlm.nih.gov/41867235",
           "pdf_url": null,
           "is_oa": false,
-          "version": "publishedVersion",
+          "version": "submittedVersion",
           "source": "PubMed",
           "source_type": "repository"
         }
@@ -6992,16 +6982,6 @@
           "source_type": "repository"
         },
         {
-          "id": "pmid:41409341",
-          "doi": null,
-          "landing_page_url": "https://pubmed.ncbi.nlm.nih.gov/41409341",
-          "pdf_url": null,
-          "is_oa": false,
-          "version": "publishedVersion",
-          "source": "PubMed",
-          "source_type": "repository"
-        },
-        {
           "id": "pmh:oai:pubmedcentral.nih.gov:12707300",
           "doi": null,
           "landing_page_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12707300/",
@@ -7009,6 +6989,16 @@
           "is_oa": true,
           "version": "publishedVersion",
           "source": "PubMed Central",
+          "source_type": "repository"
+        },
+        {
+          "id": "pmid:41409341",
+          "doi": null,
+          "landing_page_url": "https://pubmed.ncbi.nlm.nih.gov/41409341",
+          "pdf_url": null,
+          "is_oa": false,
+          "version": "publishedVersion",
+          "source": "PubMed",
           "source_type": "repository"
         },
         {
@@ -7141,7 +7131,7 @@
       "doi": "10.1093/ofid/ofaf731",
       "title": "HIV Status and COVID-19 Treatment Disparities in the US National Clinical Cohort Collaborative",
       "publication_year": 2025,
-      "publication_date": "2025-12-02",
+      "publication_date": "2025-12-26",
       "type": "article",
       "pmid": "https://pubmed.ncbi.nlm.nih.gov/41550697",
       "pmcid": "https://www.ncbi.nlm.nih.gov/pmc/articles/12805825",
@@ -7391,7 +7381,7 @@
           "landing_page_url": "https://pubmed.ncbi.nlm.nih.gov/41822694",
           "pdf_url": null,
           "is_oa": false,
-          "version": "publishedVersion",
+          "version": "submittedVersion",
           "source": "PubMed",
           "source_type": "repository"
         }
@@ -7614,16 +7604,6 @@
           "source_type": "repository"
         },
         {
-          "id": "pmid:42396310",
-          "doi": null,
-          "landing_page_url": "https://pubmed.ncbi.nlm.nih.gov/42396310",
-          "pdf_url": null,
-          "is_oa": false,
-          "version": "publishedVersion",
-          "source": "PubMed",
-          "source_type": "repository"
-        },
-        {
           "id": "pmh:oai:pubmedcentral.nih.gov:13321181",
           "doi": null,
           "landing_page_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13321181/",
@@ -7631,6 +7611,16 @@
           "is_oa": true,
           "version": "publishedVersion",
           "source": "PubMed Central",
+          "source_type": "repository"
+        },
+        {
+          "id": "pmid:42396310",
+          "doi": null,
+          "landing_page_url": "https://pubmed.ncbi.nlm.nih.gov/42396310",
+          "pdf_url": null,
+          "is_oa": false,
+          "version": "submittedVersion",
+          "source": "PubMed",
           "source_type": "repository"
         }
       ],
@@ -7833,16 +7823,6 @@
           "source_type": "repository"
         },
         {
-          "id": "pmid:42465874",
-          "doi": null,
-          "landing_page_url": "https://pubmed.ncbi.nlm.nih.gov/42465874",
-          "pdf_url": null,
-          "is_oa": false,
-          "version": "publishedVersion",
-          "source": "PubMed",
-          "source_type": "repository"
-        },
-        {
           "id": "pmh:oai:pubmedcentral.nih.gov:13370558",
           "doi": null,
           "landing_page_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13370558/",
@@ -7850,6 +7830,16 @@
           "is_oa": true,
           "version": "publishedVersion",
           "source": "PubMed Central",
+          "source_type": "repository"
+        },
+        {
+          "id": "pmid:42465874",
+          "doi": null,
+          "landing_page_url": "https://pubmed.ncbi.nlm.nih.gov/42465874",
+          "pdf_url": null,
+          "is_oa": false,
+          "version": "submittedVersion",
+          "source": "PubMed",
           "source_type": "repository"
         }
       ],
@@ -8006,7 +7996,7 @@
           "landing_page_url": "https://pubmed.ncbi.nlm.nih.gov/42465882",
           "pdf_url": null,
           "is_oa": false,
-          "version": "publishedVersion",
+          "version": "submittedVersion",
           "source": "PubMed",
           "source_type": "repository"
         }
@@ -8145,13 +8135,13 @@
           "source_type": "repository"
         },
         {
-          "id": "pmid:42465953",
+          "id": "pmh:oai:pubmedcentral.nih.gov:13370604",
           "doi": null,
-          "landing_page_url": "https://pubmed.ncbi.nlm.nih.gov/42465953",
+          "landing_page_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13370604/",
           "pdf_url": null,
-          "is_oa": false,
+          "is_oa": true,
           "version": "publishedVersion",
-          "source": "PubMed",
+          "source": "PubMed Central",
           "source_type": "repository"
         },
         {
@@ -8165,13 +8155,23 @@
           "source_type": "repository"
         },
         {
-          "id": "pmh:oai:pubmedcentral.nih.gov:13370604",
+          "id": "pmid:42465953",
           "doi": null,
-          "landing_page_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13370604/",
+          "landing_page_url": "https://pubmed.ncbi.nlm.nih.gov/42465953",
+          "pdf_url": null,
+          "is_oa": false,
+          "version": "submittedVersion",
+          "source": "PubMed",
+          "source_type": "repository"
+        },
+        {
+          "id": "pmh:cdr.lib.unc.edu:1z40m966f",
+          "doi": null,
+          "landing_page_url": "https://doi.org/10.17615/ggnm-as63",
           "pdf_url": null,
           "is_oa": true,
-          "version": "publishedVersion",
-          "source": "PubMed Central",
+          "version": "submittedVersion",
+          "source": "Carolina Digital Repository (University of North Carolina at Chapel Hill)",
           "source_type": "repository"
         },
         {
@@ -8379,16 +8379,6 @@
           "source_type": "repository"
         },
         {
-          "id": "pmid:42539037",
-          "doi": null,
-          "landing_page_url": "https://pubmed.ncbi.nlm.nih.gov/42539037",
-          "pdf_url": null,
-          "is_oa": false,
-          "version": "publishedVersion",
-          "source": "PubMed",
-          "source_type": "repository"
-        },
-        {
           "id": "pmh:oai:pubmedcentral.nih.gov:13419651",
           "doi": null,
           "landing_page_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13419651/",
@@ -8396,6 +8386,16 @@
           "is_oa": true,
           "version": "publishedVersion",
           "source": "PubMed Central",
+          "source_type": "repository"
+        },
+        {
+          "id": "pmid:42539037",
+          "doi": null,
+          "landing_page_url": "https://pubmed.ncbi.nlm.nih.gov/42539037",
+          "pdf_url": null,
+          "is_oa": false,
+          "version": "submittedVersion",
+          "source": "PubMed",
           "source_type": "repository"
         }
       ],
@@ -8592,7 +8592,7 @@
           "author_id": "A5046245557",
           "display_name": "Syeda Luthfa Famida",
           "raw_author_name": "Syeda L Famida",
-          "orcid": "0000-0002-3403-6736"
+          "orcid": null
         },
         {
           "position": "middle",
@@ -8707,26 +8707,36 @@
       "pmid": null,
       "pmcid": null,
       "primary_location": {
-        "id": "doi:10.17615/pg75-rh65",
-        "doi": "10.17615/pg75-rh65",
+        "id": "pmh:cdr.lib.unc.edu:mp48sw19k",
+        "doi": null,
         "landing_page_url": "https://doi.org/10.17615/pg75-rh65",
-        "pdf_url": null,
+        "pdf_url": "https://cdr.lib.unc.edu/downloads/fx71b3528",
         "is_oa": true,
-        "version": null,
-        "source": "UNC Libraries",
+        "version": "submittedVersion",
+        "source": "Carolina Digital Repository (University of North Carolina at Chapel Hill)",
         "source_type": "repository"
       },
       "best_oa_location": {
-        "id": "doi:10.17615/pg75-rh65",
-        "doi": "10.17615/pg75-rh65",
+        "id": "pmh:cdr.lib.unc.edu:mp48sw19k",
+        "doi": null,
         "landing_page_url": "https://doi.org/10.17615/pg75-rh65",
-        "pdf_url": null,
+        "pdf_url": "https://cdr.lib.unc.edu/downloads/fx71b3528",
         "is_oa": true,
-        "version": null,
-        "source": "UNC Libraries",
+        "version": "submittedVersion",
+        "source": "Carolina Digital Repository (University of North Carolina at Chapel Hill)",
         "source_type": "repository"
       },
       "locations": [
+        {
+          "id": "pmh:cdr.lib.unc.edu:mp48sw19k",
+          "doi": null,
+          "landing_page_url": "https://doi.org/10.17615/pg75-rh65",
+          "pdf_url": "https://cdr.lib.unc.edu/downloads/fx71b3528",
+          "is_oa": true,
+          "version": "submittedVersion",
+          "source": "Carolina Digital Repository (University of North Carolina at Chapel Hill)",
+          "source_type": "repository"
+        },
         {
           "id": "doi:10.17615/pg75-rh65",
           "doi": "10.17615/pg75-rh65",
@@ -9154,7 +9164,7 @@
           "author_id": "A5035214967",
           "display_name": "Benjamin Amor",
           "raw_author_name": "Benjamin Amor",
-          "orcid": null
+          "orcid": "0000-0002-7841-8672"
         },
         {
           "position": "middle",
@@ -9647,26 +9657,36 @@
       "pmid": null,
       "pmcid": null,
       "primary_location": {
-        "id": "doi:10.17615/a2qk-mm89",
-        "doi": "10.17615/a2qk-mm89",
+        "id": "pmh:cdr.lib.unc.edu:9880w771k",
+        "doi": null,
         "landing_page_url": "https://doi.org/10.17615/a2qk-mm89",
-        "pdf_url": null,
+        "pdf_url": "https://cdr.lib.unc.edu/downloads/pk02ct795",
         "is_oa": true,
-        "version": null,
-        "source": "UNC Libraries",
+        "version": "submittedVersion",
+        "source": "Carolina Digital Repository (University of North Carolina at Chapel Hill)",
         "source_type": "repository"
       },
       "best_oa_location": {
-        "id": "doi:10.17615/a2qk-mm89",
-        "doi": "10.17615/a2qk-mm89",
+        "id": "pmh:cdr.lib.unc.edu:9880w771k",
+        "doi": null,
         "landing_page_url": "https://doi.org/10.17615/a2qk-mm89",
-        "pdf_url": null,
+        "pdf_url": "https://cdr.lib.unc.edu/downloads/pk02ct795",
         "is_oa": true,
-        "version": null,
-        "source": "UNC Libraries",
+        "version": "submittedVersion",
+        "source": "Carolina Digital Repository (University of North Carolina at Chapel Hill)",
         "source_type": "repository"
       },
       "locations": [
+        {
+          "id": "pmh:cdr.lib.unc.edu:9880w771k",
+          "doi": null,
+          "landing_page_url": "https://doi.org/10.17615/a2qk-mm89",
+          "pdf_url": "https://cdr.lib.unc.edu/downloads/pk02ct795",
+          "is_oa": true,
+          "version": "submittedVersion",
+          "source": "Carolina Digital Repository (University of North Carolina at Chapel Hill)",
+          "source_type": "repository"
+        },
         {
           "id": "doi:10.17615/a2qk-mm89",
           "doi": "10.17615/a2qk-mm89",

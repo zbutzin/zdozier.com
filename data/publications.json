@@ -1,5 +1,5 @@
 {
-  "generated": "2026-11-16T23:12:07Z",
+  "generated": "2026-11-24T01:28:54Z",
   "works": [
     {
       "id": "manual:wiley-environmental-health-nursing-chapter",
@@ -2850,7 +2850,7 @@
       "status": "published",
       "status_note": null,
       "url": "https://doi.org/10.52202/085713-4650",
-      "oa_url": "https://arxiv.org/pdf/2511.01077",
+      "oa_url": null,
       "pmid": null,
       "pmcid": null,
       "cited_by": 3,
@@ -3533,7 +3533,7 @@
       "oa_url": null,
       "pmid": "40644699",
       "pmcid": "PMC12299939",
-      "cited_by": 3,
+      "cited_by": 4,
       "versions": [
         {
           "doi": "10.2196/preprints.68143",
@@ -5458,7 +5458,7 @@
       "oa_url": "https://bmcmedicine.biomedcentral.com/counter/pdf/10.1186/s12916-024-03655-x",
       "pmid": "39380062",
       "pmcid": "PMC11462648",
-      "cited_by": 23,
+      "cited_by": 25,
       "versions": [
         {
           "doi": "10.1101/2024.02.05.24302352",
@@ -6095,10 +6095,10 @@
       "status": "published",
       "status_note": null,
       "url": "https://doi.org/10.2196/53322",
-      "oa_url": null,
+      "oa_url": "https://s3.ca-central-1.amazonaws.com/assets.jmir.org/assets/preprints/preprint-53322-accepted.pdf",
       "pmid": "39146534",
       "pmcid": "PMC11364083",
-      "cited_by": 20,
+      "cited_by": 21,
       "versions": [
         {
           "doi": "10.1101/2023.07.27.23293272",
@@ -6234,7 +6234,7 @@
       "oa_url": "https://mhealth.jmir.org/2024/1/e54622/PDF",
       "pmid": "38696234",
       "pmcid": "PMC11099816",
-      "cited_by": 44,
+      "cited_by": 45,
       "versions": [
         {
           "doi": "10.1101/2023.10.13.23296965",
@@ -7075,8 +7075,8 @@
       "year": 2021,
       "date": "2021-11-14",
       "venue": "medRxiv",
-      "volume": null,
-      "issue": null,
+      "volume": "105",
+      "issue": "5",
       "pages": null,
       "type": "preprint",
       "status": "preprint",
@@ -7413,7 +7413,7 @@
       "oa_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3213033/",
       "pmid": "20439794",
       "pmcid": "PMC3213033",
-      "cited_by": 167,
+      "cited_by": 169,
       "versions": [],
       "topics": [
         "child-health"
